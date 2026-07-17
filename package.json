@@ -1,0 +1,25 @@
+{
+  "name": "taste",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node tests/engine.test.mjs && node tests/data.test.mjs",
+    "fetch:books": "node scripts/fetch-books.mjs",
+    "fetch:music": "node scripts/fetch-music.mjs",
+    "fetch:restaurants": "node scripts/fetch-restaurants.mjs",
+    "fetch:all": "npm run fetch:books && npm run fetch:music && npm run fetch:restaurants"
+  },
+  "dependencies": {
+    "lucide-react": "^0.525.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "vite": "^7.0.0"
+  }
+}

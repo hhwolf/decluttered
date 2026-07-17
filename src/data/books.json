@@ -1,0 +1,2582 @@
+[
+ {
+  "id": "bk_OL18020194W",
+  "title": "It Ends With Us",
+  "subtitle": "Colleen Hoover",
+  "year": 2012,
+  "meta": "384 pp",
+  "genres": [
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 1052,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10473609-M.jpg",
+  "blurb": "“For my father, who tried his very best not to be his worst. And for my mother, who made sure we never saw him at his worst.”",
+  "popularity": 1,
+  "factors": {
+   "writing": 0.59,
+   "plot": 0.69,
+   "pacing": 0.79,
+   "character": 0.91,
+   "originality": 0.55,
+   "atmosphere": 0.67
+  },
+  "tone": {
+   "darkness": 0.23,
+   "complexity": 0.37,
+   "emotion": 0.94
+  }
+ },
+ {
+  "id": "bk_OL82563W",
+  "title": "Harry Potter and the Philosopher's Stone",
+  "subtitle": "J. K. Rowling",
+  "year": 1997,
+  "meta": "302 pp",
+  "genres": [
+   "Literary Fiction",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 1009,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/15155833-M.jpg",
+  "blurb": "A literary fiction standout readers keep coming back to.",
+  "popularity": 0.99,
+  "factors": {
+   "writing": 0.74,
+   "plot": 0.64,
+   "pacing": 0.63,
+   "character": 0.74,
+   "originality": 0.7,
+   "atmosphere": 0.83
+  },
+  "tone": {
+   "darkness": 0.46,
+   "complexity": 0.54,
+   "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL1168007W",
+  "title": "Animal Farm",
+  "subtitle": "George Orwell",
+  "year": 1945,
+  "meta": "128 pp",
+  "genres": [
+   "Literary Fiction",
+   "Classics",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 573,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11261770-M.jpg",
+  "blurb": "A literary fiction standout readers keep coming back to.",
+  "popularity": 0.91,
+  "factors": {
+   "writing": 0.87,
+   "plot": 0.69,
+   "pacing": 0.48,
+   "character": 0.82,
+   "originality": 0.77,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.67,
+   "complexity": 0.64,
+   "emotion": 0.72
+  }
+ },
+ {
+  "id": "bk_OL5735363W",
+  "title": "The Hunger Games",
+  "subtitle": "Suzanne Collins",
+  "year": 2008,
+  "meta": "399 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 535,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12646537-M.jpg",
+  "blurb": "“When I wake up, the other side of the bed is cold.”",
+  "popularity": 0.9,
+  "factors": {
+   "writing": 0.71,
+   "plot": 0.72,
+   "pacing": 0.67,
+   "character": 0.62,
+   "originality": 0.83,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.62,
+   "emotion": 0.62
+  }
+ },
+ {
+  "id": "bk_OL27482W",
+  "title": "The Hobbit",
+  "subtitle": "J.R.R. Tolkien",
+  "year": 1937,
+  "meta": "310 pp",
+  "genres": [
+   "Horror",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 495,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14627509-M.jpg",
+  "blurb": "A horror standout readers keep coming back to.",
+  "popularity": 0.89,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.84,
+   "pacing": 0.67,
+   "character": 0.63,
+   "originality": 0.66,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.5,
+   "emotion": 0.64
+  }
+ },
+ {
+  "id": "bk_OL82586W",
+  "title": "Harry Potter and the Deathly Hallows",
+  "subtitle": "J. K. Rowling",
+  "year": 2007,
+  "meta": "703 pp",
+  "genres": [
+   "Mystery",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 411,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/15158660-M.jpg",
+  "blurb": "A mystery standout readers keep coming back to.",
+  "popularity": 0.87,
+  "factors": {
+   "writing": 0.61,
+   "plot": 0.85,
+   "pacing": 0.82,
+   "character": 0.73,
+   "originality": 0.59,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.52,
+   "emotion": 0.56
+  }
+ },
+ {
+  "id": "bk_OL1063267W",
+  "title": "How to Win Friends and Influence People",
+  "subtitle": "Dale Carnegie",
+  "year": 1936,
+  "meta": "276 pp",
+  "genres": [
+   "Philosophy"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 415,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/13314878-M.jpg",
+  "blurb": "“ON MAY 7, 1931, THE MOST SENSATIONAL MANHUNT NEW YORK CITY had ever known had come to its climax.”",
+  "popularity": 0.87,
+  "factors": {
+   "writing": 0.75,
+   "plot": 0.39,
+   "pacing": 0.34,
+   "character": 0.41,
+   "originality": 0.8,
+   "atmosphere": 0.61
+  },
+  "tone": {
+   "darkness": 0.42,
+   "complexity": 0.78,
+   "emotion": 0.31
+  }
+ },
+ {
+  "id": "bk_OL49488W",
+  "title": "Ender's Game",
+  "subtitle": "Orson Scott Card",
+  "year": 1985,
+  "meta": "330 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 405,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12996033-M.jpg",
+  "blurb": "“\"I've watched through his eyes, I've listened through his ears, and I tell you he's the one.”",
+  "popularity": 0.86,
+  "factors": {
+   "writing": 0.63,
+   "plot": 0.73,
+   "pacing": 0.66,
+   "character": 0.57,
+   "originality": 0.87,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.59,
+   "complexity": 0.68,
+   "emotion": 0.53
+  }
+ },
+ {
+  "id": "bk_OL1168083W",
+  "title": "Nineteen Eighty-Four",
+  "subtitle": "George Orwell",
+  "year": 1949,
+  "meta": "318 pp",
+  "genres": [
+   "Literary Fiction",
+   "Science Fiction",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 408,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9267242-M.jpg",
+  "blurb": "A literary fiction standout readers keep coming back to.",
+  "popularity": 0.86,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.59,
+   "pacing": 0.51,
+   "character": 0.76,
+   "originality": 0.67,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.68,
+   "emotion": 0.62
+  }
+ },
+ {
+  "id": "bk_OL66554W",
+  "title": "Pride and Prejudice",
+  "subtitle": "Jane Austen",
+  "year": 1813,
+  "meta": "351 pp",
+  "genres": [
+   "Literary Fiction",
+   "Romance",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 394,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14348537-M.jpg",
+  "blurb": "“It is a truth universally acknowledged that a single man in possession of a good fortune must be in want of a wife.”",
+  "popularity": 0.86,
+  "factors": {
+   "writing": 0.79,
+   "plot": 0.66,
+   "pacing": 0.53,
+   "character": 0.77,
+   "originality": 0.64,
+   "atmosphere": 0.73
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.6,
+   "emotion": 0.77
+  }
+ },
+ {
+  "id": "bk_OL492658W",
+  "title": "The Lightning Thief",
+  "subtitle": "Rick Riordan",
+  "year": 2005,
+  "meta": "384 pp",
+  "genres": [
+   "Horror",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 399,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7239831-M.jpg",
+  "blurb": "“Look, I didn't want to be a half-blood.”",
+  "popularity": 0.86,
+  "factors": {
+   "writing": 0.59,
+   "plot": 0.84,
+   "pacing": 0.8,
+   "character": 0.7,
+   "originality": 0.61,
+   "atmosphere": 0.84
+  },
+  "tone": {
+   "darkness": 0.59,
+   "complexity": 0.46,
+   "emotion": 0.64
+  }
+ },
+ {
+  "id": "bk_OL17091839W",
+  "title": "The Martian",
+  "subtitle": "Andy Weir",
+  "year": 2011,
+  "meta": "407 pp",
+  "genres": [
+   "Science Fiction",
+   "Thriller",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 331,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11447888-M.jpg",
+  "blurb": "A science fiction standout readers keep coming back to.",
+  "popularity": 0.83,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.88,
+   "pacing": 0.67,
+   "character": 0.7,
+   "originality": 0.73,
+   "atmosphere": 0.8
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.56,
+   "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL8479867W",
+  "title": "The Name of the Wind",
+  "subtitle": "Patrick Rothfuss",
+  "year": 2007,
+  "meta": "736 pp",
+  "genres": [
+   "Mystery",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 254,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11480483-M.jpg",
+  "blurb": "“It was night again.”",
+  "popularity": 0.8,
+  "factors": {
+   "writing": 0.58,
+   "plot": 0.74,
+   "pacing": 0.76,
+   "character": 0.64,
+   "originality": 0.73,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.53,
+   "emotion": 0.55
+  }
+ },
+ {
+  "id": "bk_OL10263W",
+  "title": "Le petit prince",
+  "subtitle": "Antoine de Saint-Exupéry",
+  "year": 1943,
+  "meta": "96 pp",
+  "genres": [
+   "Philosophy",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 235,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10708272-M.jpg",
+  "blurb": "“ALS ICH SECHS Jahre alt war, sah ich einmal in einem Buch uber den Urwald, das ,,Erlebte Geschichten\" hei , ein prachtiges Bild.”",
+  "popularity": 0.79,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.59,
+   "pacing": 0.7,
+   "character": 0.61,
+   "originality": 0.74,
+   "atmosphere": 0.71
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.56,
+   "emotion": 0.51
+  }
+ },
+ {
+  "id": "bk_OL2897798W",
+  "title": "Watchmen",
+  "subtitle": "Alan Moore",
+  "year": 1987,
+  "meta": "424 pp",
+  "genres": [
+   "Fantasy",
+   "Science Fiction",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 233,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7774899-M.jpg",
+  "blurb": "A fantasy standout readers keep coming back to.",
+  "popularity": 0.78,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.78,
+   "pacing": 0.66,
+   "character": 0.74,
+   "originality": 0.68,
+   "atmosphere": 0.7
+  },
+  "tone": {
+   "darkness": 0.66,
+   "complexity": 0.63,
+   "emotion": 0.54
+  }
+ },
+ {
+  "id": "bk_OL27479W",
+  "title": "The Two Towers",
+  "subtitle": "J.R.R. Tolkien",
+  "year": 1954,
+  "meta": "434 pp",
+  "genres": [
+   "Science Fiction",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 227,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14627564-M.jpg",
+  "blurb": "“ARAGORN sped on up the hill.”",
+  "popularity": 0.78,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.83,
+   "pacing": 0.69,
+   "character": 0.75,
+   "originality": 0.75,
+   "atmosphere": 0.71
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.73,
+   "emotion": 0.53
+  }
+ },
+ {
+  "id": "bk_OL1268413W",
+  "title": "... Trotzdem Ja zum Leben sagen",
+  "subtitle": "Viktor E. Frankl",
+  "year": 1946,
+  "meta": "165 pp",
+  "genres": [
+   "Memoir",
+   "Philosophy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 220,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8516506-M.jpg",
+  "blurb": "“THIS BOOK DOES NOT claim to be an account of facts and events but of personal experiences, experiences which millions of prisoners have suffered time and time again.”",
+  "popularity": 0.78,
+  "factors": {
+   "writing": 0.79,
+   "plot": 0.41,
+   "pacing": 0.52,
+   "character": 0.58,
+   "originality": 0.64,
+   "atmosphere": 0.55
+  },
+  "tone": {
+   "darkness": 0.4,
+   "complexity": 0.74,
+   "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL1892617W",
+  "title": "A Brief History of Time",
+  "subtitle": "Stephen Hawking",
+  "year": 1988,
+  "meta": "241 pp",
+  "genres": [
+   "Philosophy"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 234,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10432365-M.jpg",
+  "blurb": "“A WELL-KNOWN SCIENTIST (some say it was Bertrand Russell) once gave a public lecture on astronomy.”",
+  "popularity": 0.78,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.41,
+   "pacing": 0.4,
+   "character": 0.4,
+   "originality": 0.82,
+   "atmosphere": 0.52
+  },
+  "tone": {
+   "darkness": 0.44,
+   "complexity": 0.75,
+   "emotion": 0.43
+  }
+ },
+ {
+  "id": "bk_OL82565W",
+  "title": "Harry Potter and the Half-Blood Prince",
+  "subtitle": "J. K. Rowling",
+  "year": 2005,
+  "meta": "640 pp",
+  "genres": [
+   "Mystery",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 211,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10716273-M.jpg",
+  "blurb": "“It was nearing midnight and the Prime Minister was sitting alone in his office, reading a long memo that was slipping through his brain without leaving the slightest trace of meaning behind.”",
+  "popularity": 0.77,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.88,
+   "pacing": 0.78,
+   "character": 0.63,
+   "originality": 0.62,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.51,
+   "emotion": 0.68
+  }
+ },
+ {
+  "id": "bk_OL36287W",
+  "title": "Le Comte de Monte Cristo",
+  "subtitle": "Alexandre Dumas",
+  "year": 1830,
+  "meta": "593 pp",
+  "genres": [
+   "Literary Fiction",
+   "Historical Fiction",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 194,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14566393-M.jpg",
+  "blurb": "“On the 24th of February, 1815, the watch-tower of Notre-Dame de la Garde signalled the arrival of the three-master Pharaon, from Smyrna, Trieste, and Naples.”",
+  "popularity": 0.76,
+  "factors": {
+   "writing": 0.91,
+   "plot": 0.69,
+   "pacing": 0.47,
+   "character": 0.86,
+   "originality": 0.66,
+   "atmosphere": 0.71
+  },
+  "tone": {
+   "darkness": 0.58,
+   "complexity": 0.67,
+   "emotion": 0.68
+  }
+ },
+ {
+  "id": "bk_OL46241W",
+  "title": "I, Robot",
+  "subtitle": "Isaac Asimov",
+  "year": 1950,
+  "meta": "245 pp",
+  "genres": [
+   "Thriller",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 187,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12385229-M.jpg",
+  "blurb": "A thriller standout readers keep coming back to.",
+  "popularity": 0.75,
+  "factors": {
+   "writing": 0.59,
+   "plot": 0.93,
+   "pacing": 0.74,
+   "character": 0.54,
+   "originality": 0.72,
+   "atmosphere": 0.63
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.57,
+   "emotion": 0.47
+  }
+ },
+ {
+  "id": "bk_OL492646W",
+  "title": "The Sea of Monsters",
+  "subtitle": "Rick Riordan",
+  "year": 2005,
+  "meta": "285 pp",
+  "genres": [
+   "Young Adult",
+   "Fantasy",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 181,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/108909-M.jpg",
+  "blurb": "A young adult standout readers keep coming back to.",
+  "popularity": 0.75,
+  "factors": {
+   "writing": 0.63,
+   "plot": 0.82,
+   "pacing": 0.77,
+   "character": 0.76,
+   "originality": 0.68,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.67,
+   "complexity": 0.51,
+   "emotion": 0.53
+  }
+ },
+ {
+  "id": "bk_OL2163649W",
+  "title": "The Hitch Hiker's Guide to the Galaxy",
+  "subtitle": "Douglas Adams",
+  "year": 1979,
+  "meta": "216 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 176,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12986869-M.jpg",
+  "blurb": "“Far out in the uncharted backwaters of the unfashionable end of the Western Spiral arm of the Galaxy lies a small unregarded yellow sun.”",
+  "popularity": 0.74,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.81,
+   "pacing": 0.6,
+   "character": 0.65,
+   "originality": 0.83,
+   "atmosphere": 0.65
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.72,
+   "emotion": 0.41
+  }
+ },
+ {
+  "id": "bk_OL21745884W",
+  "title": "Project Hail Mary",
+  "subtitle": "Andy Weir",
+  "year": 2021,
+  "meta": "496 pp",
+  "genres": [
+   "Science Fiction",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 171,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11200092-M.jpg",
+  "blurb": "A science fiction standout readers keep coming back to.",
+  "popularity": 0.74,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.93,
+   "pacing": 0.86,
+   "character": 0.57,
+   "originality": 0.75,
+   "atmosphere": 0.7
+  },
+  "tone": {
+   "darkness": 0.75,
+   "complexity": 0.67,
+   "emotion": 0.5
+  }
+ },
+ {
+  "id": "bk_OL471565W",
+  "title": "And Then There Were None",
+  "subtitle": "Agatha Christie",
+  "year": 1939,
+  "meta": "222 pp",
+  "genres": [
+   "Thriller",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 169,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11172296-M.jpg",
+  "blurb": "“IN THE CORNER of a first-class smoking carriage, Mr. Justice Wargrave, lately retired from the bench, puffed at a cigar and ran an interested eye through the political news in the Times.”",
+  "popularity": 0.74,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.96,
+   "pacing": 0.83,
+   "character": 0.72,
+   "originality": 0.54,
+   "atmosphere": 0.71
+  },
+  "tone": {
+   "darkness": 0.69,
+   "complexity": 0.53,
+   "emotion": 0.5
+  }
+ },
+ {
+  "id": "bk_OL15401200W",
+  "title": "The Lost Hero",
+  "subtitle": "Rick Riordan",
+  "year": 2010,
+  "meta": "556 pp",
+  "genres": [
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 170,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12848687-M.jpg",
+  "blurb": "“Even before he got electrocuted, Jason was having a rotten day”",
+  "popularity": 0.74,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.85,
+   "pacing": 0.7,
+   "character": 0.68,
+   "originality": 0.66,
+   "atmosphere": 0.78
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.42,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL15358691W",
+  "title": "The Way of Kings",
+  "subtitle": "Brandon Sanderson",
+  "year": 2010,
+  "meta": "1008 pp",
+  "genres": [
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 155,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14658316-M.jpg",
+  "blurb": "A fantasy standout readers keep coming back to.",
+  "popularity": 0.73,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.67,
+   "pacing": 0.6,
+   "character": 0.73,
+   "originality": 0.76,
+   "atmosphere": 0.93
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.61,
+   "emotion": 0.66
+  }
+ },
+ {
+  "id": "bk_OL2056818W",
+  "title": "Maus I",
+  "subtitle": "Art Spiegelman",
+  "year": 1986,
+  "meta": "295 pp",
+  "genres": [
+   "Literary Fiction",
+   "Memoir",
+   "Horror"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 157,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10210168-M.jpg",
+  "blurb": "“It was summer I remember. I was ten or eleven...”",
+  "popularity": 0.73,
+  "factors": {
+   "writing": 0.8,
+   "plot": 0.54,
+   "pacing": 0.63,
+   "character": 0.7,
+   "originality": 0.59,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.66,
+   "emotion": 0.8
+  }
+ },
+ {
+  "id": "bk_OL166894W",
+  "title": "Преступление и наказание",
+  "subtitle": "Fyodor Dostoyevsky",
+  "year": 1866,
+  "meta": "520 pp",
+  "genres": [
+   "Literary Fiction",
+   "Mystery",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 154,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9411873-M.jpg",
+  "blurb": "“On an exceptionally hot evening early in July a young man came out of the garret in which he lodged in S. Place and walked slowly, as though in hesitation, towards K. bridge.”",
+  "popularity": 0.72,
+  "factors": {
+   "writing": 0.79,
+   "plot": 0.75,
+   "pacing": 0.6,
+   "character": 0.69,
+   "originality": 0.6,
+   "atmosphere": 0.76
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.61,
+   "emotion": 0.73
+  }
+ },
+ {
+  "id": "bk_OL492642W",
+  "title": "The Last Olympian",
+  "subtitle": "Rick Riordan",
+  "year": 2009,
+  "meta": "381 pp",
+  "genres": [
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 152,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6624107-M.jpg",
+  "blurb": "“The end of the world started when a pegasus landed on the hood of my car.”",
+  "popularity": 0.72,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.84,
+   "pacing": 0.68,
+   "character": 0.66,
+   "originality": 0.75,
+   "atmosphere": 0.8
+  },
+  "tone": {
+   "darkness": 0.56,
+   "complexity": 0.5,
+   "emotion": 0.72
+  }
+ },
+ {
+  "id": "bk_OL492647W",
+  "title": "The Titan's Curse",
+  "subtitle": "Rick Riordan",
+  "year": 2007,
+  "meta": "320 pp",
+  "genres": [
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 152,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14601475-M.jpg",
+  "blurb": "A young adult standout readers keep coming back to.",
+  "popularity": 0.72,
+  "factors": {
+   "writing": 0.65,
+   "plot": 0.78,
+   "pacing": 0.85,
+   "character": 0.79,
+   "originality": 0.69,
+   "atmosphere": 0.67
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.59,
+   "emotion": 0.57
+  }
+ },
+ {
+  "id": "bk_OL16509148W",
+  "title": "The Song of Achilles",
+  "subtitle": "Madeline Miller",
+  "year": 2011,
+  "meta": "385 pp",
+  "genres": [
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 134,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7098465-M.jpg",
+  "blurb": "A historical fiction standout readers keep coming back to.",
+  "popularity": 0.7,
+  "factors": {
+   "writing": 0.74,
+   "plot": 0.61,
+   "pacing": 0.61,
+   "character": 0.73,
+   "originality": 0.66,
+   "atmosphere": 0.89
+  },
+  "tone": {
+   "darkness": 0.53,
+   "complexity": 0.6,
+   "emotion": 0.8
+  }
+ },
+ {
+  "id": "bk_OL5738154W",
+  "title": "The Hero of Ages",
+  "subtitle": "Brandon Sanderson",
+  "year": 2008,
+  "meta": "760 pp",
+  "genres": [
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 120,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14658094-M.jpg",
+  "blurb": "A fantasy standout readers keep coming back to.",
+  "popularity": 0.69,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.84,
+   "pacing": 0.58,
+   "character": 0.79,
+   "originality": 0.78,
+   "atmosphere": 0.91
+  },
+  "tone": {
+   "darkness": 0.45,
+   "complexity": 0.61,
+   "emotion": 0.65
+  }
+ },
+ {
+  "id": "bk_OL8193416W",
+  "title": "The Picture of Dorian Gray",
+  "subtitle": "Oscar Wilde",
+  "year": 1890,
+  "meta": "246 pp",
+  "genres": [
+   "Philosophy",
+   "Fantasy",
+   "Horror"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 124,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14314858-M.jpg",
+  "blurb": "A philosophy standout readers keep coming back to.",
+  "popularity": 0.69,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.6,
+   "pacing": 0.55,
+   "character": 0.65,
+   "originality": 0.71,
+   "atmosphere": 0.7
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.61,
+   "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL81629W",
+  "title": "The Green Mile",
+  "subtitle": "Stephen King",
+  "year": 1996,
+  "meta": "465 pp",
+  "genres": [
+   "Mystery",
+   "Horror",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 108,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9334567-M.jpg",
+  "blurb": "A mystery standout readers keep coming back to.",
+  "popularity": 0.67,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.78,
+   "pacing": 0.73,
+   "character": 0.56,
+   "originality": 0.68,
+   "atmosphere": 0.66
+  },
+  "tone": {
+   "darkness": 0.82,
+   "complexity": 0.57,
+   "emotion": 0.5
+  }
+ },
+ {
+  "id": "bk_OL8756330W",
+  "title": "Smile",
+  "subtitle": "Raina Telgemeier",
+  "year": 2010,
+  "meta": "214 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 103,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9147132-M.jpg",
+  "blurb": "A memoir standout readers keep coming back to.",
+  "popularity": 0.67,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.57,
+   "pacing": 0.59,
+   "character": 0.86,
+   "originality": 0.62,
+   "atmosphere": 0.62
+  },
+  "tone": {
+   "darkness": 0.6,
+   "complexity": 0.5,
+   "emotion": 0.9
+  }
+ },
+ {
+  "id": "bk_OL60149W",
+  "title": "Howl's Moving Castle",
+  "subtitle": "Diana Wynne Jones",
+  "year": 1986,
+  "meta": "304 pp",
+  "genres": [
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 106,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8783945-M.jpg",
+  "blurb": "“In the land of Ingary, where such things as seven-league boots and cloaks of invisibility really exist, it is quite a misfortune to be born the eldest of three.”",
+  "popularity": 0.67,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.83,
+   "pacing": 0.77,
+   "character": 0.78,
+   "originality": 0.61,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.56,
+   "emotion": 0.63
+  }
+ },
+ {
+  "id": "bk_OL16813053W",
+  "title": "Words of Radiance",
+  "subtitle": "Brandon Sanderson",
+  "year": 2012,
+  "meta": "1088 pp",
+  "genres": [
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 89,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14658334-M.jpg",
+  "blurb": "A fantasy standout readers keep coming back to.",
+  "popularity": 0.65,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.7,
+   "pacing": 0.62,
+   "character": 0.71,
+   "originality": 0.79,
+   "atmosphere": 0.91
+  },
+  "tone": {
+   "darkness": 0.58,
+   "complexity": 0.59,
+   "emotion": 0.68
+  }
+ },
+ {
+  "id": "bk_OL17332479W",
+  "title": "Six of Crows",
+  "subtitle": "Leigh Bardugo",
+  "year": 2015,
+  "meta": "512 pp",
+  "genres": [
+   "Science Fiction",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 90,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12667417-M.jpg",
+  "blurb": "A science fiction standout readers keep coming back to.",
+  "popularity": 0.65,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.79,
+   "pacing": 0.83,
+   "character": 0.74,
+   "originality": 0.66,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.5,
+   "emotion": 0.69
+  }
+ },
+ {
+  "id": "bk_OL2625431W",
+  "title": "海辺のカフカ",
+  "subtitle": "村上春樹",
+  "year": 2001,
+  "meta": "576 pp",
+  "genres": [
+   "Magical Realism",
+   "Mystery",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 93,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/4982600-M.jpg",
+  "blurb": "A magical realism standout readers keep coming back to.",
+  "popularity": 0.65,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.78,
+   "pacing": 0.78,
+   "character": 0.77,
+   "originality": 0.71,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.57,
+   "emotion": 0.71
+  }
+ },
+ {
+  "id": "bk_OL17834026W",
+  "title": "Oathbringer",
+  "subtitle": "Brandon Sanderson",
+  "year": 2017,
+  "meta": "1243 pp",
+  "genres": [
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 88,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14658111-M.jpg",
+  "blurb": "A fantasy standout readers keep coming back to.",
+  "popularity": 0.64,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.81,
+   "pacing": 0.66,
+   "character": 0.66,
+   "originality": 0.72,
+   "atmosphere": 0.8
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.58,
+   "emotion": 0.7
+  }
+ },
+ {
+  "id": "bk_OL274505W",
+  "title": "Cien años de soledad",
+  "subtitle": "Gabriel García Márquez",
+  "year": 1967,
+  "meta": "432 pp",
+  "genres": [
+   "Magical Realism",
+   "Literary Fiction",
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 86,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12627383-M.jpg",
+  "blurb": "A magical realism standout readers keep coming back to.",
+  "popularity": 0.64,
+  "factors": {
+   "writing": 0.81,
+   "plot": 0.63,
+   "pacing": 0.54,
+   "character": 0.77,
+   "originality": 0.81,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.66,
+   "emotion": 0.77
+  }
+ },
+ {
+  "id": "bk_OL1938043W",
+  "title": "Fear no evil",
+  "subtitle": "Anatoly Shcharansky",
+  "year": 1988,
+  "meta": "437 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 79,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9156872-M.jpg",
+  "blurb": "A memoir standout readers keep coming back to.",
+  "popularity": 0.63,
+  "factors": {
+   "writing": 0.83,
+   "plot": 0.6,
+   "pacing": 0.56,
+   "character": 0.84,
+   "originality": 0.64,
+   "atmosphere": 0.64
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.56,
+   "emotion": 0.93
+  }
+ },
+ {
+  "id": "bk_OL17054790W",
+  "title": "Percy Jackson's Greek Gods",
+  "subtitle": "Rick Riordan",
+  "year": 2006,
+  "meta": "406 pp",
+  "genres": [
+   "Fantasy",
+   "Young Adult",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 74,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7396660-M.jpg",
+  "blurb": "“I hope I'm getting extra credit for this.”",
+  "popularity": 0.62,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.74,
+   "pacing": 0.68,
+   "character": 0.84,
+   "originality": 0.63,
+   "atmosphere": 0.71
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.53,
+   "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL17793648W",
+  "title": "The Silver Eyes (Five Nights At Freddy's #1)",
+  "subtitle": "Scott Cawthon",
+  "year": 2001,
+  "meta": "396 pp",
+  "genres": [
+   "Horror",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 74,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8075533-M.jpg",
+  "blurb": "A horror standout readers keep coming back to.",
+  "popularity": 0.62,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.69,
+   "pacing": 0.74,
+   "character": 0.68,
+   "originality": 0.69,
+   "atmosphere": 0.85
+  },
+  "tone": {
+   "darkness": 0.67,
+   "complexity": 0.56,
+   "emotion": 0.65
+  }
+ },
+ {
+  "id": "bk_OL66946W",
+  "title": "A child called \"it\"",
+  "subtitle": "David J. Pelzer",
+  "year": 1987,
+  "meta": "168 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 75,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14559604-M.jpg",
+  "blurb": "“March 5, 1973, Daly City, California-I'm late.”",
+  "popularity": 0.62,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.61,
+   "pacing": 0.54,
+   "character": 0.84,
+   "originality": 0.59,
+   "atmosphere": 0.65
+  },
+  "tone": {
+   "darkness": 0.53,
+   "complexity": 0.53,
+   "emotion": 0.82
+  }
+ },
+ {
+  "id": "bk_OL14911626W",
+  "title": "Anathem",
+  "subtitle": "Neal Stephenson",
+  "year": 2008,
+  "meta": "937 pp",
+  "genres": [
+   "Philosophy",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 74,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6304233-M.jpg",
+  "blurb": "A philosophy standout readers keep coming back to.",
+  "popularity": 0.62,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.74,
+   "pacing": 0.62,
+   "character": 0.53,
+   "originality": 0.74,
+   "atmosphere": 0.66
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.75,
+   "emotion": 0.49
+  }
+ },
+ {
+  "id": "bk_OL16361029W",
+  "title": "The Selection (The Selection #1)",
+  "subtitle": "Kiera Cass",
+  "year": 2012,
+  "meta": "328 pp",
+  "genres": [
+   "Dystopian",
+   "Romance",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 72,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7101900-M.jpg",
+  "blurb": "A dystopian standout readers keep coming back to.",
+  "popularity": 0.62,
+  "factors": {
+   "writing": 0.71,
+   "plot": 0.8,
+   "pacing": 0.77,
+   "character": 0.76,
+   "originality": 0.65,
+   "atmosphere": 0.76
+  },
+  "tone": {
+   "darkness": 0.46,
+   "complexity": 0.54,
+   "emotion": 0.73
+  }
+ },
+ {
+  "id": "bk_OL17373843W",
+  "title": "Children of Time",
+  "subtitle": "Adrian Tchaikovsky",
+  "year": 2015,
+  "meta": "616 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 76,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8264706-M.jpg",
+  "blurb": "“Er waren geen ramen in de Brin 2-faciliteit - door de rotatie was 'buiten' altijd 'beneden'; onder je voeten, uit je gedachten.”",
+  "popularity": 0.62,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.79,
+   "pacing": 0.62,
+   "character": 0.65,
+   "originality": 0.76,
+   "atmosphere": 0.78
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.65,
+   "emotion": 0.52
+  }
+ },
+ {
+  "id": "bk_OL453654W",
+  "title": "Reaper Man",
+  "subtitle": "Terry Pratchett",
+  "year": 1991,
+  "meta": "301 pp",
+  "genres": [
+   "Thriller",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 71,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14648856-M.jpg",
+  "blurb": "“The Morris dance is common to all inhabited worlds in the multiverse.”",
+  "popularity": 0.61,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.85,
+   "pacing": 0.82,
+   "character": 0.68,
+   "originality": 0.73,
+   "atmosphere": 0.73
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.62,
+   "emotion": 0.65
+  }
+ },
+ {
+  "id": "bk_OL17824318W",
+  "title": "Born a Crime",
+  "subtitle": "Trevor Noah",
+  "year": 2016,
+  "meta": "304 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 65,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8294078-M.jpg",
+  "blurb": "A memoir standout readers keep coming back to.",
+  "popularity": 0.6,
+  "factors": {
+   "writing": 0.74,
+   "plot": 0.58,
+   "pacing": 0.68,
+   "character": 0.88,
+   "originality": 0.59,
+   "atmosphere": 0.6
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.43,
+   "emotion": 0.79
+  }
+ },
+ {
+  "id": "bk_OL15029001W",
+  "title": "1Q84",
+  "subtitle": "村上春樹",
+  "year": 2009,
+  "meta": "925 pp",
+  "genres": [
+   "Magical Realism",
+   "Dystopian",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 3.8,
+   "count": 65,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11153243-M.jpg",
+  "blurb": "“The taxi's radio was tuned to a classical FM broadcast.”",
+  "popularity": 0.6,
+  "factors": {
+   "writing": 0.88,
+   "plot": 0.66,
+   "pacing": 0.56,
+   "character": 0.75,
+   "originality": 0.78,
+   "atmosphere": 0.9
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.68,
+   "emotion": 0.63
+  }
+ },
+ {
+  "id": "bk_OL16361049W",
+  "title": "Keeper of the Lost Cities",
+  "subtitle": "Shannon Messenger",
+  "year": 2012,
+  "meta": "512 pp",
+  "genres": [
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 58,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9320507-M.jpg",
+  "blurb": "A fantasy standout readers keep coming back to.",
+  "popularity": 0.59,
+  "factors": {
+   "writing": 0.6,
+   "plot": 0.74,
+   "pacing": 0.84,
+   "character": 0.78,
+   "originality": 0.74,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.58,
+   "emotion": 0.65
+  }
+ },
+ {
+  "id": "bk_OL41081W",
+  "title": "The Raven",
+  "subtitle": "Edgar Allan Poe",
+  "year": 1845,
+  "meta": "42 pp",
+  "genres": [
+   "Horror",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 60,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8246077-M.jpg",
+  "blurb": "A horror standout readers keep coming back to.",
+  "popularity": 0.59,
+  "factors": {
+   "writing": 0.63,
+   "plot": 0.75,
+   "pacing": 0.83,
+   "character": 0.68,
+   "originality": 0.75,
+   "atmosphere": 0.84
+  },
+  "tone": {
+   "darkness": 0.6,
+   "complexity": 0.59,
+   "emotion": 0.57
+  }
+ },
+ {
+  "id": "bk_OL19650409W",
+  "title": "Morning Star",
+  "subtitle": "Pierce Brown",
+  "year": 2016,
+  "meta": "672 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 59,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8566174-M.jpg",
+  "blurb": "A dystopian standout readers keep coming back to.",
+  "popularity": 0.59,
+  "factors": {
+   "writing": 0.63,
+   "plot": 0.74,
+   "pacing": 0.72,
+   "character": 0.71,
+   "originality": 0.89,
+   "atmosphere": 0.67
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.79,
+   "emotion": 0.57
+  }
+ },
+ {
+  "id": "bk_OL16810944W",
+  "title": "The School for Good and Evil",
+  "subtitle": "Soman Chainani",
+  "year": 2007,
+  "meta": "496 pp",
+  "genres": [
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 55,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7879561-M.jpg",
+  "blurb": "A fantasy standout readers keep coming back to.",
+  "popularity": 0.58,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.76,
+   "pacing": 0.71,
+   "character": 0.8,
+   "originality": 0.57,
+   "atmosphere": 0.78
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.45,
+   "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL35623W",
+  "title": "Parable of the Sower",
+  "subtitle": "Octavia E. Butler",
+  "year": 1993,
+  "meta": "320 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 55,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10466266-M.jpg",
+  "blurb": "“I had my recurring dream last night.”",
+  "popularity": 0.58,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.76,
+   "pacing": 0.68,
+   "character": 0.65,
+   "originality": 0.75,
+   "atmosphere": 0.85
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.65,
+   "emotion": 0.54
+  }
+ },
+ {
+  "id": "bk_OL20080323W",
+  "title": "Permanent Record",
+  "subtitle": "Edward Snowden",
+  "year": 2019,
+  "meta": "352 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 51,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8751316-M.jpg",
+  "blurb": "“The first thing I ever hacked was bedtime.”",
+  "popularity": 0.57,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.57,
+   "pacing": 0.7,
+   "character": 0.87,
+   "originality": 0.58,
+   "atmosphere": 0.59
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.53,
+   "emotion": 0.92
+  }
+ },
+ {
+  "id": "bk_OL15946464W",
+  "title": "The Throne of Fire",
+  "subtitle": "Rick Riordan",
+  "year": 2011,
+  "meta": "452 pp",
+  "genres": [
+   "Science Fiction",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 49,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6934834-M.jpg",
+  "blurb": "A science fiction standout readers keep coming back to.",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.63,
+   "plot": 0.76,
+   "pacing": 0.66,
+   "character": 0.65,
+   "originality": 0.81,
+   "atmosphere": 0.74
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.55,
+   "emotion": 0.63
+  }
+ },
+ {
+  "id": "bk_OL262554W",
+  "title": "The Complete Sherlock Holmes [4 novels, 56 stories]",
+  "subtitle": "Arthur Conan Doyle",
+  "year": 1900,
+  "meta": "1122 pp",
+  "genres": [
+   "Literary Fiction",
+   "Classics",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 47,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12501284-M.jpg",
+  "blurb": "“IN THE YEAR 1878 I took my degree of Doctor of Medicine of the University of London, and proceeded to Netley to go through the course prescribed for surgeons in the Army.”",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.82,
+   "plot": 0.77,
+   "pacing": 0.57,
+   "character": 0.75,
+   "originality": 0.62,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.74,
+   "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL17825802W",
+  "title": "Shoe Dog",
+  "subtitle": "Phil Knight",
+  "year": 2014,
+  "meta": "386 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 48,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8858487-M.jpg",
+  "blurb": "“I was up before the others, before the birds, before the sun.”",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.49,
+   "pacing": 0.65,
+   "character": 0.82,
+   "originality": 0.68,
+   "atmosphere": 0.57
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.59,
+   "emotion": 0.77
+  }
+ },
+ {
+  "id": "bk_OL274574W",
+  "title": "Crónica de una muerte anunciada",
+  "subtitle": "Gabriel García Márquez",
+  "year": 1980,
+  "meta": "134 pp",
+  "genres": [
+   "Magical Realism",
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 50,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8489859-M.jpg",
+  "blurb": "A magical realism standout readers keep coming back to.",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.85,
+   "plot": 0.58,
+   "pacing": 0.67,
+   "character": 0.8,
+   "originality": 0.75,
+   "atmosphere": 0.7
+  },
+  "tone": {
+   "darkness": 0.39,
+   "complexity": 0.57,
+   "emotion": 0.88
+  }
+ },
+ {
+  "id": "bk_OL35223328W",
+  "title": "Married at first sight",
+  "subtitle": "Gu Lingfei",
+  "year": 2015,
+  "meta": null,
+  "genres": [
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 44,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14312142-M.jpg",
+  "blurb": "A romance standout readers keep coming back to.",
+  "popularity": 0.55,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.63,
+   "pacing": 0.67,
+   "character": 0.96,
+   "originality": 0.5,
+   "atmosphere": 0.63
+  },
+  "tone": {
+   "darkness": 0.32,
+   "complexity": 0.48,
+   "emotion": 0.92
+  }
+ },
+ {
+  "id": "bk_OL14975242W",
+  "title": "Season of Mists",
+  "subtitle": "Neil Gaiman",
+  "year": 1991,
+  "meta": "224 pp",
+  "genres": [
+   "Horror",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 46,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/797933-M.jpg",
+  "blurb": "A horror standout readers keep coming back to.",
+  "popularity": 0.55,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.77,
+   "pacing": 0.67,
+   "character": 0.69,
+   "originality": 0.68,
+   "atmosphere": 0.91
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.54,
+   "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL17116910W",
+  "title": "The Nightingale",
+  "subtitle": "Kristin Hannah",
+  "year": 2000,
+  "meta": "560 pp",
+  "genres": [
+   "Romance",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 41,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8314147-M.jpg",
+  "blurb": "A romance standout readers keep coming back to.",
+  "popularity": 0.54,
+  "factors": {
+   "writing": 0.8,
+   "plot": 0.57,
+   "pacing": 0.7,
+   "character": 0.76,
+   "originality": 0.62,
+   "atmosphere": 0.67
+  },
+  "tone": {
+   "darkness": 0.41,
+   "complexity": 0.45,
+   "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL17718538W",
+  "title": "Queen of Shadows",
+  "subtitle": "Sarah J. Maas",
+  "year": 2015,
+  "meta": "672 pp",
+  "genres": [
+   "Romance",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 41,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7994583-M.jpg",
+  "blurb": "A romance standout readers keep coming back to.",
+  "popularity": 0.54,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.81,
+   "pacing": 0.75,
+   "character": 0.86,
+   "originality": 0.64,
+   "atmosphere": 0.72
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.4,
+   "emotion": 0.77
+  }
+ },
+ {
+  "id": "bk_OL457179W",
+  "title": "Midnight's Children",
+  "subtitle": "Salman Rushdie",
+  "year": 1981,
+  "meta": "556 pp",
+  "genres": [
+   "Magical Realism",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 3.9,
+   "count": 38,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8346713-M.jpg",
+  "blurb": "“I WAS BORN in the city of Bombay... once upon a time.”",
+  "popularity": 0.53,
+  "factors": {
+   "writing": 0.97,
+   "plot": 0.51,
+   "pacing": 0.44,
+   "character": 0.74,
+   "originality": 0.8,
+   "atmosphere": 0.83
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.74,
+   "emotion": 0.78
+  }
+ },
+ {
+  "id": "bk_OL43024W",
+  "title": "As a man thinketh",
+  "subtitle": "James Allen",
+  "year": 1902,
+  "meta": "44 pp",
+  "genres": [
+   "Philosophy"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 37,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6268048-M.jpg",
+  "blurb": "“The aphorism, \"As a man thinketh in his heart so is he,\" not only embraces the whole of a man's being, but is so comprehensive as to reach out to every condition and circumstance of his life.”",
+  "popularity": 0.52,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.43,
+   "pacing": 0.46,
+   "character": 0.37,
+   "originality": 0.77,
+   "atmosphere": 0.52
+  },
+  "tone": {
+   "darkness": 0.37,
+   "complexity": 0.75,
+   "emotion": 0.38
+  }
+ },
+ {
+  "id": "bk_OL17625829W",
+  "title": "Empire of Storms",
+  "subtitle": "Sarah J. Maas",
+  "year": 2016,
+  "meta": "704 pp",
+  "genres": [
+   "Romance",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.8,
+   "count": 32,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14349313-M.jpg",
+  "blurb": "A romance standout readers keep coming back to.",
+  "popularity": 0.5,
+  "factors": {
+   "writing": 0.59,
+   "plot": 0.65,
+   "pacing": 0.79,
+   "character": 0.74,
+   "originality": 0.66,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.4,
+   "complexity": 0.45,
+   "emotion": 0.82
+  }
+ },
+ {
+  "id": "bk_OL115602W",
+  "title": "Bud, Not Buddy",
+  "subtitle": "Christopher Paul Curtis",
+  "year": 1994,
+  "meta": "245 pp",
+  "genres": [
+   "Historical Fiction",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 31,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9342833-M.jpg",
+  "blurb": "A historical fiction standout readers keep coming back to.",
+  "popularity": 0.5,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.82,
+   "pacing": 0.76,
+   "character": 0.7,
+   "originality": 0.54,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.59,
+   "emotion": 0.65
+  }
+ },
+ {
+  "id": "bk_OL3506116W",
+  "title": "Sadako and the Thousand Paper Cranes",
+  "subtitle": "Eleanor Coerr",
+  "year": 1977,
+  "meta": "80 pp",
+  "genres": [
+   "Historical Fiction",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 30,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10870775-M.jpg",
+  "blurb": "“Sadako was born to be a runner.”",
+  "popularity": 0.49,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.84,
+   "pacing": 0.77,
+   "character": 0.83,
+   "originality": 0.68,
+   "atmosphere": 0.76
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.52,
+   "emotion": 0.66
+  }
+ },
+ {
+  "id": "bk_OL20736929W",
+  "title": "Heartstopper, Volume 3",
+  "subtitle": "Alice Oseman",
+  "year": 2020,
+  "meta": "384 pp",
+  "genres": [
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 28,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10846814-M.jpg",
+  "blurb": "A romance standout readers keep coming back to.",
+  "popularity": 0.48,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.66,
+   "pacing": 0.75,
+   "character": 0.82,
+   "originality": 0.53,
+   "atmosphere": 0.67
+  },
+  "tone": {
+   "darkness": 0.27,
+   "complexity": 0.4,
+   "emotion": 0.87
+  }
+ },
+ {
+  "id": "bk_OL59448W",
+  "title": "The Price of Salt",
+  "subtitle": "Patricia Highsmith",
+  "year": 1952,
+  "meta": "276 pp",
+  "genres": [
+   "Philosophy",
+   "Romance",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 27,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/250778-M.jpg",
+  "blurb": "“The lunch hour in the co-workers' cafeteria at Frankenberg's had reached its peak.”",
+  "popularity": 0.48,
+  "factors": {
+   "writing": 0.77,
+   "plot": 0.49,
+   "pacing": 0.56,
+   "character": 0.75,
+   "originality": 0.69,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.45,
+   "complexity": 0.68,
+   "emotion": 0.64
+  }
+ },
+ {
+  "id": "bk_OL17356063W",
+  "title": "Every Heart a Doorway",
+  "subtitle": "Seanan McGuire",
+  "year": 2016,
+  "meta": "176 pp",
+  "genres": [
+   "Magical Realism",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 3.9,
+   "count": 27,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7433973-M.jpg",
+  "blurb": "“The girls were never present for the entrance interviews.”",
+  "popularity": 0.48,
+  "factors": {
+   "writing": 0.73,
+   "plot": 0.76,
+   "pacing": 0.59,
+   "character": 0.71,
+   "originality": 0.73,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.46,
+   "complexity": 0.67,
+   "emotion": 0.68
+  }
+ },
+ {
+  "id": "bk_OL1167981W",
+  "title": "Animal Farm / Nineteen Eighty-Four",
+  "subtitle": "George Orwell",
+  "year": 1978,
+  "meta": "372 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 28,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10524365-M.jpg",
+  "blurb": "“a tone-matched alternative opening.”",
+  "popularity": 0.48,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.73,
+   "pacing": 0.68,
+   "character": 0.68,
+   "originality": 0.72,
+   "atmosphere": 0.78
+  },
+  "tone": {
+   "darkness": 0.59,
+   "complexity": 0.72,
+   "emotion": 0.64
+  }
+ },
+ {
+  "id": "bk_OL19669249W",
+  "title": "Percy Jackson's Greek heroes",
+  "subtitle": "Rick Riordan",
+  "year": 2015,
+  "meta": "520 pp",
+  "genres": [
+   "Classics",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.8,
+   "count": 25,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/13012029-M.jpg",
+  "blurb": "A classics standout readers keep coming back to.",
+  "popularity": 0.47,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.67,
+   "pacing": 0.64,
+   "character": 0.82,
+   "originality": 0.74,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.6,
+   "complexity": 0.68,
+   "emotion": 0.63
+  }
+ },
+ {
+  "id": "bk_OL953162W",
+  "title": "Como agua para chocolate",
+  "subtitle": "Laura Esquivel",
+  "year": 1989,
+  "meta": "246 pp",
+  "genres": [
+   "Magical Realism",
+   "Romance",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 25,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8372632-M.jpg",
+  "blurb": "“Take care to chop the onion fine.”",
+  "popularity": 0.47,
+  "factors": {
+   "writing": 0.81,
+   "plot": 0.63,
+   "pacing": 0.53,
+   "character": 0.76,
+   "originality": 0.81,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.46,
+   "complexity": 0.57,
+   "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL1905255W",
+  "title": "La casa de los espíritus",
+  "subtitle": "Isabel Allende",
+  "year": 1982,
+  "meta": "453 pp",
+  "genres": [
+   "Magical Realism",
+   "Literary Fiction",
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 24,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/3205226-M.jpg",
+  "blurb": "“Barrabas llego a la familia por via maritima, anoto la nina Clara con su delicada caligrafia.”",
+  "popularity": 0.46,
+  "factors": {
+   "writing": 0.86,
+   "plot": 0.6,
+   "pacing": 0.57,
+   "character": 0.82,
+   "originality": 0.73,
+   "atmosphere": 0.8
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.58,
+   "emotion": 0.78
+  }
+ },
+ {
+  "id": "bk_OL14917547W",
+  "title": "Works (Carrie / Night Shift / 'Salem's Lot / Shining)",
+  "subtitle": "Stephen King",
+  "year": 1981,
+  "meta": "992 pp",
+  "genres": [
+   "Mystery",
+   "Horror",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 4.8,
+   "count": 22,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12015639-M.jpg",
+  "blurb": "A mystery standout readers keep coming back to.",
+  "popularity": 0.45,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.74,
+   "pacing": 0.86,
+   "character": 0.67,
+   "originality": 0.68,
+   "atmosphere": 0.78
+  },
+  "tone": {
+   "darkness": 0.87,
+   "complexity": 0.49,
+   "emotion": 0.46
+  }
+ },
+ {
+  "id": "bk_OL1973442W",
+  "title": "Frog and Toad All Year",
+  "subtitle": "Arnold Lobel",
+  "year": 1976,
+  "meta": "64 pp",
+  "genres": [
+   "Classics",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.8,
+   "count": 20,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11305216-M.jpg",
+  "blurb": "A classics standout readers keep coming back to.",
+  "popularity": 0.44,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.75,
+   "pacing": 0.71,
+   "character": 0.81,
+   "originality": 0.67,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.61,
+   "emotion": 0.75
+  }
+ }
+]

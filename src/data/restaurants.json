@@ -1,0 +1,1380 @@
+[
+ {
+  "id": "rs_katz_s_delicatessen",
+  "title": "Katz's Delicatessen",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Deli"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 46000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "The century-old pastrami temple of the Lower East Side — order at the counter, keep your ticket.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.47,
+   "service": 0.55,
+   "value": 0.85,
+   "creativity": 0.47,
+   "comfort": 0.89
+  },
+  "tone": {
+   "liveliness": 0.57,
+   "formality": 0.18,
+   "adventure": 0.28
+  },
+  "popularity": 1
+ },
+ {
+  "id": "rs_caf_du_monde",
+  "title": "Café du Monde",
+  "subtitle": "New Orleans, LA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Bakery & Café"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 26000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Beignets and chicory café au lait, 24 hours a day since 1862.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.62,
+   "service": 0.55,
+   "value": 0.9,
+   "creativity": 0.56,
+   "comfort": 0.8
+  },
+  "tone": {
+   "liveliness": 0.54,
+   "formality": 0.14,
+   "adventure": 0.43
+  },
+  "popularity": 0.95
+ },
+ {
+  "id": "rs_reading_terminal_market",
+  "title": "Reading Terminal Market",
+  "subtitle": "Philadelphia, PA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Deli",
+   "American"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 27000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "A city block of roast pork sandwiches, whoopie pies, and Amish butter.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.58,
+   "service": 0.53,
+   "value": 0.9,
+   "creativity": 0.49,
+   "comfort": 0.78
+  },
+  "tone": {
+   "liveliness": 0.68,
+   "formality": 0.17,
+   "adventure": 0.34
+  },
+  "popularity": 0.95
+ },
+ {
+  "id": "rs_joe_s_pizza",
+  "title": "Joe's Pizza",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Pizza"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 17000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Greenwich Village's benchmark slice since 1975. No frills, no wrong answers.",
+  "factors": {
+   "food": 0.75,
+   "ambiance": 0.58,
+   "service": 0.55,
+   "value": 0.91,
+   "creativity": 0.57,
+   "comfort": 0.82
+  },
+  "tone": {
+   "liveliness": 0.6,
+   "formality": 0.1,
+   "adventure": 0.25
+  },
+  "popularity": 0.91
+ },
+ {
+  "id": "rs_pike_place_chowder",
+  "title": "Pike Place Chowder",
+  "subtitle": "Seattle, WA",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 15000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Award-hoarding chowder counter tucked in Post Alley by the market.",
+  "factors": {
+   "food": 0.87,
+   "ambiance": 0.75,
+   "service": 0.72,
+   "value": 0.46,
+   "creativity": 0.59,
+   "comfort": 0.74
+  },
+  "tone": {
+   "liveliness": 0.66,
+   "formality": 0.53,
+   "adventure": 0.54
+  },
+  "popularity": 0.9
+ },
+ {
+  "id": "rs_versailles",
+  "title": "Versailles",
+  "subtitle": "Miami, FL",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Latin"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 15000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "The world's most famous Cuban restaurant, cafecito ventanita included.",
+  "factors": {
+   "food": 0.46,
+   "ambiance": 0.51,
+   "service": 0.48,
+   "value": 0.53,
+   "creativity": 0.54,
+   "comfort": 0.58
+  },
+  "tone": {
+   "liveliness": 0.42,
+   "formality": 0.52,
+   "adventure": 0.46
+  },
+  "popularity": 0.9
+ },
+ {
+  "id": "rs_peter_luger_steak_house",
+  "title": "Peter Luger Steak House",
+  "subtitle": "Brooklyn, NY",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Steakhouse"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 14000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Dry-aged porterhouse in a beer-hall of a room that hasn't changed in a century.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.76,
+   "service": 0.9,
+   "value": 0.27,
+   "creativity": 0.55,
+   "comfort": 0.8
+  },
+  "tone": {
+   "liveliness": 0.56,
+   "formality": 1,
+   "adventure": 0.37
+  },
+  "popularity": 0.89
+ },
+ {
+  "id": "rs_los_tacos_no_1",
+  "title": "Los Tacos No. 1",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 13000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Adobada on a handmade tortilla, eaten standing up in Chelsea Market. Perfect.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.64,
+   "service": 0.51,
+   "value": 0.84,
+   "creativity": 0.57,
+   "comfort": 0.68
+  },
+  "tone": {
+   "liveliness": 0.75,
+   "formality": 0.13,
+   "adventure": 0.59
+  },
+  "popularity": 0.88
+ },
+ {
+  "id": "rs_joe_s_stone_crab",
+  "title": "Joe's Stone Crab",
+  "subtitle": "Miami, FL",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 12000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Stone crab claws with mustard sauce — Miami Beach's institution since 1913.",
+  "factors": {
+   "food": 0.79,
+   "ambiance": 0.68,
+   "service": 0.73,
+   "value": 0.4,
+   "creativity": 0.59,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.6,
+   "formality": 0.66,
+   "adventure": 0.4
+  },
+  "popularity": 0.87
+ },
+ {
+  "id": "rs_pequod_s_pizza",
+  "title": "Pequod's Pizza",
+  "subtitle": "Chicago, IL",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Pizza"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 10000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Pan pizza with a caramelized crust ring people cross the city for.",
+  "factors": {
+   "food": 0.74,
+   "ambiance": 0.54,
+   "service": 0.48,
+   "value": 0.82,
+   "creativity": 0.55,
+   "comfort": 0.93
+  },
+  "tone": {
+   "liveliness": 0.59,
+   "formality": 0.27,
+   "adventure": 0.26
+  },
+  "popularity": 0.86
+ },
+ {
+  "id": "rs_torchy_s_tacos",
+  "title": "Torchy's Tacos",
+  "subtitle": "Austin, TX",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 10000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Damn good tacos, queso with a green-chile kick, zero pretension.",
+  "factors": {
+   "food": 0.76,
+   "ambiance": 0.62,
+   "service": 0.59,
+   "value": 0.91,
+   "creativity": 0.5,
+   "comfort": 0.8
+  },
+  "tone": {
+   "liveliness": 0.77,
+   "formality": 0.18,
+   "adventure": 0.43
+  },
+  "popularity": 0.86
+ },
+ {
+  "id": "rs_girl_the_goat",
+  "title": "Girl & the Goat",
+  "subtitle": "Chicago, IL",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "New American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 9000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Stephanie Izard's wood-fired, share-everything Fulton Market crowd-pleaser.",
+  "factors": {
+   "food": 0.92,
+   "ambiance": 0.86,
+   "service": 0.69,
+   "value": 0.45,
+   "creativity": 0.81,
+   "comfort": 0.55
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.75,
+   "adventure": 0.82
+  },
+  "popularity": 0.85
+ },
+ {
+  "id": "rs_au_cheval",
+  "title": "Au Cheval",
+  "subtitle": "Chicago, IL",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Burgers",
+   "American"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 9000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "The diner-noir bar whose cheeseburger routinely tops national best-of lists.",
+  "factors": {
+   "food": 0.71,
+   "ambiance": 0.56,
+   "service": 0.61,
+   "value": 0.8,
+   "creativity": 0.52,
+   "comfort": 0.8
+  },
+  "tone": {
+   "liveliness": 0.58,
+   "formality": 0.16,
+   "adventure": 0.23
+  },
+  "popularity": 0.85
+ },
+ {
+  "id": "rs_lou_malnati_s_pizzeria",
+  "title": "Lou Malnati's Pizzeria",
+  "subtitle": "Chicago, IL",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Pizza"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Deep dish with the buttercrust that Chicagoans actually defend at parties.",
+  "factors": {
+   "food": 0.76,
+   "ambiance": 0.62,
+   "service": 0.58,
+   "value": 0.84,
+   "creativity": 0.5,
+   "comfort": 0.83
+  },
+  "tone": {
+   "liveliness": 0.61,
+   "formality": 0.15,
+   "adventure": 0.37
+  },
+  "popularity": 0.84
+ },
+ {
+  "id": "rs_franklin_barbecue",
+  "title": "Franklin Barbecue",
+  "subtitle": "Austin, TX",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Aaron Franklin's brisket — the queue is the pilgrimage, the bark is the reward.",
+  "factors": {
+   "food": 0.93,
+   "ambiance": 0.57,
+   "service": 0.61,
+   "value": 0.77,
+   "creativity": 0.54,
+   "comfort": 0.85
+  },
+  "tone": {
+   "liveliness": 0.64,
+   "formality": 0.18,
+   "adventure": 0.35
+  },
+  "popularity": 0.84
+ },
+ {
+  "id": "rs_house_of_prime_rib",
+  "title": "House of Prime Rib",
+  "subtitle": "San Francisco, CA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Steakhouse",
+   "American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Tableside carts, martinis, and prime rib served exactly one way: correctly.",
+  "factors": {
+   "food": 0.78,
+   "ambiance": 0.79,
+   "service": 0.7,
+   "value": 0.53,
+   "creativity": 0.45,
+   "comfort": 0.85
+  },
+  "tone": {
+   "liveliness": 0.6,
+   "formality": 0.72,
+   "adventure": 0.31
+  },
+  "popularity": 0.84
+ },
+ {
+  "id": "rs_howlin_ray_s",
+  "title": "Howlin' Ray's",
+  "subtitle": "Los Angeles, CA",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Soul Food",
+   "American"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 7000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Nashville hot chicken hot enough to make grown adults cry happily in Chinatown.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.6,
+   "service": 0.62,
+   "value": 0.74,
+   "creativity": 0.41,
+   "comfort": 0.8
+  },
+  "tone": {
+   "liveliness": 0.57,
+   "formality": 0.33,
+   "adventure": 0.29
+  },
+  "popularity": 0.82
+ },
+ {
+  "id": "rs_bestia",
+  "title": "Bestia",
+  "subtitle": "Los Angeles, CA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Italian"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 7000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Industrial-chic Arts District Italian; the bone marrow spinarello is non-negotiable.",
+  "factors": {
+   "food": 0.74,
+   "ambiance": 0.8,
+   "service": 0.71,
+   "value": 0.56,
+   "creativity": 0.51,
+   "comfort": 0.75
+  },
+  "tone": {
+   "liveliness": 0.58,
+   "formality": 0.57,
+   "adventure": 0.5
+  },
+  "popularity": 0.82
+ },
+ {
+  "id": "rs_commander_s_palace",
+  "title": "Commander's Palace",
+  "subtitle": "New Orleans, LA",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Cajun & Creole"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 7000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Turtle soup, 25-cent lunch martinis, and jazz brunch under the striped awning.",
+  "factors": {
+   "food": 0.84,
+   "ambiance": 0.66,
+   "service": 0.54,
+   "value": 0.53,
+   "creativity": 0.68,
+   "comfort": 0.76
+  },
+  "tone": {
+   "liveliness": 0.79,
+   "formality": 0.51,
+   "adventure": 0.6
+  },
+  "popularity": 0.82
+ },
+ {
+  "id": "rs_xi_an_famous_foods",
+  "title": "Xi'an Famous Foods",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Chinese"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Hand-ripped biang biang noodles and cumin lamb that built a cult from a Flushing stall.",
+  "factors": {
+   "food": 0.72,
+   "ambiance": 0.5,
+   "service": 0.66,
+   "value": 0.97,
+   "creativity": 0.52,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.64,
+   "formality": 0.21,
+   "adventure": 0.5
+  },
+  "popularity": 0.81
+ },
+ {
+  "id": "rs_zingerman_s_delicatessen",
+  "title": "Zingerman's Delicatessen",
+  "subtitle": "Ann Arbor, MI",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Deli",
+   "Bakery & Café"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "The corner deli that became a food empire; reubens worth a road trip.",
+  "factors": {
+   "food": 0.75,
+   "ambiance": 0.5,
+   "service": 0.56,
+   "value": 0.7,
+   "creativity": 0.44,
+   "comfort": 0.88
+  },
+  "tone": {
+   "liveliness": 0.52,
+   "formality": 0.31,
+   "adventure": 0.41
+  },
+  "popularity": 0.81
+ },
+ {
+  "id": "rs_tartine_bakery",
+  "title": "Tartine Bakery",
+  "subtitle": "San Francisco, CA",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Bakery & Café"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Morning buns and country loaves that rewired American baking.",
+  "factors": {
+   "food": 0.71,
+   "ambiance": 0.76,
+   "service": 0.59,
+   "value": 0.75,
+   "creativity": 0.54,
+   "comfort": 0.8
+  },
+  "tone": {
+   "liveliness": 0.41,
+   "formality": 0.28,
+   "adventure": 0.34
+  },
+  "popularity": 0.81
+ },
+ {
+  "id": "rs_cochon",
+  "title": "Cochon",
+  "subtitle": "New Orleans, LA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Cajun & Creole"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Donald Link's Cajun ode to the pig — boudin, cracklins, and rabbit dumplings.",
+  "factors": {
+   "food": 0.83,
+   "ambiance": 0.65,
+   "service": 0.68,
+   "value": 0.72,
+   "creativity": 0.63,
+   "comfort": 0.79
+  },
+  "tone": {
+   "liveliness": 0.77,
+   "formality": 0.42,
+   "adventure": 0.52
+  },
+  "popularity": 0.81
+ },
+ {
+  "id": "rs_gramercy_tavern",
+  "title": "Gramercy Tavern",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "New American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Danny Meyer's flagship: seasonal American cooking with famously warm service.",
+  "factors": {
+   "food": 0.86,
+   "ambiance": 0.71,
+   "service": 0.77,
+   "value": 0.24,
+   "creativity": 0.82,
+   "comfort": 0.63
+  },
+  "tone": {
+   "liveliness": 0.67,
+   "formality": 0.92,
+   "adventure": 0.7
+  },
+  "popularity": 0.79
+ },
+ {
+  "id": "rs_guelaguetza",
+  "title": "Guelaguetza",
+  "subtitle": "Los Angeles, CA",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "The Koreatown moles that earned a James Beard classic award — Oaxaca in LA.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.56,
+   "service": 0.58,
+   "value": 0.77,
+   "creativity": 0.54,
+   "comfort": 0.69
+  },
+  "tone": {
+   "liveliness": 0.81,
+   "formality": 0.36,
+   "adventure": 0.46
+  },
+  "popularity": 0.79
+ },
+ {
+  "id": "rs_republique",
+  "title": "Republique",
+  "subtitle": "Los Angeles, CA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "French",
+   "Bakery & Café"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Cathedral ceilings, pastry cases at dawn, steak frites at night.",
+  "factors": {
+   "food": 0.77,
+   "ambiance": 0.82,
+   "service": 0.7,
+   "value": 0.55,
+   "creativity": 0.7,
+   "comfort": 0.67
+  },
+  "tone": {
+   "liveliness": 0.48,
+   "formality": 0.62,
+   "adventure": 0.54
+  },
+  "popularity": 0.79
+ },
+ {
+  "id": "rs_paseo",
+  "title": "Paseo",
+  "subtitle": "Seattle, WA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Cajun & Creole"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Caribbean roast pork sandwiches with caramelized onions that ruin all other sandwiches.",
+  "factors": {
+   "food": 0.79,
+   "ambiance": 0.61,
+   "service": 0.65,
+   "value": 0.78,
+   "creativity": 0.58,
+   "comfort": 0.71
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.24,
+   "adventure": 0.48
+  },
+  "popularity": 0.79
+ },
+ {
+  "id": "rs_willie_mae_s_scotch_house",
+  "title": "Willie Mae's Scotch House",
+  "subtitle": "New Orleans, LA",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Soul Food"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "America's fried chicken, per the James Beard Foundation. The Tremé original.",
+  "factors": {
+   "food": 0.86,
+   "ambiance": 0.5,
+   "service": 0.62,
+   "value": 0.86,
+   "creativity": 0.58,
+   "comfort": 0.82
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.21,
+   "adventure": 0.46
+  },
+  "popularity": 0.79
+ },
+ {
+  "id": "rs_russ_daughters",
+  "title": "Russ & Daughters",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Deli",
+   "Bakery & Café"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Fourth-generation appetizing: silky lox, bagels, and a line that moves like church.",
+  "factors": {
+   "food": 0.7,
+   "ambiance": 0.63,
+   "service": 0.58,
+   "value": 0.71,
+   "creativity": 0.52,
+   "comfort": 0.89
+  },
+  "tone": {
+   "liveliness": 0.63,
+   "formality": 0.3,
+   "adventure": 0.26
+  },
+  "popularity": 0.77
+ },
+ {
+  "id": "rs_alinea",
+  "title": "Alinea",
+  "subtitle": "Chicago, IL",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "New American",
+   "French"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Grant Achatz's three-star theater of edible balloons and centerpiece desserts.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.85,
+   "service": 0.83,
+   "value": 0.27,
+   "creativity": 0.88,
+   "comfort": 0.63
+  },
+  "tone": {
+   "liveliness": 0.52,
+   "formality": 1,
+   "adventure": 0.79
+  },
+  "popularity": 0.77
+ },
+ {
+  "id": "rs_uchi",
+  "title": "Uchi",
+  "subtitle": "Austin, TX",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Japanese"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Tyson Cole's warm, inventive sushi ya that made Austin a food city.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.73,
+   "service": 0.82,
+   "value": 0.29,
+   "creativity": 0.82,
+   "comfort": 0.62
+  },
+  "tone": {
+   "liveliness": 0.37,
+   "formality": 0.79,
+   "adventure": 0.59
+  },
+  "popularity": 0.77
+ },
+ {
+  "id": "rs_zuni_caf",
+  "title": "Zuni Café",
+  "subtitle": "San Francisco, CA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "New American",
+   "Mediterranean"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "The roast chicken for two over bread salad — a San Francisco rite since 1979.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.71,
+   "service": 0.82,
+   "value": 0.43,
+   "creativity": 0.67,
+   "comfort": 0.69
+  },
+  "tone": {
+   "liveliness": 0.64,
+   "formality": 0.68,
+   "adventure": 0.7
+  },
+  "popularity": 0.77
+ },
+ {
+  "id": "rs_zahav",
+  "title": "Zahav",
+  "subtitle": "Philadelphia, PA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Mediterranean"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Michael Solomonov's modern Israeli — the hummus tehina changed the conversation.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.64,
+   "service": 0.66,
+   "value": 0.59,
+   "creativity": 0.58,
+   "comfort": 0.63
+  },
+  "tone": {
+   "liveliness": 0.53,
+   "formality": 0.45,
+   "adventure": 0.47
+  },
+  "popularity": 0.77
+ },
+ {
+  "id": "rs_la_barbecue",
+  "title": "La Barbecue",
+  "subtitle": "Austin, TX",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Brisket and beef ribs that Franklin loyalists whisper about switching for.",
+  "factors": {
+   "food": 0.84,
+   "ambiance": 0.46,
+   "service": 0.61,
+   "value": 0.65,
+   "creativity": 0.52,
+   "comfort": 0.77
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.28,
+   "adventure": 0.38
+  },
+  "popularity": 0.77
+ },
+ {
+  "id": "rs_momofuku_noodle_bar",
+  "title": "Momofuku Noodle Bar",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Korean",
+   "New American"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Where David Chang lit the fuse on pork buns and ramen-as-event.",
+  "factors": {
+   "food": 0.9,
+   "ambiance": 0.75,
+   "service": 0.71,
+   "value": 0.54,
+   "creativity": 0.73,
+   "comfort": 0.56
+  },
+  "tone": {
+   "liveliness": 0.71,
+   "formality": 0.59,
+   "adventure": 0.63
+  },
+  "popularity": 0.77
+ },
+ {
+  "id": "rs_le_bernardin",
+  "title": "Le Bernardin",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "French",
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Eric Ripert's temple to fish — precise, hushed, and worth every course.",
+  "factors": {
+   "food": 0.87,
+   "ambiance": 0.74,
+   "service": 0.85,
+   "value": 0.25,
+   "creativity": 0.72,
+   "comfort": 0.66
+  },
+  "tone": {
+   "liveliness": 0.56,
+   "formality": 0.82,
+   "adventure": 0.6
+  },
+  "popularity": 0.75
+ },
+ {
+  "id": "rs_suerte",
+  "title": "Suerte",
+  "subtitle": "Austin, TX",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Masa-obsessed East Austin Mexican — the suadero tacos are the stuff of legend.",
+  "factors": {
+   "food": 0.74,
+   "ambiance": 0.67,
+   "service": 0.65,
+   "value": 0.72,
+   "creativity": 0.49,
+   "comfort": 0.84
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.45,
+   "adventure": 0.55
+  },
+  "popularity": 0.75
+ },
+ {
+  "id": "rs_swan_oyster_depot",
+  "title": "Swan Oyster Depot",
+  "subtitle": "San Francisco, CA",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Eighteen stools, crab louie, and the friendliest counter in America. Cash only.",
+  "factors": {
+   "food": 0.87,
+   "ambiance": 0.67,
+   "service": 0.76,
+   "value": 0.61,
+   "creativity": 0.54,
+   "comfort": 0.61
+  },
+  "tone": {
+   "liveliness": 0.61,
+   "formality": 0.61,
+   "adventure": 0.51
+  },
+  "popularity": 0.75
+ },
+ {
+  "id": "rs_sqirl",
+  "title": "Sqirl",
+  "subtitle": "Los Angeles, CA",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Bakery & Café",
+   "New American"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Ricotta toast and sorrel rice bowls that launched a thousand brunch menus.",
+  "factors": {
+   "food": 0.75,
+   "ambiance": 0.81,
+   "service": 0.76,
+   "value": 0.52,
+   "creativity": 0.76,
+   "comfort": 0.68
+  },
+  "tone": {
+   "liveliness": 0.58,
+   "formality": 0.45,
+   "adventure": 0.59
+  },
+  "popularity": 0.75
+ },
+ {
+  "id": "rs_canlis",
+  "title": "Canlis",
+  "subtitle": "Seattle, WA",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "New American"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Midcentury landmark dining over Lake Union — Seattle's special-occasion room since 1950.",
+  "factors": {
+   "food": 0.89,
+   "ambiance": 0.82,
+   "service": 0.71,
+   "value": 0.25,
+   "creativity": 0.76,
+   "comfort": 0.62
+  },
+  "tone": {
+   "liveliness": 0.56,
+   "formality": 0.82,
+   "adventure": 0.82
+  },
+  "popularity": 0.75
+ },
+ {
+  "id": "rs_h_mart_food_court_k_town",
+  "title": "H Mart Food Court (K-Town)",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Korean"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Soondubu, japchae, and bulgogi under one buzzing food-hall roof.",
+  "factors": {
+   "food": 0.88,
+   "ambiance": 0.67,
+   "service": 0.56,
+   "value": 0.93,
+   "creativity": 0.66,
+   "comfort": 0.69
+  },
+  "tone": {
+   "liveliness": 0.66,
+   "formality": 0.25,
+   "adventure": 0.71
+  },
+  "popularity": 0.75
+ },
+ {
+  "id": "rs_superiority_burger",
+  "title": "Superiority Burger",
+  "subtitle": "New York, NY",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Vegetarian",
+   "Burgers"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "The veggie burger that made carnivores queue around the block in the East Village.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.59,
+   "service": 0.56,
+   "value": 0.89,
+   "creativity": 0.61,
+   "comfort": 0.66
+  },
+  "tone": {
+   "liveliness": 0.6,
+   "formality": 0.26,
+   "adventure": 0.43
+  },
+  "popularity": 0.71
+ },
+ {
+  "id": "rs_mister_jiu_s",
+  "title": "Mister Jiu's",
+  "subtitle": "San Francisco, CA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Chinese",
+   "New American"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Michelin-starred Cantonese in a grand Chinatown banquet hall.",
+  "factors": {
+   "food": 0.83,
+   "ambiance": 0.67,
+   "service": 0.63,
+   "value": 0.59,
+   "creativity": 0.65,
+   "comfort": 0.6
+  },
+  "tone": {
+   "liveliness": 0.63,
+   "formality": 0.53,
+   "adventure": 0.66
+  },
+  "popularity": 0.71
+ },
+ {
+  "id": "rs_night_market_song",
+  "title": "Night + Market Song",
+  "subtitle": "Los Angeles, CA",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Thai"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Kris Yenbamroong's party-Thai — larb, natural wine, and zero chill.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.6,
+   "service": 0.69,
+   "value": 0.79,
+   "creativity": 0.54,
+   "comfort": 0.66
+  },
+  "tone": {
+   "liveliness": 0.5,
+   "formality": 0.31,
+   "adventure": 0.5
+  },
+  "popularity": 0.71
+ }
+]
