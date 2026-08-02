@@ -1,7 +1,13 @@
-import { RotateCcw, Sliders } from "lucide-react";
+import { RotateCcw, Sliders, Target } from "lucide-react";
 import { paletteFor } from "../domains.js";
+import { GOAL_KEYS } from "../engine/suggest.mjs";
 
-export default function ProfileView({ domain, profile, shelf, onExplore, onReset }) {
+export default function ProfileView({ domain, profile, shelf, onExplore, onGoals, onReset }) {
+  const goals = profile.goals || [];
+  const toggleGoal = (g) => {
+    if (goals.includes(g)) onGoals(goals.filter((x) => x !== g));
+    else if (goals.length < 3) onGoals([...goals, g]);
+  };
   const topGenres = Object.entries(profile.genreWeights).filter(([, v]) => v > 0)
     .sort((a, b) => b[1] - a[1]).slice(0, 6);
   const avoidG = Object.entries(profile.genreWeights).filter(([, v]) => v < 0).sort((a, b) => a[1] - b[1]).slice(0, 4);
@@ -71,6 +77,23 @@ export default function ProfileView({ domain, profile, shelf, onExplore, onReset
         })}
         <p className="cat-no" style={{ marginTop: 10, lineHeight: 1.45 }}>
           Rate the elements of {domain.nounPlural} you've {domain.actions.consumedShort.toLowerCase()} (in your library) to reshape these — they steer the "what you weigh" part of every match.
+        </p>
+      </div>
+
+      <div className="card" style={{ marginBottom: 14 }}>
+        <div className="row" style={{ justifyContent: "space-between", marginBottom: 12 }}>
+          <div className="eyebrow"><Target size={12} style={{ verticalAlign: "-1px" }} /> Your goals</div>
+          <span className="cat-no">{goals.length}/3 · each gets a For-you row</span>
+        </div>
+        <div className="chips">
+          {GOAL_KEYS.map((g) => (
+            <span key={g} className={"chip" + (goals.includes(g) ? " on" : "")} onClick={() => toggleGoal(g)}>
+              {domain.goalLabels[g].chip}
+            </span>
+          ))}
+        </div>
+        <p className="cat-no" style={{ marginTop: 10, lineHeight: 1.45 }}>
+          Goals are promises we keep even when they cut against your pattern — each one becomes its own labeled suggestion row.
         </p>
       </div>
 

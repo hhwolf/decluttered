@@ -11,6 +11,8 @@ const DOMAINS = [
   ["books.json", ["writing", "plot", "pacing", "character", "originality", "atmosphere"], ["darkness", "complexity", "emotion"], 40],
   ["restaurants.json", ["food", "ambiance", "service", "value", "creativity", "comfort"], ["liveliness", "formality", "adventure"], 30],
   ["music.json", ["melody", "lyrics", "production", "rhythm", "vocals", "originality"], ["energy", "darkness", "density"], 40],
+  ["movies.json", ["story", "acting", "direction", "visuals", "pacing", "originality"], ["darkness", "intensity", "emotion"], 50],
+  ["tv.json", ["story", "characters", "writing", "acting", "production", "bingeability"], ["darkness", "complexity", "comfort"], 50],
 ];
 
 let pass = 0, fail = 0;
@@ -36,7 +38,8 @@ for (const [file, factors, tones, minCount] of DOMAINS) {
   check(t("rating values sane"), items.every((i) => {
     const v = i.rating.value;
     if (v == null) return false;
-    return i.rating.source === "Deezer" ? v >= 0 && v <= 100 : v >= 1 && v <= 5;
+    const scale = i.rating.scale || (i.rating.source === "Deezer" ? 100 : 5);
+    return v >= 0 && v <= scale;
   }));
   check(t("blurbs present"), items.every((i) => i.blurb && i.blurb.length > 8));
   // variance sanity: derived vectors must not be flat

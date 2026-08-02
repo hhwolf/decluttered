@@ -1,0 +1,3301 @@
+[
+ {
+  "id": "tv_169",
+  "title": "Breaking Bad",
+  "subtitle": "AMC",
+  "year": 2008,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 9.2,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253519.jpg",
+  "blurb": "Breaking Bad follows protagonist Walter White, a chemistry teacher who lives in New Mexico with his wife and teenage son who has cerebral palsy. White is diagnosed with Stage III cancer and given a pr…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/169/breaking-bad"
+  },
+  "popularity": 1,
+  "factors": {
+   "story": 0.87,
+   "characters": 0.82,
+   "writing": 0.83,
+   "acting": 0.77,
+   "production": 0.77,
+   "bingeability": 0.85
+  },
+  "tone": {
+   "darkness": 0.77,
+   "complexity": 0.78,
+   "comfort": 0.27
+  }
+ },
+ {
+  "id": "tv_82",
+  "title": "Game of Thrones",
+  "subtitle": "HBO",
+  "year": 2011,
+  "meta": "61 min eps",
+  "genres": [
+   "Drama",
+   "Adventure",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 8.9,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1245274.jpg",
+  "blurb": "Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawling new HBO drama is set in a world where summers span decades and winters can last a lifetime. From the s…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/82/game-of-thrones"
+  },
+  "popularity": 0.99,
+  "factors": {
+   "story": 0.78,
+   "characters": 0.81,
+   "writing": 0.75,
+   "acting": 0.68,
+   "production": 0.86,
+   "bingeability": 0.86
+  },
+  "tone": {
+   "darkness": 0.49,
+   "complexity": 0.57,
+   "comfort": 0.43
+  }
+ },
+ {
+  "id": "tv_2",
+  "title": "Person of Interest",
+  "subtitle": "CBS",
+  "year": 2011,
+  "meta": "60 min eps",
+  "genres": [
+   "Action",
+   "Crime",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.8,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/163/407679.jpg",
+  "blurb": "You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees e…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/2/person-of-interest"
+  },
+  "popularity": 0.98,
+  "factors": {
+   "story": 0.81,
+   "characters": 0.65,
+   "writing": 0.68,
+   "acting": 0.69,
+   "production": 0.75,
+   "bingeability": 0.92
+  },
+  "tone": {
+   "darkness": 0.72,
+   "complexity": 0.71,
+   "comfort": 0.39
+  }
+ },
+ {
+  "id": "tv_1825",
+  "title": "The Expanse",
+  "subtitle": "Prime Video",
+  "year": 2015,
+  "meta": "55 min eps",
+  "genres": [
+   "Science Fiction",
+   "Thriller",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.7,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1114081.jpg",
+  "blurb": "A thriller set two hundred years in the future, The Expanse follows the case of a missing young woman who brings a hardened detective and a rogue ship's captain together in a race across the solar sys…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/1825/the-expanse"
+  },
+  "popularity": 0.97,
+  "factors": {
+   "story": 0.89,
+   "characters": 0.64,
+   "writing": 0.78,
+   "acting": 0.67,
+   "production": 0.7,
+   "bingeability": 0.85
+  },
+  "tone": {
+   "darkness": 0.66,
+   "complexity": 0.73,
+   "comfort": 0.29
+  }
+ },
+ {
+  "id": "tv_618",
+  "title": "Better Call Saul",
+  "subtitle": "AMC",
+  "year": 2015,
+  "meta": "64 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Legal"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253515.jpg",
+  "blurb": "Better Call Saul is the prequel to the award-winning series Breaking Bad, set six years before Saul Goodman became Walter White's lawyer. When we meet him, the man who will become Saul Goodman is know…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/618/better-call-saul"
+  },
+  "popularity": 0.96,
+  "factors": {
+   "story": 0.94,
+   "characters": 0.8,
+   "writing": 0.77,
+   "acting": 0.9,
+   "production": 0.64,
+   "bingeability": 0.82
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.63,
+   "comfort": 0.43
+  }
+ },
+ {
+  "id": "tv_430",
+  "title": "The X-Files",
+  "subtitle": "FOX",
+  "year": 1993,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253511.jpg",
+  "blurb": "Two FBI agents, Fox Mulder (a believer) and Dana Scully (a skeptic), investigate unexplained cases where the paranormal might be involved while hidden forces work to impede their efforts.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/430/the-x-files"
+  },
+  "popularity": 0.95,
+  "factors": {
+   "story": 0.89,
+   "characters": 0.79,
+   "writing": 0.9,
+   "acting": 0.71,
+   "production": 0.85,
+   "bingeability": 0.69
+  },
+  "tone": {
+   "darkness": 0.73,
+   "complexity": 0.79,
+   "comfort": 0.45
+  }
+ },
+ {
+  "id": "tv_158",
+  "title": "Fringe",
+  "subtitle": "FOX",
+  "year": 2008,
+  "meta": "61 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2245.jpg",
+  "blurb": "When an international flight lands at Boston's Logan Airport and the passengers and crew have all died grisly deaths, FBI Special Agent Olivia Dunham is called in to investigate. After her partner is …",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/158/fringe"
+  },
+  "popularity": 0.94,
+  "factors": {
+   "story": 0.78,
+   "characters": 0.76,
+   "writing": 0.67,
+   "acting": 0.7,
+   "production": 0.89,
+   "bingeability": 0.88
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.73,
+   "comfort": 0.49
+  }
+ },
+ {
+  "id": "tv_32",
+  "title": "Fargo",
+  "subtitle": "FX",
+  "year": 2014,
+  "meta": "67 min eps",
+  "genres": [
+   "Drama",
+   "Comedy",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/487/1219631.jpg",
+  "blurb": "Fargo is a seasonal anthology crime drama with some dark comical elements, inspired by the film Fargo written by the Coen brothers. Each season follows a new case and new characters, all entrenched in…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/32/fargo"
+  },
+  "popularity": 0.93,
+  "factors": {
+   "story": 0.78,
+   "characters": 0.79,
+   "writing": 0.87,
+   "acting": 0.84,
+   "production": 0.67,
+   "bingeability": 0.88
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.63,
+   "comfort": 0.44
+  }
+ },
+ {
+  "id": "tv_37336",
+  "title": "Shōgun",
+  "subtitle": "Hulu",
+  "year": 2024,
+  "meta": "59 min eps",
+  "genres": [
+   "Drama",
+   "Adventure",
+   "History"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/506/1265637.jpg",
+  "blurb": "Shōgun is set in Japan in the year 1600 at the dawn of a century-defining civil war. Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a my…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/37336/shogun"
+  },
+  "popularity": 0.91,
+  "factors": {
+   "story": 0.72,
+   "characters": 0.86,
+   "writing": 0.84,
+   "acting": 0.79,
+   "production": 0.75,
+   "bingeability": 0.77
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.62,
+   "comfort": 0.4
+  }
+ },
+ {
+  "id": "tv_38963",
+  "title": "The Mandalorian",
+  "subtitle": "Disney+",
+  "year": 2019,
+  "meta": "40 min eps",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253498.jpg",
+  "blurb": "After the stories of Jango and Boba Fett, another warrior emerges in the Star Wars universe. The Mandalorian is set after the fall of the Empire and before the emergence of the First Order. We follow …",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/38963/the-mandalorian"
+  },
+  "popularity": 0.9,
+  "factors": {
+   "story": 0.79,
+   "characters": 0.6,
+   "writing": 0.6,
+   "acting": 0.73,
+   "production": 0.81,
+   "bingeability": 0.87
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.5,
+   "comfort": 0.49
+  }
+ },
+ {
+  "id": "tv_353",
+  "title": "Line of Duty",
+  "subtitle": "BBC One",
+  "year": 2012,
+  "meta": "62 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/199/499692.jpg",
+  "blurb": "A drama about the investigations of AC-12, a controversial Police Anti-Corruption Unit.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/353/line-of-duty"
+  },
+  "popularity": 0.89,
+  "factors": {
+   "story": 0.83,
+   "characters": 0.88,
+   "writing": 0.77,
+   "acting": 0.84,
+   "production": 0.75,
+   "bingeability": 0.78
+  },
+  "tone": {
+   "darkness": 0.75,
+   "complexity": 0.66,
+   "comfort": 0.38
+  }
+ },
+ {
+  "id": "tv_269",
+  "title": "Peaky Blinders",
+  "subtitle": "BBC One",
+  "year": 2013,
+  "meta": "61 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "History"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/48/122213.jpg",
+  "blurb": "An epic gangster drama set in the lawless streets of 1920s Birmingham.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/269/peaky-blinders"
+  },
+  "popularity": 0.88,
+  "factors": {
+   "story": 0.82,
+   "characters": 0.84,
+   "writing": 0.89,
+   "acting": 0.87,
+   "production": 0.67,
+   "bingeability": 0.66
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.78,
+   "comfort": 0.36
+  }
+ },
+ {
+  "id": "tv_150",
+  "title": "Shameless",
+  "subtitle": "Paramount+ with Showtime",
+  "year": 2011,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Comedy",
+   "Family"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/486/1215661.jpg",
+  "blurb": "Shameless is a fiercely engaging and fearlessly twisted series. Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps bette…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/150/shameless"
+  },
+  "popularity": 0.87,
+  "factors": {
+   "story": 0.71,
+   "characters": 0.87,
+   "writing": 0.74,
+   "acting": 0.73,
+   "production": 0.7,
+   "bingeability": 0.87
+  },
+  "tone": {
+   "darkness": 0.41,
+   "complexity": 0.57,
+   "comfort": 0.73
+  }
+ },
+ {
+  "id": "tv_2993",
+  "title": "Stranger Things",
+  "subtitle": "Netflix",
+  "year": 2016,
+  "meta": "65 min eps",
+  "genres": [
+   "Drama",
+   "Horror",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/595/1489169.jpg",
+  "blurb": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/2993/stranger-things"
+  },
+  "popularity": 0.86,
+  "factors": {
+   "story": 0.74,
+   "characters": 0.81,
+   "writing": 0.75,
+   "acting": 0.8,
+   "production": 0.73,
+   "bingeability": 0.74
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.73,
+   "comfort": 0.26
+  }
+ },
+ {
+  "id": "tv_1369",
+  "title": "Marvel's Daredevil",
+  "subtitle": "Netflix",
+  "year": 2015,
+  "meta": "55 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/171/429391.jpg",
+  "blurb": "Matt Murdock, a Marvel Comics hero who's a lawyer by day but fights the bad guys at night to avenge the murder of his father, a boxer. But what sets Matt apart from most superheroes isn't his back sto…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/1369/marvels-daredevil"
+  },
+  "popularity": 0.85,
+  "factors": {
+   "story": 0.84,
+   "characters": 0.73,
+   "writing": 0.82,
+   "acting": 0.75,
+   "production": 0.82,
+   "bingeability": 0.81
+  },
+  "tone": {
+   "darkness": 0.59,
+   "complexity": 0.63,
+   "comfort": 0.44
+  }
+ },
+ {
+  "id": "tv_305",
+  "title": "Black Mirror",
+  "subtitle": "Netflix",
+  "year": 2011,
+  "meta": "62 min eps",
+  "genres": [
+   "Drama",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/564/1411764.jpg",
+  "blurb": "Over the last ten years, technology has transformed almost every aspect of our lives before we've had time to stop and question it. In every home; on every desk; in every palm - a plasma screen; a mon…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/305/black-mirror"
+  },
+  "popularity": 0.84,
+  "factors": {
+   "story": 0.84,
+   "characters": 0.77,
+   "writing": 0.84,
+   "acting": 0.7,
+   "production": 0.72,
+   "bingeability": 0.8
+  },
+  "tone": {
+   "darkness": 0.77,
+   "complexity": 0.8,
+   "comfort": 0.32
+  }
+ },
+ {
+  "id": "tv_10",
+  "title": "Grimm",
+  "subtitle": "NBC",
+  "year": 2011,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Supernatural"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/69/174906.jpg",
+  "blurb": "Grimm is a drama series inspired by the classic Grimm Brothers' Fairy Tales. After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/10/grimm"
+  },
+  "popularity": 0.83,
+  "factors": {
+   "story": 0.81,
+   "characters": 0.85,
+   "writing": 0.81,
+   "acting": 0.74,
+   "production": 0.65,
+   "bingeability": 0.82
+  },
+  "tone": {
+   "darkness": 0.73,
+   "complexity": 0.6,
+   "comfort": 0.32
+  }
+ },
+ {
+  "id": "tv_15299",
+  "title": "The Boys",
+  "subtitle": "Prime Video",
+  "year": 2019,
+  "meta": "63 min eps",
+  "genres": [
+   "Action",
+   "Fantasy",
+   "Adult"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/619/1547768.jpg",
+  "blurb": "In a world where superheroes embrace the darker side of their massive celebrity and fame, The Boys centres on a group of vigilantes known informally as \"The Boys,\" who set out to take down corrupt sup…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/15299/the-boys"
+  },
+  "popularity": 0.82,
+  "factors": {
+   "story": 0.74,
+   "characters": 0.64,
+   "writing": 0.62,
+   "acting": 0.74,
+   "production": 0.94,
+   "bingeability": 0.85
+  },
+  "tone": {
+   "darkness": 0.49,
+   "complexity": 0.49,
+   "comfort": 0.51
+  }
+ },
+ {
+  "id": "tv_3593",
+  "title": "Taboo",
+  "subtitle": "BBC One",
+  "year": 2017,
+  "meta": "58 min eps",
+  "genres": [
+   "Drama",
+   "Thriller",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/137/343264.jpg",
+  "blurb": "1814: James Keziah Delaney returns to London from Africa and is encircled by conspiracy, murder and betrayal.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/3593/taboo"
+  },
+  "popularity": 0.81,
+  "factors": {
+   "story": 0.96,
+   "characters": 0.86,
+   "writing": 0.83,
+   "acting": 0.7,
+   "production": 0.79,
+   "bingeability": 0.9
+  },
+  "tone": {
+   "darkness": 0.66,
+   "complexity": 0.77,
+   "comfort": 0.36
+  }
+ },
+ {
+  "id": "tv_1859",
+  "title": "Lucifer",
+  "subtitle": "Netflix",
+  "year": 2016,
+  "meta": "58 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Supernatural"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/346/865655.jpg",
+  "blurb": "The Devil has come to Los Angeles…Based upon the characters created by Neil Gaiman, Sam Kieth and Mike Dringenberg for DC Entertainment's Vertigo imprint, Lucifer is the story of the original fallen a…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/1859/lucifer"
+  },
+  "popularity": 0.8,
+  "factors": {
+   "story": 0.85,
+   "characters": 0.73,
+   "writing": 0.7,
+   "acting": 0.74,
+   "production": 0.74,
+   "bingeability": 0.77
+  },
+  "tone": {
+   "darkness": 0.76,
+   "complexity": 0.63,
+   "comfort": 0.33
+  }
+ },
+ {
+  "id": "tv_210",
+  "title": "Doctor Who",
+  "subtitle": "BBC One",
+  "year": 2005,
+  "meta": "48 min eps",
+  "genres": [
+   "Drama",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/488/1220400.jpg",
+  "blurb": "Adventures across time and space with the time travelling alien and companions.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/210/doctor-who"
+  },
+  "popularity": 0.79,
+  "factors": {
+   "story": 0.76,
+   "characters": 0.76,
+   "writing": 0.74,
+   "acting": 0.78,
+   "production": 0.76,
+   "bingeability": 0.77
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.65,
+   "comfort": 0.53
+  }
+ },
+ {
+  "id": "tv_133",
+  "title": "Elementary",
+  "subtitle": "CBS",
+  "year": 2012,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/195/488201.jpg",
+  "blurb": "Elementary is a modern-day take on the classic Sherlock Holmes story about a crime-solving duo that cracks the NYPD's most impossible cases. Following his fall from grace in London and a stint in reha…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/133/elementary"
+  },
+  "popularity": 0.78,
+  "factors": {
+   "story": 0.96,
+   "characters": 0.73,
+   "writing": 0.75,
+   "acting": 0.85,
+   "production": 0.68,
+   "bingeability": 0.74
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.7,
+   "comfort": 0.31
+  }
+ },
+ {
+  "id": "tv_116",
+  "title": "The Mentalist",
+  "subtitle": "CBS",
+  "year": 2008,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/1239.jpg",
+  "blurb": "Patrick Jane, an independent consultant with the California Bureau of Investigation (CBI), has a remarkable track record for solving serious crimes by using his razor sharp skills of observation. With…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/116/the-mentalist"
+  },
+  "popularity": 0.77,
+  "factors": {
+   "story": 0.88,
+   "characters": 0.74,
+   "writing": 0.83,
+   "acting": 0.85,
+   "production": 0.67,
+   "bingeability": 0.82
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.71,
+   "comfort": 0.31
+  }
+ },
+ {
+  "id": "tv_19",
+  "title": "Supernatural",
+  "subtitle": "The CW",
+  "year": 2005,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Supernatural"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1114097.jpg",
+  "blurb": "This haunting series follows the Winchester brothers as they crisscross the lonely and mysterious back roads of the country in their '67 Chevy Impala, hunting down every evil supernatural force they e…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/19/supernatural"
+  },
+  "popularity": 0.75,
+  "factors": {
+   "story": 0.72,
+   "characters": 0.79,
+   "writing": 0.73,
+   "acting": 0.68,
+   "production": 0.7,
+   "bingeability": 0.82
+  },
+  "tone": {
+   "darkness": 0.66,
+   "complexity": 0.51,
+   "comfort": 0.4
+  }
+ },
+ {
+  "id": "tv_30770",
+  "title": "Chernobyl",
+  "subtitle": "HBO",
+  "year": 2019,
+  "meta": "70 min eps",
+  "genres": [
+   "Drama",
+   "History"
+  ],
+  "rating": {
+   "value": 8.9,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/193/482599.jpg",
+  "blurb": "Chernobyl dramatizes the true story of one of the worst man-made catastrophes in history and tells of the brave men and women who sacrificed to save Europe from unimaginable disaster. The miniseries f…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/30770/chernobyl"
+  },
+  "popularity": 0.74,
+  "factors": {
+   "story": 0.93,
+   "characters": 0.89,
+   "writing": 0.81,
+   "acting": 0.95,
+   "production": 0.78,
+   "bingeability": 0.64
+  },
+  "tone": {
+   "darkness": 0.74,
+   "complexity": 0.75,
+   "comfort": 0.45
+  }
+ },
+ {
+  "id": "tv_787",
+  "title": "The Twilight Zone",
+  "subtitle": "CBS",
+  "year": 1959,
+  "meta": "33 min eps",
+  "genres": [
+   "Science Fiction",
+   "Mystery",
+   "Supernatural"
+  ],
+  "rating": {
+   "value": 8.9,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/398/996733.jpg",
+  "blurb": "A groundbreaking series by Rod Serling, this half-hour anthology featured tales of the strange, the macabre, and the unusual. Some were science fiction, some were supernatural, and some defied easy ca…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/787/the-twilight-zone"
+  },
+  "popularity": 0.73,
+  "factors": {
+   "story": 0.84,
+   "characters": 0.66,
+   "writing": 0.77,
+   "acting": 0.76,
+   "production": 0.78,
+   "bingeability": 0.84
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.7,
+   "comfort": 0.49
+  }
+ },
+ {
+  "id": "tv_527",
+  "title": "The Sopranos",
+  "subtitle": "HBO",
+  "year": 1999,
+  "meta": "58 min eps",
+  "genres": [
+   "Drama",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.9,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/4/11341.jpg",
+  "blurb": "The Sopranos, writer-producer-director David Chase's extraordinary television series, is nominally an urban gangster drama, but its true impact strikes closer to home: Like 1999's other screen touchst…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/527/the-sopranos"
+  },
+  "popularity": 0.72,
+  "factors": {
+   "story": 0.81,
+   "characters": 0.82,
+   "writing": 0.91,
+   "acting": 0.93,
+   "production": 0.63,
+   "bingeability": 0.73
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.65,
+   "comfort": 0.42
+  }
+ },
+ {
+  "id": "tv_335",
+  "title": "Sherlock",
+  "subtitle": "BBC One",
+  "year": 2010,
+  "meta": "90 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.9,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/171/428042.jpg",
+  "blurb": "Sherlock Holmes and Dr. John Watson's adventures in 21st Century London. A thrilling, funny, fast-paced contemporary reimagining of the Arthur Conan Doyle classic.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/335/sherlock"
+  },
+  "popularity": 0.71,
+  "factors": {
+   "story": 0.85,
+   "characters": 0.88,
+   "writing": 0.78,
+   "acting": 0.82,
+   "production": 0.75,
+   "bingeability": 0.84
+  },
+  "tone": {
+   "darkness": 0.72,
+   "complexity": 0.67,
+   "comfort": 0.42
+  }
+ },
+ {
+  "id": "tv_180",
+  "title": "Firefly",
+  "subtitle": "FOX",
+  "year": 2002,
+  "meta": "64 min eps",
+  "genres": [
+   "Drama",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.9,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/1/2600.jpg",
+  "blurb": "Five hundred years in the future, a renegade crew aboard a small spacecraft tries to survive as they travel the unknown parts of the galaxy and evade warring factions as well as authority agents out t…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/180/firefly"
+  },
+  "popularity": 0.7,
+  "factors": {
+   "story": 0.8,
+   "characters": 0.68,
+   "writing": 0.79,
+   "acting": 0.79,
+   "production": 0.8,
+   "bingeability": 0.78
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.66,
+   "comfort": 0.4
+  }
+ },
+ {
+  "id": "tv_179",
+  "title": "The Wire",
+  "subtitle": "HBO",
+  "year": 2002,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.9,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/504/1260189.jpg",
+  "blurb": "The first season of The Wire (2002) concentrated on the often-futile efforts of police to infiltrate a West Baltimore drug ring headed by Avon Barksdale and his lieutenant, Stringer Bell. In Seasons T…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/179/the-wire"
+  },
+  "popularity": 0.69,
+  "factors": {
+   "story": 0.87,
+   "characters": 0.86,
+   "writing": 0.77,
+   "acting": 0.8,
+   "production": 0.77,
+   "bingeability": 0.8
+  },
+  "tone": {
+   "darkness": 0.66,
+   "complexity": 0.68,
+   "comfort": 0.39
+  }
+ },
+ {
+  "id": "tv_206",
+  "title": "Stargate Atlantis",
+  "subtitle": "Syfy",
+  "year": 2004,
+  "meta": "60 min eps",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.8,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1245482.jpg",
+  "blurb": "Atlantis, built thousands of years ago by the highly evolved Ancients, is home base for an elite expedition from Earth. These courageous military commanders and scientists leap through the city's Star…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/206/stargate-atlantis"
+  },
+  "popularity": 0.68,
+  "factors": {
+   "story": 0.69,
+   "characters": 0.75,
+   "writing": 0.65,
+   "acting": 0.7,
+   "production": 0.91,
+   "bingeability": 0.75
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.55,
+   "comfort": 0.59
+  }
+ },
+ {
+  "id": "tv_204",
+  "title": "Stargate SG·1",
+  "subtitle": "Syfy",
+  "year": 1997,
+  "meta": "60 min eps",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.8,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/1/3027.jpg",
+  "blurb": "Stargate SG-1 is a science fiction series based on the original film Stargate. It involves the team SG-1 going on various adventures to different alien worlds through Stargates. Throughout the series …",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/204/stargate-sg1"
+  },
+  "popularity": 0.67,
+  "factors": {
+   "story": 0.69,
+   "characters": 0.75,
+   "writing": 0.65,
+   "acting": 0.71,
+   "production": 0.91,
+   "bingeability": 0.74
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.55,
+   "comfort": 0.59
+  }
+ },
+ {
+  "id": "tv_491",
+  "title": "Star Trek: The Next Generation",
+  "subtitle": "Syndication",
+  "year": 1987,
+  "meta": "60 min eps",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.7,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/496/1242352.jpg",
+  "blurb": "Star Trek: The Next Generation (TNG) focuses on the 24th century adventures of Captain Jean-Luc Picard aboard the U.S.S. Enterprise (NCC-1701-D). This incarnation of the famous starship is much larger…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/491/star-trek-the-next-generation"
+  },
+  "popularity": 0.66,
+  "factors": {
+   "story": 0.67,
+   "characters": 0.66,
+   "writing": 0.76,
+   "acting": 0.58,
+   "production": 0.96,
+   "bingeability": 0.74
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.55,
+   "comfort": 0.51
+  }
+ },
+ {
+  "id": "tv_166",
+  "title": "Battlestar Galactica",
+  "subtitle": "Syfy",
+  "year": 2003,
+  "meta": "61 min eps",
+  "genres": [
+   "Drama",
+   "Science Fiction",
+   "War"
+  ],
+  "rating": {
+   "value": 8.7,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2313.jpg",
+  "blurb": "The world ended with no warning, and all that was left… was hope.A truce between the humans of the Twelve Colonies and the Cylons—intelligent robots designed by humankind—lasts for 40 tense and silent…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/166/battlestar-galactica"
+  },
+  "popularity": 0.65,
+  "factors": {
+   "story": 0.86,
+   "characters": 0.83,
+   "writing": 0.83,
+   "acting": 0.76,
+   "production": 0.89,
+   "bingeability": 0.71
+  },
+  "tone": {
+   "darkness": 0.73,
+   "complexity": 0.83,
+   "comfort": 0.29
+  }
+ },
+ {
+  "id": "tv_118",
+  "title": "House",
+  "subtitle": "FOX",
+  "year": 2004,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Medical"
+  ],
+  "rating": {
+   "value": 8.7,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/357/894990.jpg",
+  "blurb": "Sink your teeth into meaty drama and intrigue with House, FOX's take on mystery, where the villain is a medical malady and the hero is an irreverent, controversial doctor who trusts no one, least of a…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/118/house"
+  },
+  "popularity": 0.64,
+  "factors": {
+   "story": 0.83,
+   "characters": 0.74,
+   "writing": 0.82,
+   "acting": 0.85,
+   "production": 0.65,
+   "bingeability": 0.8
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.65,
+   "comfort": 0.37
+  }
+ },
+ {
+  "id": "tv_106",
+  "title": "Justified",
+  "subtitle": "FX",
+  "year": 2010,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Western"
+  ],
+  "rating": {
+   "value": 8.7,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/808.jpg",
+  "blurb": "Deputy U.S. Marshal Raylan Givens is something of a 19th century-style officer in modern times, whose unconventional enforcement of justice makes him a target with criminals and a problem for his supe…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/106/justified"
+  },
+  "popularity": 0.63,
+  "factors": {
+   "story": 0.85,
+   "characters": 0.85,
+   "writing": 0.84,
+   "acting": 0.79,
+   "production": 0.79,
+   "bingeability": 0.72
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.66,
+   "comfort": 0.33
+  }
+ },
+ {
+  "id": "tv_429",
+  "title": "Farscape",
+  "subtitle": "Syfy",
+  "year": 1999,
+  "meta": "60 min eps",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/3/7531.jpg",
+  "blurb": "Astronaut John Crichton assumes he'll be home in time for dinner. But a freak accident during an experimental space mission catapults him across a thousand galaxies to an alien battlefield. Suddenly, …",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/429/farscape"
+  },
+  "popularity": 0.62,
+  "factors": {
+   "story": 0.67,
+   "characters": 0.66,
+   "writing": 0.76,
+   "acting": 0.58,
+   "production": 0.79,
+   "bingeability": 0.84
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.55,
+   "comfort": 0.51
+  }
+ },
+ {
+  "id": "tv_164",
+  "title": "Banshee",
+  "subtitle": "Cinemax",
+  "year": 2013,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/504/1260183.jpg",
+  "blurb": "Banshee stars Antony Starr as Lucas Hood, an ex-con and master thief who assumes the identity of the sheriff of Banshee, Pennsylvania, where he continues his criminal activities, even as he's hunted b…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/164/banshee"
+  },
+  "popularity": 0.61,
+  "factors": {
+   "story": 0.79,
+   "characters": 0.79,
+   "writing": 0.77,
+   "acting": 0.73,
+   "production": 0.81,
+   "bingeability": 0.81
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.7,
+   "comfort": 0.38
+  }
+ },
+ {
+  "id": "tv_61",
+  "title": "Orphan Black",
+  "subtitle": "CTV Sci-Fi Channel",
+  "year": 2013,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/484/1210257.jpg",
+  "blurb": "Orphan Black is about Sarah, an outsider and orphan whose life changes dramatically after witnessing the suicide of a woman, \"Beth\", who looks just like her. Sarah takes her identity, her boyfriend an…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/61/orphan-black"
+  },
+  "popularity": 0.59,
+  "factors": {
+   "story": 0.85,
+   "characters": 0.72,
+   "writing": 0.83,
+   "acting": 0.73,
+   "production": 0.7,
+   "bingeability": 0.74
+  },
+  "tone": {
+   "darkness": 0.71,
+   "complexity": 0.77,
+   "comfort": 0.29
+  }
+ },
+ {
+  "id": "tv_29",
+  "title": "Vikings",
+  "subtitle": "History",
+  "year": 2013,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "History"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/286/715906.jpg",
+  "blurb": "Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore - and raid - the distant shores across the ocean.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/29/vikings"
+  },
+  "popularity": 0.58,
+  "factors": {
+   "story": 0.85,
+   "characters": 0.72,
+   "writing": 0.78,
+   "acting": 0.75,
+   "production": 0.8,
+   "bingeability": 0.72
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.57,
+   "comfort": 0.48
+  }
+ },
+ {
+  "id": "tv_41428",
+  "title": "The Queen's Gambit",
+  "subtitle": "Netflix",
+  "year": 2020,
+  "meta": "56 min eps",
+  "genres": [
+   "Drama"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/510/1275203.jpg",
+  "blurb": "Chronicling the life of an orphan chess prodigy, the story - set during the Cold War era - follows Beth Harmon from the age of eight to twenty-two, as she struggles with addiction in a quest to become…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/41428/the-queens-gambit"
+  },
+  "popularity": 0.57,
+  "factors": {
+   "story": 0.89,
+   "characters": 0.83,
+   "writing": 0.88,
+   "acting": 0.93,
+   "production": 0.69,
+   "bingeability": 0.78
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.8,
+   "comfort": 0.31
+  }
+ },
+ {
+  "id": "tv_1216",
+  "title": "Bosch",
+  "subtitle": "Prime Video",
+  "year": 2015,
+  "meta": "52 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/486/1215644.jpg",
+  "blurb": "Based on Michael Connelly's best-selling novels, Harry Bosch, an LAPD homicide detective, stands trial for the fatal shooting of a serial murder suspect. A cold case involving the remains of a missing…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/1216/bosch"
+  },
+  "popularity": 0.56,
+  "factors": {
+   "story": 0.86,
+   "characters": 0.83,
+   "writing": 0.77,
+   "acting": 0.86,
+   "production": 0.69,
+   "bingeability": 0.91
+  },
+  "tone": {
+   "darkness": 0.74,
+   "complexity": 0.7,
+   "comfort": 0.44
+  }
+ },
+ {
+  "id": "tv_526",
+  "title": "The Office",
+  "subtitle": "NBC",
+  "year": 2005,
+  "meta": "30 min eps",
+  "genres": [
+   "Comedy"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/481/1204342.jpg",
+  "blurb": "Steve Carell stars in The Office, a fresh and funny mockumentary-style glimpse into the daily interactions of the eccentric workers at the Dunder Mifflin paper supply company. Based on the smash-hit B…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/526/the-office"
+  },
+  "popularity": 0.55,
+  "factors": {
+   "story": 0.56,
+   "characters": 0.82,
+   "writing": 0.96,
+   "acting": 0.84,
+   "production": 0.48,
+   "bingeability": 0.78
+  },
+  "tone": {
+   "darkness": 0.24,
+   "complexity": 0.36,
+   "comfort": 0.9
+  }
+ },
+ {
+  "id": "tv_431",
+  "title": "Friends",
+  "subtitle": "NBC",
+  "year": 1994,
+  "meta": "30 min eps",
+  "genres": [
+   "Comedy",
+   "Romance"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/41/104565.jpg",
+  "blurb": "Six young (20-something) people from New York City (Manhattan), on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/431/friends"
+  },
+  "popularity": 0.54,
+  "factors": {
+   "story": 0.69,
+   "characters": 0.86,
+   "writing": 0.88,
+   "acting": 0.66,
+   "production": 0.66,
+   "bingeability": 0.71
+  },
+  "tone": {
+   "darkness": 0.33,
+   "complexity": 0.48,
+   "comfort": 0.89
+  }
+ },
+ {
+  "id": "tv_427",
+  "title": "Buffy the Vampire Slayer",
+  "subtitle": "UPN",
+  "year": 1997,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Supernatural"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/2/7490.jpg",
+  "blurb": "\"Into every generation, there is a chosen one. She alone will stand against the vampires, the demons, and the forces of darkness. She is the slayer.\"Buffy Summers is the latest in a line of young wome…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/427/buffy-the-vampire-slayer"
+  },
+  "popularity": 0.53,
+  "factors": {
+   "story": 0.68,
+   "characters": 0.73,
+   "writing": 0.79,
+   "acting": 0.65,
+   "production": 0.86,
+   "bingeability": 0.81
+  },
+  "tone": {
+   "darkness": 0.58,
+   "complexity": 0.52,
+   "comfort": 0.46
+  }
+ },
+ {
+  "id": "tv_157",
+  "title": "The Americans",
+  "subtitle": "FX",
+  "year": 2013,
+  "meta": "62 min eps",
+  "genres": [
+   "Drama",
+   "Espionage"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/146/366911.jpg",
+  "blurb": "The Americans is a period drama about the complex marriage of two KGB spies posing as Americans in suburban Washington D.C. shortly after Ronald Reagan is elected President.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/157/the-americans"
+  },
+  "popularity": 0.52,
+  "factors": {
+   "story": 0.84,
+   "characters": 0.83,
+   "writing": 0.75,
+   "acting": 0.79,
+   "production": 0.8,
+   "bingeability": 0.9
+  },
+  "tone": {
+   "darkness": 0.69,
+   "complexity": 0.81,
+   "comfort": 0.39
+  }
+ },
+ {
+  "id": "tv_10822",
+  "title": "MINDHUNTER",
+  "subtitle": "Netflix",
+  "year": 2017,
+  "meta": "54 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253490.jpg",
+  "blurb": "MINDHUNTER is based on the 1996 book Mind Hunter: Inside the FBI's Elite Serial Crime Unit, by former special agent John Douglas and Mark Olshaker. For years, Douglas pursued some of the most notoriou…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/10822/mindhunter"
+  },
+  "popularity": 0.51,
+  "factors": {
+   "story": 0.9,
+   "characters": 0.81,
+   "writing": 0.86,
+   "acting": 0.77,
+   "production": 0.73,
+   "bingeability": 0.85
+  },
+  "tone": {
+   "darkness": 0.74,
+   "complexity": 0.79,
+   "comfort": 0.4
+  }
+ },
+ {
+  "id": "tv_3594",
+  "title": "The Crown",
+  "subtitle": "Netflix",
+  "year": 2016,
+  "meta": "55 min eps",
+  "genres": [
+   "Drama",
+   "History"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/632/1580063.jpg",
+  "blurb": "The Crown tells the inside story of two of the most famous addresses in the world -- Buckingham Palace and 10 Downing Street - and the intrigues, love lives and machinations behind the great events th…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/3594/the-crown"
+  },
+  "popularity": 0.5,
+  "factors": {
+   "story": 0.94,
+   "characters": 0.94,
+   "writing": 0.85,
+   "acting": 0.78,
+   "production": 0.84,
+   "bingeability": 0.72
+  },
+  "tone": {
+   "darkness": 0.59,
+   "complexity": 0.78,
+   "comfort": 0.42
+  }
+ },
+ {
+  "id": "tv_2705",
+  "title": "Narcos",
+  "subtitle": "Netflix",
+  "year": 2015,
+  "meta": "52 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1246087.jpg",
+  "blurb": "Narcos chronicle the life and death of drug lord Pablo Escobar the ruthless boss of the Medellin Cartel and a known terrorist who was also a congressman, a family man and revered by the poor as a new …",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/2705/narcos"
+  },
+  "popularity": 0.49,
+  "factors": {
+   "story": 0.84,
+   "characters": 0.73,
+   "writing": 0.79,
+   "acting": 0.71,
+   "production": 0.68,
+   "bingeability": 0.77
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.55,
+   "comfort": 0.41
+  }
+ },
+ {
+  "id": "tv_766",
+  "title": "Doctor Who",
+  "subtitle": "BBC One",
+  "year": 1963,
+  "meta": "25 min eps",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/488/1221842.jpg",
+  "blurb": "Doctor Who is the longest-running science fiction TV series in history, airing initially from 1963 to 1989. Doctor Who is about ideas. It pioneered sophisticated mixed-level storytelling. Its format w…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/766/doctor-who"
+  },
+  "popularity": 0.48,
+  "factors": {
+   "story": 0.64,
+   "characters": 0.62,
+   "writing": 0.59,
+   "acting": 0.72,
+   "production": 0.87,
+   "bingeability": 0.87
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.6,
+   "comfort": 0.63
+  }
+ },
+ {
+  "id": "tv_670",
+  "title": "Luther",
+  "subtitle": "BBC One",
+  "year": 2010,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/179/448007.jpg",
+  "blurb": "A dark psychological crime drama starring Idris Elba as Luther, a man struggling with his own terrible demons, who might be as dangerous as the depraved murderers he hunts.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/670/luther"
+  },
+  "popularity": 0.47,
+  "factors": {
+   "story": 0.79,
+   "characters": 0.76,
+   "writing": 0.76,
+   "acting": 0.79,
+   "production": 0.68,
+   "bingeability": 0.87
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.73,
+   "comfort": 0.34
+  }
+ },
+ {
+  "id": "tv_532",
+  "title": "Scrubs",
+  "subtitle": "ABC",
+  "year": 2001,
+  "meta": "30 min eps",
+  "genres": [
+   "Drama",
+   "Comedy",
+   "Medical"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/4/11371.jpg",
+  "blurb": "Fresh out of medical school, new doctors John \"J.D.\" Dorian, his best friend Christopher Turk, and Elliot Reid start their internship at Sacred Heart Hospital. There, they meet the harsh Chief of Medi…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/532/scrubs"
+  },
+  "popularity": 0.46,
+  "factors": {
+   "story": 0.68,
+   "characters": 0.92,
+   "writing": 0.89,
+   "acting": 0.72,
+   "production": 0.64,
+   "bingeability": 0.82
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.5,
+   "comfort": 0.56
+  }
+ },
+ {
+  "id": "tv_493",
+  "title": "Star Trek: Deep Space Nine",
+  "subtitle": "Syndication",
+  "year": 1993,
+  "meta": "60 min eps",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/382/955996.jpg",
+  "blurb": "Star Trek: Deep Space Nine (DS9) focuses on the 24th century adventures of Captain Benjamin Sisko on space station Deep Space 9, an outpost situated near the mouth of a stable wormhole on the far reac…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/493/star-trek-deep-space-nine"
+  },
+  "popularity": 0.44,
+  "factors": {
+   "story": 0.67,
+   "characters": 0.66,
+   "writing": 0.76,
+   "acting": 0.58,
+   "production": 0.96,
+   "bingeability": 0.75
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.55,
+   "comfort": 0.51
+  }
+ },
+ {
+  "id": "tv_490",
+  "title": "Star Trek",
+  "subtitle": "NBC",
+  "year": 1966,
+  "meta": "60 min eps",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/496/1242166.jpg",
+  "blurb": "The original Star Trek series focuses on the 23rd century adventures of Captain James T. Kirk and the U.S.S. Enterprise (NCC-1701), a powerful interstellar spacecraft dispatched by Earth-based Starfle…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/490/star-trek"
+  },
+  "popularity": 0.43,
+  "factors": {
+   "story": 0.67,
+   "characters": 0.66,
+   "writing": 0.76,
+   "acting": 0.58,
+   "production": 0.96,
+   "bingeability": 0.74
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.55,
+   "comfort": 0.51
+  }
+ },
+ {
+  "id": "tv_475",
+  "title": "Babylon 5",
+  "subtitle": "TNT",
+  "year": 1993,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/80/200201.jpg",
+  "blurb": "\"It was the dawn of the Third Age of Mankind ten years after the Earth-Minbari War The Babylon Project was a dream given form. Its goal: to prevent another war by creating a place where Humans and ali…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/475/babylon-5"
+  },
+  "popularity": 0.42,
+  "factors": {
+   "story": 0.7,
+   "characters": 0.81,
+   "writing": 0.74,
+   "acting": 0.75,
+   "production": 0.82,
+   "bingeability": 0.8
+  },
+  "tone": {
+   "darkness": 0.56,
+   "complexity": 0.61,
+   "comfort": 0.45
+  }
+ },
+ {
+  "id": "tv_358",
+  "title": "Spartacus: Gods of the Arena",
+  "subtitle": "STARZ",
+  "year": 2011,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "History"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/2/5449.jpg",
+  "blurb": "The mini-series features the bloody history of the House of Batiatus and the city of Capua before the arrival of Spartacus. Quintus Lentulus Batiatus becomes a lanista (manager) when he takes over his…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/358/spartacus-gods-of-the-arena"
+  },
+  "popularity": 0.41,
+  "factors": {
+   "story": 0.74,
+   "characters": 0.85,
+   "writing": 0.71,
+   "acting": 0.81,
+   "production": 0.82,
+   "bingeability": 0.66
+  },
+  "tone": {
+   "darkness": 0.6,
+   "complexity": 0.59,
+   "comfort": 0.52
+  }
+ },
+ {
+  "id": "tv_306",
+  "title": "Broadchurch",
+  "subtitle": "ITV1",
+  "year": 2013,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/405/1014385.jpg",
+  "blurb": "David Tennant, Olivia Colman, Andrew Buchan and Jodie Whittaker, star in Broadchurch – a brand new powerful, thought provoking drama series by Kudos Film and Television for ITV.The sadness of losing a…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/306/broadchurch"
+  },
+  "popularity": 0.4,
+  "factors": {
+   "story": 0.85,
+   "characters": 0.8,
+   "writing": 0.86,
+   "acting": 0.73,
+   "production": 0.64,
+   "bingeability": 0.83
+  },
+  "tone": {
+   "darkness": 0.8,
+   "complexity": 0.77,
+   "comfort": 0.34
+  }
+ },
+ {
+  "id": "tv_182",
+  "title": "Black Sails",
+  "subtitle": "STARZ",
+  "year": 2014,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Adventure"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253514.jpg",
+  "blurb": "1715. The Golden Age of Piracy. New Providence Island is a lawless territory, controlled by history's most notorious pirate captains. The most feared is Captain Flint.As the British Navy returns to re…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/182/black-sails"
+  },
+  "popularity": 0.39,
+  "factors": {
+   "story": 0.72,
+   "characters": 0.65,
+   "writing": 0.73,
+   "acting": 0.78,
+   "production": 0.79,
+   "bingeability": 0.8
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.54,
+   "comfort": 0.46
+  }
+ },
+ {
+  "id": "tv_161",
+  "title": "Dexter",
+  "subtitle": "Paramount+ with Showtime",
+  "year": 2006,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1246067.jpg",
+  "blurb": "He's smart, he's good looking, and he's got a great sense of humor. He's Dexter Morgan, everyone's favorite serial killer. As a Miami forensics expert, he spends his days solving crimes, and nights co…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/161/dexter"
+  },
+  "popularity": 0.38,
+  "factors": {
+   "story": 0.88,
+   "characters": 0.82,
+   "writing": 0.83,
+   "acting": 0.76,
+   "production": 0.76,
+   "bingeability": 0.83
+  },
+  "tone": {
+   "darkness": 0.73,
+   "complexity": 0.8,
+   "comfort": 0.31
+  }
+ },
+ {
+  "id": "tv_143",
+  "title": "Silicon Valley",
+  "subtitle": "HBO",
+  "year": 2014,
+  "meta": "30 min eps",
+  "genres": [
+   "Comedy"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/215/538434.jpg",
+  "blurb": "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. From Mike Judge comes this satire about a programmer whose game-cha…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/143/silicon-valley"
+  },
+  "popularity": 0.37,
+  "factors": {
+   "story": 0.71,
+   "characters": 0.77,
+   "writing": 0.81,
+   "acting": 0.81,
+   "production": 0.53,
+   "bingeability": 0.92
+  },
+  "tone": {
+   "darkness": 0.3,
+   "complexity": 0.48,
+   "comfort": 0.87
+  }
+ },
+ {
+  "id": "tv_102",
+  "title": "Boardwalk Empire",
+  "subtitle": "HBO",
+  "year": 2010,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/405/1012589.jpg",
+  "blurb": "As the country struggles to cope with the Great Depression and the end of Prohibition looms, Nucky Thompson looks to legitimize himself through alliances with liquor producers, while rivals Lucky Luci…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/102/boardwalk-empire"
+  },
+  "popularity": 0.36,
+  "factors": {
+   "story": 0.87,
+   "characters": 0.87,
+   "writing": 0.85,
+   "acting": 0.79,
+   "production": 0.76,
+   "bingeability": 0.76
+  },
+  "tone": {
+   "darkness": 0.83,
+   "complexity": 0.7,
+   "comfort": 0.31
+  }
+ },
+ {
+  "id": "tv_1871",
+  "title": "Mr. Robot",
+  "subtitle": "USA Network",
+  "year": 2015,
+  "meta": "61 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/211/528026.jpg",
+  "blurb": "Mr. Robot follows Elliot, a young programmer who works as a cyber-security engineer by day and as a vigilante hacker by night. Elliot finds himself at a crossroads when the mysterious leader of an und…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/1871/mr-robot"
+  },
+  "popularity": 0.35,
+  "factors": {
+   "story": 0.8,
+   "characters": 0.74,
+   "writing": 0.82,
+   "acting": 0.77,
+   "production": 0.72,
+   "bingeability": 0.87
+  },
+  "tone": {
+   "darkness": 0.8,
+   "complexity": 0.78,
+   "comfort": 0.38
+  }
+ },
+ {
+  "id": "tv_804",
+  "title": "Strike Back",
+  "subtitle": "Cinemax",
+  "year": 2010,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "War"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/485/1213247.jpg",
+  "blurb": "Strike Back is a British/American action and military television series, based on a novel of the same name by novelist and former Special Air Service (SAS) soldier Chris Ryan. The series follows the a…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/804/strike-back"
+  },
+  "popularity": 0.34,
+  "factors": {
+   "story": 0.69,
+   "characters": 0.79,
+   "writing": 0.71,
+   "acting": 0.77,
+   "production": 0.84,
+   "bingeability": 0.69
+  },
+  "tone": {
+   "darkness": 0.67,
+   "complexity": 0.62,
+   "comfort": 0.44
+  }
+ },
+ {
+  "id": "tv_530",
+  "title": "Seinfeld",
+  "subtitle": "NBC",
+  "year": 1989,
+  "meta": "30 min eps",
+  "genres": [
+   "Comedy"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/83/207960.jpg",
+  "blurb": "Seinfeld is the story of a fictionalized version of stand-up comedian Jerry Seinfeld, his life in New York City and his quirky group of friends who join him in wrestling with life's most perplexing, y…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/530/seinfeld"
+  },
+  "popularity": 0.33,
+  "factors": {
+   "story": 0.56,
+   "characters": 0.91,
+   "writing": 0.95,
+   "acting": 0.84,
+   "production": 0.57,
+   "bingeability": 0.87
+  },
+  "tone": {
+   "darkness": 0.24,
+   "complexity": 0.35,
+   "comfort": 0.81
+  }
+ },
+ {
+  "id": "tv_492",
+  "title": "Star Trek: Voyager",
+  "subtitle": "UPN",
+  "year": 1995,
+  "meta": "60 min eps",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/362/907309.jpg",
+  "blurb": "Star Trek: Voyager (VOY) focuses on the 24th century adventures of Captain Kathryn Janeway aboard the U.S.S. Voyager. Smaller than either Kirk's or Picard's starships—its crew complement is only 150—V…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/492/star-trek-voyager"
+  },
+  "popularity": 0.32,
+  "factors": {
+   "story": 0.66,
+   "characters": 0.66,
+   "writing": 0.76,
+   "acting": 0.58,
+   "production": 0.96,
+   "bingeability": 0.74
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.55,
+   "comfort": 0.51
+  }
+ },
+ {
+  "id": "tv_318",
+  "title": "Community",
+  "subtitle": "Yahoo! View",
+  "year": 2009,
+  "meta": "30 min eps",
+  "genres": [
+   "Comedy"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/2/5134.jpg",
+  "blurb": "Community is a smart, exuberant comedy that is consistently ranked as one of the most inventive and original half-hours on television. This ensemble comedy centers around a tight-knit group of friends…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/318/community"
+  },
+  "popularity": 0.31,
+  "factors": {
+   "story": 0.69,
+   "characters": 0.84,
+   "writing": 0.92,
+   "acting": 0.68,
+   "production": 0.5,
+   "bingeability": 0.86
+  },
+  "tone": {
+   "darkness": 0.35,
+   "complexity": 0.46,
+   "comfort": 0.9
+  }
+ },
+ {
+  "id": "tv_62",
+  "title": "The Originals",
+  "subtitle": "The CW",
+  "year": 2013,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Romance",
+   "Supernatural"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/271/678632.jpg",
+  "blurb": "The Originals is a spin-off show from the supernatural drama The Vampire Diaries. It is based in the city of New Orleans where the originals represent the original vampires. The show is primarily base…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/62/the-originals"
+  },
+  "popularity": 0.3,
+  "factors": {
+   "story": 0.76,
+   "characters": 0.78,
+   "writing": 0.78,
+   "acting": 0.72,
+   "production": 0.62,
+   "bingeability": 0.71
+  },
+  "tone": {
+   "darkness": 0.58,
+   "complexity": 0.59,
+   "comfort": 0.48
+  }
+ },
+ {
+  "id": "tv_465",
+  "title": "Band of Brothers",
+  "subtitle": "HBO",
+  "year": 2001,
+  "meta": "59 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "War"
+  ],
+  "rating": {
+   "value": 9,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/80/201679.jpg",
+  "blurb": "Drawn from interviews with survivors of Easy Company, as well as their journals and letters, Band of Brothers chronicles the experiences of these men from paratrooper training in Georgia through the e…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/465/band-of-brothers"
+  },
+  "popularity": 0.28,
+  "factors": {
+   "story": 0.79,
+   "characters": 0.86,
+   "writing": 0.85,
+   "acting": 0.8,
+   "production": 0.82,
+   "bingeability": 0.74
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.59,
+   "comfort": 0.49
+  }
+ },
+ {
+  "id": "tv_748",
+  "title": "Oz",
+  "subtitle": "HBO",
+  "year": 1997,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.7,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/6/15172.jpg",
+  "blurb": "HBO's violent men-behind-bars drama is an addictive, testosterone-driven soap opera for guys. The eight episodes of the first season set the style for the show: a massive cast of a vivid characters on…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/748/oz"
+  },
+  "popularity": 0.27,
+  "factors": {
+   "story": 0.87,
+   "characters": 0.81,
+   "writing": 0.76,
+   "acting": 0.9,
+   "production": 0.77,
+   "bingeability": 0.83
+  },
+  "tone": {
+   "darkness": 0.75,
+   "complexity": 0.63,
+   "comfort": 0.36
+  }
+ },
+ {
+  "id": "tv_539",
+  "title": "The IT Crowd",
+  "subtitle": "Channel 4",
+  "year": 2006,
+  "meta": "30 min eps",
+  "genres": [
+   "Comedy"
+  ],
+  "rating": {
+   "value": 8.7,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/4/11405.jpg",
+  "blurb": "The comedic misadventures of Roy, Moss and their grifting supervisor Jen, a rag-tag team of IT support workers at a large corporation headed by a hotheaded yuppie.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/539/the-it-crowd"
+  },
+  "popularity": 0.26,
+  "factors": {
+   "story": 0.57,
+   "characters": 0.91,
+   "writing": 0.95,
+   "acting": 0.83,
+   "production": 0.56,
+   "bingeability": 0.88
+  },
+  "tone": {
+   "darkness": 0.23,
+   "complexity": 0.36,
+   "comfort": 0.81
+  }
+ },
+ {
+  "id": "tv_251",
+  "title": "Downton Abbey",
+  "subtitle": "ITV1",
+  "year": 2010,
+  "meta": "71 min eps",
+  "genres": [
+   "Drama",
+   "Family",
+   "Romance"
+  ],
+  "rating": {
+   "value": 8.7,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/1/4601.jpg",
+  "blurb": "The Downton Abbey estate stands a splendid example of confidence and mettle, its family enduring for generations and its staff a well-oiled machine of propriety. But change is afoot at Downton--change…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/251/downton-abbey"
+  },
+  "popularity": 0.25,
+  "factors": {
+   "story": 0.79,
+   "characters": 0.94,
+   "writing": 0.81,
+   "acting": 0.7,
+   "production": 0.57,
+   "bingeability": 0.77
+  },
+  "tone": {
+   "darkness": 0.46,
+   "complexity": 0.47,
+   "comfort": 0.68
+  }
+ },
+ {
+  "id": "tv_554",
+  "title": "Dark Angel",
+  "subtitle": "FOX",
+  "year": 2000,
+  "meta": "61 min eps",
+  "genres": [
+   "Action",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/4/11610.jpg",
+  "blurb": "In the year 2019 the U.S. has become a third world country in the wake of the Pulse - an electromagnetic shockwave unleashed by nuclear terrorists in 2009. This is Max's world, an unforgiving place ev…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/554/dark-angel"
+  },
+  "popularity": 0.24,
+  "factors": {
+   "story": 0.68,
+   "characters": 0.72,
+   "writing": 0.67,
+   "acting": 0.66,
+   "production": 0.89,
+   "bingeability": 0.75
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.56,
+   "comfort": 0.55
+  }
+ },
+ {
+  "id": "tv_523",
+  "title": "The West Wing",
+  "subtitle": "NBC",
+  "year": 1999,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/4/11284.jpg",
+  "blurb": "The entire White House staff bristles with activity when it's learned that the President injured himself during a bicycle accident, and his absence becomes a factor as chief of staff Leo McGarry must …",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/523/the-west-wing"
+  },
+  "popularity": 0.23,
+  "factors": {
+   "story": 0.79,
+   "characters": 0.87,
+   "writing": 0.92,
+   "acting": 0.79,
+   "production": 0.62,
+   "bingeability": 0.63
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.65,
+   "comfort": 0.45
+  }
+ },
+ {
+  "id": "tv_716",
+  "title": "Spartacus",
+  "subtitle": "STARZ",
+  "year": 2010,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "History"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/354/886339.jpg",
+  "blurb": "Betrayed by his country. Beaten into slavery. Reborn as a warrior. Spartacus is a graphic and visceral account of Rome's most famous gladiator. When he is separated from the love of his life, Spartacu…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/716/spartacus"
+  },
+  "popularity": 0.22,
+  "factors": {
+   "story": 0.69,
+   "characters": 0.73,
+   "writing": 0.77,
+   "acting": 0.75,
+   "production": 0.77,
+   "bingeability": 0.68
+  },
+  "tone": {
+   "darkness": 0.56,
+   "complexity": 0.65,
+   "comfort": 0.56
+  }
+ },
+ {
+  "id": "tv_665",
+  "title": "M*A*S*H",
+  "subtitle": "CBS",
+  "year": 1972,
+  "meta": "31 min eps",
+  "genres": [
+   "Comedy",
+   "War",
+   "Medical"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/5/14728.jpg",
+  "blurb": "Loosely based on the real-life M*A*S*H unit 8055, life at the 4077 revolved around the day-to-day routines of Captain \"Hawkeye\" Pierce, Captain \"Trapper\" McIntyre, Lieutenant Colonel Henry Blake, Majo…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/665/mash"
+  },
+  "popularity": 0.21,
+  "factors": {
+   "story": 0.82,
+   "characters": 0.8,
+   "writing": 0.75,
+   "acting": 0.86,
+   "production": 0.66,
+   "bingeability": 0.82
+  },
+  "tone": {
+   "darkness": 0.49,
+   "complexity": 0.5,
+   "comfort": 0.47
+  }
+ },
+ {
+  "id": "tv_542",
+  "title": "Eureka",
+  "subtitle": "Syfy",
+  "year": 2006,
+  "meta": "61 min eps",
+  "genres": [
+   "Drama",
+   "Comedy",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/183/459344.jpg",
+  "blurb": "With the help of Albert Einstein and other trusted advisors, President Harry S. Truman commissioned a top-secret residential development in a remote area of the Pacific Northwest, one that would serve…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/542/eureka"
+  },
+  "popularity": 0.2,
+  "factors": {
+   "story": 0.71,
+   "characters": 0.88,
+   "writing": 0.83,
+   "acting": 0.77,
+   "production": 0.73,
+   "bingeability": 0.71
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.59,
+   "comfort": 0.6
+  }
+ },
+ {
+  "id": "tv_473",
+  "title": "Veronica Mars",
+  "subtitle": "Hulu",
+  "year": 2004,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/9/24539.jpg",
+  "blurb": "In the wealthy, seaside community of Neptune, the rich and powerful make the rules. They own the town and are desperately trying to keep their dirty little secrets just that... secret. Unfortunately f…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/473/veronica-mars"
+  },
+  "popularity": 0.19,
+  "factors": {
+   "story": 0.8,
+   "characters": 0.88,
+   "writing": 0.82,
+   "acting": 0.81,
+   "production": 0.7,
+   "bingeability": 0.86
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.68,
+   "comfort": 0.36
+  }
+ },
+ {
+  "id": "tv_677",
+  "title": "Rome",
+  "subtitle": "HBO",
+  "year": 2005,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Adventure"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253509.jpg",
+  "blurb": "Four hundred years after the founding of the Republic, Rome is the wealthiest city in the world. The Republic was founded on principals of shared power, never allowing one man to seize absolute contro…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/677/rome"
+  },
+  "popularity": 0.18,
+  "factors": {
+   "story": 0.64,
+   "characters": 0.69,
+   "writing": 0.64,
+   "acting": 0.7,
+   "production": 0.78,
+   "bingeability": 0.83
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.58,
+   "comfort": 0.54
+  }
+ },
+ {
+  "id": "tv_151",
+  "title": "The Newsroom",
+  "subtitle": "HBO",
+  "year": 2012,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2066.jpg",
+  "blurb": "The Newsroom follows the members of a cable news team on their quixotic mission to do the news well in the face of a fickle audience, corporate mandates and tangled personal relationships.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/151/the-newsroom"
+  },
+  "popularity": 0.17,
+  "factors": {
+   "story": 0.85,
+   "characters": 0.92,
+   "writing": 0.78,
+   "acting": 0.84,
+   "production": 0.78,
+   "bingeability": 0.79
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.8,
+   "comfort": 0.42
+  }
+ },
+ {
+  "id": "tv_64",
+  "title": "Utopia",
+  "subtitle": "Channel 4",
+  "year": 2013,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/275/688620.jpg",
+  "blurb": "Utopia based initially around a small group of people who find a rare manuscript of the same name. This leads the group to be targeted by a large organisation with little knowledge of the manuscript's…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/64/utopia"
+  },
+  "popularity": 0.16,
+  "factors": {
+   "story": 0.85,
+   "characters": 0.71,
+   "writing": 0.83,
+   "acting": 0.73,
+   "production": 0.7,
+   "bingeability": 0.73
+  },
+  "tone": {
+   "darkness": 0.71,
+   "complexity": 0.76,
+   "comfort": 0.28
+  }
+ },
+ {
+  "id": "tv_1678",
+  "title": "Poldark",
+  "subtitle": "BBC One",
+  "year": 2015,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/144/360117.jpg",
+  "blurb": "Britain is in the grip of a chilling recession... falling wages, rising prices, civil unrest - only the bankers are smiling. It's 1783 and Ross Poldark returns from the American War of Independence to…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/1678/poldark"
+  },
+  "popularity": 0.15,
+  "factors": {
+   "story": 0.7,
+   "characters": 0.97,
+   "writing": 0.7,
+   "acting": 0.9,
+   "production": 0.6,
+   "bingeability": 0.8
+  },
+  "tone": {
+   "darkness": 0.46,
+   "complexity": 0.54,
+   "comfort": 0.62
+  }
+ },
+ {
+  "id": "tv_790",
+  "title": "The Unit",
+  "subtitle": "CBS",
+  "year": 2006,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/87/219977.jpg",
+  "blurb": "The Unit is a covert Special Forces team that does not exist. Their cover is the 303rd logistical studies group. They are assigned covert military operations by the President and never get credit for …",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/790/the-unit"
+  },
+  "popularity": 0.14,
+  "factors": {
+   "story": 0.79,
+   "characters": 0.71,
+   "writing": 0.67,
+   "acting": 0.84,
+   "production": 0.73,
+   "bingeability": 0.8
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.62,
+   "comfort": 0.53
+  }
+ },
+ {
+  "id": "tv_464",
+  "title": "The Pacific",
+  "subtitle": "HBO",
+  "year": 2010,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Action",
+   "War"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/444/1111650.jpg",
+  "blurb": "The Pacific is an epic ten-part miniseries. The Pacific tracks the intertwined real-life stories of three U.S. Marines – Robert Leckie, John Basilone, and Eugene Sledge – across the vast canvas of the…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/464/the-pacific"
+  },
+  "popularity": 0.12,
+  "factors": {
+   "story": 0.79,
+   "characters": 0.86,
+   "writing": 0.84,
+   "acting": 0.79,
+   "production": 0.82,
+   "bingeability": 0.74
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.59,
+   "comfort": 0.49
+  }
+ },
+ {
+  "id": "tv_434",
+  "title": "Warehouse 13",
+  "subtitle": "Syfy",
+  "year": 2009,
+  "meta": "61 min eps",
+  "genres": [
+   "Drama",
+   "Science Fiction",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/43/109000.jpg",
+  "blurb": "After saving the life of the President, two Secret Service agents find themselves abruptly transferred to Warehouse 13 -- a massive, top-secret storage facility in windswept South Dakota that houses e…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/434/warehouse-13"
+  },
+  "popularity": 0.11,
+  "factors": {
+   "story": 0.89,
+   "characters": 0.77,
+   "writing": 0.89,
+   "acting": 0.68,
+   "production": 0.85,
+   "bingeability": 0.7
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.81,
+   "comfort": 0.46
+  }
+ },
+ {
+  "id": "tv_395",
+  "title": "Longmire",
+  "subtitle": "Netflix",
+  "year": 2012,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Thriller",
+   "Western"
+  ],
+  "rating": {
+   "value": 8.3,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/74/186713.jpg",
+  "blurb": "Longmire, a contemporary crime thriller set in Big Sky country, is based on the Walt Longmire Mystery novels by best-selling author Craig Johnson. It focuses on a Wyoming sheriff who's rebuilding his …",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/395/longmire"
+  },
+  "popularity": 0.1,
+  "factors": {
+   "story": 0.81,
+   "characters": 0.88,
+   "writing": 0.86,
+   "acting": 0.75,
+   "production": 0.69,
+   "bingeability": 0.79
+  },
+  "tone": {
+   "darkness": 0.81,
+   "complexity": 0.72,
+   "comfort": 0.33
+  }
+ },
+ {
+  "id": "tv_565",
+  "title": "Deadwood",
+  "subtitle": "HBO",
+  "year": 2004,
+  "meta": "60 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Western"
+  ],
+  "rating": {
+   "value": 8.7,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/4/11724.jpg",
+  "blurb": "The outlaw camp of Deadwood marches slowly towards civilization, facing its first elections. But the power struggles continue over everything in Deadwood—influence, money, and whores—as the founding c…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/565/deadwood"
+  },
+  "popularity": 0.09,
+  "factors": {
+   "story": 0.88,
+   "characters": 0.91,
+   "writing": 0.89,
+   "acting": 0.82,
+   "production": 0.75,
+   "bingeability": 0.76
+  },
+  "tone": {
+   "darkness": 0.69,
+   "complexity": 0.71,
+   "comfort": 0.45
+  }
+ },
+ {
+  "id": "tv_663",
+  "title": "The Shield",
+  "subtitle": "FX",
+  "year": 2002,
+  "meta": "61 min eps",
+  "genres": [
+   "Drama",
+   "Crime"
+  ],
+  "rating": {
+   "value": 8.6,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/55/138892.jpg",
+  "blurb": "Detective Vic Mackey is the leader of an elite Strike Team unit, a group of cops effective at eliminating crime but also operating under Vic's own set of rules. But his rules sometimes cross the fine …",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/663/the-shield"
+  },
+  "popularity": 0.08,
+  "factors": {
+   "story": 0.94,
+   "characters": 0.81,
+   "writing": 0.77,
+   "acting": 0.91,
+   "production": 0.67,
+   "bingeability": 0.82
+  },
+  "tone": {
+   "darkness": 0.66,
+   "complexity": 0.63,
+   "comfort": 0.3
+  }
+ },
+ {
+  "id": "tv_2094",
+  "title": "Only Fools and Horses....",
+  "subtitle": "BBC One",
+  "year": 1981,
+  "meta": "35 min eps",
+  "genres": [
+   "Comedy"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/11/29077.jpg",
+  "blurb": "Classic John Sullivan sitcom set in south London, centred on hapless market trader Del Boy, his brother Rodney, the rest of the Trotter clan and a host of Peckham characters.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/2094/only-fools-and-horses"
+  },
+  "popularity": 0.07,
+  "factors": {
+   "story": 0.57,
+   "characters": 0.94,
+   "writing": 0.81,
+   "acting": 0.8,
+   "production": 0.62,
+   "bingeability": 0.8
+  },
+  "tone": {
+   "darkness": 0.28,
+   "complexity": 0.38,
+   "comfort": 0.9
+  }
+ },
+ {
+  "id": "tv_1268",
+  "title": "Endeavour",
+  "subtitle": "ITV1",
+  "year": 2012,
+  "meta": "120 min eps",
+  "genres": [
+   "Drama",
+   "Crime",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 8.4,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/449/1123748.jpg",
+  "blurb": "The early days of a young Endeavour Morse, whose experiences as a detective constable with the Oxford City Police will ultimately shape his future.",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/1268/endeavour"
+  },
+  "popularity": 0.06,
+  "factors": {
+   "story": 0.85,
+   "characters": 0.75,
+   "writing": 0.87,
+   "acting": 0.77,
+   "production": 0.69,
+   "bingeability": 0.83
+  },
+  "tone": {
+   "darkness": 0.74,
+   "complexity": 0.71,
+   "comfort": 0.45
+  }
+ },
+ {
+  "id": "tv_577",
+  "title": "Fawlty Towers",
+  "subtitle": "BBC Two",
+  "year": 1975,
+  "meta": "30 min eps",
+  "genres": [
+   "Comedy"
+  ],
+  "rating": {
+   "value": 8.5,
+   "count": null,
+   "scale": 10,
+   "source": "TVMaze"
+  },
+  "image": "https://static.tvmaze.com/uploads/images/medium_portrait/4/11842.jpg",
+  "blurb": "Fawlty Towers is set in a fictional hotel in the seaside town of Torquay. The plots centre on tense, rude and put-upon owner Basil Fawlty, his bossy wife Sybil, comparatively normal chambermaid Polly,…",
+  "links": {
+   "tvmaze": "https://www.tvmaze.com/shows/577/fawlty-towers"
+  },
+  "popularity": 0.05,
+  "factors": {
+   "story": 0.66,
+   "characters": 0.83,
+   "writing": 0.86,
+   "acting": 0.74,
+   "production": 0.47,
+   "bingeability": 0.76
+  },
+  "tone": {
+   "darkness": 0.32,
+   "complexity": 0.46,
+   "comfort": 0.9
+  }
+ }
+]

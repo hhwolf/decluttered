@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
-import { Compass, Library as LibraryIcon, Users, User, BookOpen, UtensilsCrossed, Music } from "lucide-react";
+import { Compass, Library as LibraryIcon, Users, User, BookOpen, UtensilsCrossed, Music, Film, Tv, Sparkles } from "lucide-react";
 import { DOMAINS, DOMAIN_KEYS } from "./domains.js";
 import { updateProfileFromAction, applyRating } from "./engine/engine.mjs";
 import { CSS, clamp } from "./ui/bits.jsx";
 import Onboarding from "./ui/Onboarding.jsx";
 import Discover from "./ui/Discover.jsx";
+import ForYou from "./ui/ForYou.jsx";
 import LibraryView from "./ui/Library.jsx";
 import Feed, { seedFeed } from "./ui/Feed.jsx";
 import ProfileView from "./ui/Profile.jsx";
@@ -20,7 +21,7 @@ const store = {
   },
 };
 
-const DOMAIN_ICONS = { books: BookOpen, restaurants: UtensilsCrossed, music: Music };
+const DOMAIN_ICONS = { books: BookOpen, movies: Film, tv: Tv, restaurants: UtensilsCrossed, music: Music };
 
 const emptyDomainState = (key) => ({
   onboarded: false, profile: null, onboardingData: null, shelf: {}, feed: seedFeed(DOMAINS[key]),
@@ -114,11 +115,16 @@ export default function App() {
     const cur = s[active];
     return { ...s, [active]: { ...cur, profile: { ...cur.profile, explore: clamp(v) } } };
   });
+  const setGoals = (goals) => setStates((s) => {
+    const cur = s[active];
+    return { ...s, [active]: { ...cur, profile: { ...cur.profile, goals } } };
+  });
   const setFeed = (feed) => patch({ feed });
   const reset = () => { patch(emptyDomainState(active)); setView("discover"); };
 
   const tabs = [
     { k: "discover", label: "Discover", Icon: Compass },
+    { k: "foryou", label: "For you", Icon: Sparkles },
     { k: "library", label: "Library", Icon: LibraryIcon },
     { k: "feed", label: "Feed", Icon: Users },
     { k: "profile", label: "Profile", Icon: User },
@@ -129,7 +135,7 @@ export default function App() {
       <style>{CSS}</style>
       <div className="taste-shell">
         <div className="taste-top">
-          <div className="taste-mark">Taste <span className="dot">/ ONE ENGINE, THREE CRAVINGS</span></div>
+          <div className="taste-mark">Decluttered <span className="dot">/ ONE ENGINE, FIVE CRAVINGS</span></div>
           {ds.onboarded && <span className="cat-no">№ {String(ds.profile?.interactions || 0).padStart(3, "0")}</span>}
         </div>
 
@@ -157,12 +163,15 @@ export default function App() {
                 <Discover domain={domain} profile={ds.profile} shelf={ds.shelf}
                   onAction={handleAction} onExplore={setExplore} />
               )}
+              {view === "foryou" && (
+                <ForYou domain={domain} profile={ds.profile} shelf={ds.shelf} onAction={handleAction} />
+              )}
               {view === "library" && (
                 <LibraryView domain={domain} shelf={ds.shelf} onMove={moveShelf} onRemove={removeShelf} onRate={handleRate} />
               )}
               {view === "feed" && <Feed domain={domain} feed={ds.feed} setFeed={setFeed} shelf={ds.shelf} />}
               {view === "profile" && (
-                <ProfileView domain={domain} profile={ds.profile} shelf={ds.shelf} onExplore={setExplore} onReset={reset} />
+                <ProfileView domain={domain} profile={ds.profile} shelf={ds.shelf} onExplore={setExplore} onGoals={setGoals} onReset={reset} />
               )}
             </div>
             <div className="tabbar">

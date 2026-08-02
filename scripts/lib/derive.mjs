@@ -40,6 +40,17 @@ export function logPopularity(count, maxCount) {
   return Math.round(clamp(v, 0.05, 1) * 100) / 100;
 }
 
+// Rank-percentile popularity: position within THIS catalogue (0.05..1).
+// Right choice when every item is famous in absolute terms (curated canons,
+// chart sweeps) — keeps a real novelty spread for the explore dial.
+export function assignPercentilePopularity(list, countOf) {
+  const sorted = [...list].sort((a, b) => countOf(a) - countOf(b));
+  const n = Math.max(sorted.length - 1, 1);
+  sorted.forEach((it, i) => {
+    it.popularity = Math.round((0.05 + 0.95 * (i / n)) * 100) / 100;
+  });
+}
+
 export async function getJSON(url, opts = {}) {
   const res = await fetch(url, opts);
   if (!res.ok) throw new Error(`${res.status} ${res.statusText} for ${url}`);

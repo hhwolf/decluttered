@@ -21,7 +21,11 @@ export function seedFeed(domain) {
       "Hot take: a great room with mid food beats great food in a sad room. Fight me."],
     music: ["Had this on repeat all week. The bridge is doing something illegal.",
       "Hot take: a perfect 2:45 single beats any 6-minute epic."],
-  }[domain.key];
+    movies: ["Watched it twice in one weekend. The last twenty minutes earn everything.",
+      "Hot take: a tight 100 minutes beats a baggy masterpiece every single time."],
+    tv: ["Three episodes in I cancelled my plans. It knows exactly what it's doing.",
+      "Hot take: a great finale is rarer than a great pilot — judge shows by how they land."],
+  }[domain.key] || ["Believe the hype on this one.", "Hot take: taste beats trend, every time."];
   return [
     { id: "s1", userId: "u_mara", type: "rated", itemId: it(5), rating: 5, text: verbs[0], ts: now - 1000 * 60 * 42, likes: 14, likedByMe: false, comments: [{ user: "u_dev", text: "adding to my list right now" }] },
     { id: "s2", userId: "u_dev", type: "note", text: verbs[1], ts: now - 1000 * 60 * 60 * 3, likes: 9, likedByMe: false, comments: [] },

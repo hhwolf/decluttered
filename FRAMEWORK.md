@@ -80,3 +80,39 @@ from).
 - Proprietary signal starts at swipe #1: every action writes to a profile the
   user can see (Profile tab shows the live weights) — the transparency
   incumbents lack.
+
+---
+
+## Expansion 2 — media-first: movies & TV (2026-08-02)
+
+The framework's wedge is the cross-domain taste graph, and media is where
+cross-domain signal is densest: the person who loves atmospheric literary
+fantasy, slow-burn sci-fi cinema, and prestige crime television is *one*
+taste, observed three ways. This update makes the app media-first — **Shelf ·
+Screen · Series · Queue**, with Table (restaurants) retained — and adds the
+two layers the swipe deck alone couldn't provide:
+
+**1. Suggestions beyond pattern recognition.** Pattern-matching recommenders
+converge on "more of the same." The For You system runs seven mechanisms in
+parallel — profile pattern, stated factor priorities, external-rating
+consensus, hidden gems, tone/mood proximity, deliberate anti-pattern
+stretching, and stated goals — and labels every row with the mechanism and
+reason. The user always knows *why* something surfaced, and the mechanisms
+that ignore the pattern (stretch, goals, consensus) are exactly the ones that
+generate the preference data a pure similarity loop never collects.
+
+**2. Goals as first-class signal.** Taste is what you reach for; goals are
+what you wish you reached for. Decluttered treats them separately: goals are
+declared (onboarding step 7, editable in Profile), capped at three, and each
+one becomes a standing suggestion row honored even when it contradicts the
+swipe-learned pattern. Closing the taste-vs-aspiration gap is a product
+promise no incumbent recommender makes.
+
+### Media API map (researched + verified 2026-08-02)
+
+| Domain | Source | Key? | What we take |
+|---|---|---|---|
+| TV | **TVMaze** | none | real community ratings (0–10), genres, art, popularity weight → 90 shows |
+| Movies | **Wikipedia REST** + curated IMDb snapshot | none | poster art + synopses over 69 landmark films with public IMDb rating values |
+| Movies (live) | TMDB `/discover` | `TMDB_API_KEY` (free) | vote_average/vote_count/popularity + posters |
+| Movies (dead end) | iTunes Search | — | returns zero movie results as of mid-2026; documented, not used |

@@ -1,7 +1,8 @@
 import { useState, useMemo } from "react";
-import { ChevronRight, ChevronLeft, Sparkles } from "lucide-react";
+import { ChevronRight, ChevronLeft, Sparkles, Check } from "lucide-react";
 import { buildInitialProfile } from "../engine/engine.mjs";
-import { allGenres } from "../domains.js";
+import { GOAL_KEYS } from "../engine/suggest.mjs";
+import { allGenres, paletteFor } from "../domains.js";
 import { ItemPicker, toggleSel } from "./bits.jsx";
 
 export default function Onboarding({ domain, onDone }) {
@@ -12,6 +13,7 @@ export default function Onboarding({ domain, onDone }) {
   const [surpriseIds, setSurpriseIds] = useState([]);
   const [avoidIds, setAvoidIds] = useState([]);
   const [weights, setWeights] = useState(Object.fromEntries(domain.factors.map((k) => [k, 0.5])));
+  const [goals, setGoals] = useState([]);
   const [explore, setExplore] = useState(0.3);
 
   const GENRES = useMemo(() => allGenres(domain), [domain]);
@@ -37,8 +39,12 @@ export default function Onboarding({ domain, onDone }) {
       sub: `Optional. ${plural[0].toUpperCase() + plural.slice(1)} you disliked — we'll steer clear of their fingerprint.` },
     { key: "weights", title: `What makes a ${noun} for you?`, eyebrow: "Step 6 · What you weigh",
       sub: "Drag toward what matters most." },
-    { key: "explore", title: "How far should we wander?", eyebrow: "Step 7 · The dial",
+    { key: "goals", title: "What are you here for?", eyebrow: "Step 7 · Your goals",
+      sub: "Optional, up to 3. Goals get their own suggestion rows — honored even when they cut against your usual taste." },
+    { key: "explore", title: "How far should we wander?", eyebrow: "Step 8 · The dial",
       sub: "Stay close to your taste, or let us push you somewhere new. You can change this any time." },
+    { key: "confirm", title: "Here's what we heard", eyebrow: "Step 9 · Confirm your taste profile",
+      sub: "This is the profile your deck and suggestions will run on. If something reads wrong, go back and fix it — or open the deck and correct it by swiping." },
   ];
   const cur = steps[step];
   const last = steps.length - 1;
@@ -47,7 +53,7 @@ export default function Onboarding({ domain, onDone }) {
     cur.key === "genres" ? genres.length >= 1 :
     cur.key === "fav" ? favIds.length >= 3 : true;
 
-  const finish = () => {
+  const buildProfile = () => {
     const profile = buildInitialProfile(domain, {
       genres, avoidGenres,
       favoriteItems: favIds.map(byId),
@@ -55,8 +61,18 @@ export default function Onboarding({ domain, onDone }) {
       avoidItems: avoidIds.map(byId),
       weights, explore,
     });
-    onDone(profile, { genres, avoidGenres, favIds, surpriseIds, avoidIds, weights, explore });
+    profile.goals = goals; // engine ignores goals; the suggester honors them
+    return profile;
   };
+  const finish = () => {
+    onDone(buildProfile(), { genres, avoidGenres, favIds, surpriseIds, avoidIds, weights, goals, explore });
+  };
+  // live preview of the derived profile for the confirmation step
+  const preview = useMemo(
+    () => (cur.key === "confirm" ? buildProfile() : null),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [step]
+  );
 
   return (
     <div className="taste-body" style={{ paddingTop: 14 }}>
@@ -134,6 +150,73 @@ export default function Onboarding({ domain, onDone }) {
         </div>
       )}
 
+      {cur.key === "goals" && (
+        <>
+          <p className="cat-no" style={{ marginBottom: 12 }}>{goals.length} of 3 selected</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {GOAL_KEYS.map((g) => {
+              const on = goals.includes(g);
+              return (
+                <button key={g} onClick={() => toggleSel(setGoals, g, 3)}
+                  className="card" style={{ textAlign: "left", cursor: "pointer", display: "flex", alignItems: "center",
+                    justifyContent: "space-between", gap: 10, padding: "13px 15px",
+                    borderColor: on ? "var(--ink)" : "var(--line)", background: on ? "var(--paper2)" : "var(--card)" }}>
+                  <div>
+                    <div style={{ fontWeight: 600, fontSize: 14.5 }}>{domain.goalLabels[g].chip}</div>
+                    <div className="cat-no" style={{ marginTop: 3, lineHeight: 1.4 }}>{domain.goalLabels[g].reason.replace(/^You (said you |asked for |want )/, "").replace(/^./, (c) => c.toUpperCase())}</div>
+                  </div>
+                  <div style={{ width: 22, height: 22, borderRadius: "50%", flex: "none", border: "2px solid var(--ink)",
+                    background: on ? "var(--hl)" : "transparent", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    {on && <Check size={13} color="#1c2406" strokeWidth={3} />}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </>
+      )}
+
+      {cur.key === "confirm" && preview && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          <div className="card">
+            <div className="eyebrow" style={{ marginBottom: 10 }}>{domain.genreLabel} you lean into</div>
+            <div className="chips">
+              {genres.map((g) => <span key={g} className="chip on" style={{ background: paletteFor(g).bg, borderColor: paletteFor(g).bg, color: paletteFor(g).fg, cursor: "default" }}>{g}</span>)}
+              {avoidGenres.map((g) => <span key={g} className="chip avoid on" style={{ cursor: "default" }}>not {g}</span>)}
+            </div>
+          </div>
+          <div className="card">
+            <div className="eyebrow" style={{ marginBottom: 10 }}>{domain.moodTitle}</div>
+            <p className="sub" style={{ margin: 0 }}>
+              Reading you as {domain.tones.map((k) => <b key={k}>{domain.toneLabels[k](preview.toneTarget[k])}</b>).reduce((acc, el, i) => (i === 0 ? [el] : [...acc, i === domain.tones.length - 1 ? " and " : ", ", el]), [])},
+              anchored to {favIds.length} favourite{favIds.length === 1 ? "" : "s"}.
+            </p>
+          </div>
+          <div className="card">
+            <div className="eyebrow" style={{ marginBottom: 10 }}>{domain.weighTitle}</div>
+            {domain.factors.filter((k) => weights[k] >= 0.6).length === 0 ? (
+              <p className="sub" style={{ margin: 0 }}>Everything weighted evenly — your ratings will teach us what actually matters.</p>
+            ) : (
+              <p className="sub" style={{ margin: 0 }}>
+                Essential: <b>{domain.factors.filter((k) => weights[k] >= 0.6).map((k) => domain.factorLabels[k].toLowerCase()).join(", ")}</b>
+                {domain.factors.filter((k) => weights[k] < 0.4).length > 0 && (
+                  <> · low-stakes: {domain.factors.filter((k) => weights[k] < 0.4).map((k) => domain.factorLabels[k].toLowerCase()).join(", ")}</>
+                )}
+              </p>
+            )}
+          </div>
+          <div className="card">
+            <div className="eyebrow" style={{ marginBottom: 10 }}>Your goals</div>
+            {goals.length === 0
+              ? <p className="sub" style={{ margin: 0 }}>None set — suggestions will run on taste alone. You can add goals any time in Profile.</p>
+              : <div className="chips">{goals.map((g) => <span key={g} className="chip on" style={{ cursor: "default" }}>{domain.goalLabels[g].chip}</span>)}</div>}
+          </div>
+          <p className="cat-no" style={{ textAlign: "center" }}>
+            Discovery dial: {Math.round(explore * 100)}% adventurous · every swipe and rating keeps refining this
+          </p>
+        </div>
+      )}
+
       {cur.key === "explore" && (
         <div className="card" style={{ textAlign: "center", padding: "26px 18px" }}>
           <div className="h2" style={{ marginBottom: 4 }}>
@@ -156,7 +239,7 @@ export default function Onboarding({ domain, onDone }) {
         <button className={"btn btn-block " + (step === last ? "btn-hl" : "btn-primary")} disabled={!canNext}
           style={{ marginTop: 26, opacity: canNext ? 1 : 0.4 }}
           onClick={() => (step === last ? finish() : setStep(step + 1))}>
-          {step === last ? <>Open {domain.name} <Sparkles size={16} style={{ verticalAlign: "-3px" }} /></> :
+          {step === last ? <>Looks right — open {domain.name} <Sparkles size={16} style={{ verticalAlign: "-3px" }} /></> :
             <>Continue <ChevronRight size={16} style={{ verticalAlign: "-3px" }} /></>}
         </button>
       )}

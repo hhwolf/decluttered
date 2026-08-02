@@ -32,6 +32,18 @@ const SUITES = [
     love: ["Pop", "Dance"], avoid: ["Jazz", "Classical"],
     altLove: ["Metal", "Rock"], altAvoid: ["Pop", "Latin"],
   },
+  {
+    domain: { key: "movies", factors: ["story", "acting", "direction", "visuals", "pacing", "originality"], tones: ["darkness", "intensity", "emotion"] },
+    items: load("movies.json"),
+    love: ["Science Fiction", "Thriller"], avoid: ["Romance", "Musical"],
+    altLove: ["Animation", "Family"], altAvoid: ["Science Fiction", "Crime"],
+  },
+  {
+    domain: { key: "tv", factors: ["story", "characters", "writing", "acting", "production", "bingeability"], tones: ["darkness", "complexity", "comfort"] },
+    items: load("tv.json"),
+    love: ["Crime", "Thriller"], avoid: ["Comedy", "Family"],
+    altLove: ["Fantasy", "Science Fiction"], altAvoid: ["Comedy", "Crime"],
+  },
 ];
 
 let pass = 0, fail = 0;
@@ -220,5 +232,5 @@ for (const { domain, items, love, avoid, altLove, altAvoid } of SUITES) {
 }
 
 console.log(log.join("\n"));
-console.log(`\n=== engine: ${pass} passed, ${fail} failed (3 domains) ===`);
+console.log(`\n=== engine: ${pass} passed, ${fail} failed (5 domains) ===`);
 process.exit(fail === 0 ? 0 : 1);

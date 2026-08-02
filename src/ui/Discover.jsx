@@ -119,9 +119,10 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore }
             <ExtRating item={top.item} dark />
             <div className="match-pill">
               <div style={{ width: 30, height: 30, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center",
-                background: "conic-gradient(var(--hl-deep) " + ringDegrees(top.score) + "deg, var(--line) 0)" }}>
-                <div style={{ width: 23, height: 23, borderRadius: "50%", background: "var(--paper2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  <span style={{ fontFamily: "var(--mono)", fontSize: 10, fontWeight: 500 }}>{displayScore(top.score)}</span>
+                border: "2px solid var(--ink)",
+                background: "conic-gradient(var(--hl) " + ringDegrees(top.score) + "deg, var(--soft) 0)" }}>
+                <div style={{ width: 20, height: 20, borderRadius: "50%", background: "var(--card)", border: "1.5px solid var(--ink)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <span style={{ fontFamily: "var(--mono)", fontSize: 9, fontWeight: 700 }}>{displayScore(top.score)}</span>
                 </div>
               </div>
               <span style={{ fontSize: 11.5, fontWeight: 600, color: tag.c }}>{tag.t}</span>
@@ -134,7 +135,9 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore }
             </div>
             <div className="h2" style={{ fontSize: 23 }}>{top.item.title}</div>
             <div className="cat-no" style={{ margin: "3px 0 12px" }}>
-              {top.item.subtitle}{top.item.year ? ` · ${top.item.year}` : ""}{top.item.meta ? ` · ${top.item.meta}` : ""}
+              {top.item.subtitle}
+              {top.item.year && String(top.item.year) !== top.item.subtitle ? ` · ${top.item.year}` : ""}
+              {top.item.meta ? ` · ${top.item.meta}` : ""}
             </div>
             <p className="serif" style={{ fontSize: 15.5, lineHeight: 1.5, color: "var(--ink2)" }}>{top.item.blurb}</p>
 
