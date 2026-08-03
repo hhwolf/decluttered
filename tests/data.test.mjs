@@ -11,7 +11,7 @@ const DOMAINS = [
   ["books.json", ["writing", "plot", "pacing", "character", "originality", "atmosphere"], ["darkness", "complexity", "emotion"], 40],
   ["restaurants.json", ["food", "ambiance", "service", "value", "creativity", "comfort"], ["liveliness", "formality", "adventure"], 30],
   ["music.json", ["melody", "lyrics", "production", "rhythm", "vocals", "originality"], ["energy", "darkness", "density"], 40],
-  ["movies.json", ["story", "acting", "direction", "visuals", "pacing", "originality"], ["darkness", "intensity", "emotion"], 50],
+  ["movies.json", ["story", "acting", "direction", "visuals", "pacing", "originality"], ["darkness", "intensity", "emotion"], 500],
   ["tv.json", ["story", "characters", "writing", "acting", "production", "bingeability"], ["darkness", "complexity", "comfort"], 50],
 ];
 

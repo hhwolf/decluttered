@@ -1,22 +1,35 @@
 // ============================================================================
-// fetch-movies.mjs — build src/data/movies.json.
+// fetch-movies.mjs — build src/data/movies.json. Three modes, best available:
 //
-// LIVE MODE (set TMDB_API_KEY): TMDB /discover/movie sorted by vote count,
-// real vote_average / vote_count / popularity and poster URLs. TMDB keys are
-// free (themoviedb.org -> settings -> API).
+// 1. TMDB LIVE (set TMDB_API_KEY, free at themoviedb.org): /discover/movie,
+//    30 pages sorted by vote count -> ~600 films with official posters.
 //
-// DEFAULT MODE (no key): curated snapshot of ~64 landmark films with their
-// public IMDb rating values (mid-2026 snapshot), enriched at fetch time with
-// poster art + first-sentence synopses from the keyless Wikipedia REST API.
-// (iTunes Search no longer returns movies; Wikipedia is the keyless art path.)
+// 2. IMDB BULK (default, fully keyless): IMDb's official public datasets
+//    (datasets.imdbws.com, refreshed daily) — title.basics + title.ratings —
+//    streamed, joined, and filtered to the top ~MAX_MOVIES films by vote
+//    count with real IMDb ratings. Posters + first-sentence blurbs come from
+//    the keyless Wikipedia REST API, with a resume cache in scripts/.cache/
+//    so re-runs only fetch what's missing. basics.tsv.gz is a ~220 MB
+//    download (streamed, never fully held in memory) — expect a few minutes.
+//
+// 3. CURATED fallback: if the bulk download fails (offline), a hand-picked
+//    69-film snapshot with real IMDb rating values ships regardless.
 // ============================================================================
 import fs from "node:fs";
 import path from "node:path";
+import zlib from "node:zlib";
+import readline from "node:readline";
+import { Readable } from "node:stream";
 import { fileURLToPath } from "node:url";
-import { deriveAxes, assignPercentilePopularity, getJSON, sleep, writePretty, clamp } from "./lib/derive.mjs";
+import { deriveAxes, assignPercentilePopularity, getJSON, sleep, writePretty } from "./lib/derive.mjs";
 
-const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "../src/data/movies.json");
+const DIR = path.dirname(fileURLToPath(import.meta.url));
+const OUT = path.join(DIR, "../src/data/movies.json");
+const CACHE = path.join(DIR, ".cache/movie-art.json");
 const KEY = process.env.TMDB_API_KEY;
+const MAX_MOVIES = +(process.env.MAX_MOVIES || 1200);
+const MIN_VOTES = +(process.env.MIN_VOTES || 50000);
+const MIN_RATING = +(process.env.MIN_RATING || 6.0);
 
 // factors: [story, acting, direction, visuals, pacing, originality]
 // tones:   [darkness, intensity, emotion]
@@ -38,6 +51,10 @@ const FACTOR_BASE = {
   "Western":         [0.80, 0.80, 0.85, 0.82, 0.55, 0.60],
   "Adventure":       [0.70, 0.65, 0.70, 0.85, 0.80, 0.65],
   "Musical":         [0.70, 0.80, 0.70, 0.85, 0.70, 0.72],
+  "Biography":       [0.85, 0.90, 0.78, 0.65, 0.52, 0.55],
+  "Documentary":     [0.80, 0.40, 0.75, 0.70, 0.55, 0.70],
+  "Sport":           [0.75, 0.78, 0.70, 0.68, 0.75, 0.50],
+  "Film-Noir":       [0.85, 0.78, 0.85, 0.75, 0.60, 0.70],
 };
 const TONE_BASE = {
   "Drama":           [0.65, 0.55, 0.85],
@@ -57,143 +74,169 @@ const TONE_BASE = {
   "Western":         [0.65, 0.65, 0.55],
   "Adventure":       [0.40, 0.75, 0.60],
   "Musical":         [0.28, 0.60, 0.85],
+  "Biography":       [0.55, 0.55, 0.78],
+  "Documentary":     [0.50, 0.50, 0.60],
+  "Sport":           [0.45, 0.75, 0.70],
+  "Film-Noir":       [0.82, 0.70, 0.55],
 };
 const FACTORS = ["story", "acting", "direction", "visuals", "pacing", "originality"];
 const TONES = ["darkness", "intensity", "emotion"];
-
-// [title, wikipediaTitle, year, genres, imdbRating, votesK, runtimeMin]
-const CURATED = [
-  ["The Shawshank Redemption", "The Shawshank Redemption", 1994, ["Drama"], 9.3, 2900, 142],
-  ["The Godfather", "The Godfather", 1972, ["Crime", "Drama"], 9.2, 2000, 175],
-  ["The Dark Knight", "The Dark Knight", 2008, ["Action", "Crime", "Drama"], 9.0, 2900, 152],
-  ["12 Angry Men", "12 Angry Men (1957 film)", 1957, ["Drama"], 9.0, 900, 96],
-  ["Pulp Fiction", "Pulp Fiction", 1994, ["Crime", "Drama"], 8.9, 2200, 154],
-  ["Inception", "Inception", 2010, ["Science Fiction", "Action", "Thriller"], 8.8, 2600, 148],
-  ["Fight Club", "Fight Club", 1999, ["Drama", "Thriller"], 8.8, 2400, 139],
-  ["Forrest Gump", "Forrest Gump", 1994, ["Drama", "Romance"], 8.8, 2300, 142],
-  ["The Matrix", "The Matrix", 1999, ["Science Fiction", "Action"], 8.7, 2100, 136],
-  ["Interstellar", "Interstellar (film)", 2014, ["Science Fiction", "Drama"], 8.7, 2300, 169],
-  ["Goodfellas", "Goodfellas", 1990, ["Crime", "Drama"], 8.7, 1300, 145],
-  ["Se7en", "Seven (1995 film)", 1995, ["Crime", "Mystery", "Thriller"], 8.6, 1800, 127],
-  ["Spirited Away", "Spirited Away", 2001, ["Animation", "Fantasy", "Family"], 8.6, 900, 125],
-  ["The Silence of the Lambs", "The Silence of the Lambs (film)", 1991, ["Thriller", "Horror", "Crime"], 8.6, 1600, 118],
-  ["Saving Private Ryan", "Saving Private Ryan", 1998, ["War", "Drama"], 8.6, 1600, 169],
-  ["The Green Mile", "The Green Mile (film)", 1999, ["Drama", "Fantasy"], 8.6, 1500, 189],
-  ["City of God", "City of God (2002 film)", 2002, ["Crime", "Drama"], 8.6, 800, 130],
-  ["Parasite", "Parasite (2019 film)", 2019, ["Thriller", "Drama", "Comedy"], 8.5, 1000, 132],
-  ["Gladiator", "Gladiator (2000 film)", 2000, ["Action", "Adventure", "Drama"], 8.5, 1700, 155],
-  ["The Prestige", "The Prestige (film)", 2006, ["Mystery", "Thriller", "Drama"], 8.5, 1500, 130],
-  ["The Lion King", "The Lion King", 1994, ["Animation", "Family", "Drama"], 8.5, 1200, 88],
-  ["Back to the Future", "Back to the Future", 1985, ["Science Fiction", "Comedy", "Adventure"], 8.5, 1400, 116],
-  ["Whiplash", "Whiplash (2014 film)", 2014, ["Drama", "Musical"], 8.5, 1100, 106],
-  ["The Departed", "The Departed", 2006, ["Crime", "Thriller"], 8.5, 1500, 151],
-  ["The Pianist", "The Pianist (2002 film)", 2002, ["Drama", "War"], 8.5, 1000, 150],
-  ["Alien", "Alien (film)", 1979, ["Horror", "Science Fiction"], 8.5, 1000, 117],
-  ["Django Unchained", "Django Unchained", 2012, ["Western", "Drama"], 8.5, 1800, 165],
-  ["Casablanca", "Casablanca (film)", 1942, ["Romance", "Drama", "War"], 8.5, 620, 102],
-  ["Psycho", "Psycho (1960 film)", 1960, ["Horror", "Thriller", "Mystery"], 8.5, 750, 109],
-  ["Rear Window", "Rear Window", 1954, ["Mystery", "Thriller"], 8.5, 550, 112],
-  ["Dune: Part Two", "Dune: Part Two", 2024, ["Science Fiction", "Adventure"], 8.5, 700, 166],
-  ["Apocalypse Now", "Apocalypse Now", 1979, ["War", "Drama"], 8.4, 700, 147],
-  ["Memento", "Memento (film)", 2000, ["Mystery", "Thriller"], 8.4, 1400, 113],
-  ["WALL-E", "WALL-E", 2008, ["Animation", "Family", "Science Fiction"], 8.4, 1200, 98],
-  ["The Shining", "The Shining (film)", 1980, ["Horror", "Drama"], 8.4, 1200, 146],
-  ["Coco", "Coco (2017 film)", 2017, ["Animation", "Family", "Fantasy"], 8.4, 970, 105],
-  ["Avengers: Endgame", "Avengers: Endgame", 2019, ["Action", "Adventure", "Science Fiction"], 8.4, 1300, 181],
-  ["Spider-Man: Into the Spider-Verse", "Spider-Man: Into the Spider-Verse", 2018, ["Animation", "Action", "Adventure"], 8.4, 700, 117],
-  ["Come and See", "Come and See", 1985, ["War", "Drama"], 8.4, 100, 142],
-  ["Oldboy", "Oldboy (2003 film)", 2003, ["Thriller", "Mystery", "Action"], 8.3, 650, 120],
-  ["Amélie", "Amélie", 2001, ["Comedy", "Romance"], 8.3, 800, 122],
-  ["Toy Story", "Toy Story", 1995, ["Animation", "Family", "Comedy"], 8.3, 1100, 81],
-  ["Braveheart", "Braveheart", 1995, ["War", "Drama", "History"], 8.3, 1100, 178],
-  ["Good Will Hunting", "Good Will Hunting", 1997, ["Drama", "Romance"], 8.3, 1100, 126],
-  ["Requiem for a Dream", "Requiem for a Dream", 2000, ["Drama"], 8.3, 900, 102],
-  ["Eternal Sunshine of the Spotless Mind", "Eternal Sunshine of the Spotless Mind", 2004, ["Romance", "Science Fiction", "Drama"], 8.3, 1100, 108],
-  ["2001: A Space Odyssey", "2001: A Space Odyssey (film)", 1968, ["Science Fiction"], 8.3, 750, 149],
-  ["Reservoir Dogs", "Reservoir Dogs", 1992, ["Crime", "Thriller"], 8.3, 1100, 99],
-  ["Lawrence of Arabia", "Lawrence of Arabia (film)", 1962, ["Adventure", "History", "Drama"], 8.3, 330, 218],
-  ["Singin' in the Rain", "Singin' in the Rain", 1952, ["Musical", "Comedy", "Romance"], 8.3, 260, 103],
-  ["Heat", "Heat (1995 film)", 1995, ["Crime", "Thriller", "Drama"], 8.3, 750, 170],
-  ["Oppenheimer", "Oppenheimer (film)", 2023, ["Drama", "History", "Thriller"], 8.3, 900, 180],
-  ["Jurassic Park", "Jurassic Park (film)", 1993, ["Adventure", "Science Fiction", "Thriller"], 8.2, 1100, 127],
-  ["No Country for Old Men", "No Country for Old Men", 2007, ["Crime", "Thriller", "Drama"], 8.2, 1100, 122],
-  ["The Truman Show", "The Truman Show", 1998, ["Comedy", "Drama", "Science Fiction"], 8.2, 1200, 103],
-  ["Pan's Labyrinth", "Pan's Labyrinth", 2006, ["Fantasy", "Drama", "War"], 8.2, 700, 118],
-  ["Mad Max: Fury Road", "Mad Max: Fury Road", 2015, ["Action", "Adventure", "Science Fiction"], 8.1, 1100, 120],
-  ["Jaws", "Jaws (film)", 1975, ["Thriller", "Adventure", "Horror"], 8.1, 700, 124],
-  ["The Grand Budapest Hotel", "The Grand Budapest Hotel", 2014, ["Comedy", "Drama"], 8.1, 950, 99],
-  ["Portrait of a Lady on Fire", "Portrait of a Lady on Fire", 2019, ["Romance", "Drama"], 8.1, 130, 122],
-  ["La La Land", "La La Land", 2016, ["Romance", "Drama", "Musical"], 8.0, 700, 128],
-  ["Blade Runner 2049", "Blade Runner 2049", 2017, ["Science Fiction", "Drama"], 8.0, 700, 164],
-  ["Her", "Her (film)", 2013, ["Romance", "Science Fiction", "Drama"], 8.0, 700, 126],
-  ["Arrival", "Arrival (film)", 2016, ["Science Fiction", "Drama"], 7.9, 800, 116],
-  ["Knives Out", "Knives Out", 2019, ["Mystery", "Comedy", "Crime"], 7.9, 800, 130],
-  ["Titanic", "Titanic (1997 film)", 1997, ["Romance", "Drama"], 7.9, 1300, 195],
-  ["Get Out", "Get Out", 2017, ["Horror", "Mystery", "Thriller"], 7.8, 750, 104],
-  ["Everything Everywhere All at Once", "Everything Everywhere All at Once", 2022, ["Science Fiction", "Comedy", "Drama"], 7.8, 600, 139],
-  ["The Social Network", "The Social Network", 2010, ["Drama", "History"], 7.8, 800, 120],
-];
+const GENRE_FIX = { "Sci-Fi": "Science Fiction", "Music": "Musical" };
 
 const firstSentence = (s = "") => {
-  const m = s.match(/^.+?[.!?](?=\s|$)/);
+  // require >=30 chars before the terminator so "L.A." / "Dr." / "E.T." don't
+  // truncate the sentence at an abbreviation
+  const m = s.match(/^[\s\S]{30,}?[.!?](?=\s|$)/);
   return m ? m[0] : s.slice(0, 160);
 };
 
-async function curatedItems() {
-  const list = [];
-  let art = 0;
-  for (const [title, wikiTitle, year, genres, rating, votesK, runtime] of CURATED) {
-    const id = "mv_" + title.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/_+$/, "");
-    let image = null, blurb = null;
-    // Wikipedia throttles bursts — retry with backoff before giving up.
-    for (let attempt = 0; attempt < 3 && !image; attempt++) {
-      try {
-        const w = await getJSON(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiTitle)}`, {
-          headers: { "User-Agent": "decluttered-seed/0.3 (personal project)" },
-        });
-        image = w.thumbnail?.source || null;
-        blurb = firstSentence(w.extract) || blurb;
-        break;
-      } catch { await sleep(600 * (attempt + 1)); }
-    }
-    if (image) art++;
-    list.push({
-      id, title, subtitle: String(year), year,
-      meta: `${runtime} min`,
-      genres,
-      rating: { value: rating, count: votesK * 1000, scale: 10, source: "IMDb" },
-      image,
-      blurb: blurb || `${genres.join(" / ").toLowerCase()} landmark from ${year}.`,
-      factors: deriveAxes(id, genres, FACTOR_BASE, FACTORS),
-      tone: deriveAxes(id, genres, TONE_BASE, TONES),
-      _votes: votesK,
+// ---- IMDb bulk mode -------------------------------------------------------
+async function streamLines(url, onLine) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`${res.status} for ${url}`);
+  const rl = readline.createInterface({
+    input: Readable.fromWeb(res.body).pipe(zlib.createGunzip()),
+    crlfDelay: Infinity,
+  });
+  for await (const line of rl) onLine(line);
+}
+
+async function imdbBulkItems() {
+  console.log("  downloading title.ratings (~8 MB)…");
+  const rated = new Map(); // tconst -> [rating, votes]
+  await streamLines("https://datasets.imdbws.com/title.ratings.tsv.gz", (line) => {
+    const [tconst, rating, votes] = line.split("\t");
+    const v = +votes;
+    if (v >= MIN_VOTES && +rating >= MIN_RATING) rated.set(tconst, [+rating, v]);
+  });
+  console.log(`  ${rated.size} titles pass votes>=${MIN_VOTES} & rating>=${MIN_RATING}`);
+
+  console.log("  streaming title.basics (~220 MB, filtered on the fly)…");
+  const rows = [];
+  await streamLines("https://datasets.imdbws.com/title.basics.tsv.gz", (line) => {
+    const f = line.split("\t");
+    // tconst, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genres
+    if (f[1] !== "movie" || f[4] === "1") return;
+    const r = rated.get(f[0]);
+    if (!r) return;
+    const year = +f[5];
+    if (!year || year < 1920) return;
+    const genres = (f[8] || "").split(",").filter((g) => g && g !== "\\N")
+      .map((g) => GENRE_FIX[g] || g).slice(0, 3);
+    if (!genres.length) return;
+    rows.push({
+      tconst: f[0], title: f[2], year,
+      runtime: f[7] !== "\\N" ? +f[7] : null,
+      genres, rating: r[0], votes: r[1],
     });
-    await sleep(300);
-  }
-  console.log(`  wikipedia art: ${art}/${CURATED.length}`);
+  });
+  console.log(`  ${rows.length} movies joined; keeping top ${MAX_MOVIES} by votes`);
+  rows.sort((a, b) => b.votes - a.votes);
+  const keep = rows.slice(0, MAX_MOVIES);
+
+  const list = keep.map((m) => {
+    const id = "mv_" + m.tconst;
+    return {
+      id,
+      title: m.title,
+      subtitle: String(m.year),
+      year: m.year,
+      meta: m.runtime ? `${m.runtime} min` : null,
+      genres: m.genres,
+      rating: { value: m.rating, count: m.votes, scale: 10, source: "IMDb" },
+      image: null,
+      blurb: null,
+      links: { imdb: `https://www.imdb.com/title/${m.tconst}/` },
+      factors: deriveAxes(id, m.genres, FACTOR_BASE, FACTORS),
+      tone: deriveAxes(id, m.genres, TONE_BASE, TONES),
+      _votes: m.votes,
+    };
+  });
   assignPercentilePopularity(list, (m) => m._votes);
   list.forEach((m) => delete m._votes);
   return list;
 }
 
-const TMDB_GENRES = { 28: "Action", 12: "Adventure", 16: "Animation", 35: "Comedy", 80: "Crime", 18: "Drama", 10751: "Family", 14: "Fantasy", 36: "History", 27: "Horror", 10402: "Musical", 9648: "Mystery", 10749: "Romance", 878: "Science Fiction", 53: "Thriller", 10752: "War", 37: "Western" };
+// ---- Wikipedia art + blurb enrichment (resumable, throttle-aware) ---------
+// A 404 is a real "this page doesn't exist" -> try the next title pattern and
+// cache the miss. A 429/5xx/network error is throttling -> back off and retry
+// the SAME pattern, and NEVER cache the failure (so a re-run picks it up).
+async function wikiSummary(title) {
+  const res = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`,
+    { headers: { "User-Agent": "decluttered-seed/0.4 (personal project; contact via github hhwolf)" } });
+  if (res.ok) return { status: 200, data: await res.json() };
+  return { status: res.status, data: null };
+}
+const looksLikeFilm = (w) =>
+  w?.type === "standard" && /\bfilms?\b|\bmovie\b|\bdirected\b/i.test((w.extract || "").slice(0, 400));
 
-async function liveItems() {
+async function enrichArt(list) {
+  fs.mkdirSync(path.dirname(CACHE), { recursive: true });
+  const cache = fs.existsSync(CACHE) ? JSON.parse(fs.readFileSync(CACHE, "utf8")) : {};
+  let hit = 0, miss = 0, deferred = 0, done = 0;
+  for (const m of list) {
+    done++;
+    if (cache[m.id] !== undefined) {
+      if (cache[m.id]) { m.image = cache[m.id].image; m.blurb = cache[m.id].blurb; hit++; } else miss++;
+      continue;
+    }
+    const candidates = [m.title, `${m.title} (film)`, `${m.title} (${m.year} film)`];
+    let found = null;
+    let definitive = true; // all failures were real 404s / non-film pages
+    for (const cand of candidates) {
+      let w = null;
+      for (let attempt = 0; attempt < 4; attempt++) {
+        let r;
+        try { r = await wikiSummary(cand); }
+        catch { r = { status: 0 }; } // network hiccup -> treat as throttle
+        if (r.status === 200) { w = r.data; break; }
+        if (r.status === 404) break; // real miss for this pattern
+        await sleep(1500 * (attempt + 1)); // throttled -> back off, same pattern
+        if (attempt === 3) definitive = false;
+      }
+      if (w && looksLikeFilm(w) && w.thumbnail?.source) {
+        found = { image: w.thumbnail.source, blurb: firstSentence(w.extract) };
+        break;
+      }
+      await sleep(150);
+    }
+    if (found) { cache[m.id] = found; m.image = found.image; m.blurb = found.blurb; hit++; }
+    else if (definitive) { cache[m.id] = null; miss++; }
+    else deferred++; // uncached: next run retries
+    if (done % 50 === 0) {
+      fs.writeFileSync(CACHE, JSON.stringify(cache));
+      console.log(`  art ${done}/${list.length} (${hit} found, ${deferred} deferred)`);
+    }
+    await sleep(250);
+  }
+  fs.writeFileSync(CACHE, JSON.stringify(cache));
+  console.log(`  wikipedia art: ${hit}/${list.length} (${miss} true misses, ${deferred} deferred to next run)`);
+  for (const m of list) {
+    if (!m.blurb) m.blurb = `${m.genres.join(" / ")} — ${m.year}, rated ${m.rating.value} by ${Math.round(m.rating.count / 1000)}k IMDb voters.`;
+  }
+}
+
+// ---- TMDB live mode -------------------------------------------------------
+const TMDB_GENRES = { 28: "Action", 12: "Adventure", 16: "Animation", 35: "Comedy", 80: "Crime", 99: "Documentary", 18: "Drama", 10751: "Family", 14: "Fantasy", 36: "History", 27: "Horror", 10402: "Musical", 9648: "Mystery", 10749: "Romance", 878: "Science Fiction", 53: "Thriller", 10752: "War", 37: "Western" };
+
+async function tmdbItems() {
   const seen = new Map();
-  for (let page = 1; page <= 5; page++) {
-    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${KEY}&sort_by=vote_count.desc&vote_count.gte=3000&page=${page}`;
+  for (let page = 1; page <= 30; page++) {
+    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${KEY}&sort_by=vote_count.desc&vote_count.gte=500&page=${page}`;
     let json;
     try { json = await getJSON(url); } catch (e) { console.warn(`  ! page ${page}: ${e.message}`); continue; }
     for (const m of json.results || []) {
       const genres = (m.genre_ids || []).map((g) => TMDB_GENRES[g]).filter(Boolean).slice(0, 3);
       if (!genres.length || seen.has(m.id)) continue;
-      const id = "mv_" + m.id;
+      const id = "mv_tmdb_" + m.id;
       seen.set(m.id, {
-        id, title: m.title, subtitle: (m.release_date || "").slice(0, 4), year: m.release_date ? +m.release_date.slice(0, 4) : null,
+        id, title: m.title, subtitle: (m.release_date || "").slice(0, 4),
+        year: m.release_date ? +m.release_date.slice(0, 4) : null,
         meta: null, genres,
         rating: { value: Math.round(m.vote_average * 10) / 10, count: m.vote_count, scale: 10, source: "TMDB" },
         image: m.poster_path ? `https://image.tmdb.org/t/p/w342${m.poster_path}` : null,
         blurb: (m.overview || "").slice(0, 200),
+        links: {},
         factors: deriveAxes(id, genres, FACTOR_BASE, FACTORS),
         tone: deriveAxes(id, genres, TONE_BASE, TONES),
         _votes: m.vote_count,
@@ -207,14 +250,67 @@ async function liveItems() {
   return list;
 }
 
+// ---- curated last-resort fallback (real IMDb values, mid-2026 snapshot) ---
+const CURATED = [
+  ["The Shawshank Redemption", 1994, ["Drama"], 9.3, 2900, 142],
+  ["The Godfather", 1972, ["Crime", "Drama"], 9.2, 2000, 175],
+  ["The Dark Knight", 2008, ["Action", "Crime", "Drama"], 9.0, 2900, 152],
+  ["12 Angry Men", 1957, ["Drama"], 9.0, 900, 96],
+  ["Pulp Fiction", 1994, ["Crime", "Drama"], 8.9, 2200, 154],
+  ["Inception", 2010, ["Science Fiction", "Action", "Thriller"], 8.8, 2600, 148],
+  ["Fight Club", 1999, ["Drama", "Thriller"], 8.8, 2400, 139],
+  ["Forrest Gump", 1994, ["Drama", "Romance"], 8.8, 2300, 142],
+  ["The Matrix", 1999, ["Science Fiction", "Action"], 8.7, 2100, 136],
+  ["Interstellar", 2014, ["Science Fiction", "Drama"], 8.7, 2300, 169],
+  ["Goodfellas", 1990, ["Crime", "Drama"], 8.7, 1300, 145],
+  ["Se7en", 1995, ["Crime", "Mystery", "Thriller"], 8.6, 1800, 127],
+  ["Spirited Away", 2001, ["Animation", "Fantasy", "Family"], 8.6, 900, 125],
+  ["The Silence of the Lambs", 1991, ["Thriller", "Horror", "Crime"], 8.6, 1600, 118],
+  ["Saving Private Ryan", 1998, ["War", "Drama"], 8.6, 1600, 169],
+  ["Parasite", 2019, ["Thriller", "Drama", "Comedy"], 8.5, 1000, 132],
+  ["Gladiator", 2000, ["Action", "Adventure", "Drama"], 8.5, 1700, 155],
+  ["Alien", 1979, ["Horror", "Science Fiction"], 8.5, 1000, 117],
+  ["Casablanca", 1942, ["Romance", "Drama", "War"], 8.5, 620, 102],
+  ["Psycho", 1960, ["Horror", "Thriller", "Mystery"], 8.5, 750, 109],
+];
+function curatedItems() {
+  const list = CURATED.map(([title, year, genres, rating, votesK, runtime]) => {
+    const id = "mv_" + title.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/_+$/, "");
+    return {
+      id, title, subtitle: String(year), year, meta: `${runtime} min`, genres,
+      rating: { value: rating, count: votesK * 1000, scale: 10, source: "IMDb" },
+      image: null, blurb: `${genres.join(" / ")} landmark from ${year}.`, links: {},
+      factors: deriveAxes(id, genres, FACTOR_BASE, FACTORS),
+      tone: deriveAxes(id, genres, TONE_BASE, TONES),
+      _votes: votesK,
+    };
+  });
+  assignPercentilePopularity(list, (m) => m._votes);
+  list.forEach((m) => delete m._votes);
+  return list;
+}
+
 async function main() {
   let list;
+  if (process.env.ART_ONLY) {
+    console.log("ART_ONLY — re-running Wikipedia enrichment over existing movies.json");
+    list = JSON.parse(fs.readFileSync(OUT, "utf8"));
+    await enrichArt(list);
+    writePretty(fs, OUT, list);
+    return;
+  }
   if (KEY) {
-    console.log("TMDB_API_KEY found — live TMDB fetch");
-    list = await liveItems();
+    console.log("TMDB_API_KEY found — live TMDB fetch (30 pages)");
+    list = await tmdbItems();
   } else {
-    console.log("No TMDB_API_KEY — curated snapshot (real IMDb ratings) + Wikipedia art");
-    list = await curatedItems();
+    console.log(`No TMDB_API_KEY — IMDb bulk datasets (top ${MAX_MOVIES} by votes)`);
+    try {
+      list = await imdbBulkItems();
+      await enrichArt(list);
+    } catch (e) {
+      console.warn(`bulk mode failed (${e.message}) — writing curated fallback`);
+      list = curatedItems();
+    }
   }
   list.sort((a, b) => b.popularity - a.popularity);
   writePretty(fs, OUT, list);

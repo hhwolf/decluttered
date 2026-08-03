@@ -63,8 +63,11 @@ retraining the profile.
 npm run fetch:books        # Open Library (keyless, real reader ratings)
 npm run fetch:music        # Deezer charts + iTunes enrichment (keyless)
 npm run fetch:tv           # TVMaze (keyless, real community ratings)
-npm run fetch:movies       # curated IMDb-ratings snapshot + Wikipedia posters;
-                           #   set TMDB_API_KEY for a live TMDB fetch
+npm run fetch:movies       # IMDb official bulk datasets (keyless, refreshed daily)
+                           #   -> top ~1200 movies by votes with real IMDb ratings,
+                           #   posters via Wikipedia (resumable cache);
+                           #   set TMDB_API_KEY for a live TMDB fetch instead;
+                           #   tune with MAX_MOVIES / MIN_VOTES / MIN_RATING
 npm run fetch:restaurants  # curated snapshot; set GOOGLE_PLACES_API_KEY for live Google Places
 npm run fetch:all
 ```

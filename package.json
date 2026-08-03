@@ -11,7 +11,7 @@
     "fetch:books": "node scripts/fetch-books.mjs",
     "fetch:music": "node scripts/fetch-music.mjs",
     "fetch:restaurants": "node scripts/fetch-restaurants.mjs",
-    "fetch:movies": "node scripts/fetch-movies.mjs && node scripts/repair-movie-art.mjs",
+    "fetch:movies": "node scripts/fetch-movies.mjs",
     "fetch:tv": "node scripts/fetch-tv.mjs",
     "fetch:all": "npm run fetch:books && npm run fetch:music && npm run fetch:restaurants && npm run fetch:movies && npm run fetch:tv"
   },
