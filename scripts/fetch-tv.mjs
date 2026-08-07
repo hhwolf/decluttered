@@ -105,14 +105,14 @@ function toItem(sh) {
 async function main() {
   const seen = new Map();
 
-  // 1) paged index sweep (ids are age-ordered; 16 pages ≈ first ~4000 shows)
-  for (let page = 0; page < 16; page++) {
+  // 1) paged index sweep (ids are age-ordered; 40 pages ≈ first ~10,000 shows)
+  for (let page = 0; page < 40; page++) {
     let shows;
     try { shows = await getJSON(`https://api.tvmaze.com/shows?page=${page}`); }
     catch (e) { console.warn(`  ! page ${page}: ${e.message}`); continue; }
     for (const sh of shows) {
       const it = toItem(sh);
-      if (it && sh.rating.average >= 8.0 && (sh.weight ?? 0) >= 92) seen.set(it.id, it);
+      if (it && sh.rating.average >= 7.8 && (sh.weight ?? 0) >= 90) seen.set(it.id, it);
     }
     await sleep(120);
   }
@@ -133,7 +133,7 @@ async function main() {
   let list = [...seen.values()];
   // keep it a deck, not a database: best blend of quality x popularity
   list.sort((a, b) => (b.rating.value * 0.6 + b._weight * 0.04) - (a.rating.value * 0.6 + a._weight * 0.04));
-  list = list.slice(0, 90);
+  list = list.slice(0, 250);
 
   assignPercentilePopularity(list, (t) => t._weight * 1000 + t.rating.value); // rating as tiebreak within equal weights
   for (const t of list) {
