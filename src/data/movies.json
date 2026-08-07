@@ -925,8 +925,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Fantasy \u2014 1977, rated 8.6 by 1581k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Star Wars is a 1977 American epic space opera film written and directed by George Lucas. Produced by Lucasfilm Ltd.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0076759/"
   },
@@ -1401,8 +1401,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 2018, rated 8.4 by 1392k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt4154756/"
   },
@@ -1460,7 +1460,7 @@
  },
  {
   "id": "mv_tt0110413",
-  "title": "L\u00e9on: The Professional",
+  "title": "Léon: The Professional",
   "subtitle": "1994",
   "year": 1994,
   "meta": "110 min",
@@ -1476,7 +1476,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/0/03/Leon-poster.jpg",
-  "blurb": "L\u00e9on is a 1994 French English-language action-thriller film written and directed by Luc Besson.",
+  "blurb": "Léon is a 1994 French English-language action-thriller film written and directed by Luc Besson.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0110413/"
   },
@@ -1534,7 +1534,7 @@
  },
  {
   "id": "mv_tt0910970",
-  "title": "WALL\u00b7E",
+  "title": "WALL·E",
   "subtitle": "2008",
   "year": 2008,
   "meta": "98 min",
@@ -1694,8 +1694,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama \u2014 1998, rated 8.5 by 1281k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/39/American_History_X_poster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "American History X is a 1998 American crime drama film directed by Tony Kaye in his feature directorial debut, and written by David McKenna.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0120586/"
   },
@@ -1953,8 +1953,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 2008, rated 7.9 by 1236k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/0/02/Iron_Man_%282008_film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Iron Man is a 2008 American superhero film based on the Marvel Comics character Iron Man. Produced by Marvel Studios and distributed by Paramount Pictures, it is the first film in the Marvel Cinematic Universe (MCU).",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0371746/"
   },
@@ -2062,8 +2062,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Animation / Comedy \u2014 2003, rated 8.2 by 1218k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Finding_Nemo_logo.svg/330px-Finding_Nemo_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Finding Nemo is an American animated film series media franchise that began with the 2003 film of the same name, produced by Pixar and released by Walt Disney Pictures. Both films were directed by Andrew Stanton.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0266543/"
   },
@@ -2320,7 +2320,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
-  "blurb": "Parasite (Korean:\u00a0\uae30\uc0dd\ucda9) is a 2019 South Korean black comedy thriller film directed by Bong Joon Ho, who co-wrote the screenplay with Han Jin-won.",
+  "blurb": "Parasite (Korean: 기생충) is a 2019 South Korean black comedy thriller film directed by Bong Joon Ho, who co-wrote the screenplay with Han Jin-won.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt6751668/"
   },
@@ -2500,7 +2500,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/2/26/One_Flew_Over_the_Cuckoo%27s_Nest_poster.jpg",
-  "blurb": "One Flew Over the Cuckoo's Nest is a 1975 American psychological comedy-drama film directed by Milo\u0161 Forman, based on the 1962 novel of the same name by Ken Kesey.",
+  "blurb": "One Flew Over the Cuckoo's Nest is a 1975 American psychological comedy-drama film directed by Miloš Forman, based on the 1962 novel of the same name by Ken Kesey.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0073486/"
   },
@@ -2608,8 +2608,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 2012, rated 7.2 by 1089k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/d/da/The_Hunger_Games_-_Sunrise_on_the_Reaping_poster.jpg",
+  "blurb": "The Hunger Games: Sunrise on the Reaping is an upcoming American dystopian film directed by Francis Lawrence from a screenplay by Billy Ray and Michael Lesslie.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1392170/"
   },
@@ -2830,7 +2830,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/d/df/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2.jpg",
-  "blurb": "Harry Potter and the Deathly Hallows \u2013 Part 2 is a 2011 fantasy film directed by David Yates from a screenplay by Steve Kloves.",
+  "blurb": "Harry Potter and the Deathly Hallows – Part 2 is a 2011 fantasy film directed by David Yates from a screenplay by Steve Kloves.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1201607/"
   },
@@ -2903,7 +2903,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/9/93/The_Intouchables.jpg",
-  "blurb": "The Intouchables, also known as Untouchable in the UK, Ireland, and Scandinavia, is a 2011 French buddy comedy-drama film written and directed by \u00c9ric Toledano and Olivier Nakache.",
+  "blurb": "The Intouchables, also known as Untouchable in the UK, Ireland, and Scandinavia, is a 2011 French buddy comedy-drama film written and directed by Éric Toledano and Olivier Nakache.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1675434/"
   },
@@ -3012,7 +3012,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",
-  "blurb": "Star Wars: The Force Awakens, also known as Star Wars: Episode VII \u2013 The Force Awakens, is a 2015 American epic space opera film produced, co-written, and directed by J.",
+  "blurb": "Star Wars: The Force Awakens, also known as Star Wars: Episode VII – The Force Awakens, is a 2015 American epic space opera film produced, co-written, and directed by J.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2488496/"
   },
@@ -3560,8 +3560,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 2013, rated 7.1 by 974k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/1/19/Iron_Man_3_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Iron Man 3 is a 2013 American superhero film based on the Marvel Comics character Iron Man, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1300854/"
   },
@@ -3633,7 +3633,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/a/a6/Once_Upon_a_Time_in_Hollywood_poster.png",
-  "blurb": "Once Upon a Time\u2026 in Hollywood is a 2019 comedy-drama film written and directed by Quentin Tarantino.",
+  "blurb": "Once Upon a Time… in Hollywood is a 2019 comedy-drama film written and directed by Quentin Tarantino.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt7131622/"
   },
@@ -3780,8 +3780,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama / Mystery \u2014 2013, rated 8.2 by 949k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/6/63/Prisoners2013Poster.jpg",
+  "blurb": "Prisoners is a 2013 American crime thriller film directed by Denis Villeneuve and written by Aaron Guzikowski.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1392214/"
   },
@@ -3998,7 +3998,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg",
-  "blurb": "Star Wars: Episode I \u2013 The Phantom Menace is a 1999 American epic space opera film written and directed by George Lucas in his first directorial effort since the original Star Wars, released in 1977.",
+  "blurb": "Star Wars: Episode I – The Phantom Menace is a 1999 American epic space opera film written and directed by George Lucas in his first directorial effort since the original Star Wars, released in 1977.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0120915/"
   },
@@ -4070,8 +4070,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Fantasy \u2014 2012, rated 7.8 by 933k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/b3/The_Hobbit-_An_Unexpected_Journey.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Hobbit: An Unexpected Journey is a 2012 epic fantasy film directed by Peter Jackson from a screenplay by Fran Walsh, Philippa Boyens, Jackson, and Guillermo del Toro. It is based on the 1937 novel The Hobbit by J. R. R. Tolkien.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0903624/"
   },
@@ -4108,7 +4108,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/9/93/Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg",
-  "blurb": "Star Wars: Episode III \u2013 Revenge of the Sith is a 2005 American epic space opera film written and directed by George Lucas.",
+  "blurb": "Star Wars: Episode III – Revenge of the Sith is a 2005 American epic space opera film written and directed by George Lucas.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0121766/"
   },
@@ -4401,8 +4401,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Comedy \u2014 2017, rated 7.9 by 904k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/7/7d/Thor_Ragnarok_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Thor: Ragnarok is a 2017 American superhero film based on the Marvel Comics character Thor, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3501632/"
   },
@@ -4439,7 +4439,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/f/f6/Gravity_Poster.jpg",
-  "blurb": "Gravity is a 2013 science fiction thriller film directed by Alfonso Cuar\u00f3n, who also co-wrote, co-edited, and produced the film.",
+  "blurb": "Gravity is a 2013 science fiction thriller film directed by Alfonso Cuarón, who also co-wrote, co-edited, and produced the film.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1454468/"
   },
@@ -4621,8 +4621,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Fantasy \u2014 2016, rated 7.5 by 888k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/a1/Doctor_Strange_%282016_film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Doctor Strange is a 2016 American superhero film based on the Marvel Comics character of the same name. The film was directed by Scott Derrickson from a screenplay he wrote with Jon Spaihts and C.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1211837/"
   },
@@ -4806,7 +4806,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/1/10/CidadedeDeus.jpg",
-  "blurb": "City of God is a 2002 Portuguese-language epic crime film directed by Fernando Meirelles and co-directed by K\u00e1tia Lund.",
+  "blurb": "City of God is a 2002 Portuguese-language epic crime film directed by Fernando Meirelles and co-directed by Kátia Lund.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0317248/"
   },
@@ -5059,8 +5059,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama / Horror \u2014 2000, rated 7.6 by 849k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/American_Psycho.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "American Psycho is a 2000 comedy horror film directed by Mary Harron, who co-wrote the screenplay with Guinevere Turner.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0144084/"
   },
@@ -5118,7 +5118,7 @@
  },
  {
   "id": "mv_tt0211915",
-  "title": "Am\u00e9lie",
+  "title": "Amélie",
   "subtitle": "2001",
   "year": 2001,
   "meta": "122 min",
@@ -5133,7 +5133,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/5/53/Amelie_poster.jpg",
-  "blurb": "Am\u00e9lie is a 2001 French-language romantic comedy film directed by Jean-Pierre Jeunet.",
+  "blurb": "Amélie is a 2001 French-language romantic comedy film directed by Jean-Pierre Jeunet.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0211915/"
   },
@@ -5318,7 +5318,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/3/32/Star_Wars_-_Episode_II_Attack_of_the_Clones_%28movie_poster%29.jpg",
-  "blurb": "Star Wars: Episode II \u2013 Attack of the Clones is a 2002 American epic space opera film directed by George Lucas from a screenplay he co-wrote with Jonathan Hales.",
+  "blurb": "Star Wars: Episode II – Attack of the Clones is a 2002 American epic space opera film directed by George Lucas from a screenplay he co-wrote with Jonathan Hales.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0121765/"
   },
@@ -5426,8 +5426,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Drama / History \u2014 2017, rated 7.8 by 819k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/1/15/Dunkirk_Film_poster.jpg",
+  "blurb": "Dunkirk is a 2017 war film produced, written, and directed by Christopher Nolan that depicts the Dunkirk evacuation of World War II from the perspectives of people on the land, sea, and air.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt5013056/"
   },
@@ -5831,8 +5831,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Drama / History \u2014 2013, rated 8.1 by 791k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/5c/12_Years_a_Slave_film_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "by two conmen in 1841 and sold into slavery. He was put to work on plantations in the state of Louisiana for 12 years before being released.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2024544/"
   },
@@ -6309,8 +6309,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Science Fiction \u2014 2012, rated 7 by 775k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/e0/The_Amazing_Spider-Man_%28film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Amazing Spider-Man is a 2012 American superhero film based on the Marvel Comics character Spider-Man. It stars Andrew Garfield, Emma Stone, Rhys Ifans, Denis Leary, Campbell Scott, Irrfan Khan, Martin Sheen, and Sally Field.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0948470/"
   },
@@ -6384,7 +6384,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/1/18/Harry_Potter_and_the_Prisoner_of_Azkaban_film_poster.jpg",
-  "blurb": "Harry Potter and the Prisoner of Azkaban is a 2004 fantasy film directed by Alfonso Cuar\u00f3n from a screenplay by Steve Kloves.",
+  "blurb": "Harry Potter and the Prisoner of Azkaban is a 2004 fantasy film directed by Alfonso Cuarón from a screenplay by Steve Kloves.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0304141/"
   },
@@ -6896,8 +6896,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Thriller \u2014 2006, rated 8 by 751k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Casino_Royale_%282006_film_poster%29.jpg/330px-Casino_Royale_%282006_film_poster%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Casino Royale is a 2006 spy thriller film, the twenty-first in the James Bond series by Eon Productions, the third screen adaptation of Ian Fleming's 1953 novel of the same name, and the first to star Daniel Craig as the fictional MI6 agent",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0381061/"
   },
@@ -6932,8 +6932,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Family \u2014 1990, rated 7.8 by 751k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/7/76/Home_alone_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Home Alone is a 1990 American Christmas comedy film directed by Chris Columbus and written and produced by John Hughes. The cast also features Joe Pesci, Daniel Stern, John Heard, and Catherine O'Hara.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0099785/"
   },
@@ -7191,8 +7191,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 2015, rated 6.9 by 734k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/93/Jurassic_Park_%28franchise_logo%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Jurassic Park, later referred to as Jurassic World, is an American science fiction adventure media franchise created by Michael Crichton, centered on a disastrous attempt to create an animal theme park of de-extinct dinosaurs.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0369610/"
   },
@@ -7303,7 +7303,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Oldboykoreanposter.jpg",
-  "blurb": "Oldboy (Korean:\u00a0\uc62c\ub4dc\ubcf4\uc774) is a 2003 South Korean action thriller film directed and co-written by Park Chan-wook.",
+  "blurb": "Oldboy (Korean: 올드보이) is a 2003 South Korean action thriller film directed and co-written by Park Chan-wook.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0364569/"
   },
@@ -7340,7 +7340,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Star_Wars_The_Last_Jedi.jpg",
-  "blurb": "Star Wars: The Last Jedi, also known as Star Wars: Episode VIII \u2013 The Last Jedi, or simply The Last Jedi, is a 2017 American epic space opera film written and directed by Rian Johnson.",
+  "blurb": "Star Wars: The Last Jedi, also known as Star Wars: Episode VIII – The Last Jedi, or simply The Last Jedi, is a 2017 American epic space opera film written and directed by Rian Johnson.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2527336/"
   },
@@ -7557,8 +7557,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Mystery \u2014 2009, rated 7.5 by 709k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Sherlock_holmes_ver5.jpg/330px-Sherlock_holmes_ver5.jpg",
+  "blurb": "Sherlock Holmes is a 2009 period mystery action film starring Robert Downey Jr. as the character of the same name created by Sir Arthur Conan Doyle. In addition to Downey as Holmes, Jude Law portrays Dr. John Watson.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0988045/"
   },
@@ -7739,8 +7739,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Drama / Fantasy \u2014 2012, rated 7.9 by 703k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/57/Life_of_Pi_2012_Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Life of Pi is a 2012 adventure-drama film directed and produced by Ang Lee and written by David Magee.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0454876/"
   },
@@ -7775,8 +7775,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama \u2014 2014, rated 7.7 by 701k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/6/63/Birdman_poster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Birdman, stylized as BiRDMAN or (The Unexpected Virtue of Ignorance), is a 2014 American satirical surrealist black comedy-drama film directed by Alejandro González Iñárritu.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2562232/"
   },
@@ -8030,8 +8030,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Sport \u2014 1976, rated 8.1 by 696k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/1/18/Rocky_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Rocky is a 1976 American sports drama film directed by John G. Avildsen and written by and starring Sylvester Stallone.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0075148/"
   },
@@ -8253,7 +8253,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/c/cf/Twelve_monkeysmp.jpg",
-  "blurb": "12 Monkeys is a 1995 American science fiction thriller film directed by Terry Gilliam from a screenplay by David Peoples and Janet Peoples, based on Chris Marker's 1962 short film La Jet\u00e9e.",
+  "blurb": "12 Monkeys is a 1995 American science fiction thriller film directed by Terry Gilliam from a screenplay by David Peoples and Janet Peoples, based on Chris Marker's 1962 short film La Jetée.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0114746/"
   },
@@ -8362,8 +8362,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Thriller \u2014 2001, rated 7.7 by 679k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/6/68/Ocean%27s_Eleven_2001_Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Ocean's Eleven is a 2001 American heist comedy film directed by Steven Soderbergh from a screenplay by Ted Griffin. The first installment in the Ocean's film trilogy, it is a remake of the 1960 Rat Pack film.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0240772/"
   },
@@ -8584,7 +8584,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_1.jpg/330px-Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_1.jpg",
-  "blurb": "Harry Potter and the Deathly Hallows \u2013 Part 1 is a 2010 fantasy film directed by David Yates from a screenplay by Steve Kloves.",
+  "blurb": "Harry Potter and the Deathly Hallows – Part 1 is a 2010 fantasy film directed by David Yates from a screenplay by Steve Kloves.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0926084/"
   },
@@ -8620,8 +8620,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Drama / History \u2014 2012, rated 7.7 by 670k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/e1/Argo2012Poster.jpg",
+  "blurb": "Argo is a 2012 American historical political espionage drama thriller film directed by, produced by, and starring Ben Affleck. The screenplay, written by Chris Terrio, was adapted from the 1999 memoir The Master of Disguise by U.S. C.I.A.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1024648/"
   },
@@ -8842,7 +8842,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/d/d8/La_confidential.jpg",
-  "blurb": "Crime / Drama / Mystery \u2014 1997, rated 8.2 by 661k IMDb voters.",
+  "blurb": "Crime / Drama / Mystery — 1997, rated 8.2 by 661k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0119488/"
   },
@@ -8989,8 +8989,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 1996, rated 7 by 653k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/bb/Independence_day_movieposter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Fox, James Rebhorn, and Harvey Fierstein. The film focuses on disparate groups of people who converge in the Nevada desert in the aftermath of a worldwide attack by a powerful extraterrestrial race.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0116629/"
   },
@@ -9245,8 +9245,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Science Fiction / Thriller \u2014 2014, rated 7.7 by 643k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/330px-Ex-machina-uk-poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Ex Machina is a 2014 science fiction film, written and directed by Alex Garland in his directorial debut. It stars Domhnall Gleeson, Alicia Vikander, and Oscar Isaac.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0470752/"
   },
@@ -9502,8 +9502,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Horror / Mystery / Thriller \u2014 2013, rated 7.5 by 629k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/8c/The_Conjuring_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Conjuring is a 2013 American supernatural horror film directed by James Wan and written by Chad Hayes and Carey W. Hayes. It is the inaugural film in The Conjuring Universe franchise.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1457767/"
   },
@@ -9611,8 +9611,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Horror / Thriller \u2014 2016, rated 7.3 by 627k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/31/Split_%282017_film%29.jpg",
+  "blurb": "Split is a 2016 American psychological thriller film written, directed and produced by M. Night Shyamalan, and starring James McAvoy, Anya Taylor-Joy, and Betty Buckley.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt4972582/"
   },
@@ -9758,8 +9758,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama \u2014 1995, rated 8.2 by 624k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/cb/Casino_%28Martins_Scorsese_film%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Casino is a 1995 epic gangster film directed by Martin Scorsese and adapted by Scorsese and Nicholas Pileggi from the latter's nonfiction book Casino: Love and Honor in Las Vegas.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0112641/"
   },
@@ -9795,8 +9795,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama / Romance \u2014 2009, rated 7.6 by 624k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/d/d1/Five_hundred_days_of_summer.jpg",
+  "blurb": "(500) Days of Summer is a 2009 American romantic comedy-drama film directed by Marc Webb in his feature directorial debut, written by Scott Neustadter and Michael H. Weber, and produced by Mark Waters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1022603/"
   },
@@ -9979,8 +9979,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Drama / War \u2014 2014, rated 7.6 by 615k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/1/17/Fury_2014_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Fury is a 2014 American war film written, directed, and co-produced by David Ayer. Ayer was influenced by the service of military veterans in his family and by reading books such as Belton Y.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2713180/"
   },
@@ -10311,7 +10311,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/f/fd/Mr_and_Mrs_Smith_poster.png",
-  "blurb": "Action / Comedy / Crime \u2014 2005, rated 6.5 by 599k IMDb voters.",
+  "blurb": "Action / Comedy / Crime — 2005, rated 6.5 by 599k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0356910/"
   },
@@ -10384,8 +10384,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 2013, rated 7 by 589k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/2/2e/Oblivion2013Poster.jpg",
+  "blurb": "Oblivion is a 2013 American epic post-apocalyptic science fiction action film produced and directed by Joseph Kosinski from a screenplay by Karl Gajdusek and Michael deBruyn, starring Tom Cruise in the main role alongside Morgan Freeman, Ol",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1483013/"
   },
@@ -10419,8 +10419,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama \u2014 1988, rated 8 by 587k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/b2/Rain_Man_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Rain Man is a 1988 American road comedy-drama film directed by Barry Levinson and written by Barry Morrow and Ronald Bass.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0095953/"
   },
@@ -10711,8 +10711,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama \u2014 2022, rated 8.5 by 579k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/d/d4/The_Kashmir_Files_poster.jpg",
+  "blurb": "The Kashmir Files is a 2022 Indian Hindi-language drama film written and directed by Vivek Agnihotri. It depicts the exodus and the events leading up to it as a genocide, a framing considered inaccurate by scholars.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt10811166/"
   },
@@ -11113,8 +11113,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Science Fiction \u2014 2008, rated 6.6 by 570k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/f0/The_Incredible_Hulk_%28film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Incredible Hulk is a 2008 American superhero film based on the Marvel Comics character the Hulk. He goes on the run from the military while attempting to cure himself of the Hulk.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0800080/"
   },
@@ -11151,7 +11151,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Children_of_men_ver4.jpg/330px-Children_of_men_ver4.jpg",
-  "blurb": "Children of Men is a 2006 dystopian action thriller film directed and co-written by Alfonso Cuar\u00f3n.",
+  "blurb": "Children of Men is a 2006 dystopian action thriller film directed and co-written by Alfonso Cuarón.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0206634/"
   },
@@ -11299,7 +11299,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/b/b5/Mission_impossible_ghost_protocol.jpg",
-  "blurb": "Mission: Impossible \u2013 Ghost Protocol is a 2011 American action spy film directed by Brad Bird from a screenplay by the writing team of Josh Appelbaum and Andr\u00e9 Nemec, who also serve as co-producers.",
+  "blurb": "Mission: Impossible – Ghost Protocol is a 2011 American action spy film directed by Brad Bird from a screenplay by the writing team of Josh Appelbaum and André Nemec, who also serve as co-producers.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1229238/"
   },
@@ -11371,8 +11371,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Drama / Sport \u2014 2013, rated 8.1 by 564k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/d/d0/Rush_UK_poster.jpeg",
+  "blurb": "Rush is a 2013 biographical sports film directed by Ron Howard and written by Peter Morgan. It is centred on the rivalry between two Formula One drivers, James Hunt and Niki Lauda, during the 1976 Formula One season.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1979320/"
   },
@@ -11665,8 +11665,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Family / Fantasy \u2014 1946, rated 8.6 by 557k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/It%27s_a_Wonderful_Life_%281946_poster%29.jpeg/500px-It%27s_a_Wonderful_Life_%281946_poster%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "It's a Wonderful Life is a 1946 American Christmas fantasy drama film directed and produced by Frank Capra.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0038650/"
   },
@@ -11702,7 +11702,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/e/e6/Dr._Strangelove_poster.jpg",
-  "blurb": "Comedy / War \u2014 1964, rated 8.3 by 553k IMDb voters.",
+  "blurb": "Comedy / War — 1964, rated 8.3 by 553k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0057012/"
   },
@@ -11812,7 +11812,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/a/a8/Dallas_Buyers_Club_poster.jpg",
-  "blurb": "Dallas Buyers Club is a 2013 American biographical drama film written by Craig Borten and Melisa Wallack, and directed by Jean-Marc Vall\u00e9e.",
+  "blurb": "Dallas Buyers Club is a 2013 American biographical drama film written by Craig Borten and Melisa Wallack, and directed by Jean-Marc Vallée.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0790636/"
   },
@@ -11849,7 +11849,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/6/63/MockingjayPart1Poster3.jpg",
-  "blurb": "The Hunger Games: Mockingjay \u2013 Part 1 is a 2014 American dystopian film directed by Francis Lawrence from a screenplay by Peter Craig and Danny Strong, based on the 2010 novel Mockingjay by Suzanne Collins.",
+  "blurb": "The Hunger Games: Mockingjay – Part 1 is a 2014 American dystopian film directed by Francis Lawrence from a screenplay by Peter Craig and Danny Strong, based on the 2010 novel Mockingjay by Suzanne Collins.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1951265/"
   },
@@ -11997,7 +11997,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/a/af/Star_Wars_The_Rise_of_Skywalker_poster.jpg",
-  "blurb": "Star Wars: The Rise of Skywalker, also known as Star Wars: Episode IX \u2013 The Rise of Skywalker, is a 2019 American epic space opera film produced, co-written, and directed by J.",
+  "blurb": "Star Wars: The Rise of Skywalker, also known as Star Wars: Episode IX – The Rise of Skywalker, is a 2019 American epic space opera film produced, co-written, and directed by J.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2527338/"
   },
@@ -12033,8 +12033,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Drama \u2014 2015, rated 7.7 by 545k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/Sicario_poster.jpg",
+  "blurb": "Sicario is a 2015 American action crime thriller film directed by Denis Villeneuve, written by Taylor Sheridan in his screenwriting debut and starring Emily Blunt, Benicio del Toro, and Josh Brolin.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3397884/"
   },
@@ -12329,8 +12329,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Crime / Drama \u2014 2015, rated 8.1 by 538k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/f3/Spotlight_%28film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Spotlight is a 2015 American biographical drama film directed by Tom McCarthy and written by McCarthy and Josh Singer.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1895587/"
   },
@@ -12476,8 +12476,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama / Mystery \u2014 2011, rated 7.8 by 531k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/80/The_Girl_with_the_Dragon_Tattoo_Poster.jpg",
+  "blurb": "The Girl with the Dragon Tattoo is a 2011 neo-noir mystery thriller film directed by David Fincher from a screenplay by Steven Zaillian. It is based on the 2005 novel of the same name by Stieg Larsson.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1568346/"
   },
@@ -12768,8 +12768,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Biography / Crime \u2014 2013, rated 7.8 by 521k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/37/Captain_America_The_First_Avenger_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Captain America: The First Avenger is a 2011 American superhero film based on the Marvel Comics character Captain America.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1535109/"
   },
@@ -13062,8 +13062,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Horror / Mystery / Thriller \u2014 2004, rated 7.6 by 514k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/56/Saw_official_poster.jpg",
+  "blurb": "Saw is a 2004 American horror film directed by James Wan in his feature directorial debut, and written by Leigh Whannell, from a story by Wan and Whannell.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0387564/"
   },
@@ -13282,8 +13282,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Drama / Romance \u2014 2014, rated 7.7 by 509k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/6/67/The_Theory_of_Everything_%282014%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Theory of Everything is a 2014 biographical drama film produced by Working Title Films and directed by James Marsh. Set at the University of Cambridge, it details three decades of the life of the theoretical physicist Stephen Hawking.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2980516/"
   },
@@ -13500,8 +13500,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Drama \u2014 2003, rated 7.8 by 507k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Last_Samurai.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Last Samurai is a 2003 American epic period action drama film directed and produced by Edward Zwick, who also co-wrote the screenplay with John Logan and Marshall Herskovitz from a story devised by Logan.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0325710/"
   },
@@ -13684,8 +13684,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Animation / Comedy \u2014 1992, rated 8 by 503k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/bd/Aladdin_%281992_Disney_film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Aladdin is a 1992 American animated musical fantasy film based on the Middle Eastern folk tale \"Aladdin\" from One Thousand and One Nights and produced by Walt Disney Feature Animation.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0103639/"
   },
@@ -13978,8 +13978,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Thriller / War \u2014 2008, rated 7.5 by 498k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/6/6c/HLposterUSA2.jpg",
+  "blurb": "The Hurt Locker is a 2009 American war film directed by Kathryn Bigelow and written by Mark Boal. It stars Jeremy Renner, Anthony Mackie, Brian Geraghty, Christian Camargo, Ralph Fiennes, David Morse, and Guy Pearce.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0887912/"
   },
@@ -14420,8 +14420,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Drama \u2014 1986, rated 8.1 by 491k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/7/74/Stand_By_Me_1986_American_Theatrical_Release_Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Stand by Me is a 1986 American coming-of-age drama film directed by Rob Reiner. Based on Stephen King's 1982 novella The Body, the film is set in the fictional town of Castle Rock, Oregon, in 1959.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0092005/"
   },
@@ -14566,7 +14566,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/d/db/Princess_bride.jpg",
-  "blurb": "The Princess Bride is a 1987 American fantasy-adventure-comedy film directed and co-produced by Rob Reiner and starring Cary Elwes, Robin Wright, Mandy Patinkin, Andr\u00e9 the Giant, Chris Sarandon, Christopher Guest, Wallace Shawn, Peter Falk, Fred Savage, Billy Crystal and Carol Kane.",
+  "blurb": "The Princess Bride is a 1987 American fantasy-adventure-comedy film directed and co-produced by Rob Reiner and starring Cary Elwes, Robin Wright, Mandy Patinkin, André the Giant, Chris Sarandon, Christopher Guest, Wallace Shawn, Peter Falk, Fred Savage, Billy Crystal and Carol Kane.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0093779/"
   },
@@ -14785,8 +14785,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Thriller \u2014 2019, rated 7.4 by 485k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/31/John_Wick_Chapter_Two.png",
+  "blurb": "John Wick: Chapter 2 is a 2017 American neo-noir action thriller film directed by Chad Stahelski and written by Derek Kolstad. As the direct sequel to John Wick (2014), it is the second instalment in the John Wick film series.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt6146586/"
   },
@@ -14932,8 +14932,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Thriller \u2014 2015, rated 8.1 by 483k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/c2/Room_%282015_film%29.png",
+  "blurb": "Room is a 2015 survival psychological drama film directed by Lenny Abrahamson and written by Emma Donoghue, based on her 2010 novel. Their escape allows the boy to experience the outside world for the first time. Macy.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3170832/"
   },
@@ -15005,7 +15005,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/3/39/Borat_ver2.jpg",
-  "blurb": "Comedy \u2014 2006, rated 7.4 by 481k IMDb voters.",
+  "blurb": "Comedy — 2006, rated 7.4 by 481k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0443453/"
   },
@@ -15335,8 +15335,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / War \u2014 1986, rated 8 by 475k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/a9/Platoon_posters_86.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Platoon is a 1986 American epic anti-war film written and directed by Oliver Stone, starring Tom Berenger, Willem Dafoe, and Charlie Sheen, with supporting roles by Forest Whitaker, Francesco Quinn, John C.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0091763/"
   },
@@ -15410,7 +15410,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/6/66/E_t_the_extra_terrestrial_ver3.jpg",
-  "blurb": "Adventure / Family / Science Fiction \u2014 1982, rated 7.9 by 475k IMDb voters.",
+  "blurb": "Adventure / Family / Science Fiction — 1982, rated 7.9 by 475k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0083866/"
   },
@@ -15628,8 +15628,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy \u2014 1999, rated 7 by 471k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/c8/American_Pie1.jpg",
+  "blurb": "American Pie is a 1999 American teen comedy film directed and co-produced by Paul Weitz and written by Adam Herz. The coming-of-age story follows a group of high school classmates who make a pact to lose their virginity before they graduate.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0163651/"
   },
@@ -15666,7 +15666,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/2/2f/Amadeusmov.jpg",
-  "blurb": "Amadeus is a 1984 American period drama film directed by Milo\u0161 Forman.",
+  "blurb": "Amadeus is a 1984 American period drama film directed by Miloš Forman.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0086879/"
   },
@@ -15886,8 +15886,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Comedy \u2014 2022, rated 6.1 by 468k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/88/Thor_Love_and_Thunder_poster.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Thor: Love and Thunder is a 2022 American superhero film based on Marvel Comics featuring the character Thor.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt10648342/"
   },
@@ -15924,7 +15924,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Godzilla_%281954%29_%28cropped%29.jpg/330px-Godzilla_%281954%29_%28cropped%29.jpg",
-  "blurb": "Godzilla is a giant monster, or daikaij\u016b, that first appeared in the 1954 film of the same name, directed by Ishir\u014d Honda.",
+  "blurb": "Godzilla is a giant monster, or daikaijū, that first appeared in the 1954 film of the same name, directed by Ishirō Honda.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0831387/"
   },
@@ -16108,8 +16108,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Thriller \u2014 2001, rated 6.8 by 462k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/54/Fast_and_the_furious_poster.jpg",
+  "blurb": "The Fast and the Furious is a 2001 American action film directed by Rob Cohen, and written by Gary Scott Thompson, Erik Bergquist, and David Ayer, based on the 1998 Vibe magazine article \"Racer X\" by Ken Li.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0232500/"
   },
@@ -16440,8 +16440,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama / Romance \u2014 1999, rated 7.4 by 457k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/95/10_Things_I_Hate_About_You_film.jpg",
+  "blurb": "10 Things I Hate About You is a 1999 American teen romantic comedy directed by Gil Junger from a screenplay by Karen McCullah Lutz and Kirsten Smith.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0147800/"
   },
@@ -16661,8 +16661,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Horror / Mystery \u2014 1996, rated 7.4 by 450k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/86/Scream_%281996_film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Scream is a 1996 American slasher film directed by Wes Craven and written by Kevin Williamson. It stars David Arquette, Neve Campbell, Courteney Cox, Matthew Lillard, Rose McGowan, Skeet Ulrich, and Drew Barrymore.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0117571/"
   },
@@ -16736,7 +16736,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/f/fb/Mission_Impossible_Rogue_Nation_poster.jpg",
-  "blurb": "Mission: Impossible \u2013 Rogue Nation is a 2015 American action spy film written and directed by Christopher McQuarrie.",
+  "blurb": "Mission: Impossible – Rogue Nation is a 2015 American action spy film written and directed by Christopher McQuarrie.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2381249/"
   },
@@ -16954,8 +16954,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Thriller \u2014 2004, rated 7.6 by 444k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/b9/The_Machinist_poster.JPG",
+  "blurb": "The Machinist is a 2004 psychological thriller film directed by Brad Anderson and written by Scott Kosar. Jennifer Jason Leigh, Aitana Sánchez-Gijón, John Sharian, and Michael Ironside appear in supporting roles.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0361862/"
   },
@@ -17574,8 +17574,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Fantasy \u2014 2021, rated 6.2 by 432k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/9b/Eternals_%28film%29_poster.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Eternals is a 2021 American superhero film based on the Marvel Comics race the Eternals. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 26th film in the Marvel Cinematic Universe (MCU).",
   "links": {
    "imdb": "https://www.imdb.com/title/tt9032400/"
   },
@@ -17649,7 +17649,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/9/98/Wanted_film_poster.jpg",
-  "blurb": "Wanted is a 2008 American action thriller film directed by Timur Bekmambetov and written by Michael Brandt, Derek Haas, and Chris Morgan, loosely based on the 2003\u201305 comic book miniseries by Mark Millar and J.",
+  "blurb": "Wanted is a 2008 American action thriller film directed by Timur Bekmambetov and written by Michael Brandt, Derek Haas, and Chris Morgan, loosely based on the 2003–05 comic book miniseries by Mark Millar and J.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0493464/"
   },
@@ -17686,7 +17686,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/4/4c/TheOthers.jpg",
-  "blurb": "The Others is a 2001 psychological and Gothic horror film written, directed and scored by Alejandro Amen\u00e1bar, starring Nicole Kidman, Fionnula Flanagan, Christopher Eccleston, Elaine Cassidy, Eric Sykes, Alakina Mann and James Bentley.",
+  "blurb": "The Others is a 2001 psychological and Gothic horror film written, directed and scored by Alejandro Amenábar, starring Nicole Kidman, Fionnula Flanagan, Christopher Eccleston, Elaine Cassidy, Eric Sykes, Alakina Mann and James Bentley.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0230600/"
   },
@@ -17870,8 +17870,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Drama / Family \u2014 2014, rated 6.9 by 427k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Maleficent_poster.jpg",
+  "blurb": "Maleficent is a 2014 American fantasy film starring Angelina Jolie as the title character in a live-action retelling of her villainous role in Walt Disney's 1959 animated film Sleeping Beauty, itself an adaptation of the 1697 fairy tale.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1587310/"
   },
@@ -18053,8 +18053,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Drama \u2014 2004, rated 7.7 by 424k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/e8/Man_on_fireposter.jpg",
+  "blurb": "Man on Fire is a 2004 action thriller film directed and co-produced by Tony Scott, from a screenplay by Brian Helgeland. It is based on the 1980 novel by A. J. Quinnell.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0328107/"
   },
@@ -18090,8 +18090,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Drama / Science Fiction \u2014 2013, rated 7.1 by 423k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/b4/Snowpiercer_poster.jpg",
+  "blurb": "Snowpiercer is a 2013 post-apocalyptic action thriller film based on the French climate fiction graphic novel Le Transperceneige by Jacques Lob, Benjamin Legrand and Jean-Marc Rochette.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1706620/"
   },
@@ -18128,7 +18128,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/f/ff/MI_%E2%80%93_Fallout.jpg",
-  "blurb": "Mission: Impossible \u2013 Fallout is a 2018 American action spy film written and directed by Christopher McQuarrie.",
+  "blurb": "Mission: Impossible – Fallout is a 2018 American action spy film written and directed by Christopher McQuarrie.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt4912910/"
   },
@@ -18418,8 +18418,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 2015, rated 6.6 by 418k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/9d/Mockingjay_Part_2_Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Hunger Games: Mockingjay – Part 2 is a 2015 American dystopian film directed by Francis Lawrence from a screenplay by Peter Craig and Danny Strong, based on the 2010 novel Mockingjay by Suzanne Collins.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1951266/"
   },
@@ -18641,7 +18641,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/c/c2/Shazam%21_%28film%29_poster.jpg",
-  "blurb": "Action / Adventure / Comedy \u2014 2019, rated 7 by 416k IMDb voters.",
+  "blurb": "Action / Adventure / Comedy — 2019, rated 7 by 416k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0448115/"
   },
@@ -18675,8 +18675,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama \u2014 2012, rated 8.3 by 415k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/44/The_Hunt_%282012_film%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Hunt is a 2012 Danish psychological drama film co-written, produced and directed by Thomas Vinterberg and starring Mads Mikkelsen.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2106476/"
   },
@@ -18712,8 +18712,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Fantasy / Horror / Mystery \u2014 1999, rated 7.3 by 414k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/0/09/Sleepy_hollow_ver2.jpg",
+  "blurb": "Sleepy Hollow is a 1999 Gothic horror film directed by Tim Burton from a screenplay by Andrew Kevin Walker.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0162661/"
   },
@@ -18970,8 +18970,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Fantasy / Horror \u2014 2005, rated 7 by 411k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/2/2b/Constantine_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Constantine is a 2005 American superhero horror film directed by Francis Lawrence in his directional film debut, and written by Kevin Brodbin and Frank Cappello. It is loosely based on the Hellblazer comic book series.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0360486/"
   },
@@ -19006,8 +19006,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama \u2014 1984, rated 8.3 by 410k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/c2/Once_Upon_a_Time_in_America.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Once Upon a Time in America is a 1984 epic crime film based on Harry Grey's semi-autobiographical 1952 novel The Hoods.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0087843/"
   },
@@ -19225,8 +19225,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Romance \u2014 2008, rated 6.8 by 407k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/7/71/YesMan2008poster.jpg",
+  "blurb": "Yes Man is a 2008 romantic comedy film directed by Peyton Reed, written by Nicholas Stoller, Jarrad Paul and Christofer Tufton, and starring Jim Carrey.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1068680/"
   },
@@ -19480,8 +19480,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy \u2014 2004, rated 7.1 by 403k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/6/64/Movie_poster_Anchorman_The_Legend_of_Ron_Burgundy.jpg",
+  "blurb": "Anchorman: The Legend of Ron Burgundy is a 2004 American satirical comedy film directed by Adam McKay in his directorial debut, produced by Judd Apatow, starring Will Ferrell and Christina Applegate and written by McKay and Ferrell.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0357413/"
   },
@@ -19663,8 +19663,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Drama \u2014 2021, rated 7.4 by 400k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/c7/Nobody_2021_Film_Poster.jpeg",
+  "blurb": "Nobody is a 2021 American action thriller film directed by Ilya Naishuller and written by Derek Kolstad. Connie Nielsen, RZA, Aleksei Serebryakov, and Christopher Lloyd appear in supporting roles.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt7888964/"
   },
@@ -19884,8 +19884,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Drama / Horror \u2014 2018, rated 6.8 by 397k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/f6/Annihilation_%28film%29.png",
+  "blurb": "Annihilation is a 2018 science-fiction cosmic horror film written and directed by Alex Garland, loosely based on the 2014 novel by Jeff VanderMeer. The movie is a co-production between the United Kingdom and the United States.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2798920/"
   },
@@ -20216,7 +20216,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Pirates_of_the_Caribbean%2C_Dead_Men_Tell_No_Tales.jpg",
-  "blurb": "Pirates of the Caribbean: Dead Men Tell No Tales is a 2017 American swashbuckler fantasy film directed by Joachim R\u00f8nning and Espen Sandberg, and written by Jeff Nathanson.",
+  "blurb": "Pirates of the Caribbean: Dead Men Tell No Tales is a 2017 American swashbuckler fantasy film directed by Joachim Rønning and Espen Sandberg, and written by Jeff Nathanson.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1790809/"
   },
@@ -20399,8 +20399,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Horror / Science Fiction \u2014 2016, rated 7.2 by 387k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/0/0e/10_Cloverfield_Lane.png",
+  "blurb": "10 Cloverfield Lane is a 2016 American science fiction horror thriller film directed by Dan Trachtenberg in his directorial debut, produced by J. J.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1179933/"
   },
@@ -20655,8 +20655,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama \u2014 2014, rated 7.9 by 383k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/a6/Boyhood_%282014%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Boyhood is a 2014 American epic coming-of-age drama film written and directed by Richard Linklater, and starring Patricia Arquette, Ellar Coltrane, Lorelei Linklater, and Ethan Hawke.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1065073/"
   },
@@ -20875,8 +20875,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Romance \u2014 2000, rated 7 by 381k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/The_Biggest_Focker_Collection_Ever.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Meet the Parents is a film series following the character Greg Focker as he interacts with his family and in-laws. The series is made up of three films: Meet the Parents (2000), Meet the Fockers (2004) and Little Fockers (2010).",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0212338/"
   },
@@ -21132,8 +21132,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Western \u2014 2010, rated 7.6 by 378k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/ce/True_Grit_Poster.jpg",
+  "blurb": "True Grit is a 2010 American Western film produced, written, and directed by Joel Coen and Ethan Coen. It is an adaptation of Charles Portis's 1968 novel.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1403865/"
   },
@@ -21354,8 +21354,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Comedy / Crime \u2014 2008, rated 6.9 by 374k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/ca/Pineapple_Express_Poster.jpg",
+  "blurb": "Pineapple Express is a 2008 American action stoner comedy film directed by David Gordon Green, written by Seth Rogen and Evan Goldberg, and starring Rogen and James Franco alongside Gary Cole, Rosie Perez and Danny McBride.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0910936/"
   },
@@ -21644,8 +21644,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy \u2014 2012, rated 6.5 by 371k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/The_Dictator_Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Dictator is a 2012 political satire black comedy film directed by Larry Charles and written by Sacha Baron Cohen, Alec Berg, David Mandel and Jeff Schaffer.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1645170/"
   },
@@ -21865,7 +21865,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/6/61/Lady_Bird_poster.jpeg",
-  "blurb": "Lady Bird is a 2017 American coming-of-age comedy drama film written and directed by Greta Gerwig in her solo directorial debut, starring Saoirse Ronan, Laurie Metcalf, Tracy Letts, Lucas Hedges, Timoth\u00e9e Chalamet, Beanie Feldstein, Stephen McKinley Henderson, and Lois Smith.",
+  "blurb": "Lady Bird is a 2017 American coming-of-age comedy drama film written and directed by Greta Gerwig in her solo directorial debut, starring Saoirse Ronan, Laurie Metcalf, Tracy Letts, Lucas Hedges, Timothée Chalamet, Beanie Feldstein, Stephen McKinley Henderson, and Lois Smith.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt4925292/"
   },
@@ -21901,7 +21901,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/28_Weeks_Later_poster.jpg/330px-28_Weeks_Later_poster.jpg",
-  "blurb": "28 Weeks Later is a 2007 post-apocalyptic action horror film directed by Juan Carlos Fresnadillo, who co-wrote it with Rowan Joff\u00e9, Enrique L\u00f3pez Lavigne, and Jes\u00fas Olmo.",
+  "blurb": "28 Weeks Later is a 2007 post-apocalyptic action horror film directed by Juan Carlos Fresnadillo, who co-wrote it with Rowan Joffé, Enrique López Lavigne, and Jesús Olmo.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0463854/"
   },
@@ -22010,8 +22010,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Comedy \u2014 2016, rated 6.4 by 364k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/9a/Now_You_See_Me_2_poster.jpg",
+  "blurb": "Now You See Me 2 is a 2016 American heist film directed by Jon M. Chu from a screenplay by Ed Solomon and a story by Solomon and Peter Chiarelli.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3110958/"
   },
@@ -22032,7 +22032,7 @@
  },
  {
   "id": "mv_tt1707386",
-  "title": "Les Mis\u00e9rables",
+  "title": "Les Misérables",
   "subtitle": "2012",
   "year": 2012,
   "meta": "158 min",
@@ -22048,7 +22048,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Monsieur_Madeleine_par_Gustave_Brion.jpg/330px-Monsieur_Madeleine_par_Gustave_Brion.jpg",
-  "blurb": "Les Mis\u00e9rables is a French epic historical novel by Victor Hugo, first published on 31 March 1862, that is considered one of the greatest novels of the 19th century.",
+  "blurb": "Les Misérables is a French epic historical novel by Victor Hugo, first published on 31 March 1862, that is considered one of the greatest novels of the 19th century.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1707386/"
   },
@@ -22268,8 +22268,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama / Romance \u2014 2009, rated 7.4 by 362k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/b2/Up_in_the_Air_Poster.jpg",
+  "blurb": "Up in the Air is a 2009 American comedy-drama film directed by Jason Reitman. It was written by Reitman and Sheldon Turner from Walter Kirn's 2001 novel. The story is centered on traveling corporate \"downsizer\" Ryan Bingham.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1193138/"
   },
@@ -22304,8 +22304,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama \u2014 2005, rated 7.6 by 361k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/92/Lordofwar.jpg",
+  "blurb": "Lord of War is a 2005 crime drama film written and directed by Andrew Niccol. It stars Nicolas Cage, Jared Leto, Bridget Moynahan, Ethan Hawke, and Eamonn Walker in primary roles.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0399295/"
   },
@@ -22523,8 +22523,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Fantasy / Horror \u2014 2019, rated 6.5 by 360k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/d/d8/It_Chapter_Two_Poster.jpg",
+  "blurb": "It Chapter Two is a 2019 American supernatural horror film directed by Andy Muschietti from a screenplay by Gary Dauberman. It is the sequel to It (2017) and the second of a two-part adaptation of the 1986 novel It by Stephen King.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt7349950/"
   },
@@ -22745,8 +22745,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Fantasy / Horror \u2014 2015, rated 7 by 357k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/bf/The_Witch_poster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Witch is a 2015 gothic folk horror film written and directed by Robert Eggers in his feature directorial debut. In fear and desperation, they turn upon one another even when the oldest daughter is suspected of being a witch.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt4263482/"
   },
@@ -22780,8 +22780,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy \u2014 1994, rated 6.9 by 356k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/84/Ace_ventura_pet_detective.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Ace Ventura: Pet Detective is a 1994 American comedy film starring Jim Carrey as Ace Ventura, an animal detective who is tasked with finding the abducted dolphin mascot of the Miami Dolphins football team.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0109040/"
   },
@@ -22911,7 +22911,7 @@
  },
  {
   "id": "mv_tt0103644",
-  "title": "Alien\u00b3",
+  "title": "Alien³",
   "subtitle": "1992",
   "year": 1992,
   "meta": "114 min",
@@ -22926,8 +22926,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Horror / Science Fiction \u2014 1992, rated 6.4 by 354k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/b9/Alien3_poster.jpg",
+  "blurb": "Alien 3 (stylized as ALIEN3) is a 1992 American science fiction horror film directed by David Fincher and written by David Giler, Walter Hill, and Larry Ferguson, from a story by Vincent Ward.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0103644/"
   },
@@ -23144,8 +23144,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama \u2014 1999, rated 8 by 352k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/Magnolia_poster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Magnolia is a 1999 American drama film written, directed and co-produced by Paul Thomas Anderson. Macy, Alfred Molina, Julianne Moore, John C. Reilly, Jason Robards, and Melora Walters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0175880/"
   },
@@ -23586,8 +23586,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Comedy / Family \u2014 2003, rated 7.1 by 348k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/d/df/Elf_movie.jpg",
+  "blurb": "Elf is a 2003 American Christmas comedy film directed by Jon Favreau and written by David Berenbaum. James Caan, Zooey Deschanel, Mary Steenburgen, Ed Asner and Bob Newhart appear in supporting roles.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0319343/"
   },
@@ -23733,7 +23733,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/c/cf/DejaVuBigPoster.jpg",
-  "blurb": "D\u00e9j\u00e0 Vu is a 2006 American science fiction action thriller film directed by Tony Scott, written by Bill Marsilii and Terry Rossio, and produced by Jerry Bruckheimer.",
+  "blurb": "Déjà Vu is a 2006 American science fiction action thriller film directed by Tony Scott, written by Bill Marsilii and Terry Rossio, and produced by Jerry Bruckheimer.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0453467/"
   },
@@ -23806,8 +23806,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / History / Thriller \u2014 2015, rated 7.6 by 346k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/fa/Bridge_of_Spies_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Bridge of Spies is a 2015 historical drama film directed and co-produced by Steven Spielberg, written by Matt Charman and the Coen brothers, and starring Tom Hanks in the lead role, Mark Rylance, Amy Ryan, and Alan Alda.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3682448/"
   },
@@ -23844,7 +23844,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/b/be/Hachi_poster.jpg",
-  "blurb": "Hachi: A Dog's Tale is a 2009 American drama film and a remake of Seijir\u014d K\u014dyama's 1987 Japanese film Hachik\u014d Monogatari.",
+  "blurb": "Hachi: A Dog's Tale is a 2009 American drama film and a remake of Seijirō Kōyama's 1987 Japanese film Hachikō Monogatari.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1028532/"
   },
@@ -24062,8 +24062,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / History / War \u2014 2022, rated 7.8 by 343k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/c3/All_quiet_on_the_western_front_%282022_film%29.jpg",
+  "blurb": "All Quiet on the Western Front is a 2022 German epic anti-war film based on the 1929 novel of the same name by Erich Maria Remarque. It is the third film adaptation of the book, after the 1930 and 1979 versions.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1016150/"
   },
@@ -24099,8 +24099,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Thriller \u2014 1997, rated 6.9 by 341k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/1/1d/Conairinternational.jpg",
+  "blurb": "Con Air is a 1997 American action thriller film directed by Simon West and starring Nicolas Cage, John Cusack and John Malkovich in the lead roles. C. Gainey, and Danny Trejo in minor roles.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0118880/"
   },
@@ -24137,7 +24137,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/e/e6/AI_Poster.jpg",
-  "blurb": "Adventure / Drama / Science Fiction \u2014 2001, rated 7.2 by 341k IMDb voters.",
+  "blurb": "Adventure / Drama / Science Fiction — 2001, rated 7.2 by 341k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0212720/"
   },
@@ -24355,8 +24355,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Comedy / Crime \u2014 2010, rated 7 by 340k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/41/Red_ver7.jpg",
+  "blurb": "Red is a 2010 American action comedy film written by Jon and Erich Hoeber, and directed by Robert Schwentke. It is based on the comic book series by Warren Ellis and Cully Hamner.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1245526/"
   },
@@ -24575,8 +24575,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Thriller \u2014 2009, rated 6.5 by 338k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/8f/Fast_and_Furious_Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Fast & Furious is a 2009 American action film directed by Justin Lin and written by Chris Morgan.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1013752/"
   },
@@ -24612,8 +24612,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Thriller \u2014 2012, rated 6.2 by 338k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/f0/Taken_2_Poster.jpg",
+  "blurb": "Taken 2 is a 2012 English-language French action-thriller film directed by Olivier Megaton and starring Liam Neeson, Maggie Grace, Famke Janssen, Rade Šerbedžija, Leland Orser, Jon Gries, D.B. Sweeney, and Luke Grimes.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1397280/"
   },
@@ -24833,8 +24833,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Crime / Drama \u2014 2009, rated 6.9 by 336k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/46/PEPOSTERsm.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Public Enemies is a 2009 American biographical crime film directed by Michael Mann, who co-wrote the screenplay with Ronan Bennett and Ann Biderman.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1152836/"
   },
@@ -24869,8 +24869,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Thriller \u2014 2007, rated 7 by 336k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/b4/Death_Proof_USA_Poster.png",
+  "blurb": "Death Proof is a 2007 American slasher film written, co-produced, shot and directed by Quentin Tarantino. It stars Kurt Russell as a stuntman who murders young women with modified cars he describes as \"death-proof\".",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1028528/"
   },
@@ -24981,7 +24981,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/e/e7/How_the_Grinch_Stole_Christmas_film_poster.jpg",
-  "blurb": "Comedy / Family / Fantasy \u2014 2000, rated 6.4 by 335k IMDb voters.",
+  "blurb": "Comedy / Family / Fantasy — 2000, rated 6.4 by 335k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0170016/"
   },
@@ -25055,7 +25055,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/4/41/Don%27t_Breathe_%282016_film%29.png",
-  "blurb": "Don't Breathe is a 2016 American horror film co-produced and directed by Fede \u00c1lvarez, who co-wrote it with Rodo Sayagues.",
+  "blurb": "Don't Breathe is a 2016 American horror film co-produced and directed by Fede Álvarez, who co-wrote it with Rodo Sayagues.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt4160708/"
   },
@@ -25091,8 +25091,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Horror / Science Fiction \u2014 1998, rated 7.1 by 333k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/1/19/Blade_movie.jpg",
+  "blurb": "Blade is a 1998 American superhero film based on the Marvel Comics character. The first installment in the Blade franchise, it was directed by Stephen Norrington and written by David S. Goyer.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0120611/"
   },
@@ -25272,8 +25272,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Mystery / Romance \u2014 2007, rated 7.8 by 332k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/e4/Atonement_UK_poster.jpg",
+  "blurb": "Atonement is a 2007 romantic war tragedy film directed by Joe Wright and starring James McAvoy, Keira Knightley, Saoirse Ronan, Romola Garai, and Vanessa Redgrave. It is based on the 2001 novel by Ian McEwan.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0783233/"
   },
@@ -25309,8 +25309,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Thriller \u2014 2023, rated 7.6 by 331k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mission-_Impossible_%E2%80%93_Dead_Reckoning_Part_One_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Mission: Impossible – Dead Reckoning Part One is a 2023 American action spy film directed by Christopher McQuarrie from a screenplay he co-wrote with Erik Jendresen.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt9603212/"
   },
@@ -25419,7 +25419,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/9/9e/Babel_poster.png",
-  "blurb": "Babel is a 2006 psychological drama film directed by Alejandro Gonz\u00e1lez I\u00f1\u00e1rritu and written by Guillermo Arriaga.",
+  "blurb": "Babel is a 2006 psychological drama film directed by Alejandro González Iñárritu and written by Guillermo Arriaga.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0449467/"
   },
@@ -25529,8 +25529,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Comedy / Family \u2014 1985, rated 7.7 by 329k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Goonies.jpg",
+  "blurb": "The Goonies is a 1985 American adventure comedy film directed by Richard Donner from a screenplay by Chris Columbus based on a story by Steven Spielberg.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0089218/"
   },
@@ -25641,7 +25641,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/e/e2/Grease_ver2.jpg",
-  "blurb": "Grease is a 1978 American musical romantic comedy film directed by Randal Kleiser from a screenplay by Bront\u00e9 Woodard and an adaptation by co-producer Allan Carr, based on the 1971 stage musical of the same name by Jim Jacobs and Warren Casey.",
+  "blurb": "Grease is a 1978 American musical romantic comedy film directed by Randal Kleiser from a screenplay by Bronté Woodard and an adaptation by co-producer Allan Carr, based on the 1971 stage musical of the same name by Jim Jacobs and Warren Casey.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0077631/"
   },
@@ -25785,8 +25785,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy \u2014 2011, rated 6.8 by 327k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/d/df/BridesmaidsPoster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Bridesmaids is a 2011 American comedy film directed by Paul Feig from a screenplay by Annie Mumolo and Kristen Wiig. The ensemble cast also features Rose Byrne, Wendi McLendon-Covey, Ellie Kemper, Melissa McCarthy, and Chris O'Dowd.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1478338/"
   },
@@ -25821,8 +25821,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Romance \u2014 2003, rated 6.6 by 327k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/0/07/HowToLoseAGuyimp.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "How to Lose a Guy in 10 Days is a 2003 romantic comedy film directed by Donald Petrie, from a script by Kristen Buckley, Brian Regan, and Burr Steers, and starring Kate Hudson and Matthew McConaughey.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0251127/"
   },
@@ -26117,8 +26117,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Crime / Drama \u2014 2017, rated 6.5 by 323k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/bd/Murder_on_the_Orient_Express_teaser_poster.jpg",
+  "blurb": "Murder on the Orient Express is a 2017 mystery film co-produced and directed by Kenneth Branagh from a screenplay by Michael Green, based on the 1934 novel of the same name by Agatha Christie.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3402236/"
   },
@@ -26339,7 +26339,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/2/26/Blair_Witch_Project.jpg",
-  "blurb": "The Blair Witch Project is a 1999 American psychological horror film written, edited, and directed by Daniel Myrick and Eduardo S\u00e1nchez.",
+  "blurb": "The Blair Witch Project is a 1999 American psychological horror film written, edited, and directed by Daniel Myrick and Eduardo Sánchez.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0185937/"
   },
@@ -26375,8 +26375,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Animation / Comedy \u2014 2006, rated 6.8 by 320k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Iceage-logo.svg/330px-Iceage-logo.svg.png",
+  "blurb": "Ice Age is an American media franchise created by Michael J. Wilson, co-developed and based on an idea by Lori Forte.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0438097/"
   },
@@ -26594,7 +26594,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/Mrs_Doubtfire.jpg",
-  "blurb": "Comedy / Drama / Family \u2014 1993, rated 7.1 by 319k IMDb voters.",
+  "blurb": "Comedy / Drama / Family — 1993, rated 7.1 by 319k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0107614/"
   },
@@ -26849,8 +26849,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 2005, rated 7.8 by 317k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/9e/Serenity_One_Sheet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Serenity is a 2005 American space Western film written and directed by Joss Whedon in his feature directorial debut. Their lives of smuggling and cargo-running are interrupted by a psychic passenger who harbors a dangerous secret.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0379786/"
   },
@@ -26923,8 +26923,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Comedy / Drama \u2014 2000, rated 7.9 by 316k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/d/dd/Almost_famous_poster1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Almost Famous is a 2000 American comedy drama film written and directed by Cameron Crowe, starring Billy Crudup, Frances McDormand, Kate Hudson, Patrick Fugit, and Philip Seymour Hoffman.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0181875/"
   },
@@ -27145,8 +27145,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Mystery / Science Fiction \u2014 1997, rated 7.5 by 316k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/7/75/Contact_ver2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Contact is a 1997 American science fiction drama film co-produced and directed by Robert Zemeckis, based on the 1985 novel by Carl Sagan. It stars Jodie Foster as Dr.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0118884/"
   },
@@ -27182,8 +27182,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama / Thriller \u2014 2001, rated 6.8 by 315k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/9b/Hannibal_movie_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Hannibal is a 2001 American horror film co-produced and directed by Ridley Scott from a screenplay by David Mamet and Steven Zaillian, based on the 1999 novel by Thomas Harris. It is a sequel to The Silence of the Lambs (1991).",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0212985/"
   },
@@ -27404,8 +27404,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama / Thriller \u2014 2002, rated 7.2 by 313k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/bd/Red_Dragon_movie.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Red Dragon is a 2002 psychological horror thriller film based on the 1981 novel by Thomas Harris. It was directed by Brett Ratner and written by Ted Tally.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0289765/"
   },
@@ -27625,8 +27625,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Thriller \u2014 2000, rated 6.5 by 312k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/2/2a/Gone_in_sixty_seconds.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Gone in 60 Seconds is a 2000 American action heist film directed by Dominic Sena, and produced by Jerry Bruckheimer. It is a loose remake of the 1974 film of the same name by H. B. Halicki.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0187078/"
   },
@@ -27662,8 +27662,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Horror / Thriller \u2014 2016, rated 7.6 by 312k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/95/Train_to_Busan.jpg",
+  "blurb": "Train to Busan is a 2016 South Korean action horror film directed by Yeon Sang-ho and written by Park Joo-suk. It stars Gong Yoo, Jung Yu-mi, Ma Dong-seok, Kim Su-an, Choi Woo-shik, Ahn So-hee, and Kim Eui-sung.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt5700672/"
   },
@@ -28029,8 +28029,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Fantasy \u2014 2004, rated 6.1 by 309k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Van_Helsing_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Van Helsing is a 2004 action horror film written and directed by Stephen Sommers. It stars Hugh Jackman as monster hunter Van Helsing and Kate Beckinsale as Anna Valerious.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0338526/"
   },
@@ -28245,8 +28245,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Animation \u2014 2016, rated 7.3 by 307k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/a4/The_Jungle_Book_%282016%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Jungle Book is a 2016 American fantasy adventure film produced by Walt Disney Pictures. It was directed by Jon Favreau and written by Justin Marks.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3040964/"
   },
@@ -28540,8 +28540,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Crime / Drama \u2014 1973, rated 8.2 by 304k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/The_Sting_%281973_alt_poster%29.jpeg/500px-The_Sting_%281973_alt_poster%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "The Sting is a 1973 American caper film. Set in 1936, it involves a complicated plot by two professional grifters to con a mob boss. The screenplay by David S.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0070735/"
   },
@@ -28615,7 +28615,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/8/8c/The_Northman.png",
-  "blurb": "The Northman is a 2022 American epic period fantasy action film directed by Robert Eggers, who co-wrote the screenplay with Sj\u00f3n.",
+  "blurb": "The Northman is a 2022 American epic period fantasy action film directed by Robert Eggers, who co-wrote the screenplay with Sjón.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt11138512/"
   },
@@ -28834,8 +28834,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Fantasy / Thriller \u2014 2003, rated 7 by 302k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/cc/Underworld_%282003_film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Underworld is a 2003 Gothic action horror film directed by Len Wiseman in his feature film directorial debut, from a screenplay by Danny McBride, based on a story by Kevin Grevioux, Wiseman, and McBride.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0320691/"
   },
@@ -28870,8 +28870,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Western \u2014 1965, rated 8.2 by 302k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/0/09/For_a_Few_Dollars_More-ita-poster.jpg",
+  "blurb": "For a Few Dollars More is a 1965 spaghetti Western film directed by Sergio Leone. It stars Clint Eastwood and Lee Van Cleef as bounty hunters, and Gian Maria Volonté as the primary villain.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0059578/"
   },
@@ -29019,7 +29019,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/4/44/Kick-Ass_2_International_Poster.jpg",
-  "blurb": "Kick-Ass 2 is a 2013 black comedy superhero film written and directed by Jeff Wadlow, based on the graphic novels Book Two and Book Three of Kick-Ass \u2013 The Dave Lizewski Years by Mark Millar and John Romita, Jr., and serving as a sequel to 2010's Kick-Ass.",
+  "blurb": "Kick-Ass 2 is a 2013 black comedy superhero film written and directed by Jeff Wadlow, based on the graphic novels Book Two and Book Three of Kick-Ass – The Dave Lizewski Years by Mark Millar and John Romita, Jr., and serving as a sequel to 2010's Kick-Ass.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1650554/"
   },
@@ -29166,8 +29166,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Fantasy \u2014 2008, rated 7 by 300k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Hellboy_2_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Hellboy II: The Golden Army is a 2008 American superhero film based on the Dark Horse Comics character, created by Mike Mignola. It is a sequel to Hellboy (2004) and is the second live-action film in the franchise.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0411477/"
   },
@@ -29460,8 +29460,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Drama \u2014 2010, rated 6.6 by 297k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Robin_Hood_2010_UK_poster.jpg/330px-Robin_Hood_2010_UK_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Robin Hood is a 2010 historical action film directed by Ridley Scott and written by Brian Helgeland, which was based on a story written by Helgeland and the writing duo of Ethan Reiff and Cyrus Voris.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0955308/"
   },
@@ -29497,8 +29497,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Fantasy \u2014 2016, rated 6.7 by 297k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/56/Warcraft_Teaser_Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Warcraft is a 2016 American action fantasy film based on the video game series of the same name. Together, a few human heroes and dissenting Orcs must attempt to stop the true evil behind this war and restore peace.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0803096/"
   },
@@ -29681,8 +29681,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Drama / War \u2014 2001, rated 7.5 by 295k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/ab/Enemy_at_the_gates_ver2.jpg",
+  "blurb": "The screenplay was written by Annaud and Alain Godard. The film's main character is a fictionalized version of Vasily Zaitsev, a sniper and Hero of the Soviet Union during World War II.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0215750/"
   },
@@ -30048,7 +30048,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/c/cb/Alien_Romulus_2024_%28poster%29.jpg",
-  "blurb": "Alien: Romulus is a 2024 science fiction horror film directed by Fede \u00c1lvarez, who co-wrote the script with Rodo Sayagues.",
+  "blurb": "Alien: Romulus is a 2024 science fiction horror film directed by Fede Álvarez, who co-wrote the script with Rodo Sayagues.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt18412256/"
   },
@@ -30196,7 +30196,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/9/90/Thunderbolts%2A_poster.jpg",
-  "blurb": "Thunderbolts*\u200a is a 2025 American superhero film based on Marvel Comics featuring the team Thunderbolts.",
+  "blurb": "Thunderbolts*  is a 2025 American superhero film based on Marvel Comics featuring the team Thunderbolts.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt20969586/"
   },
@@ -30339,8 +30339,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Horror \u2014 2004, rated 7.2 by 290k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/1/16/Dawn_of_the_Dead_2004_movie.jpg",
+  "blurb": "Dawn of the Dead is a 2004 American action horror film directed by Zack Snyder, in his feature directorial debut, from a screenplay by James Gunn. A remake of George A.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0363547/"
   },
@@ -30376,8 +30376,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Crime / Drama \u2014 2012, rated 7.1 by 289k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Seven_Psychopaths_Poster.jpg/330px-Seven_Psychopaths_Poster.jpg",
+  "blurb": "A co-production between the United Kingdom and the United States, it marks the second collaboration among McDonagh, Farrell, and Ivanek, following the director's In Bruges (2008).",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1931533/"
   },
@@ -30413,7 +30413,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/a/a3/Das_boot_ver1.jpg",
-  "blurb": "Das Boot is a 1981 West German war film written and directed by Wolfgang Petersen, produced by G\u00fcnter Rohrbach, and starring J\u00fcrgen Prochnow, Herbert Gr\u00f6nemeyer and Klaus Wennemann.",
+  "blurb": "Das Boot is a 1981 West German war film written and directed by Wolfgang Petersen, produced by Günter Rohrbach, and starring Jürgen Prochnow, Herbert Grönemeyer and Klaus Wennemann.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0082096/"
   },
@@ -30594,8 +30594,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Horror / Mystery \u2014 2020, rated 7.1 by 288k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/3a/The_Invisible_Man_%282020_film%29_-_release_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Invisible Man is a 2020 science fiction horror film written and directed by Leigh Whannell. Loosely based on H. G. Aldis Hodge, Storm Reid, Harriet Dyer, and Michael Dorman appear in supporting roles.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1051906/"
   },
@@ -30999,8 +30999,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Drama \u2014 2015, rated 6.8 by 285k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/7/71/Chappie_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Chappie is a 2015 dystopian science fiction action film directed by Neill Blomkamp and written by Blomkamp and Terri Tatchell.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1823672/"
   },
@@ -31219,8 +31219,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Drama \u2014 1980, rated 8.2 by 283k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/2/27/TheElephantManposter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Elephant Man is a 1980 historical drama film loosely based on the life of Joseph Merrick, a severely deformed man who lived in London in the late 19th century.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0080678/"
   },
@@ -31256,8 +31256,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Drama / Mystery \u2014 2019, rated 6.5 by 283k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/cb/Ad_Astra_-_film_poster.jpg",
+  "blurb": "Ad Astra is a 2019 psychological science fiction film directed by James Gray who co-wrote with Ethan Gross.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2935510/"
   },
@@ -31441,8 +31441,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Drama / Musical \u2014 2005, rated 7.8 by 282k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/Walk_the_line_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Walk the Line is a 2005 American biographical drama film directed by James Mangold. The film follows Cash's early life, his romance with the singer June Carter, his ascent in the country music scene, and his drug addiction.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0358273/"
   },
@@ -31589,7 +31589,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/6/69/Perfume_poster.jpg",
-  "blurb": "Perfume: The Story of a Murderer is a 2006 period psychological thriller film directed by Tom Tykwer, who cowrote the screenplay with Andrew Birkin and Bernd Eichinger, based on the 1985 novel Perfume by Patrick S\u00fcskind.",
+  "blurb": "Perfume: The Story of a Murderer is a 2006 period psychological thriller film directed by Tom Tykwer, who cowrote the screenplay with Andrew Birkin and Bernd Eichinger, based on the 1985 novel Perfume by Patrick Süskind.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0396171/"
   },
@@ -31697,8 +31697,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama \u2014 2011, rated 8.3 by 279k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/41/A_Separation_%282011_film_poster%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "A Separation is a 2011 Iranian drama film written and directed by Asghar Farhadi, starring Leila Hatami, Peyman Moaadi, Shahab Hosseini, Sareh Bayat, and Sarina Farhadi.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1832382/"
   },
@@ -31919,8 +31919,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Crime \u2014 2010, rated 6.7 by 278k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/e8/A_team_poster_10.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The A-Team is a 2010 American action comedy film based on the 1980s television series of the same name created by Frank Lupo and Stephen J. Cannell. The film was produced by Cannell, Tony Scott, and his brother Ridley Scott.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0429493/"
   },
@@ -31956,8 +31956,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 2025, rated 6.8 by 278k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/1/13/The_Fantastic_Four_First_Steps_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Fantastic Four: First Steps is a 2025 American superhero film based on the Marvel Comics superhero team the Fantastic Four.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt10676052/"
   },
@@ -32140,8 +32140,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / War \u2014 2008, rated 7.7 by 277k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Theboyposter.jpg/330px-Theboyposter.jpg",
+  "blurb": "The Boy in the Striped Pyjamas is a 2008 Holocaust historical drama film written and directed by Mark Herman. It is based on the 2006 novel of the same name by John Boyne.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0914798/"
   },
@@ -32398,8 +32398,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Animation / Comedy \u2014 2011, rated 6.9 by 276k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/bb/Rio2011Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Rio is a 2011 American animated musical adventure comedy film directed by Carlos Saldanha and written by Don Rhymer, Joshua Sternin, Jennifer Ventimilia, and Sam Harper.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1436562/"
   },
@@ -32435,8 +32435,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Crime / Drama \u2014 2008, rated 7.7 by 276k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/43/Changeling_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Changeling is a 2008 American crime drama film directed, produced, and scored by Clint Eastwood and written by J. Michael Straczynski. It stars Angelina Jolie as a woman \"reunited\" with a boy who was not her missing son.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0824747/"
   },
@@ -32689,8 +32689,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Drama \u2014 2011, rated 6.7 by 275k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/2/27/The_Grey_Poster.jpg",
+  "blurb": "The Grey is a 2011 survival thriller film co-written, produced and directed by Joe Carnahan, and starring Liam Neeson, Frank Grillo, Dermot Mulroney, Dallas Roberts, Joe Anderson, Nonso Anozie, and James Badge Dale.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1601913/"
   },
@@ -33020,8 +33020,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Horror / Mystery \u2014 2007, rated 6.3 by 273k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/54/Paranormal_Activity_poster.jpg",
+  "blurb": "Paranormal Activity is a 2007 American found footage supernatural horror film produced, written, directed, photographed, and edited by Oren Peli. It centers on a young couple who are haunted by a supernatural presence inside their home.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1179904/"
   },
@@ -33203,8 +33203,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Drama \u2014 1959, rated 8.1 by 272k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Ben_Hur_1959_film_Poster.jpg/500px-Ben_Hur_1959_film_Poster.jpg",
+  "blurb": "Ben-Hur is a 1959 American religious epic film directed by William Wyler, produced by Sam Zimbalist, and starring Charlton Heston as the title character. N. Behrman, Gore Vidal, and Christopher Fry.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0052618/"
   },
@@ -33239,8 +33239,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Thriller \u2014 2000, rated 8 by 272k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/Amores_Perros_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Amores perros is a 2000 Mexican psychological drama film produced and directed by Alejandro González Iñárritu and written by Guillermo Arriaga, based on a story by both.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0245712/"
   },
@@ -33643,7 +33643,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/5/5c/What%27s_Eating_Gilbert_Grape_poster.png",
-  "blurb": "What's Eating Gilbert Grape is a 1993 American coming-of-age drama film directed by Lasse Hallstr\u00f6m and starring Johnny Depp, Juliette Lewis, Mary Steenburgen, Leonardo DiCaprio and John C.",
+  "blurb": "What's Eating Gilbert Grape is a 1993 American coming-of-age drama film directed by Lasse Hallström and starring Johnny Depp, Juliette Lewis, Mary Steenburgen, Leonardo DiCaprio and John C.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0108550/"
   },
@@ -33717,7 +33717,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/9/94/Mother%212017.jpg",
-  "blurb": "Drama / Horror / Mystery \u2014 2017, rated 6.6 by 270k IMDb voters.",
+  "blurb": "Drama / Horror / Mystery — 2017, rated 6.6 by 270k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt5109784/"
   },
@@ -33753,8 +33753,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Romance / Thriller \u2014 2010, rated 6 by 270k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/2/28/The_Tourist_Poster.jpg",
+  "blurb": "It is a remake of the 2005 French film Anthony Zimmer. GK Films financed and produced the film, with Sony Pictures Worldwide Acquisitions releasing it in most countries through Columbia Pictures.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1243957/"
   },
@@ -34009,8 +34009,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Drama \u2014 2016, rated 8 by 268k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/f0/Lion_%282016_film%29.png",
+  "blurb": "Lion is a 2016 Australian biographical drama film directed by Garth Davis from a screenplay by Luke Davies based on the 2013 nonfiction book A Long Way Home by Saroo Brierley.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3741834/"
   },
@@ -34045,8 +34045,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Thriller \u2014 1990, rated 7.8 by 268k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/52/Misery_%281990_film_poster%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Misery is a 1990 American psychological horror thriller film directed by Rob Reiner from a screenplay by William Goldman. The supporting cast includes Richard Farnsworth, Frances Sternhagen, and Lauren Bacall.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0100157/"
   },
@@ -34193,8 +34193,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Horror / Science Fiction / Thriller \u2014 2000, rated 7 by 265k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/2/26/Pitch_Black_poster.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Pitch Black is a 2000 American science fiction horror film directed by David Twohy and co-written by Twohy and brothers Ken and Jim Wheat from a story conceived by the Wheats.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0134847/"
   },
@@ -34266,7 +34266,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/0/02/Me%2C_Myself_and_Irene_Posters.jpg",
-  "blurb": "Me, Myself & Irene is a 2000 American slapstick black comedy film produced, co-written, and directed by the Farrelly brothers, and starring Jim Carrey and Ren\u00e9e Zellweger.",
+  "blurb": "Me, Myself & Irene is a 2000 American slapstick black comedy film produced, co-written, and directed by the Farrelly brothers, and starring Jim Carrey and Renée Zellweger.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0183505/"
   },
@@ -34377,7 +34377,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/1/12/Predators_54632_glg.jpg",
-  "blurb": "Predators is a 2010 American science fiction action film directed by Nimr\u00f3d Antal and written by Alex Litvak and Michael Finch.",
+  "blurb": "Predators is a 2010 American science fiction action film directed by Nimród Antal and written by Alex Litvak and Michael Finch.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1424381/"
   },
@@ -34450,8 +34450,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Biography / Crime / Drama \u2014 2012, rated 7.2 by 263k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/a0/Lawless_film_poster.jpg",
+  "blurb": "Lawless is a 2012 American Southern Gothic gangster film directed by John Hillcoat and written by Nick Cave, who based his screenplay from Matt Bondurant's historical novel The Wettest County in the World.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1212450/"
   },
@@ -34743,8 +34743,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Film-Noir \u2014 1950, rated 8.4 by 263k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sunset_Boulevard_%281950_poster%29.jpg/500px-Sunset_Boulevard_%281950_poster%29.jpg",
+  "blurb": "Sunset Boulevard is a 1950 American black comedy film noir directed by Billy Wilder and co-written by Wilder, Charles Brackett, and D. M. Marshman Jr. It is named after a major street that runs through Hollywood and western Los Angeles.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0043014/"
   },
@@ -35037,8 +35037,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Comedy \u2014 2022, rated 6.7 by 260k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/d/d7/The_Adam_Project_poster.png",
+  "blurb": "The Adam Project is a 2022 American science fiction action film directed by Shawn Levy and written by Jonathan Tropper, T. S. Nowlin, Jennifer Flackett, and Mark Levin.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2463208/"
   },
@@ -35219,8 +35219,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Science Fiction \u2014 1996, rated 6.4 by 260k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/bd/Mars_attacks_ver1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Mars Attacks! is a 1996 American science fiction black comedy film directed by Tim Burton, who also co-produced it with Larry J. Franco. The screenplay by Jonathan Gems was based on the Topps trading card series of the same name.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0116996/"
   },
@@ -35477,7 +35477,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/3/32/Mr._Nobody_%28film_poster%29.jpg",
-  "blurb": "Drama / Fantasy / Romance \u2014 2009, rated 7.7 by 259k IMDb voters.",
+  "blurb": "Drama / Fantasy / Romance — 2009, rated 7.7 by 259k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0485947/"
   },
@@ -35513,8 +35513,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Fantasy / Romance \u2014 1990, rated 7.1 by 258k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/41/Ghost_%281990_movie_poster%29.jpg",
+  "blurb": "Ghost is a 1990 American supernatural romance film directed by Jerry Zucker, written by Bruce Joel Rubin, and starring Patrick Swayze, Demi Moore, Whoopi Goldberg, and Tony Goldwyn.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0099653/"
   },
@@ -35548,8 +35548,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy \u2014 2004, rated 7 by 258k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Napoleon_dynamite_post.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Napoleon Dynamite is a 2004 American comedy film directed by Jared Hess, written by Jared and Jerusha Hess, and produced by Jeremy Coon, Chris Wyatt, and Sean Covel.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0374900/"
   },
@@ -35767,8 +35767,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Animation / Comedy \u2014 2024, rated 7.5 by 257k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/f7/Inside_Out_2_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Inside Out 2 is a 2024 American animated coming-of-age film produced by Pixar Animation Studios for Walt Disney Pictures. The sequel to Inside Out (2015), it was directed by Kelsey Mann and written by Meg LeFauve and Dave Holstein.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt22022452/"
   },
@@ -35805,7 +35805,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Tintin-mainCast.png/330px-Tintin-mainCast.png",
-  "blurb": "The Adventures of Tintin is a series of 24 comic albums created by Belgian cartoonist Herg\u00e9.",
+  "blurb": "The Adventures of Tintin is a series of 24 comic albums created by Belgian cartoonist Hergé.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0983193/"
   },
@@ -36025,8 +36025,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Mystery / War \u2014 2010, rated 8.3 by 256k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/a0/Incendies.jpg",
+  "blurb": "Incendies is a 2010 Canadian mystery drama film directed by Denis Villeneuve, who co-wrote the screenplay with Valérie Beaugrand-Champagne.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1255953/"
   },
@@ -36136,7 +36136,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/f/f0/Fistful-of-Dollars-poster.jpg",
-  "blurb": "A Fistful of Dollars is a 1964 spaghetti Western film directed by Sergio Leone and starring Clint Eastwood in his first leading role, alongside Gian Maria Volont\u00e9, Marianne Koch, Wolfgang Lukschy, Sieghardt Rupp, Jos\u00e9 Calvo, Antonio Prieto and Joseph Egger.",
+  "blurb": "A Fistful of Dollars is a 1964 spaghetti Western film directed by Sergio Leone and starring Clint Eastwood in his first leading role, alongside Gian Maria Volonté, Marianne Koch, Wolfgang Lukschy, Sieghardt Rupp, José Calvo, Antonio Prieto and Joseph Egger.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0058461/"
   },
@@ -36281,8 +36281,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama / Romance \u2014 2010, rated 6.7 by 254k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/43/Love_%26_Other_Drugs_Poster.jpg",
+  "blurb": "Love & Other Drugs is a 2010 American romantic comedy drama film directed, produced and co-written by Edward Zwick and based on Jamie Reidy's 2005 non-fiction book Hard Sell: The Evolution of a Viagra Salesman.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0758752/"
   },
@@ -36502,8 +36502,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama \u2014 1999, rated 6.5 by 253k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/ca/Big_Daddy_film.jpg",
+  "blurb": "Big Daddy is a 1999 American comedy-drama film directed by Dennis Dugan, and written by Steve Franks, Tim Herlihy, and Adam Sandler.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0142342/"
   },
@@ -36539,8 +36539,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Crime / Drama \u2014 2020, rated 6.7 by 253k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/e6/Enola_Holmes_poster.jpeg",
+  "blurb": "Enola Holmes is a 2020 mystery film starring Millie Bobby Brown as the title character, the teenage sister of the already famous Victorian-era detective Sherlock Holmes.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt7846844/"
   },
@@ -36577,7 +36577,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/7/74/21_grams_movie.jpg",
-  "blurb": "21 Grams is a 2003 American crime thriller film co-produced and directed by Alejandro Gonz\u00e1lez I\u00f1\u00e1rritu and written by Guillermo Arriaga.",
+  "blurb": "21 Grams is a 2003 American crime thriller film co-produced and directed by Alejandro González Iñárritu and written by Guillermo Arriaga.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0315733/"
   },
@@ -36758,8 +36758,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Sport \u2014 1979, rated 7.3 by 252k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/b/bc/Rocky_ii_poster.jpg",
+  "blurb": "Rocky II is a 1979 American sports drama film written, directed by, and starring Sylvester Stallone. It is the direct sequel to Rocky (1976) and the second installment in the Rocky franchise.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0079817/"
   },
@@ -37200,8 +37200,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Animation / Comedy \u2014 2008, rated 6.8 by 250k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/2/27/Characters_bolt.jpeg",
+  "blurb": "Bolt is the main character and the titular protagonist of Walt Disney Animation Studios' 2008 film Bolt. He is depicted as a White Shepherd with superpowers such as a \"super bark\" and the ability to shoot lasers from his eyes.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0397892/"
   },
@@ -37423,7 +37423,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/2/28/Everest_poster.jpg",
-  "blurb": "Everest is a 2015 biographical survival film directed and produced by Baltasar Korm\u00e1kur and written by William Nicholson and Simon Beaufoy.",
+  "blurb": "Everest is a 2015 biographical survival film directed and produced by Baltasar Kormákur and written by William Nicholson and Simon Beaufoy.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2719848/"
   },
@@ -37567,8 +37567,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Science Fiction / Thriller \u2014 2014, rated 6.2 by 248k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/ef/Transcendence2014Poster.jpg",
+  "blurb": "Transcendence is a 2014 American science fiction thriller film directed by Wally Pfister and written by Jack Paglen.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2209764/"
   },
@@ -37639,8 +37639,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Sport \u2014 1985, rated 6.9 by 248k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/95/Rocky_IV.jpg",
+  "blurb": "Rocky IV is a 1985 American sports drama film starring, written and directed by Sylvester Stallone. The film is the sequel to Rocky III (1982) and the fourth installment in the Rocky franchise.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0089927/"
   },
@@ -37824,8 +37824,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Fantasy / Horror \u2014 2019, rated 7.3 by 247k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/c/cf/Doctor_Sleep_%28Official_Film_Poster%29.png",
+  "blurb": "Doctor Sleep is a 2019 American supernatural horror film written, directed, and edited by Mike Flanagan. It is a film adaptation of the 2013 novel by Stephen King and serves as a sequel to The Shining (1980).",
   "links": {
    "imdb": "https://www.imdb.com/title/tt5606664/"
   },
@@ -37898,8 +37898,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama / Fantasy \u2014 2006, rated 7.5 by 246k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/ff/Stranger_Than_Fiction_%282006_movie_poster%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Stranger than Fiction is a 2006 American fantasy romance comedy drama film directed by Marc Forster, produced by Lindsay Doran and written by Zach Helm.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0420223/"
   },
@@ -38081,8 +38081,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Horror / Mystery / Thriller \u2014 2022, rated 6.5 by 246k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Smile_%282022_film%29.jpg",
+  "blurb": "Smile is a 2022 American supernatural psychological horror film written and directed by Parker Finn, in his feature directorial debut. It also features Jessie T.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt15474916/"
   },
@@ -38375,8 +38375,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Western \u2014 2021, rated 6.8 by 244k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/6/6d/The_Power_of_the_Dog_%28film%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Power of the Dog is a 2021 Western psychological drama film written, co-produced and directed by Jane Campion. It is based on Thomas Savage's 1967 novel.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt10293406/"
   },
@@ -38413,7 +38413,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/9/91/Cartel-nuevo-de-el-secreto-de-sus-ojos.jpg",
-  "blurb": "The Secret in Their Eyes is a 2009 crime drama film produced, edited, and directed by Juan Jos\u00e9 Campanella from a screenplay by Campanella and Eduardo Sacheri, and based on Sacheri's 2005 novel La pregunta de sus ojos.",
+  "blurb": "The Secret in Their Eyes is a 2009 crime drama film produced, edited, and directed by Juan José Campanella from a screenplay by Campanella and Eduardo Sacheri, and based on Sacheri's 2005 novel La pregunta de sus ojos.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1305806/"
   },
@@ -38595,8 +38595,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Mystery / Thriller \u2014 2013, rated 6.8 by 243k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/3e/Walking_with_the_Enemy_poster.jpg",
+  "blurb": "Walking with the Enemy is a 2014 American action drama film directed by Mark Schmidt, and scripted by Kenny Golde and Mark Schmidt. It is inspired by the true story of Pinchas Tibor Rosenbaum.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2316411/"
   },
@@ -38631,8 +38631,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Romance \u2014 2009, rated 6.4 by 243k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/ad/Ugly_truth.jpg",
+  "blurb": "The Ugly Truth is a 2009 American romantic comedy film directed by Robert Luketic, written by Nicole Eastman, Karen McCullah Lutz and Kirsten Smith, and starring Katherine Heigl and Gerard Butler.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1142988/"
   },
@@ -38923,8 +38923,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Crime / Thriller \u2014 2021, rated 7.1 by 241k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/af/Wrath-of-man.jpg",
+  "blurb": "Wrath of Man is a 2021 action thriller film directed by Guy Ritchie, who co-wrote it with Ivan Atkinson and Marn Davies. It is loosely based on the 2004 French film Cash Truck.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt11083552/"
   },
@@ -39035,7 +39035,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/0/01/Ghostbusters_ii_poster.jpg",
-  "blurb": "Ghostbusters\u00a0II is a 1989 American supernatural comedy film directed by Ivan Reitman and written by Dan Aykroyd and Harold Ramis.",
+  "blurb": "Ghostbusters II is a 1989 American supernatural comedy film directed by Ivan Reitman and written by Dan Aykroyd and Harold Ramis.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0097428/"
   },
@@ -39182,8 +39182,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama / Thriller \u2014 2014, rated 8.1 by 240k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Relatos_salvajes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Wild Tales is a 2014 satirical absurdist dark comedy anthology film, written and directed by the Argentine filmmaker Damián Szifron.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3011894/"
   },
@@ -39476,8 +39476,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Comedy / Crime \u2014 2013, rated 6.7 by 239k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/f0/Two_guns_poster.jpg",
+  "blurb": "2 Guns is a 2013 American buddy cop action comedy film directed by Baltasar Kormákur and starring Denzel Washington and Mark Wahlberg. Studios.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1272878/"
   },
@@ -39623,7 +39623,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/b/ba/Close_Encounters_of_the_Third_Kind_%281977%29_theatrical_poster.jpg",
-  "blurb": "Close Encounters of the Third Kind is a 1977 American science fiction drama film written and directed by Steven Spielberg, starring Richard Dreyfuss, Melinda Dillon, Teri Garr, Bob Balaban, Cary Guffey, and Fran\u00e7ois Truffaut.",
+  "blurb": "Close Encounters of the Third Kind is a 1977 American science fiction drama film written and directed by Steven Spielberg, starring Richard Dreyfuss, Melinda Dillon, Teri Garr, Bob Balaban, Cary Guffey, and François Truffaut.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0075860/"
   },
@@ -39697,7 +39697,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/1/1f/Mission_Impossible_%E2%80%93_The_Final_Reckoning_Poster.jpg",
-  "blurb": "Mission: Impossible \u2013 The Final Reckoning is a 2025 American action spy film directed by Christopher McQuarrie from a screenplay he co-wrote with Erik Jendresen.",
+  "blurb": "Mission: Impossible – The Final Reckoning is a 2025 American action spy film directed by Christopher McQuarrie from a screenplay he co-wrote with Erik Jendresen.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt9603208/"
   },
@@ -39733,8 +39733,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Science Fiction / Thriller \u2014 2018, rated 7.5 by 236k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/2/24/UpgradePoster.jpg",
+  "blurb": "Upgrade is a 2018 cyberpunk action thriller film written and directed by Leigh Whannell, and starring Logan Marshall-Green, Betty Gabriel, and Harrison Gilbertson. The film was produced by Jason Blum, under his Blumhouse Productions banner.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt6499752/"
   },
@@ -40027,7 +40027,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/c/ca/American_Made_%28film%29.jpg",
-  "blurb": "American Made is a 2017 American action comedy film directed by Doug Liman, written by Gary Spinelli and starring Tom Cruise, Domhnall Gleeson, Sarah Wright, Alejandro Edda, Mauricio Mej\u00eda, Caleb Landry Jones and Jesse Plemons.",
+  "blurb": "American Made is a 2017 American action comedy film directed by Doug Liman, written by Gary Spinelli and starring Tom Cruise, Domhnall Gleeson, Sarah Wright, Alejandro Edda, Mauricio Mejía, Caleb Landry Jones and Jesse Plemons.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt3532216/"
   },
@@ -40318,8 +40318,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Thriller \u2014 1990, rated 7.5 by 233k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/36/The_Hunt_for_Red_October_movie_poster.png",
+  "blurb": "The Hunt for Red October is a 1990 American submarine spy thriller film directed by John McTiernan, produced by Mace Neufeld, and starring Sean Connery, Alec Baldwin, Scott Glenn, James Earl Jones, and Sam Neill.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0099810/"
   },
@@ -40611,8 +40611,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Crime / Drama / Thriller \u2014 2000, rated 7.5 by 231k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/0/0a/Traffic2000Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Traffic is a 2000 American crime drama film directed by Steven Soderbergh and written by Stephen Gaghan. It explores the illegal drug trade from several perspectives: users, enforcers, politicians, and traffickers.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0181865/"
   },
@@ -40649,7 +40649,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/7/7a/The_Girl_with_the_Dragon_Tattoo_%282009_film%29.jpg",
-  "blurb": "The Girl with the Dragon Tattoo is a 2009 crime thriller film directed by Niels Arden Oplev from a screenplay by Rasmus Heisterberg and Nikolaj Arcel and produced by S\u00f8ren St\u00e6rmose, based on the 2005 novel by Swedish writer Stieg Larsson, the first entry in his Millennium series.",
+  "blurb": "The Girl with the Dragon Tattoo is a 2009 crime thriller film directed by Niels Arden Oplev from a screenplay by Rasmus Heisterberg and Nikolaj Arcel and produced by Søren Stærmose, based on the 2005 novel by Swedish writer Stieg Larsson, the first entry in his Millennium series.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1132620/"
   },
@@ -40869,8 +40869,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama / Musical \u2014 2021, rated 8 by 231k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/89/Coda_poster.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "CODA is a 2021 coming-of-age comedy-drama film written and directed by Sian Heder.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt10366460/"
   },
@@ -41161,7 +41161,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/5/5d/AKIRA_%281988_poster%29.jpg",
-  "blurb": "Akira is a 1988 Japanese animated cyberpunk action film directed by Katsuhiro Otomo, produced by Ry\u014dhei Suzuki and Shunz\u014d Kat\u014d, and written by Otomo and Izo Hashimoto, based on Otomo's 1982 manga Akira.",
+  "blurb": "Akira is a 1988 Japanese animated cyberpunk action film directed by Katsuhiro Otomo, produced by Ryōhei Suzuki and Shunzō Katō, and written by Otomo and Izo Hashimoto, based on Otomo's 1982 manga Akira.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0094625/"
   },
@@ -41453,8 +41453,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Animation / Comedy \u2014 2016, rated 6.1 by 228k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/f/f7/Sausage_Party_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Sausage Party is a 2016 adult animated black comedy film directed by Conrad Vernon and Greg Tiernan, and written by Kyle Hunter, Ariel Shaffir, Seth Rogen and Evan Goldberg.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1700841/"
   },
@@ -41748,8 +41748,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Romance \u2014 2010, rated 7.3 by 227k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/0/04/Blue_Valentine_film.jpg",
+  "blurb": "Blue Valentine is a 2010 American romantic drama film directed by Derek Cianfrance and co-written by Cianfrance, Joey Curtis, and Cami Delavigne.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1120985/"
   },
@@ -41932,7 +41932,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/7/7f/PS_I_Love_You_%28film%29.jpg",
-  "blurb": "Comedy / Drama / Romance \u2014 2007, rated 7 by 226k IMDb voters.",
+  "blurb": "Comedy / Drama / Romance — 2007, rated 7 by 226k IMDb voters.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0431308/"
   },
@@ -42005,8 +42005,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama / Horror / Science Fiction \u2014 1986, rated 7.6 by 226k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/aa/Fly_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "The Fly is a 1986 American science fiction body horror film directed and co-written by David Cronenberg. Produced by Brooksfilms and distributed by 20th Century Fox, the film stars Jeff Goldblum, Geena Davis, and John Getz.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0091064/"
   },
@@ -42227,8 +42227,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Crime \u2014 2023, rated 6.7 by 226k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/32/The_Killer_2023_poster.jpg",
+  "blurb": "The Killer is a 2023 American action thriller film directed by David Fincher from a screenplay by Andrew Kevin Walker. It is based on the French graphic novel series The Killer written by Alexis \"Matz\" Nolent and illustrated by Luc Jacamon.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1136617/"
   },
@@ -42264,8 +42264,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Comedy \u2014 2010, rated 6.3 by 226k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Knight_and_day_09.jpg",
+  "blurb": "Knight and Day is a 2010 American satirical action comedy film directed by James Mangold and starring Tom Cruise and Cameron Diaz. The film was the second on-screen collaboration of Cruise and Diaz after Vanilla Sky (2001).",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1013743/"
   },
@@ -42522,8 +42522,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Drama \u2014 1991, rated 6.9 by 223k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/4/4f/Robin_hood_1991.jpg",
+  "blurb": "Robin Hood: Prince of Thieves is a 1991 American action adventure film based on the English folk tale of Robin Hood and set in the 12th century.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0102798/"
   },
@@ -42928,8 +42928,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Animation / Comedy \u2014 2019, rated 6.8 by 222k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/8/89/Frozen_II_%282019_animated_film%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Frozen 2 is a 2019 American animated musical fantasy film produced by Walt Disney Animation Studios. It stars the voices of Kristen Bell, Idina Menzel, Josh Gad, and Jonathan Groff.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt4520988/"
   },
@@ -43148,7 +43148,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/a/a5/Nomadland_poster.jpeg",
-  "blurb": "Nomadland is a 2020 American drama film written, produced, edited and directed by Chlo\u00e9 Zhao.",
+  "blurb": "Nomadland is a 2020 American drama film written, produced, edited and directed by Chloé Zhao.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt9770150/"
   },
@@ -43184,8 +43184,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Science Fiction \u2014 1994, rated 7 by 221k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/e0/Stargateposter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Stargate is a 1994 science fiction action-adventure film directed by Roland Emmerich, written by Emmerich and Dean Devlin. The central plot explores the theory of extraterrestrial beings having an influence upon human civilization.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0111282/"
   },
@@ -43221,8 +43221,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Comedy / Drama / Romance \u2014 2013, rated 7.3 by 221k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Jasmine_Guy.jpg/500px-Jasmine_Guy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Jasmine Chanel Guy is an American actress, singer, dancer, and director. She portrayed Dina in the 1988 film School Daze and Whitley Gilbert-Wayne on the NBC The Cosby Show spin-off A Different World, which originally ran from 1987 to 1993.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt2334873/"
   },
@@ -43551,8 +43551,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Adventure / Animation / Drama \u2014 1995, rated 6.7 by 219k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/57/Pocahontasposter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Pocahontas is a 1995 American animated musical historical drama film loosely based on the life of Powhatan woman Pocahontas and the arrival of English settlers from the Virginia Company.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0114148/"
   },
@@ -43588,8 +43588,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Action / Adventure / Thriller \u2014 1964, rated 7.7 by 219k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Goldfinger_-_UK_cinema_poster.jpg/330px-Goldfinger_-_UK_cinema_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Goldfinger is a 1964 spy film and the third instalment in the James Bond series produced by Eon Productions, starring Sean Connery as the fictional MI6 agent James Bond. It is based on the 1959 novel by Ian Fleming.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt0058150/"
   },
@@ -43626,7 +43626,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/Rec_poster.jpg",
-  "blurb": "Rec is a 2007 Spanish found footage zombie horror film co-written and directed by Jaume Balaguer\u00f3 and Paco Plaza.",
+  "blurb": "Rec is a 2007 Spanish found footage zombie horror film co-written and directed by Jaume Balagueró and Paco Plaza.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1038988/"
   },
@@ -43699,7 +43699,7 @@
    "source": "IMDb"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/2/2d/TriangleOfSadness2022Poster.jpg",
-  "blurb": "Triangle of Sadness is a 2022 satirical black comedy film written and directed by Ruben \u00d6stlund in his English-language feature debut.",
+  "blurb": "Triangle of Sadness is a 2022 satirical black comedy film written and directed by Ruben Östlund in his English-language feature debut.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt7322224/"
   },
@@ -43844,8 +43844,8 @@
    "scale": 10,
    "source": "IMDb"
   },
-  "image": null,
-  "blurb": "Drama \u2014 2011, rated 7.2 by 218k IMDb voters.",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/Shame2011Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "blurb": "Shame is a 2011 British psychological drama film produced by Film4 and See-Saw Films, directed by Steve McQueen, and co-written by McQueen and Abi Morgan.",
   "links": {
    "imdb": "https://www.imdb.com/title/tt1723811/"
   },
