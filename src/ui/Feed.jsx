@@ -34,7 +34,7 @@ export function seedFeed(domain) {
   ].filter((f) => f.type === "note" || f.itemId);
 }
 
-export default function Feed({ domain, feed, setFeed, shelf }) {
+export default function Feed({ domain, feed, setFeed, shelf, onOpen }) {
   const [draft, setDraft] = useState("");
   const [openComments, setOpenComments] = useState(null);
   const [commentDraft, setCommentDraft] = useState("");
@@ -65,7 +65,10 @@ export default function Feed({ domain, feed, setFeed, shelf }) {
   return (
     <div>
       <div className="eyebrow">The commons</div>
-      <h2 className="h1" style={{ fontSize: 26, margin: "6px 0 14px" }}>The feed</h2>
+      <h2 className="h1" style={{ fontSize: 26, margin: "6px 0 4px" }}>The feed</h2>
+      <p className="sub" style={{ margin: "0 0 14px" }}>
+        A preview of the social layer with sample activity — your own posts stay on this device.
+      </p>
 
       <div className="card" style={{ marginBottom: 8 }}>
         <textarea className="input" rows={2} placeholder={`What are you into? Recommend, react, ask…`}
@@ -89,6 +92,9 @@ export default function Feed({ domain, feed, setFeed, shelf }) {
                 <div className="row" style={{ gap: 7 }}>
                   <span style={{ fontWeight: 600, fontSize: 14.5 }}>{u.name}</span>
                   <span className="cat-no">@{u.handle} · {timeAgo(f.ts)}</span>
+                  {f.userId !== "me" && (
+                    <span className="cat-no" style={{ marginLeft: "auto", flex: "none", border: "1px solid var(--line)", borderRadius: 999, padding: "1px 7px" }}>demo</span>
+                  )}
                 </div>
                 <p className="serif" style={{ fontSize: 15.5, lineHeight: 1.45, margin: "5px 0 0" }}>
                   {f.type === "rated" && item ? <>Rated <b>{item.title}</b> {"★".repeat(f.rating)}{" — "}</> :
@@ -96,13 +102,15 @@ export default function Feed({ domain, feed, setFeed, shelf }) {
                   {f.text}
                 </p>
                 {item && (
-                  <div className="row" style={{ marginTop: 10, gap: 11, background: "var(--paper2)", border: "1px solid var(--line)", borderRadius: 10, padding: 9 }}>
+                  <button className="row" onClick={() => onOpen(item)} aria-label={`Open details for ${item.title}`}
+                    style={{ marginTop: 10, gap: 11, background: "var(--paper2)", border: "1px solid var(--line)",
+                      borderRadius: 10, padding: 9, width: "100%", cursor: "pointer", textAlign: "left" }}>
                     <Cover item={item} size="sm" />
                     <div>
                       <div className="serif" style={{ fontWeight: 600, fontSize: 14 }}>{item.title}</div>
                       <div className="cat-no">{item.subtitle}</div>
                     </div>
-                  </div>
+                  </button>
                 )}
                 <div className="row" style={{ gap: 18, marginTop: 10 }}>
                   <button className={"iconbtn" + (f.likedByMe ? " on" : "")} onClick={() => toggleLike(f.id)}>
