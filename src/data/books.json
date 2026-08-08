@@ -61,7 +61,9 @@
    "darkness": 0.44,
    "complexity": 0.55,
    "emotion": 0.63
-  }
+  },
+  "reception": null,
+  "overview": "Harry Potter and the Philosopher's Stone is a fantasy novel by British author J. K. Rowling. It is the first novel in the Harry Potter series and was Rowling's debut novel. It follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday when he receives a letter of acceptance from Hogwarts School of Witchcraft and Wizardry."
  },
  {
   "id": "bk_OL18020194W",
@@ -124,7 +126,23 @@
    "darkness": 0.49,
    "complexity": 0.71,
    "emotion": 0.47
-  }
+  },
+  "reception": {
+   "summary": "Upon release, A Game of Thrones was widely praised. Don D'Ammassa suggested it as \"the major fantasy publishing event of 1996\". In The Year's Best Science Fiction (1997), Gardner R. Dozois described the novel as \"the year's Big Fantasy Novel, reviewed everywhere\", and a favorite for the World Fantasy Award. The first printing sold a few thousand copies.",
+   "quotes": [
+    {
+     "text": "An anonymous 1999 review by The Guardian described the characters as \"so venomous they could eat the Borgias\".",
+     "outlet": "The Guardian"
+    },
+    {
+     "text": "The Associated Press' review commended the narrative structure; Kirkus Reviews praised the characters and complex plot \"flawlessly articulated against a backdrop of real depth and texture\".",
+     "outlet": "Kirkus"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/A_Game_of_Thrones"
+  },
+  "overview": "A Game of Thrones is an epic fantasy novel by American author George R. R. Martin. It was published in August 1996 as the first entry in his series A Song of Ice and Fire. It was Martin's fourth novel and his return to writing prose fiction after a long period working in television."
  },
  {
   "id": "bk_OL82536W",
@@ -157,7 +175,14 @@
    "darkness": 0.57,
    "complexity": 0.56,
    "emotion": 0.63
-  }
+  },
+  "reception": {
+   "summary": "Gregory Maguire wrote a review in The New York Times for Prisoner of Azkaban: in it he said, \"So far, in terms of plot, the books do nothing new, but they do it brilliantly...so far, so good.\" In a newspaper review in The New York Times, it was said that \"'The Prisoner of Azkaban' may be the best 'Harry Potter' book yet\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Prisoner_of_Azkaban"
+  },
+  "overview": "Harry Potter and the Prisoner of Azkaban is a fantasy novel by British author J. K. Rowling. The third novel in the Harry Potter series, it follows the young wizard Harry Potter during his third year at Hogwarts School of Witchcraft and Wizardry. With his friends Ron Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner who no one doubts to be one of Lord Voldemort's allies."
  },
  {
   "id": "bk_OL1168007W",
@@ -190,7 +215,19 @@
    "darkness": 0.67,
    "complexity": 0.64,
    "emotion": 0.72
-  }
+  },
+  "reception": {
+   "summary": "Contemporary reviews of the work were not universally positive. Writing in the American New Republic magazine, George Soule expressed his disappointment in the book, writing that it \"puzzled and saddened me. It seemed on the whole dull.",
+   "quotes": [
+    {
+     "text": "Time magazine chose Animal Farm as one of the 100 best English-language novels (1923 to 2005); it also featured at number 31 on the Modern Library List of Best 20th-Century Novels.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Animal_Farm"
+  },
+  "overview": "Animal Farm (originally Animal Farm: A Fairy Story) is a satirical allegorical dystopian novella, in the form of a beast fable, by George Orwell, first published in England on 17 August 1945."
  },
  {
   "id": "bk_OL5735363W",
@@ -223,7 +260,23 @@
    "darkness": 0.65,
    "complexity": 0.62,
    "emotion": 0.62
-  }
+  },
+  "reception": {
+   "summary": "In a review for The New York Times, John Green wrote that the novel was \"brilliantly plotted and perfectly paced\", and that \"the considerable strength of the novel comes in Collins's convincingly detailed world-building and her memorably complex and fascinating heroine.\" However, he also noted that, while allegorically rich, the book sometimes does not realize the allegorical potential that the plot has to offer and…",
+   "quotes": [
+    {
+     "text": "Kirkus Reviews gave a positive review, praising the action and world-building, but pointed out that \"poor copyediting in the first printing will distract careful readers–a crying shame\".",
+     "outlet": "Kirkus"
+    },
+    {
+     "text": "It was named one of Publishers Weekly's \"Best Books of the Year\" in 2008 and a New York Times \"Notable Children's Book of 2008\".",
+     "outlet": "Publishers Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Hunger_Games_(novel)"
+  },
+  "overview": "The Hunger Games is a 2008 dystopian young adult novel by the American writer Suzanne Collins. It is written in the perspective of 16-year-old Katniss Everdeen, who lives in the future, post-apocalyptic nation of Panem in North America."
  },
  {
   "id": "bk_OL27482W",
@@ -256,7 +309,19 @@
    "darkness": 0.51,
    "complexity": 0.55,
    "emotion": 0.6
-  }
+  },
+  "reception": {
+   "summary": "On its publication in October 1937, The Hobbit was met with almost unanimously favourable reviews from publications both in Britain and America, including The Times, Catholic World, and New York Post. C. S.",
+   "quotes": [
+    {
+     "text": "On its publication in October 1937, The Hobbit was met with almost unanimously favourable reviews from publications both in Britain and America, including The Times, Catholic World, and New York Post.",
+     "outlet": "The Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Hobbit"
+  },
+  "overview": "The Hobbit, or There and Back Again is a children's fantasy novel by the English author J. R. R. Tolkien. It was published in 1937 to wide critical acclaim, being nominated for the Carnegie Medal and awarded a prize from the New York Herald Tribune for best juvenile fiction. It is recognized as a classic in children's literature and is one of the best-selling books of all time, with over 100 million copies sold."
  },
  {
   "id": "bk_OL81613W",
@@ -289,7 +354,23 @@
    "darkness": 0.73,
    "complexity": 0.65,
    "emotion": 0.74
-  }
+  },
+  "reception": {
+   "summary": "The novel won the British Fantasy Award in 1987, and received nominations for the Locus and World Fantasy Awards that year. Publishers Weekly listed It as the best-selling hardcover fiction book in the United States in 1986.",
+   "quotes": [
+    {
+     "text": "Publishers Weekly listed It as the best-selling hardcover fiction book in the United States in 1986.",
+     "outlet": "Publishers Weekly"
+    },
+    {
+     "text": "The New York Times praised the author's ability to create atmosphere, but perceived a lack of motivation in Stanley Uris's death and the reunion of the group.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/It_(novel)"
+  },
+  "overview": "It is a 1986 horror novel by American author Stephen King. This is his 22nd book and his 17th novel written under his own name. The story follows seven children as they are terrorized by an evil entity called It, which exploits the fears of its victims to disguise itself while hunting its prey."
  },
  {
   "id": "bk_OL64365W",
@@ -322,7 +403,14 @@
    "darkness": 0.7,
    "complexity": 0.71,
    "emotion": 0.59
-  }
+  },
+  "reception": {
+   "summary": "Upon its publication, Rebecca West praised Brave New World as \"The most accomplished novel Huxley has yet written\", Joseph Needham lauded it as \"Mr Huxley's remarkable book\", and Bertrand Russell also praised it, stating, \"Mr Aldous Huxley has shown his usual masterly skill in Brave New World.\" Brave New World also received negative responses from other contemporary critics, although his work was later embraced.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Brave_New_World"
+  },
+  "overview": "Brave New World is a dystopian novel by English author Aldous Huxley, written in 1931, and published in 1932."
  },
  {
   "id": "bk_OL27513W",
@@ -354,7 +442,19 @@
    "darkness": 0.49,
    "complexity": 0.44,
    "emotion": 0.68
-  }
+  },
+  "reception": {
+   "summary": "The poet W. H. Auden wrote a positive review in The New York Times, praising the excitement and saying \"Tolkien's invention is unflagging, and, on the primitive level of wanting to know what happens next, The Fellowship of the Ring is at least as good as The Thirty-Nine Steps.\" However, he said that the light humour in the beginning was \"not Tolkien's forte\".",
+   "quotes": [
+    {
+     "text": "Lewis wrote in Time and Tide that the book created a new world of romance and \"myth without allegorical pointing\", with a powerful sense of history.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Fellowship_of_the_Ring"
+  },
+  "overview": "The Fellowship of the Ring is the first of three volumes of the epic novel The Lord of the Rings by the English author J. R. R. Tolkien; it is followed by The Two Towers and The Return of the King. The action takes place in the fictional universe of Middle-earth."
  },
  {
   "id": "bk_OL49488W",
@@ -385,7 +485,14 @@
    "darkness": 0.59,
    "complexity": 0.68,
    "emotion": 0.53
-  }
+  },
+  "reception": {
+   "summary": "Ender's Game won the Nebula Award for best novel in 1985, and the Hugo Award for best novel in 1986, considered the two most prestigious awards in science fiction. Ender's Game was also nominated for a Locus Award in 1986. In 1999, it placed No. 59 on the reader's list of Modern Library 100 Best Novels. It was also honored with a spot on American Library Association's \"100 Best Books for Teens\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ender's_Game"
+  },
+  "overview": "Ender's Game is a 1985 military science fiction novel by American author Orson Scott Card. Set at an unspecified date in Earth's future, the novel presents an imperiled humankind after two conflicts with an insectoid alien species they dub \"the buggers\"."
  },
  {
   "id": "bk_OL1168083W",
@@ -548,7 +655,14 @@
    "darkness": 0.47,
    "complexity": 0.6,
    "emotion": 0.77
-  }
+  },
+  "reception": {
+   "summary": "The novel was well received, with three favourable reviews in the first months following publication. Anne Isabella Milbanke, later to be the wife of Lord Byron, called it \"the fashionable novel\". Noted critic and reviewer George Henry Lewes declared that he \"would rather have written Pride and Prejudice, or Tom Jones, than any of the Waverley Novels\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice"
+  },
+  "overview": "Pride and Prejudice is a novel by English author Jane Austen. Written when she was aged 20–21, it was her third novel scribed and became the second to see print when it was published in 1813."
  },
  {
   "id": "bk_OL17091839W",
@@ -581,7 +695,19 @@
    "darkness": 0.55,
    "complexity": 0.56,
    "emotion": 0.61
-  }
+  },
+  "reception": {
+   "summary": "In a starred review, Publishers Weekly said that \"Weir laces the technical details with enough keen wit to satisfy hard science fiction fan and general reader alike.\" Kirkus Reviews called The Martian \"Sharp, funny and thrilling, with just the right amount of geekery\". The Wall Street Journal called the book \"the best pure sci-fi novel in years\".",
+   "quotes": [
+    {
+     "text": "Entertainment Weekly gave the novel a grade of \"B\", describing it as \"an impressively geeky debut novel\" but saying Weir \"stumbles with his secondary characters\".",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Martian_(Weir_novel)"
+  },
+  "overview": "The Martian is a 2011 science fiction debut novel written by Andy Weir. The book was originally self-published on Weir's blog as a serial. In 2014, the book was re-released after Crown Publishing Group purchased the exclusive publishing rights. The story follows an American astronaut, Mark Watney, as he becomes stranded alone on Mars in 2035 and must improvise in order to survive."
  },
  {
   "id": "bk_OL1846076W",
@@ -614,7 +740,9 @@
    "darkness": 0.62,
    "complexity": 0.61,
    "emotion": 0.7
-  }
+  },
+  "reception": null,
+  "overview": "The Giver Quartet is a series of four books about a dystopian world by American author Lois Lowry, which consists of The Giver (1993), Gathering Blue (2000), Messenger (2004), and Son (2012). The first book won the 1994 Newbery Medal and has sold more than 50 million copies. The story takes place at an unknown point of time within the future."
  },
  {
   "id": "bk_OL21177W",
@@ -811,7 +939,14 @@
    "darkness": 0.48,
    "complexity": 0.53,
    "emotion": 0.55
-  }
+  },
+  "reception": {
+   "summary": "Author George RR Martin is a fan of the series. Songwriter Lin-Manuel Miranda has also praised the series, writing \"No one writes about stories like Pat Rothfuss. How the right story at the right time can change the world, how the teller can shape a life.\" Michael Chabon praised the book, comparing its prose to Ursula Le Guin's.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Name_of_the_Wind"
+  },
+  "overview": "The Name of the Wind, also referred to as The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
  },
  {
   "id": "bk_OL2897798W",

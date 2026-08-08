@@ -36,14 +36,30 @@ const CAPS = { movies: 300, tv: 250, books: 209, music: 150, restaurants: 101 };
 const DOMAINS = (process.env.DOMAINS || "books,movies,tv,music,restaurants").split(",");
 const LIMIT = process.env.LIMIT ? +process.env.LIMIT : null;
 
-async function api(url, tries = 4) {
+// Every request is bounded (a hung connection with no timeout stalled the
+// whole run on the first attempt) and every 429 is respected. Wikipedia will
+// rate-limit a burst hard; when it does, back off for real rather than
+// spinning through retries and recording false misses.
+let cooldownUntil = 0;
+
+async function api(url, tries = 5, timeoutMs = 12000) {
   for (let i = 0; i < tries; i++) {
+    const wait = cooldownUntil - Date.now();
+    if (wait > 0) await sleep(wait);
     try {
-      const res = await fetch(url, { headers: UA });
+      const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(timeoutMs) });
       if (res.ok) return { ok: true, data: await res.json() };
       if (res.status === 404) return { ok: false, definitive: true };
-    } catch { /* network hiccup */ }
-    await sleep(1200 * (i + 1));
+      if (res.status === 429 || res.status >= 500) {
+        // Honour Retry-After when offered, otherwise escalate: 5s, 15s, 45s...
+        const retryAfter = +(res.headers.get("retry-after") || 0);
+        const pause = retryAfter > 0 ? retryAfter * 1000 : 5000 * Math.pow(3, i);
+        cooldownUntil = Date.now() + pause;
+        console.log(`  … rate-limited (${res.status}), pausing ${Math.round(pause / 1000)}s`);
+        continue;
+      }
+    } catch { /* timeout or network hiccup -> retry */ }
+    await sleep(800 * (i + 1));
   }
   return { ok: false, definitive: false };
 }
@@ -114,12 +130,12 @@ async function enrich(domainKey) {
     } else if (!sawThrottle) { cache[item.id] = null; miss++; }
     else deferred++;
 
-    if (done % 25 === 0) {
+    if (done % 10 === 0) {
       fs.writeFileSync(CACHE, JSON.stringify(cache));
       fs.writeFileSync(file, JSON.stringify(list, null, 1) + "\n");
       console.log(`  ${done}/${targets.length} · ${hit} enriched, ${miss} none, ${deferred} deferred`);
     }
-    await sleep(120);
+    await sleep(700);   // steady, polite pace; Wikipedia 429s a burst
   }
 
   fs.writeFileSync(CACHE, JSON.stringify(cache));
@@ -138,7 +154,7 @@ async function googleReviews() {
   for (const r of list) {
     try {
       const res = await fetch("https://places.googleapis.com/v1/places:searchText", {
-        method: "POST",
+        method: "POST", signal: AbortSignal.timeout(12000),
         headers: { "Content-Type": "application/json", "X-Goog-Api-Key": KEY,
           "X-Goog-FieldMask": "places.id,places.displayName,places.rating,places.userRatingCount,places.reviews" },
         body: JSON.stringify({ textQuery: `${r.title} ${r.subtitle}`, maxResultCount: 1 }),
