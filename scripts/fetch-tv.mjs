@@ -12,6 +12,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { deriveAxes, assignPercentilePopularity, getJSON, sleep, writePretty, clamp, hash01 } from "./lib/derive.mjs";
 
+// Env-tunable so the catalogue can grow without editing the sweep logic.
+const MAX_PAGES = +(process.env.TV_PAGES || 90);
+const MAX_SHOWS = +(process.env.MAX_SHOWS || 700);
+const MIN_RATING = +(process.env.TV_MIN_RATING || 7.4);
+const MIN_WEIGHT = +(process.env.TV_MIN_WEIGHT || 85);
+
 const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "../src/data/tv.json");
 
 // factors: [story, characters, writing, acting, production, bingeability]
@@ -105,14 +111,14 @@ function toItem(sh) {
 async function main() {
   const seen = new Map();
 
-  // 1) paged index sweep (ids are age-ordered; 40 pages ≈ first ~10,000 shows)
-  for (let page = 0; page < 40; page++) {
+  // 1) paged index sweep (ids are age-ordered; 90 pages ≈ first ~22,000 shows)
+  for (let page = 0; page < MAX_PAGES; page++) {
     let shows;
     try { shows = await getJSON(`https://api.tvmaze.com/shows?page=${page}`); }
     catch (e) { console.warn(`  ! page ${page}: ${e.message}`); continue; }
     for (const sh of shows) {
       const it = toItem(sh);
-      if (it && sh.rating.average >= 7.8 && (sh.weight ?? 0) >= 90) seen.set(it.id, it);
+      if (it && sh.rating.average >= MIN_RATING && (sh.weight ?? 0) >= MIN_WEIGHT) seen.set(it.id, it);
     }
     await sleep(120);
   }
@@ -133,7 +139,7 @@ async function main() {
   let list = [...seen.values()];
   // keep it a deck, not a database: best blend of quality x popularity
   list.sort((a, b) => (b.rating.value * 0.6 + b._weight * 0.04) - (a.rating.value * 0.6 + a._weight * 0.04));
-  list = list.slice(0, 250);
+  list = list.slice(0, MAX_SHOWS);
 
   assignPercentilePopularity(list, (t) => t._weight * 1000 + t.rating.value); // rating as tiebreak within equal weights
   for (const t of list) {

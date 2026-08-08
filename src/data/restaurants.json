@@ -1000,7 +1000,7 @@
    "count": 5000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tonkotsu_ramen.JPG/500px-Tonkotsu_ramen.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "The tonkotsu that started New York's ramen arms race.",
   "factors": {
    "food": 0.83,
@@ -1203,7 +1203,7 @@
    "count": 3000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/PenneAllaVodka.jpg/500px-PenneAllaVodka.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "Red-sauce theater in Greenwich Village; the spicy rigatoni vodka is the point.",
   "factors": {
    "food": 0.87,
@@ -1995,7 +1995,7 @@
    "count": 6000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg/500px-Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "Salted caramel scoops and a line down 18th Street.",
   "factors": {
    "food": 0.79,
@@ -2164,7 +2164,7 @@
    "count": 4000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Cioppino.jpg/500px-Cioppino.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "California's oldest restaurant — cioppino at a counter since 1849.",
   "factors": {
    "food": 0.75,
@@ -2271,7 +2271,7 @@
    "count": 3000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Submarine_sandwich_with_toppings_and_dijon_mustard.jpg/500px-Submarine_sandwich_with_toppings_and_dijon_mustard.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "North Beach sandwich counter; take the number, take it to the park.",
   "factors": {
    "food": 0.76,
@@ -3096,6 +3096,106 @@
   "overview": "Varsity may refer to:"
  },
  {
+  "id": "rs_fox_bros_bar_b_q",
+  "title": "Fox Bros. Bar-B-Q",
+  "subtitle": "Atlanta, GA",
+  "city": "Atlanta",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Texas technique, Georgia address; the frito pie is not optional.",
+  "factors": {
+   "food": 0.82,
+   "ambiance": 0.49,
+   "service": 0.47,
+   "value": 0.76,
+   "creativity": 0.48,
+   "comfort": 0.93
+  },
+  "tone": {
+   "liveliness": 0.74,
+   "formality": 0.21,
+   "adventure": 0.33
+  },
+  "popularity": 0.84,
+  "dish": "Brisket frito pie"
+ },
+ {
+  "id": "rs_mary_mac_s_tea_room",
+  "title": "Mary Mac's Tea Room",
+  "subtitle": "Atlanta, GA",
+  "city": "Atlanta",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Soul Food"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fried-Chicken-Set.jpg/500px-Fried-Chicken-Set.jpg",
+  "blurb": "Atlanta's dining room since 1945 — fried chicken and pot likker.",
+  "factors": {
+   "food": 0.76,
+   "ambiance": 0.62,
+   "service": 0.7,
+   "value": 0.79,
+   "creativity": 0.44,
+   "comfort": 0.85
+  },
+  "tone": {
+   "liveliness": 0.59,
+   "formality": 0.33,
+   "adventure": 0.42
+  },
+  "popularity": 0.84,
+  "dish": "Fried chicken and pot likker"
+ },
+ {
+  "id": "rs_antico_pizza_napoletana",
+  "title": "Antico Pizza Napoletana",
+  "subtitle": "Atlanta, GA",
+  "city": "Atlanta",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Pizza",
+   "Italian"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pizza_Margherita_stu_spivack.jpg/500px-Pizza_Margherita_stu_spivack.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Communal tables, paper plates, and a genuinely Neapolitan pie.",
+  "factors": {
+   "food": 0.91,
+   "ambiance": 0.66,
+   "service": 0.61,
+   "value": 0.68,
+   "creativity": 0.59,
+   "comfort": 0.81
+  },
+  "tone": {
+   "liveliness": 0.68,
+   "formality": 0.28,
+   "adventure": 0.41
+  },
+  "popularity": 0.79,
+  "dish": "Margherita pie"
+ },
+ {
   "id": "rs_busy_bee_cafe",
   "title": "Busy Bee Cafe",
   "subtitle": "Atlanta, GA",
@@ -3169,6 +3269,72 @@
   "overview": "Staplehouse is a restaurant in Atlanta, Georgia, United States. The restaurant received a Michelin star in 2024, though they lost it the next year in 2025 because they stopped offering their dinner tasting menu."
  },
  {
+  "id": "rs_bacchanalia",
+  "title": "Bacchanalia",
+  "subtitle": "Atlanta, GA",
+  "city": "Atlanta",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "New American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Rokusan-tei_first_course.JPG/500px-Rokusan-tei_first_course.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "The city's long-running tasting-menu benchmark.",
+  "factors": {
+   "food": 0.83,
+   "ambiance": 0.78,
+   "service": 0.71,
+   "value": 0.22,
+   "creativity": 0.91,
+   "comfort": 0.5
+  },
+  "tone": {
+   "liveliness": 0.67,
+   "formality": 0.93,
+   "adventure": 0.86
+  },
+  "popularity": 0.71,
+  "dish": "Seasonal tasting menu"
+ },
+ {
+  "id": "rs_salt_lick_bbq",
+  "title": "Salt Lick BBQ",
+  "subtitle": "Austin, TX",
+  "city": "Austin",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 12000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Central_Texas_Style_Barbecue_in_Pearland%2C_TX.jpg/500px-Central_Texas_Style_Barbecue_in_Pearland%2C_TX.jpg",
+  "blurb": "Open pit under a Driftwood pavilion; BYOB and cash only.",
+  "factors": {
+   "food": 0.77,
+   "ambiance": 0.5,
+   "service": 0.54,
+   "value": 0.81,
+   "creativity": 0.48,
+   "comfort": 0.93
+  },
+  "tone": {
+   "liveliness": 0.69,
+   "formality": 0.16,
+   "adventure": 0.4
+  },
+  "popularity": 0.87,
+  "dish": "Open-pit brisket"
+ },
+ {
   "id": "rs_torchy_s_tacos",
   "title": "Torchy's Tacos",
   "subtitle": "Austin, TX",
@@ -3234,6 +3400,105 @@
   "popularity": 0.84,
   "dish": "Brisket",
   "overview": "Franklin Barbecue is a barbecue restaurant located in Austin, Texas, founded in 2009 by Aaron Franklin. The restaurant has sold out of brisket every day since its establishment and has attracted a national following."
+ },
+ {
+  "id": "rs_home_slice_pizza",
+  "title": "Home Slice Pizza",
+  "subtitle": "Austin, TX",
+  "city": "Austin",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Pizza"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/NYPizzaPie.jpg/500px-NYPizzaPie.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "South Congress New York-style, with a walk-up window for the impatient.",
+  "factors": {
+   "food": 0.79,
+   "ambiance": 0.52,
+   "service": 0.47,
+   "value": 0.81,
+   "creativity": 0.5,
+   "comfort": 0.78
+  },
+  "tone": {
+   "liveliness": 0.71,
+   "formality": 0.19,
+   "adventure": 0.22
+  },
+  "popularity": 0.81,
+  "dish": "New York-style slice"
+ },
+ {
+  "id": "rs_matt_s_el_rancho",
+  "title": "Matt's El Rancho",
+  "subtitle": "Austin, TX",
+  "city": "Austin",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chili_con_queso_%28cropped%29.jpg/330px-Chili_con_queso_%28cropped%29.jpg",
+  "blurb": "Bob Armstrong dip and frozen margaritas since 1952.",
+  "factors": {
+   "food": 0.76,
+   "ambiance": 0.6,
+   "service": 0.53,
+   "value": 0.77,
+   "creativity": 0.6,
+   "comfort": 0.76
+  },
+  "tone": {
+   "liveliness": 0.81,
+   "formality": 0.31,
+   "adventure": 0.5
+  },
+  "popularity": 0.81,
+  "dish": "Bob Armstrong dip"
+ },
+ {
+  "id": "rs_veracruz_all_natural",
+  "title": "Veracruz All Natural",
+  "subtitle": "Austin, TX",
+  "city": "Austin",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Migas_con_Naranja_%287068663227%29.jpg/500px-Migas_con_Naranja_%287068663227%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "The migas taco from a trailer that beat every restaurant in town.",
+  "factors": {
+   "food": 0.74,
+   "ambiance": 0.69,
+   "service": 0.52,
+   "value": 0.9,
+   "creativity": 0.62,
+   "comfort": 0.68
+  },
+  "tone": {
+   "liveliness": 0.78,
+   "formality": 0.18,
+   "adventure": 0.47
+  },
+  "popularity": 0.79,
+  "dish": "Migas taco"
  },
  {
   "id": "rs_uchi",
@@ -3559,6 +3824,7 @@
   "year": null,
   "meta": "$$",
   "genres": [
+   "Latin",
    "New American"
   ],
   "rating": {
@@ -3569,20 +3835,120 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Arepitas_Food_Macro.jpg/500px-Arepitas_Food_Macro.jpg",
   "blurb": "Small plates, big pours, zero pretense in a RiNo shipping container.",
   "factors": {
-   "food": 0.79,
-   "ambiance": 0.71,
-   "service": 0.76,
-   "value": 0.42,
-   "creativity": 0.87,
-   "comfort": 0.5
+   "food": 0.77,
+   "ambiance": 0.62,
+   "service": 0.68,
+   "value": 0.6,
+   "creativity": 0.74,
+   "comfort": 0.62
   },
   "tone": {
-   "liveliness": 0.65,
-   "formality": 0.68,
-   "adventure": 0.84
+   "liveliness": 0.71,
+   "formality": 0.47,
+   "adventure": 0.7
   },
   "popularity": 0.75,
   "dish": "Roast meats and arepas"
+ },
+ {
+  "id": "rs_sushi_den",
+  "title": "Sushi Den",
+  "subtitle": "Denver, CO",
+  "city": "Denver",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Japanese"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/500px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Fish flown from Nagahama market daily, which is not a line Denver expects.",
+  "factors": {
+   "food": 0.83,
+   "ambiance": 0.77,
+   "service": 0.77,
+   "value": 0.42,
+   "creativity": 0.81,
+   "comfort": 0.64
+  },
+  "tone": {
+   "liveliness": 0.39,
+   "formality": 0.72,
+   "adventure": 0.65
+  },
+  "popularity": 0.75,
+  "dish": "Nagahama-market sashimi"
+ },
+ {
+  "id": "rs_biker_jim_s_gourmet_dogs",
+  "title": "Biker Jim's Gourmet Dogs",
+  "subtitle": "Denver, CO",
+  "city": "Denver",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "American"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Wurstplatte.jpg/500px-Wurstplatte.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Elk and reindeer sausages under cream cheese and caramelized onions.",
+  "factors": {
+   "food": 0.78,
+   "ambiance": 0.54,
+   "service": 0.7,
+   "value": 0.88,
+   "creativity": 0.45,
+   "comfort": 0.77
+  },
+  "tone": {
+   "liveliness": 0.61,
+   "formality": 0.26,
+   "adventure": 0.22
+  },
+  "popularity": 0.75,
+  "dish": "Elk sausage"
+ },
+ {
+  "id": "rs_rioja",
+  "title": "Rioja",
+  "subtitle": "Denver, CO",
+  "city": "Denver",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Mediterranean",
+   "New American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/500px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Jennifer Jasinski's Larimer Square Mediterranean, handmade pasta daily.",
+  "factors": {
+   "food": 0.82,
+   "ambiance": 0.66,
+   "service": 0.7,
+   "value": 0.51,
+   "creativity": 0.76,
+   "comfort": 0.66
+  },
+  "tone": {
+   "liveliness": 0.51,
+   "formality": 0.67,
+   "adventure": 0.74
+  },
+  "popularity": 0.71,
+  "dish": "Handmade pasta"
  },
  {
   "id": "rs_slows_bar_bq",
@@ -3692,6 +4058,39 @@
   "dish": "Fajitas"
  },
  {
+  "id": "rs_killen_s_barbecue",
+  "title": "Killen's Barbecue",
+  "subtitle": "Houston, TX",
+  "city": "Houston",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Cote_de_boeuf_p1040932.jpg/500px-Cote_de_boeuf_p1040932.jpg",
+  "blurb": "Ronnie Killen's brisket and beef ribs, worth the drive to Pearland.",
+  "factors": {
+   "food": 0.78,
+   "ambiance": 0.58,
+   "service": 0.5,
+   "value": 0.74,
+   "creativity": 0.42,
+   "comfort": 0.85
+  },
+  "tone": {
+   "liveliness": 0.71,
+   "formality": 0.26,
+   "adventure": 0.41
+  },
+  "popularity": 0.81,
+  "dish": "Beef ribs"
+ },
+ {
   "id": "rs_truth_bbq",
   "title": "Truth BBQ",
   "subtitle": "Houston, TX",
@@ -3724,6 +4123,72 @@
   "popularity": 0.79,
   "dish": "Brisket and tallow ribs",
   "overview": "Truth BBQ is a barbecue restaurant in Houston, in the U.S. state of Texas. It has received Bib Gourmand status in the Michelin Guide for Texas."
+ },
+ {
+  "id": "rs_pappas_bros_steakhouse",
+  "title": "Pappas Bros. Steakhouse",
+  "subtitle": "Houston, TX",
+  "city": "Houston",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Steakhouse"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/BeefCutRib.svg/330px-BeefCutRib.svg.png",
+  "blurb": "Dry-aged in house, with a wine list the size of a phone book.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.72,
+   "service": 0.74,
+   "value": 0.2,
+   "creativity": 0.56,
+   "comfort": 0.78
+  },
+  "tone": {
+   "liveliness": 0.49,
+   "formality": 0.93,
+   "adventure": 0.42
+  },
+  "popularity": 0.77,
+  "dish": "Dry-aged ribeye"
+ },
+ {
+  "id": "rs_xochi",
+  "title": "Xochi",
+  "subtitle": "Houston, TX",
+  "city": "Houston",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ChickRedMole.JPG/500px-ChickRedMole.JPG",
+  "blurb": "Hugo Ortega's Oaxacan cooking — moles, masa, and mezcal downtown.",
+  "factors": {
+   "food": 0.77,
+   "ambiance": 0.66,
+   "service": 0.56,
+   "value": 0.72,
+   "creativity": 0.51,
+   "comfort": 0.79
+  },
+  "tone": {
+   "liveliness": 0.76,
+   "formality": 0.35,
+   "adventure": 0.55
+  },
+  "popularity": 0.77,
+  "dish": "Oaxacan mole"
  },
  {
   "id": "rs_crawfish_noodles",
@@ -3759,6 +4224,39 @@
   "popularity": 0.75,
   "dish": "Viet-Cajun crawfish boil",
   "overview": "Crawfish & Noodles is a restaurant in Houston, Texas, United States."
+ },
+ {
+  "id": "rs_himalaya",
+  "title": "Himalaya",
+  "subtitle": "Houston, TX",
+  "city": "Houston",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Indian"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/500px-%22Hyderabadi_Dum_Biryani%22.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Kaiser Lashkari's Pakistani-Texan hybrid; the hunter's beef is legend.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.62,
+   "service": 0.53,
+   "value": 0.71,
+   "creativity": 0.6,
+   "comfort": 0.64
+  },
+  "tone": {
+   "liveliness": 0.56,
+   "formality": 0.39,
+   "adventure": 0.6
+  },
+  "popularity": 0.75,
+  "dish": "Hunter's beef"
  },
  {
   "id": "rs_joe_s_kansas_city_bar_b_que",
@@ -4054,16 +4552,16 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tampa_Cuban_sandwich.jpg/330px-Tampa_Cuban_sandwich.jpg",
   "blurb": "The world's most famous Cuban restaurant, cafecito ventanita included.",
   "factors": {
-   "food": 0.46,
-   "ambiance": 0.51,
-   "service": 0.48,
-   "value": 0.53,
-   "creativity": 0.54,
-   "comfort": 0.58
+   "food": 0.78,
+   "ambiance": 0.63,
+   "service": 0.6,
+   "value": 0.81,
+   "creativity": 0.62,
+   "comfort": 0.9
   },
   "tone": {
-   "liveliness": 0.42,
-   "formality": 0.52,
+   "liveliness": 0.67,
+   "formality": 0.32,
    "adventure": 0.46
   },
   "popularity": 0.9,
@@ -4103,6 +4601,139 @@
   "popularity": 0.87,
   "dish": "Stone crab claws",
   "overview": "Joe's Stone Crab is an American seafood restaurant in Miami Beach, Florida. In 1998 the restaurant won an America's Classic Award from the James Beard Foundation It is consistently among the highest grossing individual restaurants in the United States, with 2024 sales approaching $50 million."
+ },
+ {
+  "id": "rs_el_palacio_de_los_jugos",
+  "title": "El Palacio de los Jugos",
+  "subtitle": "Miami, FL",
+  "city": "Miami",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Latin"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Open-air Cuban fruit stand and lechon counter, gloriously chaotic.",
+  "factors": {
+   "food": 0.89,
+   "ambiance": 0.53,
+   "service": 0.58,
+   "value": 0.99,
+   "creativity": 0.62,
+   "comfort": 0.76
+  },
+  "tone": {
+   "liveliness": 0.8,
+   "formality": 0.23,
+   "adventure": 0.56
+  },
+  "popularity": 0.81,
+  "dish": "Lechon and batidos"
+ },
+ {
+  "id": "rs_mandolin_aegean_bistro",
+  "title": "Mandolin Aegean Bistro",
+  "subtitle": "Miami, FL",
+  "city": "Miami",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Mediterranean"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Petra_metzes.jpg/500px-Petra_metzes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "A blue-and-white Greek courtyard hidden in the Design District.",
+  "factors": {
+   "food": 0.83,
+   "ambiance": 0.69,
+   "service": 0.67,
+   "value": 0.53,
+   "creativity": 0.56,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.52,
+   "formality": 0.55,
+   "adventure": 0.6
+  },
+  "popularity": 0.77,
+  "dish": "Greek mezze"
+ },
+ {
+  "id": "rs_kyu",
+  "title": "KYU",
+  "subtitle": "Miami, FL",
+  "city": "Miami",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Japanese",
+   "Korean"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chou-fleur_02.jpg/500px-Chou-fleur_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Wynwood wood-fired Asian; the roasted cauliflower converted the skeptics.",
+  "factors": {
+   "food": 0.77,
+   "ambiance": 0.66,
+   "service": 0.69,
+   "value": 0.53,
+   "creativity": 0.74,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.66,
+   "formality": 0.53,
+   "adventure": 0.62
+  },
+  "popularity": 0.77,
+  "dish": "Roasted cauliflower"
+ },
+ {
+  "id": "rs_zak_the_baker",
+  "title": "Zak the Baker",
+  "subtitle": "Miami, FL",
+  "city": "Miami",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Bakery & Café"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Home_made_sour_dough_bread.jpg/500px-Home_made_sour_dough_bread.jpg",
+  "blurb": "Kosher sourdough bakery that turned bread into a Miami destination.",
+  "factors": {
+   "food": 0.78,
+   "ambiance": 0.6,
+   "service": 0.53,
+   "value": 0.81,
+   "creativity": 0.6,
+   "comfort": 0.77
+  },
+  "tone": {
+   "liveliness": 0.45,
+   "formality": 0.38,
+   "adventure": 0.34
+  },
+  "popularity": 0.75,
+  "dish": "Sourdough"
  },
  {
   "id": "rs_matt_s_bar",
@@ -4220,6 +4851,40 @@
   "overview": "Hattie B's Hot Chicken is an American restaurant chain based in Nashville, Tennessee, founded by a father and son, both named Nick Bishop. The company specializes in hot chicken, a fried chicken dish, and operates several restaurants in the Southern and Midwestern United States."
  },
  {
+  "id": "rs_loveless_cafe",
+  "title": "Loveless Cafe",
+  "subtitle": "Nashville, TN",
+  "city": "Nashville",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Soul Food",
+   "American"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 11000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Loveless_Cafe_Biscuits.jpg/500px-Loveless_Cafe_Biscuits.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Scratch biscuits and country ham at the end of the Natchez Trace.",
+  "factors": {
+   "food": 0.79,
+   "ambiance": 0.54,
+   "service": 0.61,
+   "value": 0.77,
+   "creativity": 0.47,
+   "comfort": 0.92
+  },
+  "tone": {
+   "liveliness": 0.72,
+   "formality": 0.37,
+   "adventure": 0.27
+  },
+  "popularity": 0.87,
+  "dish": "Scratch biscuits"
+ },
+ {
   "id": "rs_prince_s_hot_chicken",
   "title": "Prince's Hot Chicken",
   "subtitle": "Nashville, TN",
@@ -4293,6 +4958,106 @@
    "url": "https://en.wikipedia.org/wiki/Arnold's_Country_Kitchen"
   },
   "overview": "Arnold's Country Kitchen is a Southern restaurant in Nashville, Tennessee. The business received a James Beard American Classics Award in 2009. The restaurant has also been featured on the television series Diners, Drive-Ins and Dives. The menu has included Southern greens, chess pie, cornbread, black-eyed peas, and country-fried steak. Arnold's is located at 605 Eighth Avenue in The Gulch."
+ },
+ {
+  "id": "rs_pharmacy_burger_parlor",
+  "title": "Pharmacy Burger Parlor",
+  "subtitle": "Nashville, TN",
+  "city": "Nashville",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Burgers"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/500px-RedDot_Burger.jpg",
+  "blurb": "German beer garden out back, griddled burgers out front.",
+  "factors": {
+   "food": 0.83,
+   "ambiance": 0.5,
+   "service": 0.56,
+   "value": 0.89,
+   "creativity": 0.42,
+   "comfort": 0.87
+  },
+  "tone": {
+   "liveliness": 0.66,
+   "formality": 0.21,
+   "adventure": 0.19
+  },
+  "popularity": 0.77,
+  "dish": "Farm burger"
+ },
+ {
+  "id": "rs_monell_s_dining",
+  "title": "Monell's Dining",
+  "subtitle": "Nashville, TN",
+  "city": "Nashville",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Soul Food"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fried-Chicken-Set.jpg/500px-Fried-Chicken-Set.jpg",
+  "blurb": "Family-style, all-you-can-eat, passed to the left. No strangers by dessert.",
+  "factors": {
+   "food": 0.89,
+   "ambiance": 0.51,
+   "service": 0.6,
+   "value": 0.79,
+   "creativity": 0.57,
+   "comfort": 0.83
+  },
+  "tone": {
+   "liveliness": 0.58,
+   "formality": 0.23,
+   "adventure": 0.4
+  },
+  "popularity": 0.75,
+  "dish": "Family-style fried chicken"
+ },
+ {
+  "id": "rs_rolf_and_daughters",
+  "title": "Rolf and Daughters",
+  "subtitle": "Nashville, TN",
+  "city": "Nashville",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "New American",
+   "Italian"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/500px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Germantown pasta and communal tables in a former boot factory.",
+  "factors": {
+   "food": 0.75,
+   "ambiance": 0.81,
+   "service": 0.71,
+   "value": 0.52,
+   "creativity": 0.69,
+   "comfort": 0.63
+  },
+  "tone": {
+   "liveliness": 0.54,
+   "formality": 0.75,
+   "adventure": 0.51
+  },
+  "popularity": 0.71,
+  "dish": "Handmade pasta"
  },
  {
   "id": "rs_caf_du_monde",
@@ -4431,6 +5196,40 @@
   "overview": "Cochon is a Cajun restaurant in New Orleans, Louisiana, United States."
  },
  {
+  "id": "rs_parkway_bakery_tavern",
+  "title": "Parkway Bakery & Tavern",
+  "subtitle": "New Orleans, LA",
+  "city": "New Orleans",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Deli",
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Shrimppoboy.jpg/500px-Shrimppoboy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Shrimp po' boys, dressed, eaten at picnic tables by the bayou.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.64,
+   "service": 0.7,
+   "value": 0.74,
+   "creativity": 0.45,
+   "comfort": 0.78
+  },
+  "tone": {
+   "liveliness": 0.62,
+   "formality": 0.3,
+   "adventure": 0.47
+  },
+  "popularity": 0.81,
+  "dish": "Shrimp po' boy"
+ },
+ {
   "id": "rs_willie_mae_s_scotch_house",
   "title": "Willie Mae's Scotch House",
   "subtitle": "New Orleans, LA",
@@ -4463,6 +5262,40 @@
   "popularity": 0.79,
   "dish": "Fried chicken",
   "overview": "Willie Mae's Scotch House is a restaurant in New Orleans, Louisiana. In 2005 it was named an America's Classic by the James Beard Foundation."
+ },
+ {
+  "id": "rs_galatoire_s",
+  "title": "Galatoire's",
+  "subtitle": "New Orleans, LA",
+  "city": "New Orleans",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Cajun & Creole",
+   "French"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Friday lunch on Bourbon Street, jackets required, tables never rushed.",
+  "factors": {
+   "food": 0.78,
+   "ambiance": 0.66,
+   "service": 0.75,
+   "value": 0.37,
+   "creativity": 0.7,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.54,
+   "formality": 0.8,
+   "adventure": 0.58
+  },
+  "popularity": 0.77,
+  "dish": "Shrimp rémoulade"
  },
  {
   "id": "rs_dooky_chase_s",
@@ -4498,6 +5331,73 @@
   "popularity": 0.75,
   "dish": "Gumbo z'herbes",
   "overview": "Dooky Chase's Restaurant is a restaurant in Tremé neighborhood of New Orleans that in the 1950s and 1960s was known as a place for civil rights leaders to safely \"meet and strategize.\" In 2018, Food & Wine named it one of the 40 most important restaurants of the past 40 years. In 2025 the restaurant was named one of America's Classics by the James Beard Foundation."
+ },
+ {
+  "id": "rs_turkey_and_the_wolf",
+  "title": "Turkey and the Wolf",
+  "subtitle": "New Orleans, LA",
+  "city": "New Orleans",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "American",
+   "Deli"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Bologna_sandwich.jpg/330px-Bologna_sandwich.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "A fried-bologna sandwich shop that got named best new restaurant in America.",
+  "factors": {
+   "food": 0.79,
+   "ambiance": 0.64,
+   "service": 0.62,
+   "value": 0.83,
+   "creativity": 0.37,
+   "comfort": 0.87
+  },
+  "tone": {
+   "liveliness": 0.69,
+   "formality": 0.17,
+   "adventure": 0.23
+  },
+  "popularity": 0.75,
+  "dish": "Fried bologna sandwich"
+ },
+ {
+  "id": "rs_casamento_s",
+  "title": "Casamento's",
+  "subtitle": "New Orleans, LA",
+  "city": "New Orleans",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Crassostrea_gigas_p1040848.jpg/500px-Crassostrea_gigas_p1040848.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "All-tile oyster room, closed all summer, oyster loaf worth planning around.",
+  "factors": {
+   "food": 0.77,
+   "ambiance": 0.77,
+   "service": 0.66,
+   "value": 0.45,
+   "creativity": 0.5,
+   "comfort": 0.75
+  },
+  "tone": {
+   "liveliness": 0.62,
+   "formality": 0.47,
+   "adventure": 0.55
+  },
+  "popularity": 0.71,
+  "dish": "Oyster loaf"
  },
  {
   "id": "rs_reading_terminal_market",
@@ -4636,6 +5536,140 @@
   "dish": "Hand-scooped sundaes"
  },
  {
+  "id": "rs_john_s_roast_pork",
+  "title": "John's Roast Pork",
+  "subtitle": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Deli",
+   "American"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "The roast pork with sharp provolone and broccoli rabe that beats the cheesesteak.",
+  "factors": {
+   "food": 0.73,
+   "ambiance": 0.52,
+   "service": 0.55,
+   "value": 0.81,
+   "creativity": 0.48,
+   "comfort": 0.86
+  },
+  "tone": {
+   "liveliness": 0.55,
+   "formality": 0.09,
+   "adventure": 0.22
+  },
+  "popularity": 0.75,
+  "dish": "Roast pork with broccoli rabe"
+ },
+ {
+  "id": "rs_angelo_s_pizzeria",
+  "title": "Angelo's Pizzeria",
+  "subtitle": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Pizza",
+   "Deli"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Submarine_sandwich_with_toppings_and_dijon_mustard.jpg/500px-Submarine_sandwich_with_toppings_and_dijon_mustard.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "South Philly sesame-seed rolls, hoagies, and an hours-long wait.",
+  "factors": {
+   "food": 0.74,
+   "ambiance": 0.47,
+   "service": 0.58,
+   "value": 0.87,
+   "creativity": 0.54,
+   "comfort": 0.87
+  },
+  "tone": {
+   "liveliness": 0.75,
+   "formality": 0.12,
+   "adventure": 0.39
+  },
+  "popularity": 0.75,
+  "dish": "Sesame-roll hoagie"
+ },
+ {
+  "id": "rs_suraya",
+  "title": "Suraya",
+  "subtitle": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Mediterranean"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Petra_metzes.jpg/500px-Petra_metzes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Lebanese cafe, market and garden under one Fishtown roof.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.74,
+   "service": 0.64,
+   "value": 0.66,
+   "creativity": 0.67,
+   "comfort": 0.79
+  },
+  "tone": {
+   "liveliness": 0.54,
+   "formality": 0.48,
+   "adventure": 0.58
+  },
+  "popularity": 0.75,
+  "dish": "Lebanese mezze"
+ },
+ {
+  "id": "rs_vetri_cucina",
+  "title": "Vetri Cucina",
+  "subtitle": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Italian"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 1000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Gnocchi_di_ricotta_burro_e_salvia.jpg/500px-Gnocchi_di_ricotta_burro_e_salvia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "A townhouse tasting menu; the spinach gnocchi is a city landmark.",
+  "factors": {
+   "food": 0.86,
+   "ambiance": 0.69,
+   "service": 0.79,
+   "value": 0.51,
+   "creativity": 0.61,
+   "comfort": 0.86
+  },
+  "tone": {
+   "liveliness": 0.55,
+   "formality": 0.75,
+   "adventure": 0.38
+  },
+  "popularity": 0.64,
+  "dish": "Spinach gnocchi"
+ },
+ {
   "id": "rs_pizzeria_bianco",
   "title": "Pizzeria Bianco",
   "subtitle": "Phoenix, AZ",
@@ -4742,6 +5776,39 @@
   },
   "popularity": 0.87,
   "dish": "Fries-in-the-sandwich"
+ },
+ {
+  "id": "rs_voodoo_doughnut",
+  "title": "Voodoo Doughnut",
+  "subtitle": "Portland, OR",
+  "city": "Portland",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Bakery & Café"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 12000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glazed-Donut.jpg/500px-Glazed-Donut.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "The pink box, the maple bacon bar, the 3am line. Very Portland.",
+  "factors": {
+   "food": 0.77,
+   "ambiance": 0.72,
+   "service": 0.56,
+   "value": 0.83,
+   "creativity": 0.55,
+   "comfort": 0.77
+  },
+  "tone": {
+   "liveliness": 0.48,
+   "formality": 0.24,
+   "adventure": 0.41
+  },
+  "popularity": 0.87,
+  "dish": "Maple bacon bar"
  },
  {
   "id": "rs_screen_door",
@@ -4888,6 +5955,72 @@
   "popularity": 0.75,
   "dish": "Wood-oven roasting",
   "overview": "Fore Street is a restaurant at 288 Fore Street in the Old Port neighborhood of Portland, Maine, United States. Owned by Dana Street and Sam Hayward, the restaurant opened in 1996. It was named one of Gourmet magazine's top 50 restaurants in the United States in 2002, being placed 16th on the list. Its former chef Hayward was named the top chef in the Northeastern US in 2004 by the James Beard Foundation."
+ },
+ {
+  "id": "rs_apizza_scholls",
+  "title": "Apizza Scholls",
+  "subtitle": "Portland, OR",
+  "city": "Portland",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Pizza"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pizza_Margherita_stu_spivack.jpg/500px-Pizza_Margherita_stu_spivack.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Strict dough limits, strict topping limits, near-perfect pies.",
+  "factors": {
+   "food": 0.76,
+   "ambiance": 0.64,
+   "service": 0.55,
+   "value": 0.76,
+   "creativity": 0.49,
+   "comfort": 0.83
+  },
+  "tone": {
+   "liveliness": 0.64,
+   "formality": 0.22,
+   "adventure": 0.3
+  },
+  "popularity": 0.75,
+  "dish": "Margherita pie"
+ },
+ {
+  "id": "rs_nong_s_khao_man_gai",
+  "title": "Nong's Khao Man Gai",
+  "subtitle": "Portland, OR",
+  "city": "Portland",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Thai"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Hainanese_Chicken_Rice.jpg/500px-Hainanese_Chicken_Rice.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "One dish — poached chicken and rice — done immaculately.",
+  "factors": {
+   "food": 0.72,
+   "ambiance": 0.67,
+   "service": 0.6,
+   "value": 0.83,
+   "creativity": 0.59,
+   "comfort": 0.65
+  },
+  "tone": {
+   "liveliness": 0.58,
+   "formality": 0.23,
+   "adventure": 0.64
+  },
+  "popularity": 0.75,
+  "dish": "Khao man gai"
  },
  {
   "id": "rs_le_pigeon",
@@ -5104,6 +6237,73 @@
   "overview": "Pike Place Chowder is a seafood restaurant with two locations in Seattle, in the U.S. state of Washington."
  },
  {
+  "id": "rs_dick_s_drive_in",
+  "title": "Dick's Drive-In",
+  "subtitle": "Seattle, WA",
+  "city": "Seattle",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Burgers"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/500px-RedDot_Burger.jpg",
+  "blurb": "Deluxe burger and hand-cut fries from the 1954 Capitol Hill window.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.48,
+   "service": 0.5,
+   "value": 0.97,
+   "creativity": 0.43,
+   "comfort": 0.97
+  },
+  "tone": {
+   "liveliness": 0.63,
+   "formality": 0.06,
+   "adventure": 0.25
+  },
+  "popularity": 0.81,
+  "dish": "The Deluxe burger"
+ },
+ {
+  "id": "rs_beecher_s_handmade_cheese",
+  "title": "Beecher's Handmade Cheese",
+  "subtitle": "Seattle, WA",
+  "city": "Seattle",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Bakery & Café",
+   "American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "Watch the curds turn, then eat the world's best mac and cheese.",
+  "factors": {
+   "food": 0.75,
+   "ambiance": 0.68,
+   "service": 0.59,
+   "value": 0.8,
+   "creativity": 0.52,
+   "comfort": 0.91
+  },
+  "tone": {
+   "liveliness": 0.59,
+   "formality": 0.24,
+   "adventure": 0.4
+  },
+  "popularity": 0.81,
+  "dish": "World's best mac and cheese"
+ },
+ {
   "id": "rs_paseo",
   "title": "Paseo",
   "subtitle": "Seattle, WA",
@@ -5176,6 +6376,105 @@
   "popularity": 0.75,
   "dish": "Special-occasion tasting menu",
   "overview": "Canlis is a fine dining restaurant serving New American and Pacific Northwest cuisine in Seattle, Washington. Situated in the Queen Anne neighborhood, the restaurant has views of Gas Works Park and the Cascade Mountains. It was built by Peter Canlis in 1950, and remains family-owned. The restaurant currently employs over 100 people."
+ },
+ {
+  "id": "rs_the_walrus_and_the_carpenter",
+  "title": "The Walrus and the Carpenter",
+  "subtitle": "Seattle, WA",
+  "city": "Seattle",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Crassostrea_gigas_p1040848.jpg/500px-Crassostrea_gigas_p1040848.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Ballard oyster bar that set the template for the whole city.",
+  "factors": {
+   "food": 0.87,
+   "ambiance": 0.77,
+   "service": 0.73,
+   "value": 0.44,
+   "creativity": 0.63,
+   "comfort": 0.66
+  },
+  "tone": {
+   "liveliness": 0.63,
+   "formality": 0.65,
+   "adventure": 0.47
+  },
+  "popularity": 0.75,
+  "dish": "Oysters on the half shell"
+ },
+ {
+  "id": "rs_un_bien",
+  "title": "Un Bien",
+  "subtitle": "Seattle, WA",
+  "city": "Seattle",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Cajun & Creole"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": null,
+  "blurb": "The Paseo family's Caribbean roast pork, carried on by the next generation.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.58,
+   "service": 0.7,
+   "value": 0.73,
+   "creativity": 0.68,
+   "comfort": 0.85
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.27,
+   "adventure": 0.48
+  },
+  "popularity": 0.75,
+  "dish": "Caribbean roast pork sandwich"
+ },
+ {
+  "id": "rs_shiro_s",
+  "title": "Shiro's",
+  "subtitle": "Seattle, WA",
+  "city": "Seattle",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Japanese"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/500px-Sushi_platter.jpg",
+  "blurb": "The sushi counter that trained most of Seattle's itamae.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.76,
+   "service": 0.71,
+   "value": 0.34,
+   "creativity": 0.81,
+   "comfort": 0.52
+  },
+  "tone": {
+   "liveliness": 0.45,
+   "formality": 0.71,
+   "adventure": 0.68
+  },
+  "popularity": 0.71,
+  "dish": "Omakase sushi"
  },
  {
   "id": "rs_pappy_s_smokehouse",
@@ -5252,6 +6551,7 @@
   "year": null,
   "meta": "$$$",
   "genres": [
+   "Latin",
    "Mediterranean"
   ],
   "rating": {
@@ -5262,17 +6562,17 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cuban_sandwiches.jpg/330px-Cuban_sandwiches.jpg",
   "blurb": "Florida's oldest restaurant — 1905 salad tossed tableside in Ybor City tile rooms.",
   "factors": {
-   "food": 0.77,
-   "ambiance": 0.7,
-   "service": 0.75,
-   "value": 0.58,
-   "creativity": 0.66,
-   "comfort": 0.63
+   "food": 0.78,
+   "ambiance": 0.67,
+   "service": 0.72,
+   "value": 0.65,
+   "creativity": 0.65,
+   "comfort": 0.68
   },
   "tone": {
-   "liveliness": 0.63,
-   "formality": 0.6,
-   "adventure": 0.45
+   "liveliness": 0.71,
+   "formality": 0.51,
+   "adventure": 0.44
   },
   "popularity": 0.88,
   "dish": "1905 Salad and Cuban bread"
@@ -5310,6 +6610,73 @@
   "popularity": 0.85,
   "dish": "Dry-aged steaks",
   "overview": "Berns may refer to:"
+ },
+ {
+  "id": "rs_old_ebbitt_grill",
+  "title": "Old Ebbitt Grill",
+  "subtitle": "Washington, DC",
+  "city": "Washington",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "American",
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 15000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Crassostrea_gigas_p1040848.jpg/500px-Crassostrea_gigas_p1040848.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Oyster bar steps from the White House, serving since 1856.",
+  "factors": {
+   "food": 0.71,
+   "ambiance": 0.62,
+   "service": 0.65,
+   "value": 0.59,
+   "creativity": 0.47,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.51,
+   "formality": 0.47,
+   "adventure": 0.37
+  },
+  "popularity": 0.9,
+  "dish": "Oysters"
+ },
+ {
+  "id": "rs_founding_farmers",
+  "title": "Founding Farmers",
+  "subtitle": "Washington, DC",
+  "city": "Washington",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "American"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 14000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Chicken_and_waffles_with_peaches_and_cream.jpg/500px-Chicken_and_waffles_with_peaches_and_cream.jpg",
+  "blurb": "Farmer-owned, scratch-made, and permanently booked out.",
+  "factors": {
+   "food": 0.67,
+   "ambiance": 0.59,
+   "service": 0.67,
+   "value": 0.7,
+   "creativity": 0.4,
+   "comfort": 0.76
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.28,
+   "adventure": 0.2
+  },
+  "popularity": 0.89,
+  "dish": "Chicken and waffles"
  },
  {
   "id": "rs_ben_s_chili_bowl",
@@ -5351,6 +6718,39 @@
    "url": "https://en.wikipedia.org/wiki/Ben's_Chili_Bowl"
   },
   "overview": "Ben's Chili Bowl is a restaurant in Washington, D.C., United States, located at 1213 U Street, next to Lincoln Theatre, in the U Street Corridor, also known as the Cardozo/Shaw neighborhood in Northwest D.C. It is known locally for its chili dogs, half-smokes, and milkshakes, and has been part of the U Street neighborhood since its founding in 1958."
+ },
+ {
+  "id": "rs_le_diplomate",
+  "title": "Le Diplomate",
+  "subtitle": "Washington, DC",
+  "city": "Washington",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "French"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg/500px-Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg",
+  "blurb": "14th Street brasserie doing steak frites and people-watching in equal measure.",
+  "factors": {
+   "food": 0.9,
+   "ambiance": 0.81,
+   "service": 0.93,
+   "value": 0.29,
+   "creativity": 0.67,
+   "comfort": 0.57
+  },
+  "tone": {
+   "liveliness": 0.54,
+   "formality": 0.84,
+   "adventure": 0.54
+  },
+  "popularity": 0.81,
+  "dish": "Steak frites"
  },
  {
   "id": "rs_rasika",
@@ -5430,5 +6830,71 @@
   "popularity": 0.75,
   "dish": "Pork-lychee salad",
   "overview": "Rose's Luxury is a restaurant on Barracks Row in Washington, D.C., created by chef-owner Aaron Silverman. It is known for not taking reservations which creates long lines, such that a nearby bar's top cocktail is called 'Waiting for Rose's' and line waiters are reported to make up to thirty dollars an hour waiting in line."
+ },
+ {
+  "id": "rs_maydan",
+  "title": "Maydan",
+  "subtitle": "Washington, DC",
+  "city": "Washington",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Mediterranean"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Petra_metzes.jpg/500px-Petra_metzes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Live-fire cooking around an open hearth, Levantine and North African.",
+  "factors": {
+   "food": 0.89,
+   "ambiance": 0.64,
+   "service": 0.71,
+   "value": 0.62,
+   "creativity": 0.66,
+   "comfort": 0.75
+  },
+  "tone": {
+   "liveliness": 0.59,
+   "formality": 0.46,
+   "adventure": 0.45
+  },
+  "popularity": 0.71,
+  "dish": "Live-fire mezze"
+ },
+ {
+  "id": "rs_thip_khao",
+  "title": "Thip Khao",
+  "subtitle": "Washington, DC",
+  "city": "Washington",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Thai"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LaoFood_LarbNeua.JPG/500px-LaoFood_LarbNeua.JPG",
+  "blurb": "Laotian jungle menu in Columbia Heights — ask for the spicy side.",
+  "factors": {
+   "food": 0.82,
+   "ambiance": 0.66,
+   "service": 0.68,
+   "value": 0.88,
+   "creativity": 0.7,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.49,
+   "formality": 0.24,
+   "adventure": 0.52
+  },
+  "popularity": 0.71,
+  "dish": "Laotian larb"
  }
 ]

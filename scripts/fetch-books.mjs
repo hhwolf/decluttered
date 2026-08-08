@@ -27,6 +27,20 @@ const SUBJECTS = [
   ["classic_literature", "Classics"],
   ["magical_realism", "Magical Realism"],
   ["dystopia", "Dystopian"],
+  ["adventure", "Adventure"],
+  ["crime", "Crime"],
+  ["short_stories", "Short Stories"],
+  ["humor", "Humor"],
+  ["poetry", "Poetry"],
+  ["history", "History"],
+  ["science", "Science"],
+  ["psychology", "Psychology"],
+  ["business", "Business"],
+  ["self-help", "Self-Help"],
+  ["travel", "Travel"],
+  ["comics_and_graphic_novels", "Graphic Novels"],
+  ["childrens_stories", "Children's"],
+  ["war_stories", "War"],
 ];
 
 // Map raw Open Library subject strings onto our genre chips.
@@ -44,6 +58,20 @@ const SUBJECT_MATCH = [
   [/biography|autobiography|memoir/i, "Memoir"],
   [/philosophy|stoicism/i, "Philosophy"],
   [/classic/i, "Classics"],
+  [/graphic novel|comic/i, "Graphic Novels"],
+  [/poetry|poems/i, "Poetry"],
+  [/short stories/i, "Short Stories"],
+  [/humor|humour|satire/i, "Humor"],
+  [/self-help|personal development/i, "Self-Help"],
+  [/psychology/i, "Psychology"],
+  [/business|economics|management/i, "Business"],
+  [/travel|voyages/i, "Travel"],
+  [/world war|military|war stories/i, "War"],
+  [/crime|criminals/i, "Crime"],
+  [/adventure/i, "Adventure"],
+  [/juvenile literature|children/i, "Children's"],
+  [/history|historical/i, "History"],
+  [/science|physics|biology|mathematics/i, "Science"],
   [/literary|fiction, general|general fiction/i, "Literary Fiction"],
 ];
 
@@ -64,6 +92,20 @@ const FACTOR_BASE = {
   "Classics":           [0.88, 0.62, 0.48, 0.80, 0.72, 0.75],
   "Magical Realism":    [0.90, 0.55, 0.48, 0.75, 0.90, 0.90],
   "Dystopian":          [0.72, 0.78, 0.70, 0.65, 0.80, 0.78],
+  "Adventure":          [0.68, 0.85, 0.88, 0.68, 0.65, 0.80],
+  "Crime":              [0.68, 0.88, 0.82, 0.72, 0.62, 0.78],
+  "Short Stories":      [0.88, 0.60, 0.72, 0.72, 0.78, 0.72],
+  "Humor":              [0.78, 0.55, 0.78, 0.72, 0.75, 0.52],
+  "Poetry":             [0.95, 0.20, 0.45, 0.50, 0.88, 0.88],
+  "History":            [0.75, 0.55, 0.45, 0.60, 0.60, 0.70],
+  "Science":            [0.72, 0.35, 0.48, 0.35, 0.85, 0.55],
+  "Psychology":         [0.72, 0.35, 0.50, 0.55, 0.75, 0.45],
+  "Business":           [0.62, 0.40, 0.62, 0.45, 0.68, 0.35],
+  "Self-Help":          [0.60, 0.35, 0.70, 0.50, 0.55, 0.40],
+  "Travel":             [0.80, 0.50, 0.58, 0.62, 0.70, 0.90],
+  "Graphic Novels":     [0.70, 0.78, 0.85, 0.75, 0.85, 0.88],
+  "Children's":         [0.62, 0.70, 0.85, 0.75, 0.62, 0.72],
+  "War":                [0.80, 0.75, 0.62, 0.78, 0.62, 0.85],
 };
 const TONE_BASE = {
   "Fantasy":            [0.50, 0.62, 0.62],
@@ -80,6 +122,20 @@ const TONE_BASE = {
   "Classics":           [0.58, 0.72, 0.68],
   "Magical Realism":    [0.52, 0.78, 0.72],
   "Dystopian":          [0.85, 0.68, 0.58],
+  "Adventure":          [0.45, 0.45, 0.58],
+  "Crime":              [0.80, 0.62, 0.52],
+  "Short Stories":      [0.58, 0.70, 0.70],
+  "Humor":              [0.22, 0.40, 0.55],
+  "Poetry":             [0.55, 0.82, 0.90],
+  "History":            [0.62, 0.78, 0.42],
+  "Science":            [0.42, 0.88, 0.30],
+  "Psychology":         [0.48, 0.80, 0.55],
+  "Business":           [0.35, 0.60, 0.30],
+  "Self-Help":          [0.25, 0.42, 0.65],
+  "Travel":             [0.35, 0.48, 0.62],
+  "Graphic Novels":     [0.62, 0.55, 0.62],
+  "Children's":         [0.15, 0.20, 0.62],
+  "War":                [0.88, 0.70, 0.72],
 };
 const FACTORS = ["writing", "plot", "pacing", "character", "originality", "atmosphere"];
 const TONES = ["darkness", "complexity", "emotion"];
@@ -138,7 +194,7 @@ async function fetchDescription(workKey, cache) {
 }
 
 async function main() {
-  const perSubject = 24;
+  const perSubject = +(process.env.PER_SUBJECT || 28);
   let descCache = {};
   try { descCache = JSON.parse(fs.readFileSync(CACHE, "utf8")); } catch { /* first run */ }
   const seen = new Map(); // workKey -> item

@@ -43,6 +43,7 @@ const FACTOR_BASE = {
   "Soul Food":      [0.82, 0.58, 0.62, 0.75, 0.50, 0.90],
   "Deli":           [0.80, 0.48, 0.52, 0.75, 0.45, 0.85],
   "Cajun & Creole": [0.82, 0.62, 0.62, 0.70, 0.60, 0.80],
+  "Latin":          [0.82, 0.62, 0.62, 0.78, 0.58, 0.82],
 };
 const TONE_BASE = {
   "Italian":        [0.60, 0.55, 0.42],
@@ -67,6 +68,7 @@ const TONE_BASE = {
   "Soul Food":      [0.65, 0.30, 0.42],
   "Deli":           [0.65, 0.22, 0.30],
   "Cajun & Creole": [0.72, 0.35, 0.55],
+  "Latin":          [0.75, 0.30, 0.50],
 };
 const FACTORS = ["food", "ambiance", "service", "value", "creativity", "comfort"];
 const TONES = ["liveliness", "formality", "adventure"];
@@ -241,6 +243,63 @@ const CURATED = [
   ["The Apple Pan", "Los Angeles, CA", ["Burgers"], 4.4, 3, 1, "Hickory burger at a horseshoe counter, unchanged since 1947."],
   ["Sushi Gen", "Los Angeles, CA", ["Japanese"], 4.6, 3, 3, "Little Tokyo sashimi lunch special that has its own lunchtime line."],
   ["Canter's Deli", "Los Angeles, CA", ["Deli"], 4.3, 6, 2, "24-hour Fairfax institution, matzo ball soup and the Kibitz Room next door."],
+
+  // --- second tier: enough depth that these are worth picking too ---
+  // Seattle
+  ["Dick's Drive-In", "Seattle, WA", ["Burgers"], 4.5, 6, 1, "Deluxe burger and hand-cut fries from the 1954 Capitol Hill window."],
+  ["The Walrus and the Carpenter", "Seattle, WA", ["Seafood"], 4.6, 3, 3, "Ballard oyster bar that set the template for the whole city."],
+  ["Un Bien", "Seattle, WA", ["Cajun & Creole"], 4.7, 3, 1, "The Paseo family's Caribbean roast pork, carried on by the next generation."],
+  ["Beecher's Handmade Cheese", "Seattle, WA", ["Bakery & Café", "American"], 4.6, 6, 1, "Watch the curds turn, then eat the world's best mac and cheese."],
+  ["Shiro's", "Seattle, WA", ["Japanese"], 4.5, 2, 4, "The sushi counter that trained most of Seattle's itamae."],
+  // Washington DC
+  ["Old Ebbitt Grill", "Washington, DC", ["American", "Seafood"], 4.5, 15, 3, "Oyster bar steps from the White House, serving since 1856."],
+  ["Le Diplomate", "Washington, DC", ["French"], 4.5, 6, 3, "14th Street brasserie doing steak frites and people-watching in equal measure."],
+  ["Founding Farmers", "Washington, DC", ["American"], 4.5, 14, 2, "Farmer-owned, scratch-made, and permanently booked out."],
+  ["Maydan", "Washington, DC", ["Mediterranean"], 4.6, 2, 3, "Live-fire cooking around an open hearth, Levantine and North African."],
+  ["Thip Khao", "Washington, DC", ["Thai"], 4.5, 2, 2, "Laotian jungle menu in Columbia Heights — ask for the spicy side."],
+  // Atlanta
+  ["Fox Bros. Bar-B-Q", "Atlanta, GA", ["Barbecue"], 4.6, 8, 2, "Texas technique, Georgia address; the frito pie is not optional."],
+  ["Antico Pizza Napoletana", "Atlanta, GA", ["Pizza", "Italian"], 4.5, 5, 2, "Communal tables, paper plates, and a genuinely Neapolitan pie."],
+  ["Mary Mac's Tea Room", "Atlanta, GA", ["Soul Food"], 4.5, 8, 2, "Atlanta's dining room since 1945 — fried chicken and pot likker."],
+  ["Bacchanalia", "Atlanta, GA", ["New American"], 4.6, 2, 4, "The city's long-running tasting-menu benchmark."],
+  // Houston
+  ["Killen's Barbecue", "Houston, TX", ["Barbecue"], 4.6, 6, 2, "Ronnie Killen's brisket and beef ribs, worth the drive to Pearland."],
+  ["Pappas Bros. Steakhouse", "Houston, TX", ["Steakhouse"], 4.7, 4, 4, "Dry-aged in house, with a wine list the size of a phone book."],
+  ["Xochi", "Houston, TX", ["Mexican"], 4.6, 4, 3, "Hugo Ortega's Oaxacan cooking — moles, masa, and mezcal downtown."],
+  ["Himalaya", "Houston, TX", ["Indian"], 4.5, 3, 2, "Kaiser Lashkari's Pakistani-Texan hybrid; the hunter's beef is legend."],
+  // Nashville
+  ["Loveless Cafe", "Nashville, TN", ["Soul Food", "American"], 4.5, 11, 2, "Scratch biscuits and country ham at the end of the Natchez Trace."],
+  ["Rolf and Daughters", "Nashville, TN", ["New American", "Italian"], 4.6, 2, 3, "Germantown pasta and communal tables in a former boot factory."],
+  ["Monell's Dining", "Nashville, TN", ["Soul Food"], 4.7, 3, 2, "Family-style, all-you-can-eat, passed to the left. No strangers by dessert."],
+  ["Pharmacy Burger Parlor", "Nashville, TN", ["Burgers"], 4.5, 4, 2, "German beer garden out back, griddled burgers out front."],
+  // Miami
+  ["Mandolin Aegean Bistro", "Miami, FL", ["Mediterranean"], 4.6, 4, 3, "A blue-and-white Greek courtyard hidden in the Design District."],
+  ["KYU", "Miami, FL", ["Japanese", "Korean"], 4.6, 4, 3, "Wynwood wood-fired Asian; the roasted cauliflower converted the skeptics."],
+  ["Zak the Baker", "Miami, FL", ["Bakery & Café"], 4.6, 3, 2, "Kosher sourdough bakery that turned bread into a Miami destination."],
+  ["El Palacio de los Jugos", "Miami, FL", ["Latin"], 4.5, 6, 1, "Open-air Cuban fruit stand and lechon counter, gloriously chaotic."],
+  // Philadelphia
+  ["John's Roast Pork", "Philadelphia, PA", ["Deli", "American"], 4.7, 3, 1, "The roast pork with sharp provolone and broccoli rabe that beats the cheesesteak."],
+  ["Vetri Cucina", "Philadelphia, PA", ["Italian"], 4.7, 1, 4, "A townhouse tasting menu; the spinach gnocchi is a city landmark."],
+  ["Angelo's Pizzeria", "Philadelphia, PA", ["Pizza", "Deli"], 4.6, 3, 2, "South Philly sesame-seed rolls, hoagies, and an hours-long wait."],
+  ["Suraya", "Philadelphia, PA", ["Mediterranean"], 4.6, 3, 3, "Lebanese cafe, market and garden under one Fishtown roof."],
+  // New Orleans
+  ["Galatoire's", "New Orleans, LA", ["Cajun & Creole", "French"], 4.5, 4, 4, "Friday lunch on Bourbon Street, jackets required, tables never rushed."],
+  ["Turkey and the Wolf", "New Orleans, LA", ["American", "Deli"], 4.6, 3, 2, "A fried-bologna sandwich shop that got named best new restaurant in America."],
+  ["Parkway Bakery & Tavern", "New Orleans, LA", ["Deli", "Seafood"], 4.6, 6, 1, "Shrimp po' boys, dressed, eaten at picnic tables by the bayou."],
+  ["Casamento's", "New Orleans, LA", ["Seafood"], 4.6, 2, 2, "All-tile oyster room, closed all summer, oyster loaf worth planning around."],
+  // Austin
+  ["Salt Lick BBQ", "Austin, TX", ["Barbecue"], 4.5, 12, 2, "Open pit under a Driftwood pavilion; BYOB and cash only."],
+  ["Veracruz All Natural", "Austin, TX", ["Mexican"], 4.7, 5, 1, "The migas taco from a trailer that beat every restaurant in town."],
+  ["Home Slice Pizza", "Austin, TX", ["Pizza"], 4.6, 6, 2, "South Congress New York-style, with a walk-up window for the impatient."],
+  ["Matt's El Rancho", "Austin, TX", ["Mexican"], 4.4, 6, 2, "Bob Armstrong dip and frozen margaritas since 1952."],
+  // Denver
+  ["Sushi Den", "Denver, CO", ["Japanese"], 4.6, 3, 3, "Fish flown from Nagahama market daily, which is not a line Denver expects."],
+  ["Biker Jim's Gourmet Dogs", "Denver, CO", ["American"], 4.5, 3, 1, "Elk and reindeer sausages under cream cheese and caramelized onions."],
+  ["Rioja", "Denver, CO", ["Mediterranean", "New American"], 4.6, 2, 3, "Jennifer Jasinski's Larimer Square Mediterranean, handmade pasta daily."],
+  // Portland OR
+  ["Voodoo Doughnut", "Portland, OR", ["Bakery & Café"], 4.3, 12, 1, "The pink box, the maple bacon bar, the 3am line. Very Portland."],
+  ["Apizza Scholls", "Portland, OR", ["Pizza"], 4.6, 3, 2, "Strict dough limits, strict topping limits, near-perfect pies."],
+  ["Nong's Khao Man Gai", "Portland, OR", ["Thai"], 4.6, 3, 1, "One dish — poached chicken and rice — done immaculately."],
 ];
 
 // --- signature dishes: restaurant -> [label shown on the card, Wikipedia
@@ -409,6 +468,61 @@ const DISHES = {
   "The Apple Pan": ["Hickory burger", "Hamburger"],
   "Sushi Gen": ["Sashimi lunch special", "Sashimi"],
   "Canter's Deli": ["Matzo ball soup", "Matzah ball"],
+  // Seattle
+  "Dick's Drive-In": ["The Deluxe burger", "Hamburger"],
+  "The Walrus and the Carpenter": ["Oysters on the half shell", "Oyster"],
+  "Un Bien": ["Caribbean roast pork sandwich", "Pork sandwich"],
+  "Beecher's Handmade Cheese": ["World's best mac and cheese", "Macaroni and cheese"],
+  "Shiro's": ["Omakase sushi", "Sushi"],
+  // Washington DC
+  "Old Ebbitt Grill": ["Oysters", "Oyster"],
+  "Le Diplomate": ["Steak frites", "Steak frites"],
+  "Founding Farmers": ["Chicken and waffles", "Chicken and waffles"],
+  "Maydan": ["Live-fire mezze", "Meze"],
+  "Thip Khao": ["Laotian larb", "Larb"],
+  // Atlanta
+  "Fox Bros. Bar-B-Q": ["Brisket frito pie", "Frito pie"],
+  "Antico Pizza Napoletana": ["Margherita pie", "Pizza Margherita"],
+  "Mary Mac's Tea Room": ["Fried chicken and pot likker", "Fried chicken"],
+  "Bacchanalia": ["Seasonal tasting menu", "Tasting menu"],
+  // Houston
+  "Killen's Barbecue": ["Beef ribs", "Ribs (food)"],
+  "Pappas Bros. Steakhouse": ["Dry-aged ribeye", "Rib eye steak"],
+  "Xochi": ["Oaxacan mole", "Mole (sauce)"],
+  "Himalaya": ["Hunter's beef", "Biryani"],
+  // Nashville
+  "Loveless Cafe": ["Scratch biscuits", "Biscuit (bread)"],
+  "Rolf and Daughters": ["Handmade pasta", "Pasta"],
+  "Monell's Dining": ["Family-style fried chicken", "Fried chicken"],
+  "Pharmacy Burger Parlor": ["Farm burger", "Hamburger"],
+  // Miami
+  "Mandolin Aegean Bistro": ["Greek mezze", "Meze"],
+  "KYU": ["Roasted cauliflower", "Cauliflower"],
+  "Zak the Baker": ["Sourdough", "Sourdough"],
+  "El Palacio de los Jugos": ["Lechon and batidos", "Lechon"],
+  // Philadelphia
+  "John's Roast Pork": ["Roast pork with broccoli rabe", "Pork sandwich"],
+  "Vetri Cucina": ["Spinach gnocchi", "Gnocchi"],
+  "Angelo's Pizzeria": ["Sesame-roll hoagie", "Submarine sandwich"],
+  "Suraya": ["Lebanese mezze", "Meze"],
+  // New Orleans
+  "Galatoire's": ["Shrimp rémoulade", "Rémoulade"],
+  "Turkey and the Wolf": ["Fried bologna sandwich", "Bologna sandwich"],
+  "Parkway Bakery & Tavern": ["Shrimp po' boy", "Po' boy"],
+  "Casamento's": ["Oyster loaf", "Oyster"],
+  // Austin
+  "Salt Lick BBQ": ["Open-pit brisket", "Barbecue in Texas"],
+  "Veracruz All Natural": ["Migas taco", "Migas"],
+  "Home Slice Pizza": ["New York-style slice", "New York–style pizza"],
+  "Matt's El Rancho": ["Bob Armstrong dip", "Chile con queso"],
+  // Denver
+  "Sushi Den": ["Nagahama-market sashimi", "Sashimi"],
+  "Biker Jim's Gourmet Dogs": ["Elk sausage", "Sausage"],
+  "Rioja": ["Handmade pasta", "Pasta"],
+  // Portland OR
+  "Voodoo Doughnut": ["Maple bacon bar", "Doughnut"],
+  "Apizza Scholls": ["Margherita pie", "Pizza Margherita"],
+  "Nong's Khao Man Gai": ["Khao man gai", "Hainanese chicken rice"],
 };
 
 const DISH_CACHE = path.join(path.dirname(fileURLToPath(import.meta.url)), ".cache/wiki-dish-images.json");

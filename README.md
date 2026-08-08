@@ -64,15 +64,32 @@ npm run fetch:books        # Open Library (keyless, real reader ratings)
 npm run fetch:music        # Deezer charts + iTunes enrichment (keyless)
 npm run fetch:tv           # TVMaze (keyless, real community ratings)
 npm run fetch:movies       # IMDb official bulk datasets (keyless, refreshed daily)
-                           #   -> top ~1200 movies by votes with real IMDb ratings,
                            #   posters via Wikipedia (resumable cache);
-                           #   set TMDB_API_KEY for a live TMDB fetch instead;
-                           #   tune with MAX_MOVIES / MIN_VOTES / MIN_RATING
+                           #   set TMDB_API_KEY for a live TMDB fetch instead
 npm run fetch:restaurants  # curated snapshot; set GOOGLE_PLACES_API_KEY for live Google Places
+npm run fetch:reception    # Wikipedia critical reception + overviews for every domain
 npm run fetch:all
 ```
 
 Fetchers are deterministic (seeded jitter) — same inputs, same catalogue.
+
+### Growing a catalogue
+
+Every fetcher's size is an env knob, so a domain grows without touching its
+sweep logic. Defaults in brackets.
+
+| Craving | Knobs | Ceiling before quality drops |
+|---|---|---|
+| Shelf (books) | `PER_SUBJECT` [28] · 28 Open Library subjects | subjects are the real lever — add rows to `SUBJECTS` |
+| Screen (movies) | `MAX_MOVIES` [1800] · `MIN_VOTES` [30000] · `MIN_RATING` [6.0] | ~7k IMDb titles clear 30k votes; posters are the bottleneck, not data |
+| Series (TV) | `MAX_SHOWS` [700] · `TV_PAGES` [90] · `TV_MIN_RATING` [7.4] · `TV_MIN_WEIGHT` [85] | the sweep finds ~1,000 qualifying shows today |
+| Queue (music) | `PER_GENRE` [50] · 26 Deezer genre charts | Deezer caps a genre chart near 100 |
+| Table (restaurants) | curated list in the fetcher | hand-written; `GOOGLE_PLACES_API_KEY` switches to live Places |
+
+Poster/cover art comes straight from Open Library, TVMaze and Deezer, so those
+three grow cheaply. Movie posters and all critical-reception prose come from
+Wikipedia, which rate-limits hard — both are resumable and cached, so a big
+expansion fills in over several runs rather than one.
 
 ## Layout
 

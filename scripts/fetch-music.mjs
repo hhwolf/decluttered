@@ -15,6 +15,8 @@ import { deriveAxes, logPopularity, getJSON, sleep, writePretty } from "./lib/de
 
 const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "../src/data/music.json");
 const ENRICH_ITUNES = process.env.SKIP_ITUNES ? false : true;
+// Deezer caps a genre chart around 100; 50 keeps the tail listenable.
+const PER_GENRE = +(process.env.PER_GENRE || 50);
 
 // our genre chip -> Deezer genre name (matched against /genre listing)
 const GENRES = [
@@ -33,6 +35,17 @@ const GENRES = [
   ["Soul", "Soul & Funk"],
   ["Folk", "Folk"],
   ["K-Pop", "K-Pop"],
+  ["Reggae", "Reggae"],
+  ["Blues", "Blues"],
+  ["Reggaeton", "Reggaeton"],
+  ["Afrobeats", "African Music"],
+  ["Brazilian", "Brazilian Music"],
+  ["Indian", "Indian Music"],
+  ["Asian", "Asian Music"],
+  ["Salsa", "Salsa"],
+  ["Cumbia", "Cumbia"],
+  ["Gospel", "Christian"],
+  ["Soundtrack", "Films/Games"],
 ];
 
 // factors: [melody, lyrics, production, rhythm, vocals, originality]
@@ -53,6 +66,17 @@ const FACTOR_BASE = {
   "Soul":       [0.80, 0.70, 0.72, 0.78, 0.92, 0.60],
   "Folk":       [0.75, 0.88, 0.52, 0.48, 0.72, 0.62],
   "K-Pop":      [0.85, 0.48, 0.90, 0.82, 0.78, 0.60],
+  "Reggae":     [0.78, 0.75, 0.62, 0.88, 0.72, 0.58],
+  "Blues":      [0.75, 0.85, 0.55, 0.70, 0.85, 0.55],
+  "Reggaeton":  [0.70, 0.55, 0.85, 0.95, 0.65, 0.50],
+  "Afrobeats":  [0.78, 0.58, 0.80, 0.92, 0.72, 0.65],
+  "Brazilian":  [0.82, 0.65, 0.68, 0.88, 0.78, 0.62],
+  "Indian":     [0.85, 0.70, 0.72, 0.80, 0.88, 0.68],
+  "Asian":      [0.82, 0.55, 0.85, 0.78, 0.78, 0.60],
+  "Salsa":      [0.75, 0.60, 0.70, 0.95, 0.78, 0.55],
+  "Cumbia":     [0.72, 0.58, 0.62, 0.92, 0.70, 0.52],
+  "Gospel":     [0.80, 0.82, 0.68, 0.72, 0.95, 0.52],
+  "Soundtrack": [0.85, 0.20, 0.88, 0.60, 0.30, 0.75],
 };
 const TONE_BASE = {
   "Pop":        [0.68, 0.35, 0.68],
@@ -70,6 +94,17 @@ const TONE_BASE = {
   "Soul":       [0.52, 0.42, 0.62],
   "Folk":       [0.35, 0.45, 0.32],
   "K-Pop":      [0.82, 0.30, 0.80],
+  "Reggae":     [0.55, 0.38, 0.55],
+  "Blues":      [0.45, 0.62, 0.45],
+  "Reggaeton":  [0.88, 0.40, 0.70],
+  "Afrobeats":  [0.80, 0.30, 0.68],
+  "Brazilian":  [0.70, 0.35, 0.60],
+  "Indian":     [0.68, 0.35, 0.72],
+  "Asian":      [0.72, 0.38, 0.72],
+  "Salsa":      [0.88, 0.28, 0.75],
+  "Cumbia":     [0.78, 0.30, 0.62],
+  "Gospel":     [0.65, 0.25, 0.70],
+  "Soundtrack": [0.55, 0.55, 0.80],
 };
 const FACTORS = ["melody", "lyrics", "production", "rhythm", "vocals", "originality"];
 const TONES = ["energy", "darkness", "density"];
@@ -87,7 +122,7 @@ async function main() {
     if (gid == null) { console.warn(`  ! no Deezer genre for ${deezerName}`); continue; }
     let data = [];
     try {
-      ({ data = [] } = await getJSON(`https://api.deezer.com/chart/${gid}/tracks?limit=30`));
+      ({ data = [] } = await getJSON(`https://api.deezer.com/chart/${gid}/tracks?limit=${PER_GENRE}`));
     } catch (e) { console.warn(`  ! chart ${deezerName}: ${e.message}`); continue; }
     for (const [pos, t] of data.entries()) {
       const key = norm(t.artist.name) + "|" + norm(t.title);
