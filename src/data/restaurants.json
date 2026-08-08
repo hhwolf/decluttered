@@ -29,7 +29,9 @@
    "adventure": 0.28
   },
   "popularity": 1,
-  "dish": "Pastrami on rye"
+  "dish": "Pastrami on rye",
+  "reception": null,
+  "overview": "Katz's Delicatessen, also known as Katz's of New York City, is a Jewish deli at 205 East Houston Street, on the southwest corner of Houston and Ludlow Streets on the Lower East Side of Manhattan in New York City. Although its menu is inspired by culturally Jewish foods, Katz's Delicatessen is not kosher."
  },
  {
   "id": "rs_caf_du_monde",
@@ -94,7 +96,9 @@
    "adventure": 0.34
   },
   "popularity": 0.95,
-  "dish": "Roast pork sandwiches and more"
+  "dish": "Roast pork sandwiches and more",
+  "reception": null,
+  "overview": "Reading Terminal Market is an enclosed public market located at 12th and Arch Streets in Center City Philadelphia, Pennsylvania. It opened originally in 1893 under the elevated train shed of the Reading Railroad Company after the city of Philadelphia advocated to move public markets from the streets into indoor facilities for both safety and sanitary reasons."
  },
  {
   "id": "rs_the_varsity",
@@ -127,7 +131,9 @@
    "adventure": 0.19
   },
   "popularity": 0.94,
-  "dish": "Chili dogs"
+  "dish": "Chili dogs",
+  "reception": null,
+  "overview": "Varsity may refer to:"
  },
  {
   "id": "rs_mi_tierra_caf_y_panader_a",
@@ -193,7 +199,14 @@
    "adventure": 0.34
   },
   "popularity": 0.92,
-  "dish": "Hot chicken"
+  "dish": "Hot chicken",
+  "reception": {
+   "summary": "Columnists in USA Today and Sports Illustrated reviewed the restaurant in 2017. In 2017, it was ranked sixth on The Daily Meal's list of America's 75 Best Fried Chicken Spots.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Hattie_B's_Hot_Chicken"
+  },
+  "overview": "Hattie B's Hot Chicken is an American restaurant chain based in Nashville, Tennessee, founded by a father and son, both named Nick Bishop. The company specializes in hot chicken, a fried chicken dish, and operates several restaurants in the Southern and Midwestern United States."
  },
  {
   "id": "rs_joe_s_kansas_city_bar_b_que",
@@ -225,7 +238,9 @@
    "adventure": 0.41
   },
   "popularity": 0.92,
-  "dish": "Burnt ends"
+  "dish": "Burnt ends",
+  "reception": null,
+  "overview": "Joe's Kansas City Bar-B-Que, formerly known as Oklahoma Joe's, is a barbecue restaurant, with locations in the Kansas City metropolitan area. It is owned and operated by Jeff and Joy Stehney."
  },
  {
   "id": "rs_joe_s_pizza",
@@ -257,7 +272,9 @@
    "adventure": 0.25
   },
   "popularity": 0.91,
-  "dish": "Plain cheese slice"
+  "dish": "Plain cheese slice",
+  "reception": null,
+  "overview": "Joe's Pizza, also called Famous Joe's Pizza, is a pizzeria located in Greenwich Village, Manhattan, New York City on Carmine Street near Bleecker Street. The restaurant is known for serving a classic New York street-style pizza and has been called a \"Greenwich Village institution\". The pizzeria serves by the slice or as full pies."
  },
  {
   "id": "rs_pike_place_chowder",
@@ -289,7 +306,9 @@
    "adventure": 0.54
   },
   "popularity": 0.9,
-  "dish": "Clam chowder"
+  "dish": "Clam chowder",
+  "reception": null,
+  "overview": "Pike Place Chowder is a seafood restaurant with two locations in Seattle, in the U.S. state of Washington."
  },
  {
   "id": "rs_versailles",
@@ -321,7 +340,9 @@
    "adventure": 0.46
   },
   "popularity": 0.9,
-  "dish": "The cubano"
+  "dish": "The cubano",
+  "reception": null,
+  "overview": "Versailles is a chain of three Cuban cuisine restaurants in Los Angeles, California, USA. The first restaurant in this chain opened in 1971 in West Los Angeles, specifically in the Palms district on Venice Blvd, just north of Culver City."
  },
  {
   "id": "rs_pat_s_king_of_steaks",
@@ -353,7 +374,9 @@
    "adventure": 0.28
   },
   "popularity": 0.9,
-  "dish": "Cheesesteak, whiz wit"
+  "dish": "Cheesesteak, whiz wit",
+  "reception": null,
+  "overview": "Pat's King of Steaks (also known as Pat's Steaks) is a restaurant that specializes in cheesesteaks. It is located at the intersection of South 9th Street, Wharton Street and East Passyunk Avenue in the Passyunk Square section of South Philadelphia, directly across the street from rival Geno's Steaks."
  },
  {
   "id": "rs_peter_luger_steak_house",
@@ -385,7 +408,14 @@
    "adventure": 0.37
   },
   "popularity": 0.89,
-  "dish": "Dry-aged porterhouse"
+  "dish": "Dry-aged porterhouse",
+  "reception": {
+   "summary": "Peter Luger was named to the James Beard Foundation's list of \"America's Classics\" in 2002. It received one Michelin star from the inaugurual year of the Michelin Guide for New York in 2006. In 2022, the restaurant lost its Michelin star.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Peter_Luger_Steak_House"
+  },
+  "overview": "Peter Luger Steak House is a steakhouse located in the Williamsburg section of Brooklyn, New York City, with a second location in Great Neck, New York, in the western part of Long Island. It was named to the James Beard Foundation's list of \"America's Classics\" in 2002 and is the third oldest operating steakhouse in New York City, after Keens and Old Homestead Steakhouse."
  },
  {
   "id": "rs_los_tacos_no_1",
@@ -417,7 +447,19 @@
    "adventure": 0.59
   },
   "popularity": 0.88,
-  "dish": "Adobada tacos"
+  "dish": "Adobada tacos",
+  "reception": {
+   "summary": "In August 2013, The New York Times food writer Jeff Gordinier awarded Los Tacos No. 1 a Critic's Pick, writing in praise of the restaurant's adobada: \"It manages to stay at the right temperature and texture with the fiery help of something that resembles a stationary blowtorch.",
+   "quotes": [
+    {
+     "text": "In August 2013, The New York Times food writer Jeff Gordinier awarded Los Tacos No.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Los_Tacos_No._1"
+  },
+  "overview": "Los Tacos No. 1 is a fast casual taqueria chain located in New York City that specializes in Tijuana-style tacos. It was founded in 2013 by Christian Pineda, Tyler Sanders, and Kyle Cameron, as a taco stand in Chelsea Market in Chelsea, Manhattan, and it has since expanded to nine locations throughout Manhattan as of 2026."
  },
  {
   "id": "rs_hodad_s",
@@ -449,7 +491,14 @@
    "adventure": 0.16
   },
   "popularity": 0.88,
-  "dish": "Bacon cheeseburger"
+  "dish": "Bacon cheeseburger",
+  "reception": {
+   "summary": "Hodad's has received positive reception for its burgers and style. It appeared on an episode of \"The Best Thing I Ever Ate\" on the TV channel Food Network. The restaurant's bacon cheeseburger has been lauded by Guy Fieri, and in 2009 CNN included it on a list of \"Five tasty burger joints worth visiting.\" Hodad's was featured in one of San Diego Magazine's \"Everyday Eats\" articles, which covers budget food options.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Hodad's"
+  },
+  "overview": "Hodad's is a small chain of hamburger restaurants in San Diego, California, established in 1969 by husband and wife Byron and Virginia Hardin. Following the death of Byron in 1984, his son Mike Hardin assumed operating responsibilities. He took over the management following the death of Virginia in 1989."
  },
  {
   "id": "rs_columbia_restaurant",
@@ -513,7 +562,9 @@
    "adventure": 0.4
   },
   "popularity": 0.87,
-  "dish": "Stone crab claws"
+  "dish": "Stone crab claws",
+  "reception": null,
+  "overview": "Joe's Stone Crab is an American seafood restaurant in Miami Beach, Florida. In 1998 the restaurant won an America's Classic Award from the James Beard Foundation It is consistently among the highest grossing individual restaurants in the United States, with 2024 sales approaching $50 million."
  },
  {
   "id": "rs_the_original_ninfa_s_on_navigation",
@@ -577,7 +628,14 @@
    "adventure": 0.55
   },
   "popularity": 0.87,
-  "dish": "Sopapillas"
+  "dish": "Sopapillas",
+  "reception": {
+   "summary": "Parker has called \"Casa Bonita\" among his top ten favorite episodes of South Park. In 2012, Mark Tornga, writing for The A.V. Club, wrote that \"South Park delivered the best possible commercial for this restaurant/adventurescape with the surprisingly accurate and compelling 2003 \"Casa Bonita\" episode of the show.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Casa_Bonita_(South_Park)"
+  },
+  "overview": "\"Casa Bonita\" is the eleventh episode of the seventh season of the American animated television series South Park, and the 107th episode of the series overall. It first aired on Comedy Central in the United States on November 12, 2003. In the episode, Cartman misleads Butters into going missing in order to gain an invitation to Kyle's birthday party."
  },
  {
   "id": "rs_primanti_bros",
@@ -707,7 +765,14 @@
    "adventure": 0.37
   },
   "popularity": 0.86,
-  "dish": "The half-smoke"
+  "dish": "The half-smoke",
+  "reception": {
+   "summary": "In 2004, the James Beard Foundation named Ben's one of the \"down-home eateries that have carved out a special place on the American culinary landscape\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ben's_Chili_Bowl"
+  },
+  "overview": "Ben's Chili Bowl is a restaurant in Washington, D.C., United States, located at 1213 U Street, next to Lincoln Theatre, in the U Street Corridor, also known as the Cardozo/Shaw neighborhood in Northwest D.C. It is known locally for its chili dogs, half-smokes, and milkshakes, and has been part of the U Street neighborhood since its founding in 1958."
  },
  {
   "id": "rs_the_rendezvous",
@@ -739,7 +804,9 @@
    "adventure": 0.44
   },
   "popularity": 0.86,
-  "dish": "Charcoal dry ribs"
+  "dish": "Charcoal dry ribs",
+  "reception": null,
+  "overview": "The Rendezvous Hotel Singapore (formerly the Rendezvous Grand Hotel Singapore) is a hotel located on Bras Basah Road in the Museum District of Singapore, across from the Singapore Management University (SMU). It is located on the historic site of the Hock Lock Kee Restaurant which began operations in the early 1950s."
  },
  {
   "id": "rs_girl_the_goat",
@@ -771,7 +838,9 @@
    "adventure": 0.82
   },
   "popularity": 0.85,
-  "dish": "Wood-fired share plates"
+  "dish": "Wood-fired share plates",
+  "reception": null,
+  "overview": "Girl & the Goat is a restaurant in Chicago, Illinois. Time Out Chicago has rated the restaurant four out of five stars."
  },
  {
   "id": "rs_au_cheval",
@@ -837,7 +906,9 @@
    "adventure": 0.32
   },
   "popularity": 0.85,
-  "dish": "Oysters on the half shell"
+  "dish": "Oysters on the half shell",
+  "reception": null,
+  "overview": "Union Oyster House (previously known as The Old Oyster House and Ye Olde Oyster House) is a restaurant at 41–43 Union Street in Downtown Boston, Massachusetts. Now part of the Blackstone Block Historic District, it has been open to diners since 1826, making it among the oldest operating restaurants in the United States. It is the oldest known to have been continuously operating."
  },
  {
   "id": "rs_pappy_s_smokehouse",
@@ -869,7 +940,9 @@
    "adventure": 0.35
   },
   "popularity": 0.85,
-  "dish": "Memphis-style ribs"
+  "dish": "Memphis-style ribs",
+  "reception": null,
+  "overview": "Pappy's Smokehouse (often referred to as simply Pappy's) is a barbecue restaurant located in St. Louis, Missouri, United States. It was started in 2008 by Mike Emerson, who previously worked at another barbecue restaurant called Super Smokers. The restaurant was named after Emerson's late brother, Jim. Pappy's sells Memphis-style ribs, and ribs are barbecued without sauce."
  },
  {
   "id": "rs_bern_s_steak_house",
@@ -901,7 +974,9 @@
    "adventure": 0.37
   },
   "popularity": 0.85,
-  "dish": "Dry-aged steaks"
+  "dish": "Dry-aged steaks",
+  "reception": null,
+  "overview": "Berns may refer to:"
  },
  {
   "id": "rs_central_bbq",
@@ -965,7 +1040,9 @@
    "adventure": 0.37
   },
   "popularity": 0.84,
-  "dish": "Butter-crust deep dish"
+  "dish": "Butter-crust deep dish",
+  "reception": null,
+  "overview": "Lou Malnati's Pizzeria is an American Chicago-style pizza restaurant chain, known for its deep dish pizza, currently headquartered in Buffalo Grove, Illinois. It was founded by Lou Malnati, who was involved in developing the recipe for Chicago-style deep dish pizza. Lou Malnati's has become one of the best-known and oldest family names of Chicago-style pizza restaurants."
  },
  {
   "id": "rs_franklin_barbecue",
@@ -997,7 +1074,9 @@
    "adventure": 0.35
   },
   "popularity": 0.84,
-  "dish": "Brisket"
+  "dish": "Brisket",
+  "reception": null,
+  "overview": "Franklin Barbecue is a barbecue restaurant located in Austin, Texas, founded in 2009 by Aaron Franklin. The restaurant has sold out of brisket every day since its establishment and has attracted a national following."
  },
  {
   "id": "rs_house_of_prime_rib",
@@ -1063,7 +1142,19 @@
    "adventure": 0.3
   },
   "popularity": 0.84,
-  "dish": "Chicken and waffles"
+  "dish": "Chicken and waffles",
+  "reception": {
+   "summary": "Screen Door has been associated with Portland's reputation as a food destination. In 2012, ABC News named Screen Door as one of the \"Top Ten Restaurants in the Nation\". The Cooking Channel has recommended the restaurant for the \"best Southern breakfast on the West Coast\". Glamour recommended the fried chicken and sweet potato waffles on their \"must-try list for \"serious foodies'\" (2013).",
+   "quotes": [
+    {
+     "text": "Tom Sietsema of The Washington Post wrote, \"If you have time for only one breakfast, make it this convivial Southern charmer, easy to spot due to the inevitable line out the door\".",
+     "outlet": "The Washington Post"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Screen_Door_(restaurant)"
+  },
+  "overview": "Screen Door is a popular Southern and soul food restaurant with three locations in Portland, Oregon, in the United States."
  },
  {
   "id": "rs_q39",
@@ -1095,7 +1186,9 @@
    "adventure": 0.32
   },
   "popularity": 0.84,
-  "dish": "Competition ribs"
+  "dish": "Competition ribs",
+  "reception": null,
+  "overview": "Q39 may refer to: Q39 (New York City bus) Az-Zumar, a surah of the Quran French submarine Cigogne (Q39) Q39 (restaurant)]"
  },
  {
   "id": "rs_slows_bar_bq",
@@ -1127,7 +1220,14 @@
    "adventure": 0.35
   },
   "popularity": 0.84,
-  "dish": "Pulled pork and mac"
+  "dish": "Pulled pork and mac",
+  "reception": {
+   "summary": "Actress Erin Cummings said of the menu \"you can’t go to Slow’s and eat healthy... you have to go to Slow’s ready to knock it back\". Adam Richman described the food at Slow's as \"a truly life-changing experience\", while trying the triple threat pork sandwich in his show Man vs. Food.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Slows_Bar_BQ"
+  },
+  "overview": "Slows Bar BQ is a barbecue restaurant in Detroit, Michigan, with additional locations in Ann Arbor and Berkley. The chef is Brian Perrone, and the restaurant is owned by the Cooley family. The restaurant appeared on Adam Richman's Man vs. Food, and the \"Yardbird\", a pulled chicken sandwich from the restaurant, competed in the first season of Adam Richman's Best Sandwich in America."
  },
  {
   "id": "rs_brennan_s",
@@ -1160,7 +1260,9 @@
    "adventure": 0.51
   },
   "popularity": 0.84,
-  "dish": "Bananas Foster"
+  "dish": "Bananas Foster",
+  "reception": null,
+  "overview": "Brennan's is a Creole restaurant in the French Quarter of New Orleans, Louisiana."
  },
  {
   "id": "rs_the_pit_authentic_barbecue",
@@ -1289,7 +1391,9 @@
    "adventure": 0.6
   },
   "popularity": 0.82,
-  "dish": "Turtle soup"
+  "dish": "Turtle soup",
+  "reception": null,
+  "overview": "Commander's Palace is a Louisiana Creole restaurant in New Orleans, Louisiana."
  },
  {
   "id": "rs_buddy_s_pizza",
@@ -1321,7 +1425,9 @@
    "adventure": 0.36
   },
   "popularity": 0.82,
-  "dish": "Detroit-style square"
+  "dish": "Detroit-style square",
+  "reception": null,
+  "overview": "Buddy's Pizza is an independent pizza restaurant chain based in Detroit, Michigan. Founded in 1946, the company has an annual revenue of US$30 million. The chain has 19 restaurants and over 700 employees. Buddy's has been called one of the five best pizzerias in the United States by the Food Network."
  },
  {
   "id": "rs_xi_an_famous_foods",
@@ -1386,7 +1492,9 @@
    "adventure": 0.41
   },
   "popularity": 0.81,
-  "dish": "The reuben"
+  "dish": "The reuben",
+  "reception": null,
+  "overview": "Zingerman's, or Zingerman's Community of Businesses, is a gourmet food business group headquartered in Ann Arbor, Michigan. The original business and current flagship operation is Zingerman's Delicatessen. Starting from the original deli, Zingerman's Community of Businesses (ZCoB) has expanded to nine Ann Arbor based businesses with over 500 total employees."
  },
  {
   "id": "rs_tartine_bakery",
@@ -1418,7 +1526,19 @@
    "adventure": 0.34
   },
   "popularity": 0.81,
-  "dish": "Country loaf and morning buns"
+  "dish": "Country loaf and morning buns",
+  "reception": {
+   "summary": "In 2007, The New York Times food columnist Mark Bittman called Tartine his favorite bakery in the U.S. In 2008, its owners won James Beard Foundation Awards as the best pastry chefs in America, after previously being nominated for this award in 2006 and 2007.",
+   "quotes": [
+    {
+     "text": "In 2007, The New York Times food columnist Mark Bittman called Tartine his favorite bakery in the U.S.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Tartine"
+  },
+  "overview": "Tartine is a small, US-based bakery chain. As of February 2022, it operates three locations in the San Francisco Bay Area, five in Los Angeles, and six in Seoul Capital Area, South Korea. Its original bakery opened in 2002 in San Francisco's Mission District, at 600 Guerrero Street."
  },
  {
   "id": "rs_cochon",
@@ -1450,7 +1570,9 @@
    "adventure": 0.52
   },
   "popularity": 0.81,
-  "dish": "Boudin"
+  "dish": "Boudin",
+  "reception": null,
+  "overview": "Cochon is a Cajun restaurant in New Orleans, Louisiana, United States."
  },
  {
   "id": "rs_neptune_oyster",
@@ -1482,7 +1604,9 @@
    "adventure": 0.52
   },
   "popularity": 0.81,
-  "dish": "Hot buttered lobster roll"
+  "dish": "Hot buttered lobster roll",
+  "reception": null,
+  "overview": "Neptune Oyster is an oyster house in the North End, Boston. Their Lobster roll is considered one of Boston's iconic dishes. Kelli and Jeff Nace opened the restaurant in 2004, inspired by Parisian oyster bars and having only 37 seats. They appeared on Food Paradise (season 10)."
  },
  {
   "id": "rs_santarpio_s_pizza",
@@ -1514,7 +1638,9 @@
    "adventure": 0.36
   },
   "popularity": 0.81,
-  "dish": "Coal-blistered pies"
+  "dish": "Coal-blistered pies",
+  "reception": null,
+  "overview": "Santarpio's Pizza is a restaurant on Chelsea Street in East Boston, Massachusetts, United States. Established in 1903 as a bakery by Frank Santarpio, it began selling pizza in 1933. It is primarily known for its Boston-style pizza. The sign for Santarpio's Pizza can be seen from the highway on the way to the Boston airport."
  },
  {
   "id": "rs_lotus_of_siam",
@@ -1546,7 +1672,14 @@
    "adventure": 0.67
   },
   "popularity": 0.81,
-  "dish": "Khao soi"
+  "dish": "Khao soi",
+  "reception": {
+   "summary": "Jonathan Gold wrote in Saveur that it was \"the best Thai restaurant in North America...[and] has become probably the most famous Thai restaurant in the United States\". Adam Platt, writing in New York Magazine, called the restaurant \"one of the premier Thai destinations in the West\". Wine Spectator called its wine list one of the best in an Asian restaurant in the US.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lotus_of_Siam"
+  },
+  "overview": "Lotus of Siam is a Thai restaurant in Las Vegas, Nevada, in the U.S."
  },
  {
   "id": "rs_imo_s_pizza",
@@ -1611,7 +1744,14 @@
    "adventure": 0.34
   },
   "popularity": 0.81,
-  "dish": "Wood-fired margherita"
+  "dish": "Wood-fired margherita",
+  "reception": {
+   "summary": "Pizzeria Bianco has been rated as the best pizza in the United States by Bon Appétit, Vogue, Rachael Ray, and Andrew Zimmern, and has also been recognized by Martha Stewart, Oprah Winfrey, GQ, and Gourmet In 2003, Chris Bianco won the James Beard Foundation Award for best Southwest Chef (the only pizza chef to have won a regional award) and the restaurant received a nearly perfect Zagat score of 29 in 2000.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pizzeria_Bianco"
+  },
+  "overview": "Pizzeria Bianco is a pizza restaurant in downtown Phoenix, Arizona, established in 1987 by Chris Bianco. It has earned positive reviews from notable food critics. Nationally recognized for its pizzas, the restaurant's small seating capacity can lead to wait times that sometimes surprise casual patrons."
  },
  {
   "id": "rs_gramercy_tavern",
@@ -1643,7 +1783,9 @@
    "adventure": 0.7
   },
   "popularity": 0.79,
-  "dish": "Seasonal American cooking"
+  "dish": "Seasonal American cooking",
+  "reception": null,
+  "overview": "Gramercy Tavern is a New American restaurant located at 42 East 20th Street (between Broadway and Park Avenue S.), in the Flatiron District in Manhattan, New York City. It is owned by Danny Meyer (originally co-founded by Meyer and Chef Tom Colicchio), along with Chef/Partner Michael Anthony. The Executive Pastry Chef is Karen Demasco. The General Manager is Asher Russem. The restaurant opened in July 1994."
  },
  {
   "id": "rs_guelaguetza",
@@ -1675,7 +1817,14 @@
    "adventure": 0.46
   },
   "popularity": 0.79,
-  "dish": "Mole negro"
+  "dish": "Mole negro",
+  "reception": {
+   "summary": "The reviewer from Condé Nast Traveler wrote, \"This is a great meal to enjoy with family and friends, especially for a celebratory occasion where you don't want to spend your entire rent check.\" While writing for the LA Weekly, food critic Jonathan Gold called the restaurant \"one of the best Oaxacan restaurants in the country.\" Time Out Magazine called \"Guelaguetza a citywide institution, and the kind of place worth…",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Guelaguetza_(restaurant)"
+  },
+  "overview": "Guelaguetza is a Mexican restaurant in Los Angeles, California. Established by Fernando Lopez in 1994 Guelaguetza is one of the few places in Los Angeles (or even the United States) in which patrons can intentionally ingest insects, namely chapulines (fried grasshoppers), an Oaxacan delicacy."
  },
  {
   "id": "rs_republique",
@@ -1740,7 +1889,14 @@
    "adventure": 0.48
   },
   "popularity": 0.79,
-  "dish": "Caribbean roast pork sandwich"
+  "dish": "Caribbean roast pork sandwich",
+  "reception": {
+   "summary": "In 2010, TLC series Best Food Ever ranked Paseo's Cuban Roast as the second-best sandwich in the United States. However, the same year, blogger Geraldine DeRuiter listed Paseo as the top entry of her \"Over-Hyped List: Seattle Restaurant Edition\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Paseo_(restaurant)"
+  },
+  "overview": "Paseo is a chain of Caribbean sandwich shops based in Seattle, Washington, United States. It was founded in 1994 and went bankrupt in 2014 before being revived under new ownership the following year. The restaurant has four locations in King County."
  },
  {
   "id": "rs_willie_mae_s_scotch_house",
@@ -1772,7 +1928,9 @@
    "adventure": 0.46
   },
   "popularity": 0.79,
-  "dish": "Fried chicken"
+  "dish": "Fried chicken",
+  "reception": null,
+  "overview": "Willie Mae's Scotch House is a restaurant in New Orleans, Louisiana. In 2005 it was named an America's Classic by the James Beard Foundation."
  },
  {
   "id": "rs_truth_bbq",
@@ -1804,7 +1962,9 @@
    "adventure": 0.35
   },
   "popularity": 0.79,
-  "dish": "Brisket and tallow ribs"
+  "dish": "Brisket and tallow ribs",
+  "reception": null,
+  "overview": "Truth BBQ is a barbecue restaurant in Houston, in the U.S. state of Texas. It has received Bib Gourmand status in the Michelin Guide for Texas."
  },
  {
   "id": "rs_pok_pok_reborn",
@@ -1868,7 +2028,9 @@
    "adventure": 0.31
   },
   "popularity": 0.79,
-  "dish": "The Jucy Lucy"
+  "dish": "The Jucy Lucy",
+  "reception": null,
+  "overview": "Matt's Bar is a restaurant in south Minneapolis, Minnesota. It is known as one of two businesses that created the Jucy Lucy."
  },
  {
   "id": "rs_rodney_scott_s_bbq",
@@ -1998,7 +2160,9 @@
    "adventure": 0.79
   },
   "popularity": 0.77,
-  "dish": "Edible-balloon tasting menu"
+  "dish": "Edible-balloon tasting menu",
+  "reception": null,
+  "overview": "Alinea is a restaurant in Chicago, Illinois, United States. It is owned by chef Grant Achatz and Nick Kokonas, and known for its \"maximalist modernist cooking\". From 2011 to 2024, Alinea was awarded three stars by the Michelin Guide; it was downgraded to two Michelin stars in 2025."
  },
  {
   "id": "rs_uchi",
@@ -2030,7 +2194,9 @@
    "adventure": 0.59
   },
   "popularity": 0.77,
-  "dish": "Inventive sushi omakase"
+  "dish": "Inventive sushi omakase",
+  "reception": null,
+  "overview": "Uchi is a sushi restaurant in Austin, Texas, which opened in 2003. The Japanese word \"Uchi\" translates to \"house\" in English."
  },
  {
   "id": "rs_zuni_caf",
@@ -2063,7 +2229,9 @@
    "adventure": 0.7
   },
   "popularity": 0.77,
-  "dish": "Roast chicken for two"
+  "dish": "Roast chicken for two",
+  "reception": null,
+  "overview": "Zuni may refer to:"
  },
  {
   "id": "rs_zahav",
@@ -2095,7 +2263,9 @@
    "adventure": 0.47
   },
   "popularity": 0.77,
-  "dish": "Hummus tehina"
+  "dish": "Hummus tehina",
+  "reception": null,
+  "overview": "Zahav (Hebrew: זהב, romanized: zahav, lit. 'gold') is an Israeli restaurant in Philadelphia founded in 2008. It is managed by head chef Michael Solomonov."
  },
  {
   "id": "rs_la_barbecue",
@@ -2127,7 +2297,14 @@
    "adventure": 0.38
   },
   "popularity": 0.77,
-  "dish": "Beef ribs"
+  "dish": "Beef ribs",
+  "reception": {
+   "summary": "The restaurant was included in Texas Monthly's list of the \"Top 50 Barbecue Joints in Texas\" in 2021. It received a Michelin star in 2024.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/La_Barbecue"
+  },
+  "overview": "la Barbecue is a restaurant in Austin, Texas, United States."
  },
  {
   "id": "rs_momofuku_noodle_bar",
@@ -2160,7 +2337,9 @@
    "adventure": 0.63
   },
   "popularity": 0.77,
-  "dish": "Pork belly buns"
+  "dish": "Pork belly buns",
+  "reception": null,
+  "overview": "Momofuku is a culinary brand established by chef David Chang in 2004 with the opening of Momofuku Noodle Bar. It includes restaurants in New York City, Toronto (defunct), Las Vegas, and Los Angeles. Its various restaurants are called Noodle Bar, Ssäm Bar, Ko, Má Pêche (defunct), Seiōbo, Noodle Bar Toronto (defunct), Kōjin, Fuku, Fuku+, CCDC, Nishi, Ando, Las Vegas, Fuku Wall St, Kāwi, Kabawa, and Bar Kabawa."
  },
  {
   "id": "rs_rasika",
@@ -2192,7 +2371,19 @@
    "adventure": 0.67
   },
   "popularity": 0.77,
-  "dish": "Palak chaat"
+  "dish": "Palak chaat",
+  "reception": {
+   "summary": "Rasika has been called \"one of the most exciting Indian restaurants in the country\" by Condé Nast Traveler, and the city's best restaurant by The Washington Post. In 2023, Rasika was included in Washingtonian's overview of the 100 \"very best\" restaurants, and Tierney Plumb included the business in Eater Washington, D.C.'s list of sixteen \"must-try\" Indian restaurants in the metropolitan area.",
+   "quotes": [
+    {
+     "text": "Rasika has been called \"one of the most exciting Indian restaurants in the country\" by Condé Nast Traveler, and the city's best restaurant by The Washington Post.",
+     "outlet": "The Washington Post"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rasika_(restaurant)"
+  },
+  "overview": "Rasika is an Indian restaurant with two locations in Washington, D.C., in the United States. The original restaurant opened in Penn Quarter in 2005; an outpost, sometimes called Rasika West End, opened in West End in 2012."
  },
  {
   "id": "rs_busy_bee_cafe",
@@ -2256,7 +2447,9 @@
    "adventure": 0.35
   },
   "popularity": 0.77,
-  "dish": "The original hot chicken"
+  "dish": "The original hot chicken",
+  "reception": null,
+  "overview": "Prince's Hot Chicken Shack is a restaurant located in Nashville, Tennessee’s Assembly Food Hall, known for its hot chicken, and is credited with popularizing the dish and inspiring restaurants with similar offerings. The business was started in 1945 by James Thornton Prince, and in 1980 ownership was passed to his great-niece André Prince Jeffries."
  },
  {
   "id": "rs_arnold_s_country_kitchen",
@@ -2289,7 +2482,14 @@
    "adventure": 0.29
   },
   "popularity": 0.77,
-  "dish": "Meat and three"
+  "dish": "Meat and three",
+  "reception": {
+   "summary": "Food & Wine named Arnold's one of the best cafeterias in America and called its meats and local produce \"some of the highest-quality cooking ever to grace a cafeteria line\". It was featured on Diners, Drive in and Dives, and has been called the most prominent meat and three in operation.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Arnold's_Country_Kitchen"
+  },
+  "overview": "Arnold's Country Kitchen is a Southern restaurant in Nashville, Tennessee. The business received a James Beard American Classics Award in 2009. The restaurant has also been featured on the television series Diners, Drive-Ins and Dives. The menu has included Southern greens, chess pie, cornbread, black-eyed peas, and country-fried steak. Arnold's is located at 605 Eighth Avenue in The Gulch."
  },
  {
   "id": "rs_las_cuatro_milpas",
@@ -2451,7 +2651,9 @@
    "adventure": 0.6
   },
   "popularity": 0.75,
-  "dish": "Tasting-menu fish courses"
+  "dish": "Tasting-menu fish courses",
+  "reception": null,
+  "overview": "Le Bernardin is a three-Michelin star French seafood restaurant in Midtown Manhattan, New York City. Eric Ripert is the executive chef, and he is co-owner along with Maguy Le Coze."
  },
  {
   "id": "rs_suerte",
@@ -2515,7 +2717,14 @@
    "adventure": 0.51
   },
   "popularity": 0.75,
-  "dish": "Crab Louie"
+  "dish": "Crab Louie",
+  "reception": {
+   "summary": "Swan Oyster Depot has been the focus of international travel writers and food critics for many years. One writer called it a \"tiny temple dedicated to the glories of fruta di mare.\" The shop is often called a journey back in time because it has stayed largely unchanged for decades.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Swan_Oyster_Depot"
+  },
+  "overview": "Swan Oyster Depot is a seafood eatery and cultural landmark located in the Polk Gulch neighborhood of San Francisco, California. It opened there in 1903 and except for a brief hiatus and rebuilding period following the 1906 San Francisco earthquake, it has been running continuously in the same venue since that time. This makes it one of the longest continuous businesses and dining establishments in the United States."
  },
  {
   "id": "rs_sqirl",
@@ -2580,7 +2789,9 @@
    "adventure": 0.82
   },
   "popularity": 0.75,
-  "dish": "Special-occasion tasting menu"
+  "dish": "Special-occasion tasting menu",
+  "reception": null,
+  "overview": "Canlis is a fine dining restaurant serving New American and Pacific Northwest cuisine in Seattle, Washington. Situated in the Queen Anne neighborhood, the restaurant has views of Gas Works Park and the Cascade Mountains. It was built by Peter Canlis in 1950, and remains family-owned. The restaurant currently employs over 100 people."
  },
  {
   "id": "rs_h_mart_food_court_k_town",
@@ -2644,7 +2855,9 @@
    "adventure": 0.86
   },
   "popularity": 0.75,
-  "dish": "Pork-lychee salad"
+  "dish": "Pork-lychee salad",
+  "reception": null,
+  "overview": "Rose's Luxury is a restaurant on Barracks Row in Washington, D.C., created by chef-owner Aaron Silverman. It is known for not taking reservations which creates long lines, such that a nearby bar's top cocktail is called 'Waiting for Rose's' and line waiters are reported to make up to thirty dollars an hour waiting in line."
  },
  {
   "id": "rs_crawfish_noodles",
@@ -2677,7 +2890,9 @@
    "adventure": 0.64
   },
   "popularity": 0.75,
-  "dish": "Viet-Cajun crawfish boil"
+  "dish": "Viet-Cajun crawfish boil",
+  "reception": null,
+  "overview": "Crawfish & Noodles is a restaurant in Houston, Texas, United States."
  },
  {
   "id": "rs_work_class",
@@ -2806,7 +3021,9 @@
    "adventure": 0.4
   },
   "popularity": 0.75,
-  "dish": "Saturday-morning brisket"
+  "dish": "Saturday-morning brisket",
+  "reception": null,
+  "overview": "Snow's BBQ is a renowned Texas barbecue restaurant located in the small town of Lexington roughly an hour outside of Austin, Texas to the east. Snow's is open only on Saturdays from 8 AM until they run out of meat, often around noon. The unusual hours were originally kept to take advantage of a weekly Saturday livestock auction nearby at 12:30 PM. The name comes from owner Kerry Bexley's lifelong nickname."
  },
  {
   "id": "rs_dooky_chase_s",
@@ -2839,7 +3056,9 @@
    "adventure": 0.42
   },
   "popularity": 0.75,
-  "dish": "Gumbo z'herbes"
+  "dish": "Gumbo z'herbes",
+  "reception": null,
+  "overview": "Dooky Chase's Restaurant is a restaurant in Tremé neighborhood of New Orleans that in the 1950s and 1960s was known as a place for civil rights leaders to safely \"meet and strategize.\" In 2018, Food & Wine named it one of the 40 most important restaurants of the past 40 years. In 2025 the restaurant was named one of America's Classics by the James Beard Foundation."
  },
  {
   "id": "rs_skylight_inn_bbq",
@@ -2871,7 +3090,9 @@
    "adventure": 0.4
   },
   "popularity": 0.75,
-  "dish": "Chopped whole hog with cracklin"
+  "dish": "Chopped whole hog with cracklin",
+  "reception": null,
+  "overview": "Skylight Inn BBQ is a barbecue restaurant in Ayden, North Carolina. Founded by Pete Jones in 1947, it specializes in whole hog barbecue."
  },
  {
   "id": "rs_fore_street",
@@ -2903,7 +3124,9 @@
    "adventure": 0.85
   },
   "popularity": 0.75,
-  "dish": "Wood-oven roasting"
+  "dish": "Wood-oven roasting",
+  "reception": null,
+  "overview": "Fore Street is a restaurant at 288 Fore Street in the Old Port neighborhood of Portland, Maine, United States. Owned by Dana Street and Sam Hayward, the restaurant opened in 1996. It was named one of Gourmet magazine's top 50 restaurants in the United States in 2002, being placed 16th on the list. Its former chef Hayward was named the top chef in the Northeastern US in 2004 by the James Beard Foundation."
  },
  {
   "id": "rs_faidley_s_seafood",
@@ -2935,7 +3158,9 @@
    "adventure": 0.39
   },
   "popularity": 0.75,
-  "dish": "Jumbo lump crab cake"
+  "dish": "Jumbo lump crab cake",
+  "reception": null,
+  "overview": "Faidley's Seafood is a seafood restaurant in Lexington Market in Baltimore, Maryland. It is one of the oldest restaurants of its kind in the Chesapeake Bay area. The restaurant is known for its lump crab cakes."
  },
  {
   "id": "rs_jack_fry_s",
@@ -3033,7 +3258,19 @@
    "adventure": 0.43
   },
   "popularity": 0.71,
-  "dish": "The veggie burger"
+  "dish": "The veggie burger",
+  "reception": {
+   "summary": "Pete Wells, in a review of the original location published by The New York Times, awarded the restaurant two of four stars. He praised the yuba cheesesteak as \"an honest variation\" on the Philadelphia cheesesteak. Writing for Observer, Joshua David Stein compared the restaurant's burger favorably to the chicken sandwich served by Fuku, a restaurant run by David Chang.",
+   "quotes": [
+    {
+     "text": "Pete Wells, in a review of the original location published by The New York Times, awarded the restaurant two of four stars.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Superiority_Burger"
+  },
+  "overview": "Superiority Burger is a vegetarian burger restaurant located in the East Village neighborhood of New York City. The restaurant opened in its first location in 2015, and was closed from late 2021 until early 2023, at which point it opened in a second, larger location."
  },
  {
   "id": "rs_mister_jiu_s",
@@ -3066,7 +3303,14 @@
    "adventure": 0.66
   },
   "popularity": 0.71,
-  "dish": "Whole roast duck"
+  "dish": "Whole roast duck",
+  "reception": {
+   "summary": "Six months after the opening, the restaurant earned its first Michelin star in October 2016, becoming the first Chinese restaurant in San Francisco to do so, and has retained it since. As of December 2023, the restaurant remains the only Chinese restaurant in the United States with just one Michelin star.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mister_Jiu's"
+  },
+  "overview": "Mister Jiu's (Chinese: 周先生; pinyin: Zhōu xiānsheng) is a Michelin-starred Chinese restaurant in Chinatown, San Francisco. It specializes in Cantonese cuisine blended with modern Californian twists."
  },
  {
   "id": "rs_night_market_song",
@@ -3098,7 +3342,9 @@
    "adventure": 0.5
   },
   "popularity": 0.71,
-  "dish": "Larb"
+  "dish": "Larb",
+  "reception": null,
+  "overview": "Night markets or night bazaars (Chinese: 夜市) are street markets which operate at night and are generally dedicated to more leisurely strolling, shopping, and eating than more businesslike day markets. The culture of night markets originates from China and have spread globally with overseas Chinese populations."
  },
  {
   "id": "rs_staplehouse",
@@ -3130,7 +3376,14 @@
    "adventure": 0.74
   },
   "popularity": 0.71,
-  "dish": "Seasonal tasting menu"
+  "dish": "Seasonal tasting menu",
+  "reception": {
+   "summary": "Staplehouse received one Michelin star, denoting \"high-quality cooking\". A review in The Infatuation noted the restaurant's \"cheery\" courtyard, praising Staplehouse's family-friendly nature.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Staplehouse"
+  },
+  "overview": "Staplehouse is a restaurant in Atlanta, Georgia, United States. The restaurant received a Michelin star in 2024, though they lost it the next year in 2025 because they stopped offering their dinner tasting menu."
  },
  {
   "id": "rs_le_pigeon",
@@ -3162,7 +3415,14 @@
    "adventure": 0.54
   },
   "popularity": 0.71,
-  "dish": "Foie gras profiteroles"
+  "dish": "Foie gras profiteroles",
+  "reception": {
+   "summary": "Brooke Jackson-Glidden included the foie gras profiteroles in Eater Portland's 2024 overview of \"iconic\" Portland dishes. Katrina Yentch included Le Pigeon in the website's 2025 overview of the best restaurants in Buckman. Rebecca Roland included the foie gras profiteroles in Eater Portland's 2025 overview of the city's eleven best restaurants for desserts.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Le_Pigeon"
+  },
+  "overview": "Le Pigeon is a French bistro in Portland, Oregon's Buckman neighborhood, in the United States."
  },
  {
   "id": "rs_owamni",
@@ -3194,7 +3454,14 @@
    "adventure": 0.73
   },
   "popularity": 0.71,
-  "dish": "Bison and wild rice"
+  "dish": "Bison and wild rice",
+  "reception": {
+   "summary": "On opening, recognition came from local, national, and international reviewers. Less than one year after opening, Owamni won the James Beard Foundation Award for best new restaurant in 2022.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Owamni"
+  },
+  "overview": "Owamni by the Sioux Chef, or simply Owamni, is a Native American restaurant in downtown Minneapolis, Minnesota, that overlooks the Mississippi River. Owamni's majority Native American staff serves a menu made from indigenous ingredients such as game meats, corn, and wild plants."
  },
  {
   "id": "rs_the_french_laundry",
@@ -3226,7 +3493,19 @@
    "adventure": 0.62
   },
   "popularity": 0.71,
-  "dish": "Nine-course tasting menu"
+  "dish": "Nine-course tasting menu",
+  "reception": {
+   "summary": "Since 2006, it has been awarded three stars in the Michelin Guide to San Francisco. It received a favorable review in The New York Times and was called \"the best restaurant in the world, period\" in 2005 by restaurateur and celebrity chef Anthony Bourdain. Since 2007, the restaurant has been the recipient of the Wine Spectator Grand Award.",
+   "quotes": [
+    {
+     "text": "It received a favorable review in The New York Times and was called \"the best restaurant in the world, period\" in 2005 by restaurateur and celebrity chef Anthony Bourdain.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_French_Laundry"
+  },
+  "overview": "The French Laundry is a three-Michelin star French and Californian cuisine restaurant located in Yountville, California, in Napa Valley. Sally Schmitt opened The French Laundry in 1978 and designed her menus around local, seasonal ingredients; she was a visionary chef and pioneer of California cuisine. Since 1994, the chef and owner of The French Laundry is Thomas Keller."
  },
  {
   "id": "rs_chez_panisse",
@@ -3259,6 +3538,13 @@
    "adventure": 0.66
   },
   "popularity": 0.71,
-  "dish": "Daily farm-to-table menu"
+  "dish": "Daily farm-to-table menu",
+  "reception": {
+   "summary": "In 2001, Gourmet magazine named Chez Panisse the Best Restaurant in America. From 2002 to 2008, it was ranked by Restaurant magazine as one of the top 50 restaurants in the world and was ranked number 12 in 2003. Michelin awarded the restaurant a one-star rating in its guide to San Francisco Bay Area dining from 2006 through 2009, but the restaurant lost its star in 2010.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Chez_Panisse"
+  },
+  "overview": "Chez Panisse is a restaurant in Berkeley, California, known as one of the originators of California cuisine and the farm-to-table movement, opened and owned by Alice Waters. The restaurant emphasizes ingredients rather than technique and has developed a supply network of direct relationships with local farmers, ranchers, and dairies."
  }
 ]

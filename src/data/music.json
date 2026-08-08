@@ -3098,7 +3098,23 @@
    "energy": 0.56,
    "darkness": 0.46,
    "density": 0.68
-  }
+  },
+  "reception": {
+   "summary": "\"Snooze\" has received critical acclaim. The instrumental was a recurring subject of attention; Billboard's Andrew Unterberger and Rolling Stone's Larisha Paul said it was \"intoxicating\", and several others wrote positively about the \"dreamy\" sound.",
+   "quotes": [
+    {
+     "text": "The instrumental was a recurring subject of attention; Billboard's Andrew Unterberger and Rolling Stone's Larisha Paul said it was \"intoxicating\", and several others wrote positively about the \"dreamy\" sound.",
+     "outlet": "Billboard"
+    },
+    {
+     "text": "In 2025, Rolling Stone ranked \"Snooze\" at number 13 in the 2025 edition of their \"Greatest Songs of the 21st Century\" list.",
+     "outlet": "Rolling Stone"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Snooze_(SZA_song)"
+  },
+  "overview": "\"Snooze\" is a song by American singer-songwriter SZA, and the sixth single from her second studio album, SOS (2022). It is an R&B song with a midtempo rhythm, featuring an instrumental that consists of bass, guitars, drums, and synthesizers. The main vocals are complemented by several layers of harmonies beneath, and a riff appears at the song's beginning."
  },
  {
   "id": "tr_4188437",
@@ -3133,7 +3149,19 @@
    "energy": 0.69,
    "darkness": 0.42,
    "density": 0.74
-  }
+  },
+  "reception": {
+   "summary": "\"Fireflies\" was generally well received by music critics.",
+   "quotes": [
+    {
+     "text": "Ian Cohen of Pitchfork called it an extraordinarily \"obvious\" lift of their sound.",
+     "outlet": "Pitchfork"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Fireflies_(Owl_City_song)"
+  },
+  "overview": "\"Fireflies\" is the 2009 debut single from American electronica project Owl City's album Ocean Eyes. Frontman Adam Young wrote the track about seeing fireflies in his hometown of Owatonna, Minnesota while he was awake with insomnia. Young produced the song alongside Matt Thiessen, who also provided guest vocals. The song is built around a \"bleepy\" synthline and includes lyrics about insomnia, fireflies and summer."
  },
  {
   "id": "tr_3135553",
@@ -3168,7 +3196,9 @@
    "energy": 0.81,
    "darkness": 0.4,
    "density": 0.75
-  }
+  },
+  "reception": null,
+  "overview": "\"One More Time\" is a song by French electronic music duo Daft Punk, released in November 2000 by Virgin Records as the lead single from their second studio album, Discovery (2001). It is a French house song featuring an auto-tuned vocal performance by Romanthony and a sample of \"More Spell on You\" by Eddie Johns. The music video forms part of the 2003 anime film Interstella 5555: The 5tory of the 5ecret 5tar 5ystem."
  },
  {
   "id": "tr_2181330357",
@@ -3203,7 +3233,9 @@
    "energy": 0.79,
    "darkness": 0.48,
    "density": 0.71
-  }
+  },
+  "reception": null,
+  "overview": "\"Back on 74\" is a song by the British band Jungle, released as the fourth and final single from their album Volcano on 28 July 2023 through Caiola and AWAL. It was written by Jungle members Josh Lloyd and Thomas McFarland and their newest member Lydia Kitto, and produced by Lloyd. It reached the top 40 in the UK and New Zealand."
  },
  {
   "id": "tr_3076269681",
@@ -3238,7 +3270,14 @@
    "energy": 0.74,
    "darkness": 0.57,
    "density": 0.84
-  }
+  },
+  "reception": {
+   "summary": "David Taylor-Wilson from Bay Area Reporter stated that the song \"has all the ingredients for a solid dance hit, with a style somewhat reminiscent of Soul II Soul.\" Bill Coleman from Billboard magazine described it as a \"seductive house track with an underground sensibility sports a tasty vocal hook and top of the chart potential.\" Another Billboard editor, Larry Flick, named it \"a scathing, house-fueled ode to…",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Dirty_Cash_(Money_Talks)"
+  },
+  "overview": "\"Dirty Cash (Money Talks)\" is a song by British dance music act the Adventures of Stevie V. It was first released in December 1989 on the Mercury record label, then again in 1990. The 1990 release peaked at number two on the UK Singles Chart, reached number one in the Netherlands, and topped both the US Billboard Dance Club Play chart and the Canadian RPM Dance chart."
  },
  {
   "id": "tr_142706538",
@@ -3273,7 +3312,14 @@
    "energy": 0.76,
    "darkness": 0.45,
    "density": 0.68
-  }
+  },
+  "reception": {
+   "summary": "Philip Cosores from Consequence named \"Something Just Like This\" one of the best releases of February 2017, mentioning that \"the track is a warm, sentimental, uplifting anthem\" where Martin \"steals the show, punctuating his verses with enough sap and self-confidence that we remember why we like pop music in the first place\". 3voor12 and Uproxx listed it among the best songs of 2017.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Something_Just_Like_This"
+  },
+  "overview": "\"Something Just Like This\" is a song by American electronic music duo the Chainsmokers and British rock band Coldplay. It was released on February 22, 2017, as the second single from the former's debut album, Memories...Do Not Open, and as the lead single of the latter's thirteenth extended play, Kaleidoscope EP."
  },
  {
   "id": "tr_70266756",
@@ -3309,7 +3355,19 @@
    "energy": 0.9,
    "darkness": 0.35,
    "density": 0.68
-  }
+  },
+  "reception": {
+   "summary": "Robert Copsey of Digital Spy gave the song a positive review, stating: \"As chart-friendly EDM continues to reach the furthest corners of the globe, staying ahead of the pack can prove a tricky task – especially when more and more acts arrive on the scene turning out mixes with identikit build-ups, tired lyrics and uninspired breakdowns that newcomers to the arena lap up with excitement.",
+   "quotes": [
+    {
+     "text": "At the end of the year, Rolling Stone listed \"Wake Me Up\" at number 26 on its list of 100 Best Songs of 2013.",
+     "outlet": "Rolling Stone"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Wake_Me_Up_(Avicii_song)"
+  },
+  "overview": "\"Wake Me Up\" (sometimes listed as \"Wake Me Up!\") is a song by Swedish DJ and record producer Avicii. It was released as the lead single from his debut album True on 17 June 2013, by PRMD Music and Island Records. It was written by Avicii, Mike Einziger of Incubus, and American soul singer Aloe Blacc, who provides vocals for the track."
  },
  {
   "id": "tr_3988410711",
@@ -3345,7 +3403,23 @@
    "energy": 0.81,
    "darkness": 0.26,
    "density": 0.78
-  }
+  },
+  "reception": {
+   "summary": "Savage from BBC News, Jeff Nelson from People, Lucy O'Brien from Mojo and Rosenberg of Paste called \"Danceteria\" the album's highlight. Rosenberg called it Madonna's \"freshest, most debaucherous song in what feels like forever\". Zoladz of The New York Times opined that Madonna sounded freest she had heard in years.",
+   "quotes": [
+    {
+     "text": "Savage from BBC News, Jeff Nelson from People, Lucy O'Brien from Mojo and Rosenberg of Paste called \"Danceteria\" the album's highlight.",
+     "outlet": "BBC"
+    },
+    {
+     "text": "Zoladz of The New York Times opined that Madonna sounded freest she had heard in years.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Danceteria_(song)"
+  },
+  "overview": "\"Danceteria\" is a song by the American singer Madonna from her fifteenth studio album, Confessions II (2026). It was released on July 10, 2026, through Warner Records, as the third single from the album. It was written and produced by Madonna, Andrew Watt, Cirkut and Stuart Price, and uses an interpolation of \"Walk on the Wild Side\" (1973), written by Lou Reed."
  },
  {
   "id": "tr_3229131161",
@@ -3450,7 +3524,23 @@
    "energy": 0.51,
    "darkness": 0.7,
    "density": 0.61
-  }
+  },
+  "reception": {
+   "summary": "\"My Love Mine All Mine\" was widely praised by music critics, several of whom deemed it a standout track of The Land Is Inhospitable and So Are We, including Christopher J. Lee of PopMatters, who called Mitski's vocals on the song \"gorgeous\". Crack's Lauren O'Neill called it \"the album's sweet, tender highlight\", while Mia Hughes of NME wrote that it was \"the album's most stunning track\" and \"a gorgeous slow-dance\".",
+   "quotes": [
+    {
+     "text": "Crack's Lauren O'Neill called it \"the album's sweet, tender highlight\", while Mia Hughes of NME wrote that it was \"the album's most stunning track\" and \"a gorgeous slow-dance\".",
+     "outlet": "NME"
+    },
+    {
+     "text": "For Slant Magazine, Eric Mason deemed \"My Love Mine All Mine\" as one of the album's \"emotional peaks\", which were \"so moving that the listener may also be convinced that love is a light in a dark world\".",
+     "outlet": "Slant"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/My_Love_Mine_All_Mine"
+  },
+  "overview": "\"My Love Mine All Mine\" is a song by American singer-songwriter Mitski. It was released as the third single from her seventh studio album The Land Is Inhospitable and So Are We on September 15, 2023. The song features country-influenced piano and pedal steel guitar, while its lyrics depict Mitski requesting the Moon to take her love when she dies and shine it back down to Earth."
  },
  {
   "id": "tr_2310201655",
@@ -3485,7 +3575,14 @@
    "energy": 0.5,
    "darkness": 0.63,
    "density": 0.64
-  }
+  },
+  "reception": {
+   "summary": "Writing for the Associated Press, Elise Ryan wrote that the album's material \"feel like songs both longtime listeners and newer fans will want to belt back to Kahan—not because they're produced for stadiums or arenas, but because they're full of nostalgic melodies that will resonate far beyond New England.\" Marcy Donelson of AllMusic rated the album three-and-a-half out of five stars and described it as a…",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Stick_Season_(album)"
+  },
+  "overview": "Stick Season is the third studio album by American singer-songwriter Noah Kahan, who also served as producer alongside Gabe Simon. It was released on October 14, 2022, by Mercury Records and Republic Records. The album was supported by two singles: the title track and \"Northern Attitude\"."
  },
  {
   "id": "tr_3416737961",
@@ -3520,7 +3617,19 @@
    "energy": 0.57,
    "darkness": 0.6,
    "density": 0.63
-  }
+  },
+  "reception": {
+   "summary": "The original version of \"Rein Me In\" received praise from music critics. Sarah Bea Milner of Screen Rant called the song \"catchy\" and \"earnest\", writing that \"Fender's mumblecore tenor works particularly well against bright guitar and solid bass groove.\" Brianna Corrine of Atwood Magazine noted that it \"explores a different, lighter side of Fender’s capabilities\" compared to the rest of the album.",
+   "quotes": [
+    {
+     "text": "Rolling Stone UK included the song in their weekly Hot New Songs playlist.",
+     "outlet": "Rolling Stone"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rein_Me_In"
+  },
+  "overview": "\"Rein Me In\" is a song by British singer-songwriters Sam Fender and Olivia Dean. It is a re-recorded duet version of a song from Fender's third studio album People Watching, as the original features only Fender. It was released on 20 June 2025 as the sixth single from the album."
  },
  {
   "id": "tr_4151325372",
@@ -3555,7 +3664,23 @@
    "energy": 0.6,
    "darkness": 0.55,
    "density": 0.65
-  }
+  },
+  "reception": {
+   "summary": "According to review aggregator Metacritic, the album received \"generally favorable reviews\" based on a weighted average score of 76 out of 100 from five critic scores. NME's Nicolas Tyrell-Scott wrote in a review of Oh Yeah?",
+   "quotes": [
+    {
+     "text": "According to review aggregator Metacritic, the album received \"generally favorable reviews\" based on a weighted average score of 76 out of 100 from five critic scores.",
+     "outlet": "Metacritic"
+    },
+    {
+     "text": "NME's Nicolas Tyrell-Scott wrote in a review of Oh Yeah?",
+     "outlet": "NME"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oh_Yeah%3F_(album)"
+  },
+  "overview": "Oh Yeah? is the third studio album by American musician Steve Lacy. It was released on July 17, 2026, through RCA Records. Advertised as \"a record for guitar kids who love synths and synth kids who love guitars\", it is primarily a rock and R&B album with elements of breakbeat, pop, psychedelia, soul and trip hop, featuring guest performances by SZA, Erykah Badu and Cecile Believe."
  },
  {
   "id": "tr_3763687462",
@@ -3590,7 +3715,9 @@
    "energy": 0.47,
    "darkness": 0.63,
    "density": 0.62
-  }
+  },
+  "reception": null,
+  "overview": "\"Iloveitiloveitiloveit\" is a song by American singer-songwriter Bella Kay, released on January 11, 2026, as the lead single from her second EP A Couple Minutes Out (2026), and the lead single from her debut studio album, My Reckless Abandon (2026). It gained traction on the video-sharing app TikTok and became a breakout hit. The song reached number one in Ireland and Norway."
  },
  {
   "id": "tr_3852206111",
@@ -3625,7 +3752,9 @@
    "energy": 0.5,
    "darkness": 0.68,
    "density": 0.54
-  }
+  },
+  "reception": null,
+  "overview": "\"Drag Path\" is a song by the American music duo Twenty One Pilots. It was written by frontman Tyler Joseph, who produced it with Paul Meany. First released on September 12, 2025 as part of a limited-time issue of the duo's eighth studio album, Breach (2025), the song was issued as a single on February 17, 2026, via Fueled by Ramen and Atlantic Records."
  },
  {
   "id": "tr_2238153377",
@@ -3660,7 +3789,9 @@
    "energy": 0.42,
    "darkness": 0.52,
    "density": 0.56
-  }
+  },
+  "reception": null,
+  "overview": "\"From the Start\" is a song by Icelandic singer Laufey. It was released as a single on 11 May 2023 via AWAL."
  },
  {
   "id": "tr_2729273551",
@@ -3695,7 +3826,23 @@
    "energy": 0.46,
    "darkness": 0.33,
    "density": 0.45
-  }
+  },
+  "reception": {
+   "summary": "The song received critical acclaim. Chris Molanphy of Slate wrote that \"A Bar Song\" \"fuses the kid-friendly counting lyrics from J-Kwon's original rap hit ... with more adult concerns that reflect our current national malaise\" and \"is at once digitally savvy, culturally old-school, and as American as a trucker hat\".",
+   "quotes": [
+    {
+     "text": "Ashley Pointer of NPR described the song as having an \"infectious hook encapsulating a rowdy energy made for celebrations and singalongs\".",
+     "outlet": "NPR"
+    },
+    {
+     "text": "NPR included it in its list of 124 Best Songs of 2024.",
+     "outlet": "NPR"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/A_Bar_Song_(Tipsy)"
+  },
+  "overview": "\"A Bar Song (Tipsy)\" is a song by American musician Shaboozey. It was released April 12, 2024, as the fourth single from his third album Where I've Been, Isn't Where I'm Going."
  },
  {
   "id": "tr_858371",
@@ -3730,7 +3877,14 @@
    "energy": 1,
    "darkness": 0.84,
    "density": 0.89
-  }
+  },
+  "reception": {
+   "summary": "The Final Countdown received mixed reviews upon its release. Rolling Stone writer J. D. Considine wrote that \"the words to 'The Final Countdown' make almost no sense whatsoever on paper, but there's genuine drama to the way Tempest's keening vocals surge through the mock-orchestral morass of synths and guitar. Maybe it's trite, maybe it's derivative, but it's also undeniably effective.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Final_Countdown_(album)"
+  },
+  "overview": "The Final Countdown is the third studio album by the Swedish rock band Europe. Released on 26 May 1986 through Epic Records, the album was a commercial success, peaking at number 8 on the U.S. Billboard 200 chart and reaching high positions in charts worldwide. It was recorded at Powerplay Studios in Zürich, Soundtrade Studios in Stockholm, Mastersound Studios in Atlanta and Fantasy Studios in Berkeley."
  },
  {
   "id": "tr_62082829",
@@ -3800,7 +3954,9 @@
    "energy": 0.95,
    "darkness": 0.82,
    "density": 0.87
-  }
+  },
+  "reception": null,
+  "overview": "\"Duality\" is a song by American heavy metal band Slipknot. It was released on May 4, 2004, as the first single from the band's third album, Vol. 3: (The Subliminal Verses). A music video was made for the song, which was listed as Roadrunner's greatest video of all time."
  },
  {
   "id": "tr_134523750",
@@ -3835,7 +3991,23 @@
    "energy": 0.83,
    "darkness": 0.79,
    "density": 0.79
-  }
+  },
+  "reception": {
+   "summary": "David Lloyd said it was Korn's most popular song, and on July 8, 1999, the song was the ninth most-infringed song on the Internet. iTunes said that \"Wright and Thompson bring a brighter, sharper sheen to Korn's sound, which helped make huge hits out of 'Freak on a Leash'.\" Allmusic editor highlighted the song.",
+   "quotes": [
+    {
+     "text": "It reached number six on the Billboard Modern Rock Tracks chart and number ten on the Mainstream Rock Tracks chart, and was successful on the Hot 100 charting number 89.",
+     "outlet": "Billboard"
+    },
+    {
+     "text": "The song won two MTV Music Awards, one Billboard Music Award, one Grammy Award, and one Metals' Edge Readers Choice Award.",
+     "outlet": "Billboard"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Freak_on_a_Leash"
+  },
+  "overview": "\"Freak on a Leash\" is a song by the American nu metal band Korn, featured on the group's 1998 studio album, Follow the Leader. After Follow the Leader's release, the song was released as a single in February 1999, and since then, it has been re-released over ten times. The song uses dissonance, distortion, various guitar effects, and a heavy, aggressive style."
  },
  {
   "id": "tr_15523799",
@@ -3870,7 +4042,9 @@
    "energy": 0.98,
    "darkness": 0.75,
    "density": 0.79
-  }
+  },
+  "reception": null,
+  "overview": "\"Aerials\" is a song by American heavy metal band System of a Down. It was released in 2002 as the third single from their second album Toxicity (2001), which earned the band its second Grammy Award nomination for Best Hard Rock Performance at the 45th Annual Grammy Awards in 2003. The song hit number one on both the Billboard's Alternative Songs and Mainstream Rock charts."
  },
  {
   "id": "tr_559789",
@@ -3905,7 +4079,9 @@
    "energy": 0.92,
    "darkness": 0.91,
    "density": 0.9
-  }
+  },
+  "reception": null,
+  "overview": "\"B.Y.O.B.\" (\"Bring Your Own Bombs\") is a song by Armenian-American heavy metal band System of a Down. It was released in March 2005 as the lead single from their fourth studio album, Mezmerize. Like their earlier song \"Boom!\", it was written as a protest against the Iraq War. The song reached number 27 on the US Billboard Hot 100, marking the band's only top 40 hit."
  },
  {
   "id": "tr_15211178",
@@ -3941,7 +4117,19 @@
    "energy": 0.8,
    "darkness": 0.26,
    "density": 0.6
-  }
+  },
+  "reception": {
+   "summary": "\"Whenever, Wherever\" received mainly positive reviews from music critics. Alex Henderson of AllMusic picked the song as a highlight, writing that it's \"infectious\" and \"it's to Shakira what 'Livin' la Vida Loca' was to Ricky Martin: the major hit that brought her to English-speaking audiences in a big way.\" Lisa Oliver of Yahoo!",
+   "quotes": [
+    {
+     "text": "But in her native tongue, she's commanding and willowy.\" For David Browne of Entertainment Weekly, the song has a \"shameless Latin-pop hook\".",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Whenever%2C_Wherever"
+  },
+  "overview": "\"Whenever, Wherever\" is a song recorded by Colombian singer-songwriter Shakira for her debut English-language studio album, Laundry Service (2001), her fifth overall. Shakira produced the track and wrote the lyrics to the original Spanish version, titled \"Suerte\" (English: \"Lucky\"), which Gloria Estefan later adapted to English."
  },
  {
   "id": "tr_3677908682",
@@ -3977,7 +4165,9 @@
    "energy": 0.88,
    "darkness": 0.36,
    "density": 0.67
-  }
+  },
+  "reception": null,
+  "overview": "\"Dardos\" (lit. 'Darts') is a song recorded by American singers Romeo Santos and Prince Royce. It was written by Santos alongside four other songwriters, including Inassiah Emilio Parker, with production handled by Santos and Parker. The song was released by Sony Music Latin on November 28, 2025, as the second single from their collaborative studio album, Better Late Than Never (2025)."
  },
  {
   "id": "tr_3376766301",
@@ -4012,7 +4202,9 @@
    "energy": 0.85,
    "darkness": 0.36,
    "density": 0.61
-  }
+  },
+  "reception": null,
+  "overview": "\"Latina Foreva\" is a song by Colombian singer-songwriter Karol G. It was released on May 22, 2025, through Bichota Records and Interscope, as the second single from her fifth studio album, Tropicoqueta (2025)."
  },
  {
   "id": "tr_15586286",
@@ -4047,7 +4239,14 @@
    "energy": 0.44,
    "darkness": 0.48,
    "density": 0.55
-  }
+  },
+  "reception": {
+   "summary": "The track received generally positive reviews from music critics. J.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rock_with_You"
+  },
+  "overview": "\"Rock with You\" is a song by the American singer Michael Jackson, written by Rod Temperton and produced by Quincy Jones. It was first offered to Karen Carpenter, while she was working on her first solo album, but she turned it down. It was released on November 3, 1979 by Epic Records as the second single from Jackson's fifth solo studio album Off the Wall (1979)."
  },
  {
   "id": "tr_2271563",
@@ -4082,7 +4281,23 @@
    "energy": 0.35,
    "darkness": 0.44,
    "density": 0.25
-  }
+  },
+  "reception": {
+   "summary": "John Tague from NME wrote, \"'Fast Car' is a typically well expressed lament, not for those who have suffered extraordinary circumstances, but for those who escape one form of dead end existence only to fall into another, relative material success without the consolation of dreams for the future.",
+   "quotes": [
+    {
+     "text": "When Rolling Stone updated the list in 2021, \"Fast Car\" was promoted to number 71.",
+     "outlet": "Rolling Stone"
+    },
+    {
+     "text": "Pitchfork named it the 86th-best song of the 1980s in 2015.",
+     "outlet": "Pitchfork"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Fast_Car"
+  },
+  "overview": "\"Fast Car\" is a song by American singer-songwriter Tracy Chapman, released as her debut single on April 6, 1988, by Elektra Records. It served as the lead single from her 1988 self-titled debut studio album."
  },
  {
   "id": "tr_82697686",
@@ -4117,7 +4332,9 @@
    "energy": 0.4,
    "darkness": 0.48,
    "density": 0.29
-  }
+  },
+  "reception": null,
+  "overview": "\"Take Me Home, Country Roads\", also known simply as \"Country Roads\", is a song written by Bill Danoff, Taffy Nivert, and John Denver. John Denver released it as a single on April 12, 1971; it peaked at number two on Billboard's US Hot 100 singles chart for the week ending August 28. The song was a success on its initial release and was certified gold by the RIAA on August 18, 1971, and platinum on April 10, 2017."
  },
  {
   "id": "tr_3834003271",
@@ -4154,7 +4371,14 @@
    "energy": 0.62,
    "darkness": 0.31,
    "density": 0.51
-  }
+  },
+  "reception": {
+   "summary": "Critics have praised the song for its \"vulnerability\" and \"raw honesty\". The Music Universe described it as \"honestly and sharply written\", highlighting Langley's \"unmistakable vocal\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Be_Her"
+  },
+  "overview": "\"Be Her\" is a song by American country music singer Ella Langley. The song was serviced to country radio on March 23, 2026, as the second single from her second studio album, Dandelion. Langley wrote the song with Jordan Schmidt, Michael Hardy, and Smith Ahnquist, and produced it with Ben West and Miranda Lambert. It peaked at No. 2 on the Billboard Hot 100, being blocked by her own song \"Choosin' Texas\"."
  },
  {
   "id": "tr_3838327301",
@@ -4191,7 +4415,9 @@
    "energy": 0.55,
    "darkness": 0.33,
    "density": 0.54
-  }
+  },
+  "reception": null,
+  "overview": "\"Be By You\" is a song by American country music singer Luke Combs. It was released as the fourth single from his sixth studio album, The Way I Am, on February 13, 2026; it was released on May 5 as the fourth official single. It was written by Dan Alley, Sam Banks, and Nick Walsh and produced by Combs himself, Jonathan Singleton, and Chip Matthews."
  },
  {
   "id": "tr_3978161521",
@@ -4228,7 +4454,9 @@
    "energy": 0.52,
    "darkness": 0.45,
    "density": 0.66
-  }
+  },
+  "reception": null,
+  "overview": "\"I Can't Love You Anymore\" is a song by American singers Ella Langley and Morgan Wallen. It was released on April 24, 2026, through Sawgod and Columbia. The song marks the first collaboration between Langley and Wallen, and appears on the reissue of Langley's second studio album, Dandelion (2026)."
  },
  {
   "id": "tr_88902741",
@@ -4264,7 +4492,14 @@
    "energy": 0.77,
    "darkness": 0.34,
    "density": 0.64
-  }
+  },
+  "reception": {
+   "summary": "\"Summer of '69\" received generally favorable reviews from contemporary music critics. Many writers drew comparisons between Adams' vocals and the song's arrangement to the work of Bruce Springsteen. Frank Edmonds of the Bury Free Press, James Belsey of the Bristol Evening Post, and Dave Sholin of Gavin Report all praised the song's high energy.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Summer_of_'69"
+  },
+  "overview": "\"Summer of '69\" is a song by Canadian singer-songwriter Bryan Adams from his fourth studio album, Reckless (1984). The song was written by Adams and his longtime collaborator Jim Vallance, and produced by Adams and Bob Clearmountain. \"Summer of '69\" is a pop rock and heartland rock track built around a prominent guitar riff."
  },
  {
   "id": "tr_447552822",
@@ -4300,7 +4535,23 @@
    "energy": 0.61,
    "darkness": 0.59,
    "density": 0.66
-  }
+  },
+  "reception": {
+   "summary": "The somewhat delayed success of \"Pour Some Sugar on Me\" (due to the new promo release) helped send Hysteria to number 1 on the Top Pop Albums chart (now the Billboard 200) a year after release, selling four million copies during the single's run. The song reached number 2 on the US Billboard Hot 100, number 18 on the UK Singles Chart and number 26 on the Australian Singles Chart.",
+   "quotes": [
+    {
+     "text": "The song reached number 2 on the US Billboard Hot 100, number 18 on the UK Singles Chart and number 26 on the Australian Singles Chart.",
+     "outlet": "Billboard"
+    },
+    {
+     "text": "MTV ranked \"Pour Some Sugar on Me\" number 1 on its \"Top 300 Videos of All Time\" countdown in May 1991.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pour_Some_Sugar_on_Me"
+  },
+  "overview": "\"Pour Some Sugar on Me\" is a song by the English rock band Def Leppard from their 1987 album Hysteria. It reached number two on the US Billboard Hot 100 chart on 23 July 1988. \"Pour Some Sugar on Me\" is considered the band's signature song, and was ranked number two on VH1's \"100 Greatest Songs of the 80s\" in 2006."
  },
  {
   "id": "tr_353398301",
@@ -4336,7 +4587,14 @@
    "energy": 0.71,
    "darkness": 0.61,
    "density": 0.58
-  }
+  },
+  "reception": {
+   "summary": "Daniel Booth from Melody Maker wrote, \"Scooter subvert the reverence of rock and the pomposity of heavy metal, then shatter them in the blink of a maquillaged eye. This, unless you're asleep at the back, you'll realise is Billy Idol's 'Rebel Yell', technofied and amplified into dance oblivion.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rebel_Yell_(song)"
+  },
+  "overview": "\"Rebel Yell\" is a song by the English rock singer Billy Idol. It is the title track of his second studio album Rebel Yell (1983), and was released as the album's lead single in January 1984 by Chrysalis Records. Initially, it only reached No. 62 in the UK and No. 46 in the US upon its release. However, a 1985 re-issue proved to be a big hit, peaking at no. 6 in the UK."
  },
  {
   "id": "tr_14932098",
@@ -4373,7 +4631,23 @@
    "energy": 0.59,
    "darkness": 0.61,
    "density": 0.56
-  }
+  },
+  "reception": {
+   "summary": "In a review of the single, Rolling Stone gave the song four out of five stars, saying that \"Frustrated desire is the song's ostensible theme... but for Keys fans, this is a clean hit of instant gratification.\" Its review of El Camino praised the song's arrangement, particularly the \"sugar-crusted keyboard\" that, along with the chorus, \"chang[es] the swampy chug into a seductive singalong\".",
+   "quotes": [
+    {
+     "text": "In a review of the single, Rolling Stone gave the song four out of five stars, saying that \"Frustrated desire is the song's ostensible theme...",
+     "outlet": "Rolling Stone"
+    },
+    {
+     "text": "Pitchfork Media reviewer Rob Harvilla called it a \"surging opener\" and highlighted the \"machine-gun surge of Dan Auerbach's gong-banging guitar\".",
+     "outlet": "Pitchfork"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lonely_Boy_(The_Black_Keys_song)"
+  },
+  "overview": "\"Lonely Boy\" is a song by American rock band the Black Keys. It is the opening track from their 2011 studio album El Camino and was released as the record's lead single on October 26, 2011. The song is also the A-side of a promotional 12-inch single that was released in commemoration of Record Store Day's \"Back to Black\" Friday event."
  },
  {
   "id": "tr_963098",
@@ -4409,7 +4683,14 @@
    "energy": 0.66,
    "darkness": 0.55,
    "density": 0.65
-  }
+  },
+  "reception": {
+   "summary": "AllMusic's brief retrospective review was dismissive of the album, declaring that \"nothing here really scales the same height as the title track\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Eye_of_the_Tiger_(album)"
+  },
+  "overview": "Eye of the Tiger is the third album by American rock band Survivor, released in 1982. It reached No. 2 on the US Billboard 200 chart. The album features the title track, which is also the theme song of the film Rocky III. The single went to No. 1 in both the US and UK, while \"American Heartbeat\" reached No. 17 in the US. Both singles also made the charts in Germany."
  },
  {
   "id": "tr_2441438",
@@ -4445,7 +4726,23 @@
    "energy": 0.65,
    "darkness": 0.63,
    "density": 0.58
-  }
+  },
+  "reception": {
+   "summary": "Larry Flick from Billboard gave a mixed review of the song, saying that it was a \"chugging, Wham!-style pop song with slightly cheesy lyrics\", but that the ending lyrics were \"interesting\". Daily Record wrote, \"This anthem sounds like The Waterboys at their best and has meaningful lyrics.\" They also added, \"It may sound like Bruce Springsteen, but that's no bad thing.",
+   "quotes": [
+    {
+     "text": "Larry Flick from Billboard gave a mixed review of the song, saying that it was a \"chugging, Wham!-style pop song with slightly cheesy lyrics\", but that the ending lyrics were \"interesting\".",
+     "outlet": "Billboard"
+    },
+    {
+     "text": "In a Time interview, U2 lead guitarist the Edge is quoted saying \"You Get What You Give\" is the song he is \"most jealous of.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/You_Get_What_You_Give_(song)"
+  },
+  "overview": "\"You Get What You Give\" is a song by American alternative rock band New Radicals. It was the first and most successful single from their only studio album, Maybe You've Been Brainwashed Too (1998). Released on November 3, 1998, the song reached number 36 on the US Billboard Hot 100 and number eight on the Billboard Modern Rock Tracks chart."
  },
  {
   "id": "tr_3966979401",
@@ -4481,7 +4778,14 @@
    "energy": 0.69,
    "darkness": 0.66,
    "density": 0.6
-  }
+  },
+  "reception": {
+   "summary": "Shawn Grant of The Source wrote the song \"captures the raw confidence and magnetic charisma that have established Yung Miami as a leading voice in hip-hop\". Gabriel Bras Nevares of HotNewHipHop described it as \"a bit of a slow-burner when it comes to the pace, but a nasal yet infectious chorus makes it hit in a club setting.\"",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Spend_Dat"
+  },
+  "overview": "\"Spend Dat\" is a song by American rapper Yung Miami, released on April 24, 2026 through Uptown Records. She with the producer of the song, J. White Did It, wrote the song along with Akil King, Maurice Simmonds and Ronny Wright."
  },
  {
   "id": "tr_3277684691",
@@ -4517,7 +4821,19 @@
    "energy": 0.81,
    "darkness": 0.55,
    "density": 0.66
-  }
+  },
+  "reception": {
+   "summary": "Michael Saponara at Billboard saw the song as an example of Tecca \"getting in his pop bag\" as he delivers a \"soundtrack to a night out on the rooftop bars\" and ups \"his artistry to new heights\" in the process.",
+   "quotes": [
+    {
+     "text": "Michael Saponara at Billboard saw the song as an example of Tecca \"getting in his pop bag\" as he delivers a \"soundtrack to a night out on the rooftop bars\" and ups \"his artistry to new heights\" in the process.",
+     "outlet": "Billboard"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Dark_Thoughts_(Lil_Tecca_song)"
+  },
+  "overview": "\"Dark Thoughts\" is a song by American rapper Lil Tecca. It was released on March 14, 2025, through Republic Records, as the lead single of his fifth studio album, Dopamine. The song was written by Tecca and was produced by the Danish producer Lucas Scharff."
  },
  {
   "id": "tr_747399352",
@@ -4553,7 +4869,14 @@
    "energy": 0.67,
    "darkness": 0.5,
    "density": 0.55
-  }
+  },
+  "reception": {
+   "summary": "The song received critical acclaim. Billboard described it as being \"backed by sunny acoustic guitars, swirling percussion, and infectious melodies\", and that while it has a \"funky feel, the meaning is a bit more somber, detailing a relationship gone cold\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Circles_(Post_Malone_song)"
+  },
+  "overview": "\"Circles\" is a song by American musician Post Malone. It was released through Republic Records on August 30, 2019, as the third single from Malone's third studio album Hollywood's Bleeding (2019). It reached number one on the US Billboard Hot 100 for the week of November 30, 2019, topping the chart for three weeks, marking Post Malone's fourth number-one song, as well as his first solo effort to top the chart."
  },
  {
   "id": "tr_2459517745",
@@ -4589,7 +4912,19 @@
    "energy": 0.73,
    "darkness": 0.56,
    "density": 0.53
-  }
+  },
+  "reception": {
+   "summary": "\"Agora Hills\" was met with widespread critical acclaim from contemporary music critics, who particularly praised her unique vocal delivery. Alex Gonzalez of Uproxx lauded \"Agora Hills\" as a reminder of Doja Cat's \"multifaceted musical talents\", praising her \"soft-tinged vocals\" as well as her \"fire rap skills\".",
+   "quotes": [
+    {
+     "text": "Kyle Denis of Billboard ranked the song as the third best track on Scarlet, and similarly described Doja Cat as a \"master shapeshifter\" due to her ability to channel various characters using voices and accents.",
+     "outlet": "Billboard"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Agora_Hills"
+  },
+  "overview": "\"Agora Hills\" is a song by American rapper and singer Doja Cat from her fourth studio album, Scarlet (2023). It was released along with the album on September 22, 2023, through Kemosabe and RCA Records as the second and final single from the album."
  },
  {
   "id": "tr_3789424042",
@@ -4625,7 +4960,14 @@
    "energy": 0.75,
    "darkness": 0.64,
    "density": 0.62
-  }
+  },
+  "reception": {
+   "summary": "Alexander Cole of HotNewHipHop considered the song a great example of DaBaby switching his sound, writing \"we get a more toned-down DaBaby, although it just works. From the sampled vocals in the production to DaBaby's subdued flow, it is clear that he is trying something new. In our estimation, this is working quite beautifully.\"",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pop_Dat_Thang"
+  },
+  "overview": "\"Pop Dat Thang\" is a song by American rapper DaBaby, released on January 23, 2026 as the sixth single from his fifth studio album, Be More Grateful (2026). It was produced by Sean da Firzt, KayoTheWizard, Tobias Wincorn and Vaughn Oliver. An official remix was released on May 1, 2026, featuring female rappers GloRilla, YKNiece and Yung Miami."
  },
  {
   "id": "tr_3812245452",
@@ -4695,7 +5037,19 @@
    "energy": 0.67,
    "darkness": 0.59,
    "density": 0.65
-  }
+  },
+  "reception": {
+   "summary": "The song was well received by music critics. Jordan Rose of Complex called \"Million Dollar Baby\" a contender for \"Song of the Summer\" as Richman delivers his \"most electric song so far\".",
+   "quotes": [
+    {
+     "text": "Likewise, Carl Lamarre at Billboard also thought the track was a \"song of the summer\" contender with its \"funky sound\" and \"seamless vocal riffs\".",
+     "outlet": "Billboard"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Million_Dollar_Baby_(Tommy_Richman_song)"
+  },
+  "overview": "\"Million Dollar Baby\" is a song by American singer and rapper Tommy Richman. It was released on April 26, 2024, through ISO Supremacy, PULSE Records and Concord with distribution by Universal Music Group. It was written by Richman with production credits from Max Vossberg, Jonah Roy, MannyVelli, Sparkheem, Kavi, and Gidi."
  },
  {
   "id": "tr_15528008",
@@ -4730,7 +5084,14 @@
    "energy": 0.74,
    "darkness": 0.51,
    "density": 0.58
-  }
+  },
+  "reception": {
+   "summary": "J.D.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Killing_Me_Softly_with_His_Song"
+  },
+  "overview": "\"Killing Me Softly with His Song\" is a song composed by Charles Fox with lyrics by Norman Gimbel. The lyrics were written in collaboration with Lori Lieberman after she was inspired by a Don McLean performance in late 1971. Denied writing credit by Fox and Gimbel, Lieberman released her version of the song in 1972, but it did not chart."
  },
  {
   "id": "tr_3765666312",
@@ -4802,7 +5163,19 @@
    "energy": 0.56,
    "darkness": 0.54,
    "density": 0.68
-  }
+  },
+  "reception": {
+   "summary": "\"Kill Bill\" was highly lauded by music critics. Many of them called \"Kill Bill\" a highlight of SOS, and Sophie Williams of NME attributed the choice to its vivid, detail-heavy storytelling. Compliments toward the lyrics revolved around its cinematic narrative, poetic quality, and raw honesty.",
+   "quotes": [
+    {
+     "text": "Many of them called \"Kill Bill\" a highlight of SOS, and Sophie Williams of NME attributed the choice to its vivid, detail-heavy storytelling.",
+     "outlet": "NME"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Kill_Bill_(song)"
+  },
+  "overview": "\"Kill Bill\" is a song by American singer-songwriter SZA and the fifth single from her second studio album, SOS (2022). It is a pop and R&B murder ballad, built around a midtempo, groovy rhythm and a detuned melody. Guitars, a bassline, and a flute that was sampled from a Prophet-6 synthesizer constitute the song's production, which is influenced by the boom bap subgenre of hip hop."
  },
  {
   "id": "tr_2929833161",
@@ -4837,7 +5210,9 @@
    "energy": 0.47,
    "darkness": 0.37,
    "density": 0.62
-  }
+  },
+  "reception": null,
+  "overview": "\"Mutt\" (stylized in all caps) is a song by American singer Leon Thomas, released on August 8, 2024, as the lead single from his second studio album of the same name (2024). It was produced by D. Phelps, Robert Gueringer and Michael Stokes. Two official remixes have been released, one with American rapper Freddie Gibbs on August 30, 2024, and the other with American singer Chris Brown on March 21, 2025."
  },
  {
   "id": "tr_1013792",
@@ -4907,7 +5282,14 @@
    "energy": 0.49,
    "darkness": 0.54,
    "density": 0.67
-  }
+  },
+  "reception": {
+   "summary": "AllMusic editor Craig Lytle found that Never Too Much featured \"one outstanding song after another.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Never_Too_Much_(album)"
+  },
+  "overview": "Never Too Much is the debut solo studio album by American singer Luther Vandross, released on August 12, 1981, by Epic Records. Mostly composed by Vandross himself, the album reached number 19 on the US Billboard 200 and number one on the Top R&B/Hip-Hop Albums chart, and has been certified double platinum by the Recording Industry Association of America (RIAA)."
  },
  {
   "id": "tr_3524652351",
@@ -4978,7 +5360,19 @@
    "energy": 0.86,
    "darkness": 0.51,
    "density": 0.75
-  }
+  },
+  "reception": {
+   "summary": "\"Apple\" received mostly positive reviews from music critics. Meaghan Garvey of Pitchfork found the track's fruit allegory \"curious\", but wrote that she had never had a Charli lyric \"bounce around\" her head in \"the way that lines from 'Apple' have\".",
+   "quotes": [
+    {
+     "text": "Meaghan Garvey of Pitchfork found the track's fruit allegory \"curious\", but wrote that she had never had a Charli lyric \"bounce around\" her head in \"the way that lines from 'Apple' have\".",
+     "outlet": "Pitchfork"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Apple_(song)"
+  },
+  "overview": "\"Apple\" is a song by British singer Charli XCX taken from her sixth studio album, Brat. It was written by Charli XCX, George Daniel, Linus Wiklund and Noonie Bao, and produced by XCX, A. G. Cook, Daniel, and Wiklund. The song was released to Italian radio through Warner Records on 2 August 2024, as the fifth single from the album and subsequently in the United States on 10 September."
  },
  {
   "id": "tr_2652032112",
@@ -5014,7 +5408,9 @@
    "energy": 0.82,
    "darkness": 0.46,
    "density": 0.66
-  }
+  },
+  "reception": null,
+  "overview": "Make You Mine may refer to: \"Make You Mine\" (Nina song), 2003 \"Make You Mine\" (Talay Riley song), 2011 \"Make You Mine\" (High Valley song), 2014 \"Make You Mine\" (Madison Beer song), 2024 \"Make You Mine\", 2006 song by Vanessa Hudgens from V \"Make You Mine\", 2008 song by Miami Horror from Bravado \"Make You Mine\", 2008 song by Crossin Dixon \"Make You Mine\", 2011 single by 2AM Club from What Did You Think Was Going to…"
  },
  {
   "id": "tr_10240182",
@@ -5084,7 +5480,14 @@
    "energy": 0.95,
    "darkness": 0.25,
    "density": 0.73
-  }
+  },
+  "reception": {
+   "summary": "\"Black Friday\" received generally positive reviews from music critics. Writing for Happy Magazine, Tammy Moir described the track as \"a powerful testament to the enduring strength of raw, authentic emotion\", highlighting Odell's \"raw and emotionally\" delivery and the track \"nothing short of extraordinary\" composition.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Black_Friday_(Tom_Odell_song)"
+  },
+  "overview": "\"Black Friday\" is a song by British singer-songwriter Tom Odell. It was released on 22 September 2023 as the lead single from his sixth studio album of the same title. Upon release, the song earned attention after receiving momentum through viral popularity on TikTok, which helped the song to gain major success."
  },
  {
   "id": "tr_3774262442",
@@ -5154,7 +5557,23 @@
    "energy": 0.82,
    "darkness": 0.36,
    "density": 0.73
-  }
+  },
+  "reception": {
+   "summary": "\"Break My Soul\" was met with widespread critical acclaim upon its release. In a five-star review for The i Paper, Lauren O'Neill described \"Break My Soul\" as a \"floorfilling home run of a comeback\" that makes you \"give in to the impulses of your body and lose yourself in it\".",
+   "quotes": [
+    {
+     "text": "Kitty Empire described the song as an \"instant classic\" and an \"ecstatic house music anthem of our times\".",
+     "outlet": "Empire"
+    },
+    {
+     "text": "Variety's Jem Aswad described the song as highly anticipated by fans of Beyoncé, calling it \"a driving dance track\", before acknowledging the song's \"plinking\" and \"insistent\" hook.",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Break_My_Soul"
+  },
+  "overview": "\"Break My Soul\" is a song by American singer Beyoncé. It was released on June 20, 2022, through Parkwood Entertainment and Columbia Records as the lead single from her seventh studio album, Renaissance (2022). The song was written by Beyoncé, Tricky Stewart, The-Dream, Jens Christian Isaksen, and her husband Jay-Z, and produced by the former four."
  },
  {
   "id": "tr_2461123655",
@@ -5224,7 +5643,14 @@
    "energy": 0.61,
    "darkness": 0.7,
    "density": 0.63
-  }
+  },
+  "reception": {
+   "summary": "The Fader wrote a positive review of the song saying, \"The song features Young's recognizably vulnerable writing style and emotionally raw vocals, filled with rasp and expressiveness. It's a promising and exciting start to a new chapter for Young\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/From_Down_Here"
+  },
+  "overview": "\"From Down Here\" is a song by English singer Lola Young, released on 22 May 2026. This song marks the first release from Lola Young after she went on temporary hiatus due to her on-stage collapse at All Things Go's New York festival."
  },
  {
   "id": "tr_2622232942",
@@ -5364,7 +5790,14 @@
    "energy": 1,
    "darkness": 0.74,
    "density": 0.77
-  }
+  },
+  "reception": {
+   "summary": "No More Tears received positive reviews from critics, and is considered to be one of Osbourne's best albums. Loudwire ranked the album No. 22 on their list of \"Top 90 Hard Rock + Metal Albums of the '90s\". Ultimate Classic Rock included No More Tears on their list \"Top 100 '90s Rock Albums\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/No_More_Tears"
+  },
+  "overview": "No More Tears is the sixth studio album by the English heavy metal singer Ozzy Osbourne. Released on 17 September 1991, the album charted at number 17 on the UK Albums Chart and number seven on the US Billboard 200 albums chart."
  },
  {
   "id": "tr_15523781",
@@ -5399,7 +5832,19 @@
    "energy": 0.98,
    "darkness": 0.77,
    "density": 0.89
-  }
+  },
+  "reception": {
+   "summary": "In 2012, Loudwire included the song in its list of \"The Best Hard Rock Songs of the 21st Century\", where it was ranked at number one. Loudwire and Kerrang! both named it as System of a Down's best song. In 2017, Annie Zaleski of Spin named it the fourth best nu metal track of all time. In March 2023, Rolling Stone ranked \"Chop Suey!\" at number 37 on their \"100 Greatest Heavy Metal Songs of All Time\" list.",
+   "quotes": [
+    {
+     "text": "In March 2023, Rolling Stone ranked \"Chop Suey!\" at number 37 on their \"100 Greatest Heavy Metal Songs of All Time\" list.",
+     "outlet": "Rolling Stone"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Chop_Suey!"
+  },
+  "overview": "\"Chop Suey!\" is a song by the American heavy metal band System of a Down. It was released on August 13, 2001, as the first single from their second album, Toxicity (2001). The single earned the band its first Grammy nomination in 2002 for Best Metal Performance at the 44th Annual Grammy Awards. \"Chop Suey!\" is often considered the band's signature song. Its music video has reached one billion views on YouTube."
  },
  {
   "id": "tr_625945",
@@ -5434,7 +5879,14 @@
    "energy": 0.92,
    "darkness": 0.86,
    "density": 0.81
-  }
+  },
+  "reception": {
+   "summary": "Stephen Thomas Erlewine of music website AllMusic stated the song \"may not appeal to Ozzy's headbanging hardcore following, but it's a very good hard rock ballad and one of his finest singles.\"",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mama%2C_I'm_Coming_Home"
+  },
+  "overview": "\"Mama, I'm Coming Home\" is a power ballad by English heavy metal singer Ozzy Osbourne from Osbourne's sixth studio album No More Tears, which first released on 17 November 1991. The song features Osbourne on vocals, Zakk Wylde on guitar, Bob Daisley on bass, and Randy Castillo on drums. Lyrics were written by Lemmy. Two music videos were also produced to accompany the song's release."
  },
  {
   "id": "tr_3852034981",
@@ -5504,7 +5956,19 @@
    "energy": 0.8,
    "darkness": 0.26,
    "density": 0.59
-  }
+  },
+  "reception": {
+   "summary": "\"Livin' la Vida Loca\" has been met with positive reviews from music critics.",
+   "quotes": [
+    {
+     "text": "Agustin Gurza from Los Angeles Times celebrated the song, labeling it \"a sensual smash hit that came to symbolize the frenzied cultural breakthrough of a long-marginalized minority\".",
+     "outlet": "Los Angeles Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Livin'_la_Vida_Loca"
+  },
+  "overview": "\"Livin' la Vida Loca\" (transl. \"Livin' the Crazy Life\") is a song recorded by Puerto Rican singer Ricky Martin for his fifth studio album and English-language debut, Ricky Martin (1999). The song was written by Draco Rosa and Desmond Child, while the production was handled by the latter. It was released to radio stations by Columbia Records as the lead single from the album on March 23, 1999."
  },
  {
   "id": "tr_1148585682",
@@ -5539,7 +6003,14 @@
    "energy": 0.77,
    "darkness": 0.28,
    "density": 0.6
-  }
+  },
+  "reception": {
+   "summary": "\"Telepatía\" ranked as the fifth best song of 2021 by Billboard, stating that \"not only essential for its addictive groove and inspired lyrical content, the pop gem also put a spotlight on truly bilingual songs having chart potential.\" The song won Top Latin Song at the 2022 Billboard Music Awards.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Telepat%C3%ADa"
+  },
+  "overview": "\"Telepatía\" (stylized in all lowercase) is a song by American singer Kali Uchis. Originally released on November 18, 2020 as part of her second studio album Sin Miedo (del Amor y Otros Demonios), it became the album's third single on February 26, 2021, after gaining prominence on the social media platform TikTok."
  },
  {
   "id": "tr_1721634237",
@@ -5574,7 +6045,19 @@
    "energy": 0.75,
    "darkness": 0.38,
    "density": 0.73
-  }
+  },
+  "reception": {
+   "summary": "Jessica Roiz from Billboard stated: \"From its feel-good melody to its lyrics full of fresh air and freedom, the lilting, calypso-esque dance beat is a whole vibe.\"",
+   "quotes": [
+    {
+     "text": "Jessica Roiz from Billboard stated: \"From its feel-good melody to its lyrics full of fresh air and freedom, the lilting, calypso-esque dance beat is a whole vibe.\"",
+     "outlet": "Billboard"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Provenza_(song)"
+  },
+  "overview": "\"Provenza\" (stylized in all caps) is a song by Colombian singer-songwriter Karol G. It was written by Karol G, Keityn and Ovy on the Drums, and produced by the latter. The song was released on April 21, 2022, through Universal Music Latino, as the lead single from her fourth studio album, Mañana Será Bonito (2023)."
  },
  {
   "id": "tr_3713785742",
@@ -5679,7 +6162,14 @@
    "energy": 0.55,
    "darkness": 0.42,
    "density": 0.64
-  }
+  },
+  "reception": {
+   "summary": "The pan-European magazine Music & Media named Lauper's cover of \"What's Going On\" one of its \"records of the week\" in its issue dated March 14, 1987, and noted that Cyndi was in \"better vocal form\" than on her previous single \"Change of Heart\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/What's_Going_On_(song)"
+  },
+  "overview": "\"What's Going On\" is a song by American singer-songwriter Marvin Gaye, released on January 21, 1971, on the Motown subsidiary Tamla. It is the opening track of Gaye's studio album of the same name. Originally inspired by a police brutality incident witnessed by Renaldo \"Obie\" Benson, the song was composed by Benson, Al Cleveland, and Gaye and produced by Gaye himself."
  },
  {
   "id": "tr_78956229",
@@ -5715,7 +6205,9 @@
    "energy": 0.3,
    "darkness": 0.46,
    "density": 0.24
-  }
+  },
+  "reception": null,
+  "overview": "My Silver Lining may refer to: \"My Silver Lining\" (First Aid Kit song), 2014 \"My Silver Lining\" (Mickey Gilley song), 1979"
  },
  {
   "id": "tr_4057589031",
@@ -5790,7 +6282,9 @@
    "energy": 0.57,
    "darkness": 0.4,
    "density": 0.59
-  }
+  },
+  "reception": null,
+  "overview": "\"Sleepless in a Hotel Room\" is a song by American country music singer Luke Combs, released on January 26, 2026, as the third single from his sixth studio album, The Way I Am. Combs wrote the song with Randy Montana and Jonathan Singleton and produced it with Singleton."
  },
  {
   "id": "tr_3345513301",
@@ -5828,7 +6322,9 @@
    "energy": 0.6,
    "darkness": 0.46,
    "density": 0.74
-  }
+  },
+  "reception": null,
+  "overview": "\"Burning Blue\" is a song recorded by American singer-songwriter Mariah the Scientist, released by Buckles Laboratories and Epic on May 2, 2025. It was released as the lead single from her fourth studio album, Hearts Sold Separately. The song debuted and peaked at number 25 on the Billboard Hot 100, marking Mariah's first top 40 single on the chart. It also charted within the top 40 in Suriname and South Africa."
  },
  {
   "id": "tr_3476812751",
