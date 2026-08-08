@@ -224,6 +224,8 @@ export const CSS = `
    ========================================================================== */
 .landing{padding:0 0 40px;}
 .backbar{padding:14px 18px 0;}
+.citynag{width:100%;cursor:pointer;margin-bottom:8px;text-align:left;}
+.citynag:hover{background:var(--paper2);}
 /* the wordmark doubles as the "what is this?" affordance */
 .markbtn{border:none;background:none;padding:0;cursor:pointer;color:var(--ink);text-align:left;}
 .markbtn:hover .dot{color:var(--ink);}

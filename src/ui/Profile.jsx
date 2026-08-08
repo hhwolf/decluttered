@@ -12,7 +12,11 @@ export default function ProfileView({ domain, profile, shelf, activity, states, 
   const goals = profile.goals || [];
   const cities = profile.cities || [];
   const cityOptions = domain.hasLocation ? allCities(domain.items) : [];
-  const toggleCity = (c) => onCities(cities.includes(c) ? cities.filter((x) => x !== c) : [...cities, c]);
+  // A location is required, so the last one can't be turned off.
+  const toggleCity = (c) => {
+    if (cities.includes(c)) { if (cities.length > 1) onCities(cities.filter((x) => x !== c)); }
+    else onCities([...cities, c]);
+  };
   const toggleGoal = (g) => {
     if (goals.includes(g)) onGoals(goals.filter((x) => x !== g));
     else if (goals.length < 3) onGoals([...goals, g]);
@@ -103,9 +107,7 @@ export default function ProfileView({ domain, profile, shelf, activity, states, 
           <div className="row" style={{ justifyContent: "space-between", marginBottom: 12 }}>
             <div className="eyebrow"><MapPin size={12} style={{ verticalAlign: "-1px" }} /> Where you eat</div>
             <span className="cat-no">
-              {cities.length === 0
-                ? `everywhere · ${domain.items.length}`
-                : `${countForCities(domain.items, cities)} in range`}
+              {cities.length === 0 ? "none picked" : `${countForCities(domain.items, cities)} in range`}
             </span>
           </div>
           <div className="chips">
@@ -127,8 +129,10 @@ export default function ProfileView({ domain, profile, shelf, activity, states, 
           </details>
           <p className="cat-no" style={{ marginTop: 10, lineHeight: 1.45 }}>
             {cities.length === 0
-              ? "No city picked, so everywhere is fair game. Pick one or more to keep your deck to places you can actually get to."
-              : "Your deck and suggestions stay in these cities. Places you already saved elsewhere remain in your library."}
+              ? "Pick a city to keep your deck to places you can actually get to."
+              : cities.length === 1
+                ? "Your deck and suggestions stay here. Add a second city to widen it; the last one can't be removed."
+                : "Your deck and suggestions stay in these cities. Places you saved elsewhere remain in your library."}
           </p>
         </div>
       )}

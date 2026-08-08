@@ -48,7 +48,7 @@ function PreviewButton({ item }) {
   );
 }
 
-export default function Discover({ domain, profile, shelf, onAction, onExplore, onOpen }) {
+export default function Discover({ domain, profile, shelf, onAction, onExplore, onOpen, onNeedCity }) {
   const seen = useMemo(() => new Set(Object.keys(shelf)), [shelf]);
   const deck = useMemo(
     () => rankItems(domain.items, profile, domain, { excludeIds: [...seen] }),
@@ -69,6 +69,9 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
 
   const top = deck[0];
   const next = deck[1];
+  // Profiles created before location became required have no city; the deck
+  // still works (everywhere), but say so and offer the fix.
+  const needsCity = domain.hasLocation && !(profile.cities?.length);
 
   const commit = (action, rating = null) => {
     if (!top) return;
@@ -146,6 +149,18 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
           <button className={profile.explore >= 0.55 ? "on" : ""} onClick={() => onExplore(0.75)}>Expand</button>
         </div>
       </div>
+
+      {needsCity && (
+        <button className="card citynag" onClick={onNeedCity}>
+          <div className="row" style={{ gap: 8 }}>
+            <MapPin size={14} style={{ flex: "none", color: "var(--hl-deep)" }} />
+            <div style={{ textAlign: "left" }}>
+              <div style={{ fontSize: 13.5, fontWeight: 600 }}>Showing restaurants everywhere</div>
+              <div className="cat-no" style={{ marginTop: 2 }}>Pick your cities so the deck only has places you can get to →</div>
+            </div>
+          </div>
+        </button>
+      )}
 
       <div className="deck">
         {next && (

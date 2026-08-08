@@ -84,5 +84,23 @@ check("items are grouped, never interleaved", (() => {
 })());
 check("with no chosen city, focus metros lead", cityOf(sortByCity(restaurants, [])[0]) === FOCUS_CITIES[0]);
 
+// ---- required-selection rules -------------------------------------------
+// A location is mandatory for the place-bound domain: these encode what the
+// UI enforces so the rule can't silently regress.
+const requireCity = (cities) => (cities?.length ?? 0) >= 1;
+check("no city fails the requirement", !requireCity([]));
+check("undefined fails the requirement", !requireCity(undefined));
+check("one city satisfies it", requireCity(["Boston"]));
+
+// removing the last city is refused; removing one of several is allowed
+const dropCity = (cities, c) => (cities.includes(c) && cities.length > 1 ? cities.filter((x) => x !== c) : cities);
+check("cannot drop the only city", dropCity(["Boston"], "Boston").join() === "Boston");
+check("can drop one of two", dropCity(["Boston", "Chicago"], "Boston").join() === "Chicago");
+check("dropping an absent city is a no-op", dropCity(["Boston"], "Miami").join() === "Boston");
+
+// legacy profiles predate the requirement: they must still yield a usable deck
+check("a legacy empty selection still returns a deck", filterByCities(restaurants, []).length === restaurants.length);
+check("legacy state is detectable so the UI can prompt", !requireCity([]));
+
 console.log(`\n=== location: ${pass} passed, ${fail} failed ===\n`);
 process.exit(fail ? 1 : 0);

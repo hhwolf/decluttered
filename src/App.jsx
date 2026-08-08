@@ -231,7 +231,8 @@ export default function App() {
             <div className="taste-body">
               {view === "discover" && (
                 <Discover domain={discoverDomain} profile={ds.profile} shelf={ds.shelf}
-                  onAction={handleAction} onExplore={setExplore} onOpen={setSheetItem} />
+                  onAction={handleAction} onExplore={setExplore} onOpen={setSheetItem}
+                  onNeedCity={() => setView("profile")} />
               )}
               {view === "foryou" && (
                 <ForYou domain={discoverDomain} profile={ds.profile} shelf={ds.shelf} onAction={handleAction} onOpen={setSheetItem} />

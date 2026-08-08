@@ -18,6 +18,7 @@ export default function Onboarding({ domain, onDone, autoQuickStart = false, onA
   const [explore, setExplore] = useState(0.3);
 
   const [cities, setCities] = useState([]);
+  const [cityOnly, setCityOnly] = useState(false); // quick-start: ask location, then go
 
   // Once a location is chosen, every later step works from that pool only —
   // there is no point asking a Bostonian to rate a Memphis barbecue joint.
@@ -63,6 +64,7 @@ export default function Onboarding({ domain, onDone, autoQuickStart = false, onA
   const last = steps.length - 1;
 
   const canNext =
+    cur.key === "cities" ? cities.length >= 1 :   // required: a deck you can't get to is useless
     cur.key === "genres" ? genres.length >= 1 :
     cur.key === "fav" ? favIds.length >= 3 : true;
 
@@ -91,15 +93,22 @@ export default function Onboarding({ domain, onDone, autoQuickStart = false, onA
   // Zero-input path: a neutral profile with the dial opened up, so the deck
   // starts on broadly-loved items and learns entirely from swipes. Every
   // preference remains editable in Profile afterwards.
-  const quickStart = () => {
+  const quickStart = (withCities = cities) => {
     const profile = buildInitialProfile(domain, {
       genres: [], avoidGenres: [], favoriteItems: [], surprisedLiked: [], avoidItems: [],
       weights: Object.fromEntries(domain.factors.map((k) => [k, 0.5])), explore: 0.5,
     });
     profile.goals = [];
-    profile.cities = [];
+    profile.cities = withCities;
     onDone(profile, { genres: [], avoidGenres: [], favIds: [], surpriseIds: [], avoidIds: [],
-      weights: Object.fromEntries(domain.factors.map((k) => [k, 0.5])), goals: [], explore: 0.5, cities: [], quickStart: true });
+      weights: Object.fromEntries(domain.factors.map((k) => [k, 0.5])), goals: [], explore: 0.5,
+      cities: withCities, quickStart: true });
+  };
+  // Skipping setup is fine everywhere except a place-bound craving: we still
+  // need to know which city, so route to that one question instead.
+  const skipSetup = () => {
+    if (domain.hasLocation) { setCityOnly(true); setStep(steps.findIndex((x) => x.key === "cities")); }
+    else quickStart();
   };
   // "Skip setup" on the landing lands here; run the zero-input path once so the
   // user goes straight from the pitch to a deck without seeing step 1.
@@ -108,7 +117,7 @@ export default function Onboarding({ domain, onDone, autoQuickStart = false, onA
     if (autoQuickStart && !firedQuickStart.current) {
       firedQuickStart.current = true;
       onAutoQuickStart?.();
-      quickStart();
+      skipSetup();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [autoQuickStart]);
@@ -122,7 +131,7 @@ export default function Onboarding({ domain, onDone, autoQuickStart = false, onA
 
   return (
     <div className="taste-body" style={{ paddingTop: 14 }}>
-      {step > 0 && (
+      {step > 0 && !cityOnly && (
         <>
           <div className="progress"><span style={{ width: `${(step / last) * 100}%` }} /></div>
           <div className="row" style={{ justifyContent: "space-between", marginBottom: 14 }}>
@@ -151,7 +160,7 @@ export default function Onboarding({ domain, onDone, autoQuickStart = false, onA
           <button className="btn btn-primary btn-block" style={{ marginTop: 26 }} onClick={() => setStep(1)}>
             Build my taste profile <ChevronRight size={16} style={{ verticalAlign: "-3px" }} />
           </button>
-          <button className="btn btn-ghost btn-block" style={{ marginTop: 10 }} onClick={quickStart}>
+          <button className="btn btn-ghost btn-block" style={{ marginTop: 10 }} onClick={skipSetup}>
             Skip setup — just show me {plural}
           </button>
           <p className="cat-no" style={{ marginTop: 14, textAlign: "center", lineHeight: 1.5 }}>
@@ -173,7 +182,7 @@ export default function Onboarding({ domain, onDone, autoQuickStart = false, onA
         <>
           <p className="cat-no" style={{ marginBottom: 12 }}>
             {cities.length === 0
-              ? `Nothing picked — you'll see all ${domain.items.length} restaurants, everywhere.`
+              ? "Pick at least one — a great restaurant you can't get to is no use to you."
               : `${countForCities(domain.items, cities)} restaurants in ${cities.length} ${cities.length === 1 ? "city" : "cities"}.`}
           </p>
           <div className="chips" style={{ marginBottom: 14 }}>
@@ -336,10 +345,15 @@ export default function Onboarding({ domain, onDone, autoQuickStart = false, onA
       )}
 
       {step > 0 && (
-        <button className={"btn btn-block " + (step === last ? "btn-hl" : cur.optional && stepEmpty ? "btn-ghost" : "btn-primary")} disabled={!canNext}
+        <button className={"btn btn-block " + (step === last || cityOnly ? "btn-hl" : cur.optional && stepEmpty ? "btn-ghost" : "btn-primary")} disabled={!canNext}
           style={{ marginTop: 26, opacity: canNext ? 1 : 0.4 }}
-          onClick={() => (step === last ? finish() : setStep(step + 1))}>
-          {step === last ? <>Looks right — open {domain.name} <Sparkles size={16} style={{ verticalAlign: "-3px" }} /></> :
+          onClick={() => {
+            if (cityOnly) return quickStart(cities);   // quick path: city was the only question
+            if (step === last) return finish();
+            setStep(step + 1);
+          }}>
+          {cityOnly ? <>Open {domain.name} <Sparkles size={16} style={{ verticalAlign: "-3px" }} /></> :
+            step === last ? <>Looks right — open {domain.name} <Sparkles size={16} style={{ verticalAlign: "-3px" }} /></> :
             cur.optional && stepEmpty ? <>Skip for now <ChevronRight size={16} style={{ verticalAlign: "-3px" }} /></> :
             <>Continue <ChevronRight size={16} style={{ verticalAlign: "-3px" }} /></>}
         </button>
