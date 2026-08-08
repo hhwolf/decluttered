@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowRight, BookOpen, Film, Tv, Music, UtensilsCrossed, Sparkles, Shield, Compass, Layers } from "lucide-react";
+import { ArrowRight, ArrowLeft, BookOpen, Film, Tv, Music, UtensilsCrossed, Sparkles, Shield, Compass, Layers } from "lucide-react";
 import { DOMAINS, DOMAIN_KEYS } from "../domains.js";
 import { Cover } from "./bits.jsx";
 
@@ -135,7 +135,7 @@ function SwipeDemo({ items }) {
   );
 }
 
-export default function Landing({ onPick, onSkip }) {
+export default function Landing({ onPick, onSkip, onClose = null, revisiting = false }) {
   const total = DOMAIN_KEYS.reduce((a, k) => a + DOMAINS[k].items.length, 0);
   // A handful of real, image-bearing items per domain for the visuals.
   const pick = (key, n) => [...DOMAINS[key].items].filter((i) => i.image).slice(0, n);
@@ -148,6 +148,12 @@ export default function Landing({ onPick, onSkip }) {
 
   return (
     <div className="landing">
+      {onClose && (
+        <button className="iconbtn backbar" onClick={onClose}>
+          <ArrowLeft size={15} /> Back to my deck
+        </button>
+      )}
+
       {/* ---- hero ------------------------------------------------------- */}
       <section className="lz hero">
         <div className="eyebrow float-in">№ 000 · One engine, five cravings</div>
@@ -165,12 +171,20 @@ export default function Landing({ onPick, onSkip }) {
         <ChaosToOrder items={heroCards} />
 
         <div className="float-in" style={{ animationDelay: "620ms" }}>
-          <button className="btn btn-primary btn-block" onClick={() => onPick("books")}>
-            Build my taste profile <ArrowRight size={16} style={{ verticalAlign: "-3px" }} />
-          </button>
-          <button className="btn btn-ghost btn-block" style={{ marginTop: 10 }} onClick={onSkip}>
-            Skip setup — just start swiping
-          </button>
+          {revisiting ? (
+            <button className="btn btn-primary btn-block" onClick={onClose}>
+              Back to my deck <ArrowRight size={16} style={{ verticalAlign: "-3px" }} />
+            </button>
+          ) : (
+            <>
+              <button className="btn btn-primary btn-block" onClick={() => onPick("books")}>
+                Build my taste profile <ArrowRight size={16} style={{ verticalAlign: "-3px" }} />
+              </button>
+              <button className="btn btn-ghost btn-block" style={{ marginTop: 10 }} onClick={onSkip}>
+                Skip setup — just start swiping
+              </button>
+            </>
+          )}
           <p className="cat-no" style={{ textAlign: "center", marginTop: 12, lineHeight: 1.5 }}>
             ~60 seconds · <CountUp to={total} /> real books, films, shows, tracks and restaurants
           </p>
@@ -309,12 +323,20 @@ export default function Landing({ onPick, onSkip }) {
           </p>
         </Reveal>
         <Reveal delay={140}>
-          <button className="btn btn-hl btn-block" onClick={() => onPick("books")}>
-            Get started <ArrowRight size={16} style={{ verticalAlign: "-3px" }} />
-          </button>
-          <button className="btn btn-ghost btn-block" style={{ marginTop: 10 }} onClick={onSkip}>
-            Skip setup — just start swiping
-          </button>
+          {revisiting ? (
+            <button className="btn btn-hl btn-block" onClick={onClose}>
+              Back to my deck <ArrowRight size={16} style={{ verticalAlign: "-3px" }} />
+            </button>
+          ) : (
+            <>
+              <button className="btn btn-hl btn-block" onClick={() => onPick("books")}>
+                Get started <ArrowRight size={16} style={{ verticalAlign: "-3px" }} />
+              </button>
+              <button className="btn btn-ghost btn-block" style={{ marginTop: 10 }} onClick={onSkip}>
+                Skip setup — just start swiping
+              </button>
+            </>
+          )}
         </Reveal>
       </section>
     </div>

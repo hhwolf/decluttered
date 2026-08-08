@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RotateCcw, Sliders, Target, MapPin } from "lucide-react";
+import { RotateCcw, Sliders, Target, MapPin, Info } from "lucide-react";
 import { paletteFor } from "../domains.js";
 import { GOAL_KEYS } from "../engine/suggest.mjs";
 import { allCities, countForCities } from "../engine/location.mjs";
@@ -7,7 +7,7 @@ import { Chip } from "./bits.jsx";
 import { StreakCard, MilestoneCard, TasteReview, AllDomains, ImportCard } from "./Stats.jsx";
 import { DOMAINS, DOMAIN_KEYS } from "../domains.js";
 
-export default function ProfileView({ domain, profile, shelf, activity, states, onSwitchDomain, onImport, onExplore, onGoals, onCities, onReset }) {
+export default function ProfileView({ domain, profile, shelf, activity, states, onSwitchDomain, onImport, onExplore, onGoals, onCities, onReset, onAbout }) {
   const [confirmReset, setConfirmReset] = useState(false);
   const goals = profile.goals || [];
   const cities = profile.cities || [];
@@ -159,6 +159,12 @@ export default function ProfileView({ domain, profile, shelf, activity, states, 
           <span className="cat-no">Stay aligned</span><span className="cat-no">Expand my taste</span>
         </div>
       </div>
+
+      {onAbout && (
+        <button className="btn btn-ghost btn-block" style={{ marginBottom: 14 }} onClick={onAbout}>
+          <Info size={14} style={{ verticalAlign: "-2px" }} /> What is Decluttered?
+        </button>
+      )}
 
       <p className="cat-no" style={{ textAlign: "center", marginBottom: 10 }}>{profile.interactions} {domain.nounPlural} sorted · taste updated live</p>
       {confirmReset ? (

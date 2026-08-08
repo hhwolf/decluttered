@@ -223,6 +223,11 @@ export const CSS = `
    LANDING PAGE
    ========================================================================== */
 .landing{padding:0 0 40px;}
+.backbar{padding:14px 18px 0;}
+/* the wordmark doubles as the "what is this?" affordance */
+.markbtn{border:none;background:none;padding:0;cursor:pointer;color:var(--ink);text-align:left;}
+.markbtn:hover .dot{color:var(--ink);}
+.markbtn:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:6px;}
 .lz{padding:34px 18px 6px;}
 .lz.hero{padding-top:26px;}
 .lz.close{padding-bottom:20px;}

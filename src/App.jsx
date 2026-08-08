@@ -48,6 +48,7 @@ export default function App() {
   const [undo, setUndo] = useState(null);           // last sort action, for the undo toast
   const [seenLanding, setSeenLanding] = useState(false);
   const [quickStart, setQuickStart] = useState(false); // landing asked to bypass setup
+  const [showAbout, setShowAbout] = useState(false);   // pitch reopened from the header/profile
   const firstSave = useRef(true);
 
   useEffect(() => {
@@ -80,7 +81,8 @@ export default function App() {
       : domain
   ), [domain, ds.profile?.cities]);
   const anyOnboarded = DOMAIN_KEYS.some((k) => states[k].onboarded);
-  const showLanding = !seenLanding && !anyOnboarded;
+  // Shown automatically to newcomers, and on demand to everyone else.
+  const showLanding = showAbout || (!seenLanding && !anyOnboarded);
   const patch = (partial) => setStates((s) => ({ ...s, [active]: { ...s[active], ...partial } }));
 
   const finishOnboarding = (prof, data) => {
@@ -193,7 +195,10 @@ export default function App() {
       <style>{CSS}</style>
       <div className="taste-shell">
         <div className="taste-top">
-          <div className="taste-mark">Decluttered <span className="dot">/ ONE ENGINE, FIVE CRAVINGS</span></div>
+          <button className="taste-mark markbtn" onClick={() => setShowAbout(true)}
+            title="What is Decluttered?" aria-label="What is Decluttered?">
+            Decluttered <span className="dot">/ ONE ENGINE, FIVE CRAVINGS</span>
+          </button>
           {ds.onboarded && <span className="cat-no">№ {String(ds.profile?.interactions || 0).padStart(3, "0")}</span>}
         </div>
 
@@ -214,8 +219,10 @@ export default function App() {
           <div className="empty" style={{ paddingTop: 120 }}><span className="cat-no">Opening the catalogue…</span></div>
         ) : showLanding ? (
           <Landing
-            onPick={(k) => { setSeenLanding(true); setActive(k); setView("discover"); }}
-            onSkip={() => { setSeenLanding(true); setQuickStart(true); }} />
+            revisiting={showAbout}
+            onPick={(k) => { setSeenLanding(true); setShowAbout(false); setActive(k); setView("discover"); }}
+            onSkip={() => { setSeenLanding(true); setShowAbout(false); setQuickStart(true); }}
+            onClose={anyOnboarded ? () => setShowAbout(false) : null} />
         ) : !ds.onboarded ? (
           <Onboarding key={active} domain={domain} onDone={finishOnboarding}
             autoQuickStart={quickStart} onAutoQuickStart={() => setQuickStart(false)} />
@@ -237,7 +244,7 @@ export default function App() {
               {view === "profile" && (
                 <ProfileView domain={domain} profile={ds.profile} shelf={ds.shelf} activity={ds.activity}
                   states={states} onSwitchDomain={(k) => { setActive(k); setView("discover"); }} onImport={importEntries}
-                  onExplore={setExplore} onGoals={setGoals} onCities={setCities} onReset={reset} />
+                  onExplore={setExplore} onGoals={setGoals} onCities={setCities} onReset={reset} onAbout={() => setShowAbout(true)} />
               )}
             </div>
             {undo && (
