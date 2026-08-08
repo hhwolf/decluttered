@@ -117,7 +117,215 @@ const CURATED = [
   ["Momofuku Noodle Bar", "New York, NY", ["Korean", "New American"], 4.3, 4, 2, "Where David Chang lit the fuse on pork buns and ramen-as-event."],
   ["H Mart Food Court (K-Town)", "New York, NY", ["Korean"], 4.4, 3, 1, "Soondubu, japchae, and bulgogi under one buzzing food-hall roof."],
   ["Night + Market Song", "Los Angeles, CA", ["Thai"], 4.5, 2, 2, "Kris Yenbamroong's party-Thai — larb, natural wine, and zero chill."],
+  // --- expansion: more cities, same bar for fame ---
+  ["Neptune Oyster", "Boston, MA", ["Seafood"], 4.6, 6, 3, "Twenty-two seats, hot buttered lobster rolls, and a line that forms before noon."],
+  ["Santarpio's Pizza", "Boston, MA", ["Pizza"], 4.5, 6, 1, "Eastie's coal-blistered pies and lamb skewers, unchanged since 1903."],
+  ["Union Oyster House", "Boston, MA", ["Seafood", "American"], 4.4, 9, 3, "America's oldest restaurant — oysters at the same semicircular bar since 1826."],
+  ["Ben's Chili Bowl", "Washington, DC", ["American", "Soul Food"], 4.5, 10, 1, "Half-smokes on U Street through riots, renewal, and every president since Ike."],
+  ["Rose's Luxury", "Washington, DC", ["New American"], 4.6, 3, 3, "The Capitol Hill line worth joining — pork-lychee salad and pure hospitality."],
+  ["Rasika", "Washington, DC", ["Indian"], 4.6, 4, 3, "Modern Indian that made palak chaat a DC power-lunch move."],
+  ["The Original Ninfa's on Navigation", "Houston, TX", ["Mexican"], 4.6, 12, 2, "Where fajitas were born — Mama Ninfa's East End original, tortillas by hand."],
+  ["Truth BBQ", "Houston, TX", ["Barbecue"], 4.8, 5, 2, "Leonard Botello's brisket and tallow-brushed ribs — Texas Monthly's top tier."],
+  ["Crawfish & Noodles", "Houston, TX", ["Vietnamese", "Cajun & Creole"], 4.4, 3, 2, "Viet-Cajun crawfish tossed in garlic butter — Houston's signature hybrid."],
+  ["The Varsity", "Atlanta, GA", ["Burgers", "American"], 4.3, 25, 1, "\"What'll ya have?\" — chili dogs and frosted oranges at the world's largest drive-in."],
+  ["Busy Bee Cafe", "Atlanta, GA", ["Soul Food"], 4.6, 4, 2, "Fried chicken and oxtails that fed the civil-rights movement, still packed at noon."],
+  ["Staplehouse", "Atlanta, GA", ["New American"], 4.6, 2, 3, "Nonprofit-born tasting counter that became Atlanta's toughest reservation."],
+  ["Prince's Hot Chicken", "Nashville, TN", ["Soul Food"], 4.4, 4, 1, "The family that invented hot chicken — pay the heat its respect."],
+  ["Arnold's Country Kitchen", "Nashville, TN", ["Soul Food", "American"], 4.7, 4, 1, "The meat-and-three standard: cafeteria line, white bread, transcendence."],
+  ["Hattie B's Hot Chicken", "Nashville, TN", ["Soul Food", "American"], 4.5, 20, 2, "The tourist gateway to hot chicken — and still very good hot chicken."],
+  ["Casa Bonita", "Denver, CO", ["Mexican"], 4.2, 12, 2, "Cliff divers, sopapillas, and pink towers — the reopened Colorado fever dream."],
+  ["Work & Class", "Denver, CO", ["Latin", "New American"], 4.7, 3, 2, "Small plates, big pours, zero pretense in a RiNo shipping container."],
+  ["Pok Pok (Reborn)", "Portland, OR", ["Thai"], 4.5, 5, 2, "Andy Ricker's fish-sauce wings — the dish that put Portland Thai on the map."],
+  ["Screen Door", "Portland, OR", ["Soul Food", "American"], 4.6, 8, 2, "Fried chicken over sweet-potato waffles; the brunch line is a city institution."],
+  ["Le Pigeon", "Portland, OR", ["French"], 4.7, 2, 3, "Gabriel Rucker's chef's counter — foie gras profiteroles, no apologies."],
+  ["Hodad's", "San Diego, CA", ["Burgers"], 4.5, 13, 1, "Ocean Beach bacon cheeseburgers stacked past reason since 1969."],
+  ["Las Cuatro Milpas", "San Diego, CA", ["Mexican"], 4.5, 4, 1, "Barrio Logan's tortilla-and-chorizo line, cash only, gone by 1pm."],
+  ["Lotus of Siam", "Las Vegas, NV", ["Thai"], 4.6, 6, 2, "Northern Thai in a strip mall that critics call the best Thai in America."],
+  ["Oscar's Steakhouse", "Las Vegas, NV", ["Steakhouse"], 4.5, 3, 3, "Vintage Vegas in the Plaza's glass dome — martinis, bone-in ribeyes, mob stories."],
+  ["Matt's Bar", "Minneapolis, MN", ["Burgers"], 4.5, 5, 1, "Home of the Jucy Lucy — molten cheese inside the patty. Napkins ready."],
+  ["Owamni", "Minneapolis, MN", ["New American"], 4.5, 2, 3, "Sean Sherman's decolonized menu — bison, wild rice, and zero colonial ingredients."],
+  ["Rodney Scott's BBQ", "Charleston, SC", ["Barbecue"], 4.6, 5, 2, "Whole-hog pit mastery from a James Beard-winning pitmaster."],
+  ["Leon's Oyster Shop", "Charleston, SC", ["Seafood", "Soul Food"], 4.6, 3, 2, "Char-grilled oysters and fried chicken in a converted body shop."],
+  ["Joe's Kansas City Bar-B-Que", "Kansas City, KS", ["Barbecue"], 4.7, 20, 2, "The gas-station burnt ends Anthony Bourdain put on his life list."],
+  ["Q39", "Kansas City, MO", ["Barbecue"], 4.7, 8, 2, "Competition-circuit brisket meets chef technique in midtown KC."],
+  ["Pappy's Smokehouse", "St. Louis, MO", ["Barbecue"], 4.6, 9, 2, "Memphis-style ribs that sell out by mid-afternoon, daily."],
+  ["Imo's Pizza", "St. Louis, MO", ["Pizza"], 4.3, 6, 1, "Provel cheese, cracker crust, cut in squares — St. Louis's divisive love language."],
+  ["Pizzeria Bianco", "Phoenix, AZ", ["Pizza", "Italian"], 4.5, 6, 2, "Chris Bianco's wood-fired margherita — the pizza that made critics fly to Phoenix."],
+  ["Barrio Café", "Phoenix, AZ", ["Mexican"], 4.4, 4, 2, "Chef Silvana's guacamole made tableside and cochinita pibil with a mural backdrop."],
+  ["Buddy's Pizza", "Detroit, MI", ["Pizza"], 4.5, 7, 2, "The original Detroit square — crispy-edged blue-steel pans since 1946."],
+  ["Slows Bar BQ", "Detroit, MI", ["Barbecue"], 4.4, 8, 2, "Corktown's brisket-and-mac anchor that helped restart a neighborhood."],
+  ["Franklin Fountain", "Philadelphia, PA", ["Bakery & Café"], 4.6, 4, 1, "Hand-scooped sundaes served exactly as they were in 1904."],
+  ["Pat's King of Steaks", "Philadelphia, PA", ["American"], 4.3, 16, 1, "The inventor of the cheesesteak — order 'whiz wit' and step aside."],
+  ["Snow's BBQ", "Lexington, TX", ["Barbecue"], 4.8, 3, 2, "Tootsie Tomanetz's Saturday-only pits — Texas Monthly's #1, sold out by 10am."],
+  ["Valentina's Tex Mex BBQ", "Austin, TX", ["Barbecue", "Mexican"], 4.6, 4, 2, "Brisket tacos on handmade flour tortillas — Tex-Mex and smoke, married."],
+  ["Bern's Steak House", "Tampa, FL", ["Steakhouse"], 4.6, 9, 4, "Dry-aged steaks, a half-million-bottle cellar, and a dessert room upstairs."],
+  ["Columbia Restaurant", "Tampa, FL", ["Latin", "Mediterranean"], 4.5, 13, 3, "Florida's oldest restaurant — 1905 salad tossed tableside in Ybor City tile rooms."],
+  ["The French Laundry", "Yountville, CA", ["French"], 4.6, 2, 4, "Thomas Keller's nine-course benchmark — the reservation is the flex."],
+  ["Chez Panisse", "Berkeley, CA", ["New American", "French"], 4.6, 2, 4, "Alice Waters' farm-to-table origin point, still setting the menu daily."],
+  ["Brennan's", "New Orleans, LA", ["Cajun & Creole", "French"], 4.5, 8, 4, "Bananas Foster flambéed where it was invented; breakfast as theater."],
+  ["Dooky Chase's", "New Orleans, LA", ["Cajun & Creole", "Soul Food"], 4.5, 3, 3, "Leah Chase's gumbo z'herbes fed presidents and the movement alike."],
+  ["Primanti Bros.", "Pittsburgh, PA", ["Deli", "American"], 4.4, 12, 1, "Fries and slaw inside the sandwich — Steel City efficiency since 1933."],
+  ["The Pit Authentic Barbecue", "Raleigh, NC", ["Barbecue"], 4.4, 8, 2, "Whole-hog Eastern Carolina 'cue with the vinegar bite it's supposed to have."],
+  ["Skylight Inn BBQ", "Ayden, NC", ["Barbecue"], 4.7, 3, 1, "Chopped whole hog with crackling mixed in, under the little Capitol dome."],
+  ["Eventide Oyster Co.", "Portland, ME", ["Seafood"], 4.7, 5, 2, "The brown-butter lobster roll on a steamed bun that rewired the form."],
+  ["Fore Street", "Portland, ME", ["New American"], 4.6, 3, 3, "Wood-fired everything and the open kitchen that made Portland a food destination."],
+  ["Central BBQ", "Memphis, TN", ["Barbecue"], 4.6, 9, 2, "Dry-rub ribs and smoked wings a walk from the Lorraine Motel."],
+  ["The Rendezvous", "Memphis, TN", ["Barbecue"], 4.4, 10, 2, "Charlie Vergos' basement dry ribs, dusted not sauced, since 1948."],
+  ["Faidley's Seafood", "Baltimore, MD", ["Seafood"], 4.6, 3, 2, "Jumbo lump crab cakes eaten standing at Lexington Market since 1886."],
+  ["Jack Fry's", "Louisville, KY", ["American", "New American"], 4.7, 3, 3, "Bourbon-era supper club energy; shrimp and grits worth the drive."],
+  ["Taquería El Milagro", "Chicago, IL", ["Mexican"], 4.5, 3, 1, "Pilsen's tortilleria-backed steam-table tacos, cheap and correct."],
+  ["Mi Tierra Café y Panadería", "San Antonio, TX", ["Mexican", "Bakery & Café"], 4.4, 21, 2, "24-hour mariachis, pan dulce, and enchiladas under a ceiling of piñatas."],
 ];
+
+// --- signature dishes: restaurant -> [label shown on the card, Wikipedia
+// article whose lead image depicts the dish (or the restaurant itself when
+// the room is the star)]. Photos are illustrative of the dish, not shots of
+// the specific restaurant's plate.
+const DISHES = {
+  "Katz's Delicatessen": ["Pastrami on rye", "Pastrami on rye"],
+  "Joe's Pizza": ["Plain cheese slice", "New York–style pizza"],
+  "Peter Luger Steak House": ["Dry-aged porterhouse", "T-bone steak"],
+  "Gramercy Tavern": ["Seasonal American cooking", "Gramercy Tavern"],
+  "Le Bernardin": ["Tasting-menu fish courses", "Le Bernardin"],
+  "Xi'an Famous Foods": ["Biang biang noodles", "Biangbiang noodles"],
+  "Los Tacos No. 1": ["Adobada tacos", "Al pastor"],
+  "Superiority Burger": ["The veggie burger", "Veggie burger"],
+  "Russ & Daughters": ["Lox and cream cheese bagel", "Bagel and cream cheese"],
+  "Girl & the Goat": ["Wood-fired share plates", "Wood-fired oven"],
+  "Au Cheval": ["The cheeseburger", "Cheeseburger"],
+  "Lou Malnati's Pizzeria": ["Butter-crust deep dish", "Chicago-style pizza"],
+  "Alinea": ["Edible-balloon tasting menu", "Alinea (restaurant)"],
+  "Pequod's Pizza": ["Caramelized-crust pan pizza", "Pan pizza"],
+  "Franklin Barbecue": ["Brisket", "Brisket"],
+  "Uchi": ["Inventive sushi omakase", "Sushi"],
+  "Torchy's Tacos": ["Green-chile queso and tacos", "Chile con queso"],
+  "Suerte": ["Suadero tacos", "Suadero"],
+  "Zingerman's Delicatessen": ["The reuben", "Reuben sandwich"],
+  "Tartine Bakery": ["Country loaf and morning buns", "Sourdough"],
+  "Zuni Café": ["Roast chicken for two", "Roast chicken"],
+  "House of Prime Rib": ["Prime rib carved tableside", "Standing rib roast"],
+  "Mister Jiu's": ["Whole roast duck", "Peking duck"],
+  "Swan Oyster Depot": ["Crab Louie", "Crab Louie"],
+  "Guelaguetza": ["Mole negro", "Mole (sauce)"],
+  "Republique": ["Steak frites", "Steak frites"],
+  "Howlin' Ray's": ["Nashville hot chicken", "Hot chicken"],
+  "Bestia": ["House charcuterie", "Charcuterie"],
+  "Sqirl": ["Ricotta toast and jam", "Fruit preserves"],
+  "Pike Place Chowder": ["Clam chowder", "Clam chowder"],
+  "Canlis": ["Special-occasion tasting menu", "Canlis"],
+  "Paseo": ["Caribbean roast pork sandwich", "Cuban sandwich"],
+  "Commander's Palace": ["Turtle soup", "Turtle soup"],
+  "Cochon": ["Boudin", "Boudin"],
+  "Café du Monde": ["Beignets", "Beignet"],
+  "Willie Mae's Scotch House": ["Fried chicken", "Fried chicken"],
+  "Zahav": ["Hummus tehina", "Hummus"],
+  "Reading Terminal Market": ["Roast pork sandwiches and more", "Reading Terminal Market"],
+  "Joe's Stone Crab": ["Stone crab claws", "Florida stone crab"],
+  "Versailles": ["The cubano", "Cuban sandwich"],
+  "La Barbecue": ["Beef ribs", "Ribs (food)"],
+  "Momofuku Noodle Bar": ["Pork belly buns", "Gua bao"],
+  "H Mart Food Court (K-Town)": ["Soondubu-jjigae", "Sundubu-jjigae"],
+  "Night + Market Song": ["Larb", "Larb"],
+  "Neptune Oyster": ["Hot buttered lobster roll", "Lobster roll"],
+  "Santarpio's Pizza": ["Coal-blistered pies", "Pizza"],
+  "Union Oyster House": ["Oysters on the half shell", "Oyster"],
+  "Ben's Chili Bowl": ["The half-smoke", "Half-smoke"],
+  "Rose's Luxury": ["Pork-lychee salad", "Rose's Luxury"],
+  "Rasika": ["Palak chaat", "Chaat"],
+  "The Original Ninfa's on Navigation": ["Fajitas", "Fajita"],
+  "Truth BBQ": ["Brisket and tallow ribs", "Barbecue in Texas"],
+  "Crawfish & Noodles": ["Viet-Cajun crawfish boil", "Seafood boil"],
+  "The Varsity": ["Chili dogs", "Chili dog"],
+  "Busy Bee Cafe": ["Fried chicken and oxtails", "Oxtail"],
+  "Staplehouse": ["Seasonal tasting menu", "Tasting menu"],
+  "Prince's Hot Chicken": ["The original hot chicken", "Hot chicken"],
+  "Arnold's Country Kitchen": ["Meat and three", "Meat and three"],
+  "Hattie B's Hot Chicken": ["Hot chicken", "Hot chicken"],
+  "Casa Bonita": ["Sopapillas", "Sopaipilla"],
+  "Work & Class": ["Roast meats and arepas", "Arepa"],
+  "Pok Pok (Reborn)": ["Ike's fish-sauce wings", "Buffalo wing"],
+  "Screen Door": ["Chicken and waffles", "Chicken and waffles"],
+  "Le Pigeon": ["Foie gras profiteroles", "Foie gras"],
+  "Hodad's": ["Bacon cheeseburger", "Hamburger"],
+  "Las Cuatro Milpas": ["Chorizo on handmade tortillas", "Corn tortilla"],
+  "Lotus of Siam": ["Khao soi", "Khao soi"],
+  "Oscar's Steakhouse": ["Bone-in ribeye", "Rib eye steak"],
+  "Matt's Bar": ["The Jucy Lucy", "Jucy Lucy"],
+  "Owamni": ["Bison and wild rice", "Wild rice"],
+  "Rodney Scott's BBQ": ["Whole-hog barbecue", "Barbecue"],
+  "Leon's Oyster Shop": ["Char-grilled oysters", "Oysters Rockefeller"],
+  "Joe's Kansas City Bar-B-Que": ["Burnt ends", "Burnt ends"],
+  "Q39": ["Competition ribs", "Spare ribs"],
+  "Pappy's Smokehouse": ["Memphis-style ribs", "Memphis-style barbecue"],
+  "Imo's Pizza": ["St. Louis-style pizza", "St. Louis-style pizza"],
+  "Pizzeria Bianco": ["Wood-fired margherita", "Pizza Margherita"],
+  "Barrio Café": ["Cochinita pibil", "Cochinita pibil"],
+  "Buddy's Pizza": ["Detroit-style square", "Detroit-style pizza"],
+  "Slows Bar BQ": ["Pulled pork and mac", "Pulled pork"],
+  "Franklin Fountain": ["Hand-scooped sundaes", "Sundae"],
+  "Pat's King of Steaks": ["Cheesesteak, whiz wit", "Cheesesteak"],
+  "Snow's BBQ": ["Saturday-morning brisket", "Barbecue in Texas"],
+  "Valentina's Tex Mex BBQ": ["Brisket tacos", "Taco"],
+  "Bern's Steak House": ["Dry-aged steaks", "Steak"],
+  "Columbia Restaurant": ["1905 Salad and Cuban bread", "Cuban bread"],
+  "The French Laundry": ["Nine-course tasting menu", "The French Laundry"],
+  "Chez Panisse": ["Daily farm-to-table menu", "Chez Panisse"],
+  "Brennan's": ["Bananas Foster", "Bananas Foster"],
+  "Dooky Chase's": ["Gumbo z'herbes", "Gumbo"],
+  "Primanti Bros.": ["Fries-in-the-sandwich", "Primanti Brothers"],
+  "The Pit Authentic Barbecue": ["Eastern Carolina whole hog", "Barbecue in North Carolina"],
+  "Skylight Inn BBQ": ["Chopped whole hog with cracklin", "Barbecue in North Carolina"],
+  "Eventide Oyster Co.": ["Brown-butter lobster roll", "Lobster roll"],
+  "Fore Street": ["Wood-oven roasting", "Wood-fired oven"],
+  "Central BBQ": ["Dry-rub ribs", "Memphis-style barbecue"],
+  "The Rendezvous": ["Charcoal dry ribs", "Ribs (food)"],
+  "Faidley's Seafood": ["Jumbo lump crab cake", "Crab cake"],
+  "Jack Fry's": ["Shrimp and grits", "Shrimp and grits"],
+  "Taquería El Milagro": ["Steak tacos", "Carne asada"],
+  "Mi Tierra Café y Panadería": ["Pan dulce and enchiladas", "Pan dulce"],
+};
+
+const DISH_CACHE = path.join(path.dirname(fileURLToPath(import.meta.url)), ".cache/wiki-dish-images.json");
+
+// Lead image of a Wikipedia article via the REST summary endpoint (keyless).
+// Retries on 429/5xx; only definitive answers are cached, so transient
+// failures get another chance on the next run.
+async function wikiImage(title, cache) {
+  if (title in cache && cache[title] !== null) return cache[title];
+  for (let attempt = 1; attempt <= 4; attempt++) {
+    try {
+      const s = await getJSON(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, "_"))}`,
+        { headers: { "User-Agent": "taste-app-seed/0.2 (personal project; contact: github)" } });
+      let u = s.thumbnail?.source || null;
+      // upscale the thumb only when the original is comfortably larger
+      if (u && s.originalimage?.width >= 550) u = u.replace(/\/(\d+)px-/, "/500px-");
+      cache[title] = u; // article definitively has (or lacks) a lead image
+      return u;
+    } catch (e) {
+      if (attempt === 4) { console.warn(`  ! wiki ${title}: ${e.message}`); return null; }
+      await sleep(2500 * attempt);
+    }
+  }
+}
+
+async function enrichDishes(list) {
+  let cache = {};
+  try { cache = JSON.parse(fs.readFileSync(DISH_CACHE, "utf8")); } catch { /* first run */ }
+  let hits = 0;
+  for (const r of list) {
+    const d = DISHES[r.title];
+    if (!d) { console.warn(`  ! no signature dish mapped for ${r.title}`); continue; }
+    const [label, wiki] = d;
+    r.dish = label;
+    const wasCached = wiki in cache;
+    const img = await wikiImage(wiki, cache);
+    if (img) { r.image = img; hits++; }
+    if (!wasCached) await sleep(500);
+  }
+  fs.mkdirSync(path.dirname(DISH_CACHE), { recursive: true });
+  fs.writeFileSync(DISH_CACHE, JSON.stringify(cache));
+  console.log(`  dish photos: ${hits}/${list.length}`);
+}
 
 function curatedItems() {
   const maxCount = Math.max(...CURATED.map((r) => r[4]));
@@ -204,6 +412,7 @@ async function main() {
     console.log("No GOOGLE_PLACES_API_KEY — writing curated snapshot (real Google ratings, mid-2026)");
     list = curatedItems();
   }
+  await enrichDishes(list);
   list.sort((a, b) => b.popularity - a.popularity);
   writePretty(fs, OUT, list);
 }

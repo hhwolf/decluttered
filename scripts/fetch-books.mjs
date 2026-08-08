@@ -95,23 +95,72 @@ function mapGenres(subjects = [], primary) {
   return [...found].slice(0, 3);
 }
 
+// Omnibus/collection artifacts ("Works (Carrie / Night Shift / ...)") read as
+// junk in a picker — one canonical book per card only.
+const isOmnibus = (t) => / \/ /.test(t) || /^(works|collected|complete|omnibus|boxed|trilogy|box set)\b/i.test(t) || /\d+ books? in/i.test(t);
+
+// Open Library returns whichever EDITION title matched, so an English-language
+// work can still surface as "Um casamento arranjado". `language:eng` in the
+// query removes most; these two guards remove the rest.
+//  1. any letter outside plain English Latin (ě, ü, ñ, Cyrillic, CJK, …)
+//  2. words that are unmistakably not English (kept deliberately narrow — no
+//     "la"/"der"/"um", which all appear in real English titles)
+const NON_ENGLISH_LETTERS = /[^\x00-\x7f‘’“”–—…]/;
+// Unambiguous non-English tokens: one is enough to reject. Deliberately EXCLUDES
+// words that are also English or common in English titles (die, sin, con, lo,
+// les, no, me) so a real English book is never thrown out.
+const FOREIGN_STRONG = /\b(alla|allo|degli|delle|della|dello|nella|nello|nelle|cioccolato|corte|trotzdem|geschichte|nicht|und|fur|uber|ein|eine|casamento|arranjado|voce|nao|muito|hombre|mujer|corazon|ciudad|nuestra|nuestro|vydani|hrabe|dil|avec|pour|dans|chez|sous|jahre|liebe|welt|zwischen|wojna)\b/i;
+// Weaker signals: two or more together indicate a non-English title.
+const FOREIGN_WEAK = /\b(el|los|las|una|uno|del|por|para|como|donde|cuando|il|che|non|sono|mio|mia|suo|sua|les|des|une|sur|entre|der|das|mit|auch|aber|uma|ao|aos|dos|sobre|zum|zur|nas)\b/gi;
+function looksEnglishTitle(t) {
+  if (NON_ENGLISH_LETTERS.test(t)) return false;
+  if (FOREIGN_STRONG.test(t)) return false;
+  return (t.match(FOREIGN_WEAK) || []).length < 2;
+}
+
+const CACHE = path.join(path.dirname(fileURLToPath(import.meta.url)), ".cache/ol-descriptions.json");
+
+// Work-level description from Open Library, cached across runs.
+async function fetchDescription(workKey, cache) {
+  if (workKey in cache) return cache[workKey];
+  let out = null;
+  try {
+    const w = await getJSON(`https://openlibrary.org${workKey}.json`, { headers: { "User-Agent": "taste-app-seed/0.2 (personal project)" } });
+    let d = typeof w.description === "string" ? w.description : w.description?.value;
+    if (d) {
+      d = d.replace(/\[([^\]]+)\]\([^)]*\)/g, "$1").replace(/https?:\/\/\S+/g, "").replace(/\s+/g, " ").trim();
+      d = d.split(/(?<=[.!?])\s+/).reduce((acc, s) => (acc.length + s.length <= 220 ? (acc ? acc + " " : "") + s : acc), "");
+      out = d.length >= 40 ? d : null;
+    }
+  } catch { /* missing work page — fall through */ }
+  cache[workKey] = out;
+  return out;
+}
+
 async function main() {
-  const perSubject = 8;
+  const perSubject = 24;
+  let descCache = {};
+  try { descCache = JSON.parse(fs.readFileSync(CACHE, "utf8")); } catch { /* first run */ }
   const seen = new Map(); // workKey -> item
   for (const [subject, genre] of SUBJECTS) {
     const fields = "key,title,author_name,first_publish_year,ratings_average,ratings_count,subject,number_of_pages_median,cover_i,first_sentence";
-    const url = `https://openlibrary.org/search.json?q=subject%3A${subject}&limit=24&fields=${encodeURIComponent(fields)}&sort=rating`;
+    const url = `https://openlibrary.org/search.json?q=subject%3A${subject}+language%3Aeng&limit=40&fields=${encodeURIComponent(fields)}&sort=rating`;
     let docs = [];
-    try {
-      ({ docs = [] } = await getJSON(url, { headers: { "User-Agent": "taste-app-seed/0.2 (personal project)" } }));
-    } catch (e) {
-      console.warn(`  ! ${subject}: ${e.message} — skipping`);
-      continue;
+    // Open Library 504s under load — retry with backoff before giving up.
+    for (let attempt = 1; attempt <= 4; attempt++) {
+      try {
+        ({ docs = [] } = await getJSON(url, { headers: { "User-Agent": "taste-app-seed/0.2 (personal project)" } }));
+        break;
+      } catch (e) {
+        if (attempt === 4) console.warn(`  ! ${subject}: ${e.message} — skipping`);
+        else await sleep(1500 * attempt);
+      }
     }
+    if (!docs.length) continue;
     // Keep well-known, actually-rated books so the picker feels recognizable.
     const good = docs.filter((d) =>
       d.title && d.author_name?.length && d.ratings_count >= 20 && d.ratings_average >= 3.2 &&
-      d.first_publish_year && d.title.length <= 60
+      d.first_publish_year && d.title.length <= 60 && !isOmnibus(d.title) && looksEnglishTitle(d.title)
     ).slice(0, perSubject);
     for (const d of good) {
       if (seen.has(d.key)) {
@@ -141,16 +190,32 @@ async function main() {
           count: d.ratings_count,
           source: "Open Library",
         },
-        image: d.cover_i ? `https://covers.openlibrary.org/b/id/${d.cover_i}-M.jpg` : null,
-        blurb: firstSentence ? `“${firstSentence.trim()}”` : `A ${genres[0].toLowerCase()} standout readers keep coming back to.`,
+        // ?default=false: 404 instead of OL's blank placeholder image, so the
+        // UI's onError fallback can render a stylized card in its place.
+        image: d.cover_i ? `https://covers.openlibrary.org/b/id/${d.cover_i}-M.jpg?default=false` : null,
+        blurb: null, // filled below: description > first sentence > honest fallback
+        _firstSentence: firstSentence,
         _ratingsCount: d.ratings_count,
       });
     }
     console.log(`  ${subject}: kept ${good.length}`);
-    await sleep(400); // be polite to the API
+    await sleep(1200); // be polite to the API — it 504s when hammered
   }
 
   const list = [...seen.values()];
+  console.log(`  fetching descriptions for ${list.length} works…`);
+  for (const b of list) {
+    const key = "/works/" + b.id.replace("bk_", "");
+    const wasCached = key in descCache;
+    const desc = await fetchDescription(key, descCache);
+    b.blurb = desc
+      || (b._firstSentence ? `“${b._firstSentence.trim()}”` : null)
+      || `${b.subtitle}'s ${b.year} ${b.genres[0].toLowerCase()} — ★ ${b.rating.value} from ${b.rating.count.toLocaleString()} Open Library readers.`;
+    delete b._firstSentence;
+    if (!wasCached) await sleep(120);
+  }
+  fs.mkdirSync(path.dirname(CACHE), { recursive: true });
+  fs.writeFileSync(CACHE, JSON.stringify(descCache));
   const maxCount = Math.max(...list.map((b) => b._ratingsCount));
   for (const b of list) {
     b.popularity = logPopularity(b._ratingsCount, maxCount);

@@ -1,5 +1,69 @@
 [
  {
+  "id": "bk_OL1968368W",
+  "title": "The 48 Laws of Power",
+  "subtitle": "Robert Greene",
+  "year": 1998,
+  "meta": "452 pp",
+  "genres": [
+   "Philosophy"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 1189,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6424160-M.jpg?default=false",
+  "blurb": "Amoral, cunning, ruthless, and instructive, this piercing work distills three thousand years of the history of power in to forty-eight well explicated laws. T.",
+  "popularity": 1,
+  "factors": {
+   "writing": 0.83,
+   "plot": 0.42,
+   "pacing": 0.34,
+   "character": 0.48,
+   "originality": 0.83,
+   "atmosphere": 0.48
+  },
+  "tone": {
+   "darkness": 0.46,
+   "complexity": 0.89,
+   "emotion": 0.42
+  }
+ },
+ {
+  "id": "bk_OL82563W",
+  "title": "Harry Potter and the Philosopher's Stone",
+  "subtitle": "J. K. Rowling",
+  "year": 1997,
+  "meta": "302 pp",
+  "genres": [
+   "Science Fiction",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 1009,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/15155833-M.jpg?default=false",
+  "blurb": "Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'. An incredible adventure is about to begin! **PDF**",
+  "popularity": 0.98,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.72,
+   "pacing": 0.69,
+   "character": 0.66,
+   "originality": 0.75,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.44,
+   "complexity": 0.55,
+   "emotion": 0.63
+  }
+ },
+ {
   "id": "bk_OL18020194W",
   "title": "It Ends With Us",
   "subtitle": "Colleen Hoover",
@@ -13,9 +77,9 @@
    "count": 1052,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/10473609-M.jpg",
-  "blurb": "“For my father, who tried his very best not to be his worst. And for my mother, who made sure we never saw him at his worst.”",
-  "popularity": 1,
+  "image": "https://covers.openlibrary.org/b/id/10473609-M.jpg?default=false",
+  "blurb": "Lily hasn’t always had it easy, but that’s never stopped her from working hard for the life she wants. Ryle is assertive, stubborn, maybe even a little arrogant. And the way he looks in scrubs certainly doesn’t hurt.",
+  "popularity": 0.98,
   "factors": {
    "writing": 0.59,
    "plot": 0.69,
@@ -31,36 +95,68 @@
   }
  },
  {
-  "id": "bk_OL82563W",
-  "title": "Harry Potter and the Philosopher's Stone",
-  "subtitle": "J. K. Rowling",
-  "year": 1997,
-  "meta": "302 pp",
+  "id": "bk_OL257943W",
+  "title": "A Game of Thrones",
+  "subtitle": "George R. R. Martin",
+  "year": 1996,
+  "meta": "801 pp",
   "genres": [
-   "Literary Fiction",
-   "Young Adult",
+   "Science Fiction",
    "Fantasy"
   ],
   "rating": {
    "value": 4.2,
-   "count": 1009,
+   "count": 759,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/15155833-M.jpg",
-  "blurb": "A literary fiction standout readers keep coming back to.",
-  "popularity": 0.99,
+  "image": "https://covers.openlibrary.org/b/id/9269962-M.jpg?default=false",
+  "blurb": "***A Game of Thrones*** is the inaugural novel in ***A Song of Ice and Fire***, an epic series of fantasy novels crafted by the American author **George R. R. Martin**.",
+  "popularity": 0.94,
   "factors": {
-   "writing": 0.74,
-   "plot": 0.64,
-   "pacing": 0.63,
-   "character": 0.74,
-   "originality": 0.7,
-   "atmosphere": 0.83
+   "writing": 0.69,
+   "plot": 0.72,
+   "pacing": 0.71,
+   "character": 0.62,
+   "originality": 0.76,
+   "atmosphere": 0.79
   },
   "tone": {
-   "darkness": 0.46,
-   "complexity": 0.54,
-   "emotion": 0.74
+   "darkness": 0.49,
+   "complexity": 0.71,
+   "emotion": 0.47
+  }
+ },
+ {
+  "id": "bk_OL82536W",
+  "title": "Harry Potter and the Prisoner of Azkaban",
+  "subtitle": "J. K. Rowling",
+  "year": 1999,
+  "meta": "416 pp",
+  "genres": [
+   "Science Fiction",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 636,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10580435-M.jpg?default=false",
+  "blurb": "For Harry Potter, it’s the start of another far-from-ordinary year at Hogwarts when the Knight Bus crashes through the darkness and comes to an abrupt halt in front of him. ([source][1]) [1]:",
+  "popularity": 0.91,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.81,
+   "pacing": 0.79,
+   "character": 0.68,
+   "originality": 0.65,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.56,
+   "emotion": 0.63
   }
  },
  {
@@ -76,12 +172,12 @@
   ],
   "rating": {
    "value": 4.2,
-   "count": 573,
+   "count": 578,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/11261770-M.jpg",
-  "blurb": "A literary fiction standout readers keep coming back to.",
-  "popularity": 0.91,
+  "image": "https://covers.openlibrary.org/b/id/11261770-M.jpg?default=false",
+  "blurb": "Animal Farm is a brilliant political satire and a powerful and affecting story of revolutions and idealism, power and corruption. 'All animals are equal. And something new and unexpected emerges.. Animal Farm PDF",
+  "popularity": 0.9,
   "factors": {
    "writing": 0.87,
    "plot": 0.69,
@@ -109,12 +205,12 @@
   ],
   "rating": {
    "value": 4.1,
-   "count": 535,
+   "count": 539,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/12646537-M.jpg",
-  "blurb": "“When I wake up, the other side of the bed is cold.”",
-  "popularity": 0.9,
+  "image": "https://covers.openlibrary.org/b/id/12646537-M.jpg?default=false",
+  "blurb": "The Hunger Games is a 2008 dystopian novel by the American writer Suzanne Collins. The Capitol, a highly advanced metropolis, exercises political control over the rest of the nation.",
+  "popularity": 0.89,
   "factors": {
    "writing": 0.71,
    "plot": 0.72,
@@ -136,30 +232,225 @@
   "year": 1937,
   "meta": "310 pp",
   "genres": [
-   "Horror",
+   "Science Fiction",
    "Fantasy",
    "Young Adult"
   ],
   "rating": {
    "value": 4.3,
-   "count": 495,
+   "count": 498,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14627509-M.jpg",
-  "blurb": "A horror standout readers keep coming back to.",
-  "popularity": 0.89,
+  "image": "https://covers.openlibrary.org/b/id/14627509-M.jpg?default=false",
+  "blurb": "The Hobbit is a tale of high adventure, undertaken by a company of dwarves in search of dragon-guarded gold. Bilbo Baggins has taken his place among the ranks of the immortals of children’s fiction. **PDF**",
+  "popularity": 0.88,
   "factors": {
    "writing": 0.64,
-   "plot": 0.84,
-   "pacing": 0.67,
+   "plot": 0.87,
+   "pacing": 0.65,
    "character": 0.63,
-   "originality": 0.66,
+   "originality": 0.71,
+   "atmosphere": 0.72
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.55,
+   "emotion": 0.6
+  }
+ },
+ {
+  "id": "bk_OL81613W",
+  "title": "It",
+  "subtitle": "Stephen King",
+  "year": 1986,
+  "meta": "1168 pp",
+  "genres": [
+   "Literary Fiction",
+   "Thriller",
+   "Horror"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 492,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8569284-M.jpg?default=false",
+  "blurb": "\"*It*\" is a 1986 horror novel by American author Stephen King. \"*It*\" was his 22nd book and his 17th novel written under his own name. In 2003, \"*It*\" was listed at number 144 on the BBC's The Big Read poll.",
+  "popularity": 0.88,
+  "factors": {
+   "writing": 0.74,
+   "plot": 0.72,
+   "pacing": 0.76,
+   "character": 0.62,
+   "originality": 0.76,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.73,
+   "complexity": 0.65,
+   "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL64365W",
+  "title": "Brave New World",
+  "subtitle": "Aldous Huxley",
+  "year": 1932,
+  "meta": "240 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 473,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8231823-M.jpg?default=false",
+  "blurb": "Originally published in 1932, this outstanding work of literature is more crucial and relevant today than ever before. When Lenina and Bernard visit a savage reservation, we experience how Utopia can destroy humanity.",
+  "popularity": 0.87,
+  "factors": {
+   "writing": 0.84,
+   "plot": 0.74,
+   "pacing": 0.68,
+   "character": 0.65,
+   "originality": 0.71,
+   "atmosphere": 0.78
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.71,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL27513W",
+  "title": "The Fellowship of the Ring",
+  "subtitle": "J.R.R. Tolkien",
+  "year": 1954,
+  "meta": "492 pp",
+  "genres": [
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 397,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14627060-M.jpg?default=false",
+  "blurb": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him.",
+  "popularity": 0.85,
+  "factors": {
+   "writing": 0.6,
+   "plot": 0.79,
+   "pacing": 0.73,
+   "character": 0.81,
+   "originality": 0.58,
+   "atmosphere": 0.82
+  },
+  "tone": {
+   "darkness": 0.49,
+   "complexity": 0.44,
+   "emotion": 0.68
+  }
+ },
+ {
+  "id": "bk_OL49488W",
+  "title": "Ender's Game",
+  "subtitle": "Orson Scott Card",
+  "year": 1985,
+  "meta": "330 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 414,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12996033-M.jpg?default=false",
+  "blurb": "Ender's Game is a 1985 military science fiction novel by American author Orson Scott Card. The book originated as a short story of the same name, published in the August 1977 issue of Analog Science Fiction and Fact.",
+  "popularity": 0.85,
+  "factors": {
+   "writing": 0.63,
+   "plot": 0.73,
+   "pacing": 0.66,
+   "character": 0.57,
+   "originality": 0.87,
    "atmosphere": 0.79
   },
   "tone": {
-   "darkness": 0.63,
-   "complexity": 0.5,
-   "emotion": 0.64
+   "darkness": 0.59,
+   "complexity": 0.68,
+   "emotion": 0.53
+  }
+ },
+ {
+  "id": "bk_OL1168083W",
+  "title": "Nineteen Eighty-Four",
+  "subtitle": "George Orwell",
+  "year": 1949,
+  "meta": "318 pp",
+  "genres": [
+   "Science Fiction",
+   "Classics",
+   "Dystopian"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 418,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9267242-M.jpg?default=false",
+  "blurb": "Nineteen Eighty-Four: A Novel, often referred to as 1984, is a dystopian social science fiction novel by the English novelist George Orwell (the pen name of Eric Arthur Blair).",
+  "popularity": 0.85,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.67,
+   "pacing": 0.57,
+   "character": 0.69,
+   "originality": 0.7,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.66,
+   "emotion": 0.54
+  }
+ },
+ {
+  "id": "bk_OL492658W",
+  "title": "The Lightning Thief",
+  "subtitle": "Rick Riordan",
+  "year": 2005,
+  "meta": "384 pp",
+  "genres": [
+   "Science Fiction",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 399,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7239831-M.jpg?default=false",
+  "blurb": "Twelve-year-old Percy Jackson is on the most dangerous quest of his life. Along the way, he must face a host of mythological enemies determined to stop him. **The Lightning Thief**",
+  "popularity": 0.85,
+  "factors": {
+   "writing": 0.59,
+   "plot": 0.88,
+   "pacing": 0.79,
+   "character": 0.7,
+   "originality": 0.66,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.52,
+   "emotion": 0.6
   }
  },
  {
@@ -175,12 +466,12 @@
   ],
   "rating": {
    "value": 4.3,
-   "count": 411,
+   "count": 413,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/15158660-M.jpg",
-  "blurb": "A mystery standout readers keep coming back to.",
-  "popularity": 0.87,
+  "image": "https://covers.openlibrary.org/b/id/15158660-M.jpg?default=false",
+  "blurb": "Harry Potter is leaving Privet Drive for the last time. But as he climbs into the sidecar of Hagrid’s motorbike and they take to the skies, he knows Lord Voldemort and the Death Eaters will not be far behind.",
+  "popularity": 0.85,
   "factors": {
    "writing": 0.61,
    "plot": 0.85,
@@ -206,12 +497,12 @@
   ],
   "rating": {
    "value": 4.2,
-   "count": 415,
+   "count": 420,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/13314878-M.jpg",
-  "blurb": "“ON MAY 7, 1931, THE MOST SENSATIONAL MANHUNT NEW YORK CITY had ever known had come to its climax.”",
-  "popularity": 0.87,
+  "image": "https://covers.openlibrary.org/b/id/13314878-M.jpg?default=false",
+  "blurb": "Available for the first time ever in trade paperback, Dale Carnegie's enduring classic, the inspirational personal development guide that shows how to achieve lifelong success.",
+  "popularity": 0.85,
   "factors": {
    "writing": 0.75,
    "plot": 0.39,
@@ -227,70 +518,6 @@
   }
  },
  {
-  "id": "bk_OL49488W",
-  "title": "Ender's Game",
-  "subtitle": "Orson Scott Card",
-  "year": 1985,
-  "meta": "330 pp",
-  "genres": [
-   "Science Fiction"
-  ],
-  "rating": {
-   "value": 4.3,
-   "count": 405,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/12996033-M.jpg",
-  "blurb": "“\"I've watched through his eyes, I've listened through his ears, and I tell you he's the one.”",
-  "popularity": 0.86,
-  "factors": {
-   "writing": 0.63,
-   "plot": 0.73,
-   "pacing": 0.66,
-   "character": 0.57,
-   "originality": 0.87,
-   "atmosphere": 0.79
-  },
-  "tone": {
-   "darkness": 0.59,
-   "complexity": 0.68,
-   "emotion": 0.53
-  }
- },
- {
-  "id": "bk_OL1168083W",
-  "title": "Nineteen Eighty-Four",
-  "subtitle": "George Orwell",
-  "year": 1949,
-  "meta": "318 pp",
-  "genres": [
-   "Literary Fiction",
-   "Science Fiction",
-   "Classics"
-  ],
-  "rating": {
-   "value": 4.3,
-   "count": 408,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/9267242-M.jpg",
-  "blurb": "A literary fiction standout readers keep coming back to.",
-  "popularity": 0.86,
-  "factors": {
-   "writing": 0.76,
-   "plot": 0.59,
-   "pacing": 0.51,
-   "character": 0.76,
-   "originality": 0.67,
-   "atmosphere": 0.68
-  },
-  "tone": {
-   "darkness": 0.54,
-   "complexity": 0.68,
-   "emotion": 0.62
-  }
- },
- {
   "id": "bk_OL66554W",
   "title": "Pride and Prejudice",
   "subtitle": "Jane Austen",
@@ -303,12 +530,12 @@
   ],
   "rating": {
    "value": 4.2,
-   "count": 394,
+   "count": 395,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14348537-M.jpg",
-  "blurb": "“It is a truth universally acknowledged that a single man in possession of a good fortune must be in want of a wife.”",
-  "popularity": 0.86,
+  "image": "https://covers.openlibrary.org/b/id/14348537-M.jpg?default=false",
+  "blurb": "Pride and Prejudice is an 1813 novel of manners written by Jane Austen. Mr. Bennet, owner of the Longbourn estate in Hertfordshire, has five daughters, but his property is entailed and can only be passed to a male heir.",
+  "popularity": 0.84,
   "factors": {
    "writing": 0.79,
    "plot": 0.66,
@@ -324,57 +551,24 @@
   }
  },
  {
-  "id": "bk_OL492658W",
-  "title": "The Lightning Thief",
-  "subtitle": "Rick Riordan",
-  "year": 2005,
-  "meta": "384 pp",
-  "genres": [
-   "Horror",
-   "Young Adult",
-   "Fantasy"
-  ],
-  "rating": {
-   "value": 4.3,
-   "count": 399,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/7239831-M.jpg",
-  "blurb": "“Look, I didn't want to be a half-blood.”",
-  "popularity": 0.86,
-  "factors": {
-   "writing": 0.59,
-   "plot": 0.84,
-   "pacing": 0.8,
-   "character": 0.7,
-   "originality": 0.61,
-   "atmosphere": 0.84
-  },
-  "tone": {
-   "darkness": 0.59,
-   "complexity": 0.46,
-   "emotion": 0.64
-  }
- },
- {
   "id": "bk_OL17091839W",
   "title": "The Martian",
   "subtitle": "Andy Weir",
   "year": 2011,
   "meta": "407 pp",
   "genres": [
+   "Fantasy",
    "Science Fiction",
-   "Thriller",
-   "Fantasy"
+   "Thriller"
   ],
   "rating": {
    "value": 4.4,
-   "count": 331,
+   "count": 334,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/11447888-M.jpg",
-  "blurb": "A science fiction standout readers keep coming back to.",
-  "popularity": 0.83,
+  "image": "https://covers.openlibrary.org/b/id/11447888-M.jpg?default=false",
+  "blurb": "The Martian is a 2011 science fiction novel written by Andy Weir. It was his debut novel under his own name. It was originally self-published in 2011; Crown Publishing purchased the rights and re-released it in 2014.",
+  "popularity": 0.82,
   "factors": {
    "writing": 0.69,
    "plot": 0.88,
@@ -386,6 +580,203 @@
   "tone": {
    "darkness": 0.55,
    "complexity": 0.56,
+   "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL1846076W",
+  "title": "The Giver",
+  "subtitle": "Lois Lowry",
+  "year": 1993,
+  "meta": "200 pp",
+  "genres": [
+   "Classics",
+   "Young Adult",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 320,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8352502-M.jpg?default=false",
+  "blurb": "At the age of twelve, Jonas, a young boy from a seemingly utopian, futuristic world, is singled out to receive special training from The Giver, who alone holds the memories of the true joys and pain of life.",
+  "popularity": 0.81,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.68,
+   "pacing": 0.73,
+   "character": 0.63,
+   "originality": 0.64,
+   "atmosphere": 0.73
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.61,
+   "emotion": 0.7
+  }
+ },
+ {
+  "id": "bk_OL21177W",
+  "title": "Wuthering Heights",
+  "subtitle": "Emily Brontë",
+  "year": 1846,
+  "meta": "318 pp",
+  "genres": [
+   "Literary Fiction",
+   "Classics",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 290,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12818862-M.jpg?default=false",
+  "blurb": "Wuthering Heights is an 1847 novel by Emily Brontë, initially published under the pseudonym Ellis Bell. The novel was influenced by Romanticism and Gothic fiction.",
+  "popularity": 0.8,
+  "factors": {
+   "writing": 0.83,
+   "plot": 0.58,
+   "pacing": 0.46,
+   "character": 0.86,
+   "originality": 0.73,
+   "atmosphere": 0.84
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.58,
+   "emotion": 0.73
+  }
+ },
+ {
+  "id": "bk_OL81633W",
+  "title": "The Shining",
+  "subtitle": "Stephen King",
+  "year": 1977,
+  "meta": "506 pp",
+  "genres": [
+   "Thriller",
+   "Horror"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 282,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12376585-M.jpg?default=false",
+  "blurb": "The Shining is a 1977 horror novel by American author Stephen King. It is King's third published novel and first hardback bestseller; its success firmly established King as a preeminent author in the horror genre.",
+  "popularity": 0.8,
+  "factors": {
+   "writing": 0.62,
+   "plot": 0.83,
+   "pacing": 0.89,
+   "character": 0.58,
+   "originality": 0.59,
+   "atmosphere": 0.83
+  },
+  "tone": {
+   "darkness": 0.76,
+   "complexity": 0.61,
+   "emotion": 0.6
+  }
+ },
+ {
+  "id": "bk_OL36410330W",
+  "title": "Fatta Eld",
+  "subtitle": "Suzanne Collins",
+  "year": 2009,
+  "meta": "400 pp",
+  "genres": [
+   "Dystopian",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 293,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12646539-M.jpg?default=false",
+  "blurb": "Against all odds, Katniss Everdeen has won the Hunger Games. She and fellow District 12 tribute Peeta Mellark are miraculously still alive. Katniss should be relieved, happy even. Gale holds her at an icy distance. . .",
+  "popularity": 0.8,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.71,
+   "pacing": 0.76,
+   "character": 0.72,
+   "originality": 0.75,
+   "atmosphere": 0.76
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.61,
+   "emotion": 0.68
+  }
+ },
+ {
+  "id": "bk_OL3140822W",
+  "title": "To Kill a Mockingbird",
+  "subtitle": "Harper Lee",
+  "year": 1960,
+  "meta": "320 pp",
+  "genres": [
+   "Literary Fiction",
+   "Classics",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 260,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14351077-M.jpg?default=false",
+  "blurb": "Lawyer Atticus Finch defends Tom Robinson -- a black man charged with the rape of a white girl. But the weight of history will only tolerate so much.",
+  "popularity": 0.79,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.71,
+   "pacing": 0.54,
+   "character": 0.85,
+   "originality": 0.7,
+   "atmosphere": 0.76
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.66,
+   "emotion": 0.72
+  }
+ },
+ {
+  "id": "bk_OL98459W",
+  "title": "Slaughterhouse-Five",
+  "subtitle": "Kurt Vonnegut",
+  "year": 1956,
+  "meta": "200 pp",
+  "genres": [
+   "Literary Fiction",
+   "Science Fiction",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 258,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12727001-M.jpg?default=false",
+  "blurb": "Slaughterhouse-Five is one of the world's great anti-war books.",
+  "popularity": 0.78,
+  "factors": {
+   "writing": 0.8,
+   "plot": 0.75,
+   "pacing": 0.48,
+   "character": 0.71,
+   "originality": 0.76,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.59,
+   "complexity": 0.7,
    "emotion": 0.61
   }
  },
@@ -402,12 +793,12 @@
   ],
   "rating": {
    "value": 4.3,
-   "count": 254,
+   "count": 255,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/11480483-M.jpg",
-  "blurb": "“It was night again.”",
-  "popularity": 0.8,
+  "image": "https://covers.openlibrary.org/b/id/11480483-M.jpg?default=false",
+  "blurb": "***The Name of the Wind***, also called ***The Kingkiller Chronicle: Day One***, is a heroic fantasy novel written by American author Patrick Rothfuss. R. Martin][2], and [Robert Jordan][3].",
+  "popularity": 0.78,
   "factors": {
    "writing": 0.58,
    "plot": 0.74,
@@ -423,44 +814,11 @@
   }
  },
  {
-  "id": "bk_OL10263W",
-  "title": "Le petit prince",
-  "subtitle": "Antoine de Saint-Exupéry",
-  "year": 1943,
-  "meta": "96 pp",
-  "genres": [
-   "Philosophy",
-   "Fantasy",
-   "Young Adult"
-  ],
-  "rating": {
-   "value": 4.4,
-   "count": 235,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/10708272-M.jpg",
-  "blurb": "“ALS ICH SECHS Jahre alt war, sah ich einmal in einem Buch uber den Urwald, das ,,Erlebte Geschichten\" hei , ein prachtiges Bild.”",
-  "popularity": 0.79,
-  "factors": {
-   "writing": 0.64,
-   "plot": 0.59,
-   "pacing": 0.7,
-   "character": 0.61,
-   "originality": 0.74,
-   "atmosphere": 0.71
-  },
-  "tone": {
-   "darkness": 0.47,
-   "complexity": 0.56,
-   "emotion": 0.51
-  }
- },
- {
   "id": "bk_OL2897798W",
   "title": "Watchmen",
   "subtitle": "Alan Moore",
-  "year": 1987,
-  "meta": "424 pp",
+  "year": 1986,
+  "meta": "421 pp",
   "genres": [
    "Fantasy",
    "Science Fiction",
@@ -468,12 +826,12 @@
   ],
   "rating": {
    "value": 4.5,
-   "count": 233,
+   "count": 235,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/7774899-M.jpg",
-  "blurb": "A fantasy standout readers keep coming back to.",
-  "popularity": 0.78,
+  "image": "https://covers.openlibrary.org/b/id/7774899-M.jpg?default=false",
+  "blurb": "\"This book examines each of the series' twelve issues in unprecedented detail, moving page by page and panel by panel to reveal the hidden foundations of this milestone in modern storytelling.",
+  "popularity": 0.77,
   "factors": {
    "writing": 0.76,
    "plot": 0.78,
@@ -495,17 +853,17 @@
   "year": 1954,
   "meta": "434 pp",
   "genres": [
-   "Science Fiction",
-   "Fantasy"
+   "Fantasy",
+   "Science Fiction"
   ],
   "rating": {
    "value": 4.4,
-   "count": 227,
+   "count": 229,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14627564-M.jpg",
-  "blurb": "“ARAGORN sped on up the hill.”",
-  "popularity": 0.78,
+  "image": "https://covers.openlibrary.org/b/id/14627564-M.jpg?default=false",
+  "blurb": "The Lord of the Rings, J.R.R. Tolkien's three-volume epic, is set in the imaginary world of Middle-earth -- home to many strange beings, and most notably hobbits, a peace-loving \"little people,\" cheerful and shy. J.R.R.",
+  "popularity": 0.77,
   "factors": {
    "writing": 0.68,
    "plot": 0.83,
@@ -521,35 +879,36 @@
   }
  },
  {
-  "id": "bk_OL1268413W",
-  "title": "... Trotzdem Ja zum Leben sagen",
-  "subtitle": "Viktor E. Frankl",
-  "year": 1946,
-  "meta": "165 pp",
+  "id": "bk_OL10263W",
+  "title": "Le petit prince",
+  "subtitle": "Antoine de Saint-Exupéry",
+  "year": 1943,
+  "meta": "96 pp",
   "genres": [
-   "Memoir",
-   "Philosophy"
+   "Philosophy",
+   "Fantasy",
+   "Young Adult"
   ],
   "rating": {
-   "value": 4.3,
-   "count": 220,
+   "value": 4.4,
+   "count": 236,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8516506-M.jpg",
-  "blurb": "“THIS BOOK DOES NOT claim to be an account of facts and events but of personal experiences, experiences which millions of prisoners have suffered time and time again.”",
-  "popularity": 0.78,
+  "image": "https://covers.openlibrary.org/b/id/10708272-M.jpg?default=false",
+  "blurb": "*Le Petit Prince* est une œuvre de langue française, la plus connue d'Antoine de Saint-Exupéry. Ces différentes rencontres peuvent être lues comme une allégorie. (Mais peu d'entre elles s'en souviennent.) ».",
+  "popularity": 0.77,
   "factors": {
-   "writing": 0.79,
-   "plot": 0.41,
-   "pacing": 0.52,
-   "character": 0.58,
-   "originality": 0.64,
-   "atmosphere": 0.55
+   "writing": 0.64,
+   "plot": 0.59,
+   "pacing": 0.7,
+   "character": 0.61,
+   "originality": 0.74,
+   "atmosphere": 0.71
   },
   "tone": {
-   "darkness": 0.4,
-   "complexity": 0.74,
-   "emotion": 0.61
+   "darkness": 0.47,
+   "complexity": 0.56,
+   "emotion": 0.51
   }
  },
  {
@@ -563,12 +922,12 @@
   ],
   "rating": {
    "value": 4.1,
-   "count": 234,
+   "count": 236,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/10432365-M.jpg",
-  "blurb": "“A WELL-KNOWN SCIENTIST (some say it was Bertrand Russell) once gave a public lecture on astronomy.”",
-  "popularity": 0.78,
+  "image": "https://covers.openlibrary.org/b/id/10432365-M.jpg?default=false",
+  "blurb": "Stephen Hawking's ‘A Brief History of Time* has become an international publishing phenomenon. Indeed, during that time cosmology and the theoretical sciences have entered a new golden age .",
+  "popularity": 0.77,
   "factors": {
    "writing": 0.7,
    "plot": 0.41,
@@ -581,6 +940,70 @@
    "darkness": 0.44,
    "complexity": 0.75,
    "emotion": 0.43
+  }
+ },
+ {
+  "id": "bk_OL138052W",
+  "title": "Alice's Adventures in Wonderland",
+  "subtitle": "Lewis Carroll",
+  "year": 1865,
+  "meta": "133 pp",
+  "genres": [
+   "Philosophy",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 225,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10527843-M.jpg?default=false",
+  "blurb": "Alice's Adventures in Wonderland (commonly Alice in Wonderland) is an 1865 English children's novel by Lewis Carroll. A young girl named Alice falls through a rabbit hole into a fantasy world of anthropomorphic creatures.",
+  "popularity": 0.77,
+  "factors": {
+   "writing": 0.75,
+   "plot": 0.67,
+   "pacing": 0.6,
+   "character": 0.72,
+   "originality": 0.77,
+   "atmosphere": 0.62
+  },
+  "tone": {
+   "darkness": 0.4,
+   "complexity": 0.62,
+   "emotion": 0.62
+  }
+ },
+ {
+  "id": "bk_OL16142094W",
+  "title": "Wonder",
+  "subtitle": "R. J. Palacio",
+  "year": 2001,
+  "meta": "368 pp",
+  "genres": [
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 238,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8223160-M.jpg?default=false",
+  "blurb": "Wonder is a children's novel written by R. J. Palacio,[2] published on 14 February 2012. R. J. Palacio wrote Wonder after an incident where her son noticed a girl with a severe facial difference and started to cry.",
+  "popularity": 0.77,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.81,
+   "pacing": 0.8,
+   "character": 0.83,
+   "originality": 0.53,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.45,
+   "complexity": 0.33,
+   "emotion": 0.79
   }
  },
  {
@@ -599,9 +1022,9 @@
    "count": 211,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/10716273-M.jpg",
-  "blurb": "“It was nearing midnight and the Prime Minister was sitting alone in his office, reading a long memo that was slipping through his brain without leaving the slightest trace of meaning behind.”",
-  "popularity": 0.77,
+  "image": "https://covers.openlibrary.org/b/id/10716273-M.jpg?default=false",
+  "blurb": "One summer night, when Dumbledore arrives at Privet Drive to collect Harry Potter, his wand hand is blackened and shriveled, but he will not reveal why.",
+  "popularity": 0.76,
   "factors": {
    "writing": 0.66,
    "plot": 0.88,
@@ -617,36 +1040,260 @@
   }
  },
  {
-  "id": "bk_OL36287W",
-  "title": "Le Comte de Monte Cristo",
-  "subtitle": "Alexandre Dumas",
-  "year": 1830,
-  "meta": "593 pp",
+  "id": "bk_OL16444438W",
+  "title": "The Fault in Our Stars",
+  "subtitle": "John Green",
+  "year": 2010,
+  "meta": "317 pp",
   "genres": [
-   "Literary Fiction",
-   "Historical Fiction",
-   "Classics"
+   "Romance",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 221,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7418786-M.jpg?default=false",
+  "blurb": "Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis.",
+  "popularity": 0.76,
+  "factors": {
+   "writing": 0.59,
+   "plot": 0.69,
+   "pacing": 0.72,
+   "character": 0.86,
+   "originality": 0.66,
+   "atmosphere": 0.61
+  },
+  "tone": {
+   "darkness": 0.45,
+   "complexity": 0.36,
+   "emotion": 0.78
+  }
+ },
+ {
+  "id": "bk_OL15719630W",
+  "title": "Divergent",
+  "subtitle": "Veronica Roth",
+  "year": 2010,
+  "meta": "487 pp",
+  "genres": [
+   "Philosophy",
+   "Young Adult",
+   "Dystopian"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 209,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/13274634-M.jpg?default=false",
+  "blurb": "‘Divergent’ is the first in a trilogy of dystopian, YA novels by Veronica Roth. The story is fast paced with full on action throughout. There is also quite a few though provoking moments.",
+  "popularity": 0.76,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.68,
+   "pacing": 0.74,
+   "character": 0.7,
+   "originality": 0.69,
+   "atmosphere": 0.7
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.65,
+   "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL46881W",
+  "title": "Jurassic Park",
+  "subtitle": "Michael Crichton",
+  "year": 1990,
+  "meta": "455 pp",
+  "genres": [
+   "Thriller",
+   "Science Fiction",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 199,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12882940-M.jpg?default=false",
+  "blurb": "Jurassic Park is a 1990 science fiction novel written by Michael Crichton. A sequel titled The Lost World, also written by Crichton, was published in 1995. In 1996 it was awarded the Secondary BILBY Award.",
+  "popularity": 0.75,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.91,
+   "pacing": 0.89,
+   "character": 0.67,
+   "originality": 0.67,
+   "atmosphere": 0.72
+  },
+  "tone": {
+   "darkness": 0.6,
+   "complexity": 0.6,
+   "emotion": 0.52
+  }
+ },
+ {
+  "id": "bk_OL20090688W",
+  "title": "Red, White & Royal Blue",
+  "subtitle": "Casey McQuiston",
+  "year": 2019,
+  "meta": "440 pp",
+  "genres": [
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 197,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9171544-M.jpg?default=false",
+  "blurb": "**What happens when America's First Son falls in love with the Prince of Wales?** When his mother became President of the United States, Alex Claremont-Diaz was promptly cast as the American equivalent of a young royal.",
+  "popularity": 0.75,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.64,
+   "pacing": 0.71,
+   "character": 0.95,
+   "originality": 0.51,
+   "atmosphere": 0.53
+  },
+  "tone": {
+   "darkness": 0.25,
+   "complexity": 0.39,
+   "emotion": 0.89
+  }
+ },
+ {
+  "id": "bk_OL17075811W",
+  "title": "Sapiens",
+  "subtitle": "Yuval Noah Harari",
+  "year": 2011,
+  "meta": "456 pp",
+  "genres": [
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 207,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8634250-M.jpg?default=false",
+  "blurb": "Yet today there is only one—homo sapiens. What happened to the others? And what may happen to us? Most books about the history of humanity pursue either a historical or a biological approach, but Dr. Dr.",
+  "popularity": 0.75,
+  "factors": {
+   "writing": 0.8,
+   "plot": 0.62,
+   "pacing": 0.53,
+   "character": 0.76,
+   "originality": 0.68,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.58,
+   "emotion": 0.69
+  }
+ },
+ {
+  "id": "bk_OL18108064W",
+  "title": "Can't Hurt Me",
+  "subtitle": "David Goggins",
+  "year": 2018,
+  "meta": "364 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 197,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8305903-M.jpg?default=false",
+  "blurb": "For David Goggins, childhood was a nightmare--poverty, prejudice, and physical abuse colored his days and haunted his nights.",
+  "popularity": 0.75,
+  "factors": {
+   "writing": 0.81,
+   "plot": 0.47,
+   "pacing": 0.68,
+   "character": 0.96,
+   "originality": 0.66,
+   "atmosphere": 0.66
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.45,
+   "emotion": 0.89
+  }
+ },
+ {
+  "id": "bk_OL38501W",
+  "title": "Snow Crash",
+  "subtitle": "Neal Stephenson",
+  "year": 1992,
+  "meta": "460 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 197,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/392508-M.jpg?default=false",
+  "blurb": "Within the Metaverse, Hiro is offered a datafile named Snow Crash by a man named Raven who hints that it is a form of narcotic.",
+  "popularity": 0.75,
+  "factors": {
+   "writing": 0.62,
+   "plot": 0.8,
+   "pacing": 0.79,
+   "character": 0.59,
+   "originality": 0.81,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.6,
+   "emotion": 0.45
+  }
+ },
+ {
+  "id": "bk_OL257939W",
+  "title": "A Clash of Kings",
+  "subtitle": "George R. R. Martin",
+  "year": 1998,
+  "meta": "761 pp",
+  "genres": [
+   "Science Fiction",
+   "Fantasy",
+   "Dystopian"
   ],
   "rating": {
    "value": 4.3,
-   "count": 194,
+   "count": 191,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14566393-M.jpg",
-  "blurb": "“On the 24th of February, 1815, the watch-tower of Notre-Dame de la Garde signalled the arrival of the three-master Pharaon, from Smyrna, Trieste, and Naples.”",
-  "popularity": 0.76,
+  "image": "https://covers.openlibrary.org/b/id/8231751-M.jpg?default=false",
+  "blurb": "In this thrilling sequel to *A Game of Thrones*, George R. R. Martin has created a work of unsurpassed vision, power, and imagination. ***A Clash of Kings*** A comet the color of blood and flame cuts across the sky.",
+  "popularity": 0.74,
   "factors": {
-   "writing": 0.91,
-   "plot": 0.69,
-   "pacing": 0.47,
-   "character": 0.86,
-   "originality": 0.66,
-   "atmosphere": 0.71
+   "writing": 0.67,
+   "plot": 0.84,
+   "pacing": 0.7,
+   "character": 0.63,
+   "originality": 0.7,
+   "atmosphere": 0.81
   },
   "tone": {
-   "darkness": 0.58,
-   "complexity": 0.67,
-   "emotion": 0.68
+   "darkness": 0.64,
+   "complexity": 0.71,
+   "emotion": 0.6
   }
  },
  {
@@ -661,12 +1308,12 @@
   ],
   "rating": {
    "value": 4.2,
-   "count": 187,
+   "count": 189,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/12385229-M.jpg",
-  "blurb": "A thriller standout readers keep coming back to.",
-  "popularity": 0.75,
+  "image": "https://covers.openlibrary.org/b/id/12385229-M.jpg?default=false",
+  "blurb": "I, Robot is a fixup novel of science fiction short stories or essays by American writer Isaac Asimov. The stories are woven together by a framing narrative in which the fictional Dr.",
+  "popularity": 0.74,
   "factors": {
    "writing": 0.59,
    "plot": 0.93,
@@ -677,8 +1324,72 @@
   },
   "tone": {
    "darkness": 0.63,
-   "complexity": 0.57,
+   "complexity": 0.58,
    "emotion": 0.47
+  }
+ },
+ {
+  "id": "bk_OL18203673W",
+  "title": "The Seven Husbands of Evelyn Hugo",
+  "subtitle": "Taylor Jenkins Reid",
+  "year": 2017,
+  "meta": "400 pp",
+  "genres": [
+   "Memoir",
+   "Literary Fiction",
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 182,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8354226-M.jpg?default=false",
+  "blurb": "Aging and reclusive Hollywood movie icon Evelyn Hugo is finally ready to tell the truth about her glamorous and scandalous life. Why her? Why now? Monique is not exactly on top of the world.",
+  "popularity": 0.74,
+  "factors": {
+   "writing": 0.73,
+   "plot": 0.57,
+   "pacing": 0.52,
+   "character": 0.96,
+   "originality": 0.57,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.44,
+   "complexity": 0.57,
+   "emotion": 0.77
+  }
+ },
+ {
+  "id": "bk_OL116250W",
+  "title": "Holes",
+  "subtitle": "Louis Sachar",
+  "year": 1988,
+  "meta": "240 pp",
+  "genres": [
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 193,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/19797-M.jpg?default=false",
+  "blurb": "Stanley Yelnats is under a curse. A curse that began with his no-good-dirty-rotten-pig-stealing great-great-grandfather and has since followed generations of Yelnatses. There is no lake at Camp Green Lake.",
+  "popularity": 0.74,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.82,
+   "pacing": 0.9,
+   "character": 0.77,
+   "originality": 0.64,
+   "atmosphere": 0.65
+  },
+  "tone": {
+   "darkness": 0.41,
+   "complexity": 0.32,
+   "emotion": 0.71
   }
  },
  {
@@ -688,18 +1399,18 @@
   "year": 2005,
   "meta": "285 pp",
   "genres": [
-   "Young Adult",
    "Fantasy",
+   "Young Adult",
    "Thriller"
   ],
   "rating": {
    "value": 4.5,
-   "count": 181,
+   "count": 180,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/108909-M.jpg",
-  "blurb": "A young adult standout readers keep coming back to.",
-  "popularity": 0.75,
+  "image": "https://covers.openlibrary.org/b/id/108909-M.jpg?default=false",
+  "blurb": "After a year spent trying to prevent a catastropic war among the Greek gods, Percy Jackson finds his seventh-grade school year unnervingly quiet. But things don't stay quiet for long.",
+  "popularity": 0.73,
   "factors": {
    "writing": 0.63,
    "plot": 0.82,
@@ -715,8 +1426,40 @@
   }
  },
  {
+  "id": "bk_OL15401200W",
+  "title": "The Lost Hero",
+  "subtitle": "Rick Riordan",
+  "year": 2010,
+  "meta": "556 pp",
+  "genres": [
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 170,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12848687-M.jpg?default=false",
+  "blurb": "Jason has a problem. He doesn’t remember anything before waking up on a school bus holding hands with a girl. Piper has a secret. What is going on? Leo has a way with tools.",
+  "popularity": 0.73,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.85,
+   "pacing": 0.7,
+   "character": 0.68,
+   "originality": 0.66,
+   "atmosphere": 0.78
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.42,
+   "emotion": 0.59
+  }
+ },
+ {
   "id": "bk_OL2163649W",
-  "title": "The Hitch Hiker's Guide to the Galaxy",
+  "title": "The Hitchhiker's Guide to the Galaxy",
   "subtitle": "Douglas Adams",
   "year": 1979,
   "meta": "216 pp",
@@ -725,12 +1468,12 @@
   ],
   "rating": {
    "value": 4.5,
-   "count": 176,
+   "count": 178,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/12986869-M.jpg",
-  "blurb": "“Far out in the uncharted backwaters of the unfashionable end of the Western Spiral arm of the Galaxy lies a small unregarded yellow sun.”",
-  "popularity": 0.74,
+  "image": "https://covers.openlibrary.org/b/id/12986869-M.jpg?default=false",
+  "blurb": "The Hitchhiker's Guide to the Galaxy is the first of six books in the Hitchhiker's Guide to the Galaxy comedy science fiction \"hexalogy\" by Douglas Adams. The novel was first published in London on 12 October 1979.",
+  "popularity": 0.73,
   "factors": {
    "writing": 0.72,
    "plot": 0.81,
@@ -760,9 +1503,9 @@
    "count": 171,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/11200092-M.jpg",
-  "blurb": "A science fiction standout readers keep coming back to.",
-  "popularity": 0.74,
+  "image": "https://covers.openlibrary.org/b/id/11200092-M.jpg?default=false",
+  "blurb": "Ryland Grace is the sole survivor on a desperate, last-chance mission–and if he fails, humanity and the earth itself will perish. Except that right now, he doesn’t know that. Project Hail Mary PDF",
+  "popularity": 0.73,
   "factors": {
    "writing": 0.69,
    "plot": 0.93,
@@ -778,67 +1521,261 @@
   }
  },
  {
+  "id": "bk_OL262421W",
+  "title": "The Adventures of Sherlock Holmes [12 stories]",
+  "subtitle": "Arthur Conan Doyle",
+  "year": 1892,
+  "meta": "309 pp",
+  "genres": [
+   "Literary Fiction",
+   "Classics",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 171,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6717853-M.jpg?default=false",
+  "blurb": "The Adventures of Sherlock Holmes is a collection of twelve short stories by Arthur Conan Doyle, first published on 14 October 1892. The only characters common to all twelve are Holmes and Dr.",
+  "popularity": 0.73,
+  "factors": {
+   "writing": 0.74,
+   "plot": 0.66,
+   "pacing": 0.51,
+   "character": 0.86,
+   "originality": 0.69,
+   "atmosphere": 0.83
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.68,
+   "emotion": 0.62
+  }
+ },
+ {
   "id": "bk_OL471565W",
   "title": "And Then There Were None",
   "subtitle": "Agatha Christie",
   "year": 1939,
   "meta": "222 pp",
   "genres": [
+   "Mystery",
    "Thriller",
-   "Mystery"
+   "Historical Fiction"
   ],
   "rating": {
-   "value": 4.2,
-   "count": 169,
+   "value": 4.3,
+   "count": 171,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/11172296-M.jpg",
-  "blurb": "“IN THE CORNER of a first-class smoking carriage, Mr. Justice Wargrave, lately retired from the bench, puffed at a cigar and ran an interested eye through the political news in the Times.”",
-  "popularity": 0.74,
+  "image": "https://covers.openlibrary.org/b/id/11172296-M.jpg?default=false",
+  "blurb": "And Then There Were None is a mystery novel by the English writer Agatha Christie, described by her as the most difficult of her books to write. In 1995 in a similar list Mystery Writers of America ranked the novel 10th.",
+  "popularity": 0.73,
   "factors": {
-   "writing": 0.67,
-   "plot": 0.96,
-   "pacing": 0.83,
-   "character": 0.72,
+   "writing": 0.73,
+   "plot": 0.89,
+   "pacing": 0.74,
+   "character": 0.76,
    "originality": 0.54,
-   "atmosphere": 0.71
+   "atmosphere": 0.76
   },
   "tone": {
-   "darkness": 0.69,
-   "complexity": 0.53,
-   "emotion": 0.5
+   "darkness": 0.63,
+   "complexity": 0.54,
+   "emotion": 0.57
   }
  },
  {
-  "id": "bk_OL15401200W",
-  "title": "The Lost Hero",
-  "subtitle": "Rick Riordan",
-  "year": 2010,
-  "meta": "556 pp",
+  "id": "bk_OL16085155W",
+  "title": "Steve Jobs",
+  "subtitle": "Walter Isaacson",
+  "year": 2011,
+  "meta": "665 pp",
   "genres": [
-   "Young Adult",
-   "Fantasy"
+   "Memoir"
   ],
   "rating": {
-   "value": 4.4,
-   "count": 170,
+   "value": 4.2,
+   "count": 171,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/12848687-M.jpg",
-  "blurb": "“Even before he got electrocuted, Jason was having a rotten day”",
-  "popularity": 0.74,
+  "image": "https://covers.openlibrary.org/b/id/12374726-M.jpg?default=false",
+  "blurb": "He knew that the best way to create value in the twenty-first century was to connect creativity with technology. He built a company where leaps of the imagination were combined with remarkable feats of engineering.",
+  "popularity": 0.73,
   "factors": {
-   "writing": 0.69,
-   "plot": 0.85,
-   "pacing": 0.7,
-   "character": 0.68,
-   "originality": 0.66,
-   "atmosphere": 0.78
+   "writing": 0.84,
+   "plot": 0.53,
+   "pacing": 0.61,
+   "character": 0.93,
+   "originality": 0.54,
+   "atmosphere": 0.59
   },
   "tone": {
-   "darkness": 0.55,
-   "complexity": 0.42,
-   "emotion": 0.59
+   "darkness": 0.62,
+   "complexity": 0.51,
+   "emotion": 0.93
+  }
+ },
+ {
+  "id": "bk_OL9170454W",
+  "title": "Hamlet",
+  "subtitle": "William Shakespeare",
+  "year": 1603,
+  "meta": "192 pp",
+  "genres": [
+   "Philosophy",
+   "Literary Fiction",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 172,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8281954-M.jpg?default=false",
+  "blurb": "Those fateful exchanges, and the anguished soliloquies that precede and follow them, probe depths of human feeling rarely sounded in any art. Hamlet is a unique pleasure to read as well as to see and hear performed.",
+  "popularity": 0.73,
+  "factors": {
+   "writing": 0.77,
+   "plot": 0.58,
+   "pacing": 0.49,
+   "character": 0.79,
+   "originality": 0.79,
+   "atmosphere": 0.72
+  },
+  "tone": {
+   "darkness": 0.53,
+   "complexity": 0.79,
+   "emotion": 0.55
+  }
+ },
+ {
+  "id": "bk_OL20354498W",
+  "title": "Heartstopper, Volume 1",
+  "subtitle": "Alice Oseman",
+  "year": 2018,
+  "meta": "288 pp",
+  "genres": [
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 180,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9020805-M.jpg?default=false",
+  "blurb": "Boy meets boy. Boys become friends. Boys fall in love. Charlie and Nick are at the same school, but they've never met ... until one day when they're made to sit together.",
+  "popularity": 0.73,
+  "factors": {
+   "writing": 0.65,
+   "plot": 0.87,
+   "pacing": 0.82,
+   "character": 0.8,
+   "originality": 0.59,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.43,
+   "complexity": 0.43,
+   "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL16114008W",
+  "title": "Leviathan Wakes",
+  "subtitle": "James S. A. Corey",
+  "year": 2009,
+  "meta": "592 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 164,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7314237-M.jpg?default=false",
+  "blurb": "When Captain Jim Holden's ice miner stumbles across a derelict, abandoned ship, he uncovers a secret that threatens to throw the entire system into war.",
+  "popularity": 0.72,
+  "factors": {
+   "writing": 0.62,
+   "plot": 0.79,
+   "pacing": 0.7,
+   "character": 0.59,
+   "originality": 0.78,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.56,
+   "complexity": 0.7,
+   "emotion": 0.47
+  }
+ },
+ {
+  "id": "bk_OL498556W",
+  "title": "Metamorphosis",
+  "subtitle": "Franz Kafka",
+  "year": 1915,
+  "meta": "88 pp",
+  "genres": [
+   "Literary Fiction",
+   "Fantasy",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 158,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12820198-M.jpg?default=false",
+  "blurb": "Metamorphosis (German: Die Verwandlung) is a novella written by Franz Kafka which was first published in 1915. \"monstrous vermin\") and subsequently struggles to adjust to this new condition.",
+  "popularity": 0.72,
+  "factors": {
+   "writing": 0.82,
+   "plot": 0.68,
+   "pacing": 0.48,
+   "character": 0.88,
+   "originality": 0.79,
+   "atmosphere": 0.74
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.6,
+   "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL244537W",
+  "title": "The Art of War",
+  "subtitle": "孙武 (Sun Tzu)",
+  "year": 1900,
+  "meta": "90 pp",
+  "genres": [
+   "Philosophy",
+   "Classics",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 162,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/4849549-M.jpg?default=false",
+  "blurb": "The Art of War is an ancient Chinese military treatise dating from the Late Spring and Autumn Period. The work, which is attributed to the ancient Chinese military strategist Sun Tzu",
+  "popularity": 0.72,
+  "factors": {
+   "writing": 0.79,
+   "plot": 0.45,
+   "pacing": 0.43,
+   "character": 0.66,
+   "originality": 0.72,
+   "atmosphere": 0.63
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.74,
+   "emotion": 0.58
   }
  },
  {
@@ -855,9 +1792,9 @@
    "count": 155,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14658316-M.jpg",
-  "blurb": "A fantasy standout readers keep coming back to.",
-  "popularity": 0.73,
+  "image": "https://covers.openlibrary.org/b/id/14658316-M.jpg?default=false",
+  "blurb": "Widely acclaimed for his work completing Robert Jordan’s Wheel of Time saga, Brandon Sanderson now begins a grand cycle of his own, one every bit as ambitious and immersive. Roshar is a world of stone and storms.",
+  "popularity": 0.71,
   "factors": {
    "writing": 0.7,
    "plot": 0.67,
@@ -873,89 +1810,23 @@
   }
  },
  {
-  "id": "bk_OL2056818W",
-  "title": "Maus I",
-  "subtitle": "Art Spiegelman",
-  "year": 1986,
-  "meta": "295 pp",
-  "genres": [
-   "Literary Fiction",
-   "Memoir",
-   "Horror"
-  ],
-  "rating": {
-   "value": 4.5,
-   "count": 157,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/10210168-M.jpg",
-  "blurb": "“It was summer I remember. I was ten or eleven...”",
-  "popularity": 0.73,
-  "factors": {
-   "writing": 0.8,
-   "plot": 0.54,
-   "pacing": 0.63,
-   "character": 0.7,
-   "originality": 0.59,
-   "atmosphere": 0.81
-  },
-  "tone": {
-   "darkness": 0.63,
-   "complexity": 0.66,
-   "emotion": 0.8
-  }
- },
- {
-  "id": "bk_OL166894W",
-  "title": "Преступление и наказание",
-  "subtitle": "Fyodor Dostoyevsky",
-  "year": 1866,
-  "meta": "520 pp",
-  "genres": [
-   "Literary Fiction",
-   "Mystery",
-   "Classics"
-  ],
-  "rating": {
-   "value": 4.3,
-   "count": 154,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/9411873-M.jpg",
-  "blurb": "“On an exceptionally hot evening early in July a young man came out of the garret in which he lodged in S. Place and walked slowly, as though in hesitation, towards K. bridge.”",
-  "popularity": 0.72,
-  "factors": {
-   "writing": 0.79,
-   "plot": 0.75,
-   "pacing": 0.6,
-   "character": 0.69,
-   "originality": 0.6,
-   "atmosphere": 0.76
-  },
-  "tone": {
-   "darkness": 0.57,
-   "complexity": 0.61,
-   "emotion": 0.73
-  }
- },
- {
   "id": "bk_OL492642W",
   "title": "The Last Olympian",
   "subtitle": "Rick Riordan",
   "year": 2009,
   "meta": "381 pp",
   "genres": [
-   "Young Adult",
-   "Fantasy"
+   "Fantasy",
+   "Young Adult"
   ],
   "rating": {
    "value": 4.4,
    "count": 152,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/6624107-M.jpg",
-  "blurb": "“The end of the world started when a pegasus landed on the hood of my car.”",
-  "popularity": 0.72,
+  "image": "https://covers.openlibrary.org/b/id/6624107-M.jpg?default=false",
+  "blurb": "All year the half-bloods have been preparing for battle against the Titans, knowing the odds of victory are grim. Now it's up to Percy Jackson and an army of young demigods to stop the Lord of Time.",
+  "popularity": 0.71,
   "factors": {
    "writing": 0.67,
    "plot": 0.84,
@@ -977,17 +1848,17 @@
   "year": 2007,
   "meta": "320 pp",
   "genres": [
-   "Young Adult",
-   "Fantasy"
+   "Fantasy",
+   "Young Adult"
   ],
   "rating": {
    "value": 4.4,
    "count": 152,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14601475-M.jpg",
-  "blurb": "A young adult standout readers keep coming back to.",
-  "popularity": 0.72,
+  "image": "https://covers.openlibrary.org/b/id/14601475-M.jpg?default=false",
+  "blurb": "When Percy Jackson gets an urgent distress call from his friend Grover, he immediately prepares for battle. But that’s not all that awaits them. They’re not the only ones in danger.",
+  "popularity": 0.71,
   "factors": {
    "writing": 0.65,
    "plot": 0.78,
@@ -1000,6 +1871,294 @@
    "darkness": 0.57,
    "complexity": 0.59,
    "emotion": 0.57
+  }
+ },
+ {
+  "id": "bk_OL5738148W",
+  "title": "The Final Empire",
+  "subtitle": "Brandon Sanderson",
+  "year": 2001,
+  "meta": "669 pp",
+  "genres": [
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 153,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14658160-M.jpg?default=false",
+  "blurb": "For a thousand years ashes have fallen from the sky. For a thousand years nothing has flourished. For a thousand years the skaa have been enslaved and live in misery, mired in inevitable fear.",
+  "popularity": 0.71,
+  "factors": {
+   "writing": 0.71,
+   "plot": 0.7,
+   "pacing": 0.74,
+   "character": 0.68,
+   "originality": 0.65,
+   "atmosphere": 0.86
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.55,
+   "emotion": 0.6
+  }
+ },
+ {
+  "id": "bk_OL2056818W",
+  "title": "Maus I",
+  "subtitle": "Art Spiegelman",
+  "year": 1986,
+  "meta": "295 pp",
+  "genres": [
+   "Literary Fiction",
+   "Memoir",
+   "Horror"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 157,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10210168-M.jpg?default=false",
+  "blurb": "A story of a Jewish survivor of Hitler's Europe and his son, a cartoonist who tries to come to terms with his father's story and history itself.",
+  "popularity": 0.71,
+  "factors": {
+   "writing": 0.8,
+   "plot": 0.54,
+   "pacing": 0.63,
+   "character": 0.7,
+   "originality": 0.59,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.66,
+   "emotion": 0.8
+  }
+ },
+ {
+  "id": "bk_OL46309W",
+  "title": "Second Foundation",
+  "subtitle": "Isaac Asimov",
+  "year": 1953,
+  "meta": "237 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 140,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9261324-M.jpg?default=false",
+  "blurb": "After years of struggle, the Foundation lay in ruins -- destroyed by the mutant mind power of the Mule. The Mule had failed to find it the first time -- but now he was certain he knew where it lay.",
+  "popularity": 0.7,
+  "factors": {
+   "writing": 0.73,
+   "plot": 0.83,
+   "pacing": 0.7,
+   "character": 0.67,
+   "originality": 0.79,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.52,
+   "complexity": 0.79,
+   "emotion": 0.47
+  }
+ },
+ {
+  "id": "bk_OL81634W",
+  "title": "Misery",
+  "subtitle": "Stephen King",
+  "year": 1978,
+  "meta": "382 pp",
+  "genres": [
+   "Literary Fiction",
+   "Thriller",
+   "Horror"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 143,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8259296-M.jpg?default=false",
+  "blurb": "Novelist Paul Sheldon has plans to make the difficult transition from writing historical romances featuring heroine Misery Chastain to publishing literary fiction. [Source][1] [1]:",
+  "popularity": 0.7,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.73,
+   "pacing": 0.74,
+   "character": 0.66,
+   "originality": 0.6,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.84,
+   "complexity": 0.66,
+   "emotion": 0.67
+  }
+ },
+ {
+  "id": "bk_OL266178W",
+  "title": "Het Achterhuis",
+  "subtitle": "Anne Frank",
+  "year": 1944,
+  "meta": "285 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 139,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8584021-M.jpg?default=false",
+  "blurb": "Het Achterhuis is de titel van het dagboek van Anne Frank (1929-1945) voor het eerst uitgegeven op 25 juni 1947. Het is wereldwijd een van de meest gelezen boeken. ---------- Also contained in: Works of Anne Frank",
+  "popularity": 0.7,
+  "factors": {
+   "writing": 0.78,
+   "plot": 0.53,
+   "pacing": 0.57,
+   "character": 0.86,
+   "originality": 0.63,
+   "atmosphere": 0.49
+  },
+  "tone": {
+   "darkness": 0.52,
+   "complexity": 0.48,
+   "emotion": 0.83
+  }
+ },
+ {
+  "id": "bk_OL1317211W",
+  "title": "Meditations",
+  "subtitle": "Marcus Aurelius",
+  "year": 1626,
+  "meta": "203 pp",
+  "genres": [
+   "Philosophy",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 144,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/211529-M.jpg?default=false",
+  "blurb": "Meditations is a collection of personal reflections and notes by the Roman Emperor Marcus Aurelius (reigned 161 to 180 AD), offering a profound look into the philosophy of Stoicism.",
+  "popularity": 0.7,
+  "factors": {
+   "writing": 0.77,
+   "plot": 0.48,
+   "pacing": 0.46,
+   "character": 0.66,
+   "originality": 0.73,
+   "atmosphere": 0.71
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.83,
+   "emotion": 0.46
+  }
+ },
+ {
+  "id": "bk_OL6027236W",
+  "title": "The Maze Runner",
+  "subtitle": "James Dashner",
+  "year": 2009,
+  "meta": "375 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 144,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10464801-M.jpg?default=false",
+  "blurb": "When Thomas wakes up in the lift, the only thing he can remember is his first name. His memory is blank. But he's not alone. Just like Thomas, the Gladers don't know why or how they got to the Glade. Thomas was expected.",
+  "popularity": 0.7,
+  "factors": {
+   "writing": 0.58,
+   "plot": 0.83,
+   "pacing": 0.77,
+   "character": 0.7,
+   "originality": 0.76,
+   "atmosphere": 0.66
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.54,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL5969057W",
+  "title": "World War Z",
+  "subtitle": "Max Brooks",
+  "year": 2006,
+  "meta": "422 pp",
+  "genres": [
+   "Dystopian",
+   "Horror",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 3.9,
+   "count": 138,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/168106-M.jpg?default=false",
+  "blurb": "“The end was near.” —Voices from the Zombie War The Zombie War came unthinkably close to eradicating humanity. World War Z is the result.",
+  "popularity": 0.7,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.8,
+   "pacing": 0.66,
+   "character": 0.72,
+   "originality": 0.8,
+   "atmosphere": 0.86
+  },
+  "tone": {
+   "darkness": 0.78,
+   "complexity": 0.68,
+   "emotion": 0.55
+  }
+ },
+ {
+  "id": "bk_OL5738150W",
+  "title": "The Well of Ascension",
+  "subtitle": "Brandon Sanderson",
+  "year": 2007,
+  "meta": "784 pp",
+  "genres": [
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 135,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14658341-M.jpg?default=false",
+  "blurb": "The impossible has been accomplished. The Lord Ruler -- the man who claimed to be god incarnate and brutally ruled the world for a thousand years -- has been vanquished.",
+  "popularity": 0.69,
+  "factors": {
+   "writing": 0.65,
+   "plot": 0.67,
+   "pacing": 0.59,
+   "character": 0.65,
+   "originality": 0.79,
+   "atmosphere": 0.89
+  },
+  "tone": {
+   "darkness": 0.44,
+   "complexity": 0.63,
+   "emotion": 0.66
   }
  },
  {
@@ -1016,9 +2175,9 @@
    "count": 134,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/7098465-M.jpg",
-  "blurb": "A historical fiction standout readers keep coming back to.",
-  "popularity": 0.7,
+  "image": "https://covers.openlibrary.org/b/id/7098465-M.jpg?default=false",
+  "blurb": "This is the story of the seige of Troy from the perspective of Achilles best-friend Patroclus. Even though many will know the facts behind the story the telling is fresh and engaging.",
+  "popularity": 0.69,
   "factors": {
    "writing": 0.74,
    "plot": 0.61,
@@ -1031,6 +2190,134 @@
    "darkness": 0.53,
    "complexity": 0.6,
    "emotion": 0.8
+  }
+ },
+ {
+  "id": "bk_OL492640W",
+  "title": "The Battle of the Labyrinth",
+  "subtitle": "Rick Riordan",
+  "year": 2005,
+  "meta": "365 pp",
+  "genres": [
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 132,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6274739-M.jpg?default=false",
+  "blurb": "Percy Jackson isn't expecting freshman orientation to be any fun, but when a mysterious mortal acquaintance appears, pursued by demon cheerleaders, things quickly go from bad to worse. Time is running out for Percy. . .",
+  "popularity": 0.69,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.79,
+   "pacing": 0.71,
+   "character": 0.79,
+   "originality": 0.7,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.42,
+   "complexity": 0.58,
+   "emotion": 0.58
+  }
+ },
+ {
+  "id": "bk_OL2718328W",
+  "title": "The Outsiders",
+  "subtitle": "S. E. Hinton",
+  "year": 1967,
+  "meta": "192 pp",
+  "genres": [
+   "Young Adult",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 131,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7263662-M.jpg?default=false",
+  "blurb": "According to Ponyboy, there are two kinds of people in the world: greasers and socs. A soc (short for \"social\") has money, can get away with just about anything, and has an attitude longer than a limousine.",
+  "popularity": 0.69,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.69,
+   "pacing": 0.66,
+   "character": 0.7,
+   "originality": 0.6,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.6,
+   "emotion": 0.77
+  }
+ },
+ {
+  "id": "bk_OL17714701W",
+  "title": "The Hate U Give",
+  "subtitle": "Angie Thomas",
+  "year": 2017,
+  "meta": "448 pp",
+  "genres": [
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 132,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11521588-M.jpg?default=false",
+  "blurb": "The Hate U Give is a 2017 young adult novel by Angie Thomas. It is Thomas's debut novel, expanded from a short story she wrote in college in reaction to the police shooting of Oscar Grant.",
+  "popularity": 0.69,
+  "factors": {
+   "writing": 0.52,
+   "plot": 0.86,
+   "pacing": 0.92,
+   "character": 0.75,
+   "originality": 0.58,
+   "atmosphere": 0.6
+  },
+  "tone": {
+   "darkness": 0.53,
+   "complexity": 0.36,
+   "emotion": 0.78
+  }
+ },
+ {
+  "id": "bk_OL675783W",
+  "title": "The Handmaid's Tale",
+  "subtitle": "Margaret Atwood",
+  "year": 1985,
+  "meta": "352 pp",
+  "genres": [
+   "Dystopian",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 131,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8231851-M.jpg?default=false",
+  "blurb": "The Handmaid's Tale is a dystopian novel by Canadian author Margaret Atwood, published in 1985. The Handmaid's Tale won the 1985 Governor General's Award and the first Arthur C. ---------- Also contained in: Novels",
+  "popularity": 0.69,
+  "factors": {
+   "writing": 0.78,
+   "plot": 0.84,
+   "pacing": 0.72,
+   "character": 0.73,
+   "originality": 0.71,
+   "atmosphere": 0.8
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.69,
+   "emotion": 0.61
   }
  },
  {
@@ -1047,9 +2334,9 @@
    "count": 120,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14658094-M.jpg",
-  "blurb": "A fantasy standout readers keep coming back to.",
-  "popularity": 0.69,
+  "image": "https://covers.openlibrary.org/b/id/14658094-M.jpg?default=false",
+  "blurb": "The mists are killing people and staying out much longer than they should. The Ashmounts are spewing more and more choking ash into the sky, burying the crops that everyone needs to eat to live.",
+  "popularity": 0.68,
   "factors": {
    "writing": 0.66,
    "plot": 0.84,
@@ -1065,36 +2352,390 @@
   }
  },
  {
+  "id": "bk_OL16664287W",
+  "title": "The Mark of Athena",
+  "subtitle": "Rick Riordan",
+  "year": 2011,
+  "meta": "582 pp",
+  "genres": [
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 123,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12848680-M.jpg?default=false",
+  "blurb": "Annabeth is terrified. Just when she's about to be reunited with Percy—after six months of being apart, thanks to Hera—it looks like Camp Jupiter is preparing for war. And that's only one of her worries. Avenge me. . .",
+  "popularity": 0.68,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.77,
+   "pacing": 0.82,
+   "character": 0.67,
+   "originality": 0.58,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.44,
+   "complexity": 0.52,
+   "emotion": 0.69
+  }
+ },
+ {
+  "id": "bk_OL16117275W",
+  "title": "Caliban's war",
+  "subtitle": "James S. A. Corey",
+  "year": 2012,
+  "meta": "608 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 119,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7314238-M.jpg?default=false",
+  "blurb": "The second book in the NYT best-selling Expanse series, Caliban's War shows a solar system on the brink of war, and the only hope of peace rests on James Holden and the crew of the Rocinante's shoulders. We are not alone.",
+  "popularity": 0.68,
+  "factors": {
+   "writing": 0.75,
+   "plot": 0.81,
+   "pacing": 0.71,
+   "character": 0.63,
+   "originality": 0.8,
+   "atmosphere": 0.74
+  },
+  "tone": {
+   "darkness": 0.53,
+   "complexity": 0.8,
+   "emotion": 0.49
+  }
+ },
+ {
   "id": "bk_OL8193416W",
   "title": "The Picture of Dorian Gray",
   "subtitle": "Oscar Wilde",
   "year": 1890,
   "meta": "246 pp",
   "genres": [
-   "Philosophy",
+   "Thriller",
    "Fantasy",
-   "Horror"
+   "Philosophy"
   ],
   "rating": {
    "value": 4.2,
    "count": 124,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14314858-M.jpg",
-  "blurb": "A philosophy standout readers keep coming back to.",
-  "popularity": 0.69,
+  "image": "https://covers.openlibrary.org/b/id/14314858-M.jpg?default=false",
+  "blurb": "**The Picture of Dorian Gray** is a philosophical novel by Irish writer Oscar Wilde. A shorter novella-length version was published in the July 1890 issue of the American periodical *Lippincott’s Monthly Magazine*.",
+  "popularity": 0.68,
   "factors": {
-   "writing": 0.72,
-   "plot": 0.6,
-   "pacing": 0.55,
+   "writing": 0.69,
+   "plot": 0.67,
+   "pacing": 0.62,
    "character": 0.65,
-   "originality": 0.71,
-   "atmosphere": 0.7
+   "originality": 0.69,
+   "atmosphere": 0.6
   },
   "tone": {
-   "darkness": 0.54,
-   "complexity": 0.61,
+   "darkness": 0.5,
+   "complexity": 0.6,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL16807730W",
+  "title": "House of Hades",
+  "subtitle": "Rick Riordan",
+  "year": 2013,
+  "meta": "597 pp",
+  "genres": [
+   "Romance",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 119,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8057334-M.jpg?default=false",
+  "blurb": "Hazel stands at a crossroads. She and the remaining crew of the Argo II could return home with the Athena Parthenos statue and try to stop Camp Half-Blood and Camp Jupiter from going to war.",
+  "popularity": 0.68,
+  "factors": {
+   "writing": 0.59,
+   "plot": 0.79,
+   "pacing": 0.75,
+   "character": 0.77,
+   "originality": 0.62,
+   "atmosphere": 0.72
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.44,
+   "emotion": 0.71
+  }
+ },
+ {
+  "id": "bk_OL679348W",
+  "title": "The Graveyard Book",
+  "subtitle": "Neil Gaiman",
+  "year": 2008,
+  "meta": "304 pp",
+  "genres": [
+   "Horror",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 121,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7099583-M.jpg?default=false",
+  "blurb": "Bod is an unusual boy who inhabits an unusual place—he's the only living resident of a graveyard. Can a boy raised by ghosts face the wonders and terrors of the worlds of both the living and the dead?",
+  "popularity": 0.68,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.73,
+   "pacing": 0.71,
+   "character": 0.67,
+   "originality": 0.67,
+   "atmosphere": 0.74
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.59,
    "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL52267W",
+  "title": "The Time Machine",
+  "subtitle": "H. G. Wells",
+  "year": 1895,
+  "meta": "120 pp",
+  "genres": [
+   "Dystopian",
+   "Classics",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 126,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9009316-M.jpg?default=false",
+  "blurb": "The Time Traveller, a dreamer obsessed with traveling through time, builds himself a time machine and, much to his surprise, travels over 800,000 years into the future.",
+  "popularity": 0.68,
+  "factors": {
+   "writing": 0.83,
+   "plot": 0.73,
+   "pacing": 0.58,
+   "character": 0.71,
+   "originality": 0.87,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.6,
+   "complexity": 0.71,
+   "emotion": 0.5
+  }
+ },
+ {
+  "id": "bk_OL514629W",
+  "title": "\"Surely You're Joking, Mr. Feynman\"",
+  "subtitle": "Richard Phillips Feynman",
+  "year": 1984,
+  "meta": "352 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 116,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9274698-M.jpg?default=false",
+  "blurb": "The biography of the physicist and Nobel prize winner Richard P. Feynman - a collection of short stories, chapters told to and written down by Ralph Leighton.",
+  "popularity": 0.67,
+  "factors": {
+   "writing": 0.74,
+   "plot": 0.63,
+   "pacing": 0.68,
+   "character": 0.81,
+   "originality": 0.55,
+   "atmosphere": 0.65
+  },
+  "tone": {
+   "darkness": 0.52,
+   "complexity": 0.52,
+   "emotion": 0.87
+  }
+ },
+ {
+  "id": "bk_OL16325201W",
+  "title": "Insurgent",
+  "subtitle": "Veronica Roth",
+  "year": 2011,
+  "meta": "525 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 3.9,
+   "count": 112,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7083755-M.jpg?default=false",
+  "blurb": "One choice can transform you--or it can destroy you. Tris's initiation day should have been marked by celebration and victory with her chosen faction; instead, the day ended with unspeakable horrors.",
+  "popularity": 0.67,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.74,
+   "pacing": 0.81,
+   "character": 0.74,
+   "originality": 0.81,
+   "atmosphere": 0.76
+  },
+  "tone": {
+   "darkness": 0.61,
+   "complexity": 0.6,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL60149W",
+  "title": "Howl's Moving Castle",
+  "subtitle": "Diana Wynne Jones",
+  "year": 1986,
+  "meta": "304 pp",
+  "genres": [
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 106,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8783945-M.jpg?default=false",
+  "blurb": "As the oldest daughter, willful, outspoken Sophie knew that her life could lead to nothing but mistakes. The witch casts a spell turning Sophie into an old woman.",
+  "popularity": 0.66,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.83,
+   "pacing": 0.77,
+   "character": 0.78,
+   "originality": 0.61,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.56,
+   "emotion": 0.63
+  }
+ },
+ {
+  "id": "bk_OL17610507W",
+  "title": "Death's End (The Three-Body Problem Series Book 3)",
+  "subtitle": "刘慈欣",
+  "year": 2010,
+  "meta": "724 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 103,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7893958-M.jpg?default=false",
+  "blurb": "Soon to be a Netflix Original Series! With The Three-Body Problem, English-speaking readers got their first chance to read China's most beloved science fiction author, Cixin Liu.",
+  "popularity": 0.66,
+  "factors": {
+   "writing": 0.71,
+   "plot": 0.79,
+   "pacing": 0.68,
+   "character": 0.67,
+   "originality": 0.78,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.59,
+   "complexity": 0.67,
+   "emotion": 0.45
+  }
+ },
+ {
+  "id": "bk_OL11999891W",
+  "title": "The Help",
+  "subtitle": "Kathryn Stockett",
+  "year": 2009,
+  "meta": "479 pp",
+  "genres": [
+   "Literary Fiction",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 105,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8387264-M.jpg?default=false",
+  "blurb": "Three ordinary women are about to take one extraordinary step. Twenty-two-year-old Skeeter has just returned home after graduating from Ole Miss. But her new boss has secrets of her own. And why?",
+  "popularity": 0.66,
+  "factors": {
+   "writing": 0.92,
+   "plot": 0.65,
+   "pacing": 0.47,
+   "character": 0.9,
+   "originality": 0.64,
+   "atmosphere": 0.72
+  },
+  "tone": {
+   "darkness": 0.61,
+   "complexity": 0.74,
+   "emotion": 0.79
+  }
+ },
+ {
+  "id": "bk_OL875437W",
+  "title": "The Perks of Being a Wallflower",
+  "subtitle": "Stephen Chbosky",
+  "year": 1999,
+  "meta": "231 pp",
+  "genres": [
+   "Literary Fiction",
+   "Young Adult",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 108,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14315052-M.jpg?default=false",
+  "blurb": "The Perks of Being a Wallflower is a young adult coming-of-age epistolary novel by American writer Stephen Chbosky, which was first published on February 1, 1999, by Pocket Books.",
+  "popularity": 0.66,
+  "factors": {
+   "writing": 0.75,
+   "plot": 0.62,
+   "pacing": 0.59,
+   "character": 0.81,
+   "originality": 0.67,
+   "atmosphere": 0.67
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.62,
+   "emotion": 0.69
   }
  },
  {
@@ -1113,9 +2754,9 @@
    "count": 108,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/9334567-M.jpg",
-  "blurb": "A mystery standout readers keep coming back to.",
-  "popularity": 0.67,
+  "image": "https://covers.openlibrary.org/b/id/9334567-M.jpg?default=false",
+  "blurb": "The Green Mile is a 1996 serial novel by American writer Stephen King. The serial novel was originally released in six volumes before being republished as a single-volume work. The book is an example of magical realism.",
+  "popularity": 0.66,
   "factors": {
    "writing": 0.68,
    "plot": 0.78,
@@ -1126,8 +2767,41 @@
   },
   "tone": {
    "darkness": 0.82,
-   "complexity": 0.57,
+   "complexity": 0.58,
    "emotion": 0.5
+  }
+ },
+ {
+  "id": "bk_OL81616W",
+  "title": "The Drawing of the Three",
+  "subtitle": "Stephen King",
+  "year": 1987,
+  "meta": "455 pp",
+  "genres": [
+   "Horror",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 103,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14651245-M.jpg?default=false",
+  "blurb": "[The Dark Tower][1] II Part II of an epic saga. Roland, the last gunslinger, encounters three mysterious doorways on the beach. Each one enters into a different person living in New York. ([source][2]) [1]: [2]:",
+  "popularity": 0.66,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.81,
+   "pacing": 0.71,
+   "character": 0.62,
+   "originality": 0.71,
+   "atmosphere": 0.83
+  },
+  "tone": {
+   "darkness": 0.74,
+   "complexity": 0.68,
+   "emotion": 0.62
   }
  },
  {
@@ -1144,9 +2818,9 @@
    "count": 103,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/9147132-M.jpg",
-  "blurb": "A memoir standout readers keep coming back to.",
-  "popularity": 0.67,
+  "image": "https://covers.openlibrary.org/b/id/9147132-M.jpg?default=false",
+  "blurb": "A true story from Raina's early years. One day after girl scouts raina trips and falls damaging her two front teeth. Even after she gets her braces off she isn't treated the same.",
+  "popularity": 0.66,
   "factors": {
    "writing": 0.72,
    "plot": 0.57,
@@ -1162,35 +2836,328 @@
   }
  },
  {
-  "id": "bk_OL60149W",
-  "title": "Howl's Moving Castle",
-  "subtitle": "Diana Wynne Jones",
-  "year": 1986,
-  "meta": "304 pp",
+  "id": "bk_OL1037811W",
+  "title": "Wings of Fire",
+  "subtitle": "A. P. J. Abdul Kalam",
+  "year": 1999,
+  "meta": "180 pp",
   "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 103,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9153819-M.jpg?default=false",
+  "blurb": "As chief of the country’s defence research and development programme, Kalam demonstrated the great potential for dynamism and innovation that existed in seemingly moribund research establishments.",
+  "popularity": 0.66,
+  "factors": {
+   "writing": 0.84,
+   "plot": 0.6,
+   "pacing": 0.57,
+   "character": 0.88,
+   "originality": 0.65,
+   "atmosphere": 0.57
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.5,
+   "emotion": 0.81
+  }
+ },
+ {
+  "id": "bk_OL515754W",
+  "title": "Flowers for Algernon",
+  "subtitle": "Daniel Keyes",
+  "year": 1966,
+  "meta": "274 pp",
+  "genres": [
+   "Young Adult",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 105,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12947700-M.jpg?default=false",
+  "blurb": "Until he was thirty-two, Charlie Gordon --gentle, amiable, oddly engaging-- had lived in a kind of mental twilight. There was even a white mouse named Algernon who outpaced Charlie in some ways.",
+  "popularity": 0.66,
+  "factors": {
+   "writing": 0.65,
+   "plot": 0.73,
+   "pacing": 0.69,
+   "character": 0.7,
+   "originality": 0.68,
+   "atmosphere": 0.72
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.48,
+   "emotion": 0.53
+  }
+ },
+ {
+  "id": "bk_OL2096536W",
+  "title": "Watership Down",
+  "subtitle": "Richard Adams",
+  "year": 1972,
+  "meta": "478 pp",
+  "genres": [
+   "Classics",
    "Young Adult",
    "Fantasy"
   ],
   "rating": {
-   "value": 4.5,
+   "value": 4.2,
    "count": 106,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8783945-M.jpg",
-  "blurb": "“In the land of Ingary, where such things as seven-league boots and cloaks of invisibility really exist, it is quite a misfortune to be born the eldest of three.”",
-  "popularity": 0.67,
+  "image": "https://covers.openlibrary.org/b/id/6450196-M.jpg?default=false",
+  "blurb": "A phenomenal worldwide bestseller for more than forty years, Richard Adams's *Watership Down* is a timeless classic and one of the most beloved novels of all time.",
+  "popularity": 0.66,
   "factors": {
-   "writing": 0.64,
-   "plot": 0.83,
-   "pacing": 0.77,
-   "character": 0.78,
-   "originality": 0.61,
+   "writing": 0.71,
+   "plot": 0.75,
+   "pacing": 0.65,
+   "character": 0.79,
+   "originality": 0.68,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.48,
+   "complexity": 0.58,
+   "emotion": 0.72
+  }
+ },
+ {
+  "id": "bk_OL3368288W",
+  "title": "The Giving Tree",
+  "subtitle": "Shel Silverstein",
+  "year": 1964,
+  "meta": "57 pp",
+  "genres": [
+   "Classics",
+   "Young Adult",
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 104,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8981758-M.jpg?default=false",
+  "blurb": "From Shel Silverstein, New York Times bestselling author of Where the Sidewalk Ends and A Light in the Attic, comes a poignant picture book about love and acceptance, cherished for over fifty years.",
+  "popularity": 0.66,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.69,
+   "pacing": 0.67,
+   "character": 0.73,
+   "originality": 0.6,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.39,
+   "complexity": 0.51,
+   "emotion": 0.81
+  }
+ },
+ {
+  "id": "bk_OL18766691W",
+  "title": "Where the Crawdads Sing",
+  "subtitle": "Delia Owens",
+  "year": 2018,
+  "meta": "416 pp",
+  "genres": [
+   "Literary Fiction",
+   "Mystery",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 99,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8362947-M.jpg?default=false",
+  "blurb": "For years, rumors of the “Marsh Girl” have haunted Barkley Cove, a quiet town on the North Carolina coast. But Kya is not what they say. Then the time comes when she yearns to be touched and loved.",
+  "popularity": 0.65,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.64,
+   "pacing": 0.53,
+   "character": 0.71,
+   "originality": 0.71,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.6,
+   "emotion": 0.66
+  }
+ },
+ {
+  "id": "bk_OL2897797W",
+  "title": "V for Vendetta",
+  "subtitle": "Alan Moore",
+  "year": 1988,
+  "meta": "296 pp",
+  "genres": [
+   "Literary Fiction",
+   "Science Fiction",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 98,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12293384-M.jpg?default=false",
+  "blurb": "A seminal graphic novel that defined sophisticated storytelling, Alan Moore's best-selling V For Vendetta is a terrifying portrait of totalitarianism and resistance, superbly illustrated by artist David Lloyd.",
+  "popularity": 0.65,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.73,
+   "pacing": 0.6,
+   "character": 0.65,
+   "originality": 0.69,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.72,
+   "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL486967W",
+  "title": "The Princess Bride",
+  "subtitle": "William Goldman",
+  "year": 1973,
+  "meta": "399 pp",
+  "genres": [
+   "Romance",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 98,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9284881-M.jpg?default=false",
+  "blurb": "*The Princess Bride is a timeless tale that pits country against country, good against evil, love against hate. the princess bride, the most perfect, beautiful woman in the history of the world!",
+  "popularity": 0.65,
+  "factors": {
+   "writing": 0.59,
+   "plot": 0.78,
+   "pacing": 0.68,
+   "character": 0.84,
+   "originality": 0.71,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.48,
+   "emotion": 0.73
+  }
+ },
+ {
+  "id": "bk_OL114967W",
+  "title": "The Jungle",
+  "subtitle": "Upton Sinclair",
+  "year": 1791,
+  "meta": "350 pp",
+  "genres": [
+   "Historical Fiction",
+   "Classics",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 96,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8231790-M.jpg?default=false",
+  "blurb": "“IT WAS four o'clock when the ceremony was over and the carriages began to arrive.”",
+  "popularity": 0.65,
+  "factors": {
+   "writing": 0.88,
+   "plot": 0.63,
+   "pacing": 0.49,
+   "character": 0.8,
+   "originality": 0.73,
+   "atmosphere": 0.7
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.65,
+   "emotion": 0.79
+  }
+ },
+ {
+  "id": "bk_OL77746W",
+  "title": "Anne of Green Gables",
+  "subtitle": "Lucy Maud Montgomery",
+  "year": 1908,
+  "meta": "309 pp",
+  "genres": [
+   "Memoir",
+   "Young Adult",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 100,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14641084-M.jpg?default=false",
+  "blurb": "Anne, an eleven-year-old orphan, is sent by mistake to live with a lonely, middle-aged brother and sister on a Prince Edward Island farm and proceeds to make an indelible impression on everyone around her.",
+  "popularity": 0.65,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.64,
+   "pacing": 0.63,
+   "character": 0.85,
+   "originality": 0.56,
    "atmosphere": 0.69
   },
   "tone": {
    "darkness": 0.57,
-   "complexity": 0.56,
-   "emotion": 0.63
+   "complexity": 0.57,
+   "emotion": 0.73
+  }
+ },
+ {
+  "id": "bk_OL74128W",
+  "title": "A short history of nearly everything",
+  "subtitle": "Bill Bryson",
+  "year": 2003,
+  "meta": "592 pp",
+  "genres": [
+   "Philosophy"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 101,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12725620-M.jpg?default=false",
+  "blurb": "It was one of the bestselling popular science books of 2005 in the United Kingdom, selling over 300,000 copies. In it, he explores time from the Big Bang to the discovery of quantum mechanics, via evolution and geology.",
+  "popularity": 0.65,
+  "factors": {
+   "writing": 0.8,
+   "plot": 0.35,
+   "pacing": 0.4,
+   "character": 0.46,
+   "originality": 0.69,
+   "atmosphere": 0.61
+  },
+  "tone": {
+   "darkness": 0.34,
+   "complexity": 0.75,
+   "emotion": 0.41
   }
  },
  {
@@ -1204,12 +3171,12 @@
   ],
   "rating": {
    "value": 4.7,
-   "count": 89,
+   "count": 93,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14658334-M.jpg",
-  "blurb": "A fantasy standout readers keep coming back to.",
-  "popularity": 0.65,
+  "image": "https://covers.openlibrary.org/b/id/14658334-M.jpg?default=false",
+  "blurb": "The eagerly awaited sequel to the New York Times bestselling The Way of Kings. So began the Vengeance Pact among the highprinces of Alethkar and the War of Reckoning against the Parshendi.",
+  "popularity": 0.64,
   "factors": {
    "writing": 0.76,
    "plot": 0.7,
@@ -1225,72 +3192,6 @@
   }
  },
  {
-  "id": "bk_OL17332479W",
-  "title": "Six of Crows",
-  "subtitle": "Leigh Bardugo",
-  "year": 2015,
-  "meta": "512 pp",
-  "genres": [
-   "Science Fiction",
-   "Young Adult",
-   "Fantasy"
-  ],
-  "rating": {
-   "value": 4.5,
-   "count": 90,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/12667417-M.jpg",
-  "blurb": "A science fiction standout readers keep coming back to.",
-  "popularity": 0.65,
-  "factors": {
-   "writing": 0.69,
-   "plot": 0.79,
-   "pacing": 0.83,
-   "character": 0.74,
-   "originality": 0.66,
-   "atmosphere": 0.68
-  },
-  "tone": {
-   "darkness": 0.5,
-   "complexity": 0.5,
-   "emotion": 0.69
-  }
- },
- {
-  "id": "bk_OL2625431W",
-  "title": "海辺のカフカ",
-  "subtitle": "村上春樹",
-  "year": 2001,
-  "meta": "576 pp",
-  "genres": [
-   "Magical Realism",
-   "Mystery",
-   "Young Adult"
-  ],
-  "rating": {
-   "value": 4,
-   "count": 93,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/4982600-M.jpg",
-  "blurb": "A magical realism standout readers keep coming back to.",
-  "popularity": 0.65,
-  "factors": {
-   "writing": 0.69,
-   "plot": 0.78,
-   "pacing": 0.78,
-   "character": 0.77,
-   "originality": 0.71,
-   "atmosphere": 0.81
-  },
-  "tone": {
-   "darkness": 0.51,
-   "complexity": 0.57,
-   "emotion": 0.71
-  }
- },
- {
   "id": "bk_OL17834026W",
   "title": "Oathbringer",
   "subtitle": "Brandon Sanderson",
@@ -1301,11 +3202,11 @@
   ],
   "rating": {
    "value": 4.5,
-   "count": 88,
+   "count": 89,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14658111-M.jpg",
-  "blurb": "A fantasy standout readers keep coming back to.",
+  "image": "https://covers.openlibrary.org/b/id/14658111-M.jpg?default=false",
+  "blurb": "While on a desperate flight to warn his family of the threat, Kaladin Stormblessed must come to grips with the fact that the newly kindled anger of the parshmen may be wholly justified.",
   "popularity": 0.64,
   "factors": {
    "writing": 0.7,
@@ -1322,36 +3223,359 @@
   }
  },
  {
-  "id": "bk_OL274505W",
-  "title": "Cien años de soledad",
-  "subtitle": "Gabriel García Márquez",
-  "year": 1967,
-  "meta": "432 pp",
+  "id": "bk_OL17332479W",
+  "title": "Six of Crows",
+  "subtitle": "Leigh Bardugo",
+  "year": 2015,
+  "meta": "512 pp",
   "genres": [
-   "Magical Realism",
+   "Fantasy",
+   "Young Adult",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 90,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12667417-M.jpg?default=false",
+  "blurb": "BOOK ONE of the Six of Crows Duology Six of Crows is a fantasy novel written by the Israeli-American author Leigh Bardugo published by Henry Holt and Co. in 2015. Followed by: [Crooked Kingdom][2] [2]:",
+  "popularity": 0.64,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.79,
+   "pacing": 0.83,
+   "character": 0.74,
+   "originality": 0.66,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.5,
+   "emotion": 0.69
+  }
+ },
+ {
+  "id": "bk_OL6216050W",
+  "title": "Stories of Your Life and Others",
+  "subtitle": "Ted Chiang",
+  "year": 2002,
+  "meta": "317 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 90,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/524046-M.jpg?default=false",
+  "blurb": "Ted Chiang's first published story, \"Tower of Babylon,\" won the Nebula Award in 1990. He won the John W. Campbell Award for Best New Writer in 1992. Story for story, he is the most honored young writer in modern SF. . .",
+  "popularity": 0.64,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.78,
+   "pacing": 0.61,
+   "character": 0.68,
+   "originality": 0.81,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.72,
+   "emotion": 0.46
+  }
+ },
+ {
+  "id": "bk_OL1209288W",
+  "title": "Im Westen nichts Neues",
+  "subtitle": "Erich Maria Remarque",
+  "year": 1928,
+  "meta": "248 pp",
+  "genres": [
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 93,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12706822-M.jpg?default=false",
+  "blurb": "This is the testament of Paul Bäumer, who enlists with his classmates in the German army of World War I. if only he can come out of the war alive.",
+  "popularity": 0.64,
+  "factors": {
+   "writing": 0.88,
+   "plot": 0.6,
+   "pacing": 0.43,
+   "character": 0.93,
+   "originality": 0.75,
+   "atmosphere": 0.86
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.69,
+   "emotion": 0.82
+  }
+ },
+ {
+  "id": "bk_OL81618W",
+  "title": "The Stand",
+  "subtitle": "Stephen King",
+  "year": 1978,
+  "meta": "1153 pp",
+  "genres": [
+   "Thriller",
+   "Horror",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 90,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9255992-M.jpg?default=false",
+  "blurb": "In the aftermath, survivors choose between following an elderly black woman to Boulder or the dark man, Randall Flagg, who has set up his command post in Las Vegas. ([source][1]) [1]:",
+  "popularity": 0.64,
+  "factors": {
+   "writing": 0.62,
+   "plot": 0.84,
+   "pacing": 0.82,
+   "character": 0.55,
+   "originality": 0.67,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.66,
+   "complexity": 0.66,
+   "emotion": 0.58
+  }
+ },
+ {
+  "id": "bk_OL45886W",
+  "title": "The Witches",
+  "subtitle": "Roald Dahl",
+  "year": 1983,
+  "meta": "208 pp",
+  "genres": [
+   "Classics",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 93,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12374442-M.jpg?default=false",
+  "blurb": "A young boy and his Norwegian grandmother, who is an expert on witches, together foil a witches' plot to destroy the world's children by turning them into mice.",
+  "popularity": 0.64,
+  "factors": {
+   "writing": 0.81,
+   "plot": 0.76,
+   "pacing": 0.7,
+   "character": 0.76,
+   "originality": 0.62,
+   "atmosphere": 0.73
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.64,
+   "emotion": 0.66
+  }
+ },
+ {
+  "id": "bk_OL262438W",
+  "title": "The Sign of Four",
+  "subtitle": "Arthur Conan Doyle",
+  "year": 1889,
+  "meta": "156 pp",
+  "genres": [
    "Literary Fiction",
-   "Romance"
+   "Mystery",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 88,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9247987-M.jpg?default=false",
+  "blurb": "The Sign of the Four (1890), also called The Sign of Four, is the second novel featuring Sherlock Holmes written by Sir Arthur Conan Doyle.",
+  "popularity": 0.63,
+  "factors": {
+   "writing": 0.83,
+   "plot": 0.73,
+   "pacing": 0.58,
+   "character": 0.83,
+   "originality": 0.76,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.59,
+   "complexity": 0.6,
+   "emotion": 0.6
+  }
+ },
+ {
+  "id": "bk_OL58402W",
+  "title": "Guess How Much I Love You",
+  "subtitle": "Sam McBratney",
+  "year": 1994,
+  "meta": "32 pp",
+  "genres": [
+   "Romance",
+   "Young Adult",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 86,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/13282906-M.jpg?default=false",
+  "blurb": "Welcome the family classic with an elegant, refreshed cover — the quintessential picture book, just waiting to be shared. But, as Little Nutbrown Hare and Big Nutbrown Hare discover, love is not an easy thing to measure!",
+  "popularity": 0.63,
+  "factors": {
+   "writing": 0.79,
+   "plot": 0.72,
+   "pacing": 0.68,
+   "character": 0.79,
+   "originality": 0.56,
+   "atmosphere": 0.59
+  },
+  "tone": {
+   "darkness": 0.38,
+   "complexity": 0.49,
+   "emotion": 0.8
+  }
+ },
+ {
+  "id": "bk_OL18020192W",
+  "title": "The Hired Girl",
+  "subtitle": "Laura Amy Schlitz",
+  "year": 2015,
+  "meta": "400 pp",
+  "genres": [
+   "Historical Fiction",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 87,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11610624-M.jpg?default=false",
+  "blurb": "Ever since the untimely death of her mother, 14 year-old Joan Skraggs has been desperately unhappy. And it's a comedy.",
+  "popularity": 0.63,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.67,
+   "pacing": 0.68,
+   "character": 0.84,
+   "originality": 0.65,
+   "atmosphere": 0.73
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.49,
+   "emotion": 0.73
+  }
+ },
+ {
+  "id": "bk_OL17202418W",
+  "title": "Station Eleven",
+  "subtitle": "Emily St. John Mandel",
+  "year": 2014,
+  "meta": "352 pp",
+  "genres": [
+   "Dystopian",
+   "Literary Fiction",
+   "Science Fiction"
   ],
   "rating": {
    "value": 4.1,
    "count": 86,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/12627383-M.jpg",
-  "blurb": "A magical realism standout readers keep coming back to.",
-  "popularity": 0.64,
+  "image": "https://covers.openlibrary.org/b/id/7369961-M.jpg?default=false",
+  "blurb": "One snowy night Arthur Leander, a famous actor, has a heart attack onstage during a production of \"King Lear.\" Jeevan Chaudhary, a paparazzo-turned-EMT, is in the audience and leaps to his aid.",
+  "popularity": 0.63,
   "factors": {
-   "writing": 0.81,
-   "plot": 0.63,
-   "pacing": 0.54,
-   "character": 0.77,
-   "originality": 0.81,
-   "atmosphere": 0.77
+   "writing": 0.82,
+   "plot": 0.67,
+   "pacing": 0.7,
+   "character": 0.72,
+   "originality": 0.87,
+   "atmosphere": 0.81
   },
   "tone": {
-   "darkness": 0.54,
-   "complexity": 0.66,
-   "emotion": 0.77
+   "darkness": 0.63,
+   "complexity": 0.76,
+   "emotion": 0.57
+  }
+ },
+ {
+  "id": "bk_OL16821606W",
+  "title": "All the Light We Cannot See",
+  "subtitle": "Anthony Doerr",
+  "year": 2014,
+  "meta": "544 pp",
+  "genres": [
+   "Literary Fiction",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 81,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14559680-M.jpg?default=false",
+  "blurb": "Marie Laure lives with her father in Paris within walking distance of the Museum of Natural History where he works as the master of the locks (there are thousands of locks in the museum).",
+  "popularity": 0.62,
+  "factors": {
+   "writing": 0.91,
+   "plot": 0.59,
+   "pacing": 0.55,
+   "character": 0.78,
+   "originality": 0.58,
+   "atmosphere": 0.81
+  },
+  "tone": {
+   "darkness": 0.52,
+   "complexity": 0.58,
+   "emotion": 0.79
+  }
+ },
+ {
+  "id": "bk_OL9200964W",
+  "title": "Preludes & Nocturnes",
+  "subtitle": "Neil Gaiman",
+  "year": 1991,
+  "meta": "240 pp",
+  "genres": [
+   "Horror",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 78,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7508162-M.jpg?default=false",
+  "blurb": "Preludes and Nocturnes collects the first eight issues of The Sandman comic by Neil Gaiman published by DC Vertigo. The series centers on Morpheus (Dream of the Endless).",
+  "popularity": 0.62,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.64,
+   "pacing": 0.68,
+   "character": 0.65,
+   "originality": 0.77,
+   "atmosphere": 0.82
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.52,
+   "emotion": 0.53
   }
  },
  {
@@ -1368,9 +3592,9 @@
    "count": 79,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/9156872-M.jpg",
-  "blurb": "A memoir standout readers keep coming back to.",
-  "popularity": 0.63,
+  "image": "https://covers.openlibrary.org/b/id/9156872-M.jpg?default=false",
+  "blurb": "The prison memoirs of the Soviet dissident and Jewish activist relate the harrowing events of his nine years in KGB custody, from interrogation to release.",
+  "popularity": 0.62,
   "factors": {
    "writing": 0.83,
    "plot": 0.6,
@@ -1401,9 +3625,9 @@
    "count": 74,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/7396660-M.jpg",
-  "blurb": "“I hope I'm getting extra credit for this.”",
-  "popularity": 0.62,
+  "image": "https://covers.openlibrary.org/b/id/7396660-M.jpg?default=false",
+  "blurb": "\"A publisher in New York asked me to write down what I know about the Greek gods, and I was like, 'Can we do this anonymously?' Because I don't need the Olympians mad at me again.",
+  "popularity": 0.61,
   "factors": {
    "writing": 0.72,
    "plot": 0.74,
@@ -1416,6 +3640,198 @@
    "darkness": 0.48,
    "complexity": 0.53,
    "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL1966488W",
+  "title": "The Selfish Gene",
+  "subtitle": "Richard Dawkins",
+  "year": 1976,
+  "meta": "352 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 73,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/133936-M.jpg?default=false",
+  "blurb": "As influential today as when it was first published, The Selfish Gene has become a classic exposition of evolutionary thought. Forty years later, its insights remain as relevant today as on the day it was published.",
+  "popularity": 0.61,
+  "factors": {
+   "writing": 0.61,
+   "plot": 0.86,
+   "pacing": 0.59,
+   "character": 0.66,
+   "originality": 0.89,
+   "atmosphere": 0.63
+  },
+  "tone": {
+   "darkness": 0.56,
+   "complexity": 0.77,
+   "emotion": 0.44
+  }
+ },
+ {
+  "id": "bk_OL307247W",
+  "title": "Bumi Manusia",
+  "subtitle": "Pramoedya Ananta Toer",
+  "year": 1972,
+  "meta": "360 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 73,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6643692-M.jpg?default=false",
+  "blurb": "Pramoedya Ananta Toer's 1972 science fiction — ★ 4.4 from 73 Open Library readers.",
+  "popularity": 0.61,
+  "factors": {
+   "writing": 0.61,
+   "plot": 0.83,
+   "pacing": 0.71,
+   "character": 0.56,
+   "originality": 0.92,
+   "atmosphere": 0.71
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.69,
+   "emotion": 0.49
+  }
+ },
+ {
+  "id": "bk_OL14911626W",
+  "title": "Anathem",
+  "subtitle": "Neal Stephenson",
+  "year": 2008,
+  "meta": "937 pp",
+  "genres": [
+   "Thriller",
+   "Philosophy",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 74,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6304233-M.jpg?default=false",
+  "blurb": "Over the centuries, cities and governments have risen and fallen beyond the concent's walls. . . and beyond.",
+  "popularity": 0.61,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.74,
+   "pacing": 0.62,
+   "character": 0.53,
+   "originality": 0.74,
+   "atmosphere": 0.66
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.75,
+   "emotion": 0.49
+  }
+ },
+ {
+  "id": "bk_OL1914022W",
+  "title": "The Pillars of the Earth",
+  "subtitle": "Ken Follett",
+  "year": 1989,
+  "meta": "1040 pp",
+  "genres": [
+   "Thriller",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 72,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9269909-M.jpg?default=false",
+  "blurb": "The Pillars of the Earth is a historical novel by Welsh author Ken Follett published in 1989 about the building of a cathedral in the fictional town of Kingsbridge, England.",
+  "popularity": 0.61,
+  "factors": {
+   "writing": 0.71,
+   "plot": 0.73,
+   "pacing": 0.77,
+   "character": 0.64,
+   "originality": 0.53,
+   "atmosphere": 0.65
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.55,
+   "emotion": 0.68
+  }
+ },
+ {
+  "id": "bk_OL16361029W",
+  "title": "The Selection (The Selection #1)",
+  "subtitle": "Kiera Cass",
+  "year": 2012,
+  "meta": "328 pp",
+  "genres": [
+   "Romance",
+   "Young Adult",
+   "Dystopian"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 72,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7101900-M.jpg?default=false",
+  "blurb": "For thirty-five girls, the Selection is the chance of a lifetime. The opportunity to escape the life laid out for them since birth. To be swept up in a world of glittering gowns and priceless jewels.",
+  "popularity": 0.61,
+  "factors": {
+   "writing": 0.71,
+   "plot": 0.8,
+   "pacing": 0.77,
+   "character": 0.76,
+   "originality": 0.65,
+   "atmosphere": 0.76
+  },
+  "tone": {
+   "darkness": 0.46,
+   "complexity": 0.54,
+   "emotion": 0.73
+  }
+ },
+ {
+  "id": "bk_OL17203232W",
+  "title": "Dork Diaries 7",
+  "subtitle": "Rachel Renée Russell",
+  "year": 2014,
+  "meta": "344 pp",
+  "genres": [
+   "Romance",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 73,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7879562-M.jpg?default=false",
+  "blurb": "This is yet another book of Dork Diaries. Nikki is getting her shot to become famous on the news, but there's obstacles. 1.Mackenzie. Will there be another Big Mac attack? 2.Brianna. Let's see if Brianna strikes again.",
+  "popularity": 0.61,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.66,
+   "pacing": 0.78,
+   "character": 0.89,
+   "originality": 0.63,
+   "atmosphere": 0.54
+  },
+  "tone": {
+   "darkness": 0.37,
+   "complexity": 0.33,
+   "emotion": 0.73
   }
  },
  {
@@ -1433,9 +3849,9 @@
    "count": 74,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8075533-M.jpg",
-  "blurb": "A horror standout readers keep coming back to.",
-  "popularity": 0.62,
+  "image": "https://covers.openlibrary.org/b/id/8075533-M.jpg?default=false",
+  "blurb": "After they discover a way inside, they realize that things are not as they used to be. The four adult-sized animatronic mascots that once entertained patrons have changed. They now have a dark secret . . .",
+  "popularity": 0.61,
   "factors": {
    "writing": 0.72,
    "plot": 0.69,
@@ -1447,6 +3863,39 @@
   "tone": {
    "darkness": 0.67,
    "complexity": 0.56,
+   "emotion": 0.65
+  }
+ },
+ {
+  "id": "bk_OL453697W",
+  "title": "Small Gods",
+  "subtitle": "Terry Pratchett",
+  "year": 1992,
+  "meta": "351 pp",
+  "genres": [
+   "Horror",
+   "Science Fiction",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 75,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14648232-M.jpg?default=false",
+  "blurb": "In the beginning was the Word. And the Word was: \"Hey, you!\" For Brutha the novice is the Chosen One. He wants peace and justice and brotherly love. He also wants the Inquisition to stop torturing him now, please...",
+  "popularity": 0.61,
+  "factors": {
+   "writing": 0.62,
+   "plot": 0.7,
+   "pacing": 0.76,
+   "character": 0.73,
+   "originality": 0.73,
+   "atmosphere": 0.89
+  },
+  "tone": {
+   "darkness": 0.71,
+   "complexity": 0.57,
    "emotion": 0.65
   }
  },
@@ -1464,9 +3913,9 @@
    "count": 75,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14559604-M.jpg",
-  "blurb": "“March 5, 1973, Daly City, California-I'm late.”",
-  "popularity": 0.62,
+  "image": "https://covers.openlibrary.org/b/id/14559604-M.jpg?default=false",
+  "blurb": "This book chronicles the unforgettable account of one of the most severe child abuse cases in California history. The outside world knew nothing of his living nightmare.",
+  "popularity": 0.61,
   "factors": {
    "writing": 0.67,
    "plot": 0.61,
@@ -1479,72 +3928,6 @@
    "darkness": 0.53,
    "complexity": 0.53,
    "emotion": 0.82
-  }
- },
- {
-  "id": "bk_OL14911626W",
-  "title": "Anathem",
-  "subtitle": "Neal Stephenson",
-  "year": 2008,
-  "meta": "937 pp",
-  "genres": [
-   "Philosophy",
-   "Science Fiction",
-   "Thriller"
-  ],
-  "rating": {
-   "value": 4.3,
-   "count": 74,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/6304233-M.jpg",
-  "blurb": "A philosophy standout readers keep coming back to.",
-  "popularity": 0.62,
-  "factors": {
-   "writing": 0.67,
-   "plot": 0.74,
-   "pacing": 0.62,
-   "character": 0.53,
-   "originality": 0.74,
-   "atmosphere": 0.66
-  },
-  "tone": {
-   "darkness": 0.62,
-   "complexity": 0.75,
-   "emotion": 0.49
-  }
- },
- {
-  "id": "bk_OL16361029W",
-  "title": "The Selection (The Selection #1)",
-  "subtitle": "Kiera Cass",
-  "year": 2012,
-  "meta": "328 pp",
-  "genres": [
-   "Dystopian",
-   "Romance",
-   "Young Adult"
-  ],
-  "rating": {
-   "value": 4.3,
-   "count": 72,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/7101900-M.jpg",
-  "blurb": "A dystopian standout readers keep coming back to.",
-  "popularity": 0.62,
-  "factors": {
-   "writing": 0.71,
-   "plot": 0.8,
-   "pacing": 0.77,
-   "character": 0.76,
-   "originality": 0.65,
-   "atmosphere": 0.76
-  },
-  "tone": {
-   "darkness": 0.46,
-   "complexity": 0.54,
-   "emotion": 0.73
   }
  },
  {
@@ -1562,9 +3945,9 @@
    "count": 76,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8264706-M.jpg",
-  "blurb": "“Er waren geen ramen in de Brin 2-faciliteit - door de rotatie was 'buiten' altijd 'beneden'; onder je voeten, uit je gedachten.”",
-  "popularity": 0.62,
+  "image": "https://covers.openlibrary.org/b/id/8264706-M.jpg?default=false",
+  "blurb": "The last remnants of the human race left a dying Earth, desperate to find a new home. But all is not right in this new Eden. The planet is not waiting for them, pristine and unoccupied.",
+  "popularity": 0.61,
   "factors": {
    "writing": 0.7,
    "plot": 0.79,
@@ -1594,9 +3977,9 @@
    "count": 71,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14648856-M.jpg",
-  "blurb": "“The Morris dance is common to all inhabited worlds in the multiverse.”",
-  "popularity": 0.61,
+  "image": "https://covers.openlibrary.org/b/id/14648856-M.jpg?default=false",
+  "blurb": "They say there are only two things you can count on ...But that was before DEATH started pondering the existential.",
+  "popularity": 0.6,
   "factors": {
    "writing": 0.7,
    "plot": 0.85,
@@ -1609,6 +3992,199 @@
    "darkness": 0.7,
    "complexity": 0.62,
    "emotion": 0.65
+  }
+ },
+ {
+  "id": "bk_OL17203233W",
+  "title": "To All the Boys I've Loved Before",
+  "subtitle": "Jenny Han",
+  "year": 2014,
+  "meta": "373 pp",
+  "genres": [
+   "Romance",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 70,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7370711-M.jpg?default=false",
+  "blurb": "What if all the crushes you ever had found out how you felt about them… all at once? Sixteen-year-old Lara Jean Covey keeps her love letters in a hatbox her mother gave her. One for every boy she’s ever loved—five in all.",
+  "popularity": 0.6,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.8,
+   "pacing": 0.75,
+   "character": 0.76,
+   "originality": 0.59,
+   "atmosphere": 0.58
+  },
+  "tone": {
+   "darkness": 0.42,
+   "complexity": 0.33,
+   "emotion": 0.78
+  }
+ },
+ {
+  "id": "bk_OL20128158W",
+  "title": "Gideon the Ninth",
+  "subtitle": "Tamsyn Muir",
+  "year": 2019,
+  "meta": "440 pp",
+  "genres": [
+   "Horror",
+   "Science Fiction",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 69,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10139515-M.jpg?default=false",
+  "blurb": "\"The Emperor needs necromancers. The Ninth Necromancer needs a swordswoman. Gideon has a sword, some dirty magazines, and no more time for undead nonsense. The result is a heart-pounding epic science fantasy.",
+  "popularity": 0.6,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.69,
+   "pacing": 0.6,
+   "character": 0.6,
+   "originality": 0.81,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.69,
+   "emotion": 0.52
+  }
+ },
+ {
+  "id": "bk_OL26663382W",
+  "title": "I'm Glad My Mom Died",
+  "subtitle": "Jennette McCurdy",
+  "year": 2022,
+  "meta": "320 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 70,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12855985-M.jpg?default=false",
+  "blurb": "Jennette McCurdy was six years old when she had her first acting audition. Her mother’s dream was for her only daughter to become a star, and Jennette would do anything to make her mother happy.",
+  "popularity": 0.6,
+  "factors": {
+   "writing": 0.81,
+   "plot": 0.47,
+   "pacing": 0.65,
+   "character": 0.91,
+   "originality": 0.66,
+   "atmosphere": 0.65
+  },
+  "tone": {
+   "darkness": 0.6,
+   "complexity": 0.51,
+   "emotion": 0.92
+  }
+ },
+ {
+  "id": "bk_OL261794W",
+  "title": "A Clockwork Orange",
+  "subtitle": "Anthony Burgess",
+  "year": 1962,
+  "meta": "192 pp",
+  "genres": [
+   "Dystopian",
+   "Classics",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4,
+   "count": 69,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/13151224-M.jpg?default=false",
+  "blurb": "A Clockwork Orange is a dystopian satirical black comedy novel by English writer Anthony Burgess, published in 1962. It is set in a near-future society that has a youth subculture of extreme violence.",
+  "popularity": 0.6,
+  "factors": {
+   "writing": 0.73,
+   "plot": 0.81,
+   "pacing": 0.59,
+   "character": 0.63,
+   "originality": 0.72,
+   "atmosphere": 0.73
+  },
+  "tone": {
+   "darkness": 0.66,
+   "complexity": 0.69,
+   "emotion": 0.64
+  }
+ },
+ {
+  "id": "bk_OL453733W",
+  "title": "Going Postal",
+  "subtitle": "Terry Pratchett",
+  "year": 2004,
+  "meta": "416 pp",
+  "genres": [
+   "Fantasy",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 64,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14646992-M.jpg?default=false",
+  "blurb": "Suddenly, condemned arch-swindler Moist von Lipwig found himself with a noose around his neck and dropping through a trapdoor into ... a government job? Worse still, Moist could swear the mail is talking to him.",
+  "popularity": 0.59,
+  "factors": {
+   "writing": 0.87,
+   "plot": 0.69,
+   "pacing": 0.5,
+   "character": 0.71,
+   "originality": 0.8,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.68,
+   "emotion": 0.8
+  }
+ },
+ {
+  "id": "bk_OL32195W",
+  "title": "House of Leaves",
+  "subtitle": "Mark Z. Danielewski",
+  "year": 1998,
+  "meta": "736 pp",
+  "genres": [
+   "Thriller",
+   "Horror"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 64,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6450442-M.jpg?default=false",
+  "blurb": "“While enthusiasts and detractors will continue to empty entire dictionaries attempting to describe or deride it, \"authenticity\" still remains the word most likely to stir a debate.”",
+  "popularity": 0.59,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.86,
+   "pacing": 0.76,
+   "character": 0.65,
+   "originality": 0.62,
+   "atmosphere": 0.85
+  },
+  "tone": {
+   "darkness": 0.93,
+   "complexity": 0.58,
+   "emotion": 0.51
   }
  },
  {
@@ -1625,9 +4201,9 @@
    "count": 65,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8294078-M.jpg",
-  "blurb": "A memoir standout readers keep coming back to.",
-  "popularity": 0.6,
+  "image": "https://covers.openlibrary.org/b/id/8294078-M.jpg?default=false",
+  "blurb": "Born a Crime is the story of a mischievous young boy who grows into a restless young man as he struggles to find himself in a world where he was never supposed to exist.",
+  "popularity": 0.59,
   "factors": {
    "writing": 0.74,
    "plot": 0.58,
@@ -1658,9 +4234,9 @@
    "count": 65,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/11153243-M.jpg",
-  "blurb": "“The taxi's radio was tuned to a classical FM broadcast.”",
-  "popularity": 0.6,
+  "image": "https://covers.openlibrary.org/b/id/11153243-M.jpg?default=false",
+  "blurb": "The novel is a sub-melodramatic sentimental metafictional love story in a ficticious world with two moons in the sky, a thriller packed with cults, assassinations and grotesque sex (newyorkobserver).",
+  "popularity": 0.59,
   "factors": {
    "writing": 0.88,
    "plot": 0.66,
@@ -1690,9 +4266,9 @@
    "count": 58,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/9320507-M.jpg",
-  "blurb": "A fantasy standout readers keep coming back to.",
-  "popularity": 0.59,
+  "image": "https://covers.openlibrary.org/b/id/9320507-M.jpg?default=false",
+  "blurb": "Twelve-year-old Sophie has never quite fit into her life. She’s skipped multiple grades and doesn’t really connect with the older kids at school, but she’s not comfortable with her family, either. The reason?",
+  "popularity": 0.58,
   "factors": {
    "writing": 0.6,
    "plot": 0.74,
@@ -1723,9 +4299,9 @@
    "count": 60,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8246077-M.jpg",
-  "blurb": "A horror standout readers keep coming back to.",
-  "popularity": 0.59,
+  "image": "https://covers.openlibrary.org/b/id/8246077-M.jpg?default=false",
+  "blurb": "\"The Raven\" is a narrative poem by American writer Edgar Allan Poe. First published in January 1845, the poem is often noted for its musicality, stylized language, and supernatural atmosphere.",
+  "popularity": 0.58,
   "factors": {
    "writing": 0.63,
    "plot": 0.75,
@@ -1738,6 +4314,70 @@
    "darkness": 0.6,
    "complexity": 0.59,
    "emotion": 0.57
+  }
+ },
+ {
+  "id": "bk_OL45499W",
+  "title": "Tao te Ching",
+  "subtitle": "老子",
+  "year": 1842,
+  "meta": "124 pp",
+  "genres": [
+   "Philosophy",
+   "Classics",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 58,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/662232-M.jpg?default=false",
+  "blurb": "\"Within ancient Chinese, a sole character possesses a broad, and sometimes contradictory, range of meanings. Moreover, the Tao Te Ching is rife with terms and expressions that have no exact counterpart in English.",
+  "popularity": 0.58,
+  "factors": {
+   "writing": 0.77,
+   "plot": 0.42,
+   "pacing": 0.51,
+   "character": 0.69,
+   "originality": 0.74,
+   "atmosphere": 0.74
+  },
+  "tone": {
+   "darkness": 0.47,
+   "complexity": 0.78,
+   "emotion": 0.57
+  }
+ },
+ {
+  "id": "bk_OL318900W",
+  "title": "The Prophet",
+  "subtitle": "Kahlil Gibran",
+  "year": 1900,
+  "meta": "112 pp",
+  "genres": [
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 59,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/418324-M.jpg?default=false",
+  "blurb": "The Prophet is a book of 26 poetic essays written in English in 1923 by the Lebanese-American artist, philosopher and writer Khalil Gibran.",
+  "popularity": 0.58,
+  "factors": {
+   "writing": 0.93,
+   "plot": 0.7,
+   "pacing": 0.44,
+   "character": 0.78,
+   "originality": 0.65,
+   "atmosphere": 0.83
+  },
+  "tone": {
+   "darkness": 0.65,
+   "complexity": 0.65,
+   "emotion": 0.63
   }
  },
  {
@@ -1755,9 +4395,9 @@
    "count": 59,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8566174-M.jpg",
-  "blurb": "A dystopian standout readers keep coming back to.",
-  "popularity": 0.59,
+  "image": "https://covers.openlibrary.org/b/id/8566174-M.jpg?default=false",
+  "blurb": "Born a lowly Red in the mines of Mars, Darrow lost his beloved wife to the treacherous Gold overlords. Nothing in Darrow's world has been easily won, and this final fight will be the most harrowing of all.",
+  "popularity": 0.58,
   "factors": {
    "writing": 0.63,
    "plot": 0.74,
@@ -1787,9 +4427,9 @@
    "count": 55,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/7879561-M.jpg",
-  "blurb": "A fantasy standout readers keep coming back to.",
-  "popularity": 0.58,
+  "image": "https://covers.openlibrary.org/b/id/7879561-M.jpg?default=false",
+  "blurb": "**A dark and enchanting fantasy adventure perfect for those who prefer their fairytales with a twist. But what if the mistake is actually the first clue to discovering who Sophie and Agatha really are?",
+  "popularity": 0.57,
   "factors": {
    "writing": 0.64,
    "plot": 0.76,
@@ -1811,18 +4451,18 @@
   "year": 1993,
   "meta": "320 pp",
   "genres": [
-   "Dystopian",
+   "Literary Fiction",
    "Science Fiction",
-   "Literary Fiction"
+   "Dystopian"
   ],
   "rating": {
-   "value": 4.3,
-   "count": 55,
+   "value": 4.4,
+   "count": 56,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/10466266-M.jpg",
-  "blurb": "“I had my recurring dream last night.”",
-  "popularity": 0.58,
+  "image": "https://covers.openlibrary.org/b/id/10466266-M.jpg?default=false",
+  "blurb": "In 2025, with the world descending into madness and anarchy, one woman begins a fateful journey toward a better future.",
+  "popularity": 0.57,
   "factors": {
    "writing": 0.76,
    "plot": 0.76,
@@ -1835,6 +4475,165 @@
    "darkness": 0.7,
    "complexity": 0.65,
    "emotion": 0.54
+  }
+ },
+ {
+  "id": "bk_OL3171087W",
+  "title": "We Have Always Lived in the Castle",
+  "subtitle": "Shirley Jackson",
+  "year": 1962,
+  "meta": "187 pp",
+  "genres": [
+   "Literary Fiction",
+   "Mystery",
+   "Horror"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 56,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11545332-M.jpg?default=false",
+  "blurb": "This edition features a new introduction by Jonathan Lethem. For more than seventy years, Penguin has been the leading publisher of classic literature in the English-speaking world.",
+  "popularity": 0.57,
+  "factors": {
+   "writing": 0.79,
+   "plot": 0.71,
+   "pacing": 0.72,
+   "character": 0.65,
+   "originality": 0.65,
+   "atmosphere": 0.89
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.63,
+   "emotion": 0.63
+  }
+ },
+ {
+  "id": "bk_OL5735175W",
+  "title": "Persepolis 1-4",
+  "subtitle": "Marjane Satrapi",
+  "year": 2000,
+  "meta": "352 pp",
+  "genres": [
+   "Memoir",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 56,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12648921-M.jpg?default=false",
+  "blurb": "From inside front cover: The story of Satrapi's unforgettable childhood and coming of age within a ...",
+  "popularity": 0.57,
+  "factors": {
+   "writing": 0.74,
+   "plot": 0.61,
+   "pacing": 0.54,
+   "character": 0.95,
+   "originality": 0.71,
+   "atmosphere": 0.66
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.57,
+   "emotion": 0.91
+  }
+ },
+ {
+  "id": "bk_OL19800273W",
+  "title": "Tiamat's Wrath",
+  "subtitle": "James S. A. Corey",
+  "year": 2018,
+  "meta": "539 pp",
+  "genres": [
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 52,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8600919-M.jpg?default=false",
+  "blurb": "Tiamat's Wrath is a science fiction novel by James S. A. Corey, the pen name of Daniel Abraham and Ty Franck, and the eighth book in their series The Expanse.",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.6,
+   "plot": 0.8,
+   "pacing": 0.77,
+   "character": 0.59,
+   "originality": 0.79,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.79,
+   "emotion": 0.4
+  }
+ },
+ {
+  "id": "bk_OL157040W",
+  "title": "Forbidden knowledge",
+  "subtitle": "Roger Shattuck",
+  "year": 1996,
+  "meta": "369 pp",
+  "genres": [
+   "Mystery"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 52,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8295312-M.jpg?default=false",
+  "blurb": "The result is a dire portrait of human presumption and of a culture that has abandoned all limits in the quest for knowledge and experience.",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.57,
+   "plot": 0.79,
+   "pacing": 0.84,
+   "character": 0.61,
+   "originality": 0.57,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.67,
+   "emotion": 0.42
+  }
+ },
+ {
+  "id": "bk_OL134601W",
+  "title": "Lonesome Dove",
+  "subtitle": "Larry McMurtry",
+  "year": 1985,
+  "meta": "945 pp",
+  "genres": [
+   "Romance",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 51,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8376548-M.jpg?default=false",
+  "blurb": "Lonesome Dove, by Larry McMurtry, the author of Terms of Endearment, is his long-awaited masterpiece, the major noel at last of the American West as it really was. Set in the late nineteenth century. F.",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.64,
+   "pacing": 0.62,
+   "character": 0.77,
+   "originality": 0.61,
+   "atmosphere": 0.77
+  },
+  "tone": {
+   "darkness": 0.46,
+   "complexity": 0.44,
+   "emotion": 0.75
   }
  },
  {
@@ -1851,9 +4650,9 @@
    "count": 51,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8751316-M.jpg",
-  "blurb": "“The first thing I ever hacked was bedtime.”",
-  "popularity": 0.57,
+  "image": "https://covers.openlibrary.org/b/id/8751316-M.jpg?default=false",
+  "blurb": "The result would be an unprecedented system of mass surveillance with the ability to pry into the private lives of every person on earth.",
+  "popularity": 0.56,
   "factors": {
    "writing": 0.68,
    "plot": 0.57,
@@ -1869,24 +4668,155 @@
   }
  },
  {
+  "id": "bk_OL46760W",
+  "title": "The Glass Castle",
+  "subtitle": "Jeannette Walls",
+  "year": 2005,
+  "meta": "347 pp",
+  "genres": [
+   "Memoir",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 51,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11517692-M.jpg?default=false",
+  "blurb": "A story about the early life of Jeannette Walls. The memoir is an exposing work about her early life and growing up on the run and often homeless.",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.65,
+   "plot": 0.67,
+   "pacing": 0.62,
+   "character": 0.73,
+   "originality": 0.82,
+   "atmosphere": 0.57
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.67,
+   "emotion": 0.71
+  }
+ },
+ {
+  "id": "bk_OL110959W",
+  "title": "Labyrinths",
+  "subtitle": "Jorge Luis Borges",
+  "year": 1962,
+  "meta": "260 pp",
+  "genres": [
+   "Philosophy",
+   "Literary Fiction",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 50,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10831408-M.jpg?default=false",
+  "blurb": "Labyrinths is a collection of short stories and essays by the writer Jorge Luis Borges. It was translated into English, published soon after Borges won the International Publishers' Prize with Samuel Beckett.",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.82,
+   "plot": 0.59,
+   "pacing": 0.55,
+   "character": 0.66,
+   "originality": 0.68,
+   "atmosphere": 0.66
+  },
+  "tone": {
+   "darkness": 0.51,
+   "complexity": 0.79,
+   "emotion": 0.56
+  }
+ },
+ {
+  "id": "bk_OL59800W",
+  "title": "The Left Hand of Darkness",
+  "subtitle": "Ursula K. Le Guin",
+  "year": 1969,
+  "meta": "304 pp",
+  "genres": [
+   "Classics",
+   "Science Fiction",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 53,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10618463-M.jpg?default=false",
+  "blurb": "[Comment by Kim Stanley Robinson, on The Guardian's website][1]: The Left Hand of Darkness by Ursula K Le Guin (1969) > One of my favorite novels is The Left Hand of Darkness, by Ursula K Le Guin. [1]:",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.9,
+   "plot": 0.66,
+   "pacing": 0.61,
+   "character": 0.79,
+   "originality": 0.85,
+   "atmosphere": 0.79
+  },
+  "tone": {
+   "darkness": 0.63,
+   "complexity": 0.7,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL16282945W",
+  "title": "Cinder",
+  "subtitle": "Marissa Meyer",
+  "year": 2011,
+  "meta": "416 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 52,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6998634-M.jpg?default=false",
+  "blurb": "Humans and androids crowd the raucous streets of New Beijing. A deadly plague ravages the population. From space, a ruthless lunar people watch, waiting to make their move. . . . Cinder, a gifted mechanic, is a cyborg.",
+  "popularity": 0.56,
+  "factors": {
+   "writing": 0.73,
+   "plot": 0.74,
+   "pacing": 0.73,
+   "character": 0.59,
+   "originality": 0.81,
+   "atmosphere": 0.74
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.67,
+   "emotion": 0.6
+  }
+ },
+ {
   "id": "bk_OL15946464W",
   "title": "The Throne of Fire",
   "subtitle": "Rick Riordan",
   "year": 2011,
   "meta": "452 pp",
   "genres": [
-   "Science Fiction",
+   "Fantasy",
    "Young Adult",
-   "Fantasy"
+   "Science Fiction"
   ],
   "rating": {
    "value": 4.6,
    "count": 49,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/6934834-M.jpg",
-  "blurb": "A science fiction standout readers keep coming back to.",
-  "popularity": 0.56,
+  "image": "https://covers.openlibrary.org/b/id/6934834-M.jpg?default=false",
+  "blurb": "Ever since the gods of Ancient Egypt were unleashed in the modern world, Carter Kane and his sister Sadie have been in trouble. And now their most threatening enemy yet - the chaos snake Apophis - is rising.",
+  "popularity": 0.55,
   "factors": {
    "writing": 0.63,
    "plot": 0.76,
@@ -1899,6 +4829,39 @@
    "darkness": 0.47,
    "complexity": 0.55,
    "emotion": 0.63
+  }
+ },
+ {
+  "id": "bk_OL453907W",
+  "title": "Making Money",
+  "subtitle": "Terry Pratchett",
+  "year": 2007,
+  "meta": "400 pp",
+  "genres": [
+   "Science Fiction",
+   "Fantasy",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 47,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14645701-M.jpg?default=false",
+  "blurb": "The Ankh-Morpork Post Office is running like . . . well, not at all like a government office. Postmaster General Moist von Lipwig, former arch-swindler and confidence man, has exceeded all expectations—including his own.",
+  "popularity": 0.55,
+  "factors": {
+   "writing": 0.77,
+   "plot": 0.7,
+   "pacing": 0.62,
+   "character": 0.69,
+   "originality": 0.8,
+   "atmosphere": 0.71
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.59,
+   "emotion": 0.69
   }
  },
  {
@@ -1917,9 +4880,9 @@
    "count": 47,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/12501284-M.jpg",
+  "image": "https://covers.openlibrary.org/b/id/12501284-M.jpg?default=false",
   "blurb": "“IN THE YEAR 1878 I took my degree of Doctor of Medicine of the University of London, and proceeded to Netley to go through the course prescribed for surgeons in the Army.”",
-  "popularity": 0.56,
+  "popularity": 0.55,
   "factors": {
    "writing": 0.82,
    "plot": 0.77,
@@ -1932,6 +4895,104 @@
    "darkness": 0.65,
    "complexity": 0.74,
    "emotion": 0.74
+  }
+ },
+ {
+  "id": "bk_OL14856842W",
+  "title": "La Nuit",
+  "subtitle": "Elie Wiesel",
+  "year": 1955,
+  "meta": "135 pp",
+  "genres": [
+   "Thriller",
+   "Memoir",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 49,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9154540-M.jpg?default=false",
+  "blurb": "Night is Elie Wiesel's masterpiece, a candid, horrific, and deeply poignant autobiographical account of his survival as a teenager in the Nazi death camps. - Publisher.",
+  "popularity": 0.55,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.73,
+   "pacing": 0.73,
+   "character": 0.69,
+   "originality": 0.59,
+   "atmosphere": 0.66
+  },
+  "tone": {
+   "darkness": 0.55,
+   "complexity": 0.6,
+   "emotion": 0.72
+  }
+ },
+ {
+  "id": "bk_OL77813W",
+  "title": "The Vampire Lestat",
+  "subtitle": "Anne Rice",
+  "year": 1986,
+  "meta": "606 pp",
+  "genres": [
+   "Thriller",
+   "Romance",
+   "Horror"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 48,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8579529-M.jpg?default=false",
+  "blurb": "The Vampire Lestat (1985) is a vampire novel by American writer Anne Rice, the second in her Vampire Chronicles, following Interview with the Vampire (1976).",
+  "popularity": 0.55,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.76,
+   "pacing": 0.71,
+   "character": 0.75,
+   "originality": 0.55,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.75,
+   "complexity": 0.56,
+   "emotion": 0.64
+  }
+ },
+ {
+  "id": "bk_OL35616W",
+  "title": "Kindred",
+  "subtitle": "Octavia E. Butler",
+  "year": 1979,
+  "meta": "287 pp",
+  "genres": [
+   "Historical Fiction",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 48,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8745330-M.jpg?default=false",
+  "blurb": "Dana, a modern black woman, is celebrating her twenty-sixth birthday with her new husband when she is snatched abruptly from her home in California and transported to the antebellum South.",
+  "popularity": 0.55,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.76,
+   "pacing": 0.6,
+   "character": 0.67,
+   "originality": 0.66,
+   "atmosphere": 0.73
+  },
+  "tone": {
+   "darkness": 0.58,
+   "complexity": 0.66,
+   "emotion": 0.67
   }
  },
  {
@@ -1948,9 +5009,9 @@
    "count": 48,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8858487-M.jpg",
-  "blurb": "“I was up before the others, before the birds, before the sun.”",
-  "popularity": 0.56,
+  "image": "https://covers.openlibrary.org/b/id/8858487-M.jpg?default=false",
+  "blurb": "In 1962, fresh out of business school, Phil Knight borrowed $50 from his father and created a company with a simple mission: import high-quality, low-cost athletic shoes from Japan.",
+  "popularity": 0.55,
   "factors": {
    "writing": 0.68,
    "plot": 0.49,
@@ -1966,35 +5027,99 @@
   }
  },
  {
-  "id": "bk_OL274574W",
-  "title": "Crónica de una muerte anunciada",
-  "subtitle": "Gabriel García Márquez",
-  "year": 1980,
-  "meta": "134 pp",
+  "id": "bk_OL1847023W",
+  "title": "The worldly philosophers",
+  "subtitle": "Robert L. Heilbroner",
+  "year": 1953,
+  "meta": "342 pp",
   "genres": [
-   "Magical Realism",
-   "Romance"
+   "Memoir"
   ],
   "rating": {
-   "value": 4.1,
-   "count": 50,
+   "value": 4.5,
+   "count": 48,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8489859-M.jpg",
-  "blurb": "A magical realism standout readers keep coming back to.",
-  "popularity": 0.56,
+  "image": "https://covers.openlibrary.org/b/id/15106531-M.jpg?default=false",
+  "blurb": "\"The Worldly Philosophers is a bestselling classic that not only enables us to see more deeply into our history but helps us better understand our own times. In this seventh edition, Robert L.",
+  "popularity": 0.55,
   "factors": {
-   "writing": 0.85,
-   "plot": 0.58,
-   "pacing": 0.67,
-   "character": 0.8,
-   "originality": 0.75,
+   "writing": 0.84,
+   "plot": 0.5,
+   "pacing": 0.65,
+   "character": 0.82,
+   "originality": 0.55,
+   "atmosphere": 0.65
+  },
+  "tone": {
+   "darkness": 0.58,
+   "complexity": 0.47,
+   "emotion": 0.78
+  }
+ },
+ {
+  "id": "bk_OL19340986W",
+  "title": "Golden Son",
+  "subtitle": "Pierce Brown",
+  "year": 2015,
+  "meta": "464 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 48,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8454351-M.jpg?default=false",
+  "blurb": "\"With shades of The Hunger Games, Ender's Game, and Game of Thrones, debut author Pierce Brown's genre-defying epic Red Rising hit the ground running and wasted no time becoming a sensation. one heart-pounding ride. R.",
+  "popularity": 0.55,
+  "factors": {
+   "writing": 0.77,
+   "plot": 0.85,
+   "pacing": 0.69,
+   "character": 0.65,
+   "originality": 0.82,
+   "atmosphere": 0.82
+  },
+  "tone": {
+   "darkness": 0.7,
+   "complexity": 0.66,
+   "emotion": 0.46
+  }
+ },
+ {
+  "id": "bk_OL16151508W",
+  "title": "Miss Peregrine's Home for Peculiar Children",
+  "subtitle": "Ransom Riggs",
+  "year": 2011,
+  "meta": "388 pp",
+  "genres": [
+   "Mystery",
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 46,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14416577-M.jpg?default=false",
+  "blurb": "A mysterious island. An abandoned orphanage. A strange collection of peculiar photographs. They may have been dangerous. They may have been quarantined on a deserted island for good reason. (Book cover)",
+  "popularity": 0.54,
+  "factors": {
+   "writing": 0.56,
+   "plot": 0.75,
+   "pacing": 0.72,
+   "character": 0.69,
+   "originality": 0.7,
    "atmosphere": 0.7
   },
   "tone": {
-   "darkness": 0.39,
-   "complexity": 0.57,
-   "emotion": 0.88
+   "darkness": 0.64,
+   "complexity": 0.54,
+   "emotion": 0.63
   }
  },
  {
@@ -2011,9 +5136,9 @@
    "count": 44,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14312142-M.jpg",
-  "blurb": "A romance standout readers keep coming back to.",
-  "popularity": 0.55,
+  "image": "https://covers.openlibrary.org/b/id/14312142-M.jpg?default=false",
+  "blurb": "Gu Lingfei's 2015 romance — ★ 4.7 from 44 Open Library readers.",
+  "popularity": 0.54,
   "factors": {
    "writing": 0.68,
    "plot": 0.63,
@@ -2026,6 +5151,38 @@
    "darkness": 0.32,
    "complexity": 0.48,
    "emotion": 0.92
+  }
+ },
+ {
+  "id": "bk_OL8464993W",
+  "title": "The Viscount Who Loved Me",
+  "subtitle": "Julia Quinn",
+  "year": 2000,
+  "meta": "392 pp",
+  "genres": [
+   "Romance",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 44,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/492893-M.jpg?default=false",
+  "blurb": "*1814 promises to be another eventful season, but not, This Author believes, for Anthony Bridgerton, London's most elusive bachelor, who has shown no indication that he plans to marry. And in all truth, why should he?",
+  "popularity": 0.54,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.6,
+   "pacing": 0.61,
+   "character": 0.8,
+   "originality": 0.51,
+   "atmosphere": 0.67
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.49,
+   "emotion": 0.89
   }
  },
  {
@@ -2043,9 +5200,9 @@
    "count": 46,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/797933-M.jpg",
-  "blurb": "A horror standout readers keep coming back to.",
-  "popularity": 0.55,
+  "image": "https://covers.openlibrary.org/b/id/797933-M.jpg?default=false",
+  "blurb": "In-depth, informative and entertaining, *The Annotated Sandman* is a fascinating look at the celebrated comic book series written by New York Times best-selling author Neil Gaiman. Edited with notes by Leslie S.",
+  "popularity": 0.54,
   "factors": {
    "writing": 0.64,
    "plot": 0.77,
@@ -2058,6 +5215,201 @@
    "darkness": 0.63,
    "complexity": 0.54,
    "emotion": 0.61
+  }
+ },
+ {
+  "id": "bk_OL14975232W",
+  "title": "Dream Country",
+  "subtitle": "Neil Gaiman",
+  "year": 1991,
+  "meta": "160 pp",
+  "genres": [
+   "Horror",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 44,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/797919-M.jpg?default=false",
+  "blurb": "Presents four Sandman stories, including \"A Midsummer Night's Dream,\" in which Shakespeare's company, at the instigation of the Lord of Dreams, gives an open-air performance of the play to an audience of fairies.",
+  "popularity": 0.54,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.7,
+   "pacing": 0.75,
+   "character": 0.68,
+   "originality": 0.82,
+   "atmosphere": 0.78
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.67,
+   "emotion": 0.66
+  }
+ },
+ {
+  "id": "bk_OL16808806W",
+  "title": "Hyperbole and a Half",
+  "subtitle": "Allie Brosh",
+  "year": 1900,
+  "meta": "384 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 46,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7265412-M.jpg?default=false",
+  "blurb": "Every time Allie Brosh posts something new on her hugely popular blog Hyperbole and a Half the internet rejoices. We dare you not to. FROM THE AUTHOR: This is a book I wrote. Perhaps I have underestimated my sneakiness!",
+  "popularity": 0.54,
+  "factors": {
+   "writing": 0.79,
+   "plot": 0.46,
+   "pacing": 0.7,
+   "character": 0.83,
+   "originality": 0.65,
+   "atmosphere": 0.52
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.55,
+   "emotion": 0.88
+  }
+ },
+ {
+  "id": "bk_OL16807297W",
+  "title": "Steelheart",
+  "subtitle": "Brandon Sanderson",
+  "year": 2001,
+  "meta": "416 pp",
+  "genres": [
+   "Dystopian",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 44,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14658147-M.jpg?default=false",
+  "blurb": "There are no heroes, only villains. My father believed that a hero was going to step in, and he died for that belief. Steelheart killed him for seeing that he had a weakness, and no one knows I saw.",
+  "popularity": 0.54,
+  "factors": {
+   "writing": 0.61,
+   "plot": 0.72,
+   "pacing": 0.71,
+   "character": 0.66,
+   "originality": 0.76,
+   "atmosphere": 0.82
+  },
+  "tone": {
+   "darkness": 0.54,
+   "complexity": 0.6,
+   "emotion": 0.68
+  }
+ },
+ {
+  "id": "bk_OL17718538W",
+  "title": "Queen of Shadows",
+  "subtitle": "Sarah J. Maas",
+  "year": 2015,
+  "meta": "672 pp",
+  "genres": [
+   "Fantasy",
+   "Romance",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 42,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7994583-M.jpg?default=false",
+  "blurb": "Everyone Celaena Sardothien loves has been taken from her. But she's at last returned to the empire-for vengeance, to rescue her once-glorious kingdom, and to confront the shadows of her past...",
+  "popularity": 0.53,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.81,
+   "pacing": 0.75,
+   "character": 0.86,
+   "originality": 0.64,
+   "atmosphere": 0.72
+  },
+  "tone": {
+   "darkness": 0.5,
+   "complexity": 0.4,
+   "emotion": 0.77
+  }
+ },
+ {
+  "id": "bk_OL8842598W",
+  "title": "Amulet",
+  "subtitle": "Kazu Kibuishi",
+  "year": 2008,
+  "meta": "192 pp",
+  "genres": [
+   "Mystery",
+   "Fantasy",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 42,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/2420582-M.jpg?default=false",
+  "blurb": "The first book in Kazu Kibuishi's #1 New York Times bestselling series that features a beautiful but dangerous world of new friends, giant robots, and shadowy enemies! The strange house proves to be dangerous.",
+  "popularity": 0.53,
+  "factors": {
+   "writing": 0.55,
+   "plot": 0.88,
+   "pacing": 0.75,
+   "character": 0.78,
+   "originality": 0.69,
+   "atmosphere": 0.76
+  },
+  "tone": {
+   "darkness": 0.53,
+   "complexity": 0.51,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL11967338W",
+  "title": "Turn Coat",
+  "subtitle": "Jim Butcher",
+  "year": 2009,
+  "meta": "533 pp",
+  "genres": [
+   "Mystery",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 41,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6422690-M.jpg?default=false",
+  "blurb": "The new novel in the hit New York Times bestselling Dresden Files series.The Warden Morgan has been accused of treason against the Wizards of the White Counciland theres only one, final punishment for that crime.",
+  "popularity": 0.53,
+  "factors": {
+   "writing": 0.67,
+   "plot": 0.85,
+   "pacing": 0.79,
+   "character": 0.62,
+   "originality": 0.64,
+   "atmosphere": 0.82
+  },
+  "tone": {
+   "darkness": 0.57,
+   "complexity": 0.6,
+   "emotion": 0.59
   }
  },
  {
@@ -2075,9 +5427,9 @@
    "count": 41,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8314147-M.jpg",
-  "blurb": "A romance standout readers keep coming back to.",
-  "popularity": 0.54,
+  "image": "https://covers.openlibrary.org/b/id/8314147-M.jpg?default=false",
+  "blurb": "Despite their differences, sisters Vianne and Isabelle have always been close. As the war progresses, the sisters' relationship and strength are tested.",
+  "popularity": 0.53,
   "factors": {
    "writing": 0.8,
    "plot": 0.57,
@@ -2093,36 +5445,257 @@
   }
  },
  {
-  "id": "bk_OL17718538W",
-  "title": "Queen of Shadows",
-  "subtitle": "Sarah J. Maas",
-  "year": 2015,
-  "meta": "672 pp",
+  "id": "bk_OL13850788W",
+  "title": "The Immortal Life of Henrietta Lacks",
+  "subtitle": "Rebecca Skloot",
+  "year": 2009,
+  "meta": "381 pp",
   "genres": [
-   "Romance",
-   "Fantasy",
-   "Young Adult"
+   "Philosophy",
+   "Memoir"
   ],
   "rating": {
-   "value": 4.6,
-   "count": 41,
+   "value": 4.3,
+   "count": 42,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/7994583-M.jpg",
-  "blurb": "A romance standout readers keep coming back to.",
-  "popularity": 0.54,
+  "image": "https://covers.openlibrary.org/b/id/8364866-M.jpg?default=false",
+  "blurb": "Her name was Henrietta Lacks, but scientists know her as HeLa. Henrietta’s cells have been bought and sold by the billions, yet she remains virtually unknown, and her family can’t afford health insurance.",
+  "popularity": 0.53,
   "factors": {
-   "writing": 0.67,
-   "plot": 0.81,
-   "pacing": 0.75,
-   "character": 0.86,
-   "originality": 0.64,
-   "atmosphere": 0.72
+   "writing": 0.8,
+   "plot": 0.52,
+   "pacing": 0.55,
+   "character": 0.73,
+   "originality": 0.71,
+   "atmosphere": 0.48
   },
   "tone": {
-   "darkness": 0.5,
-   "complexity": 0.4,
-   "emotion": 0.77
+   "darkness": 0.46,
+   "complexity": 0.72,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL17356252W",
+  "title": "When Breath Becomes Air",
+  "subtitle": "Paul Kalanithi",
+  "year": 2016,
+  "meta": "232 pp",
+  "genres": [
+   "Philosophy",
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 42,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11463139-M.jpg?default=false",
+  "blurb": "When Breath Becomes Air is a non-fiction autobiographical book written by American neurosurgeon Paul Kalanithi. It is a memoir about his life and illness, battling stage IV metastatic lung cancer.",
+  "popularity": 0.53,
+  "factors": {
+   "writing": 0.73,
+   "plot": 0.52,
+   "pacing": 0.59,
+   "character": 0.71,
+   "originality": 0.71,
+   "atmosphere": 0.62
+  },
+  "tone": {
+   "darkness": 0.53,
+   "complexity": 0.73,
+   "emotion": 0.54
+  }
+ },
+ {
+  "id": "bk_OL64440W",
+  "title": "Brave New World and Brave New World Revisited",
+  "subtitle": "Aldous Huxley",
+  "year": 1942,
+  "meta": "340 pp",
+  "genres": [
+   "Dystopian",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.1,
+   "count": 43,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/35568-M.jpg?default=false",
+  "blurb": "Huxley opens the book by allowing the reader to eavesdrop on the tour of the fertilizing Room of the Central London Hatchery and Conditioning center, where the high tech reproduction takes place.",
+  "popularity": 0.53,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.71,
+   "pacing": 0.7,
+   "character": 0.61,
+   "originality": 0.84,
+   "atmosphere": 0.68
+  },
+  "tone": {
+   "darkness": 0.76,
+   "complexity": 0.69,
+   "emotion": 0.54
+  }
+ },
+ {
+  "id": "bk_OL21703979W",
+  "title": "A Court of Silver Flames",
+  "subtitle": "Sarah J. Maas",
+  "year": 2021,
+  "meta": "768 pp",
+  "genres": [
+   "Romance",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 39,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10643508-M.jpg?default=false",
+  "blurb": "Sarah J. Maas's sexy, richly imagined Court of Thorns and Roses series continues with the journey of Feyre's fiery sister, Nesta. Nesta Archeron has always been prickly – proud, swift to anger and slow to forgive.",
+  "popularity": 0.52,
+  "factors": {
+   "writing": 0.62,
+   "plot": 0.74,
+   "pacing": 0.61,
+   "character": 0.74,
+   "originality": 0.62,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.49,
+   "complexity": 0.57,
+   "emotion": 0.7
+  }
+ },
+ {
+  "id": "bk_OL453743W",
+  "title": "Feet of Clay",
+  "subtitle": "Terry Pratchett",
+  "year": 1996,
+  "meta": "379 pp",
+  "genres": [
+   "Horror",
+   "Science Fiction",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 38,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14648799-M.jpg?default=false",
+  "blurb": "“It was a warm spring night when a fist knocked at the door so hard that the hinges bent.”",
+  "popularity": 0.52,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.74,
+   "pacing": 0.65,
+   "character": 0.6,
+   "originality": 0.77,
+   "atmosphere": 0.89
+  },
+  "tone": {
+   "darkness": 0.56,
+   "complexity": 0.61,
+   "emotion": 0.5
+  }
+ },
+ {
+  "id": "bk_OL2056808W",
+  "title": "Maus II",
+  "subtitle": "Art Spiegelman",
+  "year": 1991,
+  "meta": "136 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 40,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12606590-M.jpg?default=false",
+  "blurb": "This second volume, subtitled And Here My Troubles Began, moves us from the barracks of Auschwitz to the bungalows of the Catskills.",
+  "popularity": 0.52,
+  "factors": {
+   "writing": 0.69,
+   "plot": 0.58,
+   "pacing": 0.66,
+   "character": 0.95,
+   "originality": 0.63,
+   "atmosphere": 0.53
+  },
+  "tone": {
+   "darkness": 0.6,
+   "complexity": 0.49,
+   "emotion": 0.81
+  }
+ },
+ {
+  "id": "bk_OL1974548W",
+  "title": "Into Thin Air",
+  "subtitle": "Jon Krakauer",
+  "year": 1996,
+  "meta": "335 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 39,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/241603-M.jpg?default=false",
+  "blurb": "When Jon Krakauer reached the summit of Mt. Everest in the early afternoon of May 10,1996, he hadn't slept in fifty-seven hours and was reeling from the brain-altering effects of oxygen depletion.",
+  "popularity": 0.52,
+  "factors": {
+   "writing": 0.73,
+   "plot": 0.62,
+   "pacing": 0.63,
+   "character": 0.91,
+   "originality": 0.67,
+   "atmosphere": 0.55
+  },
+  "tone": {
+   "darkness": 0.58,
+   "complexity": 0.54,
+   "emotion": 0.86
+  }
+ },
+ {
+  "id": "bk_OL39379W",
+  "title": "A Room of One's Own",
+  "subtitle": "Virginia Woolf",
+  "year": 1929,
+  "meta": "143 pp",
+  "genres": [
+   "Philosophy"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 38,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6559057-M.jpg?default=false",
+  "blurb": "A Room of One's Own is an extended essay by Virginia Woolf.",
+  "popularity": 0.52,
+  "factors": {
+   "writing": 0.8,
+   "plot": 0.4,
+   "pacing": 0.49,
+   "character": 0.38,
+   "originality": 0.74,
+   "atmosphere": 0.63
+  },
+  "tone": {
+   "darkness": 0.39,
+   "complexity": 0.79,
+   "emotion": 0.43
   }
  },
  {
@@ -2130,7 +5703,7 @@
   "title": "Midnight's Children",
   "subtitle": "Salman Rushdie",
   "year": 1981,
-  "meta": "556 pp",
+  "meta": "580 pp",
   "genres": [
    "Magical Realism",
    "Literary Fiction"
@@ -2140,9 +5713,9 @@
    "count": 38,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8346713-M.jpg",
-  "blurb": "“I WAS BORN in the city of Bombay... once upon a time.”",
-  "popularity": 0.53,
+  "image": "https://covers.openlibrary.org/b/id/8346713-M.jpg?default=false",
+  "blurb": "Midnight's Children is a 1981 novel by author Salman Rushdie. It portrays India's transition from British colonial rule to independence and the partition of India. ---------- Contains: Midnight's Children (2/2)",
+  "popularity": 0.52,
   "factors": {
    "writing": 0.97,
    "plot": 0.51,
@@ -2155,6 +5728,37 @@
    "darkness": 0.55,
    "complexity": 0.74,
    "emotion": 0.78
+  }
+ },
+ {
+  "id": "bk_OL24236112W",
+  "title": "As Good As Dead",
+  "subtitle": "Holly Jackson",
+  "year": 2021,
+  "meta": "504 pp",
+  "genres": [
+   "Thriller"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 35,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10716589-M.jpg?default=false",
+  "blurb": "An amazing thriller part of the 3 part series, and the final book. The book, *As good as dead*, introduces you to a fantastic plot, with a mixture of humor, crime, thriller and just a jumble of amazing emotion.",
+  "popularity": 0.51,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.88,
+   "pacing": 0.96,
+   "character": 0.57,
+   "originality": 0.54,
+   "atmosphere": 0.67
+  },
+  "tone": {
+   "darkness": 0.82,
+   "complexity": 0.64,
+   "emotion": 0.51
   }
  },
  {
@@ -2171,9 +5775,9 @@
    "count": 37,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/6268048-M.jpg",
+  "image": "https://covers.openlibrary.org/b/id/6268048-M.jpg?default=false",
   "blurb": "“The aphorism, \"As a man thinketh in his heart so is he,\" not only embraces the whole of a man's being, but is so comprehensive as to reach out to every condition and circumstance of his life.”",
-  "popularity": 0.52,
+  "popularity": 0.51,
   "factors": {
    "writing": 0.72,
    "plot": 0.43,
@@ -2189,23 +5793,55 @@
   }
  },
  {
+  "id": "bk_OL17710050W",
+  "title": "The Dark Prophecy",
+  "subtitle": "Rick Riordan",
+  "year": 2017,
+  "meta": "432 pp",
+  "genres": [
+   "Young Adult",
+   "Fantasy"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 35,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11807743-M.jpg?default=false",
+  "blurb": "Go west. Capture Apollo before he can find the next oracle. If you cannot bring him to me alive, kill him. Those were the orders my old enemy Nero had given to Meg McCaffrey. . . even kill myself. . . . .",
+  "popularity": 0.51,
+  "factors": {
+   "writing": 0.56,
+   "plot": 0.75,
+   "pacing": 0.79,
+   "character": 0.66,
+   "originality": 0.75,
+   "atmosphere": 0.66
+  },
+  "tone": {
+   "darkness": 0.56,
+   "complexity": 0.45,
+   "emotion": 0.59
+  }
+ },
+ {
   "id": "bk_OL17625829W",
   "title": "Empire of Storms",
   "subtitle": "Sarah J. Maas",
   "year": 2016,
   "meta": "704 pp",
   "genres": [
-   "Romance",
    "Fantasy",
+   "Romance",
    "Young Adult"
   ],
   "rating": {
    "value": 4.8,
-   "count": 32,
+   "count": 33,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/14349313-M.jpg",
-  "blurb": "A romance standout readers keep coming back to.",
+  "image": "https://covers.openlibrary.org/b/id/14349313-M.jpg?default=false",
+  "blurb": "The long path to the throne has only just begun for Aelin Galathynius. Loyalties have been broken and bought, friends have been lost and gained, and those who possess magic find themselves at odds with those who don't.",
   "popularity": 0.5,
   "factors": {
    "writing": 0.59,
@@ -2218,6 +5854,199 @@
   "tone": {
    "darkness": 0.4,
    "complexity": 0.45,
+   "emotion": 0.82
+  }
+ },
+ {
+  "id": "bk_OL38494W",
+  "title": "Cryptonomicon",
+  "subtitle": "Neal Stephenson",
+  "year": 1999,
+  "meta": "918 pp",
+  "genres": [
+   "Thriller",
+   "Science Fiction",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 34,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6424001-M.jpg?default=false",
+  "blurb": "Neal Stephenson hacks into the secret histories of nations and the private obsessions of men, decrypting with dazzling virtuosity the forces that shaped this century.",
+  "popularity": 0.5,
+  "factors": {
+   "writing": 0.76,
+   "plot": 0.71,
+   "pacing": 0.73,
+   "character": 0.75,
+   "originality": 0.7,
+   "atmosphere": 0.72
+  },
+  "tone": {
+   "darkness": 0.68,
+   "complexity": 0.55,
+   "emotion": 0.64
+  }
+ },
+ {
+  "id": "bk_OL16341254W",
+  "title": "A Monster Calls",
+  "subtitle": "Patrick Ness",
+  "year": 2011,
+  "meta": "224 pp",
+  "genres": [
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 33,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7011713-M.jpg?default=false",
+  "blurb": "A brilliant, graphic novel written by young but promising Patrick Ness. This is the story about 13 year old Conor and his mother who is dying of cancer. When no human can help him Monster appears...",
+  "popularity": 0.5,
+  "factors": {
+   "writing": 0.62,
+   "plot": 0.74,
+   "pacing": 0.94,
+   "character": 0.72,
+   "originality": 0.64,
+   "atmosphere": 0.69
+  },
+  "tone": {
+   "darkness": 0.49,
+   "complexity": 0.31,
+   "emotion": 0.68
+  }
+ },
+ {
+  "id": "bk_OL262426W",
+  "title": "The Case-Book of Sherlock Holmes",
+  "subtitle": "Arthur Conan Doyle",
+  "year": 1927,
+  "meta": "290 pp",
+  "genres": [
+   "Mystery",
+   "Thriller",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 31,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8350410-M.jpg?default=false",
+  "blurb": "Arthur Conan Doyle's 1927 mystery — ★ 4.5 from 31 Open Library readers.",
+  "popularity": 0.49,
+  "factors": {
+   "writing": 0.64,
+   "plot": 0.76,
+   "pacing": 0.79,
+   "character": 0.8,
+   "originality": 0.67,
+   "atmosphere": 0.74
+  },
+  "tone": {
+   "darkness": 0.73,
+   "complexity": 0.61,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL46876W",
+  "title": "The Lost World",
+  "subtitle": "Michael Crichton",
+  "year": 1995,
+  "meta": "419 pp",
+  "genres": [
+   "Thriller",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 31,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10656102-M.jpg?default=false",
+  "blurb": "The Lost World is a 1995 techno-thriller novel written by Michael Crichton, and the sequel to his 1990 novel Jurassic Park. A paperback edition (ISBN 0-345-40288-X) followed in 1996.",
+  "popularity": 0.49,
+  "factors": {
+   "writing": 0.7,
+   "plot": 0.83,
+   "pacing": 0.78,
+   "character": 0.59,
+   "originality": 0.8,
+   "atmosphere": 0.64
+  },
+  "tone": {
+   "darkness": 0.72,
+   "complexity": 0.65,
+   "emotion": 0.46
+  }
+ },
+ {
+  "id": "bk_OL84925W",
+  "title": "Sahara",
+  "subtitle": "Clive Cussler",
+  "year": 1982,
+  "meta": "576 pp",
+  "genres": [
+   "Thriller",
+   "Mystery"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 32,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6903541-M.jpg?default=false",
+  "blurb": "1996, Egypt. Searching for a treasure on the Nile, DIRK PITT thwarts the attempted assassination of a beautiful U.N.",
+  "popularity": 0.49,
+  "factors": {
+   "writing": 0.52,
+   "plot": 0.94,
+   "pacing": 0.85,
+   "character": 0.61,
+   "originality": 0.58,
+   "atmosphere": 0.63
+  },
+  "tone": {
+   "darkness": 0.82,
+   "complexity": 0.63,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL24476747W",
+  "title": "Heartstopper, Volume 4",
+  "subtitle": "Alice Oseman",
+  "year": 2021,
+  "meta": "384 pp",
+  "genres": [
+   "Romance",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 31,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/11087437-M.jpg?default=false",
+  "blurb": "The fourth volume in the wonderfully sweet Heartstopper series, featuring gorgeous two-color artwork. Now streaming on Netflix! As a new school year begins, Charlie and Nick will have to learn what love really means.",
+  "popularity": 0.49,
+  "factors": {
+   "writing": 0.58,
+   "plot": 0.65,
+   "pacing": 0.86,
+   "character": 0.78,
+   "originality": 0.63,
+   "atmosphere": 0.54
+  },
+  "tone": {
+   "darkness": 0.32,
+   "complexity": 0.42,
    "emotion": 0.82
   }
  },
@@ -2236,9 +6065,9 @@
    "count": 31,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/9342833-M.jpg",
-  "blurb": "A historical fiction standout readers keep coming back to.",
-  "popularity": 0.5,
+  "image": "https://covers.openlibrary.org/b/id/9342833-M.jpg?default=false",
+  "blurb": "It's 1936, in Flint, Michigan. Times may be hard, and ten-year-old Bud may be a motherless boy on the run, but Bud's got a few things going for him: 1. He has his own suitcase filled with his own important, secret things.",
+  "popularity": 0.49,
   "factors": {
    "writing": 0.68,
    "plot": 0.82,
@@ -2251,6 +6080,133 @@
    "darkness": 0.55,
    "complexity": 0.59,
    "emotion": 0.65
+  }
+ },
+ {
+  "id": "bk_OL262463W",
+  "title": "Memoirs of Sherlock Holmes [11 stories]",
+  "subtitle": "Arthur Conan Doyle",
+  "year": 1893,
+  "meta": "259 pp",
+  "genres": [
+   "Mystery",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 28,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9246429-M.jpg?default=false",
+  "blurb": "“\"I AM afraid, Watson, that I shall have to go,\" said Holmes, as we sat down together to our breakfast one morning.”",
+  "popularity": 0.48,
+  "factors": {
+   "writing": 0.75,
+   "plot": 0.67,
+   "pacing": 0.69,
+   "character": 0.76,
+   "originality": 0.62,
+   "atmosphere": 0.75
+  },
+  "tone": {
+   "darkness": 0.59,
+   "complexity": 0.61,
+   "emotion": 0.67
+  }
+ },
+ {
+  "id": "bk_OL20736929W",
+  "title": "Heartstopper, Volume 3",
+  "subtitle": "Alice Oseman",
+  "year": 2020,
+  "meta": "384 pp",
+  "genres": [
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 28,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10846814-M.jpg?default=false",
+  "blurb": "The third volume in the poignant and sweet Heartstopper series, featuring beautiful two-color artwork! Now streaming on Netflix! Charlie didn't think Nick could ever like him back, but now they're officially boyfriends.",
+  "popularity": 0.48,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.66,
+   "pacing": 0.75,
+   "character": 0.82,
+   "originality": 0.53,
+   "atmosphere": 0.67
+  },
+  "tone": {
+   "darkness": 0.27,
+   "complexity": 0.4,
+   "emotion": 0.87
+  }
+ },
+ {
+  "id": "bk_OL2959302W",
+  "title": "The Wedding",
+  "subtitle": "Emma Darcy",
+  "year": 1992,
+  "meta": "189 pp",
+  "genres": [
+   "Romance"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 28,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/14418406-M.jpg?default=false",
+  "blurb": "From back of book: It was time out of time First, Tessa discovered her fiance in bed with another woman. Then she arrived at work to discover she'd been assigned to go on a three-day conference with the managing director.",
+  "popularity": 0.48,
+  "factors": {
+   "writing": 0.62,
+   "plot": 0.67,
+   "pacing": 0.72,
+   "character": 0.95,
+   "originality": 0.58,
+   "atmosphere": 0.54
+  },
+  "tone": {
+   "darkness": 0.39,
+   "complexity": 0.42,
+   "emotion": 0.86
+  }
+ },
+ {
+  "id": "bk_OL16925622W",
+  "title": "The One (The Selection #3)",
+  "subtitle": "Kiera Cass",
+  "year": 2012,
+  "meta": "306 pp",
+  "genres": [
+   "Romance",
+   "Science Fiction",
+   "Young Adult"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 30,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/7284881-M.jpg?default=false",
+  "blurb": "THE SELECTION changed the lives of thirty-five girls forever. Now, only one will claim Prince Maxon’s heart… It’s swoon meets the Hunger Games in the final instalment of THE SELECTION trilogy!",
+  "popularity": 0.48,
+  "factors": {
+   "writing": 0.59,
+   "plot": 0.75,
+   "pacing": 0.83,
+   "character": 0.74,
+   "originality": 0.61,
+   "atmosphere": 0.73
+  },
+  "tone": {
+   "darkness": 0.45,
+   "complexity": 0.52,
+   "emotion": 0.66
   }
  },
  {
@@ -2268,9 +6224,9 @@
    "count": 30,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/10870775-M.jpg",
-  "blurb": "“Sadako was born to be a runner.”",
-  "popularity": 0.49,
+  "image": "https://covers.openlibrary.org/b/id/10870775-M.jpg?default=false",
+  "blurb": "Hiroshima-born Sadako is lively and athletic--the star of her school's running team. And then the dizzy spells start. Recalling a Japanese legend, Sadako sets to work folding paper cranes.",
+  "popularity": 0.48,
   "factors": {
    "writing": 0.64,
    "plot": 0.84,
@@ -2286,44 +6242,13 @@
   }
  },
  {
-  "id": "bk_OL20736929W",
-  "title": "Heartstopper, Volume 3",
-  "subtitle": "Alice Oseman",
-  "year": 2020,
-  "meta": "384 pp",
-  "genres": [
-   "Romance"
-  ],
-  "rating": {
-   "value": 4.7,
-   "count": 28,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/10846814-M.jpg",
-  "blurb": "A romance standout readers keep coming back to.",
-  "popularity": 0.48,
-  "factors": {
-   "writing": 0.66,
-   "plot": 0.66,
-   "pacing": 0.75,
-   "character": 0.82,
-   "originality": 0.53,
-   "atmosphere": 0.67
-  },
-  "tone": {
-   "darkness": 0.27,
-   "complexity": 0.4,
-   "emotion": 0.87
-  }
- },
- {
   "id": "bk_OL59448W",
   "title": "The Price of Salt",
   "subtitle": "Patricia Highsmith",
   "year": 1952,
   "meta": "276 pp",
   "genres": [
-   "Philosophy",
+   "Literary Fiction",
    "Romance",
    "Fantasy"
   ],
@@ -2332,21 +6257,52 @@
    "count": 27,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/250778-M.jpg",
-  "blurb": "“The lunch hour in the co-workers' cafeteria at Frankenberg's had reached its peak.”",
-  "popularity": 0.48,
+  "image": "https://covers.openlibrary.org/b/id/250778-M.jpg?default=false",
+  "blurb": "THE PRICE OF SALT is the famous lesbian love story by Patricia Highsmith, written under the pseudonym Claire Morgan. The book fell out of print but was re-issued and lives on today as a pioneering work of lesbian romance.",
+  "popularity": 0.47,
   "factors": {
-   "writing": 0.77,
-   "plot": 0.49,
-   "pacing": 0.56,
-   "character": 0.75,
-   "originality": 0.69,
-   "atmosphere": 0.75
+   "writing": 0.81,
+   "plot": 0.56,
+   "pacing": 0.59,
+   "character": 0.89,
+   "originality": 0.67,
+   "atmosphere": 0.83
   },
   "tone": {
-   "darkness": 0.45,
-   "complexity": 0.68,
-   "emotion": 0.64
+   "darkness": 0.52,
+   "complexity": 0.64,
+   "emotion": 0.8
+  }
+ },
+ {
+  "id": "bk_OL1915012W",
+  "title": "The Hiding Place",
+  "subtitle": "Corrie ten Boom",
+  "year": 1971,
+  "meta": "241 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 27,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/12817925-M.jpg?default=false",
+  "blurb": "The Triumphant True Story of Corrie Ten Boom by Corrie ten Boom, John Sherrill, Elizabeth Sherrill (Goodreads Author) \"At one time Corrie ten Boom would have laughed at the idea that there would ever be a story to tell.",
+  "popularity": 0.47,
+  "factors": {
+   "writing": 0.66,
+   "plot": 0.5,
+   "pacing": 0.69,
+   "character": 0.86,
+   "originality": 0.54,
+   "atmosphere": 0.62
+  },
+  "tone": {
+   "darkness": 0.58,
+   "complexity": 0.47,
+   "emotion": 0.8
   }
  },
  {
@@ -2365,9 +6321,9 @@
    "count": 27,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/7433973-M.jpg",
-  "blurb": "“The girls were never present for the entrance interviews.”",
-  "popularity": 0.48,
+  "image": "https://covers.openlibrary.org/b/id/7433973-M.jpg?default=false",
+  "blurb": "Children have always disappeared under the right conditions; slipping through the shadows under a bed or at the back of a wardrobe, tumbling down rabbit holes and into old wells, and emerging somewhere... else.",
+  "popularity": 0.47,
   "factors": {
    "writing": 0.73,
    "plot": 0.76,
@@ -2383,36 +6339,66 @@
   }
  },
  {
-  "id": "bk_OL1167981W",
-  "title": "Animal Farm / Nineteen Eighty-Four",
-  "subtitle": "George Orwell",
-  "year": 1978,
-  "meta": "372 pp",
+  "id": "bk_OL8548335W",
+  "title": "The Walking Dead, Vol. 1",
+  "subtitle": "Robert Kirkman",
+  "year": 2004,
+  "meta": "144 pp",
   "genres": [
    "Dystopian",
-   "Science Fiction",
-   "Fantasy"
+   "Horror"
   ],
   "rating": {
-   "value": 4.5,
-   "count": 28,
+   "value": 4.4,
+   "count": 27,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/10524365-M.jpg",
-  "blurb": "“a tone-matched alternative opening.”",
-  "popularity": 0.48,
+  "image": "https://covers.openlibrary.org/b/id/844763-M.jpg?default=false",
+  "blurb": "The world we knew is gone. The world of commerce and frivolous necessity has been replaced by a world of survival and responsibility. In a world ruled by the dead, the survivors are forced to finally start living.",
+  "popularity": 0.47,
   "factors": {
-   "writing": 0.76,
-   "plot": 0.73,
-   "pacing": 0.68,
-   "character": 0.68,
-   "originality": 0.72,
-   "atmosphere": 0.78
+   "writing": 0.65,
+   "plot": 0.8,
+   "pacing": 0.66,
+   "character": 0.65,
+   "originality": 0.78,
+   "atmosphere": 0.85
   },
   "tone": {
-   "darkness": 0.59,
-   "complexity": 0.72,
-   "emotion": 0.64
+   "darkness": 0.81,
+   "complexity": 0.63,
+   "emotion": 0.59
+  }
+ },
+ {
+  "id": "bk_OL20085413W",
+  "title": "Dog Man",
+  "subtitle": "Dav Pilkey",
+  "year": 2018,
+  "meta": "240 pp",
+  "genres": [
+   "Mystery"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 25,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/8754143-M.jpg?default=false",
+  "blurb": "The Supa Buddies have been working hard to help Dog Man overcome his bad habits. But when his obsessions turn to fears, Dog Man finds himself the target of an all-new supervillain!",
+  "popularity": 0.46,
+  "factors": {
+   "writing": 0.68,
+   "plot": 0.89,
+   "pacing": 0.7,
+   "character": 0.77,
+   "originality": 0.57,
+   "atmosphere": 0.61
+  },
+  "tone": {
+   "darkness": 0.62,
+   "complexity": 0.61,
+   "emotion": 0.56
   }
  },
  {
@@ -2431,9 +6417,9 @@
    "count": 25,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/13012029-M.jpg",
-  "blurb": "A classics standout readers keep coming back to.",
-  "popularity": 0.47,
+  "image": "https://covers.openlibrary.org/b/id/13012029-M.jpg?default=false",
+  "blurb": "Who cut off Medusa's head? Who was raised by a she-bear? Who tamed Pegasus? Told in the funny, irreverent style readers have come to expect from Percy -- Provided by publisher.",
+  "popularity": 0.46,
   "factors": {
    "writing": 0.67,
    "plot": 0.67,
@@ -2449,102 +6435,260 @@
   }
  },
  {
-  "id": "bk_OL953162W",
-  "title": "Como agua para chocolate",
-  "subtitle": "Laura Esquivel",
-  "year": 1989,
-  "meta": "246 pp",
+  "id": "bk_OL1868110W",
+  "title": "Stone Butch Blues",
+  "subtitle": "Leslie Feinberg",
+  "year": 1993,
+  "meta": "452 pp",
   "genres": [
-   "Magical Realism",
+   "Literary Fiction",
+   "Memoir",
+   "Historical Fiction"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 23,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/3935729-M.jpg?default=false",
+  "blurb": "Stone Butch Blues is a historical fiction novel written by Leslie Feinberg about life as a butch lesbian in 1970s America.",
+  "popularity": 0.45,
+  "factors": {
+   "writing": 0.8,
+   "plot": 0.64,
+   "pacing": 0.59,
+   "character": 0.92,
+   "originality": 0.68,
+   "atmosphere": 0.76
+  },
+  "tone": {
+   "darkness": 0.67,
+   "complexity": 0.61,
+   "emotion": 0.8
+  }
+ },
+ {
+  "id": "bk_OL628450W",
+  "title": "Das Kapital",
+  "subtitle": "Karl Marx",
+  "year": 1867,
+  "meta": "579 pp",
+  "genres": [
+   "Philosophy"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 23,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/10995820-M.jpg?default=false",
+  "blurb": "Das Kapital, Karl Marx's seminal work, is the book that above all others formed the twentieth century.",
+  "popularity": 0.45,
+  "factors": {
+   "writing": 0.86,
+   "plot": 0.33,
+   "pacing": 0.44,
+   "character": 0.42,
+   "originality": 0.8,
+   "atmosphere": 0.48
+  },
+  "tone": {
+   "darkness": 0.37,
+   "complexity": 0.92,
+   "emotion": 0.28
+  }
+ },
+ {
+  "id": "bk_OL277761W",
+  "title": "The Struggle",
+  "subtitle": "Lisa Jane Smith",
+  "year": 1991,
+  "meta": "248 pp",
+  "genres": [
+   "Horror",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 21,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/206108-M.jpg?default=false",
+  "blurb": "Lisa Jane Smith's 1991 horror — ★ 4.6 from 21 Open Library readers.",
+  "popularity": 0.44,
+  "factors": {
+   "writing": 0.77,
+   "plot": 0.76,
+   "pacing": 0.62,
+   "character": 0.66,
+   "originality": 0.8,
+   "atmosphere": 0.83
+  },
+  "tone": {
+   "darkness": 0.66,
+   "complexity": 0.6,
+   "emotion": 0.65
+  }
+ },
+ {
+  "id": "bk_OL137872W",
+  "title": "Confessions",
+  "subtitle": "Augustine of Hippo",
+  "year": 1482,
+  "meta": "351 pp",
+  "genres": [
+   "Philosophy",
+   "Memoir",
+   "Classics"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 22,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/9022521-M.jpg?default=false",
+  "blurb": "Garry Wills’s complete translation of Saint Augustine’s spiritual masterpiece—available now for the first time Garry Wills is an exceptionally gifted translator and one of our best writers on religion today. . .",
+  "popularity": 0.44,
+  "factors": {
+   "writing": 0.88,
+   "plot": 0.43,
+   "pacing": 0.57,
+   "character": 0.68,
+   "originality": 0.67,
+   "atmosphere": 0.56
+  },
+  "tone": {
+   "darkness": 0.61,
+   "complexity": 0.67,
+   "emotion": 0.57
+  }
+ },
+ {
+  "id": "bk_OL17862447W",
+  "title": "A sense of words",
+  "subtitle": "Madeline Charlton",
+  "year": 1977,
+  "meta": null,
+  "genres": [
    "Romance",
    "Literary Fiction"
   ],
   "rating": {
-   "value": 4.1,
-   "count": 25,
+   "value": 4.7,
+   "count": 20,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/8372632-M.jpg",
-  "blurb": "“Take care to chop the onion fine.”",
-  "popularity": 0.47,
+  "image": "https://covers.openlibrary.org/b/id/8317098-M.jpg?default=false",
+  "blurb": "Judith knew that her assignment in Switzerland, translating for a big engineering firm, was going to be a challenge. So Judith had to prove him wrong!",
+  "popularity": 0.43,
   "factors": {
-   "writing": 0.81,
-   "plot": 0.63,
-   "pacing": 0.53,
-   "character": 0.76,
-   "originality": 0.81,
-   "atmosphere": 0.79
+   "writing": 0.87,
+   "plot": 0.67,
+   "pacing": 0.55,
+   "character": 0.89,
+   "originality": 0.66,
+   "atmosphere": 0.65
   },
   "tone": {
-   "darkness": 0.46,
-   "complexity": 0.57,
+   "darkness": 0.52,
+   "complexity": 0.5,
+   "emotion": 0.86
+  }
+ },
+ {
+  "id": "bk_OL15187506W",
+  "title": "Michelle Obama in Her Own Words",
+  "subtitle": "Michelle Obama",
+  "year": 2008,
+  "meta": "149 pp",
+  "genres": [
+   "Memoir"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 20,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/6444263-M.jpg?default=false",
+  "blurb": "The election of Barack Obama has brought worldwide attention not only to what his policies will be, but to what kind of First Lady Michelle Obama will be.",
+  "popularity": 0.43,
+  "factors": {
+   "writing": 0.72,
+   "plot": 0.57,
+   "pacing": 0.62,
+   "character": 0.86,
+   "originality": 0.58,
+   "atmosphere": 0.64
+  },
+  "tone": {
+   "darkness": 0.64,
+   "complexity": 0.52,
+   "emotion": 0.88
+  }
+ },
+ {
+  "id": "bk_OL1853064W",
+  "title": "Pimp",
+  "subtitle": "Iceberg Slim",
+  "year": 1967,
+  "meta": "317 pp",
+  "genres": [
+   "Philosophy",
+   "Memoir",
+   "Literary Fiction"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 20,
+   "source": "Open Library"
+  },
+  "image": "https://covers.openlibrary.org/b/id/13539771-M.jpg?default=false",
+  "blurb": "This is the story of Iceberg Slim's life, as he saw, felt, tasted, and smelled it. A trip through hell by the one man who lived to tell the tale. The dangers of jail, addiction and death that are still all too familiar.",
+  "popularity": 0.43,
+  "factors": {
+   "writing": 0.77,
+   "plot": 0.49,
+   "pacing": 0.53,
+   "character": 0.75,
+   "originality": 0.7,
+   "atmosphere": 0.59
+  },
+  "tone": {
+   "darkness": 0.49,
+   "complexity": 0.69,
    "emotion": 0.74
   }
  },
  {
-  "id": "bk_OL1905255W",
-  "title": "La casa de los espíritus",
-  "subtitle": "Isabel Allende",
-  "year": 1982,
-  "meta": "453 pp",
+  "id": "bk_OL18170596W",
+  "title": "Ringkasan sejarat filsafat",
+  "subtitle": "K. Bertens",
+  "year": 1975,
+  "meta": "94 pp",
   "genres": [
-   "Magical Realism",
-   "Literary Fiction",
-   "Romance"
+   "Philosophy"
   ],
   "rating": {
-   "value": 4.4,
-   "count": 24,
+   "value": 4.6,
+   "count": 20,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/3205226-M.jpg",
-  "blurb": "“Barrabas llego a la familia por via maritima, anoto la nina Clara con su delicada caligrafia.”",
-  "popularity": 0.46,
+  "image": "https://covers.openlibrary.org/b/id/8333070-M.jpg?default=false",
+  "blurb": "K. Bertens's 1975 philosophy — ★ 4.6 from 20 Open Library readers.",
+  "popularity": 0.43,
   "factors": {
-   "writing": 0.86,
-   "plot": 0.6,
-   "pacing": 0.57,
-   "character": 0.82,
-   "originality": 0.73,
-   "atmosphere": 0.8
+   "writing": 0.78,
+   "plot": 0.42,
+   "pacing": 0.43,
+   "character": 0.44,
+   "originality": 0.79,
+   "atmosphere": 0.57
   },
   "tone": {
-   "darkness": 0.5,
-   "complexity": 0.58,
-   "emotion": 0.78
-  }
- },
- {
-  "id": "bk_OL14917547W",
-  "title": "Works (Carrie / Night Shift / 'Salem's Lot / Shining)",
-  "subtitle": "Stephen King",
-  "year": 1981,
-  "meta": "992 pp",
-  "genres": [
-   "Mystery",
-   "Horror",
-   "Thriller"
-  ],
-  "rating": {
-   "value": 4.8,
-   "count": 22,
-   "source": "Open Library"
-  },
-  "image": "https://covers.openlibrary.org/b/id/12015639-M.jpg",
-  "blurb": "A mystery standout readers keep coming back to.",
-  "popularity": 0.45,
-  "factors": {
-   "writing": 0.68,
-   "plot": 0.74,
-   "pacing": 0.86,
-   "character": 0.67,
-   "originality": 0.68,
-   "atmosphere": 0.78
-  },
-  "tone": {
-   "darkness": 0.87,
-   "complexity": 0.49,
-   "emotion": 0.46
+   "darkness": 0.46,
+   "complexity": 0.78,
+   "emotion": 0.4
   }
  },
  {
@@ -2562,9 +6706,9 @@
    "count": 20,
    "source": "Open Library"
   },
-  "image": "https://covers.openlibrary.org/b/id/11305216-M.jpg",
-  "blurb": "A classics standout readers keep coming back to.",
-  "popularity": 0.44,
+  "image": "https://covers.openlibrary.org/b/id/11305216-M.jpg?default=false",
+  "blurb": "Frog and Toad All Year is an American picture book written and illustrated by Arnold Lobel, published by Harper & Row in 1976. ---------- Also contained in: The Frog and Toad Treasury",
+  "popularity": 0.43,
   "factors": {
    "writing": 0.69,
    "plot": 0.75,

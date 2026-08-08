@@ -2,7 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import { Compass, Library as LibraryIcon, Users, User, BookOpen, UtensilsCrossed, Music, Film, Tv, Sparkles } from "lucide-react";
 import { DOMAINS, DOMAIN_KEYS } from "./domains.js";
 import { updateProfileFromAction, applyRating } from "./engine/engine.mjs";
-import { CSS, clamp } from "./ui/bits.jsx";
+import { dayKey } from "./engine/stats.mjs";
+import { CSS, clamp, Toast } from "./ui/bits.jsx";
+import ItemSheet from "./ui/ItemSheet.jsx";
 import Onboarding from "./ui/Onboarding.jsx";
 import Discover from "./ui/Discover.jsx";
 import ForYou from "./ui/ForYou.jsx";
@@ -25,7 +27,13 @@ const DOMAIN_ICONS = { books: BookOpen, movies: Film, tv: Tv, restaurants: Utens
 
 const emptyDomainState = (key) => ({
   onboarded: false, profile: null, onboardingData: null, shelf: {}, feed: seedFeed(DOMAINS[key]),
+  activity: {}, // "YYYY-MM-DD" -> items sorted that day (drives the streak)
+  ranked: [],   // ids, best first, from head-to-head comparisons
 });
+
+// Older saved states predate activity/ranked — fill them in on load so the new
+// surfaces never read undefined.
+const withDefaults = (s, key) => ({ ...emptyDomainState(key), ...s });
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
@@ -34,6 +42,8 @@ export default function App() {
     Object.fromEntries(DOMAIN_KEYS.map((k) => [k, emptyDomainState(k)]))
   );
   const [view, setView] = useState("discover");
+  const [sheetItem, setSheetItem] = useState(null); // item shown in the detail sheet
+  const [undo, setUndo] = useState(null);           // last sort action, for the undo toast
   const firstSave = useRef(true);
 
   useEffect(() => {
@@ -41,7 +51,7 @@ export default function App() {
     if (raw?.states) {
       setStates((prev) => {
         const merged = { ...prev };
-        for (const k of DOMAIN_KEYS) if (raw.states[k]?.onboarded) merged[k] = raw.states[k];
+        for (const k of DOMAIN_KEYS) if (raw.states[k]?.onboarded) merged[k] = withDefaults(raw.states[k], k);
         return merged;
       });
       if (DOMAIN_KEYS.includes(raw.active)) setActive(raw.active);
@@ -65,6 +75,12 @@ export default function App() {
   };
 
   const handleAction = (item, action, rating = null) => {
+    // snapshot for undo — the profile is derived, so we restore it wholesale
+    const cur = states[active];
+    setUndo({
+      domainKey: active, item, action,
+      prev: { profile: cur.profile, shelf: cur.shelf, feed: cur.feed, activity: cur.activity },
+    });
     setStates((s) => {
       const cur = s[active];
       const profile = updateProfileFromAction(cur.profile, item, action, domain, rating);
@@ -75,8 +91,16 @@ export default function App() {
       if (action === "want") {
         feed = [{ id: "p" + Date.now(), userId: "me", type: "shelved", itemId: item.id, text: "", ts: Date.now(), likes: 0, likedByMe: false, comments: [] }, ...feed];
       }
-      return { ...s, [active]: { ...cur, profile, shelf, feed } };
+      const today = dayKey(Date.now());
+      const activity = { ...cur.activity, [today]: (cur.activity?.[today] || 0) + 1 };
+      return { ...s, [active]: { ...cur, profile, shelf, feed, activity } };
     });
+  };
+
+  const undoLast = () => {
+    if (!undo) return;
+    setStates((s) => ({ ...s, [undo.domainKey]: { ...s[undo.domainKey], ...undo.prev } }));
+    setUndo(null);
   };
 
   const moveShelf = (id, status) => setStates((s) => {
@@ -120,7 +144,23 @@ export default function App() {
     return { ...s, [active]: { ...cur, profile: { ...cur.profile, goals } } };
   });
   const setFeed = (feed) => patch({ feed });
-  const reset = () => { patch(emptyDomainState(active)); setView("discover"); };
+  const setRanked = (ranked) => patch({ ranked });
+
+  // Imported CSV rows: merge into the shelf and let every rated row teach the
+  // profile, so the deck reflects an imported history immediately.
+  const importEntries = (entries) => setStates((s) => {
+    const cur = s[active];
+    let profile = cur.profile;
+    for (const [id, entry] of Object.entries(entries)) {
+      const item = domain.items.find((i) => i.id === id);
+      if (!item) continue;
+      const action = entry.status === "want" ? "want" : "consumed";
+      profile = updateProfileFromAction(profile, item, action, domain, null);
+      if (entry.rating) profile = applyRating(profile, item, { overall: entry.rating }, domain);
+    }
+    return { ...s, [active]: { ...cur, profile, shelf: { ...cur.shelf, ...entries } } };
+  });
+  const reset = () => { patch(emptyDomainState(active)); setView("discover"); setUndo(null); };
 
   const tabs = [
     { k: "discover", label: "Discover", Icon: Compass },
@@ -161,19 +201,27 @@ export default function App() {
             <div className="taste-body">
               {view === "discover" && (
                 <Discover domain={domain} profile={ds.profile} shelf={ds.shelf}
-                  onAction={handleAction} onExplore={setExplore} />
+                  onAction={handleAction} onExplore={setExplore} onOpen={setSheetItem} />
               )}
               {view === "foryou" && (
-                <ForYou domain={domain} profile={ds.profile} shelf={ds.shelf} onAction={handleAction} />
+                <ForYou domain={domain} profile={ds.profile} shelf={ds.shelf} onAction={handleAction} onOpen={setSheetItem} />
               )}
               {view === "library" && (
-                <LibraryView domain={domain} shelf={ds.shelf} onMove={moveShelf} onRemove={removeShelf} onRate={handleRate} />
+                <LibraryView domain={domain} shelf={ds.shelf} ranked={ds.ranked} onRanked={setRanked}
+                  onMove={moveShelf} onRemove={removeShelf} onRate={handleRate} onOpen={setSheetItem} />
               )}
-              {view === "feed" && <Feed domain={domain} feed={ds.feed} setFeed={setFeed} shelf={ds.shelf} />}
+              {view === "feed" && <Feed domain={domain} feed={ds.feed} setFeed={setFeed} shelf={ds.shelf} onOpen={setSheetItem} />}
               {view === "profile" && (
-                <ProfileView domain={domain} profile={ds.profile} shelf={ds.shelf} onExplore={setExplore} onGoals={setGoals} onReset={reset} />
+                <ProfileView domain={domain} profile={ds.profile} shelf={ds.shelf} activity={ds.activity}
+                  states={states} onSwitchDomain={(k) => { setActive(k); setView("discover"); }} onImport={importEntries}
+                  onExplore={setExplore} onGoals={setGoals} onReset={reset} />
               )}
             </div>
+            {undo && (
+              <Toast
+                message={<>{undo.action === "want" ? domain.actions.want : undo.action === "pass" ? "Passed" : domain.actions.consumedShort} · <b>{undo.item.title}</b></>}
+                actionLabel="Undo" onAction={undoLast} onDismiss={() => setUndo(null)} ms={8000} />
+            )}
             <div className="tabbar">
               {tabs.map(({ k, label, Icon }) => (
                 <button key={k} className={"tab" + (view === k ? " on" : "")} onClick={() => setView(k)}>
@@ -186,6 +234,10 @@ export default function App() {
           </>
         )}
       </div>
+      {sheetItem && ds.onboarded && (
+        <ItemSheet domain={domain} item={sheetItem} profile={ds.profile} shelfEntry={ds.shelf[sheetItem.id]}
+          onAction={handleAction} onRate={handleRate} onClose={() => setSheetItem(null)} />
+      )}
     </div>
   );
 }

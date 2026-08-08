@@ -3,7 +3,7 @@ import { ChevronRight, ChevronLeft, Sparkles, Check } from "lucide-react";
 import { buildInitialProfile } from "../engine/engine.mjs";
 import { GOAL_KEYS } from "../engine/suggest.mjs";
 import { allGenres, paletteFor } from "../domains.js";
-import { ItemPicker, toggleSel } from "./bits.jsx";
+import { Chip, Cover, ItemPicker, toggleSel } from "./bits.jsx";
 
 export default function Onboarding({ domain, onDone }) {
   const [step, setStep] = useState(0);
@@ -27,23 +27,21 @@ export default function Onboarding({ domain, onDone }) {
 
   const steps = [
     { key: "intro" },
-    { key: "genres", title: "What do you reach for?", eyebrow: `Step 1 · ${domain.genreLabel} you love`,
+    { key: "genres", title: "What do you reach for?", eyebrow: `${domain.genreLabel} you love`,
       sub: `Pick what you gravitate to. Broad strokes first — we'll get specific next.` },
-    { key: "avoidGenres", title: "Anything you'd rather skip?", eyebrow: "Step 2 · Not for you",
+    { key: "avoidGenres", title: "Anything you'd rather skip?", eyebrow: "Not for you", optional: true,
       sub: `Optional. Mark ${domain.genreLabel.toLowerCase()} you actively avoid so we keep them out of your deck.` },
-    { key: "fav", title: "Name a few you love", eyebrow: `Step 3 · Favourite ${plural}`,
+    { key: "fav", title: "Name a few you love", eyebrow: `Favourite ${plural}`,
       sub: `Choose 3 or more. These anchor your taste — the engine learns the feel of what you adore.` },
-    { key: "surprise", title: "Any pleasant surprises?", eyebrow: "Step 4 · Loved against the odds",
-      sub: `Optional. ${plural[0].toUpperCase() + plural.slice(1)} you enjoyed even though they're not your usual thing. This widens what we'll dare to show you.` },
-    { key: "avoid", title: "Any that weren't for you?", eyebrow: "Step 5 · Bounced off",
-      sub: `Optional. ${plural[0].toUpperCase() + plural.slice(1)} you disliked — we'll steer clear of their fingerprint.` },
-    { key: "weights", title: `What makes a ${noun} for you?`, eyebrow: "Step 6 · What you weigh",
-      sub: "Drag toward what matters most." },
-    { key: "goals", title: "What are you here for?", eyebrow: "Step 7 · Your goals",
+    { key: "edges", title: "Surprises and misses?", eyebrow: "The edges", optional: true,
+      sub: `Optional. ${plural[0].toUpperCase() + plural.slice(1)} you loved against the odds widen what we'll dare to show you; ones you bounced off keep their fingerprint out of your deck.` },
+    { key: "weights", title: `What makes a ${noun} for you?`, eyebrow: "What you weigh", optional: true,
+      sub: "Drag toward what matters most — or skip, and your ratings will teach us." },
+    { key: "goals", title: "What are you here for?", eyebrow: "Your goals", optional: true,
       sub: "Optional, up to 3. Goals get their own suggestion rows — honored even when they cut against your usual taste." },
-    { key: "explore", title: "How far should we wander?", eyebrow: "Step 8 · The dial",
+    { key: "explore", title: "How far should we wander?", eyebrow: "The dial",
       sub: "Stay close to your taste, or let us push you somewhere new. You can change this any time." },
-    { key: "confirm", title: "Here's what we heard", eyebrow: "Step 9 · Confirm your taste profile",
+    { key: "confirm", title: "Here's what we heard", eyebrow: "Confirm your taste profile",
       sub: "This is the profile your deck and suggestions will run on. If something reads wrong, go back and fix it — or open the deck and correct it by swiping." },
   ];
   const cur = steps[step];
@@ -52,6 +50,13 @@ export default function Onboarding({ domain, onDone }) {
   const canNext =
     cur.key === "genres" ? genres.length >= 1 :
     cur.key === "fav" ? favIds.length >= 3 : true;
+
+  // "Skip for now" instead of "Continue" when an optional step has no input yet
+  const stepEmpty =
+    cur.key === "avoidGenres" ? avoidGenres.length === 0 :
+    cur.key === "edges" ? surpriseIds.length + avoidIds.length === 0 :
+    cur.key === "weights" ? Object.values(weights).every((v) => v === 0.5) :
+    cur.key === "goals" ? goals.length === 0 : false;
 
   const buildProfile = () => {
     const profile = buildInitialProfile(domain, {
@@ -66,6 +71,18 @@ export default function Onboarding({ domain, onDone }) {
   };
   const finish = () => {
     onDone(buildProfile(), { genres, avoidGenres, favIds, surpriseIds, avoidIds, weights, goals, explore });
+  };
+  // Zero-input path: a neutral profile with the dial opened up, so the deck
+  // starts on broadly-loved items and learns entirely from swipes. Every
+  // preference remains editable in Profile afterwards.
+  const quickStart = () => {
+    const profile = buildInitialProfile(domain, {
+      genres: [], avoidGenres: [], favoriteItems: [], surprisedLiked: [], avoidItems: [],
+      weights: Object.fromEntries(domain.factors.map((k) => [k, 0.5])), explore: 0.5,
+    });
+    profile.goals = [];
+    onDone(profile, { genres: [], avoidGenres: [], favIds: [], surpriseIds: [], avoidIds: [],
+      weights: Object.fromEntries(domain.factors.map((k) => [k, 0.5])), goals: [], explore: 0.5, quickStart: true });
   };
   // live preview of the derived profile for the confirmation step
   const preview = useMemo(
@@ -93,18 +110,31 @@ export default function Onboarding({ domain, onDone }) {
             {domain.heroTitle[0]}<br /><span className="hl">{domain.heroTitle[1]}</span><br />{domain.heroTitle[2]}
           </h1>
           <p className="sub" style={{ marginTop: 16, maxWidth: 340 }}>{domain.heroSub}</p>
-          <button className="btn btn-primary btn-block" style={{ marginTop: 28 }} onClick={() => setStep(1)}>
+          <div className="row" style={{ marginTop: 24, gap: 0, justifyContent: "center" }}>
+            {(pickerItems.filter((b) => b.image).length >= 3 ? pickerItems.filter((b) => b.image) : pickerItems).slice(0, 5).map((b, i) => (
+              <div key={b.id} style={{ transform: `rotate(${(i - 2) * 4}deg) translateY(${Math.abs(i - 2) * 5}px)`,
+                marginLeft: i === 0 ? 0 : -18, zIndex: 5 - Math.abs(i - 2),
+                border: "2px solid var(--ink)", borderRadius: 9, boxShadow: "3px 3px 0 var(--ink)", overflow: "hidden" }}>
+                <Cover item={b} size="md" />
+              </div>
+            ))}
+          </div>
+          <button className="btn btn-primary btn-block" style={{ marginTop: 26 }} onClick={() => setStep(1)}>
             Build my taste profile <ChevronRight size={16} style={{ verticalAlign: "-3px" }} />
           </button>
-          <p className="cat-no" style={{ marginTop: 14, textAlign: "center" }}>
-            ~ 90 seconds · {domain.items.length} {plural} in the starter catalogue
+          <button className="btn btn-ghost btn-block" style={{ marginTop: 10 }} onClick={quickStart}>
+            Skip setup — just show me {plural}
+          </button>
+          <p className="cat-no" style={{ marginTop: 14, textAlign: "center", lineHeight: 1.5 }}>
+            ~ 60 seconds · {domain.items.length.toLocaleString()} {plural} in the catalogue<br />
+            Skipping starts from the crowd's favourites and learns purely from your swipes.
           </p>
         </div>
       )}
 
       {cur.title && (
         <>
-          <div className="eyebrow">{cur.eyebrow}</div>
+          <div className="eyebrow">Step {step} · {cur.eyebrow}</div>
           <h2 className="h1" style={{ fontSize: 27, marginTop: 8 }}>{cur.title}</h2>
           <p className="sub" style={{ margin: "8px 0 20px" }}>{cur.sub}</p>
         </>
@@ -113,16 +143,14 @@ export default function Onboarding({ domain, onDone }) {
       {cur.key === "genres" && (
         <div className="chips">
           {GENRES.map((g) => (
-            <span key={g} className={"chip" + (genres.includes(g) ? " on" : "")}
-              onClick={() => toggleSel(setGenres, g)}>{g}</span>
+            <Chip key={g} on={genres.includes(g)} onClick={() => toggleSel(setGenres, g)}>{g}</Chip>
           ))}
         </div>
       )}
       {cur.key === "avoidGenres" && (
         <div className="chips">
           {GENRES.filter((g) => !genres.includes(g)).map((g) => (
-            <span key={g} className={"chip avoid" + (avoidGenres.includes(g) ? " on" : "")}
-              onClick={() => toggleSel(setAvoidGenres, g)}>{g}</span>
+            <Chip key={g} variant="avoid" on={avoidGenres.includes(g)} onClick={() => toggleSel(setAvoidGenres, g)}>{g}</Chip>
           ))}
         </div>
       )}
@@ -132,8 +160,14 @@ export default function Onboarding({ domain, onDone }) {
           <ItemPicker items={pickerItems} selected={favIds} set={setFavIds} />
         </>
       )}
-      {cur.key === "surprise" && <ItemPicker items={pickerItems} selected={surpriseIds} set={setSurpriseIds} exclude={favIds} />}
-      {cur.key === "avoid" && <ItemPicker items={pickerItems} selected={avoidIds} set={setAvoidIds} exclude={[...favIds, ...surpriseIds]} />}
+      {cur.key === "edges" && (
+        <>
+          <div className="eyebrow" style={{ marginBottom: 10 }}>Loved against the odds</div>
+          <ItemPicker items={pickerItems.slice(0, 12)} selected={surpriseIds} set={setSurpriseIds} exclude={favIds} />
+          <div className="eyebrow" style={{ margin: "20px 0 10px" }}>Weren't for you</div>
+          <ItemPicker items={pickerItems.slice(0, 12)} selected={avoidIds} set={setAvoidIds} exclude={[...favIds, ...surpriseIds]} />
+        </>
+      )}
 
       {cur.key === "weights" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
@@ -236,10 +270,11 @@ export default function Onboarding({ domain, onDone }) {
       )}
 
       {step > 0 && (
-        <button className={"btn btn-block " + (step === last ? "btn-hl" : "btn-primary")} disabled={!canNext}
+        <button className={"btn btn-block " + (step === last ? "btn-hl" : cur.optional && stepEmpty ? "btn-ghost" : "btn-primary")} disabled={!canNext}
           style={{ marginTop: 26, opacity: canNext ? 1 : 0.4 }}
           onClick={() => (step === last ? finish() : setStep(step + 1))}>
           {step === last ? <>Looks right — open {domain.name} <Sparkles size={16} style={{ verticalAlign: "-3px" }} /></> :
+            cur.optional && stepEmpty ? <>Skip for now <ChevronRight size={16} style={{ verticalAlign: "-3px" }} /></> :
             <>Continue <ChevronRight size={16} style={{ verticalAlign: "-3px" }} /></>}
         </button>
       )}

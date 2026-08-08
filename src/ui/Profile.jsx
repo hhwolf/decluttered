@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { RotateCcw, Sliders, Target } from "lucide-react";
 import { paletteFor } from "../domains.js";
 import { GOAL_KEYS } from "../engine/suggest.mjs";
+import { Chip } from "./bits.jsx";
+import { StreakCard, MilestoneCard, TasteReview, AllDomains, ImportCard } from "./Stats.jsx";
+import { DOMAINS, DOMAIN_KEYS } from "../domains.js";
 
-export default function ProfileView({ domain, profile, shelf, onExplore, onGoals, onReset }) {
+export default function ProfileView({ domain, profile, shelf, activity, states, onSwitchDomain, onImport, onExplore, onGoals, onReset }) {
+  const [confirmReset, setConfirmReset] = useState(false);
   const goals = profile.goals || [];
   const toggleGoal = (g) => {
     if (goals.includes(g)) onGoals(goals.filter((x) => x !== g));
@@ -27,6 +32,15 @@ export default function ProfileView({ domain, profile, shelf, onExplore, onGoals
           </div>
         ))}
       </div>
+
+      <StreakCard domain={domain} activity={activity} />
+      <MilestoneCard domain={domain} total={profile.interactions || 0} />
+      <TasteReview domain={domain} shelf={shelf} profile={profile} />
+      {onImport && <ImportCard domain={domain} onImport={onImport} />}
+      {states && (
+        <AllDomains states={states} domains={DOMAINS} domainKeys={DOMAIN_KEYS}
+          active={domain.key} onSwitch={onSwitchDomain} />
+      )}
 
       <div className="card" style={{ marginBottom: 14 }}>
         <div className="eyebrow" style={{ marginBottom: 12 }}>{domain.genreLabel} you lean into</div>
@@ -87,9 +101,7 @@ export default function ProfileView({ domain, profile, shelf, onExplore, onGoals
         </div>
         <div className="chips">
           {GOAL_KEYS.map((g) => (
-            <span key={g} className={"chip" + (goals.includes(g) ? " on" : "")} onClick={() => toggleGoal(g)}>
-              {domain.goalLabels[g].chip}
-            </span>
+            <Chip key={g} on={goals.includes(g)} onClick={() => toggleGoal(g)}>{domain.goalLabels[g].chip}</Chip>
           ))}
         </div>
         <p className="cat-no" style={{ marginTop: 10, lineHeight: 1.45 }}>
@@ -110,7 +122,22 @@ export default function ProfileView({ domain, profile, shelf, onExplore, onGoals
       </div>
 
       <p className="cat-no" style={{ textAlign: "center", marginBottom: 10 }}>{profile.interactions} {domain.nounPlural} sorted · taste updated live</p>
-      <button className="btn btn-ghost btn-block" onClick={onReset}><RotateCcw size={14} style={{ verticalAlign: "-2px" }} /> Start {domain.name} over</button>
+      {confirmReset ? (
+        <div className="card" style={{ borderColor: "var(--stamp)" }}>
+          <p className="sub" style={{ margin: "0 0 12px" }}>
+            This erases your {domain.name} profile, all {Object.keys(shelf).length} shelved {domain.nounPlural}, your ratings, and your streak. It can't be undone.
+          </p>
+          <div className="row" style={{ gap: 8 }}>
+            <button className="btn btn-ghost" style={{ flex: 1 }} onClick={() => setConfirmReset(false)}>Keep my data</button>
+            <button className="btn btn-primary" style={{ flex: 1, background: "var(--stamp)", borderColor: "var(--stamp)" }}
+              onClick={() => { setConfirmReset(false); onReset(); }}>Erase {domain.name}</button>
+          </div>
+        </div>
+      ) : (
+        <button className="btn btn-ghost btn-block" onClick={() => setConfirmReset(true)}>
+          <RotateCcw size={14} style={{ verticalAlign: "-2px" }} /> Start {domain.name} over
+        </button>
+      )}
     </div>
   );
 }

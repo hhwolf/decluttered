@@ -13,19 +13,24 @@ const MECHANISM_LABEL = {
   gems: "hidden gems", mood: "mood", stretch: "anti-pattern", goal: "your goal",
 };
 
-function SugCard({ domain, item, profile, onAction }) {
+function SugCard({ domain, item, profile, onAction, onOpen }) {
   const [gone, setGone] = useState(null); // 'want' | 'pass' during exit anim
   const s = scoreItem(item, profile, domain);
   const tag = matchTag(s.score);
   const act = (a) => { setGone(a); setTimeout(() => onAction(item, a), 160); };
   return (
     <div className="sugcard" style={{ opacity: gone ? 0 : 1, transform: gone === "want" ? "translateY(-8px)" : gone === "pass" ? "translateY(8px)" : "none" }}>
-      <Cover item={item} size="md" />
+      <button className="coverbtn" onClick={() => onOpen(item)} aria-label={`Open details for ${item.title}`}>
+        <Cover item={item} size="md" />
+      </button>
       <div className="sugmeta">
-        <span className="cat-no" style={{ fontWeight: 600, color: tag.c }}>{displayScore(s.score)} · {tag.t}</span>
-        <div className="sugtitle">{item.title}</div>
-        <div className="cat-no" style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{item.subtitle}</div>
-        <div style={{ marginTop: 3 }}><ExtRating item={item} /></div>
+        <span className="cat-no" style={{ fontWeight: 600, color: tag.c }} title={`${displayScore(s.score)}% taste match`}>{displayScore(s.score)}% · {tag.t.replace(/ match$/, "")}</span>
+        <button className="linkbtn sugtitle" onClick={() => onOpen(item)} style={{ textAlign: "left" }}>{item.title}</button>
+        <div className="cat-no" style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}
+          title={item.dish ? `${item.subtitle} — known for ${item.dish}` : item.subtitle}>
+          {item.subtitle}{item.dish ? ` · ${item.dish}` : ""}
+        </div>
+        <div style={{ marginTop: 3, overflow: "hidden", whiteSpace: "nowrap" }}><ExtRating item={item} compact /></div>
       </div>
       <div className="sugacts">
         <button className="iconbtn" title={domain.actions.pass} onClick={() => act("pass")}><X size={15} /></button>
@@ -37,7 +42,7 @@ function SugCard({ domain, item, profile, onAction }) {
   );
 }
 
-export default function ForYou({ domain, profile, shelf, onAction }) {
+export default function ForYou({ domain, profile, shelf, onAction, onOpen }) {
   const rows = useMemo(
     () => buildSuggestionRows(domain.items, profile, domain, { excludeIds: Object.keys(shelf), perRow: 6 }),
     [domain, profile, shelf]
@@ -62,7 +67,7 @@ export default function ForYou({ domain, profile, shelf, onAction }) {
             <p className="cat-no" style={{ margin: "2px 0 9px", lineHeight: 1.45 }}>{row.reason}</p>
             <div className="shelfrow">
               {row.items.map((it) => (
-                <SugCard key={it.id} domain={domain} item={it} profile={profile} onAction={onAction} />
+                <SugCard key={it.id} domain={domain} item={it} profile={profile} onAction={onAction} onOpen={onOpen} />
               ))}
             </div>
           </div>

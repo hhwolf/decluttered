@@ -87,9 +87,9 @@ async function main() {
     if (gid == null) { console.warn(`  ! no Deezer genre for ${deezerName}`); continue; }
     let data = [];
     try {
-      ({ data = [] } = await getJSON(`https://api.deezer.com/chart/${gid}/tracks?limit=8`));
+      ({ data = [] } = await getJSON(`https://api.deezer.com/chart/${gid}/tracks?limit=30`));
     } catch (e) { console.warn(`  ! chart ${deezerName}: ${e.message}`); continue; }
-    for (const t of data) {
+    for (const [pos, t] of data.entries()) {
       const key = norm(t.artist.name) + "|" + norm(t.title);
       if (seen.has(key)) {
         const it = seen.get(key);
@@ -109,7 +109,9 @@ async function main() {
           source: "Deezer",
         },
         image: t.album?.cover_medium || null,
-        blurb: `“${t.title}” — ${t.artist.name}, riding the ${chip} charts right now.`,
+        blurb: t.album?.title && norm(t.album.title) !== norm(t.title)
+          ? `#${pos + 1} on Deezer's ${chip} chart — ${t.artist.name}, from the album “${t.album.title}”.`
+          : `#${pos + 1} on Deezer's ${chip} chart — a standalone ${t.artist.name} single, ${Math.floor(t.duration / 60)}:${String(t.duration % 60).padStart(2, "0")} long.`,
         links: { deezer: t.link, preview: t.preview || null },
         _rank: t.rank,
       });

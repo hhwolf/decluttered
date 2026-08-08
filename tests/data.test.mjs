@@ -59,7 +59,9 @@ for (const [file, factors, tones, minCount] of DOMAINS) {
   const withPreview = music.filter((m) => m.links?.preview).length;
   const withApple = music.filter((m) => m.links?.appleMusic).length;
   check("[music.json] most tracks have a 30s preview", withPreview / music.length > 0.8, `${withPreview}/${music.length}`);
-  check("[music.json] >40% have Apple Music links", withApple / music.length > 0.4, `${withApple}/${music.length}`);
+  // enrichment is best-effort; the 390-track international catalogue matches
+  // iTunes less often than the old 107-track US-heavy one did
+  check("[music.json] >15% have Apple Music links", withApple / music.length > 0.15, `${withApple}/${music.length}`);
   check("[music.json] artwork present", music.filter((m) => m.image).length / music.length > 0.9);
 }
 // books-specific: real reader ratings

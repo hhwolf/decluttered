@@ -13,7 +13,7 @@
    "count": 46000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Pastrami-Sandwich.JPG/500px-Pastrami-Sandwich.JPG",
   "blurb": "The century-old pastrami temple of the Lower East Side — order at the counter, keep your ticket.",
   "factors": {
    "food": 0.85,
@@ -28,7 +28,8 @@
    "formality": 0.18,
    "adventure": 0.28
   },
-  "popularity": 1
+  "popularity": 1,
+  "dish": "Pastrami on rye"
  },
  {
   "id": "rs_caf_du_monde",
@@ -44,7 +45,7 @@
    "count": 26000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Beignet_good_for_mouth.jpg/500px-Beignet_good_for_mouth.jpg",
   "blurb": "Beignets and chicory café au lait, 24 hours a day since 1862.",
   "factors": {
    "food": 0.85,
@@ -59,7 +60,8 @@
    "formality": 0.14,
    "adventure": 0.43
   },
-  "popularity": 0.95
+  "popularity": 0.95,
+  "dish": "Beignets"
  },
  {
   "id": "rs_reading_terminal_market",
@@ -76,7 +78,7 @@
    "count": 27000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Reading_Terminal_Market_%2853587020195%29.jpg/500px-Reading_Terminal_Market_%2853587020195%29.jpg",
   "blurb": "A city block of roast pork sandwiches, whoopie pies, and Amish butter.",
   "factors": {
    "food": 0.81,
@@ -91,7 +93,139 @@
    "formality": 0.17,
    "adventure": 0.34
   },
-  "popularity": 0.95
+  "popularity": 0.95,
+  "dish": "Roast pork sandwiches and more"
+ },
+ {
+  "id": "rs_the_varsity",
+  "title": "The Varsity",
+  "subtitle": "Atlanta, GA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Burgers",
+   "American"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 25000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Chili_dog_with_fries.jpg/500px-Chili_dog_with_fries.jpg",
+  "blurb": "\"What'll ya have?\" — chili dogs and frosted oranges at the world's largest drive-in.",
+  "factors": {
+   "food": 0.78,
+   "ambiance": 0.5,
+   "service": 0.59,
+   "value": 0.84,
+   "creativity": 0.38,
+   "comfort": 0.82
+  },
+  "tone": {
+   "liveliness": 0.72,
+   "formality": 0.21,
+   "adventure": 0.19
+  },
+  "popularity": 0.94,
+  "dish": "Chili dogs"
+ },
+ {
+  "id": "rs_mi_tierra_caf_y_panader_a",
+  "title": "Mi Tierra Café y Panadería",
+  "subtitle": "San Antonio, TX",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Mexican",
+   "Bakery & Café"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 21000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Canasta_con_pan_dulce_de_la_%22Fonda_Garufa%22_en_la_Colonia_Condesa_en_la_Ciudad_de_M%C3%A9xico.jpg/500px-Canasta_con_pan_dulce_de_la_%22Fonda_Garufa%22_en_la_Colonia_Condesa_en_la_Ciudad_de_M%C3%A9xico.jpg",
+  "blurb": "24-hour mariachis, pan dulce, and enchiladas under a ceiling of piñatas.",
+  "factors": {
+   "food": 0.72,
+   "ambiance": 0.72,
+   "service": 0.65,
+   "value": 0.83,
+   "creativity": 0.51,
+   "comfort": 0.77
+  },
+  "tone": {
+   "liveliness": 0.67,
+   "formality": 0.24,
+   "adventure": 0.37
+  },
+  "popularity": 0.93,
+  "dish": "Pan dulce and enchiladas"
+ },
+ {
+  "id": "rs_hattie_b_s_hot_chicken",
+  "title": "Hattie B's Hot Chicken",
+  "subtitle": "Nashville, TN",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Soul Food",
+   "American"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 20000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Princes_hot_chicken.jpg/500px-Princes_hot_chicken.jpg",
+  "blurb": "The tourist gateway to hot chicken — and still very good hot chicken.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.58,
+   "service": 0.69,
+   "value": 0.77,
+   "creativity": 0.48,
+   "comfort": 0.95
+  },
+  "tone": {
+   "liveliness": 0.67,
+   "formality": 0.22,
+   "adventure": 0.34
+  },
+  "popularity": 0.92,
+  "dish": "Hot chicken"
+ },
+ {
+  "id": "rs_joe_s_kansas_city_bar_b_que",
+  "title": "Joe's Kansas City Bar-B-Que",
+  "subtitle": "Kansas City, KS",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 20000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Competition_Barbecue_submission._This_is_beef_brisket..jpg/330px-Competition_Barbecue_submission._This_is_beef_brisket..jpg",
+  "blurb": "The gas-station burnt ends Anthony Bourdain put on his life list.",
+  "factors": {
+   "food": 0.82,
+   "ambiance": 0.55,
+   "service": 0.62,
+   "value": 0.7,
+   "creativity": 0.52,
+   "comfort": 0.92
+  },
+  "tone": {
+   "liveliness": 0.63,
+   "formality": 0.14,
+   "adventure": 0.41
+  },
+  "popularity": 0.92,
+  "dish": "Burnt ends"
  },
  {
   "id": "rs_joe_s_pizza",
@@ -107,7 +241,7 @@
    "count": 17000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/NYPizzaPie.jpg/500px-NYPizzaPie.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "Greenwich Village's benchmark slice since 1975. No frills, no wrong answers.",
   "factors": {
    "food": 0.75,
@@ -122,7 +256,8 @@
    "formality": 0.1,
    "adventure": 0.25
   },
-  "popularity": 0.91
+  "popularity": 0.91,
+  "dish": "Plain cheese slice"
  },
  {
   "id": "rs_pike_place_chowder",
@@ -138,7 +273,7 @@
    "count": 15000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Quail_07_bg_041506.jpg/500px-Quail_07_bg_041506.jpg",
   "blurb": "Award-hoarding chowder counter tucked in Post Alley by the market.",
   "factors": {
    "food": 0.87,
@@ -153,7 +288,8 @@
    "formality": 0.53,
    "adventure": 0.54
   },
-  "popularity": 0.9
+  "popularity": 0.9,
+  "dish": "Clam chowder"
  },
  {
   "id": "rs_versailles",
@@ -169,7 +305,7 @@
    "count": 15000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tampa_Cuban_sandwich.jpg/330px-Tampa_Cuban_sandwich.jpg",
   "blurb": "The world's most famous Cuban restaurant, cafecito ventanita included.",
   "factors": {
    "food": 0.46,
@@ -184,7 +320,40 @@
    "formality": 0.52,
    "adventure": 0.46
   },
-  "popularity": 0.9
+  "popularity": 0.9,
+  "dish": "The cubano"
+ },
+ {
+  "id": "rs_pat_s_king_of_steaks",
+  "title": "Pat's King of Steaks",
+  "subtitle": "Philadelphia, PA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "American"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 16000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/PatsCheesesteak.jpg/500px-PatsCheesesteak.jpg",
+  "blurb": "The inventor of the cheesesteak — order 'whiz wit' and step aside.",
+  "factors": {
+   "food": 0.79,
+   "ambiance": 0.57,
+   "service": 0.68,
+   "value": 0.73,
+   "creativity": 0.47,
+   "comfort": 0.8
+  },
+  "tone": {
+   "liveliness": 0.55,
+   "formality": 0.22,
+   "adventure": 0.28
+  },
+  "popularity": 0.9,
+  "dish": "Cheesesteak, whiz wit"
  },
  {
   "id": "rs_peter_luger_steak_house",
@@ -200,7 +369,7 @@
    "count": 14000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/BeefCutShortLoinTenderloin.svg/330px-BeefCutShortLoinTenderloin.svg.png",
   "blurb": "Dry-aged porterhouse in a beer-hall of a room that hasn't changed in a century.",
   "factors": {
    "food": 0.8,
@@ -215,7 +384,8 @@
    "formality": 1,
    "adventure": 0.37
   },
-  "popularity": 0.89
+  "popularity": 0.89,
+  "dish": "Dry-aged porterhouse"
  },
  {
   "id": "rs_los_tacos_no_1",
@@ -231,7 +401,7 @@
    "count": 13000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Tacos-al-Pastor.jpg/500px-Tacos-al-Pastor.jpg",
   "blurb": "Adobada on a handmade tortilla, eaten standing up in Chelsea Market. Perfect.",
   "factors": {
    "food": 0.8,
@@ -246,7 +416,72 @@
    "formality": 0.13,
    "adventure": 0.59
   },
-  "popularity": 0.88
+  "popularity": 0.88,
+  "dish": "Adobada tacos"
+ },
+ {
+  "id": "rs_hodad_s",
+  "title": "Hodad's",
+  "subtitle": "San Diego, CA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Burgers"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 13000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/500px-RedDot_Burger.jpg",
+  "blurb": "Ocean Beach bacon cheeseburgers stacked past reason since 1969.",
+  "factors": {
+   "food": 0.74,
+   "ambiance": 0.5,
+   "service": 0.6,
+   "value": 1,
+   "creativity": 0.51,
+   "comfort": 0.88
+  },
+  "tone": {
+   "liveliness": 0.77,
+   "formality": 0.04,
+   "adventure": 0.16
+  },
+  "popularity": 0.88,
+  "dish": "Bacon cheeseburger"
+ },
+ {
+  "id": "rs_columbia_restaurant",
+  "title": "Columbia Restaurant",
+  "subtitle": "Tampa, FL",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Mediterranean"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 13000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cuban_sandwiches.jpg/330px-Cuban_sandwiches.jpg",
+  "blurb": "Florida's oldest restaurant — 1905 salad tossed tableside in Ybor City tile rooms.",
+  "factors": {
+   "food": 0.77,
+   "ambiance": 0.7,
+   "service": 0.75,
+   "value": 0.58,
+   "creativity": 0.66,
+   "comfort": 0.63
+  },
+  "tone": {
+   "liveliness": 0.63,
+   "formality": 0.6,
+   "adventure": 0.45
+  },
+  "popularity": 0.88,
+  "dish": "1905 Salad and Cuban bread"
  },
  {
   "id": "rs_joe_s_stone_crab",
@@ -262,7 +497,7 @@
    "count": 12000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Juvenile_Stone_Crab_at_Smyrna_Dunes_Park_-_Flickr_-_Andrea_Westmoreland.jpg/500px-Juvenile_Stone_Crab_at_Smyrna_Dunes_Park_-_Flickr_-_Andrea_Westmoreland.jpg",
   "blurb": "Stone crab claws with mustard sauce — Miami Beach's institution since 1913.",
   "factors": {
    "food": 0.79,
@@ -277,7 +512,105 @@
    "formality": 0.66,
    "adventure": 0.4
   },
-  "popularity": 0.87
+  "popularity": 0.87,
+  "dish": "Stone crab claws"
+ },
+ {
+  "id": "rs_the_original_ninfa_s_on_navigation",
+  "title": "The Original Ninfa's on Navigation",
+  "subtitle": "Houston, TX",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 12000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Chicken_fajita_platter%2C_Lone_Star_Texas_Grill%2C_Windsor%2C_Ontario%2C_2025-06-14_03.jpg/500px-Chicken_fajita_platter%2C_Lone_Star_Texas_Grill%2C_Windsor%2C_Ontario%2C_2025-06-14_03.jpg",
+  "blurb": "Where fajitas were born — Mama Ninfa's East End original, tortillas by hand.",
+  "factors": {
+   "food": 0.72,
+   "ambiance": 0.63,
+   "service": 0.54,
+   "value": 0.83,
+   "creativity": 0.53,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.78,
+   "formality": 0.25,
+   "adventure": 0.44
+  },
+  "popularity": 0.87,
+  "dish": "Fajitas"
+ },
+ {
+  "id": "rs_casa_bonita",
+  "title": "Casa Bonita",
+  "subtitle": "Denver, CO",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.2,
+   "count": 12000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Sopapillas.jpg/500px-Sopapillas.jpg",
+  "blurb": "Cliff divers, sopapillas, and pink towers — the reopened Colorado fever dream.",
+  "factors": {
+   "food": 0.87,
+   "ambiance": 0.6,
+   "service": 0.64,
+   "value": 0.77,
+   "creativity": 0.65,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.72,
+   "formality": 0.26,
+   "adventure": 0.55
+  },
+  "popularity": 0.87,
+  "dish": "Sopapillas"
+ },
+ {
+  "id": "rs_primanti_bros",
+  "title": "Primanti Bros.",
+  "subtitle": "Pittsburgh, PA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Deli",
+   "American"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 12000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Pittsburgh_Strip_District_Primanti_Bros.jpg/500px-Pittsburgh_Strip_District_Primanti_Bros.jpg",
+  "blurb": "Fries and slaw inside the sandwich — Steel City efficiency since 1933.",
+  "factors": {
+   "food": 0.76,
+   "ambiance": 0.52,
+   "service": 0.5,
+   "value": 0.85,
+   "creativity": 0.45,
+   "comfort": 0.89
+  },
+  "tone": {
+   "liveliness": 0.72,
+   "formality": 0.22,
+   "adventure": 0.21
+  },
+  "popularity": 0.87,
+  "dish": "Fries-in-the-sandwich"
  },
  {
   "id": "rs_pequod_s_pizza",
@@ -293,7 +626,7 @@
    "count": 10000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Pizza_pan.jpg/500px-Pizza_pan.jpg",
   "blurb": "Pan pizza with a caramelized crust ring people cross the city for.",
   "factors": {
    "food": 0.74,
@@ -308,7 +641,8 @@
    "formality": 0.27,
    "adventure": 0.26
   },
-  "popularity": 0.86
+  "popularity": 0.86,
+  "dish": "Caramelized-crust pan pizza"
  },
  {
   "id": "rs_torchy_s_tacos",
@@ -324,7 +658,7 @@
    "count": 10000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chili_con_queso_%28cropped%29.jpg/330px-Chili_con_queso_%28cropped%29.jpg",
   "blurb": "Damn good tacos, queso with a green-chile kick, zero pretension.",
   "factors": {
    "food": 0.76,
@@ -339,7 +673,73 @@
    "formality": 0.18,
    "adventure": 0.43
   },
-  "popularity": 0.86
+  "popularity": 0.86,
+  "dish": "Green-chile queso and tacos"
+ },
+ {
+  "id": "rs_ben_s_chili_bowl",
+  "title": "Ben's Chili Bowl",
+  "subtitle": "Washington, DC",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "American",
+   "Soul Food"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 10000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Weenie_Beenie_Halfsmokes.jpg/500px-Weenie_Beenie_Halfsmokes.jpg",
+  "blurb": "Half-smokes on U Street through riots, renewal, and every president since Ike.",
+  "factors": {
+   "food": 0.7,
+   "ambiance": 0.62,
+   "service": 0.64,
+   "value": 0.83,
+   "creativity": 0.4,
+   "comfort": 0.9
+  },
+  "tone": {
+   "liveliness": 0.58,
+   "formality": 0.27,
+   "adventure": 0.37
+  },
+  "popularity": 0.86,
+  "dish": "The half-smoke"
+ },
+ {
+  "id": "rs_the_rendezvous",
+  "title": "The Rendezvous",
+  "subtitle": "Memphis, TN",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 10000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Cote_de_boeuf_p1040932.jpg/500px-Cote_de_boeuf_p1040932.jpg",
+  "blurb": "Charlie Vergos' basement dry ribs, dusted not sauced, since 1948.",
+  "factors": {
+   "food": 0.78,
+   "ambiance": 0.59,
+   "service": 0.55,
+   "value": 0.72,
+   "creativity": 0.45,
+   "comfort": 0.81
+  },
+  "tone": {
+   "liveliness": 0.7,
+   "formality": 0.13,
+   "adventure": 0.44
+  },
+  "popularity": 0.86,
+  "dish": "Charcoal dry ribs"
  },
  {
   "id": "rs_girl_the_goat",
@@ -355,7 +755,7 @@
    "count": 9000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Four_%C3%A0_c%C3%A9ramique_-_Japan_Aur%C3%A9a_-_2011-0403-_P1070446.JPG/500px-Four_%C3%A0_c%C3%A9ramique_-_Japan_Aur%C3%A9a_-_2011-0403-_P1070446.JPG",
   "blurb": "Stephanie Izard's wood-fired, share-everything Fulton Market crowd-pleaser.",
   "factors": {
    "food": 0.92,
@@ -370,7 +770,8 @@
    "formality": 0.75,
    "adventure": 0.82
   },
-  "popularity": 0.85
+  "popularity": 0.85,
+  "dish": "Wood-fired share plates"
  },
  {
   "id": "rs_au_cheval",
@@ -387,7 +788,7 @@
    "count": 9000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/500px-Cheeseburger.jpg",
   "blurb": "The diner-noir bar whose cheeseburger routinely tops national best-of lists.",
   "factors": {
    "food": 0.71,
@@ -402,7 +803,137 @@
    "formality": 0.16,
    "adventure": 0.23
   },
-  "popularity": 0.85
+  "popularity": 0.85,
+  "dish": "The cheeseburger"
+ },
+ {
+  "id": "rs_union_oyster_house",
+  "title": "Union Oyster House",
+  "subtitle": "Boston, MA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Seafood",
+   "American"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 9000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Crassostrea_gigas_p1040848.jpg/500px-Crassostrea_gigas_p1040848.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "America's oldest restaurant — oysters at the same semicircular bar since 1826.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.69,
+   "service": 0.68,
+   "value": 0.51,
+   "creativity": 0.56,
+   "comfort": 0.85
+  },
+  "tone": {
+   "liveliness": 0.57,
+   "formality": 0.51,
+   "adventure": 0.32
+  },
+  "popularity": 0.85,
+  "dish": "Oysters on the half shell"
+ },
+ {
+  "id": "rs_pappy_s_smokehouse",
+  "title": "Pappy's Smokehouse",
+  "subtitle": "St. Louis, MO",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 9000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Ribs_in_a_barbecue_%22pit%22.jpg/500px-Ribs_in_a_barbecue_%22pit%22.jpg",
+  "blurb": "Memphis-style ribs that sell out by mid-afternoon, daily.",
+  "factors": {
+   "food": 0.92,
+   "ambiance": 0.64,
+   "service": 0.53,
+   "value": 0.83,
+   "creativity": 0.44,
+   "comfort": 0.86
+  },
+  "tone": {
+   "liveliness": 0.67,
+   "formality": 0.29,
+   "adventure": 0.35
+  },
+  "popularity": 0.85,
+  "dish": "Memphis-style ribs"
+ },
+ {
+  "id": "rs_bern_s_steak_house",
+  "title": "Bern's Steak House",
+  "subtitle": "Tampa, FL",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Steakhouse"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 9000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Beef_fillet_steak_with_mushrooms.jpg/500px-Beef_fillet_steak_with_mushrooms.jpg",
+  "blurb": "Dry-aged steaks, a half-million-bottle cellar, and a dessert room upstairs.",
+  "factors": {
+   "food": 0.89,
+   "ambiance": 0.74,
+   "service": 0.87,
+   "value": 0.19,
+   "creativity": 0.44,
+   "comfort": 0.71
+  },
+  "tone": {
+   "liveliness": 0.59,
+   "formality": 0.98,
+   "adventure": 0.37
+  },
+  "popularity": 0.85,
+  "dish": "Dry-aged steaks"
+ },
+ {
+  "id": "rs_central_bbq",
+  "title": "Central BBQ",
+  "subtitle": "Memphis, TN",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 9000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Ribs_in_a_barbecue_%22pit%22.jpg/500px-Ribs_in_a_barbecue_%22pit%22.jpg",
+  "blurb": "Dry-rub ribs and smoked wings a walk from the Lorraine Motel.",
+  "factors": {
+   "food": 0.87,
+   "ambiance": 0.5,
+   "service": 0.63,
+   "value": 0.81,
+   "creativity": 0.55,
+   "comfort": 0.84
+  },
+  "tone": {
+   "liveliness": 0.68,
+   "formality": 0.11,
+   "adventure": 0.41
+  },
+  "popularity": 0.85,
+  "dish": "Dry-rub ribs"
  },
  {
   "id": "rs_lou_malnati_s_pizzeria",
@@ -418,7 +949,7 @@
    "count": 8000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Chicago-Style_Stuffed_Pizza.jpg/500px-Chicago-Style_Stuffed_Pizza.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "Deep dish with the buttercrust that Chicagoans actually defend at parties.",
   "factors": {
    "food": 0.76,
@@ -433,7 +964,8 @@
    "formality": 0.15,
    "adventure": 0.37
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "dish": "Butter-crust deep dish"
  },
  {
   "id": "rs_franklin_barbecue",
@@ -449,7 +981,7 @@
    "count": 8000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Brisketphoto.jpg/500px-Brisketphoto.jpg",
   "blurb": "Aaron Franklin's brisket — the queue is the pilgrimage, the bark is the reward.",
   "factors": {
    "food": 0.93,
@@ -464,7 +996,8 @@
    "formality": 0.18,
    "adventure": 0.35
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "dish": "Brisket"
  },
  {
   "id": "rs_house_of_prime_rib",
@@ -481,7 +1014,7 @@
    "count": 8000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/BeefCutRib.svg/330px-BeefCutRib.svg.png",
   "blurb": "Tableside carts, martinis, and prime rib served exactly one way: correctly.",
   "factors": {
    "food": 0.78,
@@ -496,7 +1029,170 @@
    "formality": 0.72,
    "adventure": 0.31
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "dish": "Prime rib carved tableside"
+ },
+ {
+  "id": "rs_screen_door",
+  "title": "Screen Door",
+  "subtitle": "Portland, OR",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Soul Food",
+   "American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Chicken_and_waffles_with_peaches_and_cream.jpg/500px-Chicken_and_waffles_with_peaches_and_cream.jpg",
+  "blurb": "Fried chicken over sweet-potato waffles; the brunch line is a city institution.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.68,
+   "service": 0.66,
+   "value": 0.72,
+   "creativity": 0.43,
+   "comfort": 0.89
+  },
+  "tone": {
+   "liveliness": 0.55,
+   "formality": 0.38,
+   "adventure": 0.3
+  },
+  "popularity": 0.84,
+  "dish": "Chicken and waffles"
+ },
+ {
+  "id": "rs_q39",
+  "title": "Q39",
+  "subtitle": "Kansas City, MO",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Spareribs_20160506_182617113.jpg/500px-Spareribs_20160506_182617113.jpg",
+  "blurb": "Competition-circuit brisket meets chef technique in midtown KC.",
+  "factors": {
+   "food": 0.91,
+   "ambiance": 0.63,
+   "service": 0.57,
+   "value": 0.74,
+   "creativity": 0.54,
+   "comfort": 0.78
+  },
+  "tone": {
+   "liveliness": 0.73,
+   "formality": 0.14,
+   "adventure": 0.32
+  },
+  "popularity": 0.84,
+  "dish": "Competition ribs"
+ },
+ {
+  "id": "rs_slows_bar_bq",
+  "title": "Slows Bar BQ",
+  "subtitle": "Detroit, MI",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Pulled_pork_while_pulling.JPG/500px-Pulled_pork_while_pulling.JPG",
+  "blurb": "Corktown's brisket-and-mac anchor that helped restart a neighborhood.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.51,
+   "service": 0.6,
+   "value": 0.68,
+   "creativity": 0.47,
+   "comfort": 0.79
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.27,
+   "adventure": 0.35
+  },
+  "popularity": 0.84,
+  "dish": "Pulled pork and mac"
+ },
+ {
+  "id": "rs_brennan_s",
+  "title": "Brennan's",
+  "subtitle": "New Orleans, LA",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "Cajun & Creole",
+   "French"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Brennan%27s_Bananas_Foster_-_2011.jpg/500px-Brennan%27s_Bananas_Foster_-_2011.jpg",
+  "blurb": "Bananas Foster flambéed where it was invented; breakfast as theater.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.7,
+   "service": 0.7,
+   "value": 0.46,
+   "creativity": 0.71,
+   "comfort": 0.62
+  },
+  "tone": {
+   "liveliness": 0.66,
+   "formality": 0.79,
+   "adventure": 0.51
+  },
+  "popularity": 0.84,
+  "dish": "Bananas Foster"
+ },
+ {
+  "id": "rs_the_pit_authentic_barbecue",
+  "title": "The Pit Authentic Barbecue",
+  "subtitle": "Raleigh, NC",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 8000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pulled_pork_008.jpg/500px-Pulled_pork_008.jpg",
+  "blurb": "Whole-hog Eastern Carolina 'cue with the vinegar bite it's supposed to have.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.57,
+   "service": 0.59,
+   "value": 0.74,
+   "creativity": 0.41,
+   "comfort": 0.87
+  },
+  "tone": {
+   "liveliness": 0.73,
+   "formality": 0.15,
+   "adventure": 0.42
+  },
+  "popularity": 0.84,
+  "dish": "Eastern Carolina whole hog"
  },
  {
   "id": "rs_howlin_ray_s",
@@ -513,7 +1209,7 @@
    "count": 7000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Princes_hot_chicken.jpg/500px-Princes_hot_chicken.jpg",
   "blurb": "Nashville hot chicken hot enough to make grown adults cry happily in Chinatown.",
   "factors": {
    "food": 0.81,
@@ -528,7 +1224,8 @@
    "formality": 0.33,
    "adventure": 0.29
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "dish": "Nashville hot chicken"
  },
  {
   "id": "rs_bestia",
@@ -544,7 +1241,7 @@
    "count": 7000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Saucisson_02.JPG/500px-Saucisson_02.JPG",
   "blurb": "Industrial-chic Arts District Italian; the bone marrow spinarello is non-negotiable.",
   "factors": {
    "food": 0.74,
@@ -559,7 +1256,8 @@
    "formality": 0.57,
    "adventure": 0.5
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "dish": "House charcuterie"
  },
  {
   "id": "rs_commander_s_palace",
@@ -575,7 +1273,7 @@
    "count": 7000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Turtle_soup_chinese.jpg/500px-Turtle_soup_chinese.jpg",
   "blurb": "Turtle soup, 25-cent lunch martinis, and jazz brunch under the striped awning.",
   "factors": {
    "food": 0.84,
@@ -590,7 +1288,40 @@
    "formality": 0.51,
    "adventure": 0.6
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "dish": "Turtle soup"
+ },
+ {
+  "id": "rs_buddy_s_pizza",
+  "title": "Buddy's Pizza",
+  "subtitle": "Detroit, MI",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Pizza"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 7000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Detroit_Style_Pizza_in_Lloyds_Detroit_Style_Pan.png/500px-Detroit_Style_Pizza_in_Lloyds_Detroit_Style_Pan.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "The original Detroit square — crispy-edged blue-steel pans since 1946.",
+  "factors": {
+   "food": 0.74,
+   "ambiance": 0.5,
+   "service": 0.56,
+   "value": 0.75,
+   "creativity": 0.43,
+   "comfort": 0.78
+  },
+  "tone": {
+   "liveliness": 0.73,
+   "formality": 0.17,
+   "adventure": 0.36
+  },
+  "popularity": 0.82,
+  "dish": "Detroit-style square"
  },
  {
   "id": "rs_xi_an_famous_foods",
@@ -606,7 +1337,7 @@
    "count": 6000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Biang_Biang_Mian.jpg/500px-Biang_Biang_Mian.jpg",
   "blurb": "Hand-ripped biang biang noodles and cumin lamb that built a cult from a Flushing stall.",
   "factors": {
    "food": 0.72,
@@ -621,7 +1352,8 @@
    "formality": 0.21,
    "adventure": 0.5
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "dish": "Biang biang noodles"
  },
  {
   "id": "rs_zingerman_s_delicatessen",
@@ -638,7 +1370,7 @@
    "count": 6000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Katz%27s_Deli_-_Lunch.jpg/500px-Katz%27s_Deli_-_Lunch.jpg",
   "blurb": "The corner deli that became a food empire; reubens worth a road trip.",
   "factors": {
    "food": 0.75,
@@ -653,7 +1385,8 @@
    "formality": 0.31,
    "adventure": 0.41
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "dish": "The reuben"
  },
  {
   "id": "rs_tartine_bakery",
@@ -669,7 +1402,7 @@
    "count": 6000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Home_made_sour_dough_bread.jpg/500px-Home_made_sour_dough_bread.jpg",
   "blurb": "Morning buns and country loaves that rewired American baking.",
   "factors": {
    "food": 0.71,
@@ -684,7 +1417,8 @@
    "formality": 0.28,
    "adventure": 0.34
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "dish": "Country loaf and morning buns"
  },
  {
   "id": "rs_cochon",
@@ -700,7 +1434,7 @@
    "count": 6000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Boudin3.jpg/500px-Boudin3.jpg",
   "blurb": "Donald Link's Cajun ode to the pig — boudin, cracklins, and rabbit dumplings.",
   "factors": {
    "food": 0.83,
@@ -715,7 +1449,169 @@
    "formality": 0.42,
    "adventure": 0.52
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "dish": "Boudin"
+ },
+ {
+  "id": "rs_neptune_oyster",
+  "title": "Neptune Oyster",
+  "subtitle": "Boston, MA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Lobster_Roll.png/500px-Lobster_Roll.png",
+  "blurb": "Twenty-two seats, hot buttered lobster rolls, and a line that forms before noon.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.7,
+   "service": 0.69,
+   "value": 0.43,
+   "creativity": 0.58,
+   "comfort": 0.76
+  },
+  "tone": {
+   "liveliness": 0.57,
+   "formality": 0.54,
+   "adventure": 0.52
+  },
+  "popularity": 0.81,
+  "dish": "Hot buttered lobster roll"
+ },
+ {
+  "id": "rs_santarpio_s_pizza",
+  "title": "Santarpio's Pizza",
+  "subtitle": "Boston, MA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Pizza"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/500px-Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Eastie's coal-blistered pies and lamb skewers, unchanged since 1903.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.49,
+   "service": 0.62,
+   "value": 0.9,
+   "creativity": 0.5,
+   "comfort": 0.87
+  },
+  "tone": {
+   "liveliness": 0.74,
+   "formality": 0.12,
+   "adventure": 0.36
+  },
+  "popularity": 0.81,
+  "dish": "Coal-blistered pies"
+ },
+ {
+  "id": "rs_lotus_of_siam",
+  "title": "Lotus of Siam",
+  "subtitle": "Las Vegas, NV",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Thai"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Khao_Soi_Northern_Thai_food_%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%8B%E0%B8%AD%E0%B8%A2_%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%AD%E0%B8%87.jpg/500px-Khao_Soi_Northern_Thai_food_%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%8B%E0%B8%AD%E0%B8%A2_%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%AD%E0%B8%87.jpg",
+  "blurb": "Northern Thai in a strip mall that critics call the best Thai in America.",
+  "factors": {
+   "food": 0.76,
+   "ambiance": 0.64,
+   "service": 0.65,
+   "value": 0.77,
+   "creativity": 0.67,
+   "comfort": 0.69
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.38,
+   "adventure": 0.67
+  },
+  "popularity": 0.81,
+  "dish": "Khao soi"
+ },
+ {
+  "id": "rs_imo_s_pizza",
+  "title": "Imo's Pizza",
+  "subtitle": "St. Louis, MO",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Pizza"
+  ],
+  "rating": {
+   "value": 4.3,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/St_Louis_Missouri_pizza_in_cardboard_box.jpg/500px-St_Louis_Missouri_pizza_in_cardboard_box.jpg",
+  "blurb": "Provel cheese, cracker crust, cut in squares — St. Louis's divisive love language.",
+  "factors": {
+   "food": 0.83,
+   "ambiance": 0.57,
+   "service": 0.59,
+   "value": 0.9,
+   "creativity": 0.55,
+   "comfort": 0.84
+  },
+  "tone": {
+   "liveliness": 0.62,
+   "formality": 0.12,
+   "adventure": 0.27
+  },
+  "popularity": 0.81,
+  "dish": "St. Louis-style pizza"
+ },
+ {
+  "id": "rs_pizzeria_bianco",
+  "title": "Pizzeria Bianco",
+  "subtitle": "Phoenix, AZ",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Pizza",
+   "Italian"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 6000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pizza_Margherita_stu_spivack.jpg/500px-Pizza_Margherita_stu_spivack.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Chris Bianco's wood-fired margherita — the pizza that made critics fly to Phoenix.",
+  "factors": {
+   "food": 0.83,
+   "ambiance": 0.7,
+   "service": 0.7,
+   "value": 0.69,
+   "creativity": 0.47,
+   "comfort": 0.84
+  },
+  "tone": {
+   "liveliness": 0.57,
+   "formality": 0.27,
+   "adventure": 0.34
+  },
+  "popularity": 0.81,
+  "dish": "Wood-fired margherita"
  },
  {
   "id": "rs_gramercy_tavern",
@@ -731,7 +1627,7 @@
    "count": 5000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Gramercy_Tavern.jpg/500px-Gramercy_Tavern.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "Danny Meyer's flagship: seasonal American cooking with famously warm service.",
   "factors": {
    "food": 0.86,
@@ -746,7 +1642,8 @@
    "formality": 0.92,
    "adventure": 0.7
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "dish": "Seasonal American cooking"
  },
  {
   "id": "rs_guelaguetza",
@@ -762,7 +1659,7 @@
    "count": 5000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ChickRedMole.JPG/500px-ChickRedMole.JPG",
   "blurb": "The Koreatown moles that earned a James Beard classic award — Oaxaca in LA.",
   "factors": {
    "food": 0.81,
@@ -777,7 +1674,8 @@
    "formality": 0.36,
    "adventure": 0.46
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "dish": "Mole negro"
  },
  {
   "id": "rs_republique",
@@ -794,7 +1692,7 @@
    "count": 5000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg/500px-Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg",
   "blurb": "Cathedral ceilings, pastry cases at dawn, steak frites at night.",
   "factors": {
    "food": 0.77,
@@ -809,7 +1707,8 @@
    "formality": 0.62,
    "adventure": 0.54
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "dish": "Steak frites"
  },
  {
   "id": "rs_paseo",
@@ -825,7 +1724,7 @@
    "count": 5000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tampa_Cuban_sandwich.jpg/330px-Tampa_Cuban_sandwich.jpg",
   "blurb": "Caribbean roast pork sandwiches with caramelized onions that ruin all other sandwiches.",
   "factors": {
    "food": 0.79,
@@ -840,7 +1739,8 @@
    "formality": 0.24,
    "adventure": 0.48
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "dish": "Caribbean roast pork sandwich"
  },
  {
   "id": "rs_willie_mae_s_scotch_house",
@@ -856,7 +1756,7 @@
    "count": 5000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fried-Chicken-Set.jpg/500px-Fried-Chicken-Set.jpg",
   "blurb": "America's fried chicken, per the James Beard Foundation. The Tremé original.",
   "factors": {
    "food": 0.86,
@@ -871,7 +1771,168 @@
    "formality": 0.21,
    "adventure": 0.46
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "dish": "Fried chicken"
+ },
+ {
+  "id": "rs_truth_bbq",
+  "title": "Truth BBQ",
+  "subtitle": "Houston, TX",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.8,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Central_Texas_Style_Barbecue_in_Pearland%2C_TX.jpg/500px-Central_Texas_Style_Barbecue_in_Pearland%2C_TX.jpg",
+  "blurb": "Leonard Botello's brisket and tallow-brushed ribs — Texas Monthly's top tier.",
+  "factors": {
+   "food": 0.9,
+   "ambiance": 0.47,
+   "service": 0.58,
+   "value": 0.66,
+   "creativity": 0.55,
+   "comfort": 0.77
+  },
+  "tone": {
+   "liveliness": 0.62,
+   "formality": 0.25,
+   "adventure": 0.35
+  },
+  "popularity": 0.79,
+  "dish": "Brisket and tallow ribs"
+ },
+ {
+  "id": "rs_pok_pok_reborn",
+  "title": "Pok Pok (Reborn)",
+  "subtitle": "Portland, OR",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Thai"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Buffalo_wings-01.jpg/500px-Buffalo_wings-01.jpg",
+  "blurb": "Andy Ricker's fish-sauce wings — the dish that put Portland Thai on the map.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.58,
+   "service": 0.69,
+   "value": 0.8,
+   "creativity": 0.67,
+   "comfort": 0.71
+  },
+  "tone": {
+   "liveliness": 0.52,
+   "formality": 0.32,
+   "adventure": 0.56
+  },
+  "popularity": 0.79,
+  "dish": "Ike's fish-sauce wings"
+ },
+ {
+  "id": "rs_matt_s_bar",
+  "title": "Matt's Bar",
+  "subtitle": "Minneapolis, MN",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Burgers"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Inside_of_the_Juicy_Lucy_from_the_5-8_Club%2C_July_2011.jpg/500px-Inside_of_the_Juicy_Lucy_from_the_5-8_Club%2C_July_2011.jpg",
+  "blurb": "Home of the Jucy Lucy — molten cheese inside the patty. Napkins ready.",
+  "factors": {
+   "food": 0.73,
+   "ambiance": 0.47,
+   "service": 0.6,
+   "value": 0.91,
+   "creativity": 0.41,
+   "comfort": 0.92
+  },
+  "tone": {
+   "liveliness": 0.71,
+   "formality": 0.09,
+   "adventure": 0.31
+  },
+  "popularity": 0.79,
+  "dish": "The Jucy Lucy"
+ },
+ {
+  "id": "rs_rodney_scott_s_bbq",
+  "title": "Rodney Scott's BBQ",
+  "subtitle": "Charleston, SC",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Barbecued_meats.jpg/500px-Barbecued_meats.jpg",
+  "blurb": "Whole-hog pit mastery from a James Beard-winning pitmaster.",
+  "factors": {
+   "food": 0.82,
+   "ambiance": 0.52,
+   "service": 0.49,
+   "value": 0.83,
+   "creativity": 0.44,
+   "comfort": 0.78
+  },
+  "tone": {
+   "liveliness": 0.74,
+   "formality": 0.24,
+   "adventure": 0.42
+  },
+  "popularity": 0.79,
+  "dish": "Whole-hog barbecue"
+ },
+ {
+  "id": "rs_eventide_oyster_co",
+  "title": "Eventide Oyster Co.",
+  "subtitle": "Portland, ME",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 5000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Lobster_Roll.png/500px-Lobster_Roll.png",
+  "blurb": "The brown-butter lobster roll on a steamed bun that rewired the form.",
+  "factors": {
+   "food": 0.84,
+   "ambiance": 0.66,
+   "service": 0.7,
+   "value": 0.6,
+   "creativity": 0.61,
+   "comfort": 0.71
+  },
+  "tone": {
+   "liveliness": 0.57,
+   "formality": 0.6,
+   "adventure": 0.45
+  },
+  "popularity": 0.79,
+  "dish": "Brown-butter lobster roll"
  },
  {
   "id": "rs_russ_daughters",
@@ -888,7 +1949,7 @@
    "count": 4000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/NCI_cream_cheese_bagel.jpg/500px-NCI_cream_cheese_bagel.jpg",
   "blurb": "Fourth-generation appetizing: silky lox, bagels, and a line that moves like church.",
   "factors": {
    "food": 0.7,
@@ -903,7 +1964,8 @@
    "formality": 0.3,
    "adventure": 0.26
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "dish": "Lox and cream cheese bagel"
  },
  {
   "id": "rs_alinea",
@@ -920,7 +1982,7 @@
    "count": 4000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Alinea_-_Front.jpg/500px-Alinea_-_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "Grant Achatz's three-star theater of edible balloons and centerpiece desserts.",
   "factors": {
    "food": 0.8,
@@ -935,7 +1997,8 @@
    "formality": 1,
    "adventure": 0.79
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "dish": "Edible-balloon tasting menu"
  },
  {
   "id": "rs_uchi",
@@ -951,7 +2014,7 @@
    "count": 4000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/500px-Sushi_platter.jpg",
   "blurb": "Tyson Cole's warm, inventive sushi ya that made Austin a food city.",
   "factors": {
    "food": 0.85,
@@ -966,7 +2029,8 @@
    "formality": 0.79,
    "adventure": 0.59
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "dish": "Inventive sushi omakase"
  },
  {
   "id": "rs_zuni_caf",
@@ -983,7 +2047,7 @@
    "count": 4000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Max%27s_Roasted_Chicken_-_Evan_Swigart.jpg/500px-Max%27s_Roasted_Chicken_-_Evan_Swigart.jpg",
   "blurb": "The roast chicken for two over bread salad — a San Francisco rite since 1979.",
   "factors": {
    "food": 0.8,
@@ -998,7 +2062,8 @@
    "formality": 0.68,
    "adventure": 0.7
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "dish": "Roast chicken for two"
  },
  {
   "id": "rs_zahav",
@@ -1014,7 +2079,7 @@
    "count": 4000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Lebanese_style_hummus.jpg/500px-Lebanese_style_hummus.jpg",
   "blurb": "Michael Solomonov's modern Israeli — the hummus tehina changed the conversation.",
   "factors": {
    "food": 0.81,
@@ -1029,7 +2094,8 @@
    "formality": 0.45,
    "adventure": 0.47
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "dish": "Hummus tehina"
  },
  {
   "id": "rs_la_barbecue",
@@ -1045,7 +2111,7 @@
    "count": 4000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Cote_de_boeuf_p1040932.jpg/500px-Cote_de_boeuf_p1040932.jpg",
   "blurb": "Brisket and beef ribs that Franklin loyalists whisper about switching for.",
   "factors": {
    "food": 0.84,
@@ -1060,7 +2126,8 @@
    "formality": 0.28,
    "adventure": 0.38
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "dish": "Beef ribs"
  },
  {
   "id": "rs_momofuku_noodle_bar",
@@ -1077,7 +2144,7 @@
    "count": 4000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Steamed_Sandwich%2Ctaken_by_LeoAlmighty.jpg/330px-Steamed_Sandwich%2Ctaken_by_LeoAlmighty.jpg",
   "blurb": "Where David Chang lit the fuse on pork buns and ramen-as-event.",
   "factors": {
    "food": 0.9,
@@ -1092,7 +2159,266 @@
    "formality": 0.59,
    "adventure": 0.63
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "dish": "Pork belly buns"
+ },
+ {
+  "id": "rs_rasika",
+  "title": "Rasika",
+  "subtitle": "Washington, DC",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Indian"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Dahi_puri%2C_Doi_phuchka.jpg/500px-Dahi_puri%2C_Doi_phuchka.jpg",
+  "blurb": "Modern Indian that made palak chaat a DC power-lunch move.",
+  "factors": {
+   "food": 0.84,
+   "ambiance": 0.54,
+   "service": 0.58,
+   "value": 0.79,
+   "creativity": 0.66,
+   "comfort": 0.7
+  },
+  "tone": {
+   "liveliness": 0.53,
+   "formality": 0.52,
+   "adventure": 0.67
+  },
+  "popularity": 0.77,
+  "dish": "Palak chaat"
+ },
+ {
+  "id": "rs_busy_bee_cafe",
+  "title": "Busy Bee Cafe",
+  "subtitle": "Atlanta, GA",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Soul Food"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Raw_oxtail-01.jpg/500px-Raw_oxtail-01.jpg",
+  "blurb": "Fried chicken and oxtails that fed the civil-rights movement, still packed at noon.",
+  "factors": {
+   "food": 0.76,
+   "ambiance": 0.53,
+   "service": 0.64,
+   "value": 0.72,
+   "creativity": 0.43,
+   "comfort": 0.96
+  },
+  "tone": {
+   "liveliness": 0.64,
+   "formality": 0.3,
+   "adventure": 0.42
+  },
+  "popularity": 0.77,
+  "dish": "Fried chicken and oxtails"
+ },
+ {
+  "id": "rs_prince_s_hot_chicken",
+  "title": "Prince's Hot Chicken",
+  "subtitle": "Nashville, TN",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Soul Food"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Princes_hot_chicken.jpg/500px-Princes_hot_chicken.jpg",
+  "blurb": "The family that invented hot chicken — pay the heat its respect.",
+  "factors": {
+   "food": 0.84,
+   "ambiance": 0.56,
+   "service": 0.7,
+   "value": 0.87,
+   "creativity": 0.55,
+   "comfort": 0.83
+  },
+  "tone": {
+   "liveliness": 0.68,
+   "formality": 0.16,
+   "adventure": 0.35
+  },
+  "popularity": 0.77,
+  "dish": "The original hot chicken"
+ },
+ {
+  "id": "rs_arnold_s_country_kitchen",
+  "title": "Arnold's Country Kitchen",
+  "subtitle": "Nashville, TN",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Soul Food",
+   "American"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Katie%27s_Meat_and_Three.jpg/500px-Katie%27s_Meat_and_Three.jpg",
+  "blurb": "The meat-and-three standard: cafeteria line, white bread, transcendence.",
+  "factors": {
+   "food": 0.69,
+   "ambiance": 0.68,
+   "service": 0.72,
+   "value": 0.85,
+   "creativity": 0.55,
+   "comfort": 0.94
+  },
+  "tone": {
+   "liveliness": 0.63,
+   "formality": 0.26,
+   "adventure": 0.29
+  },
+  "popularity": 0.77,
+  "dish": "Meat and three"
+ },
+ {
+  "id": "rs_las_cuatro_milpas",
+  "title": "Las Cuatro Milpas",
+  "subtitle": "San Diego, CA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mexican_tortilla.jpg/500px-Mexican_tortilla.jpg",
+  "blurb": "Barrio Logan's tortilla-and-chorizo line, cash only, gone by 1pm.",
+  "factors": {
+   "food": 0.86,
+   "ambiance": 0.71,
+   "service": 0.63,
+   "value": 0.85,
+   "creativity": 0.49,
+   "comfort": 0.68
+  },
+  "tone": {
+   "liveliness": 0.77,
+   "formality": 0.24,
+   "adventure": 0.58
+  },
+  "popularity": 0.77,
+  "dish": "Chorizo on handmade tortillas"
+ },
+ {
+  "id": "rs_barrio_caf",
+  "title": "Barrio Café",
+  "subtitle": "Phoenix, AZ",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Cochinita_pibil_2.jpg/500px-Cochinita_pibil_2.jpg",
+  "blurb": "Chef Silvana's guacamole made tableside and cochinita pibil with a mural backdrop.",
+  "factors": {
+   "food": 0.79,
+   "ambiance": 0.6,
+   "service": 0.57,
+   "value": 0.86,
+   "creativity": 0.58,
+   "comfort": 0.69
+  },
+  "tone": {
+   "liveliness": 0.64,
+   "formality": 0.31,
+   "adventure": 0.47
+  },
+  "popularity": 0.77,
+  "dish": "Cochinita pibil"
+ },
+ {
+  "id": "rs_franklin_fountain",
+  "title": "Franklin Fountain",
+  "subtitle": "Philadelphia, PA",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Bakery & Café"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/StrawberrySundae.jpg/330px-StrawberrySundae.jpg",
+  "blurb": "Hand-scooped sundaes served exactly as they were in 1904.",
+  "factors": {
+   "food": 0.84,
+   "ambiance": 0.62,
+   "service": 0.67,
+   "value": 0.93,
+   "creativity": 0.6,
+   "comfort": 0.76
+  },
+  "tone": {
+   "liveliness": 0.41,
+   "formality": 0.11,
+   "adventure": 0.3
+  },
+  "popularity": 0.77,
+  "dish": "Hand-scooped sundaes"
+ },
+ {
+  "id": "rs_valentina_s_tex_mex_bbq",
+  "title": "Valentina's Tex Mex BBQ",
+  "subtitle": "Austin, TX",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue",
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 4000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/500px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg",
+  "blurb": "Brisket tacos on handmade flour tortillas — Tex-Mex and smoke, married.",
+  "factors": {
+   "food": 0.89,
+   "ambiance": 0.5,
+   "service": 0.49,
+   "value": 0.72,
+   "creativity": 0.59,
+   "comfort": 0.82
+  },
+  "tone": {
+   "liveliness": 0.72,
+   "formality": 0.17,
+   "adventure": 0.48
+  },
+  "popularity": 0.77,
+  "dish": "Brisket tacos"
  },
  {
   "id": "rs_le_bernardin",
@@ -1109,7 +2435,7 @@
    "count": 3000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Interior_of_Le_Bernardin.jpg/500px-Interior_of_Le_Bernardin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "Eric Ripert's temple to fish — precise, hushed, and worth every course.",
   "factors": {
    "food": 0.87,
@@ -1124,7 +2450,8 @@
    "formality": 0.82,
    "adventure": 0.6
   },
-  "popularity": 0.75
+  "popularity": 0.75,
+  "dish": "Tasting-menu fish courses"
  },
  {
   "id": "rs_suerte",
@@ -1140,7 +2467,7 @@
    "count": 3000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tacos_de_suadero.jpg/500px-Tacos_de_suadero.jpg",
   "blurb": "Masa-obsessed East Austin Mexican — the suadero tacos are the stuff of legend.",
   "factors": {
    "food": 0.74,
@@ -1155,7 +2482,8 @@
    "formality": 0.45,
    "adventure": 0.55
   },
-  "popularity": 0.75
+  "popularity": 0.75,
+  "dish": "Suadero tacos"
  },
  {
   "id": "rs_swan_oyster_depot",
@@ -1171,7 +2499,7 @@
    "count": 3000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Princess_Seafood_Restaurant_-_April_2024_-_Sarah_Stierch_04.jpg/500px-Princess_Seafood_Restaurant_-_April_2024_-_Sarah_Stierch_04.jpg",
   "blurb": "Eighteen stools, crab louie, and the friendliest counter in America. Cash only.",
   "factors": {
    "food": 0.87,
@@ -1186,7 +2514,8 @@
    "formality": 0.61,
    "adventure": 0.51
   },
-  "popularity": 0.75
+  "popularity": 0.75,
+  "dish": "Crab Louie"
  },
  {
   "id": "rs_sqirl",
@@ -1203,7 +2532,7 @@
    "count": 3000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Fruits_jam_variants.jpg/500px-Fruits_jam_variants.jpg",
   "blurb": "Ricotta toast and sorrel rice bowls that launched a thousand brunch menus.",
   "factors": {
    "food": 0.75,
@@ -1218,7 +2547,8 @@
    "formality": 0.45,
    "adventure": 0.59
   },
-  "popularity": 0.75
+  "popularity": 0.75,
+  "dish": "Ricotta toast and jam"
  },
  {
   "id": "rs_canlis",
@@ -1234,7 +2564,7 @@
    "count": 3000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Front_entrance_to_Canlis_Restaurant%2C_Seattle%2C_Washington%2C_2012.jpg/330px-Front_entrance_to_Canlis_Restaurant%2C_Seattle%2C_Washington%2C_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "Midcentury landmark dining over Lake Union — Seattle's special-occasion room since 1950.",
   "factors": {
    "food": 0.89,
@@ -1249,7 +2579,8 @@
    "formality": 0.82,
    "adventure": 0.82
   },
-  "popularity": 0.75
+  "popularity": 0.75,
+  "dish": "Special-occasion tasting menu"
  },
  {
   "id": "rs_h_mart_food_court_k_town",
@@ -1265,7 +2596,7 @@
    "count": 3000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Sundubu-jjigae.jpg/330px-Sundubu-jjigae.jpg",
   "blurb": "Soondubu, japchae, and bulgogi under one buzzing food-hall roof.",
   "factors": {
    "food": 0.88,
@@ -1280,7 +2611,396 @@
    "formality": 0.25,
    "adventure": 0.71
   },
-  "popularity": 0.75
+  "popularity": 0.75,
+  "dish": "Soondubu-jjigae"
+ },
+ {
+  "id": "rs_rose_s_luxury",
+  "title": "Rose's Luxury",
+  "subtitle": "Washington, DC",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "New American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Rose%27s_Luxury_%2827653684867%29.jpg/500px-Rose%27s_Luxury_%2827653684867%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "The Capitol Hill line worth joining — pork-lychee salad and pure hospitality.",
+  "factors": {
+   "food": 0.78,
+   "ambiance": 0.72,
+   "service": 0.72,
+   "value": 0.37,
+   "creativity": 0.87,
+   "comfort": 0.58
+  },
+  "tone": {
+   "liveliness": 0.69,
+   "formality": 0.86,
+   "adventure": 0.86
+  },
+  "popularity": 0.75,
+  "dish": "Pork-lychee salad"
+ },
+ {
+  "id": "rs_crawfish_noodles",
+  "title": "Crawfish & Noodles",
+  "subtitle": "Houston, TX",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Vietnamese",
+   "Cajun & Creole"
+  ],
+  "rating": {
+   "value": 4.4,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mid_City_Yacht_Club_Crawfish.jpg/500px-Mid_City_Yacht_Club_Crawfish.jpg",
+  "blurb": "Viet-Cajun crawfish tossed in garlic butter — Houston's signature hybrid.",
+  "factors": {
+   "food": 0.87,
+   "ambiance": 0.59,
+   "service": 0.64,
+   "value": 0.87,
+   "creativity": 0.55,
+   "comfort": 0.72
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.21,
+   "adventure": 0.64
+  },
+  "popularity": 0.75,
+  "dish": "Viet-Cajun crawfish boil"
+ },
+ {
+  "id": "rs_work_class",
+  "title": "Work & Class",
+  "subtitle": "Denver, CO",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "New American"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Arepitas_Food_Macro.jpg/500px-Arepitas_Food_Macro.jpg",
+  "blurb": "Small plates, big pours, zero pretense in a RiNo shipping container.",
+  "factors": {
+   "food": 0.79,
+   "ambiance": 0.71,
+   "service": 0.76,
+   "value": 0.42,
+   "creativity": 0.87,
+   "comfort": 0.5
+  },
+  "tone": {
+   "liveliness": 0.65,
+   "formality": 0.68,
+   "adventure": 0.84
+  },
+  "popularity": 0.75,
+  "dish": "Roast meats and arepas"
+ },
+ {
+  "id": "rs_oscar_s_steakhouse",
+  "title": "Oscar's Steakhouse",
+  "subtitle": "Las Vegas, NV",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Steakhouse"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/BeefCutRib.svg/330px-BeefCutRib.svg.png",
+  "blurb": "Vintage Vegas in the Plaza's glass dome — martinis, bone-in ribeyes, mob stories.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.81,
+   "service": 0.85,
+   "value": 0.37,
+   "creativity": 0.52,
+   "comfort": 0.81
+  },
+  "tone": {
+   "liveliness": 0.59,
+   "formality": 0.92,
+   "adventure": 0.37
+  },
+  "popularity": 0.75,
+  "dish": "Bone-in ribeye"
+ },
+ {
+  "id": "rs_leon_s_oyster_shop",
+  "title": "Leon's Oyster Shop",
+  "subtitle": "Charleston, SC",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Seafood",
+   "Soul Food"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Oysters_Rockefeller_at_Galatoires.jpg/500px-Oysters_Rockefeller_at_Galatoires.jpg",
+  "blurb": "Char-grilled oysters and fried chicken in a converted body shop.",
+  "factors": {
+   "food": 0.89,
+   "ambiance": 0.56,
+   "service": 0.64,
+   "value": 0.64,
+   "creativity": 0.58,
+   "comfort": 0.79
+  },
+  "tone": {
+   "liveliness": 0.67,
+   "formality": 0.46,
+   "adventure": 0.49
+  },
+  "popularity": 0.75,
+  "dish": "Char-grilled oysters"
+ },
+ {
+  "id": "rs_snow_s_bbq",
+  "title": "Snow's BBQ",
+  "subtitle": "Lexington, TX",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.8,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Central_Texas_Style_Barbecue_in_Pearland%2C_TX.jpg/500px-Central_Texas_Style_Barbecue_in_Pearland%2C_TX.jpg",
+  "blurb": "Tootsie Tomanetz's Saturday-only pits — Texas Monthly's #1, sold out by 10am.",
+  "factors": {
+   "food": 0.89,
+   "ambiance": 0.6,
+   "service": 0.62,
+   "value": 0.8,
+   "creativity": 0.48,
+   "comfort": 0.86
+  },
+  "tone": {
+   "liveliness": 0.67,
+   "formality": 0.21,
+   "adventure": 0.4
+  },
+  "popularity": 0.75,
+  "dish": "Saturday-morning brisket"
+ },
+ {
+  "id": "rs_dooky_chase_s",
+  "title": "Dooky Chase's",
+  "subtitle": "New Orleans, LA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "Cajun & Creole",
+   "Soul Food"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Gumbo.JPG/500px-Gumbo.JPG",
+  "blurb": "Leah Chase's gumbo z'herbes fed presidents and the movement alike.",
+  "factors": {
+   "food": 0.9,
+   "ambiance": 0.6,
+   "service": 0.55,
+   "value": 0.74,
+   "creativity": 0.58,
+   "comfort": 0.9
+  },
+  "tone": {
+   "liveliness": 0.61,
+   "formality": 0.36,
+   "adventure": 0.42
+  },
+  "popularity": 0.75,
+  "dish": "Gumbo z'herbes"
+ },
+ {
+  "id": "rs_skylight_inn_bbq",
+  "title": "Skylight Inn BBQ",
+  "subtitle": "Ayden, NC",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Barbecue"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pulled_pork_008.jpg/500px-Pulled_pork_008.jpg",
+  "blurb": "Chopped whole hog with crackling mixed in, under the little Capitol dome.",
+  "factors": {
+   "food": 0.8,
+   "ambiance": 0.52,
+   "service": 0.6,
+   "value": 0.79,
+   "creativity": 0.49,
+   "comfort": 0.87
+  },
+  "tone": {
+   "liveliness": 0.63,
+   "formality": 0.11,
+   "adventure": 0.4
+  },
+  "popularity": 0.75,
+  "dish": "Chopped whole hog with cracklin"
+ },
+ {
+  "id": "rs_fore_street",
+  "title": "Fore Street",
+  "subtitle": "Portland, ME",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "New American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Four_%C3%A0_c%C3%A9ramique_-_Japan_Aur%C3%A9a_-_2011-0403-_P1070446.JPG/500px-Four_%C3%A0_c%C3%A9ramique_-_Japan_Aur%C3%A9a_-_2011-0403-_P1070446.JPG",
+  "blurb": "Wood-fired everything and the open kitchen that made Portland a food destination.",
+  "factors": {
+   "food": 0.89,
+   "ambiance": 0.86,
+   "service": 0.81,
+   "value": 0.4,
+   "creativity": 0.93,
+   "comfort": 0.57
+  },
+  "tone": {
+   "liveliness": 0.66,
+   "formality": 0.68,
+   "adventure": 0.85
+  },
+  "popularity": 0.75,
+  "dish": "Wood-oven roasting"
+ },
+ {
+  "id": "rs_faidley_s_seafood",
+  "title": "Faidley's Seafood",
+  "subtitle": "Baltimore, MD",
+  "year": null,
+  "meta": "$$",
+  "genres": [
+   "Seafood"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/A_Delicious_Crabcake_at_the_Middleton_Tavern.jpg/500px-A_Delicious_Crabcake_at_the_Middleton_Tavern.jpg",
+  "blurb": "Jumbo lump crab cakes eaten standing at Lexington Market since 1886.",
+  "factors": {
+   "food": 0.78,
+   "ambiance": 0.75,
+   "service": 0.61,
+   "value": 0.6,
+   "creativity": 0.61,
+   "comfort": 0.76
+  },
+  "tone": {
+   "liveliness": 0.67,
+   "formality": 0.5,
+   "adventure": 0.39
+  },
+  "popularity": 0.75,
+  "dish": "Jumbo lump crab cake"
+ },
+ {
+  "id": "rs_jack_fry_s",
+  "title": "Jack Fry's",
+  "subtitle": "Louisville, KY",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "American",
+   "New American"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Shrimp_and_grits_at_the_Green_Goddess.jpg/500px-Shrimp_and_grits_at_the_Green_Goddess.jpg",
+  "blurb": "Bourbon-era supper club energy; shrimp and grits worth the drive.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.72,
+   "service": 0.75,
+   "value": 0.44,
+   "creativity": 0.63,
+   "comfort": 0.75
+  },
+  "tone": {
+   "liveliness": 0.57,
+   "formality": 0.65,
+   "adventure": 0.51
+  },
+  "popularity": 0.75,
+  "dish": "Shrimp and grits"
+ },
+ {
+  "id": "rs_taquer_a_el_milagro",
+  "title": "Taquería El Milagro",
+  "subtitle": "Chicago, IL",
+  "year": null,
+  "meta": "$",
+  "genres": [
+   "Mexican"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 3000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Carne_asada_%284472586086%29.jpg/500px-Carne_asada_%284472586086%29.jpg",
+  "blurb": "Pilsen's tortilleria-backed steam-table tacos, cheap and correct.",
+  "factors": {
+   "food": 0.82,
+   "ambiance": 0.69,
+   "service": 0.68,
+   "value": 0.9,
+   "creativity": 0.58,
+   "comfort": 0.82
+  },
+  "tone": {
+   "liveliness": 0.73,
+   "formality": 0.27,
+   "adventure": 0.59
+  },
+  "popularity": 0.75,
+  "dish": "Steak tacos"
  },
  {
   "id": "rs_superiority_burger",
@@ -1297,7 +3017,7 @@
    "count": 2000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/%D7%94%D7%9E%D7%91%D7%95%D7%A8%D7%92%D7%A8_%D7%98%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg/500px-%D7%94%D7%9E%D7%91%D7%95%D7%A8%D7%92%D7%A8_%D7%98%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg",
   "blurb": "The veggie burger that made carnivores queue around the block in the East Village.",
   "factors": {
    "food": 0.8,
@@ -1312,7 +3032,8 @@
    "formality": 0.26,
    "adventure": 0.43
   },
-  "popularity": 0.71
+  "popularity": 0.71,
+  "dish": "The veggie burger"
  },
  {
   "id": "rs_mister_jiu_s",
@@ -1329,7 +3050,7 @@
    "count": 2000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Peking_Duck%2C_2014_%2802%29.jpg/500px-Peking_Duck%2C_2014_%2802%29.jpg",
   "blurb": "Michelin-starred Cantonese in a grand Chinatown banquet hall.",
   "factors": {
    "food": 0.83,
@@ -1344,7 +3065,8 @@
    "formality": 0.53,
    "adventure": 0.66
   },
-  "popularity": 0.71
+  "popularity": 0.71,
+  "dish": "Whole roast duck"
  },
  {
   "id": "rs_night_market_song",
@@ -1360,7 +3082,7 @@
    "count": 2000,
    "source": "Google"
   },
-  "image": null,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LaoFood_LarbNeua.JPG/500px-LaoFood_LarbNeua.JPG",
   "blurb": "Kris Yenbamroong's party-Thai — larb, natural wine, and zero chill.",
   "factors": {
    "food": 0.8,
@@ -1375,6 +3097,168 @@
    "formality": 0.31,
    "adventure": 0.5
   },
-  "popularity": 0.71
+  "popularity": 0.71,
+  "dish": "Larb"
+ },
+ {
+  "id": "rs_staplehouse",
+  "title": "Staplehouse",
+  "subtitle": "Atlanta, GA",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "New American"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Rokusan-tei_first_course.JPG/500px-Rokusan-tei_first_course.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Nonprofit-born tasting counter that became Atlanta's toughest reservation.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.74,
+   "service": 0.83,
+   "value": 0.31,
+   "creativity": 0.8,
+   "comfort": 0.5
+  },
+  "tone": {
+   "liveliness": 0.55,
+   "formality": 0.83,
+   "adventure": 0.74
+  },
+  "popularity": 0.71,
+  "dish": "Seasonal tasting menu"
+ },
+ {
+  "id": "rs_le_pigeon",
+  "title": "Le Pigeon",
+  "subtitle": "Portland, OR",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "French"
+  ],
+  "rating": {
+   "value": 4.7,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Foie_gras_en_cocotte.jpg/500px-Foie_gras_en_cocotte.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Gabriel Rucker's chef's counter — foie gras profiteroles, no apologies.",
+  "factors": {
+   "food": 0.81,
+   "ambiance": 0.88,
+   "service": 0.88,
+   "value": 0.22,
+   "creativity": 0.84,
+   "comfort": 0.67
+  },
+  "tone": {
+   "liveliness": 0.52,
+   "formality": 0.81,
+   "adventure": 0.54
+  },
+  "popularity": 0.71,
+  "dish": "Foie gras profiteroles"
+ },
+ {
+  "id": "rs_owamni",
+  "title": "Owamni",
+  "subtitle": "Minneapolis, MN",
+  "year": null,
+  "meta": "$$$",
+  "genres": [
+   "New American"
+  ],
+  "rating": {
+   "value": 4.5,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Zizania_palustris_%2820150198216%29.jpg/500px-Zizania_palustris_%2820150198216%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Sean Sherman's decolonized menu — bison, wild rice, and zero colonial ingredients.",
+  "factors": {
+   "food": 0.87,
+   "ambiance": 0.78,
+   "service": 0.75,
+   "value": 0.34,
+   "creativity": 0.84,
+   "comfort": 0.51
+  },
+  "tone": {
+   "liveliness": 0.64,
+   "formality": 0.76,
+   "adventure": 0.73
+  },
+  "popularity": 0.71,
+  "dish": "Bison and wild rice"
+ },
+ {
+  "id": "rs_the_french_laundry",
+  "title": "The French Laundry",
+  "subtitle": "Yountville, CA",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "French"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/The_French_Laundry.jpg/500px-The_French_Laundry.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Thomas Keller's nine-course benchmark — the reservation is the flex.",
+  "factors": {
+   "food": 0.85,
+   "ambiance": 0.9,
+   "service": 0.91,
+   "value": 0.21,
+   "creativity": 0.81,
+   "comfort": 0.58
+  },
+  "tone": {
+   "liveliness": 0.47,
+   "formality": 1,
+   "adventure": 0.62
+  },
+  "popularity": 0.71,
+  "dish": "Nine-course tasting menu"
+ },
+ {
+  "id": "rs_chez_panisse",
+  "title": "Chez Panisse",
+  "subtitle": "Berkeley, CA",
+  "year": null,
+  "meta": "$$$$",
+  "genres": [
+   "New American",
+   "French"
+  ],
+  "rating": {
+   "value": 4.6,
+   "count": 2000,
+   "source": "Google"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/ChezPanisse.jpg/500px-ChezPanisse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "blurb": "Alice Waters' farm-to-table origin point, still setting the menu daily.",
+  "factors": {
+   "food": 0.91,
+   "ambiance": 0.82,
+   "service": 0.79,
+   "value": 0.28,
+   "creativity": 0.84,
+   "comfort": 0.52
+  },
+  "tone": {
+   "liveliness": 0.49,
+   "formality": 1,
+   "adventure": 0.66
+  },
+  "popularity": 0.71,
+  "dish": "Daily farm-to-table menu"
  }
 ]

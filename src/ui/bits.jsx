@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Star } from "lucide-react";
 import { paletteFor } from "../domains.js";
 
@@ -27,8 +27,12 @@ export const CSS = `
   background:var(--paper);border-left:2px solid var(--ink);border-right:2px solid var(--ink);
   display:flex;flex-direction:column;}
 .taste-top{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 10px;}
-.taste-mark{font-family:var(--disp);font-weight:700;font-size:23px;letter-spacing:-.01em;display:flex;align-items:center;gap:8px;}
-.taste-mark .dot{font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:700;letter-spacing:.12em;}
+.taste-mark{font-family:var(--disp);font-weight:700;font-size:23px;letter-spacing:-.01em;display:flex;align-items:center;
+  gap:8px;min-width:0;}
+.taste-mark .dot{font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:700;letter-spacing:.12em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+/* the tagline is decorative — drop it before it can wrap and shove the counter */
+@media (max-width:420px){.taste-mark .dot{display:none;}}
 .cat-no{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.06em;font-weight:500;}
 .taste-body{flex:1;padding:4px 18px 96px;overflow:visible;}
 .dombar{display:flex;gap:5px;padding:0 14px 10px;}
@@ -85,9 +89,12 @@ export const CSS = `
 .match-pill{position:absolute;top:14px;right:12px;background:var(--card);border:2px solid var(--ink);border-radius:12px;
   padding:6px 11px 6px 8px;display:flex;align-items:center;gap:7px;z-index:3;transform:rotate(4deg);
   box-shadow:3px 3px 0 var(--ink);}
-.ext-pill{position:absolute;top:16px;left:12px;background:var(--ink);color:var(--paper);border:2px solid var(--ink);
-  border-radius:10px;padding:6px 10px;display:flex;align-items:center;gap:5px;z-index:3;
-  font-family:var(--mono);font-size:11px;font-weight:700;transform:rotate(-3deg);box-shadow:3px 3px 0 rgba(17,17,17,.25);}
+/* left-aligned rating badge; capped so it can never slide under the match pill */
+.ext-pill{position:absolute;top:16px;left:12px;max-width:44%;background:var(--ink);color:var(--paper);
+  border:2px solid var(--ink);border-radius:10px;padding:6px 10px;display:flex;align-items:center;gap:5px;z-index:3;
+  font-family:var(--mono);font-size:11px;font-weight:700;transform:rotate(-3deg);box-shadow:3px 3px 0 rgba(17,17,17,.25);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.match-pill span{white-space:nowrap;}
 .stamp{position:absolute;top:34px;font-family:var(--mono);font-weight:700;font-size:18px;letter-spacing:.12em;
   text-transform:uppercase;border:3px solid;border-radius:9px;padding:5px 11px;z-index:4;opacity:0;
   background:var(--card);box-shadow:3px 3px 0 var(--ink);transition:opacity .08s ease;pointer-events:none;}
@@ -125,8 +132,74 @@ export const CSS = `
 .row{display:flex;align-items:center;gap:12px;}
 .item-row{display:flex;gap:13px;align-items:center;padding:12px 0;border-bottom:2px solid var(--ink);}
 .stars{display:flex;gap:3px;}
-.star{cursor:pointer;color:var(--soft);transition:color .1s ease;}
+.starbtn{background:none;border:none;padding:0;line-height:0;cursor:pointer;border-radius:4px;}
+.starbtn:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+.star{color:var(--soft);transition:color .1s ease;pointer-events:none;}
 .star.on{color:var(--ink);}
+
+/* ---- bottom sheet (item detail) ---- */
+.sheet-back{position:fixed;inset:0;background:rgba(17,17,17,.42);z-index:40;display:flex;align-items:flex-end;
+  justify-content:center;animation:fade .14s ease;}
+.sheet{background:var(--paper);width:100%;max-width:468px;max-height:88vh;overflow-y:auto;border:2px solid var(--ink);
+  border-bottom:none;border-radius:18px 18px 0 0;padding:0 18px 26px;animation:rise .18s ease;
+  -webkit-overflow-scrolling:touch;}
+.sheet-grab{position:sticky;top:0;background:var(--paper);padding:10px 0 8px;display:flex;justify-content:center;
+  align-items:center;z-index:2;}
+.sheet-grab i{width:44px;height:5px;border-radius:3px;background:var(--soft);display:block;}
+.sheet-x{position:absolute;right:0;top:6px;width:32px;height:32px;border:2px solid var(--ink);border-radius:9px;
+  background:var(--card);cursor:pointer;font-size:13px;font-weight:700;color:var(--ink);line-height:1;
+  box-shadow:2px 2px 0 var(--ink);}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes rise{from{transform:translateY(26px)}to{transform:translateY(0)}}
+
+/* ---- toast (undo) ---- */
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:86px;z-index:35;background:var(--ink);
+  color:var(--paper);border-radius:12px;padding:10px 12px 10px 14px;display:flex;align-items:center;gap:12px;
+  box-shadow:3px 3px 0 rgba(17,17,17,.3);font-size:13.5px;width:max-content;max-width:min(420px,92vw);
+  animation:rise .16s ease;}
+.toast > span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.toast b{font-weight:600;}
+.toast button{background:var(--hl);color:#1c2406;border:2px solid var(--paper);border-radius:8px;padding:4px 10px;
+  font-family:var(--ui);font-size:12.5px;font-weight:700;cursor:pointer;flex:none;}
+
+/* ---- scroll affordance on the deck card body ---- */
+.cardbody{position:relative;overflow-y:auto;flex:1;min-height:0;}
+.cardfoot{flex:none;border:none;border-top:2px solid var(--line);background:var(--card);cursor:pointer;
+  padding:11px 18px;display:flex;align-items:center;gap:6px;font-family:var(--ui);font-size:13px;
+  font-weight:600;color:var(--slate);}
+.cardfoot:hover{background:var(--paper2);}
+.fademask{position:absolute;left:0;right:0;bottom:0;height:26px;pointer-events:none;
+  background:linear-gradient(transparent,var(--card));}
+
+/* ---- search + sort controls ---- */
+.searchwrap{display:flex;align-items:center;gap:8px;border:2px solid var(--ink);border-radius:10px;
+  background:var(--card);padding:0 10px;color:var(--muted);}
+.searchinput{flex:1;min-width:0;border:none;background:none;outline:none;padding:10px 0;
+  font-family:var(--ui);font-size:14px;color:var(--ink);}
+.selectbox{flex:1;min-width:0;border:2px solid var(--ink);border-radius:10px;background:var(--card);
+  padding:9px 10px;font-family:var(--ui);font-size:13px;font-weight:600;color:var(--ink);cursor:pointer;}
+
+/* ---- covers/titles as buttons (tap target without restyling) ---- */
+.coverbtn{background:none;border:none;padding:0;cursor:pointer;border-radius:8px;flex:none;line-height:0;}
+.coverbtn:focus-visible,.linkbtn:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+.linkbtn{background:none;border:none;padding:0;cursor:pointer;color:var(--ink);font:inherit;display:block;}
+
+/* ---- cross-domain rows ---- */
+.domrow{display:flex;align-items:center;gap:10px;width:100%;background:none;border:none;cursor:pointer;
+  padding:9px 0;border-bottom:1px solid var(--line);font-family:var(--ui);color:var(--ink);}
+.domrow:last-of-type{border-bottom:none;}
+.domrow:hover{background:var(--paper2);}
+
+/* ---- streak dots ---- */
+.dots{display:flex;gap:5px;}
+.dots i{flex:1;height:26px;border:2px solid var(--ink);border-radius:6px;background:var(--card);display:block;}
+.dots i.on{background:var(--hl);}
+.dots i.today{box-shadow:0 0 0 2px var(--hl-deep);}
+
+/* ---- share card (rendered, then exported as PNG) ---- */
+.sharecard{background:var(--ink);color:var(--paper);border-radius:14px;padding:18px;}
+.sharecard .sc-k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.72;}
+.sharecard .sc-v{font-family:var(--disp);font-size:21px;font-weight:700;line-height:1.15;}
 .card{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:15px;box-shadow:4px 4px 0 var(--ink);}
 .bar{height:10px;border-radius:5px;background:var(--card);overflow:hidden;border:2px solid var(--ink);}
 .bar > span{display:block;height:100%;background:var(--ink);}
@@ -143,6 +216,54 @@ export const CSS = `
 .progress{height:9px;background:var(--card);border:2px solid var(--ink);border-radius:5px;overflow:hidden;margin:0 0 18px;}
 .progress > span{display:block;height:100%;background:var(--hl);transition:width .3s ease;}
 @media (prefers-reduced-motion: reduce){.btn,.act,.swipecard,.chip,.dombtn{transition:none !important;}}
+
+/* ==========================================================================
+   DESKTOP (>=900px). The phone column is right for a swipe deck, so keep it —
+   but stop wasting the rest of the screen: promote navigation to a permanent
+   left rail, widen the content column, and let list/grid views use the room.
+   ========================================================================== */
+@media (min-width:900px){
+  .taste-root{padding:0;}
+  .taste-shell{max-width:1080px;border:none;display:grid;
+    grid-template-columns:232px minmax(0,1fr);grid-template-rows:auto auto 1fr;
+    column-gap:26px;padding:0 24px;}
+  .taste-top{grid-column:1/-1;grid-row:1;padding:22px 0 14px;border-bottom:2px solid var(--ink);margin-bottom:18px;}
+  .taste-mark{font-size:27px;}
+  .taste-mark .dot{display:inline;}
+
+  /* left rail: domain switcher + the former bottom tabs, stacked */
+  .dombar{grid-column:1;grid-row:2;flex-direction:column;gap:7px;padding:0 0 14px;align-self:start;}
+  .dombtn{justify-content:flex-start;padding:11px 13px;font-size:10.5px;gap:8px;}
+  .tabbar{grid-column:1;grid-row:3;position:static;max-width:none;margin:0;flex-direction:column;
+    border:2px solid var(--ink);border-radius:12px;background:var(--card);padding:7px;gap:3px;
+    align-self:start;box-shadow:3px 3px 0 var(--ink);}
+  .tab{flex-direction:row;justify-content:flex-start;gap:10px;padding:10px 12px;border-radius:9px;font-size:11px;}
+  .tab.on{background:var(--hl);color:var(--ink);}
+  .tab .ind{display:none;}
+
+  .taste-body{grid-column:2;grid-row:2/span 2;padding:0 0 60px;}
+
+  /* the deck stays a phone-width card, centred in the wider column */
+  .deck{max-width:468px;margin:8px auto 0;}
+  .actions{max-width:468px;margin-left:auto;margin-right:auto;}
+  /* keep the deck's own header aligned with the card, not the full column */
+  .deckhead{max-width:468px;margin-left:auto;margin-right:auto;}
+
+  /* lists and suggestion rows finally get to breathe */
+  .item-row{padding:14px 0;}
+  .shelfrow{gap:16px;}
+  .sugcard{width:132px;}
+  .sugcard .cover{width:132px !important;height:186px !important;}
+  .sheet-back{align-items:center;}
+  .sheet{max-width:600px;border:2px solid var(--ink);border-radius:16px;max-height:86vh;}
+  .toast{bottom:26px;}
+}
+/* Two-up suggestion grid on very wide screens: no more horizontal scrolling
+   for rows that comfortably fit. */
+@media (min-width:1180px){
+  .taste-shell{max-width:1240px;grid-template-columns:248px minmax(0,1fr);}
+  .shelfrow{flex-wrap:wrap;overflow-x:visible;}
+}
 `;
 
 /* ---- Cover: real artwork when the catalogue has it, stylized card if not --- */
@@ -152,16 +273,13 @@ export function Cover({ item, size = "md" }) {
   const dims = { sm: [54, 80], md: [88, 132], lg: [150, 224] }[size];
   const titleSize = size === "lg" ? 19 : size === "md" ? 12.5 : 9;
   if (item.image && !broken) {
+    // Real artwork stands on its own — no text overlay (every context that
+    // renders a cover already shows the title next to or below it).
     return (
       <div className="cover imgcover" style={{ width: dims[0], height: dims[1], background: pal.bg, flex: "none" }}>
-        <img src={item.image} alt="" loading="lazy" onError={() => setBroken(true)}
+        <img src={item.image} alt={item.title} loading="lazy" onError={() => setBroken(true)}
+          onLoad={(e) => { if (e.currentTarget.naturalWidth < 10) setBroken(true); }}
           style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
-        {size !== "sm" && (
-          <div className="cgrad" style={{ position: "relative", color: "#F6F4EC" }}>
-            <div className="ctitle" style={{ fontSize: titleSize * 0.85 }}>{item.title}</div>
-            <div className="cauth">{item.subtitle}</div>
-          </div>
-        )}
       </div>
     );
   }
@@ -176,24 +294,77 @@ export function Cover({ item, size = "md" }) {
   );
 }
 
-export function Stars({ value, onChange, size = 20 }) {
+export function Stars({ value, onChange, size = 20, label = "Overall rating" }) {
+  const star = (n) => (
+    <Star size={size} className={"star" + (n <= value ? " on" : "")} fill={n <= value ? "currentColor" : "none"} />
+  );
+  // Read-only stars stay plain svg; interactive ones are real buttons so they
+  // are keyboard-reachable and announced.
+  if (!onChange) return <div className="stars" role="img" aria-label={`${label}: ${value} of 5`}>{[1, 2, 3, 4, 5].map((n) => <span key={n}>{star(n)}</span>)}</div>;
   return (
-    <div className="stars">
+    <div className="stars" role="group" aria-label={label}>
       {[1, 2, 3, 4, 5].map((n) => (
-        <Star key={n} size={size} className={"star" + (n <= value ? " on" : "")}
-          fill={n <= value ? "currentColor" : "none"}
-          onClick={onChange ? () => onChange(n === value ? 0 : n) : undefined} />
+        <button key={n} type="button" className="starbtn" aria-label={`${n} star${n === 1 ? "" : "s"}`}
+          aria-pressed={n <= value} onClick={() => onChange(n === value ? 0 : n)}>
+          {star(n)}
+        </button>
       ))}
     </div>
   );
 }
 
-/* compact 1..5 dot rating, visually distinct from the overall stars */
-export function MiniRate({ value = 0, onChange }) {
+/* ---- Chip: selectable pill that is actually a button ---------------------- */
+export function Chip({ on, onClick, variant = "", children }) {
   return (
-    <div style={{ display: "flex", gap: 5 }}>
+    <button type="button" className={"chip" + (variant ? " " + variant : "") + (on ? " on" : "")}
+      aria-pressed={on} onClick={onClick}>{children}</button>
+  );
+}
+
+/* ---- Sheet: modal bottom sheet with escape/backdrop close ----------------- */
+export function Sheet({ onClose, labelledBy, children }) {
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden"; // don't scroll the page behind the sheet
+    return () => { document.removeEventListener("keydown", onKey); document.body.style.overflow = prev; };
+  }, [onClose]);
+  return (
+    <div className="sheet-back" onClick={onClose}>
+      <div className="sheet" role="dialog" aria-modal="true" aria-labelledby={labelledBy}
+        onClick={(e) => e.stopPropagation()}>
+        <div className="sheet-grab">
+          <i />
+          <button type="button" className="sheet-x" onClick={onClose} aria-label="Close">✕</button>
+        </div>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+/* ---- Toast: transient message with one action (used for undo) ------------- */
+export function Toast({ message, actionLabel, onAction, onDismiss, ms = 5000 }) {
+  useEffect(() => {
+    const t = setTimeout(onDismiss, ms);
+    return () => clearTimeout(t);
+  }, [message, ms, onDismiss]);
+  return (
+    <div className="toast" role="status">
+      <span style={{ flex: 1, minWidth: 0 }}>{message}</span>
+      {actionLabel && <button type="button" onClick={onAction}>{actionLabel}</button>}
+    </div>
+  );
+}
+
+/* compact 1..5 dot rating, visually distinct from the overall stars */
+export function MiniRate({ value = 0, onChange, label = "rating" }) {
+  return (
+    <div style={{ display: "flex", gap: 5 }} role="group" aria-label={label}>
       {[1, 2, 3, 4, 5].map((n) => (
-        <button key={n} onClick={() => onChange(n === value ? 0 : n)} aria-label={n + " of 5"}
+        <button key={n} type="button" onClick={() => onChange(n === value ? 0 : n)}
+          aria-label={`${label}: ${n} of 5`} aria-pressed={n <= value}
           style={{ width: 15, height: 15, borderRadius: "50%", padding: 0, cursor: "pointer",
             border: "1.5px solid var(--ink)", background: n <= value ? "var(--hl-deep)" : "transparent",
             transition: "background .1s ease" }} />
@@ -203,17 +374,22 @@ export function MiniRate({ value = 0, onChange }) {
 }
 
 /* External rating badge — real Google/Open Library stars or Deezer popularity. */
-export function ExtRating({ item, dark = false }) {
+export function ExtRating({ item, dark = false, compact = false }) {
   const r = item.rating;
   if (!r || r.value == null) return null;
   const fmtCount = (c) => (c >= 1000000 ? (c / 1000000).toFixed(1) + "M" : c >= 1000 ? Math.round(c / 1000) + "k" : c);
   const scale = r.scale || (r.source === "Deezer" ? 100 : 5);
   const style = dark ? {} : { position: "static", background: "transparent", color: "var(--ink2)", padding: 0 };
+  // Space is tight on the deck badge and in narrow suggestion cards, so those
+  // drop the source name; the full string stays in the tooltip and the sheet.
+  const terse = dark || compact;
   let body;
-  if (scale === 100) body = <>▶ {r.value} · {r.source} charts</>;
-  else if (scale === 10) body = <>★ {r.value}/10 · {r.count ? fmtCount(r.count) + " on " : ""}{r.source}</>;
-  else body = <>★ {r.value} · {r.count ? fmtCount(r.count) + " on " : ""}{r.source}</>;
-  return <span className={dark ? "ext-pill" : "cat-no"} style={style} title={r.source}>{body}</span>;
+  if (scale === 100) body = terse ? <>▶ {r.value}</> : <>▶ {r.value} · {r.source} charts</>;
+  else if (scale === 10) body = terse ? <>★ {r.value}/10</> : <>★ {r.value}/10 · {r.count ? fmtCount(r.count) + " on " : ""}{r.source}</>;
+  else body = terse ? <>★ {r.value}{r.count ? ` · ${fmtCount(r.count)}` : ""}</> : <>★ {r.value} · {r.count ? fmtCount(r.count) + " on " : ""}{r.source}</>;
+  const full = scale === 100 ? `${r.value} on ${r.source} charts`
+    : `${r.value}${scale === 10 ? "/10" : ""}${r.count ? ` from ${r.count.toLocaleString()} ratings` : ""} on ${r.source}`;
+  return <span className={dark ? "ext-pill" : "cat-no"} style={style} title={full}>{body}</span>;
 }
 
 export function matchTag(score) {
@@ -222,10 +398,11 @@ export function matchTag(score) {
   if (score >= 32) return { t: "Worth a look", c: "var(--ink2)" };
   return { t: "A stretch", c: "var(--muted)" };
 }
-// DISPLAY ONLY — engine's true 0..100 remapped so a genuine good match reads
-// high-70s/80s and the realistic ceiling (~true 80) reads 100. Ranking,
-// matching, learning and matchTag all use the TRUE score.
-export const displayScore = (score) => Math.round(clamp(0.8 * score + 36, 0, 100));
+// DISPLAY ONLY — engine's true 0..100 remapped to a readable percentage.
+// Deliberately never reads 100: an honest ceiling (~true 80 → 86%) keeps the
+// number believable before the user has swiped anything. Ranking, matching,
+// learning and matchTag all use the TRUE score.
+export const displayScore = (score) => Math.round(clamp(0.72 * score + 28, 8, 97));
 export const ringDegrees = (score) => displayScore(score) * 3.6;
 
 /* Functional-updater toggle: safe for rapid taps (never reads stale state). */
@@ -246,7 +423,7 @@ export function ItemPicker({ items, selected, set, max, exclude = [] }) {
         return (
           <button key={b.id} onClick={() => toggleSel(set, b.id, max)}
             style={{ background: "none", border: "none", padding: 0, cursor: "pointer", position: "relative", textAlign: "left" }}>
-            <div style={{ opacity: on ? 1 : 0.62, transform: on ? "translateY(-2px)" : "none", transition: "all .12s ease",
+            <div style={{ opacity: on ? 1 : 0.92, transform: on ? "translateY(-2px)" : "none", transition: "all .12s ease",
               outline: on ? "2px solid var(--ink)" : "none", outlineOffset: 2, borderRadius: 6 }}>
               <Cover item={b} size="md" />
             </div>
