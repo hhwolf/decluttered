@@ -175,6 +175,72 @@ const CURATED = [
   ["Jack Fry's", "Louisville, KY", ["American", "New American"], 4.7, 3, 3, "Bourbon-era supper club energy; shrimp and grits worth the drive."],
   ["Taquería El Milagro", "Chicago, IL", ["Mexican"], 4.5, 3, 1, "Pilsen's tortilleria-backed steam-table tacos, cheap and correct."],
   ["Mi Tierra Café y Panadería", "San Antonio, TX", ["Mexican", "Bakery & Café"], 4.4, 21, 2, "24-hour mariachis, pan dulce, and enchiladas under a ceiling of piñatas."],
+
+  // --- focus metros: deep enough that a city filter leaves a real deck ---
+  // Boston
+  ["Legal Sea Foods", "Boston, MA", ["Seafood"], 4.3, 6, 3, "The clam chowder served at every presidential inauguration since 1981."],
+  ["Mike's Pastry", "Boston, MA", ["Bakery & Café"], 4.4, 17, 1, "North End cannoli by the string-tied box; expect a crowd and cash."],
+  ["Regina Pizzeria", "Boston, MA", ["Pizza"], 4.5, 6, 1, "Brick-oven thin crust from the 1926 North End original."],
+  ["Giacomo's Ristorante", "Boston, MA", ["Italian"], 4.5, 3, 2, "No reservations, cash only, and a lobster fra diavolo worth the sidewalk wait."],
+  ["Row 34", "Boston, MA", ["Seafood"], 4.6, 3, 3, "A workingman's oyster bar for the Fort Point crowd — raw bar and craft beer."],
+  ["Oleana", "Boston, MA", ["Mediterranean"], 4.7, 2, 3, "Ana Sortun's Turkish-inflected Cambridge cooking, with a garden patio."],
+  ["Toro", "Boston, MA", ["Mediterranean"], 4.5, 3, 3, "Ken Oringer's South End tapas — grilled corn with lime and aioli is the order."],
+  ["No. 9 Park", "Boston, MA", ["French", "New American"], 4.6, 2, 4, "Barbara Lynch's Beacon Hill flagship and its famous prune-stuffed gnocchi."],
+  ["Island Creek Oyster Bar", "Boston, MA", ["Seafood"], 4.5, 3, 3, "Farm-to-shell oysters in Kenmore, plus a lobster roe pasta people plan around."],
+  ["Neptune Oyster (Back Bay)", "Boston, MA", ["Seafood"], 4.5, 2, 3, "The second room for the hot buttered lobster roll, still worth queuing for."],
+  ["Galleria Umberto", "Boston, MA", ["Pizza"], 4.6, 2, 1, "Sicilian slices until they run out, which is usually by 1:30pm."],
+  ["Sullivan's Castle Island", "Boston, MA", ["American", "Seafood"], 4.6, 5, 1, "Seasonal Southie shack: hot dogs, fried clams, and the harbor walk."],
+
+  // New York (beyond the originals already listed above)
+  ["Di Fara Pizza", "Brooklyn, NY", ["Pizza"], 4.4, 4, 2, "Dom DeMarco's Midwood slice shop — scissored basil, no hurry, ever."],
+  ["Lucali", "Brooklyn, NY", ["Pizza", "Italian"], 4.6, 2, 3, "Candlelit Carroll Gardens pizza worth the same-day list ritual."],
+  ["Keens Steakhouse", "New York, NY", ["Steakhouse"], 4.6, 6, 4, "Mutton chop under 50,000 clay pipes hanging from the ceiling since 1885."],
+  ["Grand Central Oyster Bar", "New York, NY", ["Seafood"], 4.3, 10, 3, "Vaulted Guastavino tile, pan roasts, and three dozen oyster varieties."],
+  ["Veselka", "New York, NY", ["American"], 4.5, 6, 2, "24-hour East Village pierogi and borscht, Ukrainian since 1954."],
+  ["Sylvia's", "New York, NY", ["Soul Food"], 4.4, 5, 2, "Harlem's Queen of Soul Food — smothered chicken and Sunday gospel brunch."],
+  ["Nom Wah Tea Parlor", "New York, NY", ["Chinese"], 4.4, 6, 2, "Doyers Street dim sum in the oldest room in Chinatown."],
+  ["John's of Bleecker Street", "New York, NY", ["Pizza", "Italian"], 4.5, 5, 2, "Coal-fired Village pies since 1929 — no slices, don't ask."],
+  ["Prince Street Pizza", "New York, NY", ["Pizza"], 4.4, 9, 1, "The pepperoni-cup Sicilian square that broke the internet."],
+  ["Ippudo NY", "New York, NY", ["Japanese"], 4.4, 5, 2, "The tonkotsu that started New York's ramen arms race."],
+  ["Balthazar", "New York, NY", ["French"], 4.4, 8, 3, "Keith McNally's SoHo brasserie: mirrors, steak frites, and a bread basket."],
+  ["Carbone", "New York, NY", ["Italian"], 4.5, 3, 4, "Red-sauce theater in Greenwich Village; the spicy rigatoni vodka is the point."],
+
+  // Chicago
+  ["Portillo's", "Chicago, IL", ["American", "Burgers"], 4.5, 15, 1, "Chicago dog, Italian beef dipped, chocolate cake shake. The trifecta."],
+  ["Gene & Jude's", "Chicago, IL", ["American"], 4.6, 4, 1, "A depression dog with fries piled on top, and absolutely no ketchup."],
+  ["Giordano's", "Chicago, IL", ["Pizza"], 4.4, 12, 2, "Stuffed deep dish with a crust lid — plan for a 45-minute bake."],
+  ["The Purple Pig", "Chicago, IL", ["Mediterranean"], 4.5, 5, 3, "Michigan Avenue small plates built for wine and pork."],
+  ["Monteverde", "Chicago, IL", ["Italian"], 4.7, 3, 3, "Sarah Grueneberg's pasta laboratory in the West Loop."],
+  ["The Publican", "Chicago, IL", ["New American"], 4.5, 4, 3, "Beer hall benches, oysters and pork for the Fulton Market crowd."],
+  ["Smoque BBQ", "Chicago, IL", ["Barbecue"], 4.6, 5, 2, "Northwest side brisket that quietly outranks a lot of Texas."],
+  ["Manny's Cafeteria & Delicatessen", "Chicago, IL", ["Deli"], 4.5, 5, 2, "Corned beef carved by a man who has done it for thirty years."],
+  ["Big Star", "Chicago, IL", ["Mexican"], 4.4, 5, 1, "Wicker Park tacos, whiskey and a patio that runs all summer."],
+  ["Calumet Fisheries", "Chicago, IL", ["Seafood"], 4.7, 2, 1, "Smoked chubs from a shack by the drawbridge, cash only."],
+
+  // San Francisco Bay Area
+  ["State Bird Provisions", "San Francisco, CA", ["New American"], 4.5, 3, 3, "Dim-sum carts, but for inventive Californian small plates."],
+  ["La Taqueria", "San Francisco, CA", ["Mexican"], 4.5, 6, 1, "The Mission burrito argument-ender — no rice, dorado-crisped tortilla."],
+  ["El Farolito", "San Francisco, CA", ["Mexican"], 4.4, 7, 1, "Super burrito at 1am, the other side of the Mission debate."],
+  ["Burma Superstar", "San Francisco, CA", ["Thai", "Chinese"], 4.4, 5, 2, "Tea leaf salad tossed tableside; the Inner Richmond queue is the norm."],
+  ["Yank Sing", "San Francisco, CA", ["Chinese"], 4.4, 4, 3, "Rincon Center dim sum carts with Shanghai dumplings worth the price."],
+  ["Nopa", "San Francisco, CA", ["New American", "Mediterranean"], 4.5, 4, 3, "Wood-fired late-night cooking that anchored a whole neighborhood."],
+  ["Tadich Grill", "San Francisco, CA", ["Seafood"], 4.3, 4, 3, "California's oldest restaurant — cioppino at a counter since 1849."],
+  ["Molinari Delicatessen", "San Francisco, CA", ["Deli", "Italian"], 4.7, 3, 1, "North Beach sandwich counter; take the number, take it to the park."],
+  ["Bi-Rite Creamery", "San Francisco, CA", ["Bakery & Café"], 4.6, 6, 1, "Salted caramel scoops and a line down 18th Street."],
+  ["Swan Oyster Depot (Polk)", "San Francisco, CA", ["Seafood"], 4.6, 2, 2, "Eighteen stools of crab and sourdough, still cash only."],
+
+  // Los Angeles
+  ["Langer's Delicatessen", "Los Angeles, CA", ["Deli"], 4.6, 5, 2, "The #19 pastrami on double-baked rye — many say it beats New York."],
+  ["Philippe the Original", "Los Angeles, CA", ["American", "Deli"], 4.4, 12, 1, "The French dip's disputed birthplace, sawdust floors and all, since 1908."],
+  ["Grand Central Market", "Los Angeles, CA", ["American", "Mexican"], 4.5, 20, 1, "A century-old hall of stalls — Eggslut, tacos, and everything between."],
+  ["Pink's Hot Dogs", "Los Angeles, CA", ["American"], 4.3, 12, 1, "Chili dogs under the neon on La Brea since 1939."],
+  ["Musso & Frank Grill", "Los Angeles, CA", ["American", "Steakhouse"], 4.5, 4, 3, "Hollywood's oldest restaurant; martinis stirred by career bartenders."],
+  ["n/naka", "Los Angeles, CA", ["Japanese"], 4.7, 1, 4, "Niki Nakayama's modern kaiseki, booked months out."],
+  ["Jitlada", "Los Angeles, CA", ["Thai"], 4.5, 3, 2, "Southern Thai heat in East Hollywood that does not negotiate."],
+  ["Mariscos Jalisco", "Los Angeles, CA", ["Mexican", "Seafood"], 4.6, 2, 1, "The Boyle Heights truck and its fried shrimp taco dorado."],
+  ["The Apple Pan", "Los Angeles, CA", ["Burgers"], 4.4, 3, 1, "Hickory burger at a horseshoe counter, unchanged since 1947."],
+  ["Sushi Gen", "Los Angeles, CA", ["Japanese"], 4.6, 3, 3, "Little Tokyo sashimi lunch special that has its own lunchtime line."],
+  ["Canter's Deli", "Los Angeles, CA", ["Deli"], 4.3, 6, 2, "24-hour Fairfax institution, matzo ball soup and the Kibitz Room next door."],
 ];
 
 // --- signature dishes: restaurant -> [label shown on the card, Wikipedia
@@ -283,6 +349,66 @@ const DISHES = {
   "Jack Fry's": ["Shrimp and grits", "Shrimp and grits"],
   "Taquería El Milagro": ["Steak tacos", "Carne asada"],
   "Mi Tierra Café y Panadería": ["Pan dulce and enchiladas", "Pan dulce"],
+  // Boston
+  "Legal Sea Foods": ["New England clam chowder", "Clam chowder"],
+  "Mike's Pastry": ["Cannoli", "Cannoli"],
+  "Regina Pizzeria": ["Brick-oven thin crust", "Pizza"],
+  "Giacomo's Ristorante": ["Lobster fra diavolo", "Lobster"],
+  "Row 34": ["Oysters on the half shell", "Oyster"],
+  "Oleana": ["Turkish-inflected mezze", "Meze"],
+  "Toro": ["Grilled corn with aioli", "Elote"],
+  "No. 9 Park": ["Prune-stuffed gnocchi", "Gnocchi"],
+  "Island Creek Oyster Bar": ["Lobster roe pasta", "Lobster"],
+  "Neptune Oyster (Back Bay)": ["Hot buttered lobster roll", "Lobster roll"],
+  "Galleria Umberto": ["Sicilian slice", "Sicilian pizza"],
+  "Sullivan's Castle Island": ["Fried clams", "Fried clams"],
+  // New York
+  "Di Fara Pizza": ["Classic pie with scissored basil", "New York–style pizza"],
+  "Lucali": ["Thin-crust pie", "Pizza"],
+  "Keens Steakhouse": ["Mutton chop", "Mutton"],
+  "Grand Central Oyster Bar": ["Oyster pan roast", "Oyster"],
+  "Veselka": ["Pierogi", "Pierogi"],
+  "Sylvia's": ["Smothered chicken", "Fried chicken"],
+  "Nom Wah Tea Parlor": ["Dim sum", "Dim sum"],
+  "John's of Bleecker Street": ["Coal-fired pie", "New York–style pizza"],
+  "Prince Street Pizza": ["Pepperoni Sicilian square", "Sicilian pizza"],
+  "Ippudo NY": ["Tonkotsu ramen", "Tonkotsu ramen"],
+  "Balthazar": ["Steak frites", "Steak frites"],
+  "Carbone": ["Spicy rigatoni vodka", "Penne alla vodka"],
+  // Chicago
+  "Portillo's": ["Italian beef, dipped", "Italian beef"],
+  "Gene & Jude's": ["Depression dog with fries", "Chicago-style hot dog"],
+  "Giordano's": ["Stuffed deep dish", "Chicago-style pizza"],
+  "The Purple Pig": ["Pork-heavy small plates", "Tapas"],
+  "Monteverde": ["Handmade pasta", "Pasta"],
+  "The Publican": ["Pork and oysters", "Pork"],
+  "Smoque BBQ": ["Brisket", "Brisket"],
+  "Manny's Cafeteria & Delicatessen": ["Corned beef", "Corned beef"],
+  "Big Star": ["Tacos al pastor", "Al pastor"],
+  "Calumet Fisheries": ["Smoked chubs", "Smoked fish"],
+  // San Francisco
+  "State Bird Provisions": ["Quail with provisions", "Quail"],
+  "La Taqueria": ["Mission burrito", "Mission burrito"],
+  "El Farolito": ["Super burrito", "Burrito"],
+  "Burma Superstar": ["Tea leaf salad", "Lahpet"],
+  "Yank Sing": ["Shanghai soup dumplings", "Xiaolongbao"],
+  "Nopa": ["Wood-fired vegetables", "Wood-fired oven"],
+  "Tadich Grill": ["Cioppino", "Cioppino"],
+  "Molinari Delicatessen": ["Italian sub", "Submarine sandwich"],
+  "Bi-Rite Creamery": ["Salted caramel ice cream", "Ice cream"],
+  "Swan Oyster Depot (Polk)": ["Crab and sourdough", "Sourdough"],
+  // Los Angeles
+  "Langer's Delicatessen": ["#19 pastrami on rye", "Pastrami on rye"],
+  "Philippe the Original": ["French dip", "French dip"],
+  "Grand Central Market": ["A hall of stalls", "Grand Central Market (Los Angeles)"],
+  "Pink's Hot Dogs": ["Chili dog", "Chili dog"],
+  "Musso & Frank Grill": ["Martini and a chop", "Martini (cocktail)"],
+  "n/naka": ["Modern kaiseki", "Kaiseki"],
+  "Jitlada": ["Southern Thai curries", "Thai curry"],
+  "Mariscos Jalisco": ["Taco dorado de camarón", "Taco"],
+  "The Apple Pan": ["Hickory burger", "Hamburger"],
+  "Sushi Gen": ["Sashimi lunch special", "Sashimi"],
+  "Canter's Deli": ["Matzo ball soup", "Matzah ball"],
 };
 
 const DISH_CACHE = path.join(path.dirname(fileURLToPath(import.meta.url)), ".cache/wiki-dish-images.json");
@@ -327,6 +453,23 @@ async function enrichDishes(list) {
   console.log(`  dish photos: ${hits}/${list.length}`);
 }
 
+// A user picks a metro, not a municipality: Brooklyn is New York, Berkeley is
+// the Bay Area. `city` is that pickable metro; `subtitle` keeps the precise
+// location for display.
+const METRO = {
+  "Brooklyn, NY": "New York",
+  "New York, NY": "New York",
+  "Boston, MA": "Boston",
+  "Chicago, IL": "Chicago",
+  "San Francisco, CA": "San Francisco",
+  "Berkeley, CA": "San Francisco",
+  "Yountville, CA": "San Francisco",
+  "Los Angeles, CA": "Los Angeles",
+};
+// Cities offered first in the picker; the rest follow alphabetically.
+export const FOCUS_CITIES = ["Boston", "New York", "Chicago", "San Francisco", "Los Angeles"];
+const metroOf = (subtitle) => METRO[subtitle] || subtitle.replace(/,\s*[A-Z]{2}$/, "");
+
 function curatedItems() {
   const maxCount = Math.max(...CURATED.map((r) => r[4]));
   return CURATED.map(([name, city, cuisines, rating, countK, price, blurb]) => {
@@ -341,6 +484,7 @@ function curatedItems() {
       id,
       title: name,
       subtitle: city,
+      city: metroOf(city),   // the metro a user picks in their location preference
       year: null,
       meta: "$".repeat(price),
       genres: [...new Set(genres)].slice(0, 3),
@@ -383,7 +527,7 @@ async function liveItems() {
         const price = PRICE_MAP[pl.priceLevel] || 2;
         const genres = [cuisine];
         seen.set(pl.id, {
-          id, title: pl.displayName?.text, subtitle: city, year: null,
+          id, title: pl.displayName?.text, subtitle: city, city: metroOf(city), year: null,
           meta: "$".repeat(price), genres,
           rating: { value: pl.rating, count: pl.userRatingCount || 0, source: "Google" },
           image: null,
@@ -413,7 +557,35 @@ async function main() {
     list = curatedItems();
   }
   await enrichDishes(list);
-  list.sort((a, b) => b.popularity - a.popularity);
+
+  // Reception/overview prose is expensive to refetch (Wikipedia rate-limits
+  // hard) and is not derived from anything here — carry it across rebuilds.
+  if (fs.existsSync(OUT)) {
+    const prev = new Map(JSON.parse(fs.readFileSync(OUT, "utf8")).map((r) => [r.id, r]));
+    let kept = 0;
+    for (const r of list) {
+      const old = prev.get(r.id);
+      if (!old) continue;
+      if (old.reception) { r.reception = old.reception; kept++; }
+      if (old.overview) r.overview = old.overview;
+    }
+    console.log(`  carried over ${kept} existing reception entries`);
+  }
+
+  // Grouped by city so the catalogue reads as city lists, focus metros first,
+  // and most-loved first inside each city.
+  const cityRank = (c) => {
+    const i = FOCUS_CITIES.indexOf(c);
+    return i === -1 ? FOCUS_CITIES.length : i;
+  };
+  list.sort((a, b) =>
+    cityRank(a.city) - cityRank(b.city) ||
+    a.city.localeCompare(b.city) ||
+    b.popularity - a.popularity);
+
+  const byCity = list.reduce((acc, r) => (acc[r.city] = (acc[r.city] || 0) + 1, acc), {});
+  console.log("  " + FOCUS_CITIES.map((c) => `${c}: ${byCity[c] || 0}`).join(" · ") +
+    ` · ${Object.keys(byCity).length - FOCUS_CITIES.length} other cities`);
   writePretty(fs, OUT, list);
 }
 

@@ -1,8 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { Compass, Library as LibraryIcon, Users, User, BookOpen, UtensilsCrossed, Music, Film, Tv, Sparkles } from "lucide-react";
 import { DOMAINS, DOMAIN_KEYS } from "./domains.js";
 import { updateProfileFromAction, applyRating } from "./engine/engine.mjs";
 import { dayKey } from "./engine/stats.mjs";
+import { filterByCities } from "./engine/location.mjs";
 import { CSS, clamp, Toast } from "./ui/bits.jsx";
 import ItemSheet from "./ui/ItemSheet.jsx";
 import Onboarding from "./ui/Onboarding.jsx";
@@ -67,6 +68,13 @@ export default function App() {
 
   const domain = DOMAINS[active];
   const ds = states[active];
+  // Discovery pool honours the location preference; `domain.items` stays whole
+  // so the library can still resolve places in cities since deselected.
+  const discoverDomain = useMemo(() => (
+    domain.hasLocation && ds.profile?.cities?.length
+      ? { ...domain, items: filterByCities(domain.items, ds.profile.cities) }
+      : domain
+  ), [domain, ds.profile?.cities]);
   const patch = (partial) => setStates((s) => ({ ...s, [active]: { ...s[active], ...partial } }));
 
   const finishOnboarding = (prof, data) => {
@@ -139,6 +147,10 @@ export default function App() {
     const cur = s[active];
     return { ...s, [active]: { ...cur, profile: { ...cur.profile, explore: clamp(v) } } };
   });
+  const setCities = (cities) => setStates((s) => {
+    const cur = s[active];
+    return { ...s, [active]: { ...cur, profile: { ...cur.profile, cities } } };
+  });
   const setGoals = (goals) => setStates((s) => {
     const cur = s[active];
     return { ...s, [active]: { ...cur, profile: { ...cur.profile, goals } } };
@@ -200,11 +212,11 @@ export default function App() {
           <>
             <div className="taste-body">
               {view === "discover" && (
-                <Discover domain={domain} profile={ds.profile} shelf={ds.shelf}
+                <Discover domain={discoverDomain} profile={ds.profile} shelf={ds.shelf}
                   onAction={handleAction} onExplore={setExplore} onOpen={setSheetItem} />
               )}
               {view === "foryou" && (
-                <ForYou domain={domain} profile={ds.profile} shelf={ds.shelf} onAction={handleAction} onOpen={setSheetItem} />
+                <ForYou domain={discoverDomain} profile={ds.profile} shelf={ds.shelf} onAction={handleAction} onOpen={setSheetItem} />
               )}
               {view === "library" && (
                 <LibraryView domain={domain} shelf={ds.shelf} ranked={ds.ranked} onRanked={setRanked}
@@ -214,7 +226,7 @@ export default function App() {
               {view === "profile" && (
                 <ProfileView domain={domain} profile={ds.profile} shelf={ds.shelf} activity={ds.activity}
                   states={states} onSwitchDomain={(k) => { setActive(k); setView("discover"); }} onImport={importEntries}
-                  onExplore={setExplore} onGoals={setGoals} onReset={reset} />
+                  onExplore={setExplore} onGoals={setGoals} onCities={setCities} onReset={reset} />
               )}
             </div>
             {undo && (

@@ -155,6 +155,11 @@ export const DOMAINS = {
     craftPrompt: "Rate the experience",
     weighTitle: "What you weigh in a restaurant",
     moodTitle: "The vibe you dine for",
+    // Only this domain is place-bound — a perfect match in Memphis is no use
+    // to someone in Boston, so onboarding asks where they eat.
+    hasLocation: true,
+    locationTitle: "Where are you eating?",
+    locationSub: "Pick the cities you actually visit. Your deck and suggestions stay there; you can change this any time.",
     heroTitle: ["Stop doomscrolling menus.", "Start eating", "where you belong."],
     heroSub: "Endless listicles, five-star noise. Table learns your palate — the cuisines, the vibe, the price of a good night — then deals you a deck of places worth trying.",
     ratingSource: "Google rating",

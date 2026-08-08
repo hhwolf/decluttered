@@ -1,5 +1,5 @@
 import { useState, useRef, useMemo, useEffect } from "react";
-import { Heart, X, Info, Check, Play, Pause, Quote } from "lucide-react";
+import { Heart, X, Info, Check, Play, Pause, Quote, MapPin } from "lucide-react";
 import { rankItems } from "../engine/engine.mjs";
 import { paletteFor } from "../domains.js";
 import { Cover, ExtRating, matchTag, displayScore, ringDegrees, clamp } from "./bits.jsx";
@@ -125,9 +125,21 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   return (
     <div>
       <div className="row deckhead" style={{ justifyContent: "space-between", marginBottom: 6 }}>
-        <div>
+        <div style={{ minWidth: 0 }}>
           <div className="eyebrow">Your deck</div>
-          <div className="cat-no">{deck.length} {domain.nounPlural} queued · {profile.interactions} sorted</div>
+          <div className="cat-no">
+            {deck.length} {domain.nounPlural} queued · {profile.interactions} sorted
+            {/* two names fit the line; beyond that count them so it never truncates */}
+            {domain.hasLocation && profile.cities?.length > 0 && (
+              <> · <MapPin size={9} style={{ verticalAlign: "-1px" }} />{" "}
+                <span title={profile.cities.join(", ")}>
+                  {profile.cities.length <= 2
+                    ? profile.cities.join(", ")
+                    : `${profile.cities[0]} +${profile.cities.length - 1} more`}
+                </span>
+              </>
+            )}
+          </div>
         </div>
         <div className="seg" style={{ width: 188 }}>
           <button className={profile.explore < 0.55 ? "on" : ""} onClick={() => onExplore(0.3)}>Aligned</button>

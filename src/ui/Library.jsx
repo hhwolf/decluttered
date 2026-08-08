@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { Heart, X, Check, Sliders, Library as LibraryIcon, Search, Swords } from "lucide-react";
 import { Cover, Stars, MiniRate, ExtRating } from "./bits.jsx";
 import Rank from "./Rank.jsx";
+import { cityOf } from "../engine/location.mjs";
 
 function ConsumedCard({ domain, item, onRate, onRemove, onOpen }) {
   const [open, setOpen] = useState(false);
@@ -65,12 +66,14 @@ const SORTS = {
   external: { label: "Critics' rating", cmp: (a, b) => (b.item.rating?.value || 0) / (b.item.rating?.scale || 5) - (a.item.rating?.value || 0) / (a.item.rating?.scale || 5) },
   title: { label: "Title A–Z", cmp: (a, b) => a.item.title.localeCompare(b.item.title) },
   year: { label: "Newest first", cmp: (a, b) => (b.item.year || 0) - (a.item.year || 0) },
+  city: { label: "City", cmp: (a, b) => (cityOf(a.item) || "").localeCompare(cityOf(b.item) || "")
+    || (b.item.popularity || 0) - (a.item.popularity || 0) },
 };
 
 export default function LibraryView({ domain, shelf, ranked = [], onRanked, onMove, onRemove, onRate, onOpen }) {
   const [tab, setTab] = useState("want");
   const [q, setQ] = useState("");
-  const [sort, setSort] = useState("added");
+  const [sort, setSort] = useState(domain.hasLocation ? "city" : "added");
   const [ranking, setRanking] = useState(false);
 
   const items = Object.entries(shelf)
@@ -123,7 +126,9 @@ export default function LibraryView({ domain, shelf, ranked = [], onRanked, onMo
           </div>
           <div className="row" style={{ justifyContent: "space-between", marginBottom: 10, gap: 8 }}>
             <select className="selectbox" value={sort} onChange={(e) => setSort(e.target.value)} aria-label="Sort by">
-              {Object.entries(SORTS).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
+              {Object.entries(SORTS)
+                .filter(([k]) => k !== "city" || domain.hasLocation)
+                .map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
             </select>
             {tab === "consumed" && rankable.length >= 2 && (
               <button className="btn btn-ghost" style={{ padding: "8px 12px", flex: "none" }} onClick={() => setRanking(true)}>
@@ -152,11 +157,15 @@ export default function LibraryView({ domain, shelf, ranked = [], onRanked, onMo
       ) : visible.length === 0 ? (
         <div className="empty"><p className="sub">Nothing matches “{q}”.</p></div>
       ) : (
-        visible.map((i) => (
-          tab === "consumed" ? (
-            <ConsumedCard key={i.item.id} domain={domain} item={i} onRate={onRate} onRemove={onRemove} onOpen={onOpen} />
+        visible.map((i, idx) => (
+          <div key={i.item.id}>
+          {sort === "city" && domain.hasLocation && cityOf(i.item) !== cityOf(visible[idx - 1]?.item) && (
+            <div className="eyebrow" style={{ margin: idx === 0 ? "4px 0 6px" : "16px 0 6px" }}>{cityOf(i.item)}</div>
+          )}
+          {tab === "consumed" ? (
+            <ConsumedCard domain={domain} item={i} onRate={onRate} onRemove={onRemove} onOpen={onOpen} />
           ) : (
-            <div className="item-row" key={i.item.id}>
+            <div className="item-row">
               <button className="coverbtn" onClick={() => onOpen(i.item)} aria-label={`Open details for ${i.item.title}`}>
                 <Cover item={i.item} size="sm" />
               </button>
@@ -174,7 +183,8 @@ export default function LibraryView({ domain, shelf, ranked = [], onRanked, onMo
                 </div>
               </div>
             </div>
-          )
+          )}
+          </div>
         ))
       )}
     </div>

@@ -1,14 +1,18 @@
 import { useState } from "react";
-import { RotateCcw, Sliders, Target } from "lucide-react";
+import { RotateCcw, Sliders, Target, MapPin } from "lucide-react";
 import { paletteFor } from "../domains.js";
 import { GOAL_KEYS } from "../engine/suggest.mjs";
+import { allCities, countForCities } from "../engine/location.mjs";
 import { Chip } from "./bits.jsx";
 import { StreakCard, MilestoneCard, TasteReview, AllDomains, ImportCard } from "./Stats.jsx";
 import { DOMAINS, DOMAIN_KEYS } from "../domains.js";
 
-export default function ProfileView({ domain, profile, shelf, activity, states, onSwitchDomain, onImport, onExplore, onGoals, onReset }) {
+export default function ProfileView({ domain, profile, shelf, activity, states, onSwitchDomain, onImport, onExplore, onGoals, onCities, onReset }) {
   const [confirmReset, setConfirmReset] = useState(false);
   const goals = profile.goals || [];
+  const cities = profile.cities || [];
+  const cityOptions = domain.hasLocation ? allCities(domain.items) : [];
+  const toggleCity = (c) => onCities(cities.includes(c) ? cities.filter((x) => x !== c) : [...cities, c]);
   const toggleGoal = (g) => {
     if (goals.includes(g)) onGoals(goals.filter((x) => x !== g));
     else if (goals.length < 3) onGoals([...goals, g]);
@@ -93,6 +97,41 @@ export default function ProfileView({ domain, profile, shelf, activity, states, 
           Rate the elements of {domain.nounPlural} you've {domain.actions.consumedShort.toLowerCase()} (in your library) to reshape these — they steer the "what you weigh" part of every match.
         </p>
       </div>
+
+      {domain.hasLocation && (
+        <div className="card" style={{ marginBottom: 14 }}>
+          <div className="row" style={{ justifyContent: "space-between", marginBottom: 12 }}>
+            <div className="eyebrow"><MapPin size={12} style={{ verticalAlign: "-1px" }} /> Where you eat</div>
+            <span className="cat-no">
+              {cities.length === 0
+                ? `everywhere · ${domain.items.length}`
+                : `${countForCities(domain.items, cities)} in range`}
+            </span>
+          </div>
+          <div className="chips">
+            {cityOptions.filter((c) => c.focus || cities.includes(c.city)).map((c) => (
+              <Chip key={c.city} on={cities.includes(c.city)} onClick={() => toggleCity(c.city)}>
+                {c.city} <span style={{ opacity: .55 }}>{c.count}</span>
+              </Chip>
+            ))}
+          </div>
+          <details style={{ marginTop: 10 }}>
+            <summary className="cat-no" style={{ cursor: "pointer" }}>Add another city</summary>
+            <div className="chips" style={{ marginTop: 8 }}>
+              {cityOptions.filter((c) => !c.focus && !cities.includes(c.city)).map((c) => (
+                <Chip key={c.city} on={false} onClick={() => toggleCity(c.city)}>
+                  {c.city} <span style={{ opacity: .55 }}>{c.count}</span>
+                </Chip>
+              ))}
+            </div>
+          </details>
+          <p className="cat-no" style={{ marginTop: 10, lineHeight: 1.45 }}>
+            {cities.length === 0
+              ? "No city picked, so everywhere is fair game. Pick one or more to keep your deck to places you can actually get to."
+              : "Your deck and suggestions stay in these cities. Places you already saved elsewhere remain in your library."}
+          </p>
+        </div>
+      )}
 
       <div className="card" style={{ marginBottom: 14 }}>
         <div className="row" style={{ justifyContent: "space-between", marginBottom: 12 }}>

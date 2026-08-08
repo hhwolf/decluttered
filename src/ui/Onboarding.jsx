@@ -3,6 +3,7 @@ import { ChevronRight, ChevronLeft, Sparkles, Check } from "lucide-react";
 import { buildInitialProfile } from "../engine/engine.mjs";
 import { GOAL_KEYS } from "../engine/suggest.mjs";
 import { allGenres, paletteFor } from "../domains.js";
+import { allCities, filterByCities, countForCities } from "../engine/location.mjs";
 import { Chip, Cover, ItemPicker, toggleSel } from "./bits.jsx";
 
 export default function Onboarding({ domain, onDone }) {
@@ -16,17 +17,31 @@ export default function Onboarding({ domain, onDone }) {
   const [goals, setGoals] = useState([]);
   const [explore, setExplore] = useState(0.3);
 
-  const GENRES = useMemo(() => allGenres(domain), [domain]);
-  // Picker shows the most recognizable slice of the catalogue.
+  const [cities, setCities] = useState([]);
+
+  // Once a location is chosen, every later step works from that pool only —
+  // there is no point asking a Bostonian to rate a Memphis barbecue joint.
+  const pool = useMemo(
+    () => (domain.hasLocation ? filterByCities(domain.items, cities) : domain.items),
+    [domain, cities]
+  );
+  const cityOptions = useMemo(() => (domain.hasLocation ? allCities(domain.items) : []), [domain]);
+  const GENRES = useMemo(() => allGenres({ ...domain, items: pool }), [domain, pool]);
+  // Picker shows the most recognizable slice of the (possibly narrowed) pool.
   const pickerItems = useMemo(
-    () => [...domain.items].sort((a, b) => b.popularity - a.popularity).slice(0, 27),
-    [domain]
+    () => [...pool].sort((a, b) => b.popularity - a.popularity).slice(0, 27),
+    [pool]
   );
   const byId = (id) => domain.items.find((b) => b.id === id);
   const noun = domain.noun, plural = domain.nounPlural;
 
   const steps = [
     { key: "intro" },
+    // Place-bound domains ask location first: everything downstream (the
+    // favourites picker included) should only show reachable places.
+    ...(domain.hasLocation
+      ? [{ key: "cities", title: domain.locationTitle, eyebrow: "Where you eat", sub: domain.locationSub }]
+      : []),
     { key: "genres", title: "What do you reach for?", eyebrow: `${domain.genreLabel} you love`,
       sub: `Pick what you gravitate to. Broad strokes first — we'll get specific next.` },
     { key: "avoidGenres", title: "Anything you'd rather skip?", eyebrow: "Not for you", optional: true,
@@ -67,10 +82,11 @@ export default function Onboarding({ domain, onDone }) {
       weights, explore,
     });
     profile.goals = goals; // engine ignores goals; the suggester honors them
+    profile.cities = cities; // restaurants only; [] means "anywhere"
     return profile;
   };
   const finish = () => {
-    onDone(buildProfile(), { genres, avoidGenres, favIds, surpriseIds, avoidIds, weights, goals, explore });
+    onDone(buildProfile(), { genres, avoidGenres, favIds, surpriseIds, avoidIds, weights, goals, explore, cities });
   };
   // Zero-input path: a neutral profile with the dial opened up, so the deck
   // starts on broadly-loved items and learns entirely from swipes. Every
@@ -81,8 +97,9 @@ export default function Onboarding({ domain, onDone }) {
       weights: Object.fromEntries(domain.factors.map((k) => [k, 0.5])), explore: 0.5,
     });
     profile.goals = [];
+    profile.cities = [];
     onDone(profile, { genres: [], avoidGenres: [], favIds: [], surpriseIds: [], avoidIds: [],
-      weights: Object.fromEntries(domain.factors.map((k) => [k, 0.5])), goals: [], explore: 0.5, quickStart: true });
+      weights: Object.fromEntries(domain.factors.map((k) => [k, 0.5])), goals: [], explore: 0.5, cities: [], quickStart: true });
   };
   // live preview of the derived profile for the confirmation step
   const preview = useMemo(
@@ -137,6 +154,35 @@ export default function Onboarding({ domain, onDone }) {
           <div className="eyebrow">Step {step} · {cur.eyebrow}</div>
           <h2 className="h1" style={{ fontSize: 27, marginTop: 8 }}>{cur.title}</h2>
           <p className="sub" style={{ margin: "8px 0 20px" }}>{cur.sub}</p>
+        </>
+      )}
+
+      {cur.key === "cities" && (
+        <>
+          <p className="cat-no" style={{ marginBottom: 12 }}>
+            {cities.length === 0
+              ? `Nothing picked — you'll see all ${domain.items.length} restaurants, everywhere.`
+              : `${countForCities(domain.items, cities)} restaurants in ${cities.length} ${cities.length === 1 ? "city" : "cities"}.`}
+          </p>
+          <div className="chips" style={{ marginBottom: 14 }}>
+            {cityOptions.filter((c) => c.focus).map((c) => (
+              <Chip key={c.city} on={cities.includes(c.city)} onClick={() => toggleSel(setCities, c.city)}>
+                {c.city} <span style={{ opacity: .55 }}>{c.count}</span>
+              </Chip>
+            ))}
+          </div>
+          <details>
+            <summary className="cat-no" style={{ cursor: "pointer", marginBottom: 10 }}>
+              Somewhere else? {cityOptions.length - 5} more cities
+            </summary>
+            <div className="chips">
+              {cityOptions.filter((c) => !c.focus).map((c) => (
+                <Chip key={c.city} on={cities.includes(c.city)} onClick={() => toggleSel(setCities, c.city)}>
+                  {c.city} <span style={{ opacity: .55 }}>{c.count}</span>
+                </Chip>
+              ))}
+            </div>
+          </details>
         </>
       )}
 
@@ -212,6 +258,14 @@ export default function Onboarding({ domain, onDone }) {
 
       {cur.key === "confirm" && preview && (
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          {domain.hasLocation && (
+            <div className="card">
+              <div className="eyebrow" style={{ marginBottom: 10 }}>Where you eat</div>
+              {cities.length === 0
+                ? <p className="sub" style={{ margin: 0 }}>Everywhere — all {domain.items.length} restaurants are in play. Narrow it any time in Profile.</p>
+                : <div className="chips">{cities.map((c) => <span key={c} className="chip on" style={{ cursor: "default" }}>{c}</span>)}</div>}
+            </div>
+          )}
           <div className="card">
             <div className="eyebrow" style={{ marginBottom: 10 }}>{domain.genreLabel} you lean into</div>
             <div className="chips">
