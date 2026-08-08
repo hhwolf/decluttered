@@ -34,7 +34,9 @@
    "darkness": 0.77,
    "complexity": 0.78,
    "comfort": 0.27
-  }
+  },
+  "reception": null,
+  "overview": "Breaking Bad is an American neo-Western crime media franchise created by Vince Gilligan, primarily based on the two television series, Breaking Bad (2008–2013) and Better Call Saul (2015–2022), and the film El Camino: A Breaking Bad Movie (2019). The fictional universe is sometimes informally referred to as the \"Gilliverse\"."
  },
  {
   "id": "tv_335",
@@ -71,7 +73,23 @@
    "darkness": 0.72,
    "complexity": 0.67,
    "comfort": 0.42
-  }
+  },
+  "reception": {
+   "summary": "The show received critical acclaim: the first three series each received positive reviews, while the fourth has received mixed reviews. Series one holds a Metacritic score of 85/100, based on 17 reviews, and series two scored 91/100, based on 24 reviews, while series three holds a score of 88/100, based on 22 reviews.",
+   "quotes": [
+    {
+     "text": "Series one holds a Metacritic score of 85/100, based on 17 reviews, and series two scored 91/100, based on 24 reviews, while series three holds a score of 88/100, based on 22 reviews.",
+     "outlet": "Metacritic"
+    },
+    {
+     "text": "The first series holds a 93% rating at critical aggregator site Rotten Tomatoes, the second holds a 94% rating, and the third series has a 91% approval rating.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sherlock_(TV_series)"
+  },
+  "overview": "Sherlock is a British mystery crime drama television series based on Sir Arthur Conan Doyle's Sherlock Holmes detective stories. Created by Steven Moffat and Mark Gatiss, the show stars Benedict Cumberbatch as Sherlock Holmes and Martin Freeman as Doctor John Watson. Thirteen episodes were produced, with four three-part series airing from 2010 to 2017 and a special episode that aired on 1 January 2016."
  },
  {
   "id": "tv_82",
@@ -108,7 +126,23 @@
    "darkness": 0.49,
    "complexity": 0.57,
    "comfort": 0.43
-  }
+  },
+  "reception": {
+   "summary": "Game of Thrones, particularly the first six seasons, received critical acclaim, although the series's frequent use of nudity and violence were criticized. The series has an overall rating of 89% on Rotten Tomatoes and a score of 86 on Metacritic. Some critics and publications have called the show among the best HBO series of all time.",
+   "quotes": [
+    {
+     "text": "The series has an overall rating of 89% on Rotten Tomatoes and a score of 86 on Metacritic.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "According to Variety, \"There may be no show more profitable to its network than 'Game of Thrones' is to HBO.",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Game_of_Thrones"
+  },
+  "overview": "Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is the first adaptation of the A Song of Ice and Fire franchise, a series of high fantasy novels by George R. R. Martin, the first of which is A Game of Thrones."
  },
  {
   "id": "tv_2",
@@ -145,7 +179,23 @@
    "darkness": 0.72,
    "complexity": 0.71,
    "comfort": 0.39
-  }
+  },
+  "reception": {
+   "summary": "The first season of Person of Interest received generally positive reviews, with the pilot episode drawing a favorable response from critics and later episodes receiving higher praise. On Metacritic, the season scored 66 out of 100 based on 26 reviews.",
+   "quotes": [
+    {
+     "text": "On Metacritic, the season scored 66 out of 100 based on 26 reviews.",
+     "outlet": "Metacritic"
+    },
+    {
+     "text": "Finch.\" Mary McNamara of the Los Angeles Times stated that in regard to the pilot, \"the notion of preventing crimes rather than solving them is an appealing twist...",
+     "outlet": "Los Angeles Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)"
+  },
+  "overview": "Person of Interest is an American science fiction crime drama television series that aired on CBS from September 22, 2011, to June 21, 2016, with its five seasons consisting of 103 episodes. The series was created by Jonathan Nolan; executive producers were Nolan, J. J. Abrams, Bryan Burk, Greg Plageman, Denise Thé, and Chris Fisher."
  },
  {
   "id": "tv_1825",
@@ -182,7 +232,19 @@
    "darkness": 0.66,
    "complexity": 0.73,
    "comfort": 0.29
-  }
+  },
+  "reception": {
+   "summary": "On Rotten Tomatoes, the first season has a score of 78% with an average rating of 7.1 out of 10 based on 46 reviews.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the first season has a score of 78% with an average rating of 7.1 out of 10 based on 46 reviews.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Expanse_(TV_series)"
+  },
+  "overview": "The Expanse is an American science fiction television series developed by Mark Fergus and Hawk Ostby for the Syfy network; it is based on the series of novels of the same name by James S. A. Corey."
  },
  {
   "id": "tv_430",
@@ -219,7 +281,23 @@
    "darkness": 0.73,
    "complexity": 0.79,
    "comfort": 0.45
-  }
+  },
+  "reception": {
+   "summary": "The X-Files received positive reviews from television critics, with many calling it one of the best series that aired on American television in the 1990s. Ian Burrell from the British newspaper The Independent called the show \"one of the greatest cult shows in modern television\". Richard Corliss from Time magazine called the show the \"cultural touchstone of\" the 1990s.",
+   "quotes": [
+    {
+     "text": "Richard Corliss from Time magazine called the show the \"cultural touchstone of\" the 1990s.",
+     "outlet": "Time"
+    },
+    {
+     "text": "In 2012, Entertainment Weekly listed the show at No.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_X-Files"
+  },
+  "overview": "The X-Files is an American science fiction drama television series created by Chris Carter. The original series aired from September 10, 1993, to May 19, 2002, on Fox, spanning nine seasons, with 202 episodes. A tenth season of six episodes ran from January to February 2016."
  },
  {
   "id": "tv_618",
@@ -256,7 +334,23 @@
    "darkness": 0.68,
    "complexity": 0.63,
    "comfort": 0.43
-  }
+  },
+  "reception": {
+   "summary": "Better Call Saul received critical acclaim and is considered to be an outstanding example of how to successfully produce a prequel and spinoff work that defies expectations. Many critics have called Better Call Saul a worthy successor to Breaking Bad and some have even deemed it superior to its predecessor.",
+   "quotes": [
+    {
+     "text": "In September 2019, The Guardian ranked the show at No.",
+     "outlet": "The Guardian"
+    },
+    {
+     "text": "27 on their list of The 100 Greatest TV Shows of All Time.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Better_Call_Saul"
+  },
+  "overview": "Better Call Saul is an American neo-noir legal crime drama television series created by Vince Gilligan and Peter Gould for AMC. Part of the Breaking Bad franchise, it is a spin-off of Gilligan's previous series, Breaking Bad (2008–2013), to which it serves primarily as a prequel, with some scenes taking place during and after the events of Breaking Bad."
  },
  {
   "id": "tv_32",
@@ -293,7 +387,23 @@
    "darkness": 0.5,
    "complexity": 0.63,
    "comfort": 0.44
-  }
+  },
+  "reception": {
+   "summary": "The first season holds a weighted average score of 85 out of 100 based on 40 reviews on Metacritic, indicating \"universal acclaim\". The review aggregation website Rotten Tomatoes reported that 97% of 140 critics gave the season a positive review, with an average rating of 8.45/10.",
+   "quotes": [
+    {
+     "text": "The first season holds a weighted average score of 85 out of 100 based on 40 reviews on Metacritic, indicating \"universal acclaim\".",
+     "outlet": "Metacritic"
+    },
+    {
+     "text": "The review aggregation website Rotten Tomatoes reported that 97% of 140 critics gave the season a positive review, with an average rating of 8.45/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Fargo_(TV_series)"
+  },
+  "overview": "Fargo is an American black comedy crime drama television series created by Noah Hawley for FX. It is based on the 1996 film written and directed by Joel and Ethan Coen. The Coens, whose other films also heavily influenced the series, were originally uninvolved but joined as executive producers after being impressed by Hawley's script for the first season. The series premiered on April 15, 2014."
  },
  {
   "id": "tv_158",
@@ -330,7 +440,14 @@
    "darkness": 0.63,
    "complexity": 0.73,
    "comfort": 0.49
-  }
+  },
+  "reception": {
+   "summary": "Early reception through the first season was generally lukewarm, with many noting its \"lackluster\" start and the \"dullness\" of the characters. However, changes in the approach and storytelling of the show in the second and subsequent seasons led to more positive critical reception and made it a media favorite. As a whole, the series was well received by the critics and has developed a cult following.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Fringe_(TV_series)"
+  },
+  "overview": "Fringe is an American science fiction television series created by J. J. Abrams, Alex Kurtzman, and Roberto Orci. It premiered on Fox on September 9, 2008, and concluded on January 18, 2013, after five seasons comprising 100 episodes."
  },
  {
   "id": "tv_37336",
@@ -367,7 +484,23 @@
    "darkness": 0.51,
    "complexity": 0.62,
    "comfort": 0.4
-  }
+  },
+  "reception": {
+   "summary": "Shōgun received critical acclaim in the United States and Japan. On review aggregator Rotten Tomatoes, 99% of 137 critics gave the series a positive review, with an average rating of 8.7/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, 99% of 137 critics gave the series a positive review, with an average rating of 8.7/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Rebecca Nicholson of The Guardian praised the show, calling it \"mesmerising\" and especially praised the battle sequences and its respect for the source material.",
+     "outlet": "The Guardian"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sh%C5%8Dgun_(2024_TV_series)"
+  },
+  "overview": "Shōgun is an American historical drama television series created by Rachel Kondo and Justin Marks. It is based on the 1975 novel by James Clavell, which was previously adapted into a 1980 miniseries. Its ensemble cast includes Hiroyuki Sanada, Cosmo Jarvis, Anna Sawai, Tadanobu Asano, Takehiro Hira, Tommy Bastow, and Fumi Nikaido."
  },
  {
   "id": "tv_431",
@@ -403,7 +536,19 @@
    "darkness": 0.33,
    "complexity": 0.48,
    "comfort": 0.89
-  }
+  },
+  "reception": {
+   "summary": "Early reviews of the series were mixed; the first season holds a Metacritic score of 65 out of 100, based on 24 sampled reviews, indicating \"generally favourable reviews\".",
+   "quotes": [
+    {
+     "text": "Early reviews of the series were mixed; the first season holds a Metacritic score of 65 out of 100, based on 24 sampled reviews, indicating \"generally favourable reviews\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Friends"
+  },
+  "overview": "Friends is an American television sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons. With an ensemble cast starring Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry, and David Schwimmer, the show revolves around six friends in their 20s and early 30s who live in Manhattan, New York City."
  },
  {
   "id": "tv_38963",
@@ -440,7 +585,23 @@
    "darkness": 0.62,
    "complexity": 0.5,
    "comfort": 0.49
-  }
+  },
+  "reception": {
+   "summary": "For the first season, the review aggregator website Rotten Tomatoes reported a 93% approval rating with an average rating of 8/10 based on 338 reviews.",
+   "quotes": [
+    {
+     "text": "For the first season, the review aggregator website Rotten Tomatoes reported a 93% approval rating with an average rating of 8/10 based on 338 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "For the second season, Rotten Tomatoes reported a 93% approval rating with an average score of 8.5/10, based on 449 reviews.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Mandalorian"
+  },
+  "overview": "The Mandalorian, also known as Star Wars: The Mandalorian, is an American space Western television series created by Jon Favreau for the streaming service Disney+. It is the first live-action series in the Star Wars franchise and begins five years after the events of the film Return of the Jedi (1983). It follows a lone bounty hunter who protects a Force-sensitive child, Grogu, from remnant Imperial forces."
  },
  {
   "id": "tv_269",
@@ -477,7 +638,23 @@
    "darkness": 0.68,
    "complexity": 0.78,
    "comfort": 0.36
-  }
+  },
+  "reception": {
+   "summary": "Throughout its run, Peaky Blinders received widespread critical acclaim. David Renshaw of The Guardian summarised the series as a \"riveting, fast-paced tale of post-first world war Birmingham gangsters\", praising Murphy as the \"ever-so-cool Tommy Shelby\" and the rest of the cast for their \"powerful performances\".",
+   "quotes": [
+    {
+     "text": "Sarah Crompton of The Telegraph gave the series four out of five, praising the show for its originality and \"taking all of our expectations and confounding them\".",
+     "outlet": "The Telegraph"
+    },
+    {
+     "text": "Alex Fletcher from Digital Spy believes that \"Peaky Blinders has started as sharp as a dart\", while Den of Geek called the series \"the most intelligent, stylish and engrossing BBC drama in ages\".",
+     "outlet": "BBC"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Peaky_Blinders_(TV_series)"
+  },
+  "overview": "Peaky Blinders is a British historical crime drama television series created by Steven Knight. Set in Birmingham, it follows the exploits of the Peaky Blinders crime gang in the direct aftermath of the First World War. The fictional gang is loosely based on an urban youth gang active in the city from the 1880s to the 1920s."
  },
  {
   "id": "tv_353",
@@ -514,7 +691,23 @@
    "darkness": 0.75,
    "complexity": 0.66,
    "comfort": 0.38
-  }
+  },
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 96% of critics' reviews are positive. Metacritic, which uses a weighted average, assigned the series a score of 86 out of 100, based on 14 critics, indicating \"universal acclaim\". The first three series are often considered by critics to have been significantly better than the last three. It is considered to have a large cult following.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 96% of  critics' reviews are positive.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Metacritic, which uses a weighted average, assigned the series a score of 86 out of 100, based on 14 critics, indicating \"universal acclaim\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Line_of_Duty"
+  },
+  "overview": "Line of Duty is a British police procedural and serial drama television programme created by Jed Mercurio and produced by World Productions for the British Broadcasting Corporation (BBC). It began broadcasting on BBC Two on 26 June 2012. The programme performed well and was quickly commissioned for additional series that aired in 2014 and 2016."
  },
  {
   "id": "tv_2993",
@@ -551,7 +744,23 @@
    "darkness": 0.68,
    "complexity": 0.73,
    "comfort": 0.26
-  }
+  },
+  "reception": {
+   "summary": "Review aggregator Rotten Tomatoes gave the series an overall score of 90% based on 658 critic reviews, while Metacritic, which uses a weighted average, gave an overall score of 74 based on 174 critic reviews. For the first season, Rotten Tomatoes calculated an approval rating of 97% based on 92 reviews and an average rating of 8.2/10.",
+   "quotes": [
+    {
+     "text": "Review aggregator Rotten Tomatoes gave the series an overall score of 90% based on 658 critic reviews, while Metacritic, which uses a weighted average, gave an overall score of 74 based on 174 critic reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "For the first season, Rotten Tomatoes calculated an approval rating of 97% based on 92 reviews and an average rating of 8.2/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Stranger_Things"
+  },
+  "overview": "Stranger Things is an American television series created by the Duffer Brothers for Netflix. Produced by Monkey Massacre Productions and 21 Laps Entertainment, the first season was released on Netflix on July 15, 2016. The second and third seasons followed in October 2017 and July 2019, respectively, and the fourth season was released in two volumes in May and July 2022."
  },
  {
   "id": "tv_10",
@@ -588,7 +797,23 @@
    "darkness": 0.73,
    "complexity": 0.6,
    "comfort": 0.32
-  }
+  },
+  "reception": {
+   "summary": "The series' premiere received mixed reviews from critics. On review aggregator website Rotten Tomatoes, the first season holds a 54% approval rating based on 37 reviews, with an average rating of 5.4/10. The site's critics consensus reads, \"Moody and dark, Grimm gives supernatural fantasy a TV procedural sheen.\" On Metacritic, the first season has a score of 55 out of 100, based on reviews from 23 critics.",
+   "quotes": [
+    {
+     "text": "On review aggregator website Rotten Tomatoes, the first season holds a 54% approval rating based on 37 reviews, with an average rating of 5.4/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "The site's critics consensus reads, \"Moody and dark, Grimm gives supernatural fantasy a TV procedural sheen.\" On Metacritic, the first season has a score of 55 out of 100, based on reviews from 23 critics.",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Grimm_(TV_series)"
+  },
+  "overview": "Grimm is an American urban fantasy police procedural drama horror television series created by Stephen Carpenter, Jim Kouf and David Greenwalt, and produced by Universal Television for NBC. The series premiered on October 28, 2011 in the United States, and ended on March 31, 2017, after six seasons consisting of 123 episodes."
  },
  {
   "id": "tv_305",
@@ -625,7 +850,23 @@
    "darkness": 0.77,
    "complexity": 0.8,
    "comfort": 0.32
-  }
+  },
+  "reception": {
+   "summary": "Black Mirror has been met with critical acclaim. On Rotten Tomatoes, the seven series received ratings of 98%, 87%, 86%, 85%, 66%, 78%, and 89%. \"White Christmas\" received an 89% rating and Bandersnatch received a 73% rating. Metacritic, assigning scores from series three onwards, gave ratings of 82, 72, 66, 68 and 74. Bandersnatch holds a 61 rating on Metacritic. Series one garnered praise.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the seven series received ratings of 98%, 87%, 86%, 85%, 66%, 78%, and 89%.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Metacritic, assigning scores from series three onwards, gave ratings of 82, 72, 66, 68 and 74.",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Black_Mirror"
+  },
+  "overview": "Black Mirror is a British anthology television series created by Charlie Brooker. Most episodes are speculative fiction, set in near-future dystopias containing sci-fi technology. The series is inspired by The Twilight Zone and uses the themes of technology and media to comment on contemporary social issues. Most episodes are written by Brooker with involvement by the executive producer Annabel Jones."
  },
  {
   "id": "tv_1369",
@@ -699,7 +940,23 @@
    "darkness": 0.66,
    "complexity": 0.77,
    "comfort": 0.36
-  }
+  },
+  "reception": {
+   "summary": "The series has received generally favourable reviews, with critics praising Hardy's performance, the aesthetic and the slow burn aspect. The review aggregator Rotten Tomatoes gives the series an approval rating of 78% based on 45 reviews, with an average rating of 7.03/10.",
+   "quotes": [
+    {
+     "text": "The review aggregator Rotten Tomatoes gives the series an approval rating of 78% based on 45 reviews, with an average rating of 7.03/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "On review aggregator Metacritic, the series has a score of 67 out of 100 based on 32 critics, indicating \"generally favorable reviews\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Taboo_(2017_TV_series)"
+  },
+  "overview": "Taboo is a BBC television drama series produced by Scott Free London and Hardy Son & Baker. It premiered on BBC One in the United Kingdom, on 7 January 2017 and on FX in the United States, on 10 January 2017. The eight-episode series was created by Steven Knight, Tom Hardy, and his father, Chips Hardy, based on a story written by Tom and Chips Hardy."
  },
  {
   "id": "tv_15299",
@@ -736,7 +993,9 @@
    "darkness": 0.49,
    "complexity": 0.49,
    "comfort": 0.51
-  }
+  },
+  "reception": null,
+  "overview": "The Boys is an American media franchise, consisting of an action-drama and satirical black comedy superhero television series which follow the residents of a world where superpowered individuals called \"Supes\" are recognized as heroes by the general public and work for a powerful corporation known as Vought International, which markets, monetizes, and (secretly) creates them, with most being selfish and corrupt…"
  },
  {
   "id": "tv_133",
@@ -773,7 +1032,23 @@
    "darkness": 0.65,
    "complexity": 0.7,
    "comfort": 0.31
-  }
+  },
+  "reception": {
+   "summary": "The first season was met with positive reviews from critics, who highlighted the show's novel approach to the source material, the writing quality, and the performances and chemistry found between its two leads and supporting cast. Season one holds an 85% approval rating on aggregate review site Rotten Tomatoes, based on 62 reviews, with an average score of 7.69/10.",
+   "quotes": [
+    {
+     "text": "Season one holds an 85% approval rating on aggregate review site Rotten Tomatoes, based on 62 reviews, with an average score of 7.69/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "It holds a 100% approval rating on Rotten Tomatoes based on 17 reviews, with an average score of 8.29/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Elementary_(TV_series)"
+  },
+  "overview": "Elementary is an American procedural comedy-drama television series that presented a contemporary update of Arthur Conan Doyle's character Sherlock Holmes. Created by Robert Doherty and starring Jonny Lee Miller as Sherlock Holmes and Lucy Liu as Dr. Joan Watson, the series aired on CBS for seven seasons from September 27, 2012, to August 15, 2019, consisting of 154 episodes."
  },
  {
   "id": "tv_210",
@@ -810,7 +1085,23 @@
    "darkness": 0.55,
    "complexity": 0.65,
    "comfort": 0.53
-  }
+  },
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, the series holds a 100% approval rating based on 8 critic reviews, and an average score of 8.82/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the series holds a 100% approval rating based on 8 critic reviews, and an average score of 8.82/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Reviewing the whole series for IGN, Mark Snow rated it 7.9/10 and wrote that the series was \"a tumultuous one\".",
+     "outlet": "IGN"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Doctor_Who_series_7"
+  },
+  "overview": "The seventh series of the British science fiction television programme Doctor Who was broadcast concurrently on BBC One in the United Kingdom, and was split into two parts as the previous series had been. Following its premiere on 1 September 2012, the series aired weekly with five episodes until 29 September. The remaining eight episodes were broadcast between 30 March and 18 May 2013."
  },
  {
   "id": "tv_1859",
@@ -847,7 +1138,23 @@
    "darkness": 0.76,
    "complexity": 0.63,
    "comfort": 0.33
-  }
+  },
+  "reception": {
+   "summary": "The pilot episode was screened in July at the 2015 San Diego Comic-Con. The pilot was met positively by the viewers, with Bleeding Cool's Dan Wickline praising the episode, saying that \"the show itself is enjoyable because of the great dialogue and flawless delivery from its lead\" and \"this version of Lucifer refuses to take almost anything seriously and the show is better for it\".",
+   "quotes": [
+    {
+     "text": "The review aggregator website Rotten Tomatoes reports that 49% of critics gave it a positive review based on 43 reviews, with an average rating of 5.40 out of 10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Metacritic, which uses a weighted average, assigned a score of 49 out of 100 based on 24 critics, indicating \"mixed or average reviews\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lucifer_(TV_series)"
+  },
+  "overview": "Lucifer is an American urban fantasy television series developed by Tom Kapinos that began airing on January 25, 2016, and concluded on September 10, 2021. It revolves around Lucifer Morningstar (Tom Ellis), an alternate version of the DC Comics character of the same name created by Neil Gaiman, Sam Kieth and Mike Dringenberg."
  },
  {
   "id": "tv_19",
@@ -884,7 +1191,23 @@
    "darkness": 0.66,
    "complexity": 0.51,
    "comfort": 0.4
-  }
+  },
+  "reception": {
+   "summary": "Supernatural received mixed to positive reviews. On Rotten Tomatoes, the series holds a 93% approval rating from the aggregated reviews of 163 critics over 15 seasons. On Metacritic, it has a weighted average score of 60 out of 100 based on 48 critics throughout its run, indicating \"mixed or average\".",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the series holds a 93% approval rating from the aggregated reviews of 163 critics over 15 seasons.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "On Metacritic, it has a weighted average score of 60 out of 100 based on 48 critics throughout its run, indicating \"mixed or average\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Supernatural_(American_TV_series)"
+  },
+  "overview": "Supernatural is an American dark fantasy television series created by Eric Kripke. It was first broadcast on The WB and subsequently on The CW for 15 seasons between September 2005 and November 2020. Jared Padalecki and Jensen Ackles portray Sam and Dean Winchester, two brothers hunting down supernatural creatures together."
  },
  {
   "id": "tv_116",
@@ -921,7 +1244,23 @@
    "darkness": 0.65,
    "complexity": 0.71,
    "comfort": 0.31
-  }
+  },
+  "reception": {
+   "summary": "The seasons score between 60% and 100% on Rotten Tomatoes. The first season of The Mentalist received mostly positive reviews, with critics being divided on the procedural format, but praising the performance of Simon Baker.",
+   "quotes": [
+    {
+     "text": "The seasons score between 60% and 100% on Rotten Tomatoes.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Mary McNamara of The Los Angeles Times praised Baker as \"virtually irresistible\" and said, \"...psychological sleight of hand can't fill an hour every week.",
+     "outlet": "Los Angeles Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Mentalist"
+  },
+  "overview": "The Mentalist is an American procedural drama television series that ran from September 23, 2008, until February 18, 2015, broadcasting 151 episodes over seven seasons, on CBS. It was created by Bruno Heller, who was also its executive producer."
  },
  {
   "id": "tv_541",
@@ -958,7 +1297,23 @@
    "darkness": 0.72,
    "complexity": 0.65,
    "comfort": 0.39
-  }
+  },
+  "reception": {
+   "summary": "The first season received generally positive reviews. On review aggregator Metacritic, the season scored 65 out of 100 based on 32 reviews, signifying \"generally favorable\" reviews.",
+   "quotes": [
+    {
+     "text": "On review aggregator Metacritic, the season scored 65 out of 100 based on 32 reviews, signifying \"generally favorable\" reviews.",
+     "outlet": "Metacritic"
+    },
+    {
+     "text": "Gillian Flynn of Entertainment Weekly dubbed it one of the best new shows of 2005.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Prison_Break"
+  },
+  "overview": "Prison Break is an American crime drama television series created by Paul Scheuring for Fox. The series revolves around two brothers: Lincoln Burrows (Dominic Purcell) and Michael Scofield (Wentworth Miller); Lincoln has been sentenced to death for a crime he did not commit, while Michael devises an elaborate plan to help his brother escape prison and clear his name."
  },
  {
   "id": "tv_2285",
@@ -995,7 +1350,14 @@
    "darkness": 0.8,
    "complexity": 0.81,
    "comfort": 0.37
-  }
+  },
+  "reception": {
+   "summary": "The Night Manager received mostly positive reviews with praise directed towards the screenplay, production values, performances (particularly Kapoor, Kapur and Shome) and the direction. It is the first Indian TV series set to feature on a cover of a book published in South Asia authored by John le Carré.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Night_Manager_(Indian_TV_series)"
+  },
+  "overview": "The Night Manager is an Indian Hindi-language action crime thriller television series created by Sandeep Modi. It is a remake of the British television serial The Night Manager (2016), itself based on the 1993 novel of the same name by John le Carré. It stars Anil Kapoor, Aditya Roy Kapur and Sobhita Dhulipala, with Tillotama Shome, Ravi Behl, Saswata Chatterjee in supporting roles."
  },
  {
   "id": "tv_44458",
@@ -1032,7 +1394,23 @@
    "darkness": 0.49,
    "complexity": 0.63,
    "comfort": 0.66
-  }
+  },
+  "reception": {
+   "summary": "Review aggregator Rotten Tomatoes reported an approval rating of 92% based on 74 reviews, with an average rating of 8.3/10. The website's critics consensus reads, \"Warm and winsome, if not particularly hilarious, Ted Lasso fleshes out its promo premise with unrelenting optimism and a charming turn from Jason Sudeikis.\" Metacritic gave the first season a weighted average score of 71 out of 100 based on 21 reviews.",
+   "quotes": [
+    {
+     "text": "Review aggregator Rotten Tomatoes reported an approval rating of 92% based on 74 reviews, with an average rating of 8.3/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "After the eighth episode, Caroline Framke of Variety published a review with the headline \"For Your Reconsideration: Ted Lasso\".",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ted_Lasso"
+  },
+  "overview": "Ted Lasso ( LASS-oh) is an American sports comedy-drama television series developed by Jason Sudeikis, Bill Lawrence, Brendan Hunt, and Joe Kelly. It is based on a character Sudeikis portrayed in a series of promotional media for NBC Sports' coverage of England's soccer Premier League. The show follows Ted Lasso, an American college football coach who is hired to coach an English soccer team, A.F.C."
  },
  {
   "id": "tv_81",
@@ -1105,7 +1483,23 @@
    "darkness": 0.83,
    "complexity": 0.7,
    "comfort": 0.31
-  }
+  },
+  "reception": {
+   "summary": "For the first season, the review aggregator website Rotten Tomatoes reported an 84% approval rating, with an average rating of 7.3/10 and based on 31 reviews.",
+   "quotes": [
+    {
+     "text": "For the first season, the review aggregator website Rotten Tomatoes reported an 84% approval rating, with an average rating of 7.3/10 and based on 31 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In Entertainment Weekly's annual Fall TV Preview, Ken Tucker named Blue Bloods one of the \"Five Best New Shows\" of 2010.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Blue_Bloods"
+  },
+  "overview": "Blue Bloods is an American police procedural drama television series that aired on CBS from September 24, 2010, to December 13, 2024, across 14 seasons and 293 episodes. Its main characters are the fictional Reagan family, an Irish-American Catholic family in New York City with a history of work in law enforcement."
  },
  {
   "id": "tv_172",
@@ -1141,7 +1535,19 @@
    "darkness": 0.53,
    "complexity": 0.68,
    "comfort": 0.47
-  }
+  },
+  "reception": {
+   "summary": "On Metacritic, the show has a weighted average score of 65 out of 100, based on reviews from 29 critics, indicating \"generally favorable reviews\".",
+   "quotes": [
+    {
+     "text": "On Metacritic, the show has a weighted average score of 65 out of 100, based on reviews from 29 critics, indicating \"generally favorable reviews\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Suits_(American_TV_series)"
+  },
+  "overview": "Suits is an American legal drama television series created and written by Aaron Korsh. Produced by Universal Content Productions, it premiered on USA Network on June 23, 2011. Set in a New York City corporate law firm, the series follows Mike Ross (Patrick J. Adams), a college dropout with a photographic memory, as he works as an associate for the successful and charismatic attorney Harvey Specter (Gabriel Macht)."
  },
  {
   "id": "tv_49",
@@ -1178,7 +1584,23 @@
    "darkness": 0.56,
    "complexity": 0.54,
    "comfort": 0.61
-  }
+  },
+  "reception": {
+   "summary": "Rotten Tomatoes gave season one a score of 89% based on 57 reviews. The consensus is: \"Led by the surprisingly effective pairing of Andy Samberg and Andre Braugher, Brooklyn Nine-Nine is a charming, intelligently written take on the cop show format.\" For Season 2, it received a score of 100% based on 17 reviews.",
+   "quotes": [
+    {
+     "text": "Rotten Tomatoes gave season one a score of 89% based on 57 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "24 in Rolling Stone's 50 Best TV Shows of the 2010s list, in which its curator, Alan Sepinwall, praised \"the comedic yin and yang\" of Samberg and Braugher's characters.",
+     "outlet": "Rolling Stone"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Brooklyn_Nine-Nine"
+  },
+  "overview": "Brooklyn Nine-Nine is an American police procedural sitcom that aired on Fox from September 17, 2013, to May 20, 2018, and later on NBC, from January 10, 2019, to September 16, 2021, for eight seasons and 153 episodes."
  },
  {
   "id": "tv_69",
@@ -1215,7 +1637,14 @@
    "darkness": 0.78,
    "complexity": 0.74,
    "comfort": 0.26
-  }
+  },
+  "reception": {
+   "summary": "The first seasons of The Blacklist received mostly positive reviews from television critics. The pilot was lauded by the critics, praising the original plot and cast performance, especially by Spader.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Blacklist"
+  },
+  "overview": "The Blacklist is an American crime thriller television series created by Jon Bokenkamp and developed by John Eisendrath. It stars James Spader as Raymond Reddington, an international criminal and one of the FBI's Most Wanted fugitives who cooperates with the FBI in hunting down other criminals on his \"Blacklist\"."
  },
  {
   "id": "tv_5",
@@ -1252,7 +1681,23 @@
    "darkness": 0.83,
    "complexity": 0.77,
    "comfort": 0.29
-  }
+  },
+  "reception": {
+   "summary": "True Detective's first season received widespread acclaim from television critics, with several naming it among the best television dramas of the year. On the review aggregation website Rotten Tomatoes, the first season garnered a rating of 92%, based on 100 reviews.",
+   "quotes": [
+    {
+     "text": "On the review aggregation website Rotten Tomatoes, the first season garnered a rating of 92%, based on 100 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Reviewers from The Daily Beast, The Atlantic, and The Daily Telegraph cited True Detective as the strongest show in recent memory.",
+     "outlet": "The Atlantic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/True_Detective"
+  },
+  "overview": "True Detective is an American anthology crime drama television series created by Nic Pizzolatto for the premium cable network HBO. The series premiered on January 12, 2014, and each season of the series is structured as a self-contained narrative, employing new cast ensembles, and following various sets of characters and settings."
  },
  {
   "id": "tv_3606",
@@ -1288,7 +1733,19 @@
    "darkness": 0.8,
    "complexity": 0.71,
    "comfort": 0.41
-  }
+  },
+  "reception": {
+   "summary": "On Rotten Tomatoes, the series holds an overall approval rating of 86%, with a rating of 78% for season 1, 89% for season 2, 93% for season 3, 97% for season 4, 91% for season 5, 100% for season 6, and 60% for season 7.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the series holds an overall approval rating of 86%, with a rating of 78% for season 1, 89% for season 2, 93% for season 3, 97% for season 4, 91% for season 5, 100% for season 6, and 60% for season 7.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Billions_(TV_series)"
+  },
+  "overview": "Billions is an American drama television series created by Brian Koppelman, David Levien, and Andrew Ross Sorkin. The series premiered on January 17, 2016, on Showtime, and its seventh and final season premiered on August 13, 2023. Set primarily in New York and Connecticut, the series depicts hedge fund manager Bobby Axelrod (Damian Lewis) as he accumulates wealth and power in the world of high finance."
  },
  {
   "id": "tv_52341",
@@ -1361,7 +1818,9 @@
    "darkness": 0.54,
    "complexity": 0.6,
    "comfort": 0.51
-  }
+  },
+  "reception": null,
+  "overview": "Chicago Fire is an American procedural drama series broadcast by NBC. The series was created by Derek Haas and Michael Brandt and the series is the first installment of the Chicago franchise. It stars Jesse Spencer, Taylor Kinney, Monica Raymund, Lauren German, Charlie Barnett, David Eigenberg, Teri Reeves, Eamonn Walker, Yuri Sardarov, Christian Stolte, Joe Miñoso, Kara Killmer, Dora Madison Burge, Steven R."
  },
  {
   "id": "tv_66",
@@ -1396,7 +1855,23 @@
    "darkness": 0.29,
    "complexity": 0.43,
    "comfort": 0.77
-  }
+  },
+  "reception": {
+   "summary": "Although the initial reception was mixed, the show went on to receive a more positive reception. The review aggregation website Rotten Tomatoes reports an 81% approval rating from critics. On Metacritic, the series holds a score of 61 out of 100, based on reviews from 27 critics, indicating generally favorable reviews. In 2013, TV Guide ranked the series #52 on its list of the 60 Best Series of All Time.",
+   "quotes": [
+    {
+     "text": "The review aggregation website Rotten Tomatoes reports an 81% approval rating from critics.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "On Metacritic, the series holds a score of 61 out of 100, based on reviews from 27 critics, indicating generally favorable reviews.",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Big_Bang_Theory"
+  },
+  "overview": "The Big Bang Theory is an American television sitcom created by Chuck Lorre and Bill Prady for CBS. It aired from September 24, 2007, to May 16, 2019, running for 12 seasons and 279 episodes."
  },
  {
   "id": "tv_347",
@@ -1431,7 +1906,23 @@
    "darkness": 0.25,
    "complexity": 0.37,
    "comfort": 0.89
-  }
+  },
+  "reception": {
+   "summary": "It's Always Sunny in Philadelphia has received critical acclaim for its humor and the cast's performances. On review aggregator website Metacritic, the show has an average score of 72 out of 100, indicating \"generally favorable\" reviews from critics.",
+   "quotes": [
+    {
+     "text": "On review aggregator website Metacritic, the show has an average score of 72 out of 100, indicating \"generally favorable\" reviews from critics.",
+     "outlet": "Metacritic"
+    },
+    {
+     "text": "In 2005, Brian Lowry of Variety called it \"invariably clever and occasionally a laugh‑out‑loud riot\".",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/It's_Always_Sunny_in_Philadelphia"
+  },
+  "overview": "It's Always Sunny in Philadelphia (IASIP) is an American sitcom created by Rob McElhenney and co-developed by Glenn Howerton for FX, currently airing on FXX and FX. The show premiered on August 4, 2005, and stars Charlie Day, Howerton, McElhenney, Kaitlin Olson, and Danny DeVito, with Day, Howerton, and McElhenney as executive producers."
  },
  {
   "id": "tv_56",
@@ -1467,7 +1958,23 @@
    "darkness": 0.67,
    "complexity": 0.73,
    "comfort": 0.38
-  }
+  },
+  "reception": {
+   "summary": "Chicago P.D. has received mixed reviews from critics. Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream critics, gives the drama a rating of 50 based on 22 reviews, indicating \"mixed or average reviews\".",
+   "quotes": [
+    {
+     "text": "Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream critics, gives the drama a rating of 50 based on 22 reviews, indicating \"mixed or average reviews\".",
+     "outlet": "Metacritic"
+    },
+    {
+     "text": "Rotten Tomatoes gives season 1 a rating of 61% based on reviews from 31 critics, with an average rating of 5.29/10 and a consensus which states \"Though it suggests potential for greater success, Chicago P.D.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Chicago_P.D._(TV_series)"
+  },
+  "overview": "Chicago P.D. is an American police procedural television series broadcast by NBC and created by Dick Wolf as the second installment of the Chicago franchise."
  },
  {
   "id": "tv_46562",
@@ -1541,7 +2048,23 @@
    "darkness": 0.71,
    "complexity": 0.61,
    "comfort": 0.42
-  }
+  },
+  "reception": {
+   "summary": "The first six seasons and the ninth, tenth and eleventh seasons of The Walking Dead have been well reviewed by recognized critics, while the seventh and eighth seasons received more mixed reviews. On Rotten Tomatoes, the series has an average score of 80%. For the first season, 87% of 100 Rotten Tomatoes critics gave it a positive review, with an average score of 7.35/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the series has an average score of 80%.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "For the first season, 87% of 100 Rotten Tomatoes critics gave it a positive review, with an average score of 7.35/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)"
+  },
+  "overview": "The Walking Dead (TWD) is an American post-apocalyptic horror drama television series developed by Frank Darabont, based on the comic book series of the same name by Robert Kirkman, Tony Moore, and Charlie Adlard. Together, the show and the comic book series form the core of The Walking Dead franchise."
  },
  {
   "id": "tv_103",
@@ -1578,7 +2101,23 @@
    "darkness": 0.76,
    "complexity": 0.69,
    "comfort": 0.35
-  }
+  },
+  "reception": {
+   "summary": "Law & Order: Special Victims Unit has been well-received among critics. The show holds an average score of 88% on Rotten Tomatoes. Metacritic gives a score of 66%, from 25 critics review.",
+   "quotes": [
+    {
+     "text": "The show holds an average score of 88% on Rotten Tomatoes.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Metacritic gives a score of 66%, from 25 critics review.",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Law_%26_Order%3A_Special_Victims_Unit"
+  },
+  "overview": "Law & Order: Special Victims Unit (often shortened to Law & Order: SVU or SVU) is an American police procedural crime drama television series created by Dick Wolf for NBC."
  },
  {
   "id": "tv_5079",
@@ -1652,7 +2191,19 @@
    "darkness": 0.68,
    "complexity": 0.64,
    "comfort": 0.37
-  }
+  },
+  "reception": {
+   "summary": "In 2016, The New York Times reported that NCIS \"is most popular in rural areas\", especially in rural Maine and Pennsylvania.",
+   "quotes": [
+    {
+     "text": "In 2016, The New York Times reported that NCIS \"is most popular in rural areas\", especially in rural Maine and Pennsylvania.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/NCIS_(TV_series)"
+  },
+  "overview": "NCIS is an American military police procedural television series and the first installment within the NCIS media franchise. With production helmed by showrunner, Steven D. Binder, the series portrays a fictional team of special agents from the Naval Criminal Investigative Service (NCIS)."
  },
  {
   "id": "tv_72",
@@ -1689,7 +2240,19 @@
    "darkness": 0.68,
    "complexity": 0.65,
    "comfort": 0.47
-  }
+  },
+  "reception": {
+   "summary": "In 2016, The New York Times reported that NCIS \"is most popular in rural areas\", especially in rural Maine and Pennsylvania.",
+   "quotes": [
+    {
+     "text": "In 2016, The New York Times reported that NCIS \"is most popular in rural areas\", especially in rural Maine and Pennsylvania.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/NCIS_(TV_series)"
+  },
+  "overview": "NCIS is an American military police procedural television series and the first installment within the NCIS media franchise. With production helmed by showrunner, Steven D. Binder, the series portrays a fictional team of special agents from the Naval Criminal Investigative Service (NCIS)."
  },
  {
   "id": "tv_527",
@@ -1725,7 +2288,9 @@
    "darkness": 0.7,
    "complexity": 0.65,
    "comfort": 0.42
-  }
+  },
+  "reception": null,
+  "overview": "\"The Sopranos\", also known as \"Pilot\", is the pilot episode of the HBO television drama series The Sopranos, premiering on January 10, 1999. It was written and directed by the series creator and executive producer, David Chase."
  },
  {
   "id": "tv_30770",
@@ -1761,7 +2326,23 @@
    "darkness": 0.74,
    "complexity": 0.75,
    "comfort": 0.45
-  }
+  },
+  "reception": {
+   "summary": "Chernobyl received widespread critical acclaim. On review aggregator Rotten Tomatoes, the series has an approval rating of 95% based on 103 reviews, with an average rating of 8.9/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the series has an approval rating of 95% based on 103 reviews, with an average rating of 8.9/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Reviewers for The Atlantic, The Washington Post, and the BBC observed parallels to contemporary society by focusing on the power of information and how dishonest leaders can make mistakes beyond their comprehension.",
+     "outlet": "The Atlantic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Chernobyl_(miniseries)"
+  },
+  "overview": "Chernobyl is a 2019 historical drama television miniseries that revolves around the Chernobyl disaster of 1986 and the cleanup efforts that followed. The series was created and written by Craig Mazin and directed by Johan Renck. It features an ensemble cast led by Jared Harris, Stellan Skarsgård, Emily Watson, and Paul Ritter. The series was produced by HBO in the United States and Sky UK in the United Kingdom."
  },
  {
   "id": "tv_43",
@@ -1798,7 +2379,19 @@
    "darkness": 0.48,
    "complexity": 0.6,
    "comfort": 0.61
-  }
+  },
+  "reception": {
+   "summary": "On Rotten Tomatoes, the average rating of the overall series is 91%, while on Metacritic the average rating is 76 out of 100.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the average rating of the overall series is 91%, while on Metacritic the average rating is 76 out of 100.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Outlander_(TV_series)"
+  },
+  "overview": "Outlander is a historical fantasy television series based on the book series of the same name by Diana Gabaldon. Developed by Ronald D. Moore, the show premiered on August 9, 2014, on Starz. It stars Caitríona Balfe as Claire Randall, an English former World War II military nurse in Scotland who, in 1945, finds herself transported back in time to 1743."
  },
  {
   "id": "tv_179",
@@ -1834,7 +2427,23 @@
    "darkness": 0.66,
    "complexity": 0.68,
    "comfort": 0.39
-  }
+  },
+  "reception": {
+   "summary": "All seasons of The Wire have received positive reviews from major television critics, with seasons two through five in particular receiving near universal acclaim, with several naming it the best contemporary show and one of the best drama series of all time.",
+   "quotes": [
+    {
+     "text": "On the review aggregator Metacritic, the first season scored 79 out of 100 based on 22 reviews.",
+     "outlet": "Metacritic"
+    },
+    {
+     "text": "However, anticipation for a release of the first season on DVD was high at Entertainment Weekly.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Wire"
+  },
+  "overview": "The Wire is an American crime drama television series created and primarily written by American author and former police reporter David Simon for the cable network HBO. The series premiered on June 2, 2002, and ended on March 9, 2008, comprising 60 episodes over five seasons."
  },
  {
   "id": "tv_180",

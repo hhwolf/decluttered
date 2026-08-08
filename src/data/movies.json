@@ -9719,7 +9719,23 @@
    "intensity": 0.64,
    "emotion": 0.75
   },
-  "popularity": 0.85
+  "popularity": 0.85,
+  "reception": {
+   "summary": "Rotten Tomatoes gives the film a score of 95% based on 240 reviews and an average rating of 8.9/10.",
+   "quotes": [
+    {
+     "text": "Rotten Tomatoes gives the film a score of 95% based on 240 reviews and an average rating of 8.9/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In his review, Roger Ebert deemed it \"one of the greatest of all fantasy films, even though it is anchored so firmly in the reality of war\".",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pan's_Labyrinth"
+  },
+  "overview": "Pan's Labyrinth (Spanish: El laberinto del fauno, lit. 'The Labyrinth of the Faun') is a 2006 dark fantasy film produced, written, and directed by Guillermo del Toro. The film stars Ivana Baquero, Sergi López, Maribel Verdú, Doug Jones, and Ariadna Gil. The film is an international co-production between Spain and Mexico. The story takes place in Francoist Spain in the summer of 1944."
  },
  {
   "id": "mv_tt0449088",
@@ -9756,7 +9772,19 @@
    "intensity": 0.78,
    "emotion": 0.67
   },
-  "popularity": 0.85
+  "popularity": 0.85,
+  "reception": {
+   "summary": "On review aggregation website Rotten Tomatoes, Pirates of the Caribbean: At World's End has an approval rating of 43% based on 226 reviews, with an average rating of 5.4/10.",
+   "quotes": [
+    {
+     "text": "On review aggregation website Rotten Tomatoes, Pirates of the Caribbean: At World's End has an approval rating of 43% based on 226 reviews, with an average rating of 5.4/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean%3A_At_World's_End"
+  },
+  "overview": "Pirates of the Caribbean: At World's End is a 2007 American epic fantasy swashbuckler film directed by Gore Verbinski, produced by Jerry Bruckheimer, and written by Ted Elliott and Terry Rossio."
  },
  {
   "id": "mv_tt0073195",
@@ -9793,7 +9821,23 @@
    "intensity": 0.78,
    "emotion": 0.58
   },
-  "popularity": 0.85
+  "popularity": 0.85,
+  "reception": {
+   "summary": "Jaws received mostly positive reviews upon release. Roger Ebert of the Chicago Sun-Times gave the film four stars, calling it \"a sensationally effective action picture, a scary thriller that works all the better because it's populated with characters that have been developed into human beings.",
+   "quotes": [
+    {
+     "text": "It's a film that's as frightening as The Exorcist, and yet it's a nicer kind of fright, somehow more fun because we're being scared by an outdoor-adventure saga instead of a brimstone-and-vomit devil.\" Variety's A.",
+     "outlet": "Variety"
+    },
+    {
+     "text": "According to The New Yorker's Pauline Kael, it was \"the most cheerfully perverse scare movie ever made ...",
+     "outlet": "The New Yorker"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Jaws_(film)"
+  },
+  "overview": "Jaws is a 1975 American thriller film directed by Steven Spielberg, based on the 1974 novel by Peter Benchley. It stars Roy Scheider as police chief Martin Brody, who, with the help of a marine biologist (Richard Dreyfuss) and a professional shark hunter (Robert Shaw), hunts a man-eating great white shark that attacks beachgoers at a New England resort town."
  },
  {
   "id": "mv_tt0107048",
@@ -9830,7 +9874,23 @@
    "intensity": 0.52,
    "emotion": 0.66
   },
-  "popularity": 0.85
+  "popularity": 0.85,
+  "reception": {
+   "summary": "Groundhog Day received generally positive reviews from critics. CinemaScore polls reported that moviegoers gave it an average rating of \"B+\" on a scale of A+ to F. It was seen as a significant change from the previous works of Murray and Ramis. Kenneth Turan appreciated it as a gentle, endearing, and smaller-scale film. Hal Hinson called it the best American comedy since 1982's Tootsie (also featuring Murray).",
+   "quotes": [
+    {
+     "text": "Roger Ebert compared it to the Murray-starring Christmas-comedy Scrooged (1988), featuring a similar transformation from selfish to selfless.",
+     "outlet": "Roger Ebert"
+    },
+    {
+     "text": "The Hollywood Reporter appreciated that the film endorsed small town morals and their positive effect on Phil.",
+     "outlet": "The Hollywood Reporter"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Groundhog_Day_(film)"
+  },
+  "overview": "Groundhog Day is a 1993 American fantasy romantic comedy film directed by Harold Ramis, who co-wrote the screenplay with Danny Rubin. Starring Bill Murray, Andie MacDowell, and Chris Elliott, it tells the story of a cynical television weatherman covering the annual Groundhog Day event in Punxsutawney, Pennsylvania, who becomes trapped in a time loop, forcing him to relive February 2 repeatedly."
  },
  {
   "id": "mv_tt0451279",
@@ -9867,7 +9927,23 @@
    "intensity": 0.83,
    "emotion": 0.6
   },
-  "popularity": 0.85
+  "popularity": 0.85,
+  "reception": {
+   "summary": "Wonder Woman received a highly positive response from critics, with some calling it the best DCEU film. Critics praised Jenkins' directing, the performances of the actors, the chemistry between Gadot and Pine, the musical score and the action sequences. On the review aggregator Rotten Tomatoes, the film holds an approval rating of 93% based on 480 reviews, with an average rating of 7.7/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator Rotten Tomatoes, the film holds an approval rating of 93% based on 480 reviews, with an average rating of 7.7/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Chris Nashawaty of Entertainment Weekly applauded the film's \"smart, slick, and satisfying\" tone.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Wonder_Woman_(2017_film)"
+  },
+  "overview": "Wonder Woman is a 2017 superhero film based on the DC Comics character Wonder Woman. Directed by Patty Jenkins from a screenplay by Allan Heinberg, and based on a story by Heinberg, Zack Snyder, and Jason Fuchs, it is the fourth film in the DC Extended Universe (DCEU). Gal Gadot stars as Diana Prince / Wonder Woman alongside Chris Pine, Robin Wright, Danny Huston, David Thewlis, Connie Nielsen, and Elena Anaya."
  },
  {
   "id": "mv_tt1504320",
@@ -9904,7 +9980,23 @@
    "intensity": 0.59,
    "emotion": 0.84
   },
-  "popularity": 0.85
+  "popularity": 0.85,
+  "reception": {
+   "summary": "The King's Speech has received widespread critical acclaim, with Firth's performance receiving universal praise. Bonham Carter and Rush were also widely praised with both going on to win BAFTAs and receiving Academy Award nominations. Review aggregator Rotten Tomatoes gives the film a score of 94% based on reviews from 297 critics; the film's average rating was calculated as 8.60/10.",
+   "quotes": [
+    {
+     "text": "Review aggregator Rotten Tomatoes gives the film a score of 94% based on reviews from 297 critics; the film's average rating was calculated as 8.60/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Empire said he played the role well as \"a flash harry flinty enough to shed a nation for a wife.\" The New York Times thought he was able to create \"a thorny tangle of complications in only a few abbreviated scenes\".",
+     "outlet": "Empire"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_King's_Speech"
+  },
+  "overview": "The King's Speech is a 2010 historical drama film directed by Tom Hooper and written by David Seidler. Colin Firth plays the future King George VI who, to cope with a stammer, sees Lionel Logue, an Australian speech and language therapist played by Geoffrey Rush."
  },
  {
   "id": "mv_tt0369610",
@@ -9941,7 +10033,23 @@
    "intensity": 0.85,
    "emotion": 0.56
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 29% of 406 critics' reviews are positive, with an average rating of 4.80/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 29% of 406 critics' reviews are positive, with an average rating of 4.80/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "For Rolling Stone, David Fear wrote that compared to the original Jurassic Park, \"Dominion feels like a contractual obligation at best, and a D.O.A.",
+     "outlet": "Rolling Stone"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Jurassic_World_Dominion"
+  },
+  "overview": "Jurassic World Dominion is a 2022 American science fiction action film directed by Colin Trevorrow, who co-wrote the screenplay with Emily Carmichael. The sequel to Jurassic World: Fallen Kingdom (2018), it is the third installment in the Jurassic World film series and sixth installment overall in the Jurassic Park franchise."
  },
  {
   "id": "mv_tt1798709",
@@ -9978,7 +10086,23 @@
    "intensity": 0.51,
    "emotion": 0.85
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film has an approval rating of 95% based on 294 reviews, with an average rating of 8.6/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film has an approval rating of 95% based on 294 reviews, with an average rating of 8.6/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Todd McCarthy of The Hollywood Reporter called it \"a probing, inquisitive work of a very high order\", although he expressed disappointment that the ending is more conventional than the rest of the film.",
+     "outlet": "The Hollywood Reporter"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Her_(2013_film)"
+  },
+  "overview": "Her is a 2013 American science fiction romantic drama film written, co-produced, and directed by Spike Jonze. It follows Theodore Twombly (Joaquin Phoenix), a man who develops a relationship with Samantha (Scarlett Johansson), an artificially intelligent operating system personified through a female voice. The film also stars Amy Adams, Rooney Mara, Olivia Wilde, and Chris Pratt."
  },
  {
   "id": "mv_tt3460252",
@@ -10015,7 +10139,23 @@
    "intensity": 0.69,
    "emotion": 0.6
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, The Hateful Eight holds an approval rating of 74% based on 333 reviews, with an average rating of 7.3/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, The Hateful Eight holds an approval rating of 74% based on 333 reviews, with an average rating of 7.3/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Scott in The New York Times said, \"Some of the film's ugliness...seems dumb and ill-considered, as if Mr.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Hateful_Eight"
+  },
+  "overview": "The Hateful Eight is a 2015 American Western mystery thriller film written and directed by Quentin Tarantino. It stars Samuel L. Jackson, Kurt Russell, Jennifer Jason Leigh, Walton Goggins, Demián Bichir, Tim Roth, Michael Madsen, and Bruce Dern as eight dubious strangers who seek refuge from a blizzard in a stagecoach stopover a decade after the American Civil War. Tarantino announced the film in November 2013."
  },
  {
   "id": "mv_tt0364569",
@@ -10052,7 +10192,23 @@
    "intensity": 0.78,
    "emotion": 0.64
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "Oldboy received critical acclaim, and is considered an influential cult classic. Praise was also given to the film's action sequences, specifically highlighting the \"all-timer\" single shot hallway fight sequence. On the review aggregator website Rotten Tomatoes, the film has an approval rating of 82% based on 160 reviews.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, the film has an approval rating of 82% based on 160 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In 2008, Oldboy was placed 64th on an Empire list of the top 500 movies of all time.",
+     "outlet": "Empire"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oldboy_(2003_film)"
+  },
+  "overview": "Oldboy (Korean: 올드보이) is a 2003 South Korean action thriller film directed and co-written by Park Chan-wook. A loose adaptation of the Japanese manga Old Boy by Garon Tsuchiya and Nobuaki Minegishi, the film follows Oh Dae-su (Choi Min-sik), who is imprisoned for 15 years without knowing the identity of his captor or his captor's motives."
  },
  {
   "id": "mv_tt2527336",
@@ -10126,7 +10282,23 @@
    "intensity": 0.72,
    "emotion": 0.58
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 57% of 227 critics' reviews are positive, with an average rating of 5.8/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 57% of 227 critics' reviews are positive, with an average rating of 5.8/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "IGN's Todd Gilchrist called it Bay's best film, and \"one of the few instances where it's OK to enjoy something for being smart and dumb at the same time, mostly because it's undeniably also a whole lot of fun\".",
+     "outlet": "IGN"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Transformers_(film)"
+  },
+  "overview": "Transformers is a 2007 American science fiction action film based on Hasbro's toy line of the same name. Directed by Michael Bay from a screenplay by Roberto Orci and Alex Kurtzman, it is the first installment of the Transformers film series."
  },
  {
   "id": "mv_tt2380307",
@@ -10163,7 +10335,23 @@
    "intensity": 0.59,
    "emotion": 0.78
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "Coco received critical acclaim. On the review aggregator website Rotten Tomatoes, the film holds an approval rating of 97% based on 358 reviews, with an average rating of 8.3/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, the film holds an approval rating of 97% based on 358 reviews, with an average rating of 8.3/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Richard Roeper of the Chicago Sun-Times found the film to be \"full of life\" and deemed it \"a bouncy and heart-tugging adventure\" while lauding the vocal performances as \"fantastic\" and \"first-rate\".",
+     "outlet": "Chicago Sun-Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Coco_(2017_film)"
+  },
+  "overview": "Coco is a 2017 American animated fantasy comedy-drama film produced by Pixar Animation Studios for Walt Disney Pictures. Directed by Lee Unkrich, and written by Adrian Molina and Matthew Aldrich, the film stars the voices of Anthony Gonzalez, Gael García Bernal, Benjamin Bratt, Alanna Ubach, Renée Victor, Ana Ofelia Murguía and Edward James Olmos."
  },
  {
   "id": "mv_tt2294629",
@@ -10200,7 +10388,23 @@
    "intensity": 0.62,
    "emotion": 0.72
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "Frozen opened to positive reviews, and several critics compared it favorably to Disney Renaissance films such as The Little Mermaid, Beauty and the Beast, Aladdin, and The Lion King. According to some journalists, the film's success heralded a second Disney Renaissance. It was praised for its visuals, themes, musical numbers, screenplay and vocal performances, especially those by Bell, Menzel, and Gad.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 89% of 251 critics' reviews are positive, with an average rating of 7.7/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Fifty-five percent of audiences identified \"Let It Go\" as their favorite song; \"Do You Want to Build a Snowman?\" and \"For the First Time in Forever\" were favored by 21 and nine percent, respectively.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Frozen_(2013_film)"
+  },
+  "overview": "Frozen is a 2013 American animated musical fantasy film produced by Walt Disney Animation Studios, loosely inspired by Hans Christian Andersen's 1844 fairy tale \"The Snow Queen\". Directed by Chris Buck and Jennifer Lee and written by Lee, it stars the voices of Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad, and Santino Fontana."
  },
  {
   "id": "mv_tt1637725",
@@ -10235,7 +10439,19 @@
    "intensity": 0.54,
    "emotion": 0.56
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "Most of the reviews Ted received were positive. On the review aggregator website Rotten Tomatoes, 68% of 219 critics' reviews are positive, with an average rating of 6.40/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 68% of 219 critics' reviews are positive, with an average rating of 6.40/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ted_(film)"
+  },
+  "overview": "Ted (stylized in all lowercase) is a 2012 American live-action animated stoner comedy film directed and co-produced by Seth MacFarlane and written by MacFarlane, Alec Sulkin, and Wellesley Wild based on a story written by MacFarlane."
  },
  {
   "id": "mv_tt0469494",
@@ -10307,7 +10523,23 @@
    "intensity": 0.78,
    "emotion": 0.54
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film holds an approval rating of 70% based on 248 reviews, with a rating average of 6.25/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film holds an approval rating of 70% based on 248 reviews, with a rating average of 6.25/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Catherine Shoard of The Guardian gave the film 2 out of five stars, writing that the film \"baffles in all the wrong ways\" and is a \"hollow attempt at modernisation, and quickly grows dull\".",
+     "outlet": "The Guardian"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sherlock_Holmes_(2009_film)"
+  },
+  "overview": "Sherlock Holmes is a 2009 period mystery action film starring Robert Downey Jr. as the character of the same name created by Sir Arthur Conan Doyle. The film was directed by Guy Ritchie and produced by Joel Silver, Lionel Wigram, Susan Downey, and Dan Lin. The screenplay written by Michael Robert Johnson, Anthony Peckham, and Simon Kinberg was developed from a story by Wigram and Johnson."
  },
  {
   "id": "mv_tt0413300",
@@ -10344,7 +10576,23 @@
    "intensity": 0.79,
    "emotion": 0.5
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 90% of 277 critics' reviews are positive.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 90% of 277 critics' reviews are positive.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Owen Gleiberman of Entertainment Weekly described Spider-Man as exciting but campy.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Spider-Man_(2002_film)"
+  },
+  "overview": "Spider-Man is a 2002 American superhero film based on the Marvel Comics character Spider-Man. Directed by Sam Raimi from a screenplay by David Koepp, it is the first film in Raimi's Spider-Man trilogy (2002–2007). Produced by Columbia Pictures and Laura Ziskin Productions in association with Marvel Enterprises, it stars Tobey Maguire, Willem Dafoe, Kirsten Dunst, James Franco, Cliff Robertson, and Rosemary Harris."
  },
  {
   "id": "mv_tt0373889",
@@ -10381,7 +10629,23 @@
    "intensity": 0.62,
    "emotion": 0.69
   },
-  "popularity": 0.84
+  "popularity": 0.84,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes the film has an approval rating of 78% based on 257 reviews, with an average rating of 6.9/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes the film has an approval rating of 78% based on 257 reviews, with an average rating of 6.9/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert gave the film 2.5 of 4 stars saying \"Harry no longer has as much joy.\" The review by Charles Frederick of The Telegraph was headlined \"Potter film is the best and darkest yet\".",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Order_of_the_Phoenix_(film)"
+  },
+  "overview": "Harry Potter and the Order of the Phoenix is a 2007 fantasy film directed by David Yates from a screenplay by Michael Goldenberg. It is based on the 2003 novel Harry Potter and the Order of the Phoenix by J. K. Rowling. It is the sequel to Harry Potter and the Goblet of Fire (2005) and the fifth instalment in the Harry Potter film series."
  },
  {
   "id": "mv_tt1446714",
@@ -10417,7 +10681,19 @@
    "intensity": 0.64,
    "emotion": 0.55
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "Prometheus has a 73% approval rating from 312 critics with an average rating of 7/10 on the review-aggregation website Rotten Tomatoes, which says, \"Ridley Scott's ambitious quasi-prequel to Alien may not answer all of its big questions, but it's redeemed by its haunting visual grandeur and compelling performances—particularly Michael Fassbender as a fastidious android.\" Metacritic provides a score of 64 out of 100…",
+   "quotes": [
+    {
+     "text": "Entertainment Weekly's Lisa Schwarzbaum was positive towards the cast, particularly Rapace, and the cinematography.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Prometheus_(2012_film)"
+  },
+  "overview": "Prometheus is a 2012 science fiction horror film directed by Ridley Scott and written by Jon Spaihts and Damon Lindelof. It is the fifth installment of the Alien film series and features an ensemble cast including Noomi Rapace, Michael Fassbender, Guy Pearce, Idris Elba, Logan Marshall-Green, and Charlize Theron."
  },
  {
   "id": "mv_tt1396484",
@@ -10452,7 +10728,23 @@
    "intensity": 0.89,
    "emotion": 0.48
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "It received praise for its performances, direction, screenplay, cinematography, and musical score. On review aggregator Rotten Tomatoes, the film holds an approval rating of 85% based on 387 reviews, with an average rating of 7.30/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film holds an approval rating of 85% based on 387 reviews, with an average rating of 7.30/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Entertainment Weekly journalist Chris Nashawaty summarized \"It is essentially two movies.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/It_(2017_film)"
+  },
+  "overview": "It (titled onscreen as It Chapter One) is a 2017 American supernatural horror film directed by Andy Muschietti and written by Chase Palmer, Cary Joji Fukunaga, and Gary Dauberman. It is the first of a two-part adaptation of the 1986 novel of the same name by Stephen King, as well as the second adaptation following Tommy Lee Wallace's 1990 miniseries."
  },
  {
   "id": "mv_tt0454876",
@@ -10489,7 +10781,23 @@
    "intensity": 0.71,
    "emotion": 0.76
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "Life of Pi has an 86% approval rating on the review aggregator website Rotten Tomatoes based on 253 reviews with an average rating of 7.90/10.",
+   "quotes": [
+    {
+     "text": "Life of Pi has an 86% approval rating on the review aggregator website Rotten Tomatoes based on 253 reviews with an average rating of 7.90/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times gave Life of Pi four stars out of four, referring to it as \"a miraculous achievement of storytelling and a landmark of visual mastery\" and \"one of the best films of the year\".",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Life_of_Pi_(film)"
+  },
+  "overview": "Life of Pi is a 2012 adventure-drama film directed and produced by Ang Lee and written by David Magee. Based on Yann Martel's 2001 novel, it stars Suraj Sharma in his film debut, Irrfan Khan, Tabu, Rafe Spall, Gérard Depardieu and Adil Hussain in lead roles."
  },
  {
   "id": "mv_tt2562232",
@@ -10525,7 +10833,23 @@
    "intensity": 0.49,
    "emotion": 0.65
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "On review aggregation website Rotten Tomatoes, Birdman holds an approval rating of 91%, based on 351 reviews, and an average rating of 8.50/10.",
+   "quotes": [
+    {
+     "text": "On review aggregation website Rotten Tomatoes, Birdman holds an approval rating of 91%, based on 351 reviews, and an average rating of 8.50/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In 2015, the film was named as one of the top 50 films of the decade so far by The Guardian.",
+     "outlet": "The Guardian"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Birdman_(film)"
+  },
+  "overview": "Birdman, stylized as BiRDMAN or (The Unexpected Virtue of Ignorance), is a 2014 American satirical surrealist black comedy-drama film directed by Alejandro González Iñárritu."
  },
  {
   "id": "mv_tt6723592",
@@ -10562,7 +10886,23 @@
    "intensity": 0.86,
    "emotion": 0.58
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "Tenet divided critics, with USA Today's Jenna Ryu and the Los Angeles Times's Christi Carras respectively describing the reviews as \"mixed\" and \"all over the place\". The Independent's Clémence Michallon wrote that the film was perceived as \"both entertaining and 'cerebral' by some, but lacking and confusing by others\".",
+   "quotes": [
+    {
+     "text": "Tenet divided critics, with USA Today's Jenna Ryu and the Los Angeles Times's Christi Carras respectively describing the reviews as \"mixed\" and \"all over the place\".",
+     "outlet": "Los Angeles Times"
+    },
+    {
+     "text": "Guy Lodge of Variety described Tenet as a \"grandly entertaining, time-slipping spectacle\".",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Tenet"
+  },
+  "overview": "Tenet (stylized in all caps, previously as TENƎꓕ) is a 2020 science fiction action film written and directed by Christopher Nolan, who also produced it with his wife, Emma Thomas. It stars John David Washington, Robert Pattinson, Elizabeth Debicki, Dimple Kapadia, Michael Caine, and Kenneth Branagh."
  },
  {
   "id": "mv_tt0829482",
@@ -10597,7 +10937,19 @@
    "intensity": 0.63,
    "emotion": 0.52
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film has an approval rating of 88% based on reviews from 207 critics, with an average rating of 7.40/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film has an approval rating of 88% based on reviews from 207 critics, with an average rating of 7.40/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Superbad"
+  },
+  "overview": "Superbad is a 2007 American coming-of-age teen buddy comedy film directed by Greg Mottola, written by Seth Rogen and Evan Goldberg, and produced by Judd Apatow. It stars Jonah Hill and Michael Cera as Seth and Evan, two teenagers about to graduate from high school. Before graduating, the boys want to party and lose their virginity, but their plan proves harder than expected."
  },
  {
   "id": "mv_tt1517268",
@@ -10634,7 +10986,19 @@
    "intensity": 0.62,
    "emotion": 0.72
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "Barbie attained widespread critical acclaim. On the review aggregator website Rotten Tomatoes, 88% of 506 critics' reviews are positive, with an average rating of 8/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 88% of 506 critics' reviews are positive, with an average rating of 8/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Barbie_(film)"
+  },
+  "overview": "Barbie is a 2023 satirical fantasy comedy film directed by Greta Gerwig from a screenplay she wrote with her husband, Noah Baumbach. Based on the fashion dolls by Mattel, it is the first live-action Barbie film after numerous animated films and specials."
  },
  {
   "id": "mv_tt0758758",
@@ -10671,7 +11035,23 @@
    "intensity": 0.54,
    "emotion": 0.81
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "The review aggregator Rotten Tomatoes reports that 83% of 200 reviews of the film were positive, with an average rating of 7.50/10.",
+   "quotes": [
+    {
+     "text": "The review aggregator Rotten Tomatoes reports that 83% of 200 reviews of the film were positive, with an average rating of 7.50/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times gave the film four stars out of four and described it as \"spellbinding\".",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Into_the_Wild_(film)"
+  },
+  "overview": "Into the Wild is a 2007 American biographical adventure drama film written, co-produced, and directed by Sean Penn. It is an adaptation of the 1996 non-fiction book written by Jon Krakauer and tells the story of Christopher McCandless (\"Alexander Supertramp\"), a man who hiked across North America into the Alaskan wilderness in the early 1990s."
  },
  {
   "id": "mv_tt0332280",
@@ -10707,7 +11087,23 @@
    "intensity": 0.59,
    "emotion": 0.81
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "According to review aggregator Rotten Tomatoes, 54% of 182 critics gave the film a positive review, with an average rating of 5.7/10.",
+   "quotes": [
+    {
+     "text": "According to review aggregator Rotten Tomatoes, 54% of 182 critics gave the film a positive review, with an average rating of 5.7/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Us Weekly included the film in its list of the 30 Most Romantic Movies of All Time.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Notebook"
+  },
+  "overview": "The Notebook is a 2004 American romantic drama film directed by Nick Cassavetes, from a screenplay by Jeremy Leven and Jan Sardi, and based on the 1996 novel by Nicholas Sparks. The film stars Ryan Gosling and Rachel McAdams as a young couple who fall in love in the 1940s. Their story is read from a notebook in the modern day by an elderly man telling the tale to a fellow nursing home resident."
  },
  {
   "id": "mv_tt6966692",
@@ -10744,7 +11140,23 @@
    "intensity": 0.51,
    "emotion": 0.73
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, Green Book holds an approval rating of 77% based on 362 reviews, with an average rating of 7.2/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, Green Book holds an approval rating of 77% based on 362 reviews, with an average rating of 7.2/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Salon said the film combines \"the white savior trope with the story of a bigot's redemption.\" Peter Farrelly told Entertainment Weekly that he was aware of the white savior trope before filming and sought to avoid it.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Green_Book_(film)"
+  },
+  "overview": "Green Book is a 2018 American comedy-drama film directed by Peter Farrelly. Starring Viggo Mortensen and Mahershala Ali, the biographical film is inspired by the true story of a 1962 tour of the Deep South by African-American pianist Don Shirley and Italian-American bouncer and later actor Frank \"Tony Lip\" Vallelonga, who served as Shirley's driver and bodyguard."
  },
  {
   "id": "mv_tt0075148",
@@ -10780,7 +11192,23 @@
    "intensity": 0.62,
    "emotion": 0.84
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "Rocky received positive reviews at the time of its release. Roger Ebert of the Chicago Sun-Times gave it 4 out of 4 stars and said that Stallone reminded him of \"the young Marlon Brando.\" Box Office Magazine claimed audiences would be \"touting Sylvester 'Sly' Stallone as a new star\".",
+   "quotes": [
+    {
+     "text": "Vincent Canby, of The New York Times, called it \"pure '30s make believe\" and dismissed both Stallone's acting and Avildsen's directing, calling the latter \"none too decisive\".",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "On the review aggregator Rotten Tomatoes, the film holds a 93% approval rating based on 75 reviews, with an average rating of 8.4/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rocky"
+  },
+  "overview": "Rocky is a 1976 American sports drama film directed by John G. Avildsen and written by and starring Sylvester Stallone. It is the first installment in the Rocky film series and also stars Talia Shire, Burt Young, Carl Weathers, and Burgess Meredith."
  },
  {
   "id": "mv_tt0120903",
@@ -10817,7 +11245,23 @@
    "intensity": 0.79,
    "emotion": 0.54
   },
-  "popularity": 0.83
+  "popularity": 0.83,
+  "reception": {
+   "summary": "Upon release, X-Men received generally positive reviews from critics. On review aggregator website Rotten Tomatoes, 82% of 176 reviews are positive, with an average rating of 7/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator website Rotten Tomatoes, 82% of 176 reviews are positive, with an average rating of 7/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times said he \"started out liking this movie, while waiting for something really interesting to happen.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/X-Men_(film)"
+  },
+  "overview": "X-Men is a 2000 American superhero film based on the Marvel Comics superhero team created by Stan Lee and Jack Kirby. Directed by Bryan Singer from a screenplay by David Hayter and a story by Singer and Tom DeSanto, it features an ensemble cast consisting of Patrick Stewart, Hugh Jackman, Ian McKellen, Halle Berry, Famke Janssen, James Marsden, Bruce Davison, Rebecca Romijn, Ray Park, and Anna Paquin."
  },
  {
   "id": "mv_tt0162222",
@@ -10891,7 +11335,23 @@
    "intensity": 0.69,
    "emotion": 0.64
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "The American press considered Baby Driver among the strongest films of 2017. The film was selected by the National Board of Review as one of their top choices for the organization's annual top ten films list. Several journalists praised the film for its craftsmanship, which they saw as an exercise of Wright's expertise.",
+   "quotes": [
+    {
+     "text": "Empire's Terri White called Baby Driver \"one of the most utterly original films in years\" that comes \"as close to a car-chase opera as you'll ever see on screen\".",
+     "outlet": "Empire"
+    },
+    {
+     "text": "Richard Brody of The New Yorker considered Baby Driver's dialogue \"almost entirely functional\", devoid of nuance, resulting in characters who are largely interchangeable despite the best efforts of a diverse cast.",
+     "outlet": "The New Yorker"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Baby_Driver"
+  },
+  "overview": "Baby Driver is a 2017 action film written and directed by Edgar Wright. It stars Ansel Elgort as Baby, a getaway driver seeking freedom from a life of crime with his girlfriend Debora (Lily James). Kevin Spacey, Jon Hamm, Eiza González, Jon Bernthal and Jamie Foxx appear in supporting roles."
  },
  {
   "id": "mv_tt2119532",
@@ -10928,7 +11388,19 @@
    "intensity": 0.6,
    "emotion": 0.8
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, the film has an approval rating of 84% based on 282 reviews, with an average rating of 7.30/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film has an approval rating of 84% based on 282 reviews, with an average rating of 7.30/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Hacksaw_Ridge"
+  },
+  "overview": "Hacksaw Ridge is a 2016 epic biographical war film directed by Mel Gibson, and starring Andrew Garfield as Desmond Doss, an American combat medic in World War II who, as a Seventh-day Adventist, refused to use a weapon of any kind; Doss became the first conscientious objector to be awarded the Medal of Honor, for his service during the Battle of Okinawa."
  },
  {
   "id": "mv_tt0440963",
@@ -10965,7 +11437,19 @@
    "intensity": 0.83,
    "emotion": 0.42
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "The Bourne Ultimatum garnered acclaim from critics, with praise for its intense action, gritty realism, rapid pacing, and Matt Damon's performance. The review aggregation website Rotten Tomatoes reported that out of 263 critic reviews, 92% of them were positive, with an average rating of 8.1/10. The site's consensus states: \"The Bourne Ultimatum is an intelligent, finely tuned non-stop thrill ride.",
+   "quotes": [
+    {
+     "text": "The review aggregation website Rotten Tomatoes reported that out of 263 critic reviews, 92% of them were positive, with an average rating of 8.1/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Bourne_Ultimatum_(film)"
+  },
+  "overview": "The Bourne Ultimatum is a 2007 American action-thriller film based on Robert Ludlum's character Jason Bourne, a CIA assassin and psychogenic amnesiac portrayed by Matt Damon. Julia Stiles, David Strathairn, Scott Glenn, Paddy Considine, Édgar Ramírez, Albert Finney, and Joan Allen also star. The film was directed by Paul Greengrass and written by Tony Gilroy, Scott Z. Burns, and George Nolfi."
  },
  {
   "id": "mv_tt0114746",
@@ -11002,7 +11486,23 @@
    "intensity": 0.76,
    "emotion": 0.61
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 88% of 73 critics' reviews are positive, with an average rating of 7.6/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 88% of 73 critics' reviews are positive, with an average rating of 7.6/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert found 12 Monkeys' depiction of the future similar to Blade Runner (1982, also scripted by David Peoples) and Brazil (1985, also directed by Terry Gilliam).",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/12_Monkeys"
+  },
+  "overview": "12 Monkeys is a 1995 American science fiction thriller film directed by Terry Gilliam from a screenplay by David Peoples and Janet Peoples, based on Chris Marker's 1962 short film La Jetée. It stars Bruce Willis, Madeleine Stowe, Brad Pitt, and Christopher Plummer."
  },
  {
   "id": "mv_tt0443706",
@@ -11039,7 +11539,23 @@
    "intensity": 0.71,
    "emotion": 0.7
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, the film holds an approval rating of 90% based on 264 reviews. The site's critical consensus reads: \"A quiet, dialogue-driven thriller that delivers with scene after scene of gut-wrenching anxiety.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film holds an approval rating of 90% based on 264 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "As an allegory of life in the information age, it blew my mind.\" Todd McCarthy's review in Variety magazine praised the film's \"almost unerringly accurate evocation of the workaday San Francisco of 35–40 years ago.",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Zodiac_(film)"
+  },
+  "overview": "Zodiac is a 2007 American crime thriller film directed by David Fincher and written by James Vanderbilt, based on the nonfiction books by Robert Graysmith: Zodiac (1986) and Zodiac Unmasked (2002). It stars Jake Gyllenhaal, Mark Ruffalo, and Robert Downey Jr., with Anthony Edwards, Brian Cox, Elias Koteas, Donal Logue, John Carroll Lynch, Chloë Sevigny, Philip Baker Hall, and Dermot Mulroney in supporting roles."
  },
  {
   "id": "mv_tt0120363",
@@ -11076,7 +11592,23 @@
    "intensity": 0.66,
    "emotion": 0.7
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "Critics raved about Toy Story 2 upon release. Reviewers judged Toy Story 2 as a sequel that equaled or even surpassed the original in terms of quality. The Hollywood Reporter proclaimed: Toy Story 2 does what few sequels ever do.",
+   "quotes": [
+    {
+     "text": "The Hollywood Reporter proclaimed: Toy Story 2 does what few sequels ever do.",
+     "outlet": "The Hollywood Reporter"
+    },
+    {
+     "text": "On review aggregation website Rotten Tomatoes, the film has an approval rating of 100% based on 176 reviews, with an average rating of 9.3/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Toy_Story_2"
+  },
+  "overview": "Toy Story 2 is a 1999 American animated adventure comedy film produced by Pixar Animation Studios for Walt Disney Pictures. Directed by John Lasseter, it is the sequel to Toy Story (1995) and the second installment in Pixar's Toy Story franchise. Tom Hanks, Tim Allen, Don Rickles, Jim Varney, Wallace Shawn, John Ratzenberger, Annie Potts, R."
  },
  {
   "id": "mv_tt0240772",
@@ -11112,7 +11644,23 @@
    "intensity": 0.81,
    "emotion": 0.61
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film has an approval rating of 83% based on 188 reviews. The site's critical consensus reads, \"As fast-paced, witty, and entertaining as it is star-studded and coolly stylish, Ocean's Eleven offers a well-seasoned serving of popcorn entertainment.\" On Metacritic, the film has a weighted average score of 74 out of 100, based on 35 critics, indicating \"generally favorable reviews\".",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film has an approval rating of 83% based on 188 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Time magazine's reviewer Richard Corliss criticized the film, saying it \"doesn't offer much\".",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ocean's_Eleven"
+  },
+  "overview": "Ocean's Eleven is a 2001 American heist comedy film directed by Steven Soderbergh from a screenplay by Ted Griffin. The first installment in the Ocean's film trilogy, it is a remake of the 1960 Rat Pack film. The film features an ensemble cast including George Clooney, Matt Damon, Andy García, Brad Pitt, Julia Roberts, Casey Affleck, Don Cheadle, Scott Caan, Elliott Gould, Bernie Mac and Carl Reiner."
  },
  {
   "id": "mv_tt11286314",
@@ -11149,7 +11697,19 @@
    "intensity": 0.69,
    "emotion": 0.67
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 56% of 305 critics' reviews are positive, with an average rating of 6.3/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 56% of 305 critics' reviews are positive, with an average rating of 6.3/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Don't_Look_Up"
+  },
+  "overview": "Don't Look Up is a 2021 American political satire black comedy film written, co-produced, and directed by Adam McKay from a story he co-wrote with David Sirota. It stars an ensemble cast featuring Leonardo DiCaprio, Jennifer Lawrence, Rob Morgan, Jonah Hill, Mark Rylance, Tyler Perry, Timothée Chalamet, Ron Perlman, Ariana Grande, Kid Cudi, Cate Blanchett, and Meryl Streep."
  },
  {
   "id": "mv_tt2872718",
@@ -11186,7 +11746,23 @@
    "intensity": 0.67,
    "emotion": 0.55
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "The website Rotten Tomatoes aggregated an approval rating of 95% for the film based on 279 reviews and an average rating of 8.3/10.",
+   "quotes": [
+    {
+     "text": "The website Rotten Tomatoes aggregated an approval rating of 95% for the film based on 279 reviews and an average rating of 8.3/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In 2025, Nightcrawler was among the films voted for the \"Readers' Choice\" edition of The New York Times' list of \"The 100 Best Movies of the 21st Century,\" finishing at number 232.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Nightcrawler_(film)"
+  },
+  "overview": "Nightcrawler is a 2014 American neo-noir satirical thriller film written and directed by Dan Gilroy in his directorial debut. It stars Jake Gyllenhaal as an unhinged stringer who seeks out violent and morbid events late at night in Los Angeles so he can film them and sell the exclusive footage to a local television news station. The supporting cast includes Rene Russo, Riz Ahmed, and Bill Paxton."
  },
  {
   "id": "mv_tt0936501",
@@ -11223,7 +11799,23 @@
    "intensity": 0.9,
    "emotion": 0.59
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film has a rating of 60%, based on 178 reviews, with an average rating of 5.80/10. The site's critical consensus reads, \"Taken is undeniably fun with slick action, but is largely a brainless exercise.\" On Metacritic, the film has a score of 50 out of 100, based on 32 critics, indicating \"mixed or average reviews\".",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film has a rating of 60%, based on 178 reviews, with an average rating of 5.80/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times gave the film two and a half stars out of four, writing, \"It's always a puzzle to review a movie like this.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Taken_(film)"
+  },
+  "overview": "Taken is a 2008 English-language French action-thriller film directed by Pierre Morel and written by Luc Besson and Robert Mark Kamen. It stars Liam Neeson, Maggie Grace, Leland Orser, Jon Gries, David Warshofsky, Katie Cassidy, Holly Valance and Famke Janssen."
  },
  {
   "id": "mv_tt0234215",
@@ -11259,7 +11851,23 @@
    "intensity": 0.77,
    "emotion": 0.44
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film holds an approval rating of 74% based on 246 reviews, and an average score of 6.80/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film holds an approval rating of 74% based on 246 reviews, and an average score of 6.80/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times also commended the film, giving it three and a half stars out of four.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Matrix_Reloaded"
+  },
+  "overview": "The Matrix Reloaded is a 2003 American science fiction action film written and directed by the Wachowskis. It is the sequel to The Matrix (1999) and the second installment in the Matrix film series. The film stars Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving, and Gloria Foster who reprise their roles from the previous film, with Jada Pinkett Smith joining the cast."
  },
  {
   "id": "mv_tt1156398",
@@ -11296,7 +11904,23 @@
    "intensity": 0.83,
    "emotion": 0.58
   },
-  "popularity": 0.82
+  "popularity": 0.82,
+  "reception": {
+   "summary": "Zombieland received positive reviews from critics. On Rotten Tomatoes the film has an approval rating of 89% based on reviews from 259 critics, with a rating average of 7.4/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes the film has an approval rating of 89% based on reviews from 259 critics, with a rating average of 7.4/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert was surprised by Zombieland's ability to be significantly humorous while zombies remained the focus of the film, and felt that \"all of this could have been dreary, but not here.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Zombieland"
+  },
+  "overview": "Zombieland is a 2009 American post-apocalyptic zombie comedy film directed by Ruben Fleischer, in his directorial debut, and written by Rhett Reese and Paul Wernick. It stars Woody Harrelson, Jesse Eisenberg, Emma Stone, Abigail Breslin and Bill Murray."
  },
  {
   "id": "mv_tt0926084",
@@ -11333,7 +11957,19 @@
    "intensity": 0.59,
    "emotion": 0.67
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "Rotten Tomatoes gives the film an approval rating of 76% based on 289 reviews, with an average rating of 7.1/10.",
+   "quotes": [
+    {
+     "text": "Rotten Tomatoes gives the film an approval rating of 76% based on 289 reviews, with an average rating of 7.1/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_1"
+  },
+  "overview": "Harry Potter and the Deathly Hallows – Part 1 is a 2010 fantasy film directed by David Yates from a screenplay by Steve Kloves. The first of two cinematic parts based on the 2007 novel Harry Potter and the Deathly Hallows by J. K. Rowling, it is the sequel to Harry Potter and the Half-Blood Prince (2009) and the seventh instalment in the Harry Potter film series."
  },
  {
   "id": "mv_tt1024648",
@@ -11370,7 +12006,23 @@
    "intensity": 0.63,
    "emotion": 0.75
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 96% of 360 critics' reviews are positive, with an average rating of 8.4/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 96% of 360 critics' reviews are positive, with an average rating of 8.4/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In 2025, it was one of the films voted for the \"Readers' Choice\" edition of The New York Times' list of \"The 100 Best Movies of the 21st Century,\" finishing at number 244.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Argo_(2012_film)"
+  },
+  "overview": "Argo is a 2012 American historical political espionage drama thriller film directed by, produced by, and starring Ben Affleck. The screenplay, written by Chris Terrio, was adapted from the 1999 memoir The Master of Disguise by U.S. C.I.A. operative Tony Mendez and the 2007 Wired article \"The Great Escape: How the CIA Used a Fake Sci-Fi Flick to Rescue Americans from Tehran\" written by Joshuah Bearman."
  },
  {
   "id": "mv_tt0119654",
@@ -11407,7 +12059,23 @@
    "intensity": 0.72,
    "emotion": 0.58
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "On review aggregation website Rotten Tomatoes, Men in Black holds an approval rating of 91% based on 92 reviews, and an average score of 7.50/10.",
+   "quotes": [
+    {
+     "text": "On review aggregation website Rotten Tomatoes, Men in Black holds an approval rating of 91% based on 92 reviews, and an average score of 7.50/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times gave the film three stars out of four, giving particular praise to the film's self-reflective humor and Rick Baker's alien creature designs.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Men_in_Black_(1997_film)"
+  },
+  "overview": "Men in Black (abbreviated as MIB) is a 1997 American science fiction action comedy film directed by Barry Sonnenfeld, based on a script by Ed Solomon, that adapts the Marvel Comics series The Men in Black by Lowell Cunningham."
  },
  {
   "id": "mv_tt0417741",
@@ -11444,7 +12112,23 @@
    "intensity": 0.65,
    "emotion": 0.67
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, the film has an approval rating of 83% based on 280 reviews, with an average rating of 7.1/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film has an approval rating of 83% based on 280 reviews, with an average rating of 7.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Andrew Pulver of The Guardian gave a positive review, scoring it 3.5 out of 5 stars.",
+     "outlet": "The Guardian"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Half-Blood_Prince_(film)"
+  },
+  "overview": "Harry Potter and the Half-Blood Prince is a 2009 fantasy film directed by David Yates from a screenplay by Steve Kloves. It is based on the 2005 novel Harry Potter and the Half-Blood Prince by J. K. Rowling. It is the sequel to Harry Potter and the Order of the Phoenix (2007) and the sixth instalment in the Harry Potter film series."
  },
  {
   "id": "mv_tt4154664",
@@ -11481,7 +12165,23 @@
    "intensity": 0.85,
    "emotion": 0.56
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "The review aggregator Rotten Tomatoes reported an approval rating of 79%, with an average score of 6.8/10, based on 545 reviews.",
+   "quotes": [
+    {
+     "text": "The review aggregator Rotten Tomatoes reported an approval rating of 79%, with an average score of 6.8/10, based on 545 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "According to The New York Times, the film's overall reception was \"fairly positive\", but it wasn't as well-received as other films in the MCU.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Captain_Marvel_(film)"
+  },
+  "overview": "Captain Marvel is a 2019 American superhero film based on Marvel Comics featuring the character Carol Danvers / Captain Marvel. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 21st film in the Marvel Cinematic Universe (MCU). The film was directed by Anna Boden and Ryan Fleck from a screenplay they co-wrote with Geneva Robertson-Dworet."
  },
  {
   "id": "mv_tt6644200",
@@ -11518,7 +12218,23 @@
    "intensity": 0.63,
    "emotion": 0.62
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, A Quiet Place holds an approval rating of 96% based on 387 reviews, and an average rating of 8.2/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, A Quiet Place holds an approval rating of 96% based on 387 reviews, and an average rating of 8.2/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In July 2025, The Hollywood Reporter ranked it number 23 on its list of the \"25 Best Horror Movies of the 21st Century.\"",
+     "outlet": "The Hollywood Reporter"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/A_Quiet_Place"
+  },
+  "overview": "A Quiet Place is a 2018 American post-apocalyptic horror film directed by John Krasinski."
  },
  {
   "id": "mv_tt0097165",
@@ -11554,7 +12270,23 @@
    "intensity": 0.66,
    "emotion": 0.8
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, Dead Poets Society holds an approval rating of 85%, based on 66 reviews, with an average score of 7.2/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, Dead Poets Society holds an approval rating of 85%, based on 66 reviews, with an average score of 7.2/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "The Washington Post's reviewer called it \"solid, smart entertainment\", and praised Robin Williams for giving a \"nicely restrained acting performance\".",
+     "outlet": "The Washington Post"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Dead_Poets_Society"
+  },
+  "overview": "Dead Poets Society is a 1989 American coming-of-age drama film directed by Peter Weir and written by Tom Schulman. The film, starring Robin Williams, is set in 1959 at a fictional elite boarding school called Welton Academy. It tells the story of an English teacher who inspires his students through his teaching of poetry."
  },
  {
   "id": "mv_tt0119488",
@@ -11591,7 +12323,23 @@
    "intensity": 0.67,
    "emotion": 0.71
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "On review aggregator website Rotten Tomatoes, L.A. Confidential holds an approval rating of 99% and an average rating of 9/10, with 162 out of 163 reviews being positive.",
+   "quotes": [
+    {
+     "text": "On review aggregator website Rotten Tomatoes, L.A.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "On Metacritic the film has a weighted average score of 90 out of 100, based on 28 critics, indicating \"universal acclaim\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/L.A._Confidential_(film)"
+  },
+  "overview": "L.A. Confidential is a 1997 American neo-noir crime thriller film directed, produced, and co-written by Curtis Hanson. The screenplay, by Hanson and Brian Helgeland, is based on James Ellroy's 1990 novel, the third book in his L.A. Quartet series. The film tells the story of a group of LAPD officers in 1953, and the intersection of police corruption and Hollywood celebrity."
  },
  {
   "id": "mv_tt0034583",
@@ -11628,7 +12376,23 @@
    "intensity": 0.66,
    "emotion": 0.9
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "Casablanca received \"consistently good reviews\". Bosley Crowther of The New York Times wrote, \"The Warners ...",
+   "quotes": [
+    {
+     "text": "Bosley Crowther of The New York Times wrote, \"The Warners ...",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "The New Yorker rated Casablanca only \"pretty tolerable\" and said it was \"not quite up to Across the Pacific, Bogart's last spyfest\".",
+     "outlet": "The New Yorker"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Casablanca_(film)"
+  },
+  "overview": "Casablanca is a 1942 American romantic drama film directed by Michael Curtiz and starring Humphrey Bogart, Ingrid Bergman, and Paul Henreid."
  },
  {
   "id": "mv_tt6710474",
@@ -11702,7 +12466,19 @@
    "intensity": 0.81,
    "emotion": 0.53
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "The review aggregator Rotten Tomatoes reported an approval rating of 91%, with an average score of 7.4/10, based on 456 reviews.",
+   "quotes": [
+    {
+     "text": "The review aggregator Rotten Tomatoes reported an approval rating of 91%, with an average score of 7.4/10, based on 456 reviews.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Spider-Man%3A_Far_From_Home"
+  },
+  "overview": "Spider-Man: Far From Home is a 2019 American superhero film based on the Marvel Comics character Spider-Man. Produced by Columbia Pictures, Marvel Studios, and Pascal Pictures, and distributed by Sony Pictures Releasing, it is the sequel to Spider-Man: Homecoming (2017) and the 23rd film in the Marvel Cinematic Universe (MCU)."
  },
  {
   "id": "mv_tt0116629",
@@ -11739,7 +12515,23 @@
    "intensity": 0.81,
    "emotion": 0.5
   },
-  "popularity": 0.81
+  "popularity": 0.81,
+  "reception": {
+   "summary": "Review aggregator Rotten Tomatoes reports that 77% of 154 surveyed critics gave Independence Day a positive review; the average rating is 7.2/10.",
+   "quotes": [
+    {
+     "text": "Review aggregator Rotten Tomatoes reports that 77% of 154 surveyed critics gave Independence Day a positive review; the average rating is 7.2/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In a 2010 poll, readers of Entertainment Weekly rated it the second-greatest summer film of the previous 20 years, ranking only behind Jurassic Park.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Independence_Day_(1996_film)"
+  },
+  "overview": "Independence Day is a 1996 American science fiction action film directed by Roland Emmerich, written by Emmerich and the film's producer Dean Devlin, and starring an ensemble cast that consists of Will Smith, Bill Pullman, Jeff Goldblum, Mary McDonnell, Judd Hirsch, Margaret Colin, Randy Quaid, Robert Loggia, Adam Baldwin, Vivica A. Fox, James Rebhorn, and Harvey Fierstein."
  },
  {
   "id": "mv_tt1219289",
@@ -11811,7 +12603,23 @@
    "intensity": 0.71,
    "emotion": 0.57
   },
-  "popularity": 0.8
+  "popularity": 0.8,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film has an approval rating of 75% based on 67 reviews, with an average rating of 6.70/10. The site's critical consensus reads, \"Lock, Stock, and Two Smoking Barrels is a grimy, twisted, and funny twist on the Tarantino hip gangster formula\". On Metacritic, the film has a weighted average score of 66 out of 100 based on 30 reviews, indicating \"generally favorable\" reviews.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film has an approval rating of 75% based on 67 reviews, with an average rating of 6.70/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "On Metacritic, the film has a weighted average score of 66 out of 100 based on 30 reviews, indicating \"generally favorable\" reviews.",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lock%2C_Stock_and_Two_Smoking_Barrels"
+  },
+  "overview": "Lock, Stock and Two Smoking Barrels is a 1998 crime comedy film written and directed by Guy Ritchie. It follows a heist involving a confident young card sharp who loses £500,000 to a powerful crime lord in a rigged game of three-card brag, prompting him to pay off his debts by enlisting his friends to help him rob a small-time gang operating out of the apartment next door."
  },
  {
   "id": "mv_tt1232829",
@@ -11885,7 +12693,23 @@
    "intensity": 0.48,
    "emotion": 0.89
   },
-  "popularity": 0.8
+  "popularity": 0.8,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, the film holds an approval rating of 60% based on 419 reviews, and an average rating of 6.1/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film holds an approval rating of 60% based on 419 reviews, and an average rating of 6.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "The actors have done their job, too, notably Malek, who oozes pure Mercury.\" For Time, Stephanie Zacharek wrote: \"In strict filmmaking terms, Bohemian Rhapsody is a bit of a mess.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Bohemian_Rhapsody_(film)"
+  },
+  "overview": "Bohemian Rhapsody is a 2018 musical biographical drama film that focuses on the life of Freddie Mercury, the lead singer of the British rock band Queen, from the formation of the band in 1970 to their 1985 Live Aid performance at the original Wembley Stadium. The film was directed by Bryan Singer from a screenplay by Anthony McCarten, based on a story by McCarten and Peter Morgan."
  },
  {
   "id": "mv_tt1343092",
@@ -11921,7 +12745,23 @@
    "intensity": 0.44,
    "emotion": 0.91
   },
-  "popularity": 0.8
+  "popularity": 0.8,
+  "reception": {
+   "summary": "On review aggregation website Rotten Tomatoes, the film has an approval rating of 49% based on 305 reviews, with an average rating of 6/10.",
+   "quotes": [
+    {
+     "text": "On review aggregation website Rotten Tomatoes, the film has an approval rating of 49% based on 305 reviews, with an average rating of 6/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In The Atlantic, Christopher Orr observed that \"the problem is that when the movie is entertaining it's not Gatsby, and when it's Gatsby it's not entertaining.\" The positive reviews included A.",
+     "outlet": "The Atlantic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Great_Gatsby_(2013_film)"
+  },
+  "overview": "The Great Gatsby is a 2013 historical romantic drama film based on the 1925 novel by F. Scott Fitzgerald. The film was co-written and directed by Baz Luhrmann and stars an ensemble cast consisting of Leonardo DiCaprio, Tobey Maguire, Carey Mulligan, Joel Edgerton, Isla Fisher, Jason Clarke, and Elizabeth Debicki."
  },
  {
   "id": "mv_tt2948356",
@@ -11958,7 +12798,23 @@
    "intensity": 0.81,
    "emotion": 0.56
   },
-  "popularity": 0.8
+  "popularity": 0.8,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, the film has an approval rating of 98% based on 298 reviews, with an average rating of 8.1/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, the film has an approval rating of 98% based on 298 reviews, with an average rating of 8.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Neil Genzlinger of The New York Times considered the movie \"funny, smart, [and] thought-provoking\".",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Zootopia"
+  },
+  "overview": "Zootopia (titled Zootropolis in some markets) is a 2016 American animated buddy cop comedy film produced by Walt Disney Animation Studios. Directed by Byron Howard and Rich Moore and written by Jared Bush and Phil Johnston, it is the first film in the Zootopia franchise. It features the voices of Ginnifer Goodwin, Jason Bateman, Idris Elba, Jenny Slate, Nate Torrence, Bonnie Hunt, Don Lake, Tommy Chong, J. K."
  },
  {
   "id": "mv_tt0470752",
@@ -11995,7 +12851,23 @@
    "intensity": 0.64,
    "emotion": 0.67
   },
-  "popularity": 0.8
+  "popularity": 0.8,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 92% of 289 critics' reviews are positive, with an average rating of 8.2/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 92% of 289 critics' reviews are positive, with an average rating of 8.2/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "The New York Times critic Manohla Dargis gave the film a 'Critic's Pick', calling it \"a smart, sleek movie about men and the machines they make\".",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ex_Machina_(film)"
+  },
+  "overview": "Ex Machina is a 2014 science fiction film, written and directed by Alex Garland in his directorial debut. It stars Domhnall Gleeson, Alicia Vikander, and Oscar Isaac. It follows a programmer who is invited by his CEO to administer the Turing test to an intelligent female humanoid robot. Ex Machina premiered at the BFI Southbank on 16 December 2014."
  },
  {
   "id": "mv_tt0365748",
@@ -12068,7 +12940,23 @@
    "intensity": 0.76,
    "emotion": 0.66
   },
-  "popularity": 0.8
+  "popularity": 0.8,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 76% of 455 critics' reviews are positive, with an average rating of 7.1/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 76% of 455 critics' reviews are positive, with an average rating of 7.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "David Sims of The Atlantic thought The Way of Water would amaze audiences, although he felt it gets off to a slow start.",
+     "outlet": "The Atlantic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Avatar%3A_The_Way_of_Water"
+  },
+  "overview": "Avatar: The Way of Water is a 2022 American epic science fiction film directed by James Cameron and written by Cameron, Rick Jaffa and Amanda Silver. It is the second installment in the Avatar film series and the sequel to Avatar (2009). Sam Worthington, Zoe Saldaña and Stephen Lang reprise their roles from the first film, with Sigourney Weaver returning in an additional role and Kate Winslet joining the cast."
  },
  {
   "id": "mv_tt0796366",
@@ -12142,7 +13030,23 @@
    "intensity": 0.71,
    "emotion": 0.67
   },
-  "popularity": 0.8
+  "popularity": 0.8,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, the film holds an approval rating of 80% based on 200 reviews, with an average rating of 6.8/10. The site's critics consensus reads, \"Borrowing heavily (and intelligently) from Pixar and Looney Tunes, Despicable Me is a surprisingly thoughtful, family-friendly treat with a few surprises of its own\".",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, the film holds an approval rating of 80% based on 200 reviews, with an average rating of 6.8/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Metacritic, which uses a weighted average, assigned the film a score of 72 out of 100 based on 35 critics, indicating \"generally favorable\" reviews.",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Despicable_Me_(film)"
+  },
+  "overview": "Despicable Me is a 2010 American animated comedy film directed by Chris Renaud and Pierre Coffin and written by Cinco Paul and Ken Daurio. The first feature film produced by Illumination Entertainment, it features the voices of Steve Carell, Jason Segel, Russell Brand, Kristen Wiig, Miranda Cosgrove, Will Arnett, and Julie Andrews."
  },
  {
   "id": "mv_tt0332452",
@@ -12178,7 +13082,19 @@
    "intensity": 0.9,
    "emotion": 0.51
   },
-  "popularity": 0.8
+  "popularity": 0.8,
+  "reception": {
+   "summary": "On Rotten Tomatoes, Troy holds an approval rating of 53% based on 227 reviews, with an average rating of 6.00/10. The site's critics consensus reads: \"A brawny, entertaining spectacle, but lacking emotional resonance.\" On Metacritic, the film has a weighted average score of 56 out of 100, based on 43 critics, indicating \"mixed or average reviews\".",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, Troy holds an approval rating of 53% based on 227 reviews, with an average rating of 6.00/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Troy_(film)"
+  },
+  "overview": "Troy is a 2004 epic historical action film directed by Wolfgang Petersen and written by David Benioff. Produced by units in Malta, Mexico, and Britain's Shepperton Studios, the film features an ensemble cast led by Brad Pitt, Eric Bana, Orlando Bloom, Diane Kruger, Sean Bean, Brian Cox, Brendan Gleeson, Rose Byrne, and Peter O'Toole."
  },
  {
   "id": "mv_tt1276104",
@@ -12215,7 +13131,19 @@
    "intensity": 0.77,
    "emotion": 0.65
   },
-  "popularity": 0.8
+  "popularity": 0.8,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 93% of 275 critics' reviews are positive, with an average rating of 8.1/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 93% of 275 critics' reviews are positive, with an average rating of 8.1/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Looper_(film)"
+  },
+  "overview": "Looper is a 2012 American science fiction action thriller film written and directed by Rian Johnson, and produced by Ram Bergman and James D. Stern. It stars Bruce Willis, Joseph Gordon-Levitt, and Emily Blunt. It revolves around \"present-day\" contract killers called \"loopers\" whose targets are sent back through time by criminal syndicates from the future."
  },
  {
   "id": "mv_tt1457767",
@@ -12252,7 +13180,23 @@
    "intensity": 0.78,
    "emotion": 0.57
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 86% of 227 critics' reviews are positive, with an average rating of 7.2/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 86% of 227 critics' reviews are positive, with an average rating of 7.2/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Chris Nashawaty of Entertainment Weekly gave the film an A−, citing the effectiveness of \"mood and sound effects for shocks that never feel cheap\".",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Conjuring"
+  },
+  "overview": "The Conjuring is a 2013 American supernatural horror film directed by James Wan and written by Chad Hayes and Carey W. Hayes. It is the inaugural film in The Conjuring Universe franchise. Patrick Wilson and Vera Farmiga star as Ed and Lorraine Warren, paranormal investigators and authors associated with prominent cases of haunting."
  },
  {
   "id": "mv_tt0450259",
@@ -12289,7 +13233,19 @@
    "intensity": 0.76,
    "emotion": 0.64
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film has an approval rating of 64%, based on reviews from 214 critics, with an average score of 6.30/10. The site's consensus states: \"Blood Diamond overcomes poor storytelling with its biting commentary and fine performances.\" On Metacritic, it has a weighted average score of 64 out of 100, based on 39 reviews, indicating \"generally favorable\" reviews.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film has an approval rating of 64%, based on reviews from 214 critics, with an average score of 6.30/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Blood_Diamond"
+  },
+  "overview": "Blood Diamond is a 2006 American war drama film directed and co-produced by Edward Zwick and starring Leonardo DiCaprio, Jennifer Connelly and Djimon Hounsou. The title refers to blood diamonds, which are diamonds mined in war zones and sold to finance conflicts, thereby profiting warlords and diamond companies around the world."
  },
  {
   "id": "mv_tt0454921",
@@ -12325,7 +13281,23 @@
    "intensity": 0.53,
    "emotion": 0.78
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "The Pursuit of Happyness received a generally positive response from critics, with Will Smith receiving widespread acclaim for his performance. Film review site Rotten Tomatoes calculated a 67% overall approval based on 177 reviews, with an average rating of 6.4/10.",
+   "quotes": [
+    {
+     "text": "Film review site Rotten Tomatoes calculated a 67% overall approval based on 177 reviews, with an average rating of 6.4/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In other words, it all feels real.\" Manohla Dargis of The New York Times called the film \"a fairy tale in realist drag ...",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Pursuit_of_Happyness"
+  },
+  "overview": "The Pursuit of Happyness is a 2006 American biographical drama film directed by Gabriele Muccino and starring Will Smith as Chris Gardner, a homeless salesman. Smith's son Jaden Smith co-stars, making his film debut as Gardner's son, Christopher Jr. The screenplay by Steven Conrad is based on the best-selling 2006 memoir of the same name written by Gardner with Quincy Troupe."
  },
  {
   "id": "mv_tt4972582",
@@ -12361,7 +13333,23 @@
    "intensity": 0.78,
    "emotion": 0.49
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, the film has an approval rating of 79% based on 313 reviews, with an average rating of 6.6/10. The website's critical consensus reads: \"Split serves as a dramatic tour de force for James McAvoy in multiple roles – and finds writer-director M.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film has an approval rating of 79% based on 313 reviews, with an average rating of 6.6/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Night Shyamalan returning resoundingly to thrilling form.\" Metacritic reports a weighted average score 63 out of 100, based on 48 critics, indicating \"generally favorable reviews\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Split_(2016_American_film)"
+  },
+  "overview": "Split is a 2016 American psychological thriller film written, directed and produced by M. Night Shyamalan, and starring James McAvoy, Anya Taylor-Joy, and Betty Buckley. It is the second installment in the Unbreakable trilogy and a \"stealth sequel\" to Unbreakable (2000). The film follows a man with dissociative identity disorder who kidnaps and imprisons three teenage girls in an isolated underground facility."
  },
  {
   "id": "mv_tt0096874",
@@ -12398,7 +13386,23 @@
    "intensity": 0.68,
    "emotion": 0.63
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film holds an approval rating of 63% based on 63 reviews, with an average rating of 6.2/10. The website's critics consensus reads: \"Back to the Future II is far more uneven than its predecessor, but its madcap highs outweigh the occasionally cluttered machinations of an overstuffed plot\".",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film holds an approval rating of 63% based on 63 reviews, with an average rating of 6.2/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "On Metacritic, the film has a weighted average score of 57 out of 100, based on 17 critics, indicating \"mixed or average\" reviews.",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Back_to_the_Future_Part_II"
+  },
+  "overview": "Back to the Future Part II is a 1989 American science fiction film directed by Robert Zemeckis from a screenplay by Bob Gale; both conceived the story. It is a sequel to the 1985 film Back to the Future and the second installment in the Back to the Future franchise. The film stars Michael J. Fox, Christopher Lloyd, Lea Thompson and Thomas F."
  },
  {
   "id": "mv_tt1570728",
@@ -12435,7 +13439,23 @@
    "intensity": 0.5,
    "emotion": 0.77
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 80% of 236 critics' reviews are positive.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 80% of 236 critics' reviews are positive.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Owen Gleiberman of Entertainment Weekly called it \"Nothing more (or less) than an enchanting light comedy of romantic confusion...",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Crazy%2C_Stupid%2C_Love"
+  },
+  "overview": "Crazy, Stupid, Love. is a 2011 American romantic comedy film directed by Glenn Ficarra and John Requa and written by Dan Fogelman. It stars Steve Carell, Ryan Gosling, Julianne Moore, Emma Stone, John Carroll Lynch, Marisa Tomei, and Kevin Bacon. It follows a series of interconnected love stories centered on a recently separated man, played by Carrell, who learns how to be more romantic and charm women."
  },
  {
   "id": "mv_tt0181689",
@@ -12472,7 +13492,23 @@
    "intensity": 0.76,
    "emotion": 0.52
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "On the review aggregator Rotten Tomatoes, Minority Report holds an 89% approval rating based on 260 reviews and an average rating of 8.20/10. The site's critical consensus is, \"Thought-provoking and visceral, Steven Spielberg successfully combines high concept ideas and high octane action in this fast and febrile sci-fi thriller.\" The website listed it among the best reviewed films of 2002.",
+   "quotes": [
+    {
+     "text": "On the review aggregator Rotten Tomatoes, Minority Report holds an 89% approval rating based on 260 reviews and an average rating of 8.20/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "The film also earned an 80 out of a possible 100 on the similar review aggregating website Metacritic based on 37 reviews, indicating \"generally favorable reviews\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Minority_Report_(film)"
+  },
+  "overview": "Minority Report is a 2002 American film directed by Steven Spielberg and written by Scott Frank and Jon Cohen. It stars Tom Cruise, Colin Farrell, Samantha Morton and Max von Sydow. Loosely based on Philip K."
  },
  {
   "id": "mv_tt0112641",
@@ -12508,7 +13544,23 @@
    "intensity": 0.68,
    "emotion": 0.78
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "Upon its release, Casino received mostly positive reviews from critics, although their praise was more muted than it had been for the thematically similar Goodfellas, released only five years earlier, with some reviewers criticizing Scorsese for retreading familiar territory. The film was also criticized by some for its graphic violence.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film has an approval rating of 78% based on 74 reviews, with an average rating of 7.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times gave the film four stars, stating, \"Martin Scorsese's fascinating new film Casino knows a lot about the Mafia's relationship with Las Vegas.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Casino_(1995_film)"
+  },
+  "overview": "Casino is a 1995 epic gangster film directed by Martin Scorsese and adapted by Scorsese and Nicholas Pileggi from the latter's nonfiction book Casino: Love and Honor in Las Vegas. It stars Robert De Niro, Sharon Stone, Joe Pesci, Don Rickles, Kevin Pollak, Frank Vincent and James Woods. The film was the eighth collaboration between director Scorsese and De Niro."
  },
  {
   "id": "mv_tt1022603",
@@ -12545,7 +13597,23 @@
    "intensity": 0.47,
    "emotion": 0.79
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "Roger Ebert of the Chicago Sun-Times gave the film four stars out of four, describing the film as \"a delightful comedy, alive with invention\". He particularly praised the strong performances of Gordon-Levitt and Deschanel and summarized his review by adding, \"Here is a rare movie that begins by telling us how it will end and is about how the hero has no idea why\".",
+   "quotes": [
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times gave the film four stars out of four, describing the film as \"a delightful comedy, alive with invention\".",
+     "outlet": "Roger Ebert"
+    },
+    {
+     "text": "Michael Ordoña of the Los Angeles Times  wrote, \"(500) Days of Summer is something seldom seen: an original romantic comedy.",
+     "outlet": "Los Angeles Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/500_Days_of_Summer"
+  },
+  "overview": "(500) Days of Summer is a 2009 American romantic comedy-drama film directed by Marc Webb in his feature directorial debut, written by Scott Neustadter and Michael H. Weber, and produced by Mark Waters. The film stars Joseph Gordon-Levitt and Zooey Deschanel as Tom and Summer respectively, and in a nonlinear narrative structure, Tom chronicles the story of his relationship with Summer."
  },
  {
   "id": "mv_tt1250777",
@@ -12582,7 +13650,23 @@
    "intensity": 0.66,
    "emotion": 0.53
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes the film holds an approval rating of 78% based on 264 reviews and an average rating of 7.1/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes the film holds an approval rating of 78% based on 264 reviews and an average rating of 7.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In the United Kingdom, The Guardian gave the film extensive coverage by several of its critics and journalists.",
+     "outlet": "The Guardian"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Kick-Ass_(film)"
+  },
+  "overview": "Kick-Ass is a 2010 superhero black comedy film directed by Matthew Vaughn from a screenplay by Jane Goldman and Vaughn. It is based on the comic book of the same name by Mark Millar and John Romita Jr., and is the first film in the Kick-Ass franchise. It tells the story of an ordinary teenager, Dave Lizewski (Aaron Johnson), who sets out to become a real-life superhero, calling himself \"Kick-Ass\"."
  },
  {
   "id": "mv_tt2310332",
@@ -12618,7 +13702,23 @@
    "intensity": 0.66,
    "emotion": 0.58
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "MTV reported that early reviews for The Hobbit: The Battle of the Five Armies were \"generally positive\" with critics praising \"its energy, shorter running time and satisfying closure\". According to IBT, reviews were mostly positive, with critics \"praising director Peter Jackson's effort at transforming J. R. R. Tolkien's fantasy novel into an epic adventure film trilogy\".",
+   "quotes": [
+    {
+     "text": "Oliver Gettel of the Los Angeles Times said the critical consensus was that the film is \"a flawed but fitting finale to The Hobbit trilogy\".",
+     "outlet": "Los Angeles Times"
+    },
+    {
+     "text": "On review aggregator website Rotten Tomatoes, the film has a 59% approval rating based on 265 reviews, with an average rating of 6.30/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Hobbit%3A_The_Battle_of_the_Five_Armies"
+  },
+  "overview": "The Hobbit: The Battle of the Five Armies is a 2014 fantasy film directed by Peter Jackson from a screenplay by Fran Walsh, Philippa Boyens, Jackson, and Guillermo del Toro. It is based on the 1937 novel The Hobbit by J. R. R. Tolkien."
  },
  {
   "id": "mv_tt0343818",
@@ -12655,7 +13755,23 @@
    "intensity": 0.8,
    "emotion": 0.57
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 57% of 222 critics' reviews are positive, with an average rating of 6.1/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 57% of 222 critics' reviews are positive, with an average rating of 6.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Kim Newman from Empire said, \"This summer picture has a brain as well as muscles.\" Critic for The Washington Post Desson Thomas called it \"thrilling fun\".",
+     "outlet": "Empire"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/I%2C_Robot_(film)"
+  },
+  "overview": "I, Robot (sometimes stylized as i,Robot) is a 2004 American science fiction action film directed by Alex Proyas, from a screenplay by Jeff Vintar and Akiva Goldsman. It stars Will Smith, Bridget Moynahan, Bruce Greenwood, James Cromwell, and Alan Tudyk."
  },
  {
   "id": "mv_tt0258463",
@@ -12692,7 +13808,23 @@
    "intensity": 0.74,
    "emotion": 0.43
   },
-  "popularity": 0.79
+  "popularity": 0.79,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 84% of 193 critics' reviews are positive, with an average rating of 7.0/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 84% of 193 critics' reviews are positive, with an average rating of 7.0/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In 2025, it was one of the films voted for the \"Readers' Choice\" edition of The New York Times' list of \"The 100 Best Movies of the 21st Century,\" finishing at number 237.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Bourne_Identity_(2002_film)"
+  },
+  "overview": "The Bourne Identity is a 2002 American action-thriller film directed by Doug Liman and written by Tony Gilroy and William Blake Herron. Based on Robert Ludlum's 1980 novel of the same name, it is the first installment in the Bourne franchise, and stars Matt Damon, Franka Potente, Chris Cooper, Clive Owen, Brian Cox, and Adewale Akinnuoye-Agbaje."
  },
  {
   "id": "mv_tt2713180",
@@ -12729,7 +13861,23 @@
    "intensity": 0.77,
    "emotion": 0.76
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film has an approval rating of 75% based on 261 reviews, with an average rating of 6.9/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film has an approval rating of 75% based on 261 reviews, with an average rating of 6.9/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Mick LaSalle of the San Francisco Chronicle gave a four out of four rating and wrote: \"A great movie lets you know you're in safe hands from the beginning.\" The New York Times' critic A.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Fury_(2014_film)"
+  },
+  "overview": "Fury is a 2014 American war film written, directed, and co-produced by David Ayer. It stars Brad Pitt with Shia LaBeouf, Logan Lerman, Michael Peña, and Jon Bernthal as members of an American tank crew fighting in Nazi Germany during the final weeks of the European theater of World War II. Ayer was influenced by the service of military veterans in his family and by reading books such as Belton Y."
  },
  {
   "id": "mv_tt0409459",
@@ -12766,7 +13914,23 @@
    "intensity": 0.8,
    "emotion": 0.69
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "On Rotten Tomatoes, Watchmen has a 65% approval rating based on 304 reviews, and an average rating of 6.4/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, Watchmen has a 65% approval rating based on 304 reviews, and an average rating of 6.4/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Uncompromising, uncommercial, and unique.\" When comparing the film with the original source material, Ian Nathan of Empire felt that while \"it isn't the graphic novel...",
+     "outlet": "Empire"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Watchmen_(2009_film)"
+  },
+  "overview": "Watchmen is a 2009 American superhero film based on the comic book series by Dave Gibbons, and published by DC Comics. Directed by Zack Snyder, and written by David Hayter and Alex Tse, the film stars Malin Åkerman, Billy Crudup, Matthew Goode, Carla Gugino, Jackie Earle Haley, Jeffrey Dean Morgan, and Patrick Wilson."
  },
  {
   "id": "mv_tt0290334",
@@ -12803,7 +13967,23 @@
    "intensity": 0.86,
    "emotion": 0.45
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "X2 received positive reviews, with praise aimed at the acting, action, and story. The review-aggregation website Rotten Tomatoes reports that 85% of critics gave the film a positive review, based on 249 reviews with an average score of 7.5/10.",
+   "quotes": [
+    {
+     "text": "The review-aggregation website Rotten Tomatoes reports that 85% of critics gave the film a positive review, based on 249 reviews with an average score of 7.5/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert was impressed by how Singer was able to handle so many characters in one film, but felt \"the storyline did not live up to its potential\".",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/X2_(film)"
+  },
+  "overview": "X2 (also marketed with the subtitle X-Men United, and known internationally as X-Men 2) is a 2003 American superhero film based on the Marvel Comics superhero team the X-Men. Directed by Bryan Singer and written by Michael Dougherty, Dan Harris and David Hayter, from a story by Singer, Hayter and Zak Penn, it is the second installment in the X-Men film series and the sequel to X-Men (2000)."
  },
  {
   "id": "mv_tt5027774",
@@ -12840,7 +14020,23 @@
    "intensity": 0.64,
    "emotion": 0.65
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 90% of 411 critics' reviews are positive, with an average rating of 8.4/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 90% of 411 critics' reviews are positive, with an average rating of 8.4/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In a review for The New York Times, columnist Wesley Morris argued that the film presents an unconvincing and stylized depiction of the United States.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Three_Billboards_Outside_Ebbing%2C_Missouri"
+  },
+  "overview": "Three Billboards Outside Ebbing, Missouri is a 2017 dark comedy crime film written, directed, and produced by Martin McDonagh. It stars Frances McDormand as Mildred Hayes, a Missouri woman who rents three roadside billboards to draw attention to her daughter's unsolved rape and murder. Woody Harrelson, Sam Rockwell, Abbie Cornish, John Hawkes, and Peter Dinklage appear in supporting roles."
  },
  {
   "id": "mv_tt1270797",
@@ -12877,7 +14073,23 @@
    "intensity": 0.71,
    "emotion": 0.53
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "The review aggregation website Rotten Tomatoes reports an approval rating of 31% based on 365 reviews and an average rating of 4.5/10.",
+   "quotes": [
+    {
+     "text": "The review aggregation website Rotten Tomatoes reports an approval rating of 31% based on 365 reviews and an average rating of 4.5/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Reviewing the film for Variety, Owen Gleiberman called it \"a textbook case of a comic-book film that's unexciting in its ho-hum competence, and even its visual-effects bravura\".",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Venom_(2018_film)"
+  },
+  "overview": "Venom is a 2018 American superhero film based on the Marvel Comics character Eddie Brock / Venom. The first film in Sony's Spider-Man Universe (SSU), it was directed by Ruben Fleischer from a screenplay by Jeff Pinkner, Scott Rosenberg, and Kelly Marcel. Tom Hardy stars as Eddie Brock and Venom, alongside Michelle Williams, Riz Ahmed, Scott Haze, and Reid Scott."
  },
  {
   "id": "mv_tt1298650",
@@ -12914,7 +14126,23 @@
    "intensity": 0.72,
    "emotion": 0.55
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 32% of 275 critics' reviews are positive, with an average rating of 5/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 32% of 275 critics' reviews are positive, with an average rating of 5/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Variety's Andrew Barker considered the film derivative, but accessible.",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean%3A_On_Stranger_Tides"
+  },
+  "overview": "Pirates of the Caribbean: On Stranger Tides is a 2011 American fantasy swashbuckler film and the fourth installment in the Pirates of the Caribbean film series, following At World's End (2007). The film was directed by Rob Marshall, and written by Ted Elliott and Terry Rossio, loosely based on the 1987 novel On Stranger Tides by Tim Powers. Johnny Depp, Kevin R."
  },
  {
   "id": "mv_tt1318514",
@@ -12951,7 +14179,23 @@
    "intensity": 0.72,
    "emotion": 0.69
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, the film holds an 82% approval rating based on 269 reviews, with an average rating of 7.20/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film holds an 82% approval rating based on 269 reviews, with an average rating of 7.20/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Manohla Dargis of The New York Times praised the film by saying, \"Precisely the kind of summer diversion that the studios have such a hard time making now.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rise_of_the_Planet_of_the_Apes"
+  },
+  "overview": "Rise of the Planet of the Apes is a 2011 American science fiction action film directed by Rupert Wyatt from a screenplay by Rick Jaffa and Amanda Silver. It is a reboot of the Planet of the Apes film series, the seventh installment overall and the first in the reboot series. The film stars James Franco, Freida Pinto, John Lithgow, Brian Cox, Tom Felton, and Andy Serkis."
  },
  {
   "id": "mv_tt0071853",
@@ -13023,7 +14267,23 @@
    "intensity": 0.49,
    "emotion": 0.91
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, the film has an approval rating of 85% based on 172 reviews, with an average rating of 7.50/10. The website's critics consensus reads, \"The Perks of Being a Wallflower is a heartfelt and sincere adaptation that's bolstered by strong lead performances.\" On Metacritic, it has a weighted average score of 67 out of 100, based on 36 critics, indicating \"generally favorable reviews\".",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film has an approval rating of 85% based on 172 reviews, with an average rating of 7.50/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In 2025, it was one of the films voted for the \"Readers' Choice\" edition of The New York Times' list of \"The 100 Best Movies of the 21st Century,\" finishing at number 221.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Perks_of_Being_a_Wallflower_(film)"
+  },
+  "overview": "The Perks of Being a Wallflower is a 2012 American coming-of-age romantic drama film written and directed by Stephen Chbosky, and based on his 1999 novel. Logan Lerman stars as a teenager named Charlie who writes to an unnamed friend, and these epistles chronicle his trials, tribulations, and triumphs as he goes through his freshman year of high school."
  },
  {
   "id": "mv_tt0356910",
@@ -13060,7 +14320,23 @@
    "intensity": 0.64,
    "emotion": 0.48
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "Review aggregation website Rotten Tomatoes gave Mr. & Mrs. Smith an approval rating of 60% based on 212 reviews, with an average score of 6.10/10.",
+   "quotes": [
+    {
+     "text": "Review aggregation website Rotten Tomatoes gave Mr.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In 2025, The Hollywood Reporter listed Mr.",
+     "outlet": "The Hollywood Reporter"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mr._%26_Mrs._Smith_(2005_film)"
+  },
+  "overview": "Mr. & Mrs. Smith is a 2005 American action comedy film directed by Doug Liman and written by Simon Kinberg. The film stars Brad Pitt and Angelina Jolie as a bored upper middle class married couple, who are surprised to learn that they are assassins belonging to competing agencies, leading to them trying to kill each other in order to protect themselves."
  },
  {
   "id": "mv_tt1872181",
@@ -13097,7 +14373,23 @@
    "intensity": 0.73,
    "emotion": 0.63
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "On the review aggregator Rotten Tomatoes, The Amazing Spider-Man 2 has an approval rating of 50% based on 312 reviews, and an average rating of 5.8/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator Rotten Tomatoes, The Amazing Spider-Man 2 has an approval rating of 50% based on 312 reviews, and an average rating of 5.8/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Oliver Gettel of the Los Angeles Times and Tim Robey of The Telegraph both felt the film had too many villains, with Gettel also criticizing the high number of plot lines.",
+     "outlet": "Los Angeles Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Amazing_Spider-Man_2"
+  },
+  "overview": "The Amazing Spider-Man 2 (internationally titled as The Amazing Spider-Man 2: Rise of Electro) is a 2014 American superhero film based on the Marvel Comics character Spider-Man. The sequel to The Amazing Spider-Man (2012), it was directed by Marc Webb and written by Alex Kurtzman, Roberto Orci, and Jeff Pinkner from a story by Kurtzman, Orci, Pinkner and James Vanderbilt."
  },
  {
   "id": "mv_tt1483013",
@@ -13134,7 +14426,23 @@
    "intensity": 0.83,
    "emotion": 0.62
   },
-  "popularity": 0.78
+  "popularity": 0.78,
+  "reception": {
+   "summary": "On review aggregation website Rotten Tomatoes, the film has an approval rating of 53% based on 254 reviews and an average score of 5.90/10.",
+   "quotes": [
+    {
+     "text": "On review aggregation website Rotten Tomatoes, the film has an approval rating of 53% based on 254 reviews and an average score of 5.90/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Todd McCarthy of The Hollywood Reporter stated \"Oblivion is an absolutely gorgeous film dramatically caught between its aspirations for poetic romanticism and the demands of heavy sci-fi action\".",
+     "outlet": "The Hollywood Reporter"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oblivion_(2013_film)"
+  },
+  "overview": "Oblivion is a 2013 American epic post-apocalyptic science fiction action film produced and directed by Joseph Kosinski from a screenplay by Karl Gajdusek and Michael deBruyn, starring Tom Cruise in the main role alongside Morgan Freeman, Olga Kurylenko, Andrea Riseborough, Nikolaj Coster-Waldau, and Melissa Leo in supporting roles."
  },
  {
   "id": "mv_tt0095953",
@@ -13169,7 +14477,23 @@
    "intensity": 0.46,
    "emotion": 0.79
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "On review aggregator website Rotten Tomatoes, Rain Man holds an approval rating of 88%, based on 136 reviews, with an average rating of 8.10/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator website Rotten Tomatoes, Rain Man holds an approval rating of 88%, based on 136 reviews, with an average rating of 8.10/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Vincent Canby of The New York Times called Rain Man: becomingly modest, decently thought-out, sometimes funny film\"; Hoffman's performance was a \"display of sustained virtuosity ...",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rain_Man"
+  },
+  "overview": "Rain Man is a 1988 American road comedy-drama film directed by Barry Levinson and written by Barry Morrow and Ronald Bass. It tells the story of abrasive and selfish wheeler-dealer Charlie Babbitt (Tom Cruise), who discovers that his estranged father Sanford has died and bequeathed his multimillion-dollar estate to his other son, Raymond (Dustin Hoffman), an autistic savant of whose existence Charlie was unaware."
  },
  {
   "id": "mv_tt0441773",
@@ -13206,7 +14530,23 @@
    "intensity": 0.76,
    "emotion": 0.6
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "Rotten Tomatoes reports that 87% of 191 reviewers gave the film a positive review; the average rating is 7.1/10.",
+   "quotes": [
+    {
+     "text": "Rotten Tomatoes reports that 87% of 191 reviewers gave the film a positive review; the average rating is 7.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Richard Corliss of Time magazine gave Kung Fu Panda a positive review, stating the picture \"provides a master course in cunning visual art and ultra-satisfying entertainment\".",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Kung_Fu_Panda_(film)"
+  },
+  "overview": "Kung Fu Panda is a 2008 American animated martial arts comedy film directed by John Stevenson and Mark Osborne, and written by Jonathan Aibel and Glenn Berger, from a story by Ethan Reiff and Cyrus Voris. Produced by DreamWorks Animation, it is the first installment in the Kung Fu Panda franchise and stars Jack Black as the voice of the titular character."
  },
  {
   "id": "mv_tt0945513",
@@ -13243,7 +14583,23 @@
    "intensity": 0.79,
    "emotion": 0.59
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "Review aggregator website Rotten Tomatoes reports a 92% approval rating, based on an aggregation of 262 reviews, with an average rating of 7.5/10.",
+   "quotes": [
+    {
+     "text": "Review aggregator website Rotten Tomatoes reports a 92% approval rating, based on an aggregation of 262 reviews, with an average rating of 7.5/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Kenneth Turan of the Los Angeles Times called Ben Ripley's script \"cleverly constructed\" and a film \"crisply directed by Duncan Jones\".",
+     "outlet": "Los Angeles Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Source_Code"
+  },
+  "overview": "Source Code is a 2011 science fiction action thriller film directed by Duncan Jones and written by Ben Ripley. It stars Jake Gyllenhaal as a US Army officer who is sent into an eight-minute virtual re-creation of a real-life train explosion, and tasked with determining the identity of the terrorist who bombed it. Michelle Monaghan, Vera Farmiga, and Jeffrey Wright play supporting roles."
  },
  {
   "id": "mv_tt2872732",
@@ -13280,7 +14636,23 @@
    "intensity": 0.87,
    "emotion": 0.44
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "Early reviews for the film were positive and mixed, and later generally positive. Lucy was categorized as entertaining and silly, but also polarizing, by critics. On review aggregator website Rotten Tomatoes, it holds an approval rating of 67% based on 234 reviews, with an average rating of 6.10/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator website Rotten Tomatoes, it holds an approval rating of 67% based on 234 reviews, with an average rating of 6.10/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "reviews, Christopher Orr of The Atlantic reviewed it through the list of 26 points, in an article published in The Atlantic under title \"The Dumbest Movie Ever Made About Brain Capacity\".",
+     "outlet": "The Atlantic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lucy_(2014_film)"
+  },
+  "overview": "Lucy is a 2014 English-language French science fiction action film written and directed by Luc Besson for his company EuropaCorp, and produced by his wife, Virginie Besson-Silla. It was shot in Taipei, Paris, and New York City. It stars Scarlett Johansson, Morgan Freeman, Choi Min-sik, and Amr Waked."
  },
  {
   "id": "mv_tt0314331",
@@ -13317,7 +14689,23 @@
    "intensity": 0.58,
    "emotion": 0.75
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 65% of 231 critics' reviews are positive. The website's consensus reads: \"A sugary tale overstuffed with too many stories. Still, the cast charms.\" Audiences polled by CinemaScore gave the film an average grade of \"B+\" on an A+ to F scale.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 65% of 231 critics' reviews are positive.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times gave the film three and a half out of four stars, describing it as \"a belly-flop into the sea of romantic comedy ...",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Love_Actually"
+  },
+  "overview": "Love Actually is a 2003 Christmas romantic comedy film written and directed by Richard Curtis. The film features an ensemble cast, composed predominantly of British actors, many of whom had worked with Curtis in previous projects. An international co-production of the United Kingdom, United States and France, it was mostly filmed on location in London."
  },
  {
   "id": "mv_tt1411697",
@@ -13352,7 +14740,23 @@
    "intensity": 0.58,
    "emotion": 0.54
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "On Rotten Tomatoes, the film has an approval percentage of 35% based on 246 reviews, with the critics consensus reading: \"A crueler, darker, raunchier carbon copy of the first installment, The Hangover Part II lacks the element of surprise -- and most of the joy -- that helped make the original a hit.\" On Metacritic, the film has a score of 44 out of 100 based on 40 critic reviews, meaning \"Mixed or Average\".",
+   "quotes": [
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times gave the film two stars out of four stating, \"The Hangover Part II plays like a challenge to the audience's capacity for raunchiness.",
+     "outlet": "Roger Ebert"
+    },
+    {
+     "text": "Conversely, Michael Rechtshaffen of The Hollywood Reporter gave The Hangover Part II a positive review remarking, \"What happens in Bangkok isn't as much fun as when it happened in Vegas, but it's still worth the trip\".",
+     "outlet": "The Hollywood Reporter"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Hangover_Part_II"
+  },
+  "overview": "The Hangover Part II is a 2011 American comedy film and sequel to the 2009 film The Hangover, and the second installment in The Hangover trilogy. The film was directed by Todd Phillips, who co-wrote the script with Craig Mazin and Scot Armstrong, and stars Bradley Cooper, Ed Helms, Zach Galifianakis, Ken Jeong, Jeffrey Tambor, Justin Bartha, and Paul Giamatti."
  },
  {
   "id": "mv_tt6263850",
@@ -13389,7 +14793,23 @@
    "intensity": 0.74,
    "emotion": 0.6
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "Critics praised the performances of Reynolds and Jackman as well as the humor, but were less positive about the film overall. On review aggregator Rotten Tomatoes, 77% of 421 critics gave it a positive review and an average rating of 6.9/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, 77% of 421 critics gave it a positive review and an average rating of 6.9/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Olly Richards at Empire also praised Jackman's performance, saying he elevated the material in key moments and \"in a film with a million dick jokes, he manages to deliver a character arc that's genuinely moving\".",
+     "outlet": "Empire"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Deadpool_%26_Wolverine"
+  },
+  "overview": "Deadpool & Wolverine is a 2024 American superhero film based on Marvel Comics featuring the characters Deadpool and Wolverine. Produced by Marvel Studios, Maximum Effort, and 21 Laps Entertainment, and distributed by Walt Disney Studios Motion Pictures, it is the 34th film in the Marvel Cinematic Universe (MCU) and the sequel to Deadpool (2016) and Deadpool 2 (2018)."
  },
  {
   "id": "mv_tt1950186",
@@ -13426,7 +14846,19 @@
    "intensity": 0.66,
    "emotion": 0.67
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "On review aggregation website Rotten Tomatoes, the film holds an approval rating of 92% based on 364 reviews, with an average rating of 7.80/10.",
+   "quotes": [
+    {
+     "text": "On review aggregation website Rotten Tomatoes, the film holds an approval rating of 92% based on 364 reviews, with an average rating of 7.80/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ford_v_Ferrari"
+  },
+  "overview": "Ford v Ferrari (titled Le Mans '66 in some European countries) is a 2019 American biographical sports drama film directed by James Mangold and written by Jez Butterworth, John-Henry Butterworth, and Jason Keller. It stars Matt Damon and Christian Bale, with Jon Bernthal, Caitríona Balfe, Tracy Letts, Josh Lucas, Noah Jupe, Remo Girone, and Ray McKinnon in supporting roles."
  },
  {
   "id": "mv_tt10811166",
@@ -13461,7 +14893,19 @@
    "intensity": 0.63,
    "emotion": 0.79
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 40% of 5 critics' reviews are positive. Jagadish Angadi of Deccan Herald rated the film 4 out of 5 stars and was effusive in his praise — Agnihotri's use of non-linear narratives and strong dialogues, enviable background research, and strong individual performances produced an \"intense watch\".",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 40% of 5 critics' reviews are positive.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Kashmir_Files"
+  },
+  "overview": "The Kashmir Files is a 2022 Indian Hindi-language drama film written and directed by Vivek Agnihotri. The film presents a fictional storyline centred around the 1990 exodus of Kashmiri Hindus from the Kashmir Valley in Indian-administered Kashmir. It depicts the exodus and the events leading up to it as a genocide, a framing considered inaccurate by scholars."
  },
  {
   "id": "mv_tt0242653",
@@ -13571,7 +15015,23 @@
    "intensity": 0.73,
    "emotion": 0.53
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 56% of 237 critics' reviews are positive, with an average rating of 5.9/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 56% of 237 critics' reviews are positive, with an average rating of 5.9/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "It's a fast and enjoyable B-movie, though.\" Peter Travers of Rolling Stone said, \"Last stand?",
+     "outlet": "Rolling Stone"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/X-Men%3A_The_Last_Stand"
+  },
+  "overview": "X-Men: The Last Stand (also marketed as X3: The Last Stand, or X-Men 3) is a 2006 superhero film based on the Marvel Comics superhero team the X-Men. It is the sequel to X2 (2003), the third installment in the X-Men film series, and the final film in the original X-Men trilogy."
  },
  {
   "id": "mv_tt0367594",
@@ -13608,7 +15068,23 @@
    "intensity": 0.72,
    "emotion": 0.63
   },
-  "popularity": 0.77
+  "popularity": 0.77,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, 83% of 226 critical reviews of Charlie and the Chocolate Factory are positive, with an average rating of 7.5/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, 83% of 226 critical reviews of Charlie and the Chocolate Factory are positive, with an average rating of 7.5/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Scott of The New York Times gave a positive review, writing \"in spite of relapses and imperfections, a few of them serious, Mr.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Charlie_and_the_Chocolate_Factory_(film)"
+  },
+  "overview": "Charlie and the Chocolate Factory is a 2005 musical fantasy film directed by Tim Burton and written by John August, based on the 1964 children's novel of the same name by Roald Dahl. The film stars Johnny Depp as Willy Wonka and Freddie Highmore as Charlie Bucket, alongside David Kelly, Helena Bonham Carter, Noah Taylor, Missi Pyle, James Fox, Deep Roy, and Christopher Lee."
  },
  {
   "id": "mv_tt0467406",
@@ -13644,7 +15120,23 @@
    "intensity": 0.57,
    "emotion": 0.76
   },
-  "popularity": 0.76
+  "popularity": 0.76,
+  "reception": {
+   "summary": "Juno received highly positive reviews from critics. On the review aggregator Rotten Tomatoes, the film has a 93% approval rating from critics based on 215 reviews, with an average rating of 8.10/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator Rotten Tomatoes, the film has a 93% approval rating from critics based on 215 reviews, with an average rating of 8.10/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "On Metacritic, the film had an average score of 81 out of 100, based on 38 reviews.",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Juno_(film)"
+  },
+  "overview": "Juno is a 2007 American coming-of-age comedy-drama film directed by Jason Reitman and written by Diablo Cody. Elliot Page stars as the title character, an independent-minded teenager confronting her unplanned pregnancy and the subsequent events that put pressures of adult life onto her. Michael Cera, Jennifer Garner, Jason Bateman, Allison Janney and J. K. Simmons also star."
  },
  {
   "id": "mv_tt2179136",
@@ -13681,7 +15173,23 @@
    "intensity": 0.75,
    "emotion": 0.66
   },
-  "popularity": 0.76
+  "popularity": 0.76,
+  "reception": {
+   "summary": "On Rotten Tomatoes, American Sniper holds an approval rating of 72%, based on 299 reviews, with an average rating of 6.90/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, American Sniper holds an approval rating of 72%, based on 299 reviews, with an average rating of 6.90/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Matt Taibbi, in Rolling Stone, wrote that the movie turned the complicated moral questions and mass-bloodshed of the Iraq war into a black and white fairy tale, without presenting the historical context.",
+     "outlet": "Rolling Stone"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/American_Sniper"
+  },
+  "overview": "American Sniper is a 2014 American biographical war drama film directed and co-produced by Clint Eastwood and written and executive-produced by Jason Hall, based on the memoir of the same name by Chris Kyle with Scott McEwen and Jim DeFelice."
  },
  {
   "id": "mv_tt0087469",
@@ -13717,7 +15225,23 @@
    "intensity": 0.76,
    "emotion": 0.47
   },
-  "popularity": 0.76
+  "popularity": 0.76,
+  "reception": {
+   "summary": "Indiana Jones and the Temple of Doom received mixed reviews upon its release, but over the years, the film's critical reception has improved. On Rotten Tomatoes, the film has an approval rating of 77% based on 138 reviews, with an average rating of 7.4/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film has an approval rating of 77% based on 138 reviews, with an average rating of 7.4/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert gave the film a perfect four-star rating, calling it \"one of the greatest Bruised Forearm Movies ever made.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Indiana_Jones_and_the_Temple_of_Doom"
+  },
+  "overview": "Indiana Jones and the Temple of Doom is a 1984 American action-adventure film directed by Steven Spielberg from a script by Willard Huyck and Gloria Katz, based on a story by George Lucas. It is the second installment in the Indiana Jones film series and a prequel to Indiana Jones and the Raiders of the Lost Ark. The film stars Harrison Ford, who reprises his role as the titular character."
  },
  {
   "id": "mv_tt0047396",
