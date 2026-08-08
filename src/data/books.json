@@ -525,7 +525,14 @@
    "darkness": 0.62,
    "complexity": 0.66,
    "emotion": 0.54
-  }
+  },
+  "reception": {
+   "summary": "When it was first published, Nineteen Eighty-Four received critical acclaim. V. S. Pritchett, reviewing it for the New Statesman, wrote: \"I do not think I have ever read a novel more frightening and depressing; and yet, such are the originality, the suspense, the speed of writing and withering indignation that it is impossible to put the book down.\" P. H.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four"
+  },
+  "overview": "Nineteen Eighty-Four (also published as 1984) is a dystopian speculative fiction novel by the English writer George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final completed book. Thematically, it centres on totalitarianism, mass surveillance and repressive regimentation of people and behaviours."
  },
  {
   "id": "bk_OL492658W",
@@ -558,7 +565,19 @@
    "darkness": 0.48,
    "complexity": 0.52,
    "emotion": 0.6
-  }
+  },
+  "reception": {
+   "summary": "The Lightning Thief received mostly positive reviews. Common Sense Media said, \"There are two levels of fun in The Lightning Thief. One is the fast-paced quest of a young hero and his friends to save the world...\" and added, \"Another level of fun here – laughing at the wicked ways the author has updated the gods and monsters for the 21st century\".",
+   "quotes": [
+    {
+     "text": "The New York Times praised The Lightning Thief as \"perfectly paced, with electrifying moments chasing each other like heartbeats\".",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Lightning_Thief"
+  },
+  "overview": "Percy Jackson and The Lightning Thief is a 2005 American children's fantasy action-adventure middle grade children's fiction novel based on Greek mythology written by American author Rick Riordan. The first children's novel by Riordan and the opening installment in Percy Jackson & the Olympians series, the book was recognized among the year's best for children."
  },
  {
   "id": "bk_OL82586W",
@@ -807,7 +826,9 @@
    "darkness": 0.76,
    "complexity": 0.61,
    "emotion": 0.6
-  }
+  },
+  "reception": null,
+  "overview": "The Shining is a 1977 horror novel by American author Stephen King. It is King's third published novel and first hardcover bestseller; its success firmly established King as a preeminent author in the horror genre. The setting and characters are influenced by King's personal experiences, including his visit to The Stanley Hotel in 1974 and his struggle with alcoholism."
  },
  {
   "id": "bk_OL36410330W",
@@ -873,7 +894,23 @@
    "darkness": 0.54,
    "complexity": 0.66,
    "emotion": 0.72
-  }
+  },
+  "reception": {
+   "summary": "Despite her editors' warnings that the book might not sell well, it quickly became a sensation, bringing acclaim to Lee in literary circles, in her hometown of Monroeville, and throughout Alabama. The book went through numerous subsequent printings and became widely available through its inclusion in the Book of the Month Club and editions released by Reader's Digest Condensed Books.",
+   "quotes": [
+    {
+     "text": "Thomas Mallon in The New Yorker criticizes Atticus' stiff and self-righteous demeanor, and calls Scout \"a kind of highly constructed doll\" whose speech and actions are improbable.",
+     "outlet": "The New Yorker"
+    },
+    {
+     "text": "The New York Times announced To Kill a Mockingbird as the best book of the past 125 years on December 28, 2021.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird"
+  },
+  "overview": "To Kill a Mockingbird is a 1960 Southern Gothic novel by American author Harper Lee. It became instantly successful after its release; in the United States, it is widely read in high schools and middle schools. To Kill a Mockingbird won the Pulitzer Prize a year after its release, and it has become a classic of modern American literature."
  },
  {
   "id": "bk_OL98459W",
@@ -979,7 +1016,9 @@
    "darkness": 0.66,
    "complexity": 0.63,
    "emotion": 0.54
-  }
+  },
+  "reception": null,
+  "overview": "Watchmen is a comic book limited series by the British creative team of writer Alan Moore, artist Dave Gibbons, and colorist John Higgins. It was published monthly by DC Comics in 1986 and 1987 before being collected in a single-volume edition in 1987. Watchmen originated from a story proposal Moore submitted to DC featuring superhero characters that the company had acquired from Charlton Comics."
  },
  {
   "id": "bk_OL27479W",
@@ -1011,7 +1050,19 @@
    "darkness": 0.47,
    "complexity": 0.73,
    "emotion": 0.53
-  }
+  },
+  "reception": {
+   "summary": "Donald Barr in The New York Times gave the book a positive review, calling it \"an extraordinary work – pure excitement, unencumbered narrative, moral warmth, barefaced rejoicing in beauty, but excitement most of all\".",
+   "quotes": [
+    {
+     "text": "Donald Barr in The New York Times gave the book a positive review, calling it \"an extraordinary work – pure excitement, unencumbered narrative, moral warmth, barefaced rejoicing in beauty, but excitement most of all\".",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Two_Towers"
+  },
+  "overview": "The Two Towers, first published in 1954, is the second volume of J. R. R. Tolkien's high fantasy novel The Lord of the Rings. It is preceded by The Fellowship of the Ring and followed by The Return of the King. The volume's title is ambiguous, as five towers are named in the narrative, and Tolkien himself gave conflicting identifications of the two towers."
  },
  {
   "id": "bk_OL10263W",
@@ -1108,7 +1159,19 @@
    "darkness": 0.4,
    "complexity": 0.62,
    "emotion": 0.62
-  }
+  },
+  "reception": {
+   "summary": "Alice was published to critical praise. One magazine declared it \"exquisitely wild, fantastic, [and] impossible\". In the late 19th century, Walter Besant wrote that Alice in Wonderland \"was a book of that extremely rare kind which will belong to all the generations to come until the language becomes obsolete\". No story in English literature has intrigued me more than Lewis Carroll's Alice in Wonderland.",
+   "quotes": [
+    {
+     "text": "A 2020 review in Time states: \"The book changed young people's literature.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Alice's_Adventures_in_Wonderland"
+  },
+  "overview": "Alice's Adventures in Wonderland (also known as Alice in Wonderland) is an 1865 English children's novel by Lewis Carroll. It tells the story of a little girl named Alice who falls through a rabbit hole into a fantasy world of anthropomorphic creatures. It is seen as an example of the literary nonsense genre. The artist John Tenniel provided 42 wood-engraved illustrations for the original edition."
  },
  {
   "id": "bk_OL16142094W",
@@ -1139,7 +1202,9 @@
    "darkness": 0.45,
    "complexity": 0.33,
    "emotion": 0.79
-  }
+  },
+  "reception": null,
+  "overview": "Wonder may refer to:"
  },
  {
   "id": "bk_OL82565W",
@@ -1172,7 +1237,19 @@
    "darkness": 0.62,
    "complexity": 0.51,
    "emotion": 0.68
-  }
+  },
+  "reception": {
+   "summary": "Liesl Schillinger of The New York Times praised the novel's various themes and suspenseful ending.",
+   "quotes": [
+    {
+     "text": "Liesl Schillinger of The New York Times praised the novel's various themes and suspenseful ending.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Half-Blood_Prince"
+  },
+  "overview": "Harry Potter and the Half-Blood Prince is a fantasy novel by British author J. K. Rowling. It is the sixth and penultimate novel in the Harry Potter series, and takes place during Harry Potter's sixth year at the wizard school Hogwarts. The novel reveals events from the early life of Lord Voldemort, and chronicles Harry's preparations for the final battle against him."
  },
  {
   "id": "bk_OL16444438W",
@@ -1204,7 +1281,23 @@
    "darkness": 0.45,
    "complexity": 0.36,
    "emotion": 0.78
-  }
+  },
+  "reception": {
+   "summary": "The New York Times' review of the book called it \"a blend of melancholy, sweet, philosophical and funny\" and said that it \"stays the course of tragic realism\", while noting that the book's unpleasant plot details \"do nothing to diminish the romance; in Green's hands, they only make it more moving\".",
+   "quotes": [
+    {
+     "text": "NPR's Rachel Syme noted that \"[Green's] voice is so compulsively readable that it defies categorization\", saying that the \"elegantly plotted\" book \"may be his best\".",
+     "outlet": "NPR"
+    },
+    {
+     "text": "Time called The Fault in Our Stars \"damn near genius\".",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Fault_in_Our_Stars"
+  },
+  "overview": "The Fault in Our Stars is a novel by John Green. It is his fourth solo novel, and sixth novel overall. It was published on January 10, 2012."
  },
  {
   "id": "bk_OL15719630W",
@@ -1270,7 +1363,23 @@
    "darkness": 0.6,
    "complexity": 0.6,
    "emotion": 0.52
-  }
+  },
+  "reception": {
+   "summary": "The book became a bestseller and Crichton's signature novel, with largely favorable reviews by critics. In a review for The New York Times, Christopher Lehmann-Haupt described it as \"a superior specimen of the [Frankenstein] myth\" and \"easily the best of Mr. Crichton's novels to date\".",
+   "quotes": [
+    {
+     "text": "In a review for The New York Times, Christopher Lehmann-Haupt described it as \"a superior specimen of the [Frankenstein] myth\" and \"easily the best of Mr.",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "Writing for Entertainment Weekly, Gene Lyons held that the book was \"hard to beat for sheer intellectual entertainment\" largely because it was \"[f]illed with diverting, up-to-date information in easily digestible form\".",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Jurassic_Park_(novel)"
+  },
+  "overview": "Jurassic Park is a 1990 science fiction novel written by Michael Crichton; it is a cautionary tale about genetic engineering that presents the collapse of a zoological park which showcases genetically recreated dinosaurs to illustrate the mathematical concept of chaos theory and its real-world implications. A sequel titled The Lost World, also written by Crichton, was published in 1995."
  },
  {
   "id": "bk_OL20090688W",
@@ -1301,7 +1410,19 @@
    "darkness": 0.25,
    "complexity": 0.39,
    "emotion": 0.89
-  }
+  },
+  "reception": {
+   "summary": "The novel received generally positive reviews, especially for its representation of a gay relationship. Kirkus Reviews said that \"McQuiston's strength is in dialogue\" and their \"rich, well-drawn characters\" and Publishers Weekly called Red, White & Royal Blue an \"extremely promising start\".",
+   "quotes": [
+    {
+     "text": "Kirkus Reviews said that \"McQuiston's strength is in dialogue\" and their \"rich, well-drawn characters\" and Publishers Weekly called Red, White & Royal Blue an \"extremely promising start\".",
+     "outlet": "Kirkus"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Red%2C_White_%26_Royal_Blue"
+  },
+  "overview": "Red, White & Royal Blue is an LGBT romance novel by American author Casey McQuiston, originally published on May 14, 2019, by St. Martin's Griffin. It centers on the character of Alex Claremont-Diaz, the first son of the United States, and his romantic relationship with Prince Henry George Edward James Fox-Mountchristen-Windsor, a British prince."
  },
  {
   "id": "bk_OL17075811W",
@@ -1396,7 +1517,9 @@
    "darkness": 0.65,
    "complexity": 0.6,
    "emotion": 0.45
-  }
+  },
+  "reception": null,
+  "overview": "Snow Crash is a 1992 science fiction novel by Neal Stephenson. Like many of Stephenson's novels, its themes include history, linguistics, anthropology, archaeology, religion, computer science, politics, cryptography, memetics, and philosophy."
  },
  {
   "id": "bk_OL257939W",
@@ -1429,7 +1552,14 @@
    "darkness": 0.64,
    "complexity": 0.71,
    "emotion": 0.6
-  }
+  },
+  "reception": {
+   "summary": "As with its predecessor, A Clash of Kings was positively received by critics. Dorman Shindler of The Dallas Morning News described it as \"one of the best [works] in this particular subgenre\", praising \"the richness of this invented world and its cultures ...",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/A_Clash_of_Kings"
+  },
+  "overview": "A Clash of Kings is the second of seven planned novels in A Song of Ice and Fire by American author George R. R. Martin, an epic fantasy series. It was first published in the United Kingdom on November 16, 1998; the first United States edition followed on February 2, 1999."
  },
  {
   "id": "bk_OL46241W",
@@ -1494,7 +1624,14 @@
    "darkness": 0.44,
    "complexity": 0.57,
    "emotion": 0.77
-  }
+  },
+  "reception": {
+   "summary": "The novel received positive reviews. The Globe and Mail called it \"a cinematic tale with hardscrabble roots, staggering highs and sickening lows.\" The novel was nominated for a Goodreads Choice Award for Best Historical Fiction of 2017, and a finalist for Book of the Month's Book of the Year award in 2017.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Seven_Husbands_of_Evelyn_Hugo"
+  },
+  "overview": "The Seven Husbands of Evelyn Hugo is a historical drama novel by American novelist Taylor Jenkins Reid, published by Atria Books in 2017. It tells the story of the fictional Old Hollywood star Evelyn Hugo, who, at age 79, gives a final interview to unknown journalist Monique Grant. The novel was nominated for a Goodreads Choice Award for Best Historical Fiction in 2017."
  },
  {
   "id": "bk_OL116250W",
@@ -1590,7 +1727,19 @@
    "darkness": 0.55,
    "complexity": 0.42,
    "emotion": 0.59
-  }
+  },
+  "reception": {
+   "summary": "The Lost Hero received generally positive reviews from critics. Publishers Weekly gave a favorable review, stating that \"Riordan's storytelling is as polished as ever, brimming with wit, action, and heart\".",
+   "quotes": [
+    {
+     "text": "Publishers Weekly gave a favorable review, stating that \"Riordan's storytelling is as polished as ever, brimming with wit, action, and heart\".",
+     "outlet": "Publishers Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Lost_Hero"
+  },
+  "overview": "The Lost Hero is a 2010 American children's fantasy action-adventure middle grade children's fiction novel based on Greco-Roman classical mythology written by American author Rick Riordan. It was published on October 12, 2010, and is the first book in The Heroes of Olympus series, a sequel to the Percy Jackson & the Olympians series."
  },
  {
   "id": "bk_OL2163649W",
@@ -1621,7 +1770,14 @@
    "darkness": 0.63,
    "complexity": 0.72,
    "emotion": 0.41
-  }
+  },
+  "reception": {
+   "summary": "Greg Costikyan reviewed The Hitchhiker's Guide to the Galaxy in Ares Magazine #6 and commented that \"The Hitchhiker's Guide is written with superb English wit, far more humorous than any American sitcom.\" The Pequod rated the book a 9.5 (out of 10.0) and called it \"an ingeniously silly sci-fi satire...",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Hitchhiker's_Guide_to_the_Galaxy_(novel)"
+  },
+  "overview": "The Hitchhiker's Guide to the Galaxy is a 1979 science fiction comedy novel by English author Douglas Adams, adapted from the first four parts of his radio comedy series of the same name. It centres on the misadventures of Arthur Dent, the only man to survive the destruction of Earth, as he roams the cosmos and learns the truth behind his very existence."
  },
  {
   "id": "bk_OL21745884W",
@@ -1653,7 +1809,19 @@
    "darkness": 0.75,
    "complexity": 0.67,
    "emotion": 0.5
-  }
+  },
+  "reception": {
+   "summary": "Writing for The New York Times, sci-fi author Alec Nevala-Lee wrote \"For readers who can forgive its shortcomings, the result is an engaging space odyssey.\" Kirkus Reviews gave the book a starred review, describing it as \"an unforgettable story of survival and the power of friendship—nothing short of a science-fiction masterwork.\" In writing her review for The Washington Post, Science Fiction and Fantasy Writers of…",
+   "quotes": [
+    {
+     "text": "The novel debuted at number two on the Los Angeles Times SoCal Bestsellers for Hardcover Fiction and number 6 on The Wall Street Journal Bestselling Books List for Hardcover Fiction during the same month.",
+     "outlet": "Los Angeles Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Project_Hail_Mary"
+  },
+  "overview": "Project Hail Mary is a 2021 hard science fiction novel by American writer Andy Weir. It centers on science teacher and former biologist Ryland Grace, who wakes up aboard a spacecraft, afflicted with amnesia. Project Hail Mary received generally positive reviews and was a finalist for the 2022 Hugo Award for Best Novel."
  },
  {
   "id": "bk_OL262421W",
@@ -1719,7 +1887,23 @@
    "darkness": 0.63,
    "complexity": 0.54,
    "emotion": 0.57
-  }
+  },
+  "reception": {
+   "summary": "And Then There Were None received largely positive reviews on publication.",
+   "quotes": [
+    {
+     "text": "In 1990, the Crime Writers' Association ranked it 19th on its list of The Top 100 Crime Novels of All Time.",
+     "outlet": "Time"
+    },
+    {
+     "text": "Entertainment Weekly later included the novel in its list of “Nine Great Christie Novels”.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/And_Then_There_Were_None"
+  },
+  "overview": "And Then There Were None is a 1939 mystery novel by the English writer Agatha Christie. It is the world's best-selling mystery novel and one of the best-selling books of all time, with more than 100 million copies sold by 2007. It has been adapted for film, television, radio, theatre, and other media more often than any other of Christie's works."
  },
  {
   "id": "bk_OL16085155W",
@@ -1750,7 +1934,19 @@
    "darkness": 0.62,
    "complexity": 0.51,
    "emotion": 0.93
-  }
+  },
+  "reception": {
+   "summary": "Janet Maslin's review of the book for The New York Times mixed mild criticisms with praise. Maslin wrote that Isaacson's biography presented \"an encyclopedic survey of all that Mr. Jobs accomplished, replete with the passion and excitement that it deserves.\" A number of Steve Jobs's family and close colleagues expressed disapproval, including Laurene Powell Jobs, Tim Cook and Jony Ive.",
+   "quotes": [
+    {
+     "text": "Janet Maslin's review of the book for The New York Times mixed mild criticisms with praise.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Steve_Jobs_(book)"
+  },
+  "overview": "Steve Jobs is the authorized self-titled biography of American business magnate and Apple co-founder Steve Jobs. The book was written at the request of Jobs by Walter Isaacson, a former executive at CNN and Time who had previously written best-selling biographies of Benjamin Franklin and Albert Einstein."
  },
  {
   "id": "bk_OL9170454W",
@@ -1814,7 +2010,23 @@
    "darkness": 0.43,
    "complexity": 0.43,
    "emotion": 0.61
-  }
+  },
+  "reception": {
+   "summary": "Writing for The National, Gemma McLaughlin praised the novels for being able to \"capture the attention\" through \"the small stories that make up life\" rather than plot twists and heavy drama. She called the story \"infinitely welcoming with characters that seem like real life friends\", singling out Charlie as \"extremely likeable\" and praising the novels' treatment of his mental health.",
+   "quotes": [
+    {
+     "text": "Publishers Weekly said that the novels' \"leisurely pace and focus on everyday events ...",
+     "outlet": "Publishers Weekly"
+    },
+    {
+     "text": "Kirkus Reviews stated that the placement of panels and their bordering in Volume One \"prevent the visual graphics from going aesthetically stale\" and that the hand-written lettering reinforced the story's human tone.",
+     "outlet": "Kirkus"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Heartstopper_(graphic_novel)"
+  },
+  "overview": "Heartstopper is a British coming-of-age webcomic and graphic novel series written and illustrated by Alice Oseman. It tells the story of Nick Nelson and Charlie Spring, two teenage boys who meet at school and fall in love. The series explores themes including romance, friendship, coming out, identity and mental health."
  },
  {
   "id": "bk_OL16114008W",
@@ -1878,7 +2090,9 @@
    "darkness": 0.57,
    "complexity": 0.6,
    "emotion": 0.74
-  }
+  },
+  "reception": null,
+  "overview": "The Metamorphosis (German: Die Verwandlung) is a novella by Franz Kafka published in 1915. One of Kafka's best-known works, The Metamorphosis tells the story of salesman Gregor Samsa, who wakes one morning to find himself inexplicably transformed into a huge insect and struggles to adjust to his new condition. The novella has been recreated, referenced, or parodied in various popular culture media."
  },
  {
   "id": "bk_OL244537W",
@@ -1942,7 +2156,19 @@
    "darkness": 0.5,
    "complexity": 0.61,
    "emotion": 0.66
-  }
+  },
+  "reception": {
+   "summary": "In its first week of released, the book was #7 on The New York Times Best Seller list. In subsequent weeks, the book was #11, #20, and #25. The Way of Kings received critical acclaim and received praise for its extensive world-building. An early review from the website Unshelved gave the book a positive review.",
+   "quotes": [
+    {
+     "text": "In its first week of released, the book was #7 on The New York Times Best Seller list.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Way_of_Kings"
+  },
+  "overview": "The Way of Kings is an epic fantasy novel written by American author Brandon Sanderson and the first book in The Stormlight Archive series. The novel was published on August 31, 2010, by Tor Books. The Way of Kings consists of one prelude, one prologue, 75 chapters, an epilogue, and nine interludes. It was followed by Words of Radiance in 2014, Oathbringer in 2017, Rhythm of War in 2020 and Wind and Truth in 2024."
  },
  {
   "id": "bk_OL492642W",
@@ -1974,7 +2200,19 @@
    "darkness": 0.56,
    "complexity": 0.5,
    "emotion": 0.72
-  }
+  },
+  "reception": {
+   "summary": "The New York Times called the novel \"both exciting and entertaining.\" While the review notes that the pace sometimes bordered on \"frantic,\" distracting from weaker plot points, the book as a whole remains \"clever\" and \"enjoyably hair-raising.\" Common Sense Media warned parents that this final book in the series contains more violence than the previous entries, but praised the book overall, giving it five out of five…",
+   "quotes": [
+    {
+     "text": "Kirkus Reviews reviewed the book positively, observing that \"Riordan masterfully orchestrates the huge cast of characters and manages a coherent, powerful tale at once exciting, philosophical and tear-jerking.\"",
+     "outlet": "Kirkus"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Last_Olympian"
+  },
+  "overview": "The Last Olympian is a 2009 American children's fantasy action-adventure middle grade children's fiction novel based on Greek mythology written by American author Rick Riordan. It is the fifth and final novel of the original Percy Jackson & the Olympians series and is the direct sequel to The Battle of the Labyrinth."
  },
  {
   "id": "bk_OL492647W",
@@ -2006,7 +2244,14 @@
    "darkness": 0.57,
    "complexity": 0.59,
    "emotion": 0.57
-  }
+  },
+  "reception": {
+   "summary": "The Titan's Curse received relatively positive reviews, which often lauded the humor and action in the story. Children's Literature, which commended the book's fast pace and humor, wrote, \"Readers will relate to good natured Percy, the protagonist.\" Kirkus Reviews awarded it a starred review with, \"This third in the Olympians series makes the Greek myths come alive in a way no dreary classroom unit can ...",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Titan's_Curse"
+  },
+  "overview": "The Titan's Curse is a 2007 American children's fantasy action-adventure middle grade children's fiction novel based on Greek mythology written by American author Rick Riordan."
  },
  {
   "id": "bk_OL5738148W",
@@ -2070,7 +2315,23 @@
    "darkness": 0.63,
    "complexity": 0.66,
    "emotion": 0.8
-  }
+  },
+  "reception": {
+   "summary": "While Spiegelman's work as cartoonist and editor had long been known and respected in the comics community, the media attention after the first volume's publication in 1986 was unexpected. Hundreds of overwhelmingly positive reviews appeared, and Maus became the center of new attention focused on comics.",
+   "quotes": [
+    {
+     "text": "The New York Times intended praise when saying of the book, \"Art Spiegelman doesn't draw comic books\".",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "Spiegelman petitioned The New York Times to move it from \"fiction\" to \"non-fiction\" on the newspaper's bestseller list, saying, \"I shudder to think how David Duke ...",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Maus"
+  },
+  "overview": "Maus, often published as Maus: A Survivor's Tale, is a graphic novel by American cartoonist Art Spiegelman, serialized from 1980 to 1991. It depicts Spiegelman interviewing his father about his experiences as a Polish Jew and Holocaust survivor. The work employs postmodern techniques and represents Jews as mice, Germans as cats and Poles as pigs."
  },
  {
   "id": "bk_OL46309W",
@@ -2101,7 +2362,14 @@
    "darkness": 0.52,
    "complexity": 0.79,
    "emotion": 0.47
-  }
+  },
+  "reception": {
+   "summary": "On its initial publication, Galaxy reviewer Groff Conklin described Second Foundation as \"a thoroughly satisfying and adult play of the scientific imagination\". P. Schuyler Miller reported Second Foundation to be \"good, sound, middle-of-the-road science fiction with a carefully hidden surprise\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Second_Foundation"
+  },
+  "overview": "Second Foundation is the third novel of the Foundation Trilogy, the third published of the Foundation Series by the American writer Isaac Asimov, and the fifth in the in-universe chronology. It was first published in 1953 by Gnome Press."
  },
  {
   "id": "bk_OL81634W",
@@ -2230,7 +2498,14 @@
    "darkness": 0.57,
    "complexity": 0.54,
    "emotion": 0.59
-  }
+  },
+  "reception": {
+   "summary": "Kirkus Reviews wrote of The Maze Runner: \"Hard to put down, this is clearly just a first installment, and it will leave readers dying to find out what comes next.\" Jessica Harrison of the Deseret Morning News labeled The Maze Runner as \"a thrilling adventurous book for kids ages 13+ that will get readers' hearts pumping and leave them asking for more,\" though she noted the \"fictionalized slang\" as a drawback.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Maze_Runner"
+  },
+  "overview": "The Maze Runner is a 2009 dystopian novel by American author James Dashner. It takes place in a world suffering from a coronal mass ejection and whose surviving civilians fight to avoid an apocalyptic illness called the Flare. It is written from the perspective of Thomas, a 16-year-old boy who wakes up with no memories inside an artificially produced maze."
  },
  {
   "id": "bk_OL5969057W",
@@ -2263,7 +2538,23 @@
    "darkness": 0.78,
    "complexity": 0.68,
    "emotion": 0.55
-  }
+  },
+  "reception": {
+   "summary": "Reviews for the novel have been generally positive.",
+   "quotes": [
+    {
+     "text": "The hardcover version of World War Z spent four weeks on The New York Times Best Seller list, peaking at number nine.",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "By November 2011, according to Publishers Weekly, World War Z had sold one million copies in all formats.",
+     "outlet": "Publishers Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/World_War_Z"
+  },
+  "overview": "World War Z: An Oral History of the Zombie War is a 2006 zombie apocalyptic horror novel written by American author Max Brooks."
  },
  {
   "id": "bk_OL5738150W",
@@ -2325,7 +2616,14 @@
    "darkness": 0.53,
    "complexity": 0.6,
    "emotion": 0.8
-  }
+  },
+  "reception": {
+   "summary": "As of July 2022, The Song of Achilles has sold 2 million copies across various formats. The book's sales received a significant boost in 2021 after it was featured in a TikTok video, cited by The New York Times as an example of how \"BookTok\" and viral social media videos increasingly drive sales of literature.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Song_of_Achilles"
+  },
+  "overview": "The Song of Achilles is a 2011 novel by American writer Madeline Miller. Set during the Greek Heroic Age, it is a retelling of the Trojan War as told from the perspective of Patroclus. The novel follows Patroclus' relationship with Achilles, from their initial meeting to their exploits during the Trojan War, with focus on their romantic relationship."
  },
  {
   "id": "bk_OL492640W",
@@ -2389,7 +2687,19 @@
    "darkness": 0.47,
    "complexity": 0.6,
    "emotion": 0.77
-  }
+  },
+  "reception": {
+   "summary": "On November 5, 2019, the BBC News listed The Outsiders on its list of the 100 most influential novels.",
+   "quotes": [
+    {
+     "text": "On November 5, 2019, the BBC News listed The Outsiders on its list of the 100 most influential novels.",
+     "outlet": "BBC"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Outsiders_(novel)"
+  },
+  "overview": "The Outsiders is a coming-of-age novel by S. E. Hinton published in 1967 by Viking Press. The novel is set in Tulsa, Oklahoma in the 1960s—although this is never explicitly stated in the book—and details the conflict between two rival gangs of White Americans divided by their socioeconomic status: the working-class \"greasers\" and the upper-middle-class \"Socs\" (pronounced SOH-shiz—short for Socials)."
  },
  {
   "id": "bk_OL17714701W",
@@ -2420,7 +2730,19 @@
    "darkness": 0.53,
    "complexity": 0.36,
    "emotion": 0.78
-  }
+  },
+  "reception": {
+   "summary": "In the Christian Science Monitor, Katie Ward Beim-Esche wrote, \"Believe the hype: The Hate U Give, Angie Thomas's extraordinary and fearless debut, really is that good.\" Shannon Ozirny of The Globe and Mail also felt it would have wide appeal, \"Ignore the YA label – this should be the one book everyone reads this year.\" On Salon, Erin Keane wrote that the novel is \"topical, urgent, necessary, and if that weren't…",
+   "quotes": [
+    {
+     "text": "Kirkus praised both its writing and timelines: \"With smooth but powerful prose ...",
+     "outlet": "Kirkus"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Hate_U_Give"
+  },
+  "overview": "The Hate U Give is a 2017 young adult novel by Angie Thomas. It is Thomas's debut novel, expanded from a short story she wrote in college in reaction to the police shooting of Oscar Grant. The book is narrated by Starr Carter, a 16-year-old African-American girl from a poor neighborhood who attends an elite private school in a predominantly white, affluent part of the city."
  },
  {
   "id": "bk_OL675783W",
@@ -2453,7 +2775,14 @@
    "darkness": 0.63,
    "complexity": 0.69,
    "emotion": 0.61
-  }
+  },
+  "reception": {
+   "summary": "The Handmaid's Tale helped to cement Atwood's prominence among 20th century writers. Not only was the book deemed well-written and compelling, but Atwood's work was notable for sparking intense debates both in and out of academia.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Handmaid's_Tale"
+  },
+  "overview": "The Handmaid's Tale is a futuristic dystopian novel by Canadian author Margaret Atwood published in 1985. It is set in a near-future New England in a patriarchal, totalitarian theonomic state known as the Republic of Gilead, which has overthrown the United States government. The protagonist, a woman named Offred, occupies the role of a \"Handmaid\": women who are forcibly assigned to bear children for high status men."
  },
  {
   "id": "bk_OL5738154W",
@@ -2547,7 +2876,23 @@
    "darkness": 0.53,
    "complexity": 0.8,
    "emotion": 0.49
-  }
+  },
+  "reception": {
+   "summary": "Critical reception for Caliban's War was predominantly positive, with Kirkus Reviews noting that the book could be enjoyed as a standalone novel but was \"best appreciated after volume one\". Wired.com's Geek Dad and Publishers Weekly both praised the novel, with GeekDad citing the book's \"believable human personalities and technology that is easily recognizable\" as a highlight.",
+   "quotes": [
+    {
+     "text": "Critical reception for Caliban's War was predominantly positive, with Kirkus Reviews noting that the book could be enjoyed as a standalone novel but was \"best appreciated after volume one\".",
+     "outlet": "Kirkus"
+    },
+    {
+     "text": "Wired.com's Geek Dad and Publishers Weekly both praised the novel, with GeekDad citing the book's \"believable human personalities and technology that is easily recognizable\" as a highlight.",
+     "outlet": "Publishers Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Caliban's_War"
+  },
+  "overview": "Caliban's War is a 2012 science fiction novel by James S. A. Corey (pen name of Daniel Abraham and Ty Franck). It is about a conflict in the Solar System that involves the polities Earth, Mars, the Asteroid Belt and the outer planets, and a powerful extraterrestrial biological von Neumann probe. The second book in The Expanse series, it was preceded by Leviathan Wakes."
  },
  {
   "id": "bk_OL8193416W",
@@ -2580,7 +2925,9 @@
    "darkness": 0.5,
    "complexity": 0.6,
    "emotion": 0.59
-  }
+  },
+  "reception": null,
+  "overview": "The Picture of Dorian Gray is an 1890 philosophical fiction and Gothic horror novel by Irish author Oscar Wilde. A shorter novella-length version was published in the July 1890 issue of the American periodical Lippincott's Monthly Magazine, while the novel-length version was published in April 1891."
  },
  {
   "id": "bk_OL16807730W",
@@ -2613,7 +2960,14 @@
    "darkness": 0.48,
    "complexity": 0.44,
    "emotion": 0.71
-  }
+  },
+  "reception": {
+   "summary": "The novel received positive reviews. A journalist of The Guardian praised Riordan's ability to handle the multiple-perspectives format smoothly and referred to his \"subtle and effective\" treatment of \"more mature themes,\" including the revelation of Nico's sexual identity. According to the author, the sexual orientation of the character was not planned but developed during the writing of the books.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_House_of_Hades"
+  },
+  "overview": "The House of Hades is a 2013 American children's fantasy action-adventure middle grade children's fiction novel based on Greek and -Roman classical mythology written by American author Rick Riordan. It was published on October 8, 2013, and is the fourth book in The Heroes of Olympus series, preceded by The Mark of Athena and followed by The Blood of Olympus."
  },
  {
   "id": "bk_OL679348W",
@@ -2679,7 +3033,9 @@
    "darkness": 0.6,
    "complexity": 0.71,
    "emotion": 0.5
-  }
+  },
+  "reception": null,
+  "overview": "The Time Machine is an 1895 dystopian science fiction novella by H. G. Wells about a Victorian scientist known as the Time Traveller who travels to the year 802,701. The work is generally credited with the popularization of the concept of time travel by using a vehicle or device to travel purposely and selectively forward or backward through time."
  },
  {
   "id": "bk_OL514629W",
@@ -2743,7 +3099,19 @@
    "darkness": 0.61,
    "complexity": 0.6,
    "emotion": 0.59
-  }
+  },
+  "reception": {
+   "summary": "Insurgent received mostly-positive reviews from critics. The trade publication Publishers Weekly received the novel enthusiastically: \"Roth knows how to write. So even though this second book of the trilogy that began with Divergent feels like a necessary bridge between the haunting story she created in book one and the hinted-at chaos of book three, readers will be quick to forgive....",
+   "quotes": [
+    {
+     "text": "The trade publication Publishers Weekly received the novel enthusiastically: \"Roth knows how to write.",
+     "outlet": "Publishers Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Insurgent_(novel)"
+  },
+  "overview": "Insurgent is a 2012 dystopian young adult novel by American novelist Veronica Roth and the second book in the Divergent trilogy. As the sequel to the 2011 bestseller Divergent, it continues the story of Tris Prior and the dystopian post-apocalyptic version of Chicago. Following the events of the previous novel, a war now looms as conflict between the factions and their ideologies grows."
  },
  {
   "id": "bk_OL60149W",
@@ -2775,7 +3143,14 @@
    "darkness": 0.57,
    "complexity": 0.56,
    "emotion": 0.63
-  }
+  },
+  "reception": {
+   "summary": "Wendy Graham reviewed Howl's Moving Castle for Adventurer magazine and stated that \"As with most of Diana Wynne Jones' fiction, it's far too good for kids. She is quite simply the best at what she does.\"",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Howl's_Moving_Castle_(novel)"
+  },
+  "overview": "Howl's Moving Castle is a fantasy novel by British author Diana Wynne Jones, first published in 1986 by Greenwillow Books of New York. It was a runner-up for the annual Boston Globe–Horn Book Award, and won the Phoenix Award twenty years later. It was adapted into a Studio Ghibli animated film of the same name in 2004, which was nominated for the Academy Award for Best Animated Feature."
  },
  {
   "id": "bk_OL17610507W",
@@ -2871,7 +3246,23 @@
    "darkness": 0.51,
    "complexity": 0.62,
    "emotion": 0.69
-  }
+  },
+  "reception": {
+   "summary": "The music received critical acclaim.",
+   "quotes": [
+    {
+     "text": "Its songs put words and images to his spectrum of emotions, helping move the story along in a way that people can understand and relate to.\" Dan Jolin of Empire called the soundtrack \"inherently superior\".",
+     "outlet": "Empire"
+    },
+    {
+     "text": "Several publications such as MTV, Den of Geek, IndieWire, Film School Rejects, Fact and Entertainment Weekly, called The Perks of Being a Wallflower one of the \"best soundtracks 2012\".",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Perks_of_Being_a_Wallflower_(soundtrack)"
+  },
+  "overview": "The soundtrack to the 2012 coming-of-age drama film The Perks of Being a Wallflower, written, directed and based on the 1999 novel of the same name by Stephen Chbosky, features a selection of pop, rock and jazz compilations by various artists, handpicked by Chbosky and music supervisor Alexandra Patsavas."
  },
  {
   "id": "bk_OL81629W",
@@ -2904,7 +3295,9 @@
    "darkness": 0.82,
    "complexity": 0.58,
    "emotion": 0.5
-  }
+  },
+  "reception": null,
+  "overview": "The Green Mile is a 1996 serial novel by American writer Stephen King. It tells the story of death row supervisor Paul Edgecombe's encounter with John Coffey, an unusual inmate who displays inexplicable healing and empathetic abilities. The serial novel was released in six volumes before being republished as a single-volume work. The book is an example of magical realism."
  },
  {
   "id": "bk_OL81616W",
@@ -2968,7 +3361,14 @@
    "darkness": 0.6,
    "complexity": 0.5,
    "emotion": 0.9
-  }
+  },
+  "reception": {
+   "summary": "The book received positive reviews. The New York Times described it as \"a story to comfort readers traversing the years between childhood and adulthood,\" and named it an \"Editors' Choice.\" Kirkus Reviews called it \"irresistible, funny and touching,\" with \"strong writing and emotionally expressive characters\"; Later, Kirkus Reviews designated it one of the best 2010 nonfiction books for teens.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Smile_(comic_book)"
+  },
+  "overview": "Smile is an autobiographical graphic novel written by Raina Telgemeier. It was published in February 2010 by Graphix, an imprint of Scholastic Inc. The novel provides an account of the author's life, characterized by dental procedures and struggles with fitting in, from sixth grade to high school. The book originated as a webcomic, which was serialized on Girlamatic."
  },
  {
   "id": "bk_OL1037811W",
@@ -3031,7 +3431,14 @@
    "darkness": 0.5,
    "complexity": 0.48,
    "emotion": 0.53
-  }
+  },
+  "reception": {
+   "summary": "Algis Budrys of Galaxy Science Fiction praised Flowers for Algernon's realistic depiction of people as \"rounded characters\". Stating in August 1966 that Keyes had published little fiction and whether he would publish more was unknown, he concluded \"If this is a beginning, then what a beginning it is, and if it is the high point in a very short career, then what a career\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Flowers_for_Algernon"
+  },
+  "overview": "Flowers for Algernon is a short novelette by American author Daniel Keyes, which he later expanded into a novel and adapted for film and other media. The novelette, written in 1958 and first published in the April 1959 issue of The Magazine of Fantasy & Science Fiction, won the Hugo Award for Best Short Fiction in 1960."
  },
  {
   "id": "bk_OL2096536W",
@@ -3064,7 +3471,14 @@
    "darkness": 0.48,
    "complexity": 0.58,
    "emotion": 0.72
-  }
+  },
+  "reception": {
+   "summary": "The Economist heralded the book's publication, saying \"If there is no place for Watership Down in children's bookshops, then children's literature is dead.\" Peter Prescott, senior book reviewer at Newsweek, gave the novel a glowing review: \"Adams handles his suspenseful narrative more dextrously than most authors who claim to write adventure novels, but his true achievement lies in the consistent, comprehensible and…",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Watership_Down"
+  },
+  "overview": "Watership Down is an adventure novel by English author Richard Adams. Set in Hampshire in southern England, the story features a small group of rabbits. Although they live in their natural wild environment, with burrows, they are anthropomorphised, possessing their own culture, language, proverbs, poetry, and mythology."
  },
  {
   "id": "bk_OL3368288W",
@@ -3097,7 +3511,19 @@
    "darkness": 0.39,
    "complexity": 0.51,
    "emotion": 0.81
-  }
+  },
+  "reception": {
+   "summary": "Interest in the book increased by word of mouth; for example, in churches \"it was hailed as a parable on the joys of giving\". As of 2001, over 5 million copies of the book had been sold, placing it 14th on a list of hardcover \"All-Time Bestselling Children's Books\" from Publishers Weekly. By 2011, 8.5 million copies of the book had been sold.",
+   "quotes": [
+    {
+     "text": "As of 2001, over 5 million copies of the book had been sold, placing it 14th on a list of hardcover \"All-Time Bestselling Children's Books\" from Publishers Weekly.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Giving_Tree"
+  },
+  "overview": "The Giving Tree is an American children's picture book written and illustrated by Shel Silverstein. First published in 1964 by Harper & Row, it has become one of Silverstein's best-known titles, and has been translated into numerous languages."
  },
  {
   "id": "bk_OL18766691W",
@@ -3130,7 +3556,19 @@
    "darkness": 0.63,
    "complexity": 0.6,
    "emotion": 0.66
-  }
+  },
+  "reception": {
+   "summary": "Where the Crawdads Sing, Owens's debut novel, was published by G. P. Putnam's Sons on August 14, 2018. The book was selected for Reese Witherspoon's book club in September that year, and for Barnes & Noble's Best Books of 2018. By December 2019, the book had sold over 4.5 million copies, and it sold more print copies in 2019 than any other adult title, fiction or non-fiction.",
+   "quotes": [
+    {
+     "text": "It topped The New York Times Fiction Best Sellers of 2019 and The New York Times Fiction Best Sellers of 2020.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Where_the_Crawdads_Sing"
+  },
+  "overview": "Where the Crawdads Sing is a 2018 coming-of-age murder mystery novel by American zoologist Delia Owens. The story follows two timelines that slowly intertwine. The first timeline describes the life and adventures of a young girl named Kya as she grows up isolated in the marshes of North Carolina."
  },
  {
   "id": "bk_OL2897797W",
@@ -3163,7 +3601,9 @@
    "darkness": 0.65,
    "complexity": 0.72,
    "emotion": 0.61
-  }
+  },
+  "reception": null,
+  "overview": "V is the titular protagonist of the comic book series V for Vendetta, created by Alan Moore and David Lloyd. He is a mysterious anarchist, vigilante, and freedom fighter who is easily recognizable by his Guy Fawkes mask, long black hair wig, and dark clothing consisting of a wide-brimmed black felt hat, a flowing black cape, black jacket, black pants, black boots, and a belt to hold his daggers."
  },
  {
   "id": "bk_OL486967W",
@@ -3262,7 +3702,9 @@
    "darkness": 0.57,
    "complexity": 0.57,
    "emotion": 0.73
-  }
+  },
+  "reception": null,
+  "overview": "Anne of Green Gables is a 1908 novel by the Canadian author Lucy Maud Montgomery (published as L. M. Montgomery). Written for all ages, it has been considered a classic children's novel since the mid-20th century."
  },
  {
   "id": "bk_OL74128W",
@@ -3324,7 +3766,14 @@
    "darkness": 0.58,
    "complexity": 0.59,
    "emotion": 0.68
-  }
+  },
+  "reception": {
+   "summary": "In its first week of release, Words of Radiance debuted at No. 1 on the New York Times Hardcover Fiction Bestseller list. It also reached No. 1 on the combined print/ebook bestseller list and the Kobo Bestseller list. It was at No. 3 on the National Indie Bestseller list, and at No. 6 on the Southern California Independent Bookseller Association bestselling hardcover fiction list.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Words_of_Radiance"
+  },
+  "overview": "Words of Radiance is an epic fantasy novel written by American author Brandon Sanderson and the second book in The Stormlight Archive series. The novel was published on March 4, 2014, by Tor Books. Words of Radiance consists of one prologue, 89 chapters, an epilogue and 14 interludes. It is preceded by The Way of Kings (2010) and followed by Oathbringer (2017)."
  },
  {
   "id": "bk_OL17834026W",
@@ -3355,7 +3804,14 @@
    "darkness": 0.55,
    "complexity": 0.58,
    "emotion": 0.7
-  }
+  },
+  "reception": {
+   "summary": "Reception of the series was mostly positive. The A.V. Club reviewer Samantha Nelson describes the novel as both weighed down by its ambition and less complex than its predecessors.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oathbringer"
+  },
+  "overview": "Oathbringer is an epic fantasy novel written by American author Brandon Sanderson and the third book in The Stormlight Archive series. It was published by Tor Books on November 14, 2017. Oathbringer consists of one prologue, 122 chapters, 14 interludes and an epilogue. It is preceded by Words of Radiance and followed by Rhythm of War."
  },
  {
   "id": "bk_OL17332479W",
@@ -3388,7 +3844,14 @@
    "darkness": 0.5,
    "complexity": 0.5,
    "emotion": 0.69
-  }
+  },
+  "reception": {
+   "summary": "The New York Times recommended Six of Crows in their 2015 YA Crossover shortlist: \"There’s conflict between morality and amorality and an appetite for sometimes grimace-inducing violence that recalls the 'Game of Thrones' series. But for every bloody exchange there are pages of crackling dialogue and sumptuous description. Bardugo dives deep into this world, with full color and sound.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Six_of_Crows"
+  },
+  "overview": "Six of Crows is a fantasy novel written by the American author Leigh Bardugo and published by Henry Holt and Co. in 2015. The story follows a thieving crew and is primarily set in the city of Ketterdam, which is loosely inspired by Dutch Republic–era Amsterdam. The plot is told from third-person viewpoints of five (seven if the opening and closing chapters are considered) different characters."
  },
  {
   "id": "bk_OL6216050W",
@@ -3483,7 +3946,19 @@
    "darkness": 0.66,
    "complexity": 0.66,
    "emotion": 0.58
-  }
+  },
+  "reception": {
+   "summary": "The Stand received critical acclaim and was nominated for the World Fantasy Award for Best Novel in 1979. In 2003, the novel was listed at number 53 on the BBC's The Big Read poll.",
+   "quotes": [
+    {
+     "text": "In 2003, the novel was listed at number 53 on the BBC's The Big Read poll.",
+     "outlet": "BBC"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Stand"
+  },
+  "overview": "The Stand is an epic post-apocalyptic dark fantasy novel written by American author Stephen King and first published in 1978 by Doubleday. The plot centers on a deadly pandemic of weaponized influenza and its aftermath, in which some of the few surviving humans gather into factions that are each led by a personification of either good or evil and seem fated to clash with each other."
  },
  {
   "id": "bk_OL45886W",
@@ -3516,7 +3991,23 @@
    "darkness": 0.5,
    "complexity": 0.64,
    "emotion": 0.66
-  }
+  },
+  "reception": {
+   "summary": "In 2012, The Witches was ranked number 81 among all-time children's novels in a survey published by School Library Journal, a monthly with a primarily US audience. It was the third of four books by Dahl among the Top 100, more than any other writer. In November 2019, the BBC listed The Witches on its list of the 100 most influential novels. In 2023, the novel was ranked by BBC at no.",
+   "quotes": [
+    {
+     "text": "In November 2019, the BBC listed The Witches on its list of the 100 most influential novels.",
+     "outlet": "BBC"
+    },
+    {
+     "text": "In 2023, the novel was ranked by BBC at no.",
+     "outlet": "BBC"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Witches_(novel)"
+  },
+  "overview": "The Witches is a 1983 children's novel by British author Roald Dahl. A dark fantasy, the story is set partly in Norway and partly in England, and features the experiences of a young English boy and his Norwegian grandmother in a world where child-hating societies of witches secretly exist in every country."
  },
  {
   "id": "bk_OL262438W",
@@ -3549,7 +4040,9 @@
    "darkness": 0.59,
    "complexity": 0.6,
    "emotion": 0.6
-  }
+  },
+  "reception": null,
+  "overview": "The Sign of the Four, also called The Sign of Four, is an 1890 detective novel, the second novel featuring Sherlock Holmes by British writer Sir Arthur Conan Doyle. Doyle wrote four novels and 56 short stories featuring the fictional detective."
  },
  {
   "id": "bk_OL58402W",
@@ -3647,7 +4140,19 @@
    "darkness": 0.63,
    "complexity": 0.76,
    "emotion": 0.57
-  }
+  },
+  "reception": {
+   "summary": "On Rotten Tomatoes, it has a 98% approval rating based on 57 reviews. The website's critics consensus reads, \"Station Eleven rewards patient viewers with an insightful and thematically rich assertion that—even in the post-apocalypse—the show must go on.\" On the review aggregator Metacritic, the series has a weighted average score of 81 out of 100 based on 27 critics, indicating \"universal acclaim\".",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, it has a 98% approval rating based on 57 reviews.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Station_Eleven_(miniseries)"
+  },
+  "overview": "Station Eleven is an American post-apocalyptic dystopian fiction television miniseries created by Patrick Somerville based on the 2014 novel of the same name by Emily St. John Mandel. The miniseries premiered on HBO Max on December 16, 2021, and ran for ten episodes until January 13, 2022."
  },
  {
   "id": "bk_OL16821606W",
@@ -3679,7 +4184,23 @@
    "darkness": 0.52,
    "complexity": 0.58,
    "emotion": 0.79
-  }
+  },
+  "reception": {
+   "summary": "All the Light We Cannot See has received critical acclaim. It won the 2015 Pulitzer Prize for Fiction and the 2015 Andrew Carnegie Medal for Excellence in Fiction, was shortlisted for the National Book Award, and was the runner-up for the 2015 Dayton Literary Peace Prize for fiction.",
+   "quotes": [
+    {
+     "text": "It was considered among the best books released in 2014 by Entertainment Weekly, Kirkus Reviews, The New York Times, The Washington Post, and NPR.",
+     "outlet": "Entertainment Weekly"
+    },
+    {
+     "text": "JoJo Marshall of Entertainment Weekly wrote that All the Light We Cannot See is a \"not-to-be-missed tale [that] is a testament to the buoyancy of our dreams\".",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/All_the_Light_We_Cannot_See"
+  },
+  "overview": "All the Light We Cannot See is a 2014 war novel by American author Anthony Doerr. The novel is set during World War II. It revolves around the characters Marie-Laure LeBlanc, a blind French girl who takes refuge in her great-uncle's house in Saint-Malo after Paris is invaded by Nazi Germany, and Werner Pfennig, a bright German boy who is accepted into a military school because of his skills in radio technology."
  },
  {
   "id": "bk_OL9200964W",
@@ -3870,7 +4391,14 @@
    "darkness": 0.62,
    "complexity": 0.75,
    "emotion": 0.49
-  }
+  },
+  "reception": {
+   "summary": "Anathem received several positive reviews. Paul Boutin wrote in The Wall Street Journal that \"the lasting satisfaction of Anathem derives … from Mr. Stephenson's wry contempt for today's just-Google-it mindset.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Anathem"
+  },
+  "overview": "Anathem is a science fiction novel by American writer Neal Stephenson, published in 2008. Major themes include the many-worlds interpretation of quantum mechanics and the philosophical debate between Platonic realism and nominalism."
  },
  {
   "id": "bk_OL1914022W",
@@ -3902,7 +4430,9 @@
    "darkness": 0.64,
    "complexity": 0.55,
    "emotion": 0.68
-  }
+  },
+  "reception": null,
+  "overview": "The Pillars of the Earth is a historical novel by Welsh author Ken Follett published in 1989 about the building of a cathedral in the fictional town of Kingsbridge, England. Set in the 12th century, the novel covers the time between the sinking of the White Ship and the murder of Thomas Becket, but focuses primarily on the Anarchy."
  },
  {
   "id": "bk_OL16361029W",
@@ -3935,7 +4465,23 @@
    "darkness": 0.46,
    "complexity": 0.54,
    "emotion": 0.73
-  }
+  },
+  "reception": {
+   "summary": "Publishers Weekly gave a positive review for the book, praising the character of America. The School Library Journal, MTV, and Booklist all gave positive reviews for The Selection while in contrast, Kirkus Reviews panned the novel. The A.V. Club gave a mostly positive review, commenting that it \"is something of a Hunger Games rip-off, but at least it's an entertaining one\".",
+   "quotes": [
+    {
+     "text": "Publishers Weekly gave a positive review for the book, praising the character of America.",
+     "outlet": "Publishers Weekly"
+    },
+    {
+     "text": "The School Library Journal, MTV, and Booklist all gave positive reviews for The Selection  while in contrast, Kirkus Reviews panned the novel.",
+     "outlet": "Kirkus"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Selection"
+  },
+  "overview": "The Selection is a young adult novel by Kiera Cass first published on April 14, 2012, by HarperCollins. It is the first in a five-book series, followed by The Elite (2013), The One (2014), The Heir (2015) and The Crown (May 2016). The last two take place twenty years after the events in the first three. In addition, four spin-off novellas were released."
  },
  {
   "id": "bk_OL17203232W",
@@ -3967,7 +4513,9 @@
    "darkness": 0.37,
    "complexity": 0.33,
    "emotion": 0.73
-  }
+  },
+  "reception": null,
+  "overview": "Dork Diaries is a children's book series written by Rachel Renée Russell and illustrated by Nikki Russell and Rachel Renée Russell. The series, written in a diary format, uses drawings, doodles, and comic strips to chronicle the daily life of its 14 (later 15)-year-old protagonist, Nikki Maxwell. As of December 2024, more than 55 million copies of the Dork Diaries books have been sold."
  },
  {
   "id": "bk_OL17793648W",
@@ -4095,7 +4643,9 @@
    "darkness": 0.65,
    "complexity": 0.65,
    "emotion": 0.52
-  }
+  },
+  "reception": null,
+  "overview": "Children of Time, published on June 4, 2015, is a science fiction novel by author Adrian Tchaikovsky. The novel has two plot strands, one of which follows the evolution of a civilization of genetically modified Portia labiata (arachnid) on a terraformed exoplanet, guided by an artificial intelligence based on the personality of one of the human terraformers of the planet."
  },
  {
   "id": "bk_OL453654W",
@@ -4127,7 +4677,9 @@
    "darkness": 0.7,
    "complexity": 0.62,
    "emotion": 0.65
-  }
+  },
+  "reception": null,
+  "overview": "Reaper Man is a fantasy novel by British writer Terry Pratchett. Published in 1991, it is the 11th Discworld novel and the second to focus on Death. The title is a reference to Alex Cox's movie Repo Man."
  },
  {
   "id": "bk_OL17203233W",
@@ -4159,7 +4711,19 @@
    "darkness": 0.42,
    "complexity": 0.33,
    "emotion": 0.78
-  }
+  },
+  "reception": {
+   "summary": "The novel spent 40 weeks on The New York Times Best Seller list in the Young Adult fiction section. It has been published in 30 languages.",
+   "quotes": [
+    {
+     "text": "The novel spent 40 weeks on The New York Times Best Seller list in the Young Adult fiction section.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/To_All_the_Boys_I've_Loved_Before"
+  },
+  "overview": "To All the Boys I've Loved Before is a 2014 young adult romance novel by American author Jenny Han, first published by Simon & Schuster and released on April 15, 2014. Han was inspired to write the book based on her own habit of writing love letters to boys she had crushes on as a teenager. The novel was followed by two sequels, P.S."
  },
  {
   "id": "bk_OL20128158W",
@@ -4192,7 +4756,14 @@
    "darkness": 0.7,
    "complexity": 0.69,
    "emotion": 0.52
-  }
+  },
+  "reception": {
+   "summary": "Gideon the Ninth has received endorsements from authors V. E. Schwab, Charles Stross, Robin Sloan, Warren Ellis, Martha Wells, Amal El-Mohtar, Kiersten White, Annalee Newitz, Genevieve Cogman, Kameron Hurley, Django Wexler, Yoon Ha Lee, Rebecca Roanhorse, Richard Kadrey, Rin Chupeco, Max Gladstone, and Brooke Bolander.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Gideon_the_Ninth"
+  },
+  "overview": "Gideon the Ninth is a 2019 science fantasy novel by the New Zealand writer Tamsyn Muir. It is Muir's debut novel and the first in her The Locked Tomb series, followed by Harrow the Ninth (2020), Nona the Ninth (2022), and the upcoming Alecto the Ninth."
  },
  {
   "id": "bk_OL26663382W",
@@ -4256,7 +4827,19 @@
    "darkness": 0.66,
    "complexity": 0.69,
    "emotion": 0.64
-  }
+  },
+  "reception": {
+   "summary": "The Sunday Telegraph review was positive, and described the book as \"entertaining ... even profound\". Kingsley Amis in The Observer acclaimed the novel as \"cheerful horror\", writing \"Mr Burgess has written a fine farrago of outrageousness, one which incidentally suggests a view of juvenile violence I can't remember having met before\".",
+   "quotes": [
+    {
+     "text": "The Times also reviewed the book negatively, describing it as \"a somewhat clumsy experiment with science fiction [with] clumsy cliches about juvenile delinquency\".",
+     "outlet": "The Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/A_Clockwork_Orange_(novel)"
+  },
+  "overview": "A Clockwork Orange is a novel by the English writer Anthony Burgess, published on 17 March 1962. It is set in a near-future society that has a youth subculture of extreme violence. The teenage protagonist, Alex, narrates his violent exploits and his experiences with state authorities intent on reforming him."
  },
  {
   "id": "bk_OL453733W",
@@ -4288,7 +4871,9 @@
    "darkness": 0.57,
    "complexity": 0.68,
    "emotion": 0.8
-  }
+  },
+  "reception": null,
+  "overview": "Going Postal is a fantasy novel by British writer Terry Pratchett, the 33rd book in his Discworld series, released in the United Kingdom on 25 September 2004. Unlike most of Pratchett's Discworld novels, Going Postal is divided into chapters, a feature previously seen only in Pratchett's children's books and the Science of Discworld series."
  },
  {
   "id": "bk_OL32195W",
@@ -4320,7 +4905,19 @@
    "darkness": 0.93,
    "complexity": 0.58,
    "emotion": 0.51
-  }
+  },
+  "reception": {
+   "summary": "Steven Poole, writing in The Guardian, admired the book and interpreted it as a parody of academia: \"Danielewski . . .",
+   "quotes": [
+    {
+     "text": "Steven Poole, writing in The Guardian, admired the book and interpreted it as a parody of academia: \"Danielewski .",
+     "outlet": "The Guardian"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/House_of_Leaves"
+  },
+  "overview": "House of Leaves (stylized with \"House\" in blue) is the debut novel by American author Mark Z. Danielewski, published in March 2000 by Pantheon Books. A bestseller, it has been translated into a number of languages, and is followed by a companion piece, The Whalestoe Letters."
  },
  {
   "id": "bk_OL17824318W",
@@ -4416,7 +5013,19 @@
    "darkness": 0.48,
    "complexity": 0.58,
    "emotion": 0.65
-  }
+  },
+  "reception": {
+   "summary": "The series has a largely positive reception. Kirkus Reviews said that the first book was \"wholesome shading to bland, but well-stocked with exotic creatures and locales.\" Booklist Reviews called it an \"exciting start to a promising series.\"",
+   "quotes": [
+    {
+     "text": "Kirkus Reviews said that the first book was \"wholesome shading to bland, but well-stocked with exotic creatures and locales.\" Booklist Reviews called it an \"exciting start to a promising series.\"",
+     "outlet": "Kirkus"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Keeper_of_the_Lost_Cities"
+  },
+  "overview": "Keeper of the Lost Cities is an upper-middle-grade fantasy series by Shannon Messenger that has appeared on the New York Times Best Seller list for a total of ten weeks."
  },
  {
   "id": "bk_OL41081W",
@@ -4545,7 +5154,19 @@
    "darkness": 0.68,
    "complexity": 0.79,
    "emotion": 0.57
-  }
+  },
+  "reception": {
+   "summary": "Kirkus Reviews called Morning Star an \"ambitious and satisfying conclusion to a monumental saga\", noting that \"Brown creates an alternative universe that is multilayered and seething with characters who exist in a shadow world between history and myth, much as in Frank Herbert's Dune.\" Marc Snetiker of Entertainment Weekly referred to Brown as \"science fiction's best-kept secret\", calling the novel \"devastating and…",
+   "quotes": [
+    {
+     "text": "Jason Sheehan of NPR praised Brown's vivid action scenes but wrote that this third installment is heavy on exposition.",
+     "outlet": "NPR"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Morning_Star_(Brown_novel)"
+  },
+  "overview": "Morning Star is a 2016 science fiction novel by American author Pierce Brown; it is the third in his Red Rising trilogy. Morning Star picks up as the lowborn Darrow escapes capture and resumes his campaign against the tyrannical Sovereign of the Society. Pragmatic as ever, he begins to amass the resources and allies he needs to defeat the forces of the Sovereign."
  },
  {
   "id": "bk_OL16810944W",
@@ -4610,7 +5231,9 @@
    "darkness": 0.7,
    "complexity": 0.65,
    "emotion": 0.54
-  }
+  },
+  "reception": null,
+  "overview": "Parable of the Sower is a 1993 speculative fiction novel by American writer Octavia E. Butler. It is set in a post-apocalyptic Earth heavily affected by climate change and social inequality. The novel follows Lauren Olamina, a young woman who can feel the pain of others and becomes displaced from her home."
  },
  {
   "id": "bk_OL3171087W",
@@ -4643,7 +5266,19 @@
    "darkness": 0.7,
    "complexity": 0.63,
    "emotion": 0.63
-  }
+  },
+  "reception": {
+   "summary": "We Have Always Lived in the Castle was named by Time magazine as one of the \"Ten Best Novels\" of 1962. In March 2002, Book magazine named Mary Katherine Blackwood the seventy-first \"best character in fiction since 1900\". The lead paragraph of We Have Always Lived in the Castle has been described as \"coercive,\" so much so that the reader finds it \"impossible not to go on reading\".",
+   "quotes": [
+    {
+     "text": "We Have Always Lived in the Castle was named by Time magazine as one of the \"Ten Best Novels\" of 1962.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/We_Have_Always_Lived_in_the_Castle"
+  },
+  "overview": "We Have Always Lived in the Castle is a 1962 psychological horror novel by American author Shirley Jackson. It was Jackson's final novel and was published with a dedication to publisher Pascal Covici three years before the author's death in 1965. The novel is written in the voice of eighteen-year-old Mary Katherine \"Merricat\" Blackwood, who lives with her agoraphobic sister and ailing uncle on an estate."
  },
  {
   "id": "bk_OL5735175W",
@@ -4769,7 +5404,23 @@
    "darkness": 0.46,
    "complexity": 0.44,
    "emotion": 0.75
-  }
+  },
+  "reception": {
+   "summary": "Lonesome Dove was the winner of the 1986 Pulitzer Prize in Fiction, and received favorable reviews. In The New York Times, Nicholas Lemann praised the novel as \"thrilling and almost perfectly realized,\" calling it \"the great cowboy novel\". Writing for The Washington Post, Noel Perrin praised the dialogue and the breadth of the plot, viewing each scene as \"freshly realized\".",
+   "quotes": [
+    {
+     "text": "In The New York Times, Nicholas Lemann praised the novel as \"thrilling and almost perfectly realized,\" calling it \"the great cowboy novel\".",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "Writing for The Washington Post, Noel Perrin praised the dialogue and the breadth of the plot, viewing each scene as \"freshly realized\".",
+     "outlet": "The Washington Post"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lonesome_Dove"
+  },
+  "overview": "Lonesome Dove is a 1985 epic Western novel by American writer Larry McMurtry. It is the first published book of the Lonesome Dove series and the third installment in the series chronologically. It was a bestseller and won the 1986 Pulitzer Prize for Fiction. In 1989, it was adapted as a TV miniseries starring Tommy Lee Jones and Robert Duvall, which won both critical and popular acclaim."
  },
  {
   "id": "bk_OL20080323W",
@@ -4832,7 +5483,23 @@
    "darkness": 0.5,
    "complexity": 0.67,
    "emotion": 0.71
-  }
+  },
+  "reception": {
+   "summary": "The Glass Castle was positively reviewed by The New York Times, Kirkus Reviews, Entertainment Weekly, The Atlanta Journal-Constitution, and Publishers Weekly, among others. However, several school districts have found the book's inclusion in syllabi to be controversial. In The New York Times Book Review, critic and novelist Francine Prose wrote, \"The autobiographer is faced with the daunting challenge of ...",
+   "quotes": [
+    {
+     "text": "The Glass Castle was positively reviewed by The New York Times, Kirkus Reviews, Entertainment Weekly, The Atlanta Journal-Constitution, and Publishers Weekly, among others.",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "In The New York Times Book Review, critic and novelist Francine Prose wrote, \"The autobiographer is faced with the daunting challenge of ...",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Glass_Castle"
+  },
+  "overview": "The Glass Castle is a 2005 memoir by American author Jeannette Walls. Walls recounts her dysfunctional and nomadic yet vibrant upbringing, emphasizing her resilience and her father's attempts toward redemption. Despite her family's flaws, their love for each other and her unique perspective on life allowed her to create a successful life of her own, culminating in a career in journalism in New York City."
  },
  {
   "id": "bk_OL110959W",
@@ -4865,7 +5532,19 @@
    "darkness": 0.51,
    "complexity": 0.79,
    "emotion": 0.56
-  }
+  },
+  "reception": {
+   "summary": "On the book's release, the journalist Mildred Adams at The New York Times wrote of it, \"The translations, made by various hands, are not only good they are downright enjoyable.",
+   "quotes": [
+    {
+     "text": "On the book's release, the journalist Mildred Adams at The New York Times wrote of it, \"The translations, made by various hands, are not only good they are downright enjoyable.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Labyrinths_(short_story_collection)"
+  },
+  "overview": "Labyrinths (1962, 1964, 1970, 1983) is a collection of short stories and essays by Argentine writer and poet Jorge Luis Borges. It was translated into English, published soon after Borges won the International Publishers' Prize with Samuel Beckett. It includes, among other stories, \"Tlön, Uqbar, Orbis Tertius\", \"The Garden of Forking Paths\", and \"The Library of Babel\", three of Borges's most famous stories."
  },
  {
   "id": "bk_OL59800W",
@@ -4898,7 +5577,19 @@
    "darkness": 0.63,
    "complexity": 0.7,
    "emotion": 0.59
-  }
+  },
+  "reception": {
+   "summary": "The Left Hand of Darkness has received highly positive critical responses since its publication. In 1970 it won both the Nebula Award, given by the Science Fiction Writers of America, and the Hugo Award, determined by science fiction fans. In 1987, science fiction news and trade journal Locus ranked it number two among \"All-Time Best SF Novels\", based on a poll of subscribers.",
+   "quotes": [
+    {
+     "text": "In 1987, science fiction news and trade journal Locus ranked it number two among \"All-Time Best SF Novels\", based on a poll of subscribers.",
+     "outlet": "Time"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Left_Hand_of_Darkness"
+  },
+  "overview": "The Left Hand of Darkness is a science fiction novel by the American writer Ursula K. Le Guin. Published in 1969, its popularity established Le Guin's status as a major author of science fiction. The novel is set in the fictional universe of the Hainish Cycle, a series of novels and short stories by Le Guin, which she introduced in the 1964 short story \"The Dowry of Angyar\"."
  },
  {
   "id": "bk_OL16282945W",
@@ -4931,7 +5622,23 @@
    "darkness": 0.68,
    "complexity": 0.67,
    "emotion": 0.6
-  }
+  },
+  "reception": {
+   "summary": "Critical reception to Cinder has been mostly positive, with the Los Angeles Times calling the book \"refreshing\" and praising the character of Cinder. Publishers Weekly also positively reviewed the book, saying that the characters are \"easy to get invested in\". Booklist called Cinder a \"fresh spin on Cinderella\". The Wall Street Journal wrote that the book was an \"undemanding and surprisingly good-natured read\".",
+   "quotes": [
+    {
+     "text": "Critical reception to Cinder has been mostly positive, with the Los Angeles Times calling the book \"refreshing\" and praising the character of Cinder.",
+     "outlet": "Los Angeles Times"
+    },
+    {
+     "text": "Publishers Weekly also positively reviewed the book, saying that the characters are \"easy to get invested in\".",
+     "outlet": "Publishers Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Cinder_(novel)"
+  },
+  "overview": "Cinder is the 2012 debut young adult science fiction novel of American author Marissa Meyer, published by Macmillan Publishers through their subsidiary Feiwel & Friends. It is the first book in The Lunar Chronicles and is followed by Scarlet. The story is loosely based on the classic fairytale Cinderella. Cinder was selected as one of IndieBound's Kids' Next List for winter 2012."
  },
  {
   "id": "bk_OL15946464W",
@@ -5096,7 +5803,23 @@
    "darkness": 0.75,
    "complexity": 0.56,
    "emotion": 0.64
-  }
+  },
+  "reception": {
+   "summary": "The Vampire Lestat debuted at No. 9 on The New York Times Best Seller list, spending a total of six weeks on the list. The New York Times critic Michiko Kakutani found Rice's vampire mythology \"more compelling than the rest of the novel\", and wrote, \"While Lestat's not an unlikable vampire ...",
+   "quotes": [
+    {
+     "text": "9 on The New York Times Best Seller list, spending a total of six weeks on the list.",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "The New York Times critic Michiko Kakutani found Rice's vampire mythology \"more compelling than the rest of the novel\", and wrote, \"While Lestat's not an unlikable vampire ...",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Vampire_Lestat"
+  },
+  "overview": "The Vampire Lestat (1985) is a vampire novel by American writer Anne Rice, the second in her Vampire Chronicles, following Interview with the Vampire (1976). The story is told from the point of view of the vampire Lestat de Lioncourt, while Interview is narrated by Louis de Pointe du Lac."
  },
  {
   "id": "bk_OL35616W",
@@ -5128,7 +5851,14 @@
    "darkness": 0.58,
    "complexity": 0.66,
    "emotion": 0.67
-  }
+  },
+  "reception": {
+   "summary": "Russ, Joanna. \"Books\". The Magazine of Fantasy and Science Fiction (February 1980): 94–101. Snyder, John C. \"Kindred by Octavia E. Butler\" Archived December 16, 2018, at the Wayback Machine, SciFiDimensions. June 2004.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Kindred_(novel)"
+  },
+  "overview": "Kindred (1979) is a novel by American writer Octavia E. Butler that incorporates time travel and is modeled on slave narratives. Widely popular, it has frequently been chosen as a text by community-wide reading programs and book organizations, and for high school and college courses."
  },
  {
   "id": "bk_OL17825802W",
@@ -5222,7 +5952,23 @@
    "darkness": 0.7,
    "complexity": 0.66,
    "emotion": 0.46
-  }
+  },
+  "reception": {
+   "summary": "Golden Son debuted at #6 on The New York Times Best Seller list, and won the 2015 Goodreads Choice Award for Science Fiction.",
+   "quotes": [
+    {
+     "text": "Golden Son debuted at #6 on The New York Times Best Seller list, and won the 2015 Goodreads Choice Award for Science Fiction.",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "Publishers Weekly called the novel \"twisty\" and noted that hero Darrow \"is forced to manipulate both friend and foe, a burden described vividly and to great effect ...",
+     "outlet": "Publishers Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Golden_Son"
+  },
+  "overview": "Golden Son is a 2015 science fiction novel by American author Pierce Brown; it is the second in his Red Rising trilogy. The sequel to 2014's Red Rising, Golden Son continues to follow lowborn Darrow's plan to destroy the Society from within. It debuted at #6 on The New York Times Best Seller list and won the 2015 Goodreads Choice Award for Science Fiction."
  },
  {
   "id": "bk_OL16151508W",
@@ -5255,7 +6001,23 @@
    "darkness": 0.64,
    "complexity": 0.54,
    "emotion": 0.63
-  }
+  },
+  "reception": {
+   "summary": "Miss Peregrine's spent seventy weeks on The New York Times Best Sellers list for children's chapter books. It reached the number one spot on the list on April 29, 2012, after being on the list for forty-five weeks. It remained there until 20 May, when it dropped to the fourth spot on the list. The book dropped off the list on September 9, 2012, after sixty-three weeks.",
+   "quotes": [
+    {
+     "text": "Miss Peregrine's spent seventy weeks on The New York Times Best Sellers list for children's chapter books.",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "According to Deborah Netburn for the Los Angeles Times, the best part of the novel is \"a series of black-and-white photos sprinkled throughout the book\".",
+     "outlet": "Los Angeles Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Miss_Peregrine's_Home_for_Peculiar_Children"
+  },
+  "overview": "Miss Peregrine's Home for Peculiar Children is a 2011 contemporary fantasy debut novel by American author Ransom Riggs. The story is told through a combination of narrative and a mix of vernacular and found photography from the personal archives of collectors listed by the author."
  },
  {
   "id": "bk_OL35223328W",
@@ -5318,7 +6080,14 @@
    "darkness": 0.54,
    "complexity": 0.49,
    "emotion": 0.89
-  }
+  },
+  "reception": {
+   "summary": "In March 2022, People ranked The Viscount Who Loved Me, a perennial fan favorite, as the best book of the Bridgerton series for its enemies-to-lovers trope \"full of banter and chemistry\" with character development for the central couple, \"both as a pair and on their own.\" #1 New York Times Best Seller USA Today Best Seller List Publishers Weekly Mass Market Bestseller New York Times Extended Bestseller list 2001…",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Viscount_Who_Loved_Me"
+  },
+  "overview": "The Viscount Who Loved Me is a 2000 historical romance novel written by Julia Quinn, first published by Avon. It is the second novel of Quinn's Bridgerton series set in Regency England and tells the story of Anthony, Viscount Bridgerton, the eldest Bridgerton sibling. It is a #1 New York Times Best Seller."
  },
  {
   "id": "bk_OL14975242W",
@@ -5513,7 +6282,9 @@
    "darkness": 0.53,
    "complexity": 0.51,
    "emotion": 0.59
-  }
+  },
+  "reception": null,
+  "overview": "Amulet is a children's fantasy, adventure, graphic novel series written and illustrated by Kazu Kibuishi and published by Scholastic Corporation. Beginning in 2008 with The Stonekeeper, the series was published by Scholastic under their Graphix imprint."
  },
  {
   "id": "bk_OL11967338W",
@@ -5545,7 +6316,9 @@
    "darkness": 0.57,
    "complexity": 0.6,
    "emotion": 0.59
-  }
+  },
+  "reception": null,
+  "overview": "Turn Coat is the 11th book in The Dresden Files, Jim Butcher's continuing series about wizard detective Harry Dresden. It debuted at number one on the New York Times Best Seller list for hardcover fiction."
  },
  {
   "id": "bk_OL17116910W",
@@ -5738,7 +6511,19 @@
    "darkness": 0.56,
    "complexity": 0.61,
    "emotion": 0.5
-  }
+  },
+  "reception": {
+   "summary": "Publishers Weekly described the book as \"fantasy served with a twist of Monty Python, parody that works by never taking itself too seriously\", with \"sly puns\" and \"lively, outrageous characters\".",
+   "quotes": [
+    {
+     "text": "Publishers Weekly described the book as \"fantasy served with a twist of Monty Python, parody that works by never taking itself too seriously\", with \"sly puns\" and \"lively, outrageous characters\".",
+     "outlet": "Publishers Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Feet_of_Clay_(novel)"
+  },
+  "overview": "Feet of Clay is a fantasy novel by British writer Terry Pratchett, the nineteenth book in the Discworld series, published in 1996. The story follows the members of the City Watch, as they attempt to solve murders apparently committed by a golem, as well as the unusual poisoning of the Patrician, Lord Vetinari."
  },
  {
   "id": "bk_OL2056808W",
@@ -5769,7 +6554,23 @@
    "darkness": 0.6,
    "complexity": 0.49,
    "emotion": 0.81
-  }
+  },
+  "reception": {
+   "summary": "While Spiegelman's work as cartoonist and editor had long been known and respected in the comics community, the media attention after the first volume's publication in 1986 was unexpected. Hundreds of overwhelmingly positive reviews appeared, and Maus became the center of new attention focused on comics.",
+   "quotes": [
+    {
+     "text": "The New York Times intended praise when saying of the book, \"Art Spiegelman doesn't draw comic books\".",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "Spiegelman petitioned The New York Times to move it from \"fiction\" to \"non-fiction\" on the newspaper's bestseller list, saying, \"I shudder to think how David Duke ...",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Maus"
+  },
+  "overview": "Maus, often published as Maus: A Survivor's Tale, is a graphic novel by American cartoonist Art Spiegelman, serialized from 1980 to 1991. It depicts Spiegelman interviewing his father about his experiences as a Polish Jew and Holocaust survivor. The work employs postmodern techniques and represents Jews as mice, Germans as cats and Poles as pigs."
  },
  {
   "id": "bk_OL1974548W",
@@ -5863,7 +6664,14 @@
    "darkness": 0.55,
    "complexity": 0.74,
    "emotion": 0.78
-  }
+  },
+  "reception": {
+   "summary": "Upon release, the book was generally well-received. Midnight's Children was awarded the 1981 Booker Prize, the English Speaking Union Literary Award, and the James Tait Prize. It also was awarded The Best of the Booker prize twice, in 1993 and 2008 (this was an award given out by the Booker committee to celebrate the 25th and 40th anniversary of the award).",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Midnight's_Children"
+  },
+  "overview": "Midnight's Children is the second novel by Indian-British writer Salman Rushdie, published in 1981 by Jonathan Cape with cover design by Bill Botten, about India's transition from British colonial rule to independence and partition. It is a postcolonial, postmodern and magical realist story told by its chief protagonist, Saleem Sinai, set in the context of historical events."
  },
  {
   "id": "bk_OL24236112W",
@@ -5957,7 +6765,19 @@
    "darkness": 0.56,
    "complexity": 0.45,
    "emotion": 0.59
-  }
+  },
+  "reception": {
+   "summary": "The novel received positive reviews, but overall much less attention than the first in the series. Preeja Aravind of The Free Press Journal opined that the book appeals to Riordan's already established fantasy, with the old characters showing development. While stating the book is a standalone, Aravind recommends reading the predecessor first. Gillian P.",
+   "quotes": [
+    {
+     "text": "In contrast, The Times of India compliments the pacing and writes that it gives the reader time to stop and think about the contrast between immortality and a meaningful life.",
+     "outlet": "The Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Dark_Prophecy"
+  },
+  "overview": "The Dark Prophecy is 2017 American children's fantasy action-adventure middle grade children's fiction novel based on Greco-Roman classical mythology written by American author Rick Riordan. It was published on May 2, 2017, and is the second book in The Trials of Apollo series, the second spin-off of the Percy Jackson & the Olympians series. The book and its cover art by John Rocco were first announced in 2016."
  },
  {
   "id": "bk_OL17625829W",
@@ -6023,7 +6843,14 @@
    "darkness": 0.68,
    "complexity": 0.55,
    "emotion": 0.64
-  }
+  },
+  "reception": {
+   "summary": "According to critic Jay Clayton, the book is written for a technical or geek audience. The book drew praise from both Stephenson's science fiction fan base and literary critics and buyers.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Cryptonomicon"
+  },
+  "overview": "Cryptonomicon is a 1999 novel by American author Neal Stephenson, drawing thematic parallels between wartime secrecy and modern information control, emphasizing the role of information in political, military, and personal domains. The story is set in two different time periods."
  },
  {
   "id": "bk_OL16341254W",
@@ -6054,7 +6881,19 @@
    "darkness": 0.49,
    "complexity": 0.31,
    "emotion": 0.68
-  }
+  },
+  "reception": {
+   "summary": "A Monster Calls received widespread acclaim. Philip Pullman, author of the fantasy trilogy His Dark Materials, praised the novel as \"compelling ... powerful and impressive\", Similarly, The New York Times critic Jessica Bruder wrote \"this is one profoundly sad story\" and called the novel \"a potent piece of art,\" applauding Kay's illustrations.",
+   "quotes": [
+    {
+     "text": "powerful and impressive\",  Similarly, The New York Times critic Jessica Bruder wrote \"this is one profoundly sad story\" and called the novel \"a potent piece of art,\" applauding Kay's illustrations.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/A_Monster_Calls"
+  },
+  "overview": "A Monster Calls is a Low fantasy novel written for young adults by Patrick Ness, adapted from an original idea by Siobhan Dowd, illustrated by Jim Kay and published by Walker Books in 2011. Set in present-day England, it features a boy who struggles to cope with the consequences of his mother's illness. He is repeatedly visited in the middle of the night by a monster who tells stories."
  },
  {
   "id": "bk_OL262426W",
@@ -6087,7 +6926,9 @@
    "darkness": 0.73,
    "complexity": 0.61,
    "emotion": 0.59
-  }
+  },
+  "reception": null,
+  "overview": "The Case-Book of Sherlock Holmes is the final set of twelve (out of a total of fifty-six) Sherlock Holmes short stories by British writer Arthur Conan Doyle first published in the Strand Magazine between October 1921 and April 1927."
  },
  {
   "id": "bk_OL46876W",
@@ -6119,7 +6960,23 @@
    "darkness": 0.72,
    "complexity": 0.65,
    "emotion": 0.46
-  }
+  },
+  "reception": {
+   "summary": "The Lost World spent eight weeks as number one on the New York Times Best Seller List, from October 8, 1995, to November 26, 1995, and it remained on the list as late as March 1996. People wrote: \"Action-packed and camera-ready, The Lost World is to its predecessor what microwave dinners are to home-cooked meals: hardly authentic, but in a pinch fully satisfying\".",
+   "quotes": [
+    {
+     "text": "Michiko Kakutani of The New York Times gave the novel a negative review and called it a \"tired rehash\" of Jurassic Park.",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "Tom De Haven of Entertainment Weekly gave the novel a \"B−\" rating and wrote that it \"is like a videogame in prose—a few hundred frantic pages of run, hide, kill, and die.",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Lost_World_(Crichton_novel)"
+  },
+  "overview": "The Lost World is a 1995 science fiction action novel written by Michael Crichton, and the sequel to his 1990 novel Jurassic Park. It is Crichton's tenth novel under his own name, his twentieth overall, and the only sequel he ever wrote. It was published by Knopf. A paperback edition followed in 1996."
  },
  {
   "id": "bk_OL84925W",
@@ -6183,7 +7040,23 @@
    "darkness": 0.32,
    "complexity": 0.42,
    "emotion": 0.82
-  }
+  },
+  "reception": {
+   "summary": "Writing for The National, Gemma McLaughlin praised the novels for being able to \"capture the attention\" through \"the small stories that make up life\" rather than plot twists and heavy drama. She called the story \"infinitely welcoming with characters that seem like real life friends\", singling out Charlie as \"extremely likeable\" and praising the novels' treatment of his mental health.",
+   "quotes": [
+    {
+     "text": "Publishers Weekly said that the novels' \"leisurely pace and focus on everyday events ...",
+     "outlet": "Publishers Weekly"
+    },
+    {
+     "text": "Kirkus Reviews stated that the placement of panels and their bordering in Volume One \"prevent the visual graphics from going aesthetically stale\" and that the hand-written lettering reinforced the story's human tone.",
+     "outlet": "Kirkus"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Heartstopper_(graphic_novel)"
+  },
+  "overview": "Heartstopper is a British coming-of-age webcomic and graphic novel series written and illustrated by Alice Oseman. It tells the story of Nick Nelson and Charlie Spring, two teenage boys who meet at school and fall in love. The series explores themes including romance, friendship, coming out, identity and mental health."
  },
  {
   "id": "bk_OL115602W",
@@ -6278,7 +7151,23 @@
    "darkness": 0.27,
    "complexity": 0.4,
    "emotion": 0.87
-  }
+  },
+  "reception": {
+   "summary": "Writing for The National, Gemma McLaughlin praised the novels for being able to \"capture the attention\" through \"the small stories that make up life\" rather than plot twists and heavy drama. She called the story \"infinitely welcoming with characters that seem like real life friends\", singling out Charlie as \"extremely likeable\" and praising the novels' treatment of his mental health.",
+   "quotes": [
+    {
+     "text": "Publishers Weekly said that the novels' \"leisurely pace and focus on everyday events ...",
+     "outlet": "Publishers Weekly"
+    },
+    {
+     "text": "Kirkus Reviews stated that the placement of panels and their bordering in Volume One \"prevent the visual graphics from going aesthetically stale\" and that the hand-written lettering reinforced the story's human tone.",
+     "outlet": "Kirkus"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Heartstopper_(graphic_novel)"
+  },
+  "overview": "Heartstopper is a British coming-of-age webcomic and graphic novel series written and illustrated by Alice Oseman. It tells the story of Nick Nelson and Charlie Spring, two teenage boys who meet at school and fall in love. The series explores themes including romance, friendship, coming out, identity and mental health."
  },
  {
   "id": "bk_OL2959302W",
@@ -6374,7 +7263,9 @@
    "darkness": 0.5,
    "complexity": 0.52,
    "emotion": 0.66
-  }
+  },
+  "reception": null,
+  "overview": "Sadako and the Thousand Paper Cranes is a children's historical novel written by Canadian-American author Eleanor Coerr and published in 1977. It is based on the true story of Sadako Sasaki, a victim of the atomic bombing of Hiroshima, Japan, in World War II, who set out to create a thousand origami cranes when dying of leukemia from radiation caused by the bomb."
  },
  {
   "id": "bk_OL59448W",
@@ -6407,7 +7298,19 @@
    "darkness": 0.52,
    "complexity": 0.64,
    "emotion": 0.8
-  }
+  },
+  "reception": {
+   "summary": "The paperback version of The Price of Salt sold nearly one million copies before its new edition as Carol in 1990. The novel was received well, and Highsmith received letters addressed to \"Claire Morgan\" through her publisher thanking her for writing a story that lesbian women could identify with.",
+   "quotes": [
+    {
+     "text": "When BBC 2's The Late Show presenter Sarah Dunant asked her in 1990 if Carol constituted a \"literary coming out\", she replied looking irked: \"I'll pass that one to Mrs.",
+     "outlet": "BBC"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Price_of_Salt"
+  },
+  "overview": "The Price of Salt (later republished under the title Carol) is a 1952 romance novel by Patricia Highsmith, first published under the pseudonym \"Claire Morgan.\" Highsmith—known as a suspense writer based on her psychological thriller Strangers on a Train—used an alias as she did not want to be tagged as \"a lesbian-book writer\", and she also used her own life references for characters and occurrences in the story."
  },
  {
   "id": "bk_OL1915012W",
@@ -6438,7 +7341,9 @@
    "darkness": 0.58,
    "complexity": 0.47,
    "emotion": 0.8
-  }
+  },
+  "reception": null,
+  "overview": "The Hiding Place or Hiding Place may refer to:"
  },
  {
   "id": "bk_OL17356063W",
@@ -6503,7 +7408,19 @@
    "darkness": 0.81,
    "complexity": 0.63,
    "emotion": 0.59
-  }
+  },
+  "reception": {
+   "summary": "The series received critical acclaim, winning the Eisner Award for Best Continuing Series in 2010 and prompting Eric Sunde of IGN comics to call it \"one of the best monthly comics available\". Among its fans are author Max Brooks.",
+   "quotes": [
+    {
+     "text": "The series received critical acclaim, winning the Eisner Award for Best Continuing Series in 2010 and prompting Eric Sunde of IGN comics to call it \"one of the best monthly comics available\".",
+     "outlet": "IGN"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Walking_Dead_(comic_book)"
+  },
+  "overview": "The Walking Dead is an American zombie apocalypse comic book series created by writer Robert Kirkman and artist Tony Moore (who provided the art for the first six issues and cover art for the first twenty-four). Charlie Adlard provided the artwork for the remainder of the series. Beginning in 2003 and published by Image Comics, the series ran for 193 issues, with Kirkman unexpectedly ending the series in 2019."
  },
  {
   "id": "bk_OL20085413W",
@@ -6534,7 +7451,14 @@
    "darkness": 0.62,
    "complexity": 0.61,
    "emotion": 0.56
-  }
+  },
+  "reception": {
+   "summary": "Dog Man has received positive reviews from book critics. Darienne Stewart of Common Sense Media rated the first two books four stars out of five, saying that the first book Dog Man was \"riotous, silly fun with soft touch by Underpants creator\", and the second book, Dog Man: Unleashed has \"half-man, half-dog, all-heart hero delights in silly sequel\".",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Dog_Man"
+  },
+  "overview": "Dog Man is an American children's graphic novel series by author and illustrator Dav Pilkey. A spinoff of Pilkey's Captain Underpants series, Dog Man revolves around the adventures of the titular character, a half-man, half-dog hybrid who works as a police officer. As of 2025, there are 14 books in the series. The latest book, Dog Man: Big Jim Believes, was released on November 11, 2025."
  },
  {
   "id": "bk_OL19669249W",
@@ -6600,7 +7524,9 @@
    "darkness": 0.67,
    "complexity": 0.61,
    "emotion": 0.8
-  }
+  },
+  "reception": null,
+  "overview": "Stone Butch Blues is a novel by Leslie Feinberg. Written from the perspective of stone butch lesbian Jess Goldberg, it intimately details her life in the last half of the 20th century in New York. While fictional, the work takes large inspiration from Feinberg's lived experiences, describing it as \"Like my own life, this novel defies easy classification."
  },
  {
   "id": "bk_OL628450W",

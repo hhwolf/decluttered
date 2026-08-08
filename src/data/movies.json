@@ -32,7 +32,23 @@
    "intensity": 0.55,
    "emotion": 0.78
   },
-  "popularity": 1
+  "popularity": 1,
+  "reception": {
+   "summary": "The Shawshank Redemption opened to generally positive reviews. Some reviewers compared the film to other well-received prison dramas, including Birdman of Alcatraz, Cool Hand Luke, and Riot in Cell Block 11. Gene Siskel said that, like One Flew Over the Cuckoo's Nest, The Shawshank Redemption is an inspirational drama about overcoming overbearing authority.",
+   "quotes": [
+    {
+     "text": "Entertainment Weekly's Owen Gleiberman said that Freeman makes the Red character feel genuine and \"lived-in\".",
+     "outlet": "Entertainment Weekly"
+    },
+    {
+     "text": "Janet Maslin of The New York Times said that Freeman was quietly impressive, but lamented that Red's role in the film had limited range, restricted to observing Andy.",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Shawshank_Redemption"
+  },
+  "overview": "The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank Redemption. The film tells the story of banker Andy Dufresne (Tim Robbins), who is sentenced to life in Shawshank State Penitentiary for the murders of his wife and her lover, despite his claims of innocence."
  },
  {
   "id": "mv_tt0468569",
@@ -68,7 +84,23 @@
    "intensity": 0.84,
    "emotion": 0.57
   },
-  "popularity": 1
+  "popularity": 1,
+  "reception": {
+   "summary": "The Dark Knight received critical acclaim. On Rotten Tomatoes, the film holds a 94% approval rating from the aggregated reviews of 341 critics.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, the film holds a 94% approval rating from the aggregated reviews of 341 critics.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert said that it, alongside Iron Man, had redefined the potential of superhero films by combining comic-book tropes with real world events.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Dark_Knight"
+  },
+  "overview": "The Dark Knight is a 2008 superhero film directed by Christopher Nolan, from a screenplay co-written with his brother Jonathan. Based on the DC Comics superhero Batman, it is the sequel to Batman Begins (2005), and the second installment in The Dark Knight trilogy."
  },
  {
   "id": "mv_tt1375666",
@@ -105,7 +137,23 @@
    "intensity": 0.73,
    "emotion": 0.54
   },
-  "popularity": 1
+  "popularity": 1,
+  "reception": {
+   "summary": "On Rotten Tomatoes, Inception holds an approval rating of 87% based on 363 reviews, with an average rating of 8.40/10.",
+   "quotes": [
+    {
+     "text": "On Rotten Tomatoes, Inception holds an approval rating of 87% based on 363 reviews, with an average rating of 8.40/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "With Inception, viewers have a chance to see that notion get a state-of-the-art update.\" Kenneth Turan of the Los Angeles Times felt that Nolan was able to blend \"the best of traditional and modern film making.",
+     "outlet": "Los Angeles Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Inception"
+  },
+  "overview": "Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. He is offered a chance to have his criminal history erased as payment for the implantation of another person's idea into a target's subconscious."
  },
  {
   "id": "mv_tt0137523",
@@ -142,7 +190,23 @@
    "intensity": 0.73,
    "emotion": 0.59
   },
-  "popularity": 1
+  "popularity": 1,
+  "reception": {
+   "summary": "Cineaste's Gary Crowdus summarized the critical reception at the time, \"Many critics praised Fight Club, hailing it as one of the most exciting, original and thought-provoking films of the year.\" He wrote of the negative opinion, \"While Fight Club had numerous critical champions, the film's critical attackers were far more vocal, a negative chorus which became hysterical about what they felt to be the excessively…",
+   "quotes": [
+    {
+     "text": "Richard Schickel of Time described the mise en scène as dark and damp: \"It enforces the contrast between the sterilities of his characters' aboveground life and their underground one.",
+     "outlet": "Time"
+    },
+    {
+     "text": "The film review website Metacritic surveyed 36 critics and assessed 24 reviews as positive, 10 as mixed and 2 as negative.",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Fight_Club"
+  },
+  "overview": "Fight Club is a 1999 American film directed by David Fincher and starring Brad Pitt, Edward Norton, and Helena Bonham Carter. It is based on the 1996 novel Fight Club by Chuck Palahniuk. Norton plays the unnamed narrator, who is discontented with his white-collar job."
  },
  {
   "id": "mv_tt0816692",
@@ -179,7 +243,23 @@
    "intensity": 0.69,
    "emotion": 0.61
   },
-  "popularity": 1
+  "popularity": 1,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, 73% of 373 critic reviews are positive, with an average of 7.1/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, 73% of 373 critic reviews are positive, with an average of 7.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Scott Foundas, chief film critic at Variety, said that Interstellar is \"as visually and conceptually audacious as anything Nolan has yet done\" and considered the film \"more personal\" than Nolan's previous films.",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Interstellar_(film)"
+  },
+  "overview": "Interstellar is a 2014 epic scientific fiction film directed by Christopher Nolan, who co-wrote the screenplay with his brother, Jonathan Nolan. It has an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine."
  },
  {
   "id": "mv_tt0109830",
@@ -215,7 +295,19 @@
    "intensity": 0.57,
    "emotion": 0.88
   },
-  "popularity": 1
+  "popularity": 1,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 75% of 158 critics' reviews are positive, with an average rating of 7.80/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 75% of 158 critics' reviews are positive, with an average rating of 7.80/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Forrest_Gump"
+  },
+  "overview": "Forrest Gump is a 1994 American comedy-drama film directed by Robert Zemeckis. An adaptation of the 1986 novel of the same name by Winston Groom, the film's screenplay was written by Eric Roth. It stars Tom Hanks in the title role, alongside Robin Wright, Gary Sinise, Mykelti Williamson, and Sally Field in lead roles."
  },
  {
   "id": "mv_tt0110912",
@@ -251,7 +343,23 @@
    "intensity": 0.54,
    "emotion": 0.7
   },
-  "popularity": 1
+  "popularity": 1,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 92% of 185 critics' reviews are positive, with an average rating of 9.3/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 92% of 185 critics' reviews are positive, with an average rating of 9.3/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert called it \"a comedy about blood, guts, violence, strange sex, drugs, fixed fights, dead body disposal, leather freaks and a wristwatch that makes a dark journey down through the generations...",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pulp_Fiction"
+  },
+  "overview": "Pulp Fiction is a 1994 American crime film written and directed by Quentin Tarantino from a story he conceived with Roger Avary. It tells four intertwining tales of crime and violence in Los Angeles. The film stars John Travolta, Samuel L. Jackson, Bruce Willis, Tim Roth, Ving Rhames, and Uma Thurman."
  },
  {
   "id": "mv_tt0133093",
@@ -287,7 +395,23 @@
    "intensity": 0.77,
    "emotion": 0.45
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "The Matrix was praised by many critics, as well as filmmakers, and authors of science fiction, especially for its \"spectacular action\" scenes and its \"groundbreaking special effects\". Some have described The Matrix as one of the best science fiction films of all time; Entertainment Weekly called The Matrix \"the most influential action movie of the generation\".",
+   "quotes": [
+    {
+     "text": "Some have described The Matrix as one of the best science fiction films of all time; Entertainment Weekly called The Matrix \"the most influential action movie of the generation\".",
+     "outlet": "Entertainment Weekly"
+    },
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film holds an approval rating of 83% based on 210 reviews, with an average score of 7.7/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Matrix"
+  },
+  "overview": "The Matrix is a 1999 science fiction action film written and directed by the Wachowskis. The first installment in the Matrix film series, it stars Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving, and Joe Pantoliano. It depicts a dystopian future in which humanity is unknowingly trapped inside the Matrix, a simulated reality created by intelligent machines."
  },
  {
   "id": "mv_tt0068646",
@@ -323,7 +447,23 @@
    "intensity": 0.54,
    "emotion": 0.75
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "The Godfather has received widespread critical acclaim and is seen as one of the greatest and most influential films of all time, particularly of the gangster genre. On review aggregator Rotten Tomatoes, the film holds an approval rating of 97% based on 155 reviews, with an average rating of 9.8/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film holds an approval rating of 97% based on 155 reviews, with an average rating of 9.8/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "She concluded that \"The Godfather is popular melodrama, but it expresses a new tragic realism.\" Roger Ebert of the Chicago Sun Times named The Godfather the best film of 1972.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Godfather"
+  },
+  "overview": "The Godfather is a 1972 American epic gangster film directed by Francis Ford Coppola, who co-wrote the screenplay with Mario Puzo based on Puzo's best-selling 1969 novel. The film features an ensemble cast that includes Marlon Brando, Al Pacino, James Caan, Richard Castellano, Robert Duvall, Sterling Hayden, John Marley, Richard Conte and Diane Keaton."
  },
  {
   "id": "mv_tt0120737",
@@ -360,7 +500,23 @@
    "intensity": 0.71,
    "emotion": 0.71
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, The Lord of the Rings: The Fellowship of the Ring holds an approval rating of 91% based on 269 reviews. The website's critics consensus reads, \"Full of eye-popping special effects, and featuring a pitch-perfect cast, The Lord of the Rings: The Fellowship of the Ring brings J.R.R.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, The Lord of the Rings: The Fellowship of the Ring holds an approval rating of 91% based on 269 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Tolkien's classic to vivid life.\" Metacritic, which uses a weighted average, assigned the film a score of 92 out of 100 based on 34 critics, indicating \"universal acclaim\".",
+     "outlet": "Metacritic"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring"
+  },
+  "overview": "The Lord of the Rings: The Fellowship of the Ring is a 2001 epic fantasy film directed by Peter Jackson from a screenplay by Fran Walsh, Philippa Boyens, and Jackson. It is based on J. R. R. Tolkien's 1954 The Fellowship of the Ring, the first volume of the novel The Lord of the Rings. The film is the first instalment in The Lord of the Rings trilogy."
  },
  {
   "id": "mv_tt0167260",
@@ -397,7 +553,14 @@
    "intensity": 0.67,
    "emotion": 0.73
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "The Return of the King received \"generally favorable\" reviews across all systems; the Game Boy Advance version holds an aggregate score of 77 out of 100 on Metacritic, based on 13 reviews; the GameCube version 84 out of 100, based on 23 reviews; the PC version 78 out of 100, based on 18 reviews; the PlayStation 2 version 85 out of 100, based on 31 reviews; and the Xbox version 84 out of 100, based on 31 reviews.",
+   "quotes": [],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings%3A_The_Return_of_the_King_(video_game)"
+  },
+  "overview": "The Lord of the Rings: The Return of the King is a 2003 hack and slash game developed by EA Redwood Shores for the PlayStation 2 and Windows. It was ported to the GameCube and Xbox by Hypnos Entertainment, to the Game Boy Advance by Griptonite Games, to mobile by ImaginEngine, and to Mac OS X by Beenox. The game was published by Electronic Arts. It is the sequel to the 2002 game The Lord of the Rings: The Two Towers."
  },
  {
   "id": "mv_tt0114369",
@@ -434,7 +597,19 @@
    "intensity": 0.71,
    "emotion": 0.6
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "Seven received generally positive reviews. Critics such as Roger Ebert and Desson Howe described Seven as an intelligent, well-made film that could comfortably stand alongside other thrillers.",
+   "quotes": [
+    {
+     "text": "Critics such as Roger Ebert and Desson Howe described Seven as an intelligent, well-made film that could comfortably stand alongside other thrillers.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Seven_(1995_film)"
+  },
+  "overview": "Seven (often stylized as Se7en) is a 1995 American crime thriller film directed by David Fincher and written by Andrew Kevin Walker. It stars Brad Pitt and Morgan Freeman, with Gwyneth Paltrow and John C. McGinley in supporting roles."
  },
  {
   "id": "mv_tt1345836",
@@ -470,7 +645,23 @@
    "intensity": 0.82,
    "emotion": 0.44
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "The Dark Knight Rises received positive reviews from critics. In a Metacritic review of year-end lists from 133 critics, 17 placed the film in their top ten. Film review aggregator Rotten Tomatoes gave The Dark Knight Rises an approval rating of 87% based on 376 reviews, and a rating average of 8/10.",
+   "quotes": [
+    {
+     "text": "In a Metacritic review of year-end lists from 133 critics, 17 placed the film in their top ten.",
+     "outlet": "Metacritic"
+    },
+    {
+     "text": "Film review aggregator Rotten Tomatoes gave The Dark Knight Rises an approval rating of 87% based on 376 reviews, and a rating average of 8/10.",
+     "outlet": "Rotten Tomatoes"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Dark_Knight_Rises"
+  },
+  "overview": "The Dark Knight Rises is a 2012 superhero film based on the DC Comics character Batman. Directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan, and the story with David S. Goyer, it is the final installment in Nolan's The Dark Knight trilogy, and the sequel to The Dark Knight (2008)."
  },
  {
   "id": "mv_tt0167261",
@@ -507,7 +698,23 @@
    "intensity": 0.67,
    "emotion": 0.73
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, The Two Towers holds an approval rating of 95% based on 288 reviews.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, The Two Towers holds an approval rating of 95% based on 288 reviews.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Nev Pierce for the BBC gave the film four stars out of five, and wrote that while it lacked \"the first film's wow-factor\", it surpassed The Fellowship of the Ring \"in terms of wit, action and narrative drive\".",
+     "outlet": "BBC"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings%3A_The_Two_Towers"
+  },
+  "overview": "The Lord of the Rings: The Two Towers is a 2002 epic fantasy film directed by Peter Jackson from a screenplay by Fran Walsh, Philippa Boyens, Stephen Sinclair, and Jackson, based on 1954's The Two Towers, the second volume of the novel The Lord of the Rings by J. R. R. Tolkien. The sequel to 2001's The Lord of the Rings: The Fellowship of the Ring, the film is the second instalment in The Lord of the Rings trilogy."
  },
  {
   "id": "mv_tt1853728",
@@ -543,7 +750,23 @@
    "intensity": 0.61,
    "emotion": 0.61
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "On review aggregator Rotten Tomatoes, the film holds an approval rating of 87% based on 296 reviews, and an average rating of 8/10.",
+   "quotes": [
+    {
+     "text": "On review aggregator Rotten Tomatoes, the film holds an approval rating of 87% based on 296 reviews, and an average rating of 8/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "In 2025, the film ranked number 59 on the \"Readers' Choice\" edition of The New York Times' list of the \"100 Best Movies of the 21st Century\".",
+     "outlet": "The New York Times"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Django_Unchained"
+  },
+  "overview": "Django Unchained ( JANG-goh) is a 2012 American revisionist Western film written and directed by Quentin Tarantino. Produced by Tarantino's A Band Apart and Columbia Pictures, it stars Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, and Samuel L. Jackson with Walton Goggins, Dennis Christopher, James Remar, Michael Parks, and Don Johnson in supporting roles."
  },
  {
   "id": "mv_tt0172495",
@@ -580,7 +803,23 @@
    "intensity": 0.69,
    "emotion": 0.65
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 80% of 260 critics' reviews are positive, with an average rating of 7.1/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 80% of 260 critics' reviews are positive, with an average rating of 7.1/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Entertainment Weekly called the opening battle sequence \"extraordinary\", and described Scott as a \"visual artist at his most deluxe.\" Michael Wilmington of The Chicago Tribune called Gladiator \"visually electrifying\".",
+     "outlet": "Entertainment Weekly"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Gladiator_(2000_film)"
+  },
+  "overview": "Gladiator is a 2000 epic action adventure drama film directed by Ridley Scott and written by David Franzoni, John Logan, and William Nicholson from a story by Franzoni. It stars Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed, Derek Jacobi, Djimon Hounsou, and Richard Harris."
  },
  {
   "id": "mv_tt0993846",
@@ -617,7 +856,23 @@
    "intensity": 0.66,
    "emotion": 0.59
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "On the review aggregator website Rotten Tomatoes, 79% of 284 critics' reviews are positive, with an average rating of 7.8/10.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 79% of 284 critics' reviews are positive, with an average rating of 7.8/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Peter Travers of Rolling Stone magazine named The Wolf of Wall Street as the third-best movie of 2013, behind 12 Years a Slave and Gravity.",
+     "outlet": "Rolling Stone"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Wolf_of_Wall_Street_(2013_film)"
+  },
+  "overview": "The Wolf of Wall Street is a 2013 American epic biographical dark comedy crime film co-produced and directed by Martin Scorsese, written by Terence Winter, and based on Jordan Belfort's 2007 memoir. It loosely recounts Belfort's career as a stockbroker in New York City and how his firm, Stratton Oakmont, engaged in rampant corruption and fraud on Wall Street, leading to his downfall."
  },
  {
   "id": "mv_tt0361748",
@@ -653,7 +908,23 @@
    "intensity": 0.7,
    "emotion": 0.88
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "Review aggregator Rotten Tomatoes reports that 89% of 332 critics have given the film a positive review, with a rating average of 7.8/10.",
+   "quotes": [
+    {
+     "text": "Review aggregator Rotten Tomatoes reports that 89% of 332 critics have given the film a positive review, with a rating average of 7.8/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Despite this, Anne Thompson of Variety praised the film, but opined that it was not a masterpiece, claiming: \"Inglourious Basterds is great fun to watch, but the movie isn't entirely engaging ...",
+     "outlet": "Variety"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Inglourious_Basterds"
+  },
+  "overview": "Inglourious Basterds is a 2009 black comedy war film written and directed by Quentin Tarantino. It stars an ensemble cast including Brad Pitt, Christoph Waltz, Michael Fassbender, Eli Roth, Diane Kruger, Daniel Brühl, Til Schweiger, and Mélanie Laurent."
  },
  {
   "id": "mv_tt0102926",
@@ -690,7 +961,23 @@
    "intensity": 0.78,
    "emotion": 0.7
   },
-  "popularity": 0.99
+  "popularity": 0.99,
+  "reception": {
+   "summary": "Foster, Hopkins, and Levine garnered much acclaim for their performances. On the review aggregator website Rotten Tomatoes, 95% of 154 critics' reviews are positive.",
+   "quotes": [
+    {
+     "text": "On the review aggregator website Rotten Tomatoes, 95% of 154 critics' reviews are positive.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "Roger Ebert of the Chicago Sun-Times specifically mentioned the \"terrifying qualities\" of Hannibal Lecter.",
+     "outlet": "Roger Ebert"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Silence_of_the_Lambs_(film)"
+  },
+  "overview": "The Silence of the Lambs is a 1991 American psychological horror thriller film directed by Jonathan Demme and written by Ted Tally, adapted from Thomas Harris's 1988 novel. It stars Jodie Foster as Clarice Starling, a young FBI trainee who is hunting a serial killer known as \"Buffalo Bill\" (Ted Levine), who skins his female victims."
  },
  {
   "id": "mv_tt0372784",
@@ -725,7 +1012,23 @@
    "intensity": 0.68,
    "emotion": 0.56
   },
-  "popularity": 0.98
+  "popularity": 0.98,
+  "reception": {
+   "summary": "Review aggregator Rotten Tomatoes gives Batman Begins an approval rating of 85% based on 285 reviews, with an average rating of 7.7/10.",
+   "quotes": [
+    {
+     "text": "Review aggregator Rotten Tomatoes gives Batman Begins an approval rating of 85% based on 285 reviews, with an average rating of 7.7/10.",
+     "outlet": "Rotten Tomatoes"
+    },
+    {
+     "text": "The New Yorker's David Denby did not share Berardinelli and Turan's opinion.",
+     "outlet": "The New Yorker"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Batman_Begins"
+  },
+  "overview": "Batman Begins is a 2005 superhero film based on the DC Comics character Batman. Directed by Christopher Nolan, who co-wrote the screenplay with David S. Goyer, the film stars Christian Bale as Bruce Wayne / Batman, with Michael Caine, Liam Neeson, Katie Holmes, Gary Oldman, Cillian Murphy, Tom Wilkinson, Rutger Hauer, Ken Watanabe, and Morgan Freeman in supporting roles."
  },
  {
   "id": "mv_tt7286456",
