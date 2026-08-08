@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { ChevronRight, ChevronLeft, Sparkles, Check } from "lucide-react";
 import { buildInitialProfile } from "../engine/engine.mjs";
 import { GOAL_KEYS } from "../engine/suggest.mjs";
@@ -6,7 +6,7 @@ import { allGenres, paletteFor } from "../domains.js";
 import { allCities, filterByCities, countForCities } from "../engine/location.mjs";
 import { Chip, Cover, ItemPicker, toggleSel } from "./bits.jsx";
 
-export default function Onboarding({ domain, onDone }) {
+export default function Onboarding({ domain, onDone, autoQuickStart = false, onAutoQuickStart }) {
   const [step, setStep] = useState(0);
   const [genres, setGenres] = useState([]);
   const [avoidGenres, setAvoidGenres] = useState([]);
@@ -101,6 +101,18 @@ export default function Onboarding({ domain, onDone }) {
     onDone(profile, { genres: [], avoidGenres: [], favIds: [], surpriseIds: [], avoidIds: [],
       weights: Object.fromEntries(domain.factors.map((k) => [k, 0.5])), goals: [], explore: 0.5, cities: [], quickStart: true });
   };
+  // "Skip setup" on the landing lands here; run the zero-input path once so the
+  // user goes straight from the pitch to a deck without seeing step 1.
+  const firedQuickStart = useRef(false);
+  useEffect(() => {
+    if (autoQuickStart && !firedQuickStart.current) {
+      firedQuickStart.current = true;
+      onAutoQuickStart?.();
+      quickStart();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoQuickStart]);
+
   // live preview of the derived profile for the confirmation step
   const preview = useMemo(
     () => (cur.key === "confirm" ? buildProfile() : null),

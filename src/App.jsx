@@ -12,6 +12,7 @@ import ForYou from "./ui/ForYou.jsx";
 import LibraryView from "./ui/Library.jsx";
 import Feed, { seedFeed } from "./ui/Feed.jsx";
 import ProfileView from "./ui/Profile.jsx";
+import Landing from "./ui/Landing.jsx";
 
 /* ---- persistence (localStorage, never throws) ----------------------------- */
 const KEY = "taste:state:v1";
@@ -45,6 +46,8 @@ export default function App() {
   const [view, setView] = useState("discover");
   const [sheetItem, setSheetItem] = useState(null); // item shown in the detail sheet
   const [undo, setUndo] = useState(null);           // last sort action, for the undo toast
+  const [seenLanding, setSeenLanding] = useState(false);
+  const [quickStart, setQuickStart] = useState(false); // landing asked to bypass setup
   const firstSave = useRef(true);
 
   useEffect(() => {
@@ -56,6 +59,7 @@ export default function App() {
         return merged;
       });
       if (DOMAIN_KEYS.includes(raw.active)) setActive(raw.active);
+      if (raw.seenLanding) setSeenLanding(true);
     }
     setLoaded(true);
   }, []);
@@ -63,8 +67,8 @@ export default function App() {
   useEffect(() => {
     if (!loaded) return;
     if (firstSave.current) { firstSave.current = false; return; }
-    store.set({ active, states });
-  }, [loaded, active, states]);
+    store.set({ active, states, seenLanding });
+  }, [loaded, active, states, seenLanding]);
 
   const domain = DOMAINS[active];
   const ds = states[active];
@@ -75,6 +79,8 @@ export default function App() {
       ? { ...domain, items: filterByCities(domain.items, ds.profile.cities) }
       : domain
   ), [domain, ds.profile?.cities]);
+  const anyOnboarded = DOMAIN_KEYS.some((k) => states[k].onboarded);
+  const showLanding = !seenLanding && !anyOnboarded;
   const patch = (partial) => setStates((s) => ({ ...s, [active]: { ...s[active], ...partial } }));
 
   const finishOnboarding = (prof, data) => {
@@ -191,7 +197,7 @@ export default function App() {
           {ds.onboarded && <span className="cat-no">№ {String(ds.profile?.interactions || 0).padStart(3, "0")}</span>}
         </div>
 
-        <div className="dombar">
+        {!showLanding && <div className="dombar">
           {DOMAIN_KEYS.map((k) => {
             const Icon = DOMAIN_ICONS[k];
             return (
@@ -202,12 +208,17 @@ export default function App() {
               </button>
             );
           })}
-        </div>
+        </div>}
 
         {!loaded ? (
           <div className="empty" style={{ paddingTop: 120 }}><span className="cat-no">Opening the catalogue…</span></div>
+        ) : showLanding ? (
+          <Landing
+            onPick={(k) => { setSeenLanding(true); setActive(k); setView("discover"); }}
+            onSkip={() => { setSeenLanding(true); setQuickStart(true); }} />
         ) : !ds.onboarded ? (
-          <Onboarding key={active} domain={domain} onDone={finishOnboarding} />
+          <Onboarding key={active} domain={domain} onDone={finishOnboarding}
+            autoQuickStart={quickStart} onAutoQuickStart={() => setQuickStart(false)} />
         ) : (
           <>
             <div className="taste-body">

@@ -220,6 +220,86 @@ export const CSS = `
 @media (prefers-reduced-motion: reduce){.btn,.act,.swipecard,.chip,.dombtn{transition:none !important;}}
 
 /* ==========================================================================
+   LANDING PAGE
+   ========================================================================== */
+.landing{padding:0 0 40px;}
+.lz{padding:34px 18px 6px;}
+.lz.hero{padding-top:26px;}
+.lz.close{padding-bottom:20px;}
+.hero-h{font-size:40px;line-height:1.02;margin:14px 0 0;}
+.hero-h .line{display:block;opacity:0;transform:translateY(14px);animation:lineIn .62s cubic-bezier(.2,.7,.3,1) forwards;}
+@keyframes lineIn{to{opacity:1;transform:translateY(0);}}
+.float-in{opacity:0;transform:translateY(12px);animation:lineIn .6s cubic-bezier(.2,.7,.3,1) .1s forwards;}
+
+/* reveal-on-scroll */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.3,1);}
+.reveal.in{opacity:1;transform:none;}
+
+/* chaos -> order: the thesis, as a picture */
+.chaos{position:relative;height:210px;margin:26px 0 22px;display:flex;align-items:center;justify-content:center;}
+.chaos-card{position:absolute;border:2px solid var(--ink);border-radius:9px;overflow:hidden;
+  box-shadow:3px 3px 0 var(--ink);background:var(--card);
+  transition:transform 1.05s cubic-bezier(.22,.9,.24,1),filter .8s ease;filter:saturate(.75);}
+.chaos-card.settled{filter:saturate(1);}
+.chaos-label{position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);opacity:0;transition:opacity .5s ease .4s;
+  background:var(--paper);padding:2px 8px;border-radius:999px;white-space:nowrap;}
+.chaos-label.in{opacity:1;}
+
+/* drifting proof-of-catalogue strips */
+.marquee{overflow:hidden;padding:10px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);
+  background:var(--paper2);}
+.marquee-row{display:flex;gap:10px;width:max-content;animation:drift 42s linear infinite;}
+.marquee-row.rev{animation-direction:reverse;}
+.marquee-item{flex:none;}
+.marquee:hover .marquee-row{animation-play-state:paused;}
+@keyframes drift{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+.problem-card{margin-bottom:10px;}
+.steps{display:flex;flex-direction:column;gap:12px;}
+.step{display:flex;gap:12px;align-items:flex-start;}
+.step-n{flex:none;width:36px;height:36px;border-radius:10px;border:2px solid var(--ink);background:var(--hl);
+  display:flex;align-items:center;justify-content:center;box-shadow:2px 2px 0 var(--ink);color:var(--ink);}
+
+/* auto-playing swipe demo */
+.demo{position:relative;height:186px;margin:22px 0 4px;display:flex;align-items:center;justify-content:center;}
+.demo-card{position:absolute;border:2px solid var(--ink);border-radius:11px;overflow:hidden;background:var(--card);
+  box-shadow:4px 4px 0 var(--ink);}
+.demo-card.back{transform:scale(.93) translateY(9px);filter:saturate(.85);}
+.demo-card.front{transition:transform .42s cubic-bezier(.4,0,.7,1),opacity .42s ease;}
+.demo-card.fling-right{transform:translateX(190px) rotate(17deg);opacity:0;}
+.demo-card.fling-left{transform:translateX(-190px) rotate(-17deg);opacity:0;}
+.demo-stamp{position:absolute;top:12px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:12px;
+  font-weight:700;letter-spacing:.1em;padding:3px 8px;border-radius:7px;border:2px solid;opacity:0;transition:opacity .12s;}
+.demo-stamp.right{opacity:1;color:var(--hl-deep);border-color:var(--hl-deep);background:var(--card);}
+.demo-stamp.left{opacity:1;color:var(--stamp);border-color:var(--stamp);background:var(--card);}
+
+/* craving picker */
+.craving-grid{display:flex;flex-direction:column;gap:10px;}
+.craving{width:100%;text-align:left;border:2px solid var(--ink);border-radius:12px;background:var(--card);
+  padding:13px 15px;cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+  color:var(--ink);font-family:var(--ui);}
+.craving:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink);background:var(--hl);}
+.craving:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
+.diff-card{margin-bottom:10px;}
+
+@media (min-width:900px){
+  /* the shell is a nav-rail grid at this width; the landing is full-bleed and
+     must span both columns instead of being squeezed into the rail */
+  .landing{grid-column:1/-1;grid-row:2;max-width:none;}
+  .lz{padding-left:0;padding-right:0;max-width:620px;margin:0 auto;}
+  .hero-h{font-size:52px;}
+  .chaos{height:250px;}
+  .craving-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .marquee{border-radius:14px;border:2px solid var(--ink);margin:8px auto;max-width:980px;}
+}
+@media (prefers-reduced-motion: reduce){
+  .hero-h .line,.float-in{opacity:1;transform:none;animation:none;}
+  .reveal{opacity:1;transform:none;}
+  .marquee-row{animation:none;}
+  .chaos-card,.demo-card{transition:none;}
+}
+
+/* ==========================================================================
    DESKTOP (>=900px). The phone column is right for a swipe deck, so keep it —
    but stop wasting the rest of the screen: promote navigation to a permanent
    left rail, widen the content column, and let list/grid views use the room.
