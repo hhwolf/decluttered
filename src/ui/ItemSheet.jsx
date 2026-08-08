@@ -1,4 +1,4 @@
-import { Heart, X, Check, ExternalLink, Play, Pause } from "lucide-react";
+import { Heart, X, Check, ExternalLink, Play, Pause, Users } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { scoreItem } from "../engine/engine.mjs";
 import { paletteFor } from "../domains.js";
@@ -46,6 +46,118 @@ const LINK_LABELS = {
   imdb: "IMDb", tvmaze: "TVMaze", deezer: "Deezer", appleMusic: "Apple Music",
   openLibrary: "Open Library", google: "Google Maps",
 };
+
+/**
+ * What other people think — the crowd's score, the critics' verdict, and any
+ * live Google reviews. Every claim is attributed to where it came from; we
+ * never present a summary as if it were our own judgement.
+ */
+function WhatOthersSay({ domain, item }) {
+  const r = item.rating;
+  const scale = r?.scale || (r?.source === "Deezer" ? 100 : 5);
+  const pct = r?.value != null ? Math.round((r.value / scale) * 100) : null;
+  const rec = item.reception;
+  const google = item.googleReviews || [];
+
+  if (!r?.value && !rec && google.length === 0) return null;
+
+  return (
+    <div className="card" style={{ marginTop: 14 }}>
+      <div className="row" style={{ justifyContent: "space-between", marginBottom: 10 }}>
+        <div className="eyebrow"><Users size={12} style={{ verticalAlign: "-1px" }} /> What others say</div>
+        {r?.count > 0 && <span className="cat-no">{r.count.toLocaleString()} ratings</span>}
+      </div>
+
+      {pct != null && (
+        <div style={{ marginBottom: rec || google.length ? 14 : 0 }}>
+          <div className="row" style={{ justifyContent: "space-between", marginBottom: 4 }}>
+            <span style={{ fontSize: 13.5, fontWeight: 500 }}>
+              {scale === 100 ? "Listener score" : "Average rating"} · {r.source}
+            </span>
+            <span className="cat-no">
+              {scale === 100 ? `${r.value}/100` : `${r.value}/${scale}`}
+            </span>
+          </div>
+          <div className="bar"><span style={{ width: pct + "%", background: "var(--slate)" }} /></div>
+          <p className="cat-no" style={{ marginTop: 5 }}>
+            {pct >= 90 ? "Near-universal approval." : pct >= 80 ? "Strongly liked by the crowd."
+              : pct >= 70 ? "Well liked, with some dissent." : pct >= 55 ? "Mixed but positive."
+              : "Divisive — read the reviews before committing."}
+          </p>
+        </div>
+      )}
+
+      {rec?.summary && (
+        <div style={{ borderTop: pct != null ? "1px solid var(--line)" : "none", paddingTop: pct != null ? 12 : 0 }}>
+          <div className="eyebrow" style={{ marginBottom: 6 }}>Critical reception</div>
+          <p className="serif" style={{ fontSize: 14.5, lineHeight: 1.5, color: "var(--ink2)", margin: 0 }}>{rec.summary}</p>
+          {rec.quotes?.length > 0 && (
+            <div style={{ marginTop: 10 }}>
+              {rec.quotes.map((q, i) => (
+                <blockquote key={i} style={{ margin: "0 0 8px", paddingLeft: 10, borderLeft: "3px solid var(--hl)" }}>
+                  <p className="serif" style={{ fontSize: 13.5, lineHeight: 1.45, margin: 0, color: "var(--ink)" }}>{q.text}</p>
+                  {q.outlet && <span className="cat-no">— via {q.outlet}</span>}
+                </blockquote>
+              ))}
+            </div>
+          )}
+          <p className="cat-no" style={{ marginTop: 8 }}>
+            Summarized from{" "}
+            <a href={rec.url} target="_blank" rel="noreferrer" style={{ color: "var(--slate)" }}>
+              Wikipedia <ExternalLink size={10} style={{ verticalAlign: "-1px" }} />
+            </a>{" "}
+            (CC BY-SA), not written by us.
+          </p>
+        </div>
+      )}
+
+      {google.length > 0 && (
+        <div style={{ borderTop: "1px solid var(--line)", paddingTop: 12, marginTop: 12 }}>
+          <div className="eyebrow" style={{ marginBottom: 8 }}>Recent Google reviews</div>
+          {google.slice(0, 3).map((g, i) => (
+            <div key={i} style={{ marginBottom: 10 }}>
+              <div className="row" style={{ gap: 7, marginBottom: 2 }}>
+                <span style={{ fontSize: 13, fontWeight: 600 }}>{g.author}</span>
+                <span className="cat-no">{"★".repeat(Math.round(g.rating))} · {g.when}</span>
+              </div>
+              <p style={{ fontSize: 13.5, lineHeight: 1.45, margin: 0, color: "var(--ink2)" }}>
+                {g.text.length > 240 ? g.text.slice(0, 240).replace(/\s+\S*$/, "") + "…" : g.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** Everything factual we hold about the item, laid out per domain. */
+function FactSheet({ domain, item }) {
+  const rows = [
+    [{ books: "Author", movies: "Released", tv: "Network", music: "Artist", restaurants: "Where" }[domain.key], item.subtitle],
+    item.year && [{ books: "First published", movies: "Year", tv: "Premiered", music: "Released", restaurants: null }[domain.key], item.year],
+    item.meta && [{ books: "Length", movies: "Runtime", tv: "Episodes", music: "Duration", restaurants: "Price" }[domain.key], item.meta],
+    item.dish && ["Known for", item.dish],
+    [domain.genreLabel, (item.genres || []).join(", ")],
+    item.rating?.value != null && [`${item.rating.source} score`,
+      item.rating.scale === 100 || item.rating.source === "Deezer"
+        ? `${item.rating.value}/100`
+        : `${item.rating.value}/${item.rating.scale || 5}${item.rating.count ? ` · ${item.rating.count.toLocaleString()} ratings` : ""}`],
+  ].filter((row) => row && row[0] && row[1] !== undefined && row[1] !== null && row[1] !== "");
+
+  return (
+    <div className="card" style={{ marginTop: 14 }}>
+      <div className="eyebrow" style={{ marginBottom: 10 }}>The details</div>
+      {rows.map(([k, v]) => (
+        <div key={k} className="row" style={{ justifyContent: "space-between", gap: 14, padding: "6px 0",
+          borderBottom: "1px solid var(--line)" }}>
+          <span className="cat-no" style={{ flex: "none" }}>{k}</span>
+          <span style={{ fontSize: 13.5, textAlign: "right" }}>{v}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 /**
  * Full item detail. Reachable from every surface that shows a cover, so a tap
@@ -109,7 +221,9 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
         </div>
       )}
 
-      <p className="serif" style={{ fontSize: 15.5, lineHeight: 1.5, color: "var(--ink2)", margin: "14px 0 0" }}>{item.blurb}</p>
+      <p className="serif" style={{ fontSize: 15.5, lineHeight: 1.5, color: "var(--ink2)", margin: "14px 0 0" }}>
+        {item.overview || item.blurb}
+      </p>
       {item.dish && (
         <p className="cat-no" style={{ marginTop: 8 }}>
           Dish photo is illustrative, via Wikipedia — not {item.title}'s own plate.
@@ -117,6 +231,9 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
       )}
 
       {domain.key === "music" && <div style={{ marginTop: 12 }}><SheetPreview item={item} /></div>}
+
+      <WhatOthersSay domain={domain} item={item} />
+      <FactSheet domain={domain} item={item} />
 
       <div className="card" style={{ marginTop: 14 }}>
         <div className="eyebrow" style={{ marginBottom: 10 }}>How this {domain.noun} scores on craft</div>

@@ -5,3 +5,4 @@ scripts/.cache/
 .gstack/
 .vercel
 .env*
+src/data/google-reviews.json

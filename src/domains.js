@@ -7,6 +7,14 @@ import restaurantsData from "./data/restaurants.json";
 import musicData from "./data/music.json";
 import moviesData from "./data/movies.json";
 import tvData from "./data/tv.json";
+// Live Google reviews, when a deployment has refreshed them. Google's ToS
+// forbids committing Places content, so this file is gitignored and ships as
+// {} — the UI simply omits the section when a place has no entry.
+import googleReviews from "./data/google-reviews.json";
+
+for (const r of restaurantsData) {
+  if (googleReviews[r.id]?.length) r.googleReviews = googleReviews[r.id];
+}
 
 export const DOMAINS = {
   books: {

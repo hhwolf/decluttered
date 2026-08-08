@@ -143,8 +143,10 @@ export const CSS = `
 .sheet{background:var(--paper);width:100%;max-width:468px;max-height:88vh;overflow-y:auto;border:2px solid var(--ink);
   border-bottom:none;border-radius:18px 18px 0 0;padding:0 18px 26px;animation:rise .18s ease;
   -webkit-overflow-scrolling:touch;}
+/* tall enough to contain the absolutely-positioned close button, or sheet
+   content slides underneath it */
 .sheet-grab{position:sticky;top:0;background:var(--paper);padding:10px 0 8px;display:flex;justify-content:center;
-  align-items:center;z-index:2;}
+  align-items:center;z-index:2;min-height:44px;}
 .sheet-grab i{width:44px;height:5px;border-radius:3px;background:var(--soft);display:block;}
 .sheet-x{position:absolute;right:0;top:6px;width:32px;height:32px;border:2px solid var(--ink);border-radius:9px;
   background:var(--card);cursor:pointer;font-size:13px;font-weight:700;color:var(--ink);line-height:1;

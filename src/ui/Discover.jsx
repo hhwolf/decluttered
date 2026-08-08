@@ -1,5 +1,5 @@
 import { useState, useRef, useMemo, useEffect } from "react";
-import { Heart, X, Info, Check, Play, Pause } from "lucide-react";
+import { Heart, X, Info, Check, Play, Pause, Quote } from "lucide-react";
 import { rankItems } from "../engine/engine.mjs";
 import { paletteFor } from "../domains.js";
 import { Cover, ExtRating, matchTag, displayScore, ringDegrees, clamp } from "./bits.jsx";
@@ -190,6 +190,14 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
               display: "-webkit-box", WebkitLineClamp: expanded ? "unset" : 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
               {top.item.blurb}
             </p>
+            {/* one line of what critics actually said, before you have to ask */}
+            {top.item.reception?.summary && !expanded && (
+              <p className="cat-no" style={{ margin: "0 0 8px", lineHeight: 1.45,
+                display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                <Quote size={10} style={{ verticalAlign: "-1px" }} /> {top.item.reception.summary}
+              </p>
+            )}
+
             {domain.key === "music" && <div style={{ marginBottom: 4 }}><PreviewButton key={top.item.id} item={top.item} /></div>}
 
             {expanded && (
