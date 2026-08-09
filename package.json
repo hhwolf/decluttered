@@ -19,6 +19,8 @@
     "fetch:restaurants:ratings": "node scripts/fetch-restaurant-ratings.mjs",
     "patch:tv": "node scripts/patch-tv-detail.mjs",
     "patch:tv:cast": "node scripts/patch-tv-cast.mjs",
+    "patch:movies:directors": "node scripts/patch-movie-directors.mjs",
+    "patch:blurbs": "node scripts/patch-truncated-blurbs.mjs",
     "patch:restaurants:provenance": "node scripts/patch-restaurant-provenance.mjs"
   },
   "dependencies": {

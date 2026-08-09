@@ -9,6 +9,7 @@ import { writePretty, ENRICHED_KEYS } from "../scripts/lib/derive.mjs";
 import { showIdFromLink, principalCast } from "../scripts/patch-tv-cast.mjs";
 import { notableAward, inceptionYear, idFor } from "../scripts/patch-restaurant-provenance.mjs";
 import { isTruncated, recut } from "../scripts/patch-truncated-blurbs.mjs";
+import { tconstFromLink, parseDirectors } from "../scripts/patch-movie-directors.mjs";
 import { splitSentences } from "../scripts/lib/reception.mjs";
 
 let pass = 0, fail = 0;
@@ -150,6 +151,20 @@ check("recut fills the budget when a second sentence fits",
 check("recut does not split on an abbreviation",
   recut("Based on the book by Dr. Seuss and others. Next.", 45) === "Based on the book by Dr. Seuss and others.");
 
+// ---- patch-movie-directors ------------------------------------------------
+check("tconst is read out of an IMDb url",
+  tconstFromLink("https://www.imdb.com/title/tt0111161/") === "tt0111161");
+check("a non-title IMDb url yields null", tconstFromLink("https://www.imdb.com/name/nm0000209/") === null);
+check("an absent link is safe", tconstFromLink() === null);
+// IMDb writes a literal backslash-N for null.
+check("IMDb's null marker yields no directors", parseDirectors("\\N").length === 0);
+check("an empty field yields no directors", parseDirectors("").length === 0);
+check("a single director parses", parseDirectors("nm0001104").join() === "nm0001104");
+check("the Coens both survive", parseDirectors("nm0001053,nm0001054").length === 2);
+// A six-name anthology credit is a list, not a reason to watch.
+check("credits are capped at two", parseDirectors("nm1,nm2,nm3".replace(/nm(\d)/g, "nm000000$1")).length === 2);
+check("malformed ids are dropped", parseDirectors("notanid,nm0001053").join() === "nm0001053");
+
 // ---- the real catalogues --------------------------------------------------
 const load = (f) => JSON.parse(fs.readFileSync(new URL(`../src/data/${f}`, import.meta.url), "utf8"));
 {
@@ -160,6 +175,19 @@ const load = (f) => JSON.parse(fs.readFileSync(new URL(`../src/data/${f}`, impor
   check("cast names are non-empty strings",
     withCast.every((s) => s.cast.every((n) => typeof n === "string" && n.trim().length > 1)));
   check("no cast list repeats a name", withCast.every((s) => new Set(s.cast).size === s.cast.length));
+}
+{
+  const movies = load("movies.json");
+  const credited = movies.filter((m) => m.directors?.length);
+  check("nearly every film is credited", credited.length / movies.length > 0.95,
+    `${credited.length}/${movies.length}`);
+  check("no film lists more than two directors", movies.every((m) => !m.directors || m.directors.length <= 2));
+  check("no director name is a null marker or blank",
+    credited.every((m) => m.directors.every((d) => d && d !== "\\N" && d.trim().length > 1)));
+  // The directors pass rewrites movies.json; reception must have survived it.
+  check("the directors pass did not drop reception",
+    movies.filter((m) => m.reception?.summary).length > 250,
+    `${movies.filter((m) => m.reception?.summary).length}`);
 }
 {
   const rest = load("restaurants.json");

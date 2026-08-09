@@ -157,6 +157,16 @@ export function castLine(item, { max = 3 } = {}) {
 }
 
 /**
+ * Who made it. The film counterpart to the cast line: for a lot of people a
+ * director is the single strongest reason to pick one film over another.
+ */
+export function creditLine(item) {
+  const names = (item?.directors || []).filter(Boolean);
+  if (!names.length) return null;
+  return `Directed by ${names.length === 1 ? names[0] : names.slice(0, -1).join(", ") + " & " + names[names.length - 1]}`;
+}
+
+/**
  * Pull-quotes worth showing beneath the reception summary.
  *
  * The summary is the opening sentences of the reception section and the quotes

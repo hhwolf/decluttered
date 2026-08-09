@@ -70,7 +70,7 @@ export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // months. Re-running a fetcher must be safe.
 export const ENRICHED_KEYS = [
   "reception", "overview", "googleReviews", "dish",
-  "seasons", "episodes", "status", "endedYear", "watchOn", "cast", "awards",
+  "seasons", "episodes", "status", "endedYear", "watchOn", "cast", "awards", "directors",
 ];
 // Fields a fetcher does own but must never downgrade to empty: a transient API
 // miss shouldn't wipe a poster that a backfill pass worked to find.

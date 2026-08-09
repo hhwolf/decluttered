@@ -5,7 +5,7 @@ import { paletteFor } from "../domains.js";
 import { Sheet, Cover, ExtRating, Stars, MiniRate, displayScore, matchTag } from "./bits.jsx";
 import { fetchTrackPreview } from "./preview.js";
 import { vibeWords, strengths, counterpoint, commitment, factChips, castLine, distinctQuotes,
-         timeCommitment, similarTo, lookupLinks } from "../engine/describe.mjs";
+         timeCommitment, similarTo, lookupLinks, creditLine } from "../engine/describe.mjs";
 
 /* Inline 30s preview control, shared shape with the deck's button. */
 function SheetPreview({ item }) {
@@ -166,6 +166,7 @@ function FactSheet({ domain, item }) {
     item.meta && [{ books: "Length", movies: "Runtime", tv: "Episodes", music: "Duration", restaurants: "Price" }[domain.key], item.meta],
     item.dish && ["Known for", item.dish],
     item.cast?.length && ["Cast", item.cast.join(", ")],
+    item.directors?.length && ["Director" + (item.directors.length > 1 ? "s" : ""), item.directors.join(", ")],
     item.awards?.length && ["Awards", item.awards.join(", ")],
     [domain.genreLabel, (item.genres || []).join(", ")],
     // Wikipedia and Deezer are 0-100 attention measures, not scores out of five.
@@ -246,6 +247,7 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
           )}
           {item.dish && <div className="cat-no" style={{ marginTop: 5 }}>Known for · {item.dish}</div>}
           {cast && <div className="cat-no" style={{ marginTop: 5 }}>With {cast}</div>}
+          {creditLine(item) && <div className="cat-no" style={{ marginTop: 3 }}>{creditLine(item)}</div>}
           {(vibe.length > 0 || facts.length > 0) && (
             <div className="row" style={{ flexWrap: "wrap", gap: 5, marginTop: 7 }}>
               {vibe.map((w) => <span key={w} className="vibe">{w}</span>)}

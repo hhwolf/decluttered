@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { vibeWords, strengths, counterpoint, commitment, runStatus, castLine, factChips, distinctQuotes,
-         timeCommitment, totalMinutes, similarTo, lookupLinks } from "../src/engine/describe.mjs";
+         timeCommitment, totalMinutes, similarTo, lookupLinks, creditLine } from "../src/engine/describe.mjs";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const load = (f) => JSON.parse(fs.readFileSync(path.join(root, "src/data", f), "utf8"));
@@ -222,6 +222,14 @@ check("undefined item is safe for timeCommitment", timeCommitment(undefined, { k
   check("a dated near-match beats an undated one",
     similarTo(target, { key: "tv", items: undated })[0].item.id === "closest");
 }
+
+// ---- director credit ------------------------------------------------------
+check("a single director reads plainly", creditLine({ directors: ["Frank Darabont"] }) === "Directed by Frank Darabont");
+check("a pair is joined with an ampersand",
+  creditLine({ directors: ["Joel Coen", "Ethan Coen"] }) === "Directed by Joel Coen & Ethan Coen");
+check("no directors yields null", creditLine({ directors: [] }) === null);
+check("missing directors is safe", creditLine({}) === null);
+check("undefined item is safe for creditLine", creditLine() === null);
 
 // ---- lookup links ---------------------------------------------------------
 // The Open Library work key was already inside our own id all along.

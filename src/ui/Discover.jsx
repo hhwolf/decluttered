@@ -5,7 +5,7 @@ import { paletteFor } from "../domains.js";
 import { Cover, ExtRating, matchTag, displayScore, ringDegrees, clamp } from "./bits.jsx";
 import { fetchTrackPreview, deezerIdOf } from "./preview.js";
 import { resolveSwipe, SWIPE_THRESHOLD } from "../engine/stats.mjs";
-import { vibeWords, counterpoint, factChips, castLine } from "../engine/describe.mjs";
+import { vibeWords, counterpoint, factChips, castLine, creditLine } from "../engine/describe.mjs";
 
 /* 30s preview player for tracks (music domain only). */
 function PreviewButton({ item }) {
@@ -129,7 +129,7 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   const caveat = counterpoint(top.item, domain, profile, top.breakdown);
   const anchor = top.bestAnchorId ? domain.items.find((i) => i.id === top.bestAnchorId) : null;
   const facts = factChips(top.item, domain);
-  const cast = castLine(top.item);
+  const cast = castLine(top.item) || creditLine(top.item);
 
   return (
     <div>
@@ -235,7 +235,8 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
             </p>
             {cast && (
               <p className="cat-no" style={{ margin: "0 0 8px" }}>
-                <Users size={10} style={{ verticalAlign: "-1px" }} /> With {cast}
+                <Users size={10} style={{ verticalAlign: "-1px" }} />{" "}
+                {cast.startsWith("Directed by") ? cast : `With ${cast}`}
               </p>
             )}
             {/* Why this, for you — naming the item, not just a percentage. */}
