@@ -6,3 +6,4 @@ scripts/.cache/
 .vercel
 .env*
 src/data/google-reviews.json
+src/data/live-ratings.json

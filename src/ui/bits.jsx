@@ -472,11 +472,17 @@ export function ExtRating({ item, dark = false, compact = false }) {
   // Space is tight on the deck badge and in narrow suggestion cards, so those
   // drop the source name; the full string stays in the tooltip and the sheet.
   const terse = dark || compact;
+  // A Wikipedia score is readership, not approval — it must never render as
+  // stars or read like a rating. Deezer's 0-100 is chart position; also not stars.
+  const isInterest = r.source === "Wikipedia";
   let body;
-  if (scale === 100) body = terse ? <>▶ {r.value}</> : <>▶ {r.value} · {r.source} charts</>;
+  if (isInterest) body = terse ? <>◆ {r.value}</> : <>◆ {r.value} · Wikipedia interest</>;
+  else if (scale === 100) body = terse ? <>▶ {r.value}</> : <>▶ {r.value} · {r.source} charts</>;
   else if (scale === 10) body = terse ? <>★ {r.value}/10</> : <>★ {r.value}/10 · {r.count ? fmtCount(r.count) + " on " : ""}{r.source}</>;
   else body = terse ? <>★ {r.value}{r.count ? ` · ${fmtCount(r.count)}` : ""}</> : <>★ {r.value} · {r.count ? fmtCount(r.count) + " on " : ""}{r.source}</>;
-  const full = scale === 100 ? `${r.value} on ${r.source} charts`
+  const full = isInterest
+    ? `Wikipedia interest ${r.value}/100 — about ${(r.count || 0).toLocaleString()} readers a month. Not a rating.`
+    : scale === 100 ? `${r.value} on ${r.source} charts`
     : `${r.value}${scale === 10 ? "/10" : ""}${r.count ? ` from ${r.count.toLocaleString()} ratings` : ""} on ${r.source}`;
   return <span className={dark ? "ext-pill" : "cat-no"} style={style} title={full}>{body}</span>;
 }

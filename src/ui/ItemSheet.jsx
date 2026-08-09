@@ -65,14 +65,18 @@ function WhatOthersSay({ domain, item }) {
     <div className="card" style={{ marginTop: 14 }}>
       <div className="row" style={{ justifyContent: "space-between", marginBottom: 10 }}>
         <div className="eyebrow"><Users size={12} style={{ verticalAlign: "-1px" }} /> What others say</div>
-        {r?.count > 0 && <span className="cat-no">{r.count.toLocaleString()} ratings</span>}
+        {r?.count > 0 && (
+          <span className="cat-no">
+            {r.count.toLocaleString()} {r.source === "Wikipedia" ? "readers/mo" : "ratings"}
+          </span>
+        )}
       </div>
 
       {pct != null && (
         <div style={{ marginBottom: rec || google.length ? 14 : 0 }}>
           <div className="row" style={{ justifyContent: "space-between", marginBottom: 4 }}>
             <span style={{ fontSize: 13.5, fontWeight: 500 }}>
-              {scale === 100 ? "Listener score" : "Average rating"} · {r.source}
+              {r.source === "Wikipedia" ? "Reader interest" : scale === 100 ? "Listener score" : "Average rating"} · {r.source}
             </span>
             <span className="cat-no">
               {scale === 100 ? `${r.value}/100` : `${r.value}/${scale}`}
@@ -80,7 +84,9 @@ function WhatOthersSay({ domain, item }) {
           </div>
           <div className="bar"><span style={{ width: pct + "%", background: "var(--slate)" }} /></div>
           <p className="cat-no" style={{ marginTop: 5 }}>
-            {pct >= 90 ? "Near-universal approval." : pct >= 80 ? "Strongly liked by the crowd."
+            {r.source === "Wikipedia"
+              ? `How often people look this place up — roughly ${(r.count || 0).toLocaleString()} readers a month. It measures fame, not whether the food is good.`
+              : pct >= 90 ? "Near-universal approval." : pct >= 80 ? "Strongly liked by the crowd."
               : pct >= 70 ? "Well liked, with some dissent." : pct >= 55 ? "Mixed but positive."
               : "Divisive — read the reviews before committing."}
           </p>

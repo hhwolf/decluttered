@@ -7,13 +7,20 @@ import restaurantsData from "./data/restaurants.json";
 import musicData from "./data/music.json";
 import moviesData from "./data/movies.json";
 import tvData from "./data/tv.json";
-// Live Google reviews, when a deployment has refreshed them. Google's ToS
-// forbids committing Places content, so this file is gitignored and ships as
-// {} — the UI simply omits the section when a place has no entry.
+// Live ratings and reviews, when a deployment has refreshed them. Google's and
+// Yelp's terms forbid committing their content, so these files are gitignored
+// and ship as {}. A real star rating supersedes whatever the committed
+// catalogue carries — including the Wikipedia interest score on
+// Wikidata-sourced places, which is readership, not approval.
 import googleReviews from "./data/google-reviews.json";
+import liveRatings from "./data/live-ratings.json";
 
 for (const r of restaurantsData) {
   if (googleReviews[r.id]?.length) r.googleReviews = googleReviews[r.id];
+  const live = liveRatings[r.id];
+  if (live?.rating?.value) r.rating = { ...live.rating, scale: 5 };
+  if (live?.price && !r.meta) r.meta = "$".repeat(live.price);
+  if (live?.reviews?.length) r.googleReviews = live.reviews;
 }
 
 export const DOMAINS = {
