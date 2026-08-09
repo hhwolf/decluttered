@@ -1,11 +1,11 @@
 import { useState, useRef, useMemo, useEffect } from "react";
-import { Heart, X, Info, Check, Play, Pause, Quote, MapPin, Sparkles } from "lucide-react";
+import { Heart, X, Info, Check, Play, Pause, Quote, MapPin, Sparkles, Users } from "lucide-react";
 import { rankItems } from "../engine/engine.mjs";
 import { paletteFor } from "../domains.js";
 import { Cover, ExtRating, matchTag, displayScore, ringDegrees, clamp } from "./bits.jsx";
 import { fetchTrackPreview, deezerIdOf } from "./preview.js";
 import { resolveSwipe, SWIPE_THRESHOLD } from "../engine/stats.mjs";
-import { vibeWords, counterpoint, runStatus } from "../engine/describe.mjs";
+import { vibeWords, counterpoint, factChips, castLine } from "../engine/describe.mjs";
 
 /* 30s preview player for tracks (music domain only). */
 function PreviewButton({ item }) {
@@ -128,6 +128,8 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   const vibe = vibeWords(top.item, domain);
   const caveat = counterpoint(top.item, domain, profile, top.breakdown);
   const anchor = top.bestAnchorId ? domain.items.find((i) => i.id === top.bestAnchorId) : null;
+  const facts = factChips(top.item, domain);
+  const cast = castLine(top.item);
 
   return (
     <div>
@@ -216,13 +218,13 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
               {top.item.meta ? ` · ${top.item.meta}` : ""}
             </div>
 
-            {/* What it FEELS like, from the tone vector we already compute.
-                Run status rides alongside: for a series, "is it finished?" is
-                half the decision and `meta` only carries the episode counts. */}
-            {(vibe.length > 0 || runStatus(top.item)) && (
+            {/* What it FEELS like, from the tone vector we already compute,
+                then the checkable facts that argue for it on their own: a
+                finished run, a Michelin star, a room open since 1927. */}
+            {(vibe.length > 0 || facts.length > 0) && (
               <div className="row" style={{ flexWrap: "wrap", gap: 5, marginBottom: 8 }}>
                 {vibe.map((w) => <span key={w} className="vibe">{w}</span>)}
-                {runStatus(top.item) && <span className="vibe">{runStatus(top.item)}</span>}
+                {facts.map((f) => <span key={f} className="vibe fact">{f}</span>)}
               </div>
             )}
             {/* clamped so the card never cuts a sentence mid-word; full text in the sheet */}
@@ -231,6 +233,11 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
               display: "-webkit-box", WebkitLineClamp: expanded ? "unset" : 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
               {top.item.blurb}
             </p>
+            {cast && (
+              <p className="cat-no" style={{ margin: "0 0 8px" }}>
+                <Users size={10} style={{ verticalAlign: "-1px" }} /> With {cast}
+              </p>
+            )}
             {/* Why this, for you — naming the item, not just a percentage. */}
             {anchor && (
               <p className="cat-no" style={{ margin: "0 0 6px" }}>

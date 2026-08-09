@@ -32,9 +32,14 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // How many items per domain to enrich, most popular first. Reception prose only
 // exists for notable works, so chasing the long tail mostly burns requests.
-const CAPS = { movies: 300, tv: 250, books: 209, music: 150, restaurants: 101 };
+// Raised after the catalogues grew: these were sized for a 250-show, 200-place
+// app, and shows and restaurants are precisely the two domains where people
+// said they couldn't tell whether something was worth their evening.
+const CAPS = { movies: 600, tv: 700, books: 386, music: 300, restaurants: 449 };
 const DOMAINS = (process.env.DOMAINS || "books,movies,tv,music,restaurants").split(",");
-const LIMIT = process.env.LIMIT ? +process.env.LIMIT : null;
+// LIMIT=0 is meaningful: replay the cache and make no network calls at all.
+// `LIMIT || CAPS[k]` would quietly turn that into a full crawl.
+const LIMIT = process.env.LIMIT != null && process.env.LIMIT !== "" ? +process.env.LIMIT : null;
 
 // Every request is bounded (a hung connection with no timeout stalled the
 // whole run on the first attempt) and every 429 is respected. Wikipedia will
@@ -87,17 +92,31 @@ async function enrich(domainKey) {
   fs.mkdirSync(path.dirname(CACHE), { recursive: true });
   const cache = fs.existsSync(CACHE) ? JSON.parse(fs.readFileSync(CACHE, "utf8")) : {};
 
-  const cap = LIMIT || CAPS[domainKey] || 200;
-  const targets = [...list].sort((a, b) => (b.popularity || 0) - (a.popularity || 0)).slice(0, cap);
-  console.log(`${domainKey}: enriching ${targets.length} of ${list.length}`);
+  // Replaying the cache costs nothing, so it is never capped: every item we
+  // have ever looked up gets its prose back, including ones far outside this
+  // run's network budget. This is also the recovery path — the cache outlived
+  // a catalogue rewrite that wiped 653 reception records out of the JSON, and
+  // restoring them took seconds rather than a day of re-crawling.
+  let restored = 0;
+  for (const item of list) {
+    const cached = cache[item.id];
+    if (cached) { Object.assign(item, cached); restored++; }
+  }
+  if (restored) console.log(`${domainKey}: replayed ${restored} cached lookups (no network)`);
+
+  // The cap governs NEW work only. Anything already answered — hit or a known
+  // "no article exists" — is skipped, so a re-run spends its whole budget on
+  // items we have never asked about.
+  const cap = LIMIT ?? CAPS[domainKey] ?? 200;
+  const targets = [...list]
+    .filter((i) => cache[i.id] === undefined)
+    .sort((a, b) => (b.popularity || 0) - (a.popularity || 0))
+    .slice(0, cap);
+  console.log(`${domainKey}: ${targets.length} new lookups (of ${list.length} total)`);
 
   let hit = 0, miss = 0, deferred = 0, done = 0;
   for (const item of targets) {
     done++;
-    if (cache[item.id] !== undefined) {
-      if (cache[item.id]) { Object.assign(item, cache[item.id]); hit++; } else miss++;
-      continue;
-    }
 
     const { titles, definitive: searchOk } = await findArticle(item, KIND[domainKey]);
     let found = null, sawThrottle = !searchOk;

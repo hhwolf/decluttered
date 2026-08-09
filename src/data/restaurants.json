@@ -65,7 +65,8 @@
   },
   "popularity": 0.8,
   "dish": "Oysters on the half shell",
-  "overview": "Union Oyster House (previously known as The Old Oyster House and Ye Olde Oyster House) is a restaurant at 41–43 Union Street in Downtown Boston, Massachusetts. Now part of the Blackstone Block Historic District, it has been open to diners since 1826, making it among the oldest operating restaurants in the United States. It is the oldest known to have been continuously operating."
+  "overview": "Union Oyster House (previously known as The Old Oyster House and Ye Olde Oyster House) is a restaurant at 41–43 Union Street in Downtown Boston, Massachusetts. Now part of the Blackstone Block Historic District, it has been open to diners since 1826, making it among the oldest operating restaurants in the United States. It is the oldest known to have been continuously operating.",
+  "reception": null
  },
  {
   "id": "rs_legal_sea_foods",
@@ -165,7 +166,8 @@
   },
   "popularity": 0.61,
   "dish": "Hot buttered lobster roll",
-  "overview": "Neptune Oyster is an oyster house in the North End, Boston. Their Lobster roll is considered one of Boston's iconic dishes. Kelli and Jeff Nace opened the restaurant in 2004, inspired by Parisian oyster bars and having only 37 seats. They appeared on Food Paradise (season 10)."
+  "overview": "Neptune Oyster is an oyster house in the North End, Boston. Their Lobster roll is considered one of Boston's iconic dishes. Kelli and Jeff Nace opened the restaurant in 2004, inspired by Parisian oyster bars and having only 37 seats. They appeared on Food Paradise (season 10).",
+  "reception": null
  },
  {
   "id": "rs_santarpio_s_pizza",
@@ -199,7 +201,8 @@
   },
   "popularity": 0.61,
   "dish": "Coal-blistered pies",
-  "overview": "Santarpio's Pizza is a restaurant on Chelsea Street in East Boston, Massachusetts, United States. Established in 1903 as a bakery by Frank Santarpio, it began selling pizza in 1933. It is primarily known for its Boston-style pizza. The sign for Santarpio's Pizza can be seen from the highway on the way to the Boston airport."
+  "overview": "Santarpio's Pizza is a restaurant on Chelsea Street in East Boston, Massachusetts, United States. Established in 1903 as a bakery by Frank Santarpio, it began selling pizza in 1933. It is primarily known for its Boston-style pizza. The sign for Santarpio's Pizza can be seen from the highway on the way to the Boston airport.",
+  "reception": null
  },
  {
   "id": "rs_sullivan_s_castle_island",
@@ -252,7 +255,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "Fox & the Knife is a restaurant specializing in Italian cuisine and enoteca, founded on February 4, 2019, by chef Karen Akunowicz, located in the South Boston neighborhood of Boston, the capital of Massachusetts, in the ",
+  "blurb": "Fox & the Knife is a restaurant specializing in Italian cuisine and enoteca, founded on February 4, 2019, by chef Karen Akunowicz, located in the South Boston neighborhood of Boston, the capital of Massachusetts, in the United States.",
   "overview": "Fox & the Knife is a restaurant specializing in Italian cuisine and enoteca, founded on February 4, 2019, by chef Karen Akunowicz, located in the South Boston neighborhood of Boston, the capital of Massachusetts, in the United States.",
   "popularity": 0.37,
   "factors": {
@@ -634,7 +637,8 @@
   },
   "popularity": 1,
   "dish": "Pastrami on rye",
-  "overview": "Katz's Delicatessen, also known as Katz's of New York City, is a Jewish deli at 205 East Houston Street, on the southwest corner of Houston and Ludlow Streets on the Lower East Side of Manhattan in New York City. Although its menu is inspired by culturally Jewish foods, Katz's Delicatessen is not kosher."
+  "overview": "Katz's Delicatessen, also known as Katz's of New York City, is a Jewish deli at 205 East Houston Street, on the southwest corner of Houston and Ludlow Streets on the Lower East Side of Manhattan in New York City. Although its menu is inspired by culturally Jewish foods, Katz's Delicatessen is not kosher.",
+  "reception": null
  },
  {
   "id": "rs_wd_eleven_madison_park_newyork",
@@ -653,7 +657,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Portrait_Shot_of_Eleven_Madison_Park_%289284511683%29.jpg/500px-Portrait_Shot_of_Eleven_Madison_Park_%289284511683%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Eleven Madison Park is a fine dining restaurant located inside the Metropolitan Life North Building at 11 Madison Avenue in the Flatiron District of Manhattan, New York City. Owned by Daniel Humm Hospitality, it has held",
+  "blurb": "Eleven Madison Park is a fine dining restaurant located inside the Metropolitan Life North Building at 11 Madison Avenue in the Flatiron District of Manhattan, New York City.",
   "overview": "Eleven Madison Park is a fine dining restaurant located inside the Metropolitan Life North Building at 11 Madison Avenue in the Flatiron District of Manhattan, New York City. Owned by Daniel Humm Hospitality, it has held 3 Michelin stars since 2012, and was ranked first among The World's 50 Best Restaurants in 2017.",
   "popularity": 1,
   "factors": {
@@ -668,7 +672,8 @@
    "liveliness": 0.59,
    "formality": 0.37,
    "adventure": 0.2
-  }
+  },
+  "reception": null
  },
  {
   "id": "rs_wd_raos_newyork",
@@ -689,7 +694,7 @@
   },
   "image": null,
   "blurb": "Rao's is an Italian-American restaurant founded in 1896. It is located at 455 East 114th Street, on the corner of Pleasant Avenue in East Harlem, New York City.",
-  "overview": "Rao's is an Italian-American restaurant founded in 1896. It is located at 455 East 114th Street, on the corner of Pleasant Avenue in East Harlem, New York City. Rao's has sister restaurants in Los Angeles and Miami Beach.",
+  "overview": "Rao's () is an Italian-American restaurant founded in 1896. It is located at 455 East 114th Street, on the corner of Pleasant Avenue in East Harlem (or Italian Harlem), New York City. Rao's has sister restaurants in Los Angeles and Miami Beach.",
   "popularity": 0.99,
   "factors": {
    "food": 0.77,
@@ -703,7 +708,8 @@
    "liveliness": 0.69,
    "formality": 0.41,
    "adventure": 0.3
-  }
+  },
+  "reception": null
  },
  {
   "id": "rs_wd_umbertos_clam_house_newyork",
@@ -723,7 +729,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Umbertos_Clam_House_and_Il_Fornaio_%2812669747164%29.jpg/500px-Umbertos_Clam_House_and_Il_Fornaio_%2812669747164%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Umbertos Clam House is an Italian seafood restaurant located at 132 Mulberry Street in Little Italy in Manhattan, New York City. Umbertos became known for its \"tasty dishes of calamari, scungilli, and mussels\", but initi",
+  "blurb": "Umbertos Clam House is an Italian seafood restaurant located at 132 Mulberry Street in Little Italy in Manhattan, New York City.",
   "overview": "Umbertos Clam House is an Italian seafood restaurant located at 132 Mulberry Street in Little Italy in Manhattan, New York City. Umbertos became known for its \"tasty dishes of calamari, scungilli, and mussels\", but initially became prominent, weeks after opening, for being the site of the murder of gangster Joe Gallo. The restaurant was founded and is owned by members of the Ianniello family.",
   "popularity": 0.99,
   "factors": {
@@ -738,7 +744,8 @@
    "liveliness": 0.66,
    "formality": 0.55,
    "adventure": 0.47
-  }
+  },
+  "reception": null
  },
  {
   "id": "rs_wd_per_se_newyork",
@@ -759,8 +766,8 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/PerSe.jpg/500px-PerSe.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Per Se is a New American and French restaurant at The Shops at Columbus Circle, on the fourth floor of the Deutsche Bank Center at 10 Columbus Circle in Manhattan, New York City. It is owned by chef Thomas Keller, and th",
-  "overview": "Per Se is a New American and French restaurant at The Shops at Columbus Circle, on the fourth floor of the Deutsche Bank Center at 10 Columbus Circle in Manhattan, New York City. It is owned by chef Thomas Keller, and the chef de cuisine is Chad Palagi. Per Se has maintained three Michelin stars since the introduction of the New York City Guide in 2006.",
+  "blurb": "Per Se is a New American and French restaurant at The Shops at Columbus Circle, on the fourth floor of the Deutsche Bank Center at 10 Columbus Circle in Manhattan, New York City.",
+  "overview": "Per se may refer to: per se, a Latin phrase meaning \"by itself\" or \"in itself\" Per Se (restaurant), a New York City restaurant",
   "popularity": 0.98,
   "factors": {
    "food": 0.8,
@@ -774,7 +781,8 @@
    "liveliness": 0.5,
    "formality": 0.63,
    "adventure": 0.5
-  }
+  },
+  "reception": null
  },
  {
   "id": "rs_wd_tavern_on_green_newyork",
@@ -793,8 +801,8 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Tavern_on_the_Green_logo.png/330px-Tavern_on_the_Green_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Tavern on the Green is an American cuisine restaurant in Central Park in Manhattan, New York City, near the intersection of Central Park West and West 66th Street on the Upper West Side. The restaurant, housed in a forme",
-  "overview": "Tavern on the Green is an American cuisine restaurant in Central Park in Manhattan, New York City, near the intersection of Central Park West and West 66th Street on the Upper West Side. The restaurant, housed in a former sheepfold, has been operated by Jim Caiola and David Salama since 2014.",
+  "blurb": "Tavern on the Green is an American cuisine restaurant in Central Park in Manhattan, New York City, near the intersection of Central Park West and West 66th Street on the Upper West Side.",
+  "overview": "Tavern on the Green is an American cuisine restaurant in Central Park in Manhattan, New York City, near the intersection of Central Park West and West 66th Street on the Upper West Side. The restaurant, housed in a former sheepfold, has been operated by Jim Caiola and David Salama since 2014. From its opening in 1934 to its closure in 2009, the restaurant changed ownership several times.",
   "popularity": 0.98,
   "factors": {
    "food": 0.77,
@@ -808,7 +816,8 @@
    "liveliness": 0.54,
    "formality": 0.46,
    "adventure": 0.2
-  }
+  },
+  "reception": null
  },
  {
   "id": "rs_wd_toms_newyork",
@@ -828,7 +837,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Tom%27s_Restaurant_on_2880_Broadway%2C_New_York.JPG/500px-Tom%27s_Restaurant_on_2880_Broadway%2C_New_York.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Tom's Restaurant is a diner located at 2880 Broadway in the Morningside Heights neighborhood of Manhattan in New York City. It is on the ground floor of Columbia University's Armstrong Hall, home to the Goddard Institute",
+  "blurb": "Tom's Restaurant is a diner located at 2880 Broadway in the Morningside Heights neighborhood of Manhattan in New York City. It is on the ground floor of Columbia University's Armstrong Hall, home to the Goddard Institute for Space Studies.",
   "overview": "Tom's Restaurant is a diner located at 2880 Broadway in the Morningside Heights neighborhood of Manhattan in New York City. It is on the ground floor of Columbia University's Armstrong Hall, home to the Goddard Institute for Space Studies. Frequented by Columbia students and faculty, it was founded by Tom Glikas in the 1940s and after a sale at some undetermined point has been owned and operated by the Greek-American",
   "popularity": 0.98,
   "factors": {
@@ -863,7 +872,7 @@
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Russian_Tea_Room_entrance_2025.jpg/500px-Russian_Tea_Room_entrance_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "blurb": "The Russian Tea Room is an Art Deco Russo-Continental restaurant, located at 150 West 57th Street, between Carnegie Hall Tower and Metropolitan Tower, in the New York City borough of Manhattan.",
-  "overview": "The Russian Tea Room is an Art Deco Russo-Continental restaurant, located at 150 West 57th Street, between Carnegie Hall Tower and Metropolitan Tower, in the New York City borough of Manhattan.",
+  "overview": "The Russian Tea Room is an Art Deco Russo-Continental restaurant, located at 150 West 57th Street (between Sixth Avenue and Seventh Avenue), between Carnegie Hall Tower and Metropolitan Tower, in the New York City borough of Manhattan.",
   "popularity": 0.97,
   "factors": {
    "food": 0.71,
@@ -877,6 +886,21 @@
    "liveliness": 0.64,
    "formality": 0.35,
    "adventure": 0.2
+  },
+  "reception": {
+   "summary": "Bryan Miller of The New York Times said in 1992 that \"beneath all the hype there is little substance\", saying that the restaurant suffered from \"inattentive and unprofessional\" service despite being highly patronized. After the Tea Room reopened in 1999, it received several negative reviews.",
+   "quotes": [
+    {
+     "text": "Bryan Miller of The New York Times said in 1992 that \"beneath all the hype there is little substance\", saying that the restaurant suffered from \"inattentive and unprofessional\" service despite being highly patronized.",
+     "outlet": "The New York Times"
+    },
+    {
+     "text": "A writer for The New Yorker said the food \"runs from serviceable [...] to forgettably enjoyable\", but the waitstaff were apathetic.",
+     "outlet": "The New Yorker"
+    }
+   ],
+   "source": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Russian_Tea_Room"
   }
  },
  {
@@ -945,7 +969,8 @@
   },
   "popularity": 0.96,
   "dish": "Plain cheese slice",
-  "overview": "Joe's Pizza, also called Famous Joe's Pizza, is a pizzeria located in Greenwich Village, Manhattan, New York City on Carmine Street near Bleecker Street. The restaurant is known for serving a classic New York street-style pizza and has been called a \"Greenwich Village institution\". The pizzeria serves by the slice or as full pies."
+  "overview": "Joe's Pizza, also called Famous Joe's Pizza, is a pizzeria located in Greenwich Village, Manhattan, New York City on Carmine Street near Bleecker Street. The restaurant is known for serving a classic New York street-style pizza and has been called a \"Greenwich Village institution\". The pizzeria serves by the slice or as full pies.",
+  "reception": null
  },
  {
   "id": "rs_wd_sparks_steak_house_newyork",
@@ -1067,7 +1092,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/3/32/Barney_Greengrass_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "blurb": "Barney Greengrass is a restaurant, deli, and appetizing store at 541 Amsterdam Avenue on the Upper West Side of Manhattan, New York City, started in 1908. It specializes in smoked fish, more specifically sturgeon, but al",
+  "blurb": "Barney Greengrass is a restaurant, deli, and appetizing store at 541 Amsterdam Avenue on the Upper West Side of Manhattan, New York City, started in 1908.",
   "overview": "Barney Greengrass is a restaurant, deli, and appetizing store at 541 Amsterdam Avenue on the Upper West Side of Manhattan, New York City, started in 1908. It specializes in smoked fish, more specifically sturgeon, but also carries Nova Scotia salmon, whitefish, and others, and is very popular for brunch.",
   "popularity": 0.95,
   "factors": {
@@ -1135,7 +1160,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Lombardi%27s_Pizza.jpg/500px-Lombardi%27s_Pizza.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Lombardi's is a pizzeria at 32 Spring Street on the corner of Mott Street in the Nolita neighborhood of Manhattan in New York City. Opened in 1905, it has been recognized by the Pizza Hall of Fame as the first pizzeria i",
+  "blurb": "Lombardi's is a pizzeria at 32 Spring Street on the corner of Mott Street in the Nolita neighborhood of Manhattan in New York City.",
   "overview": "Lombardi's is a pizzeria at 32 Spring Street on the corner of Mott Street in the Nolita neighborhood of Manhattan in New York City. Opened in 1905, it has been recognized by the Pizza Hall of Fame as the first pizzeria in the United States, though later research has shown other pizzerias that predate it by more than a decade.",
   "popularity": 0.94,
   "factors": {
@@ -1169,7 +1194,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Entrance_to_Serendipity_3%2C_the_New_York_City_dessert_restaurant.jpg/500px-Entrance_to_Serendipity_3%2C_the_New_York_City_dessert_restaurant.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Serendipity 3, often written Serendipity III, is a restaurant located at 225 East 60th Street, between Second and Third avenues in New York City, founded by Calvin L Holt, Patch Caradine and Stephen Bruce in 1954. It als",
+  "blurb": "Serendipity 3, often written Serendipity III, is a restaurant located at 225 East 60th Street, between Second and Third avenues in New York City, founded by Calvin L Holt, Patch Caradine and Stephen Bruce in 1954.",
   "overview": "Serendipity 3, often written Serendipity III, is a restaurant located at 225 East 60th Street, between Second and Third avenues in New York City, founded by Calvin L Holt, Patch Caradine and Stephen Bruce in 1954. It also served as a boutique that sold one-of-a-kind fashion and artistic items and hosted famous artists and popular culture figures. The restaurant has been the scene of several films, including the 2001 ",
   "popularity": 0.93,
   "factors": {
@@ -1312,7 +1337,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Daniel_restaurant_60_E65_jeh.jpg/500px-Daniel_restaurant_60_E65_jeh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Daniel is a New French restaurant located at 60 East 65th Street, on the Upper East Side in Manhattan, in New York City. It is owned and run by French celebrity chef Daniel Boulud, New York's longest-reigning four-star c",
+  "blurb": "Daniel is a New French restaurant located at 60 East 65th Street, on the Upper East Side in Manhattan, in New York City. It is owned and run by French celebrity chef Daniel Boulud, New York's longest-reigning four-star chef.",
   "overview": "Daniel is a New French restaurant located at 60 East 65th Street, on the Upper East Side in Manhattan, in New York City. It is owned and run by French celebrity chef Daniel Boulud, New York's longest-reigning four-star chef. The restaurant moved to its current location in early 1999.",
   "popularity": 0.92,
   "factors": {
@@ -1460,7 +1485,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Jean-Georges_NYC.jpg/500px-Jean-Georges_NYC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Jean-Georges is a two-Michelin-star restaurant at 1 Central Park West, on the lobby level of the Trump International Hotel and Tower, on the Upper West Side of Manhattan, New York City, named after its owner Jean-Georges",
+  "blurb": "Jean-Georges is a two-Michelin-star restaurant at 1 Central Park West, on the lobby level of the Trump International Hotel and Tower, on the Upper West Side of Manhattan, New York City, named after its owner Jean-Georges Vongerichten.",
   "overview": "Jean-Georges is a two-Michelin-star restaurant at 1 Central Park West, on the lobby level of the Trump International Hotel and Tower, on the Upper West Side of Manhattan, New York City, named after its owner Jean-Georges Vongerichten.",
   "popularity": 0.89,
   "factors": {
@@ -1496,7 +1521,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Union-square-cafe1.jpg/500px-Union-square-cafe1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Union Square Cafe is an American restaurant featuring New American cuisine with Italian influences, located at 101 E 19th St, in the Union Square neighborhood of the Manhattan borough of New York City, New York. It is ow",
+  "blurb": "Union Square Cafe is an American restaurant featuring New American cuisine with Italian influences, located at 101 E 19th St, in the Union Square neighborhood of the Manhattan borough of New York City, New York.",
   "overview": "Union Square Cafe is an American restaurant featuring New American cuisine with Italian influences, located at 101 E 19th St, in the Union Square neighborhood of the Manhattan borough of New York City, New York. It is owned by the Union Square Hospitality Group.",
   "popularity": 0.89,
   "factors": {
@@ -1632,7 +1657,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ellen%27s_Stardust_logo.gif/500px-Ellen%27s_Stardust_logo.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Ellen's Stardust Diner is a retro 1950s theme restaurant located at 1650 Broadway on the southeast corner of 51st Street in Theater District, Manhattan, New York City. The diner is regarded as one of the best theme resta",
+  "blurb": "Ellen's Stardust Diner is a retro 1950s theme restaurant located at 1650 Broadway on the southeast corner of 51st Street in Theater District, Manhattan, New York City.",
   "overview": "Ellen's Stardust Diner is a retro 1950s theme restaurant located at 1650 Broadway on the southeast corner of 51st Street in Theater District, Manhattan, New York City. The diner is regarded as one of the best theme restaurants in New York owing to its singing waitstaff. The diner also contains retro-themed memorabilia such as photos of many past Miss Subways on the walls, an indoor train, a 1956 Predicta television, ",
   "popularity": 0.87,
   "factors": {
@@ -1700,7 +1725,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Harlem_-_Sylvia%27s_Restaurant_%2848555310372%29.jpg/500px-Harlem_-_Sylvia%27s_Restaurant_%2848555310372%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Sylvia's Restaurant of Harlem, often called Sylvia's Soul Food or just Sylvia's, is a soul food restaurant located at 328 Malcolm X Boulevard, between 126th and 127th Streets, in Harlem, Manhattan, New York City. Founded",
+  "blurb": "Sylvia's Restaurant of Harlem, often called Sylvia's Soul Food or just Sylvia's, is a soul food restaurant located at 328 Malcolm X Boulevard, between 126th and 127th Streets, in Harlem, Manhattan, New York City.",
   "overview": "Sylvia's Restaurant of Harlem, often called Sylvia's Soul Food or just Sylvia's, is a soul food restaurant located at 328 Malcolm X Boulevard, between 126th and 127th Streets, in Harlem, Manhattan, New York City. Founded in 1962 by Sylvia Woods, it sells a line of prepared foods, beauty and skin care items, cookbooks, and a children's book written by Woods. The restaurant attracts a clientele that ranges from Harlem ",
   "popularity": 0.85,
   "factors": {
@@ -1767,7 +1792,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Petes-tavern-2007_crop.jpg/500px-Petes-tavern-2007_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Pete's Tavern, located at 129 East 18th Street on the corner of Irving Place in the Gramercy Park neighborhood of Manhattan, New York City, is a pub food restaurant and the oldest continuously operating restaurant and ba",
+  "blurb": "Pete's Tavern, located at 129 East 18th Street on the corner of Irving Place in the Gramercy Park neighborhood of Manhattan, New York City, is a pub food restaurant and the oldest continuously operating restaurant and bar in New York City.",
   "overview": "Pete's Tavern, located at 129 East 18th Street on the corner of Irving Place in the Gramercy Park neighborhood of Manhattan, New York City, is a pub food restaurant and the oldest continuously operating restaurant and bar in New York City.",
   "popularity": 0.84,
   "factors": {
@@ -1801,7 +1826,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Gallagher%27s_Steakhouse_%2854077231479%29.jpg/500px-Gallagher%27s_Steakhouse_%2854077231479%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Gallagher's Steakhouse is a steakhouse restaurant at 228 West 52nd Street in the Theater District in Manhattan, New York City. It was founded in November 1927 by Helen Gallagher, a former Ziegfeld girl, and wife of Edwar",
+  "blurb": "Gallagher's Steakhouse is a steakhouse restaurant at 228 West 52nd Street in the Theater District in Manhattan, New York City.",
   "overview": "Gallagher's Steakhouse is a steakhouse restaurant at 228 West 52nd Street in the Theater District in Manhattan, New York City. It was founded in November 1927 by Helen Gallagher, a former Ziegfeld girl, and wife of Edward Gallagher (1873–1929), and Jack Solomon, a colorful gambler with a large loyal following from the sporting element. These were the days of Prohibition and Gallagher's was one of the first speakeasy ",
   "popularity": 0.83,
   "factors": {
@@ -1835,7 +1860,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Yonah_Schimmel_knishes.png/330px-Yonah_Schimmel_knishes.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Yonah Schimmel's Knish Bakery is a bakery and restaurant, located at 137 East Houston Street, on the Lower East Side of Manhattan, that has been selling knishes since 1890. Its current location on Houston Street opened i",
+  "blurb": "Yonah Schimmel's Knish Bakery is a bakery and restaurant, located at 137 East Houston Street, on the Lower East Side of Manhattan, that has been selling knishes since 1890. Its current location on Houston Street opened in 1910.",
   "overview": "Yonah Schimmel's Knish Bakery is a bakery and restaurant, located at 137 East Houston Street, on the Lower East Side of Manhattan, that has been selling knishes since 1890. Its current location on Houston Street opened in 1910. It is certified CupK Kosher.",
   "popularity": 0.82,
   "factors": {
@@ -1970,7 +1995,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Chef%27s_Table_at_Brooklyn_Fare_at_200_Schermerhorn_Street%2C_Sept_2017.jpg/500px-Chef%27s_Table_at_Brooklyn_Fare_at_200_Schermerhorn_Street%2C_Sept_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Chef's Table at Brooklyn Fare is a restaurant in New York City. Originally, the restaurant was located at 200 Schermerhorn Street in Downtown Brooklyn, making it the first New York City restaurant outside Manhattan to re",
+  "blurb": "Chef's Table at Brooklyn Fare is a restaurant in New York City.",
   "overview": "Chef's Table at Brooklyn Fare is a restaurant in New York City. Originally, the restaurant was located at 200 Schermerhorn Street in Downtown Brooklyn, making it the first New York City restaurant outside Manhattan to receive 3 Michelin stars. In December 2016, the restaurant relocated to 431 West 37th Street in the Hell's Kitchen neighborhood of Manhattan.",
   "popularity": 0.8,
   "factors": {
@@ -2176,7 +2201,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Caf%C3%A9_Boulud_NYC.jpg/500px-Caf%C3%A9_Boulud_NYC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Café Boulud, stylized as Café Boulud at Maison BARNES, is a French restaurant located at 100 East 63rd Street on the Upper East Side in Manhattan, in New York City. It is owned by French celebrity chef and restaurateur D",
+  "blurb": "Café Boulud, stylized as Café Boulud at Maison BARNES, is a French restaurant located at 100 East 63rd Street on the Upper East Side in Manhattan, in New York City. It is owned by French celebrity chef and restaurateur Daniel Boulud.",
   "overview": "Café Boulud, stylized as Café Boulud at Maison BARNES, is a French restaurant located at 100 East 63rd Street on the Upper East Side in Manhattan, in New York City. It is owned by French celebrity chef and restaurateur Daniel Boulud. Boulud is New York City's longest-tenured four-star chef.",
   "popularity": 0.77,
   "factors": {
@@ -2346,7 +2371,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/f/fa/Dirt_Candy_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "blurb": "Dirt Candy is a vegetarian restaurant on the Lower East Side of Manhattan in New York City. Chef and owner Amanda Cohen opened the restaurant in a small East Village space in 2008, and moved to its present location in 20",
+  "blurb": "Dirt Candy is a vegetarian restaurant on the Lower East Side of Manhattan in New York City. Chef and owner Amanda Cohen opened the restaurant in a small East Village space in 2008, and moved to its present location in 2015.",
   "overview": "Dirt Candy is a vegetarian restaurant on the Lower East Side of Manhattan in New York City. Chef and owner Amanda Cohen opened the restaurant in a small East Village space in 2008, and moved to its present location in 2015. It has received critical attention for its creative dishes which often focus on a single vegetable.",
   "popularity": 0.74,
   "factors": {
@@ -2624,7 +2649,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Indochine_NYC.jpg/500px-Indochine_NYC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Indochine is a French-Vietnamese restaurant founded in the 1980s in New York City by restaurateur Brian McNally and music producer John Loeffler. Opened \"among the auto body shops of gritty Lafayette Street\" it sits in a",
+  "blurb": "Indochine is a French-Vietnamese restaurant founded in the 1980s in New York City by restaurateur Brian McNally and music producer John Loeffler.",
   "overview": "Indochine is a French-Vietnamese restaurant founded in the 1980s in New York City by restaurateur Brian McNally and music producer John Loeffler. Opened \"among the auto body shops of gritty Lafayette Street\" it sits in a historic row of buildings across from the Public Theater known as La Grange Terrace, which was, at times, the home of Vanderbilts, Astors, Julia Gardiner Tyler, and Warren Delano Jr..",
   "popularity": 0.67,
   "factors": {
@@ -2928,7 +2953,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "Jing Fong is a Chinese dim sum restaurant that was originally located on the second floor of 20 Elizabeth Street in Chinatown, Manhattan, New York City. It had a large seating capacity accommodating over 800 seats with 2",
+  "blurb": "Jing Fong is a Chinese dim sum restaurant that was originally located on the second floor of 20 Elizabeth Street in Chinatown, Manhattan, New York City. It had a large seating capacity accommodating over 800 seats with 20,000 square feet.",
   "overview": "Jing Fong is a Chinese dim sum restaurant that was originally located on the second floor of 20 Elizabeth Street in Chinatown, Manhattan, New York City. It had a large seating capacity accommodating over 800 seats with 20,000 square feet.",
   "popularity": 0.59,
   "factors": {
@@ -3148,7 +3173,8 @@
   },
   "popularity": 0.51,
   "dish": "Seasonal American cooking",
-  "overview": "Gramercy Tavern is a New American restaurant located at 42 East 20th Street (between Broadway and Park Avenue S.), in the Flatiron District in Manhattan, New York City. It is owned by Danny Meyer (originally co-founded by Meyer and Chef Tom Colicchio), along with Chef/Partner Michael Anthony. The Executive Pastry Chef is Karen Demasco. The General Manager is Asher Russem. The restaurant opened in July 1994."
+  "overview": "Gramercy Tavern is a New American restaurant located at 42 East 20th Street (between Broadway and Park Avenue S.), in the Flatiron District in Manhattan, New York City. It is owned by Danny Meyer (originally co-founded by Meyer and Chef Tom Colicchio), along with Chef/Partner Michael Anthony. The Executive Pastry Chef is Karen Demasco. The General Manager is Asher Russem. The restaurant opened in July 1994.",
+  "reception": null
  },
  {
   "id": "rs_sylvia_s",
@@ -3404,7 +3430,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bridges_Restaurant_NYC.jpg/500px-Bridges_Restaurant_NYC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Bridges is a Michelin-starred restaurant located at Chatham Square in the Chinatown neighborhood of Manhattan in New York City. The restaurant opened in September 2024 and serves seasonal small plates influenced by Europ",
+  "blurb": "Bridges is a Michelin-starred restaurant located at Chatham Square in the Chinatown neighborhood of Manhattan in New York City.",
   "overview": "Bridges is a Michelin-starred restaurant located at Chatham Square in the Chinatown neighborhood of Manhattan in New York City. The restaurant opened in September 2024 and serves seasonal small plates influenced by European bistros along with an eclectic, mostly European, wine selection. The head chef, Sam Lawrence, used to work at Estela. Along with the Michelin star, the restaurant also received a rare 9.0 from The",
   "popularity": 0.43,
   "factors": {
@@ -3472,7 +3498,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Yoshino_NYC.jpg/500px-Yoshino_NYC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Yoshino is a Japanese restaurant in New York City serving sushi omakase by head chef Tadashi Yoshida. Yoshino was one of the top three sushi restaurants in Japan according to Tabelog as of 2017 when it decided to shut do",
+  "blurb": "Yoshino is a Japanese restaurant in New York City serving sushi omakase by head chef Tadashi Yoshida.",
   "overview": "Yoshino is a Japanese restaurant in New York City serving sushi omakase by head chef Tadashi Yoshida. Yoshino was one of the top three sushi restaurants in Japan according to Tabelog as of 2017 when it decided to shut down its Nagoya restaurant and move to Tokyo by teaming up with Andrew Gyokudari, a restaurateur and former sushi chef. Yoshino relocated to New York and opened in 2021.",
   "popularity": 0.4,
   "factors": {
@@ -3659,7 +3685,8 @@
   },
   "popularity": 0.37,
   "dish": "Pork belly buns",
-  "overview": "Momofuku is a culinary brand established by chef David Chang in 2004 with the opening of Momofuku Noodle Bar. It includes restaurants in New York City, Toronto (defunct), Las Vegas, and Los Angeles. Its various restaurants are called Noodle Bar, Ssäm Bar, Ko, Má Pêche (defunct), Seiōbo, Noodle Bar Toronto (defunct), Kōjin, Fuku, Fuku+, CCDC, Nishi, Ando, Las Vegas, Fuku Wall St, Kāwi, Kabawa, and Bar Kabawa."
+  "overview": "Momofuku is a culinary brand established by chef David Chang in 2004 with the opening of Momofuku Noodle Bar. It includes restaurants in New York City, Toronto (defunct), Las Vegas, and Los Angeles. Its various restaurants are called Noodle Bar, Ssäm Bar, Ko, Má Pêche (defunct), Seiōbo, Noodle Bar Toronto (defunct), Kōjin, Fuku, Fuku+, CCDC, Nishi, Ando, Las Vegas, Fuku Wall St, Kāwi, Kabawa, and Bar Kabawa.",
+  "reception": null
  },
  {
   "id": "rs_wd_kest_newyork",
@@ -3712,7 +3739,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "The Carlyle Restaurant, formerly Dumonet at the Carlyle, is a Contemporary American cuisine restaurant located at 35 East 76th Street, in the back of the Carlyle Hotel, on the Upper East Side in Manhattan, in New York Ci",
+  "blurb": "The Carlyle Restaurant, formerly Dumonet at the Carlyle, is a Contemporary American cuisine restaurant located at 35 East 76th Street, in the back of the Carlyle Hotel, on the Upper East Side in Manhattan, in New York City.",
   "overview": "The Carlyle Restaurant, formerly Dumonet at the Carlyle, is a Contemporary American cuisine restaurant located at 35 East 76th Street, in the back of the Carlyle Hotel, on the Upper East Side in Manhattan, in New York City. It was established in 1930.",
   "popularity": 0.36,
   "factors": {
@@ -3987,7 +4014,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/KONO_at_New_York_City%2C_2025.png/500px-KONO_at_New_York_City%2C_2025.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Kono is a Japanese restaurant in New York City that primarily serves yakitori. Opened in 2022 by New York City-based yakitori chef and breakdancer Atsushi Kono, it is located in the Canal Arcade, a pedestrian passageway ",
+  "blurb": "Kono is a Japanese restaurant in New York City that primarily serves yakitori.",
   "overview": "Kono is a Japanese restaurant in New York City that primarily serves yakitori. Opened in 2022 by New York City-based yakitori chef and breakdancer Atsushi Kono, it is located in the Canal Arcade, a pedestrian passageway that runs between Bowery and Elizabeth Street in Chinatown.",
   "popularity": 0.26,
   "factors": {
@@ -4122,7 +4149,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "Salumeria Rosi is an Italian restaurant located at 283 Amsterdam Avenue, on the Upper West Side in Manhattan, in New York City. It offers imported meats and cheeses, handcrafted pastas, classic Italian wine and cocktails",
+  "blurb": "Salumeria Rosi is an Italian restaurant located at 283 Amsterdam Avenue, on the Upper West Side in Manhattan, in New York City. It offers imported meats and cheeses, handcrafted pastas, classic Italian wine and cocktails.",
   "overview": "Salumeria Rosi is an Italian restaurant located at 283 Amsterdam Avenue, on the Upper West Side in Manhattan, in New York City. It offers imported meats and cheeses, handcrafted pastas, classic Italian wine and cocktails.",
   "popularity": 0.2,
   "factors": {
@@ -4206,7 +4233,8 @@
   },
   "popularity": 0.19,
   "dish": "Tasting-menu fish courses",
-  "overview": "Le Bernardin is a three-Michelin star French seafood restaurant in Midtown Manhattan, New York City. Eric Ripert is the executive chef, and he is co-owner along with Maguy Le Coze."
+  "overview": "Le Bernardin is a three-Michelin star French seafood restaurant in Midtown Manhattan, New York City. Eric Ripert is the executive chef, and he is co-owner along with Maguy Le Coze.",
+  "reception": null
  },
  {
   "id": "rs_h_mart_food_court_k_town",
@@ -4850,7 +4878,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Chicago%2C_Illinois%2C_U.S._%282023%29_-_033.jpg/500px-Chicago%2C_Illinois%2C_U.S._%282023%29_-_033.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "The Starbucks Reserve Roastery in Chicago, which opened November 15, 2019, is the largest Starbucks location in the world and latest roastery to be built. The building at 646 North Michigan Avenue on the Magnificent Mile",
+  "blurb": "The Starbucks Reserve Roastery in Chicago, which opened November 15, 2019, is the largest Starbucks location in the world and latest roastery to be built.",
   "overview": "The Starbucks Reserve Roastery in Chicago, which opened November 15, 2019, is the largest Starbucks location in the world and latest roastery to be built. The building at 646 North Michigan Avenue on the Magnificent Mile has five stories at 35,000 square feet (3,300 m2). It was formerly a flagship store for Crate & Barrel. The roastery includes a coffee bar, cocktail bar, and Italian-style sandwich shop. Starbucks in",
   "popularity": 0.85,
   "factors": {
@@ -5000,7 +5028,8 @@
   },
   "popularity": 0.81,
   "dish": "Wood-fired share plates",
-  "overview": "Girl & the Goat is a restaurant in Chicago, Illinois. Time Out Chicago has rated the restaurant four out of five stars."
+  "overview": "Girl & the Goat is a restaurant in Chicago, Illinois. Time Out Chicago has rated the restaurant four out of five stars.",
+  "reception": null
  },
  {
   "id": "rs_lou_malnati_s_pizzeria",
@@ -5034,7 +5063,8 @@
   },
   "popularity": 0.76,
   "dish": "Butter-crust deep dish",
-  "overview": "Lou Malnati's Pizzeria is an American Chicago-style pizza restaurant chain, known for its deep dish pizza, currently headquartered in Buffalo Grove, Illinois. It was founded by Lou Malnati, who was involved in developing the recipe for Chicago-style deep dish pizza. Lou Malnati's has become one of the best-known and oldest family names of Chicago-style pizza restaurants."
+  "overview": "Lou Malnati's Pizzeria is an American Chicago-style pizza restaurant chain, known for its deep dish pizza, currently headquartered in Buffalo Grove, Illinois. It was founded by Lou Malnati, who was involved in developing the recipe for Chicago-style deep dish pizza. Lou Malnati's has become one of the best-known and oldest family names of Chicago-style pizza restaurants.",
+  "reception": null
  },
  {
   "id": "rs_wd_lems_bar_b_q_chicago",
@@ -5053,7 +5083,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lem%27s_Bar-B-Q%2C_Chicago.jpg/500px-Lem%27s_Bar-B-Q%2C_Chicago.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Lem's Bar-B-Q is a barbecue restaurant in the Chatham community of Chicago, Illinois, in the United States. The restaurant is known for its rib tips, which Eater has described as Chicago's \"most famous rib tips.\" In 2025",
+  "blurb": "Lem's Bar-B-Q is a barbecue restaurant in the Chatham community of Chicago, Illinois, in the United States.",
   "overview": "Lem's Bar-B-Q is a barbecue restaurant in the Chatham community of Chicago, Illinois, in the United States. The restaurant is known for its rib tips, which Eater has described as Chicago's \"most famous rib tips.\" In 2025 it was named one of America's Classics by the James Beard Foundation.",
   "popularity": 0.71,
   "factors": {
@@ -5088,7 +5118,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Manny%27s_Deli.jpg/500px-Manny%27s_Deli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Manny's Cafeteria and Delicatessen, commonly known as Manny's Deli and sometimes known as Manny's Coffee Shop & Deli, is a delicatessen in Chicago, Illinois, United States, located in the Near West Side community area. I",
+  "blurb": "Manny's Cafeteria and Delicatessen, commonly known as Manny's Deli and sometimes known as Manny's Coffee Shop & Deli, is a delicatessen in Chicago, Illinois, United States, located in the Near West Side community area.",
   "overview": "Manny's Cafeteria and Delicatessen, commonly known as Manny's Deli and sometimes known as Manny's Coffee Shop & Deli, is a delicatessen in Chicago, Illinois, United States, located in the Near West Side community area. It has been described as \"the biggest, best-known, and oldest deli in the city\". The deli has long been a meeting place for Chicago politicians and became the subject of national interest because of it",
   "popularity": 0.67,
   "factors": {
@@ -5323,7 +5353,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "Sepia is a mid-sized, upscale restaurant run by owner Emmanuel Nony and Executive Chef Kyle Cottle located in the West Loop neighborhood of Chicago, Illinois. The menu is classified as New American cuisine, and focuses o",
+  "blurb": "Sepia is a mid-sized, upscale restaurant run by owner Emmanuel Nony and Executive Chef Kyle Cottle located in the West Loop neighborhood of Chicago, Illinois.",
   "overview": "Sepia is a mid-sized, upscale restaurant run by owner Emmanuel Nony and Executive Chef Kyle Cottle located in the West Loop neighborhood of Chicago, Illinois. The menu is classified as New American cuisine, and focuses on local, seasonal products.",
   "popularity": 0.5,
   "factors": {
@@ -5541,7 +5571,8 @@
   },
   "popularity": 0.38,
   "dish": "Edible-balloon tasting menu",
-  "overview": "Alinea is a restaurant in Chicago, Illinois, United States. It is owned by chef Grant Achatz and Nick Kokonas, and known for its \"maximalist modernist cooking\". From 2011 to 2024, Alinea was awarded three stars by the Michelin Guide; it was downgraded to two Michelin stars in 2025."
+  "overview": "Alinea is a restaurant in Chicago, Illinois, United States. It is owned by chef Grant Achatz and Nick Kokonas, and known for its \"maximalist modernist cooking\". From 2011 to 2024, Alinea was awarded three stars by the Michelin Guide; it was downgraded to two Michelin stars in 2025.",
+  "reception": null
  },
  {
   "id": "rs_monteverde",
@@ -5764,7 +5795,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Outside_Atelier_Crenn.jpg/500px-Outside_Atelier_Crenn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Atelier Crenn is a French restaurant in the Cow Hollow neighborhood of San Francisco, California. Opened in 2011 by Dominique Crenn and Juan Contreras, the restaurant became the seventh restaurant in the San Francisco Ba",
+  "blurb": "Atelier Crenn is a French restaurant in the Cow Hollow neighborhood of San Francisco, California.",
   "overview": "Atelier Crenn is a French restaurant in the Cow Hollow neighborhood of San Francisco, California. Opened in 2011 by Dominique Crenn and Juan Contreras, the restaurant became the seventh restaurant in the San Francisco Bay Area to be awarded three Michelin stars by the Michelin Guide in 2018.",
   "popularity": 0.92,
   "factors": {
@@ -5866,7 +5897,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "Quince is a restaurant in the Jackson Square neighborhood in San Francisco, California. Opened in 2003 by chef Michael Tusk and his wife, Lindsay Tusk, in Pacific Heights, the restaurant has been located in Jackson Squar",
+  "blurb": "Quince is a restaurant in the Jackson Square neighborhood in San Francisco, California. Opened in 2003 by chef Michael Tusk and his wife, Lindsay Tusk, in Pacific Heights, the restaurant has been located in Jackson Square since 2009.",
   "overview": "Quince is a restaurant in the Jackson Square neighborhood in San Francisco, California. Opened in 2003 by chef Michael Tusk and his wife, Lindsay Tusk, in Pacific Heights, the restaurant has been located in Jackson Square since 2009. A sister restaurant, Cotogna, opened next door in 2011. The couple opened a third establishment, Verjus, a wine bar and restaurant in the same neighborhood, in 2019.",
   "popularity": 0.86,
   "factors": {
@@ -5900,7 +5931,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Tsr.jpg/500px-Tsr.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "The Stinking Rose is a Californian restaurant known for including garlic in all its dishes, including its garlic ice cream. The first location opened in San Francisco in 1991, followed by a second location in Beverly Hil",
+  "blurb": "The Stinking Rose is a Californian restaurant known for including garlic in all its dishes, including its garlic ice cream. The first location opened in San Francisco in 1991, followed by a second location in Beverly Hills in 1996.",
   "overview": "The Stinking Rose is a Californian restaurant known for including garlic in all its dishes, including its garlic ice cream. The first location opened in San Francisco in 1991, followed by a second location in Beverly Hills in 1996. The Beverly Hills restaurant announced its permanent closure in October 2021. The San Francisco location was originally located at 325 Columbus Ave, and moved in 2021 to its current addres",
   "popularity": 0.84,
   "factors": {
@@ -5934,7 +5965,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Top_of_the_Mark_%2816683414895%29.jpg/500px-Top_of_the_Mark_%2816683414895%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "The Top of the Mark is a penthouse level bar located on the nineteenth floor of the Mark Hopkins Hotel on Nob Hill at California and Mason Streets in San Francisco, California. Located at the highest point of downtown Sa",
+  "blurb": "The Top of the Mark is a penthouse level bar located on the nineteenth floor of the Mark Hopkins Hotel on Nob Hill at California and Mason Streets in San Francisco, California.",
   "overview": "The Top of the Mark is a penthouse level bar located on the nineteenth floor of the Mark Hopkins Hotel on Nob Hill at California and Mason Streets in San Francisco, California. Located at the highest point of downtown San Francisco, on fog-free days the Top of the Mark has views of the financial district, Chinatown, North Beach, The San Francisco Bay, and of Grace Cathedral and Huntington Park.",
   "popularity": 0.81,
   "factors": {
@@ -6003,7 +6034,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Vesuvio_mural.jpg/500px-Vesuvio_mural.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Vesuvio Cafe is a historic bar in San Francisco, California, United States. Located at 255 Columbus Avenue, across an alley from City Lights Bookstore, the building was designed and built in 1913 by Italian architect Ita",
+  "blurb": "Vesuvio Cafe is a historic bar in San Francisco, California, United States.",
   "overview": "Vesuvio Cafe is a historic bar in San Francisco, California, United States. Located at 255 Columbus Avenue, across an alley from City Lights Bookstore, the building was designed and built in 1913 by Italian architect Italo Zanolini, and remodeled in 1918.",
   "popularity": 0.79,
   "factors": {
@@ -6522,7 +6553,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Audiffred_Building_%28San_Francisco%29.JPG/500px-Audiffred_Building_%28San_Francisco%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "The Audiffred Building is a three-story historic commercial building in San Francisco, California, United States, formerly the location of waterfront bars and of the headquarters of a seamen's union, and now housing Boul",
+  "blurb": "The Audiffred Building is a three-story historic commercial building in San Francisco, California, United States, formerly the location of waterfront bars and of the headquarters of a seamen's union, and now housing Boulevard restaurant.",
   "overview": "The Audiffred Building is a three-story historic commercial building in San Francisco, California, United States, formerly the location of waterfront bars and of the headquarters of a seamen's union, and now housing Boulevard restaurant. It is City of San Francisco Landmark number 7, and was listed on the National Register of Historic Places in 1979.",
   "popularity": 0.52,
   "factors": {
@@ -6556,7 +6587,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "MIXT (previously Mixt Greens) is a fast-casual restaurant that specializes in chef-crafted salads, grain bowls, market plates and sandwiches sourced from local and organic ingredients. The company was founded in 2005 in ",
+  "blurb": "MIXT (previously Mixt Greens) is a fast-casual restaurant that specializes in chef-crafted salads, grain bowls, market plates and sandwiches sourced from local and organic ingredients.",
   "overview": "MIXT (previously Mixt Greens) is a fast-casual restaurant that specializes in chef-crafted salads, grain bowls, market plates and sandwiches sourced from local and organic ingredients. The company was founded in 2005 in San Francisco by Andrew Swallow, a fine dining chef and cookbook author, his sister Leslie Silverglide, an entrepreneur with a master's degree in sustainability; and her husband David Silverglide, a t",
   "popularity": 0.48,
   "factors": {
@@ -6673,7 +6704,8 @@
   },
   "popularity": 0.4,
   "dish": "Roast chicken for two",
-  "overview": "Zuni may refer to:"
+  "overview": "Zuni may refer to:",
+  "reception": null
  },
  {
   "id": "rs_yank_sing",
@@ -7198,7 +7230,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/120207-LA-Philippes.jpg/500px-120207-LA-Philippes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "\"Philippe the Original\", commonly known as Philippe's is a restaurant located in downtown Los Angeles, California. The restaurant is well known for continuously operating since 1908, making it one of the oldest restauran",
+  "blurb": "\"Philippe the Original\", commonly known as Philippe's is a restaurant located in downtown Los Angeles, California. The restaurant is well known for continuously operating since 1908, making it one of the oldest restaurants in Los Angeles.",
   "overview": "\"Philippe the Original\", commonly known as Philippe's is a restaurant located in downtown Los Angeles, California. The restaurant is well known for continuously operating since 1908, making it one of the oldest restaurants in Los Angeles. It is also renowned for claiming to be the inventor of the French dip sandwich.",
   "popularity": 0.88,
   "factors": {
@@ -7468,7 +7500,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/4/4f/Bavel_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "blurb": "Bavel is a Middle Eastern restaurant in the Arts District neighborhood of Los Angeles. The restaurant defines itself as Middle Eastern, showcasing the cuisines of Israel, Morocco, Turkey, and Egypt, though some critics c",
+  "blurb": "Bavel is a Middle Eastern restaurant in the Arts District neighborhood of Los Angeles.",
   "overview": "Bavel is a Middle Eastern restaurant in the Arts District neighborhood of Los Angeles. The restaurant defines itself as Middle Eastern, showcasing the cuisines of Israel, Morocco, Turkey, and Egypt, though some critics characterize it as Israeli. It received positive reviews from Jonathan Gold and Bon Appétit, and the Los Angeles Times named it 2019 Restaurant of the Year.",
   "popularity": 0.57,
   "factors": {
@@ -7679,7 +7711,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Idle_Hour_Cafe_North_Hollywood_2015-02-15.jpg/500px-Idle_Hour_Cafe_North_Hollywood_2015-02-15.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Idle Hour Café, also known as Idle Hour, is a historic bar and restaurant located at 4824 Vineland Avenue in North Hollywood's NoHo Arts District in Los Angeles, California. Opened in 1941, it is best known for the progr",
+  "blurb": "Idle Hour Café, also known as Idle Hour, is a historic bar and restaurant located at 4824 Vineland Avenue in North Hollywood's NoHo Arts District in Los Angeles, California.",
   "overview": "Idle Hour Café, also known as Idle Hour, is a historic bar and restaurant located at 4824 Vineland Avenue in North Hollywood's NoHo Arts District in Los Angeles, California. Opened in 1941, it is best known for the programmatic architecture of the building it is in. The building was declared Los Angeles Cultural-Historic Monument #977 in 2010.",
   "popularity": 0.46,
   "factors": {
@@ -7747,7 +7779,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/3/34/Crumbs_and_Whiskers_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "blurb": "Crumbs and Whiskers is a cat café that foster rescue cats and offer cafe amenities in Washington, D.C., and Los Angeles, California. Crumbs & Whiskers partners with rescues who save cats at risk of euthanasia in high kil",
+  "blurb": "Crumbs and Whiskers is a cat café that foster rescue cats and offer cafe amenities in Washington, D.C., and Los Angeles, California.",
   "overview": "Crumbs and Whiskers is a cat café that foster rescue cats and offer cafe amenities in Washington, D.C., and Los Angeles, California. Crumbs & Whiskers partners with rescues who save cats at risk of euthanasia in high kill shelters and cats facing homelessness on the streets.",
   "popularity": 0.25,
   "factors": {
@@ -7914,7 +7946,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "Azizam is an Iranian restaurant in Los Angeles, California, United States. It was named one of the 50 Best Restaurants in the US by the New York Times, one of the twenty best new restaurants of 2024 by Bon Appétit,, one ",
+  "blurb": "Azizam is an Iranian restaurant in Los Angeles, California, United States.",
   "overview": "Azizam is an Iranian restaurant in Los Angeles, California, United States. It was named one of the 50 Best Restaurants in the US by the New York Times, one of the twenty best new restaurants of 2024 by Bon Appétit,, one of the 101 Best Restaurants in Los Angeles by the Los Angeles Times in 2024 & 2025 and one of the best new restaurants of 2024 by Esquire Magazine",
   "popularity": 0.18,
   "factors": {
@@ -8031,7 +8063,8 @@
   },
   "popularity": 0.11,
   "dish": "Larb",
-  "overview": "Night markets or night bazaars (Chinese: 夜市) are street markets which operate at night and are generally dedicated to more leisurely strolling, shopping, and eating than more businesslike day markets. The culture of night markets originates from China and have spread globally with overseas Chinese populations."
+  "overview": "Night markets or night bazaars (Chinese: 夜市) are street markets which operate at night and are generally dedicated to more leisurely strolling, shopping, and eating than more businesslike day markets. The culture of night markets originates from China and have spread globally with overseas Chinese populations.",
+  "reception": null
  },
  {
   "id": "rs_wd_morihiro_losangeles",
@@ -8133,7 +8166,8 @@
   },
   "popularity": 0.67,
   "dish": "The reuben",
-  "overview": "Zingerman's, or Zingerman's Community of Businesses, is a gourmet food business group headquartered in Ann Arbor, Michigan. The original business and current flagship operation is Zingerman's Delicatessen. Starting from the original deli, Zingerman's Community of Businesses (ZCoB) has expanded to nine Ann Arbor based businesses with over 500 total employees."
+  "overview": "Zingerman's, or Zingerman's Community of Businesses, is a gourmet food business group headquartered in Ann Arbor, Michigan. The original business and current flagship operation is Zingerman's Delicatessen. Starting from the original deli, Zingerman's Community of Businesses (ZCoB) has expanded to nine Ann Arbor based businesses with over 500 total employees.",
+  "reception": null
  },
  {
   "id": "rs_the_varsity",
@@ -8168,7 +8202,8 @@
   },
   "popularity": 0.99,
   "dish": "Chili dogs",
-  "overview": "Varsity may refer to:"
+  "overview": "Varsity may refer to:",
+  "reception": null
  },
  {
   "id": "rs_fox_bros_bar_b_q",
@@ -8528,7 +8563,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Oasis_Restaurant_logo.png/330px-Oasis_Restaurant_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "The Oasis on Lake Travis is a restaurant on the western edge of Austin, Texas, United States. Established in 1982, the restaurant promotes itself as the \"Sunset Capital of Texas\" with its terraced views looking west over",
+  "blurb": "The Oasis on Lake Travis is a restaurant on the western edge of Austin, Texas, United States. Established in 1982, the restaurant promotes itself as the \"Sunset Capital of Texas\" with its terraced views looking west over Lake Travis.",
   "overview": "The Oasis on Lake Travis is a restaurant on the western edge of Austin, Texas, United States. Established in 1982, the restaurant promotes itself as the \"Sunset Capital of Texas\" with its terraced views looking west over Lake Travis. It is one of the largest restaurants in the world and serves American and Tex-Mex cuisine.",
   "popularity": 0.81,
   "factors": {
@@ -8577,7 +8612,8 @@
   },
   "popularity": 0.78,
   "dish": "Brisket",
-  "overview": "Franklin Barbecue is a barbecue restaurant located in Austin, Texas, founded in 2009 by Aaron Franklin. The restaurant has sold out of brisket every day since its establishment and has attracted a national following."
+  "overview": "Franklin Barbecue is a barbecue restaurant located in Austin, Texas, founded in 2009 by Aaron Franklin. The restaurant has sold out of brisket every day since its establishment and has attracted a national following.",
+  "reception": null
  },
  {
   "id": "rs_wd_scholz_garten_austin",
@@ -8596,7 +8632,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Scholz_garden_2007.jpg/500px-Scholz_garden_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Scholz Garten is a beer garden and restaurant in downtown Austin, Texas and one of the oldest operating businesses in Texas. Among the Texas businesses that predate Scholz Garten are the Daily News in Galveston (1842), t",
+  "blurb": "Scholz Garten is a beer garden and restaurant in downtown Austin, Texas and one of the oldest operating businesses in Texas.",
   "overview": "Scholz Garten is a beer garden and restaurant in downtown Austin, Texas and one of the oldest operating businesses in Texas. Among the Texas businesses that predate Scholz Garten are the Daily News in Galveston (1842), the Excelsior Hotel in Jefferson (1858), the Menger Hotel in San Antonio (1859), and Imperial Sugar in Sugar Land (1842).",
   "popularity": 0.72,
   "factors": {
@@ -8846,7 +8882,8 @@
   },
   "popularity": 0.43,
   "dish": "Inventive sushi omakase",
-  "overview": "Uchi is a sushi restaurant in Austin, Texas, which opened in 2003. The Japanese word \"Uchi\" translates to \"house\" in English."
+  "overview": "Uchi is a sushi restaurant in Austin, Texas, which opened in 2003. The Japanese word \"Uchi\" translates to \"house\" in English.",
+  "reception": null
  },
  {
   "id": "rs_la_barbecue",
@@ -9021,7 +9058,8 @@
   },
   "popularity": 0.25,
   "dish": "Chopped whole hog with cracklin",
-  "overview": "Skylight Inn BBQ is a barbecue restaurant in Ayden, North Carolina. Founded by Pete Jones in 1947, it specializes in whole hog barbecue."
+  "overview": "Skylight Inn BBQ is a barbecue restaurant in Ayden, North Carolina. Founded by Pete Jones in 1947, it specializes in whole hog barbecue.",
+  "reception": null
  },
  {
   "id": "rs_faidley_s_seafood",
@@ -9055,7 +9093,8 @@
   },
   "popularity": 0.26,
   "dish": "Jumbo lump crab cake",
-  "overview": "Faidley's Seafood is a seafood restaurant in Lexington Market in Baltimore, Maryland. It is one of the oldest restaurants of its kind in the Chesapeake Bay area. The restaurant is known for its lump crab cakes."
+  "overview": "Faidley's Seafood is a seafood restaurant in Lexington Market in Baltimore, Maryland. It is one of the oldest restaurants of its kind in the Chesapeake Bay area. The restaurant is known for its lump crab cakes.",
+  "reception": null
  },
  {
   "id": "rs_wd_mobtown_ballroom_baltimore",
@@ -9472,7 +9511,8 @@
   },
   "popularity": 0.74,
   "dish": "Detroit-style square",
-  "overview": "Buddy's Pizza is an independent pizza restaurant chain based in Detroit, Michigan. Founded in 1946, the company has an annual revenue of US$30 million. The chain has 19 restaurants and over 700 employees. Buddy's has been called one of the five best pizzerias in the United States by the Food Network."
+  "overview": "Buddy's Pizza is an independent pizza restaurant chain based in Detroit, Michigan. Founded in 1946, the company has an annual revenue of US$30 million. The chain has 19 restaurants and over 700 employees. Buddy's has been called one of the five best pizzerias in the United States by the Food Network.",
+  "reception": null
  },
  {
   "id": "rs_wd_elwood_bar_detroit",
@@ -9606,7 +9646,8 @@
   },
   "popularity": 0.58,
   "dish": "Brisket and tallow ribs",
-  "overview": "Truth BBQ is a barbecue restaurant in Houston, in the U.S. state of Texas. It has received Bib Gourmand status in the Michelin Guide for Texas."
+  "overview": "Truth BBQ is a barbecue restaurant in Houston, in the U.S. state of Texas. It has received Bib Gourmand status in the Michelin Guide for Texas.",
+  "reception": null
  },
  {
   "id": "rs_wd_niko_nikos_houston",
@@ -9627,7 +9668,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/8/85/Niko_Niko%27s_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "blurb": "Niko Niko's Greek & American Café is a restaurant located in Montrose District, Houston, Texas known for serving Greek cuisine. Chrisanthios Fetokakis opened the restaurant in 1977, and ownership was eventually passed on",
+  "blurb": "Niko Niko's Greek & American Café is a restaurant located in Montrose District, Houston, Texas known for serving Greek cuisine.",
   "overview": "Niko Niko's Greek & American Café is a restaurant located in Montrose District, Houston, Texas known for serving Greek cuisine. Chrisanthios Fetokakis opened the restaurant in 1977, and ownership was eventually passed on to his son, Dimitri Fetokakis.",
   "popularity": 0.51,
   "factors": {
@@ -9743,7 +9784,8 @@
   },
   "popularity": 0.28,
   "dish": "Viet-Cajun crawfish boil",
-  "overview": "Crawfish & Noodles is a restaurant in Houston, Texas, United States."
+  "overview": "Crawfish & Noodles is a restaurant in Houston, Texas, United States.",
+  "reception": null
  },
  {
   "id": "rs_himalaya",
@@ -9795,7 +9837,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Droubi%E2%80%99s_%2834141%29.jpg/500px-Droubi%E2%80%99s_%2834141%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Droubi's is a historic Lebanese / Middle Eastern restaurant in Houston, Texas that opened in 1979. It has been cited by other local chefs as a source of inspiration, as well as cited by other chefs in lists of favorite r",
+  "blurb": "Droubi's is a historic Lebanese / Middle Eastern restaurant in Houston, Texas that opened in 1979.",
   "overview": "Droubi's is a historic Lebanese / Middle Eastern restaurant in Houston, Texas that opened in 1979. It has been cited by other local chefs as a source of inspiration, as well as cited by other chefs in lists of favorite restaurants and dishes.",
   "popularity": 0.1,
   "factors": {
@@ -9844,7 +9886,8 @@
   },
   "popularity": 0.97,
   "dish": "Burnt ends",
-  "overview": "Joe's Kansas City Bar-B-Que, formerly known as Oklahoma Joe's, is a barbecue restaurant, with locations in the Kansas City metropolitan area. It is owned and operated by Jeff and Joy Stehney."
+  "overview": "Joe's Kansas City Bar-B-Que, formerly known as Oklahoma Joe's, is a barbecue restaurant, with locations in the Kansas City metropolitan area. It is owned and operated by Jeff and Joy Stehney.",
+  "reception": null
  },
  {
   "id": "rs_q39",
@@ -9878,7 +9921,8 @@
   },
   "popularity": 0.79,
   "dish": "Competition ribs",
-  "overview": "Q39 may refer to: Q39 (New York City bus) Az-Zumar, a surah of the Quran French submarine Cigogne (Q39) Q39 (restaurant)]"
+  "overview": "Q39 may refer to: Q39 (New York City bus) Az-Zumar, a surah of the Quran French submarine Cigogne (Q39) Q39 (restaurant)]",
+  "reception": null
  },
  {
   "id": "rs_wd_latelier_de_jo_l_robuchon_lasvegas",
@@ -9897,7 +9941,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/JoelRobuchon.jpg/500px-JoelRobuchon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Joël Robuchon is a French gourmet restaurant opened by French chef and restaurateur Joël Robuchon. The restaurant, located at the MGM Grand Las Vegas in Las Vegas, Nevada, was rated 3 stars in 2009 by the Michelin Guide,",
+  "blurb": "Joël Robuchon is a French gourmet restaurant opened by French chef and restaurateur Joël Robuchon.",
   "overview": "Joël Robuchon is a French gourmet restaurant opened by French chef and restaurateur Joël Robuchon. The restaurant, located at the MGM Grand Las Vegas in Las Vegas, Nevada, was rated 3 stars in 2009 by the Michelin Guide, 5-stars by Forbes Travel Guide, and has been ranked by Wine Spectator and Travel and Leisure to be among the finest restaurants in the world. It was ranked as one of the Top 5 best restaurants in the",
   "popularity": 0.9,
   "factors": {
@@ -10258,7 +10302,8 @@
   },
   "popularity": 0.29,
   "dish": "Saturday-morning brisket",
-  "overview": "Snow's BBQ is a renowned Texas barbecue restaurant located in the small town of Lexington roughly an hour outside of Austin, Texas to the east. Snow's is open only on Saturdays from 8 AM until they run out of meat, often around noon. The unusual hours were originally kept to take advantage of a weekly Saturday livestock auction nearby at 12:30 PM. The name comes from owner Kerry Bexley's lifelong nickname."
+  "overview": "Snow's BBQ is a renowned Texas barbecue restaurant located in the small town of Lexington roughly an hour outside of Austin, Texas to the east. Snow's is open only on Saturdays from 8 AM until they run out of meat, often around noon. The unusual hours were originally kept to take advantage of a weekly Saturday livestock auction nearby at 12:30 PM. The name comes from owner Kerry Bexley's lifelong nickname.",
+  "reception": null
  },
  {
   "id": "rs_jack_fry_s",
@@ -10326,7 +10371,8 @@
   },
   "popularity": 0.85,
   "dish": "Charcoal dry ribs",
-  "overview": "The Rendezvous Hotel Singapore (formerly the Rendezvous Grand Hotel Singapore) is a hotel located on Bras Basah Road in the Museum District of Singapore, across from the Singapore Management University (SMU). It is located on the historic site of the Hock Lock Kee Restaurant which began operations in the early 1950s."
+  "overview": "The Rendezvous Hotel Singapore (formerly the Rendezvous Grand Hotel Singapore) is a hotel located on Bras Basah Road in the Museum District of Singapore, across from the Singapore Management University (SMU). It is located on the historic site of the Hock Lock Kee Restaurant which began operations in the early 1950s.",
+  "reception": null
  },
  {
   "id": "rs_central_bbq",
@@ -10393,7 +10439,8 @@
   },
   "popularity": 0.94,
   "dish": "The cubano",
-  "overview": "Versailles is a chain of three Cuban cuisine restaurants in Los Angeles, California, USA. The first restaurant in this chain opened in 1971 in West Los Angeles, specifically in the Palms district on Venice Blvd, just north of Culver City."
+  "overview": "Versailles is a chain of three Cuban cuisine restaurants in Los Angeles, California, USA. The first restaurant in this chain opened in 1971 in West Los Angeles, specifically in the Palms district on Venice Blvd, just north of Culver City.",
+  "reception": null
  },
  {
   "id": "rs_joe_s_stone_crab",
@@ -10427,7 +10474,8 @@
   },
   "popularity": 0.89,
   "dish": "Stone crab claws",
-  "overview": "Joe's Stone Crab is an American seafood restaurant in Miami Beach, Florida. In 1998 the restaurant won an America's Classic Award from the James Beard Foundation It is consistently among the highest grossing individual restaurants in the United States, with 2024 sales approaching $50 million."
+  "overview": "Joe's Stone Crab is an American seafood restaurant in Miami Beach, Florida. In 1998 the restaurant won an America's Classic Award from the James Beard Foundation It is consistently among the highest grossing individual restaurants in the United States, with 2024 sales approaching $50 million.",
+  "reception": null
  },
  {
   "id": "rs_el_palacio_de_los_jugos",
@@ -10579,7 +10627,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/5%C2%B78ClubMPLS.jpg/500px-5%C2%B78ClubMPLS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "The 5-8 Club Tavern & Grill is a restaurant in Minneapolis, Minnesota. Founded in 1928 as a speakeasy, the eatery is one of two Minneapolis establishments that claim to have invented the Juicy Lucy cheeseburger in the 19",
+  "blurb": "The 5-8 Club Tavern & Grill is a restaurant in Minneapolis, Minnesota.",
   "overview": "The 5-8 Club Tavern & Grill is a restaurant in Minneapolis, Minnesota. Founded in 1928 as a speakeasy, the eatery is one of two Minneapolis establishments that claim to have invented the Juicy Lucy cheeseburger in the 1950s, the other being Matt's Bar. The 5-8 Club also serves its Saucy Sally burger and other dishes including fried cheese curds and onion straws. The restaurant, which has been featured on several Trav",
   "popularity": 0.68,
   "factors": {
@@ -10648,7 +10696,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Hard_times_cafe_minneapolis.jpg/500px-Hard_times_cafe_minneapolis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Hard Times Cafe is a collectively owned restaurant in the Cedar-Riverside neighborhood of Minneapolis, Minnesota. It is known for its punk and hippie ideology, its gritty ambiance, and its large selection of vegan and ve",
+  "blurb": "Hard Times Cafe is a collectively owned restaurant in the Cedar-Riverside neighborhood of Minneapolis, Minnesota. It is known for its punk and hippie ideology, its gritty ambiance, and its large selection of vegan and vegetarian food.",
   "overview": "Hard Times Cafe is a collectively owned restaurant in the Cedar-Riverside neighborhood of Minneapolis, Minnesota. It is known for its punk and hippie ideology, its gritty ambiance, and its large selection of vegan and vegetarian food. It is open from 8 a.m. to midnight every day.",
   "popularity": 0.62,
   "factors": {
@@ -10682,7 +10730,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/BryantLake.JPG/500px-BryantLake.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Bryant-Lake Bowl, locally nicknamed BLB, is a bowling alley, restaurant, bar, and 90-seat theatre in Uptown Minneapolis, Minnesota. Best known for its evening entertainment and Cheap Date Night specials BLB is also a rel",
+  "blurb": "Bryant-Lake Bowl, locally nicknamed BLB, is a bowling alley, restaurant, bar, and 90-seat theatre in Uptown Minneapolis, Minnesota. Best known for its evening entertainment and Cheap Date Night specials BLB is also a reliable brunch stop.",
   "overview": "Bryant-Lake Bowl, locally nicknamed BLB, is a bowling alley, restaurant, bar, and 90-seat theatre in Uptown Minneapolis, Minnesota. Best known for its evening entertainment and Cheap Date Night specials BLB is also a reliable brunch stop. The theatre is a venue for cabaret and wide variety of other stage productions. It is a host of the annual Minnesota Fringe Festival.",
   "popularity": 0.61,
   "factors": {
@@ -10731,7 +10779,8 @@
   },
   "popularity": 0.58,
   "dish": "The Jucy Lucy",
-  "overview": "Matt's Bar is a restaurant in south Minneapolis, Minnesota. It is known as one of two businesses that created the Jucy Lucy."
+  "overview": "Matt's Bar is a restaurant in south Minneapolis, Minnesota. It is known as one of two businesses that created the Jucy Lucy.",
+  "reception": null
  },
  {
   "id": "rs_owamni",
@@ -10831,7 +10880,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Princes_hot_chicken.jpg/500px-Princes_hot_chicken.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Prince's Hot Chicken Shack is a restaurant located in Nashville, Tennessee’s Assembly Food Hall, known for its hot chicken, and is credited with popularizing the dish and inspiring restaurants with similar offerings. The",
+  "blurb": "Prince's Hot Chicken Shack is a restaurant located in Nashville, Tennessee’s Assembly Food Hall, known for its hot chicken, and is credited with popularizing the dish and inspiring restaurants with similar offerings.",
   "overview": "Prince's Hot Chicken Shack is a restaurant located in Nashville, Tennessee’s Assembly Food Hall, known for its hot chicken, and is credited with popularizing the dish and inspiring restaurants with similar offerings. The business was started in 1945 by James Thornton Prince, and in 1980 ownership was passed to his great-niece André Prince Jeffries.",
   "popularity": 0.89,
   "factors": {
@@ -10988,7 +11037,8 @@
   },
   "popularity": 0.46,
   "dish": "The original hot chicken",
-  "overview": "Prince's Hot Chicken Shack is a restaurant located in Nashville, Tennessee’s Assembly Food Hall, known for its hot chicken, and is credited with popularizing the dish and inspiring restaurants with similar offerings. The business was started in 1945 by James Thornton Prince, and in 1980 ownership was passed to his great-niece André Prince Jeffries."
+  "overview": "Prince's Hot Chicken Shack is a restaurant located in Nashville, Tennessee’s Assembly Food Hall, known for its hot chicken, and is credited with popularizing the dish and inspiring restaurants with similar offerings. The business was started in 1945 by James Thornton Prince, and in 1980 ownership was passed to his great-niece André Prince Jeffries.",
+  "reception": null
  },
  {
   "id": "rs_monell_s_dining",
@@ -11123,7 +11173,8 @@
   },
   "popularity": 0.79,
   "dish": "Bananas Foster",
-  "overview": "Brennan's is a Creole restaurant in the French Quarter of New Orleans, Louisiana."
+  "overview": "Brennan's is a Creole restaurant in the French Quarter of New Orleans, Louisiana.",
+  "reception": null
  },
  {
   "id": "rs_commander_s_palace",
@@ -11157,7 +11208,8 @@
   },
   "popularity": 0.75,
   "dish": "Turtle soup",
-  "overview": "Commander's Palace is a Louisiana Creole restaurant in New Orleans, Louisiana."
+  "overview": "Commander's Palace is a Louisiana Creole restaurant in New Orleans, Louisiana.",
+  "reception": null
  },
  {
   "id": "rs_parkway_bakery_tavern",
@@ -11225,7 +11277,8 @@
   },
   "popularity": 0.69,
   "dish": "Boudin",
-  "overview": "Cochon is a Cajun restaurant in New Orleans, Louisiana, United States."
+  "overview": "Cochon is a Cajun restaurant in New Orleans, Louisiana, United States.",
+  "reception": null
  },
  {
   "id": "rs_willie_mae_s_scotch_house",
@@ -11259,7 +11312,8 @@
   },
   "popularity": 0.59,
   "dish": "Fried chicken",
-  "overview": "Willie Mae's Scotch House is a restaurant in New Orleans, Louisiana. In 2005 it was named an America's Classic by the James Beard Foundation."
+  "overview": "Willie Mae's Scotch House is a restaurant in New Orleans, Louisiana. In 2005 it was named an America's Classic by the James Beard Foundation.",
+  "reception": null
  },
  {
   "id": "rs_wd_mr_bs_bistro_neworleans",
@@ -11313,7 +11367,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "Dickie Brennan's Steakhouse is a steakhouse located in the French Quarter of New Orleans, Louisiana. The restaurant is part of the Dickie Brennan Family of restaurants and has received various awards from publications su",
+  "blurb": "Dickie Brennan's Steakhouse is a steakhouse located in the French Quarter of New Orleans, Louisiana.",
   "overview": "Dickie Brennan's Steakhouse is a steakhouse located in the French Quarter of New Orleans, Louisiana. The restaurant is part of the Dickie Brennan Family of restaurants and has received various awards from publications such as Playboy Magazine and Maxim Magazine. Dickie Brennan's Steakhouse has also been featured in The Wall Street Journal.",
   "popularity": 0.56,
   "factors": {
@@ -11382,7 +11436,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Clancy%27s_Restaurant_Uptown_New_Orleans_July_2018_Annunciation_Street.jpg/500px-Clancy%27s_Restaurant_Uptown_New_Orleans_July_2018_Annunciation_Street.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Clancy's is a restaurant in New Orleans situated on 6100 Annunciation Street in the Uptown New Orleans district of New Orleans, Louisiana, near Audubon Park. It, like many of its New Orleans coevals, specializes in Louis",
+  "blurb": "Clancy's is a restaurant in New Orleans situated on 6100 Annunciation Street in the Uptown New Orleans district of New Orleans, Louisiana, near Audubon Park. It, like many of its New Orleans coevals, specializes in Louisiana Creole cuisine.",
   "overview": "Clancy's is a restaurant in New Orleans situated on 6100 Annunciation Street in the Uptown New Orleans district of New Orleans, Louisiana, near Audubon Park. It, like many of its New Orleans coevals, specializes in Louisiana Creole cuisine. Signature dishes include lemon ice box pie, fried oysters with brie, smoked soft-shell crab, and smoked duck. Their oysters Rockefeller and Oysters Bedouin are also remarked upon.",
   "popularity": 0.38,
   "factors": {
@@ -11466,7 +11520,8 @@
   },
   "popularity": 0.31,
   "dish": "Gumbo z'herbes",
-  "overview": "Dooky Chase's Restaurant is a restaurant in Tremé neighborhood of New Orleans that in the 1950s and 1960s was known as a place for civil rights leaders to safely \"meet and strategize.\" In 2018, Food & Wine named it one of the 40 most important restaurants of the past 40 years. In 2025 the restaurant was named one of America's Classics by the James Beard Foundation."
+  "overview": "Dooky Chase's Restaurant is a restaurant in Tremé neighborhood of New Orleans that in the 1950s and 1960s was known as a place for civil rights leaders to safely \"meet and strategize.\" In 2018, Food & Wine named it one of the 40 most important restaurants of the past 40 years. In 2025 the restaurant was named one of America's Classics by the James Beard Foundation.",
+  "reception": null
  },
  {
   "id": "rs_casamento_s",
@@ -11534,7 +11589,8 @@
   },
   "popularity": 1,
   "dish": "Roast pork sandwiches and more",
-  "overview": "Reading Terminal Market is an enclosed public market located at 12th and Arch Streets in Center City Philadelphia, Pennsylvania. It opened originally in 1893 under the elevated train shed of the Reading Railroad Company after the city of Philadelphia advocated to move public markets from the streets into indoor facilities for both safety and sanitary reasons."
+  "overview": "Reading Terminal Market is an enclosed public market located at 12th and Arch Streets in Center City Philadelphia, Pennsylvania. It opened originally in 1893 under the elevated train shed of the Reading Railroad Company after the city of Philadelphia advocated to move public markets from the streets into indoor facilities for both safety and sanitary reasons.",
+  "reception": null
  },
  {
   "id": "rs_pat_s_king_of_steaks",
@@ -11568,7 +11624,8 @@
   },
   "popularity": 0.95,
   "dish": "Cheesesteak, whiz wit",
-  "overview": "Pat's King of Steaks (also known as Pat's Steaks) is a restaurant that specializes in cheesesteaks. It is located at the intersection of South 9th Street, Wharton Street and East Passyunk Avenue in the Passyunk Square section of South Philadelphia, directly across the street from rival Geno's Steaks."
+  "overview": "Pat's King of Steaks (also known as Pat's Steaks) is a restaurant that specializes in cheesesteaks. It is located at the intersection of South 9th Street, Wharton Street and East Passyunk Avenue in the Passyunk Square section of South Philadelphia, directly across the street from rival Geno's Steaks.",
+  "reception": null
  },
  {
   "id": "rs_wd_moshulu_philadelphia",
@@ -11587,7 +11644,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Moshulu_at_Penn%27s_Landing.jpg/500px-Moshulu_at_Penn%27s_Landing.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Moshulu is a four-masted steel barque, built as Kurt by William Hamilton and Company at Port Glasgow in Scotland in 1904. The largest remaining original windjammer, she is currently a floating restaurant docked in Penn's",
+  "blurb": "Moshulu is a four-masted steel barque, built as Kurt by William Hamilton and Company at Port Glasgow in Scotland in 1904.",
   "overview": "Moshulu is a four-masted steel barque, built as Kurt by William Hamilton and Company at Port Glasgow in Scotland in 1904. The largest remaining original windjammer, she is currently a floating restaurant docked in Penn's Landing, Philadelphia.",
   "popularity": 0.94,
   "factors": {
@@ -11621,7 +11678,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Dalessandro%27s_Steaks_store_front.jpg/500px-Dalessandro%27s_Steaks_store_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Dalessandro's Steaks & Hoagies is a cheesesteak restaurant that was founded in 1960 in Roxborough, a neighborhood in Philadelphia, Pennsylvania, United States. In 2011, when referring to Dalessandro's, The New York Times",
+  "blurb": "Dalessandro's Steaks & Hoagies is a cheesesteak restaurant that was founded in 1960 in Roxborough, a neighborhood in Philadelphia, Pennsylvania, United States.",
   "overview": "Dalessandro's Steaks & Hoagies is a cheesesteak restaurant that was founded in 1960 in Roxborough, a neighborhood in Philadelphia, Pennsylvania, United States. In 2011, when referring to Dalessandro's, The New York Times declared that \"Philly food could be summed up by those cheese steaks\".",
   "popularity": 0.72,
   "factors": {
@@ -11655,7 +11712,7 @@
    "source": "Wikipedia"
   },
   "image": null,
-  "blurb": "Jim's Steaks is a Philadelphia restaurant specializing in cheesesteaks, founded in 1939 on North 62nd Street in West Philadelphia. Jim's Steaks currently has two locations, the original in West Philadelphia and another i",
+  "blurb": "Jim's Steaks is a Philadelphia restaurant specializing in cheesesteaks, founded in 1939 on North 62nd Street in West Philadelphia.",
   "overview": "Jim's Steaks is a Philadelphia restaurant specializing in cheesesteaks, founded in 1939 on North 62nd Street in West Philadelphia. Jim's Steaks currently has two locations, the original in West Philadelphia and another in Springfield, Pennsylvania. Jim's Steaks owned the restaurant on South Street until 2011.",
   "popularity": 0.6,
   "factors": {
@@ -11739,7 +11796,8 @@
   },
   "popularity": 0.48,
   "dish": "Hummus tehina",
-  "overview": "Zahav (Hebrew: זהב, romanized: zahav, lit. 'gold') is an Israeli restaurant in Philadelphia founded in 2008. It is managed by head chef Michael Solomonov."
+  "overview": "Zahav (Hebrew: זהב, romanized: zahav, lit. 'gold') is an Israeli restaurant in Philadelphia founded in 2008. It is managed by head chef Michael Solomonov.",
+  "reception": null
  },
  {
   "id": "rs_franklin_fountain",
@@ -11791,7 +11849,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Steve%27s_Prince_Of_Steaks.jpg/500px-Steve%27s_Prince_Of_Steaks.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Steve's Prince of Steaks is a cheesesteak eatery that was founded in 1980 on Bustleton Ave in the Oxford Circle section of Northeast Philadelphia. The eatery has since expanded to three additional locations and is popula",
+  "blurb": "Steve's Prince of Steaks is a cheesesteak eatery that was founded in 1980 on Bustleton Ave in the Oxford Circle section of Northeast Philadelphia. The eatery has since expanded to three additional locations and is popular among locals.",
   "overview": "Steve's Prince of Steaks is a cheesesteak eatery that was founded in 1980 on Bustleton Ave in the Oxford Circle section of Northeast Philadelphia. The eatery has since expanded to three additional locations and is popular among locals. The eatery is known for its melted American cheese and does not chop the meat.",
   "popularity": 0.38,
   "factors": {
@@ -12067,7 +12125,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/Logo_of_Bar_Marco.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "blurb": "Bar Marco is a restaurant and bar located in the Strip District of Pittsburgh, Pennsylvania. It was named one of the Top 50 Best New Restaurants by Bon Appétit Magazine, and was added to Thrillist’s Top 33 Cocktails Bars",
+  "blurb": "Bar Marco is a restaurant and bar located in the Strip District of Pittsburgh, Pennsylvania. It was named one of the Top 50 Best New Restaurants by Bon Appétit Magazine, and was added to Thrillist’s Top 33 Cocktails Bars in the USA.",
   "overview": "Bar Marco is a restaurant and bar located in the Strip District of Pittsburgh, Pennsylvania. It was named one of the Top 50 Best New Restaurants by Bon Appétit Magazine, and was added to Thrillist’s Top 33 Cocktails Bars in the USA. Since 2013, it has been included on Pittsburgh Magazine's Best Restaurants every year excluding 2016.",
   "popularity": 0.16,
   "factors": {
@@ -12452,7 +12510,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Huber%27s_logo%2C_Portland%2C_Oregon.png/330px-Huber%27s_logo%2C_Portland%2C_Oregon.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Huber's is a restaurant in Portland, Oregon that bills itself as the city's oldest restaurant, having been established in 1879. Known for its turkey dinner and Spanish coffee, Huber's is often listed as a recommended res",
+  "blurb": "Huber's is a restaurant in Portland, Oregon that bills itself as the city's oldest restaurant, having been established in 1879.",
   "overview": "Huber's is a restaurant in Portland, Oregon that bills itself as the city's oldest restaurant, having been established in 1879. Known for its turkey dinner and Spanish coffee, Huber's is often listed as a recommended restaurant to eat at in Portland. The establishment has also been featured in a film by Gus Van Sant. Huber's is within the Railway Exchange Building.",
   "popularity": 0.47,
   "factors": {
@@ -12555,7 +12613,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/4/43/Shanghai_Tunnel_Bar_logo.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "blurb": "Shanghai Tunnel Bar, or simply Shanghai Tunnel, is a dive bar and Asian restaurant in the Old Town Chinatown neighborhood of Portland, Oregon. Named after the city's Shanghai tunnels, the underground bar serves Asian-the",
+  "blurb": "Shanghai Tunnel Bar, or simply Shanghai Tunnel, is a dive bar and Asian restaurant in the Old Town Chinatown neighborhood of Portland, Oregon.",
   "overview": "Shanghai Tunnel Bar, or simply Shanghai Tunnel, is a dive bar and Asian restaurant in the Old Town Chinatown neighborhood of Portland, Oregon. Named after the city's Shanghai tunnels, the underground bar serves Asian-themed cocktails and foods such as BLTs, Chinese chicken salad, miso and noodle soup, quesadillas, and veggie burgers. Owned by Phil Ragaway, Shanghai Tunnel is known for its inexpensive drinks and pinba",
   "popularity": 0.41,
   "factors": {
@@ -12623,7 +12681,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Portland%2C_Oregon_-_February_27%2C_2021_-_165_%28cropped%29.jpg/500px-Portland%2C_Oregon_-_February_27%2C_2021_-_165_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Either/Or is a restaurant in Portland, Oregon, United States. The business operates on North Williams Avenue in the Boise neighborhood; the original location, in southeast Portland's Sellwood-Moreland neighborhood, close",
+  "blurb": "Either/Or is a restaurant in Portland, Oregon, United States.",
   "overview": "Either/Or is a restaurant in Portland, Oregon, United States. The business operates on North Williams Avenue in the Boise neighborhood; the original location, in southeast Portland's Sellwood-Moreland neighborhood, closed during the COVID-19 pandemic.",
   "popularity": 0.39,
   "factors": {
@@ -12724,7 +12782,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Otto%27s%2C_Portland%2C_Oregon_-_2012.JPG/500px-Otto%27s%2C_Portland%2C_Oregon_-_2012.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Otto's Sausage Kitchen, formerly Otto's Meat Market, is a sausage restaurant and meat market located in the Woodstock neighborhood of Portland, Oregon, United States. German immigrant Otto Eichentopf established Otto's M",
+  "blurb": "Otto's Sausage Kitchen, formerly Otto's Meat Market, is a sausage restaurant and meat market located in the Woodstock neighborhood of Portland, Oregon, United States.",
   "overview": "Otto's Sausage Kitchen, formerly Otto's Meat Market, is a sausage restaurant and meat market located in the Woodstock neighborhood of Portland, Oregon, United States. German immigrant Otto Eichentopf established Otto's Meat Market in Aberdeen, Washington in the 1910s before relocating to Portland in 1921. Otto's Meat Market opened on Southeast Woodstock Boulevard in 1922. A new building was constructed at its current",
   "popularity": 0.35,
   "factors": {
@@ -12809,7 +12867,8 @@
   },
   "popularity": 0.34,
   "dish": "Wood-oven roasting",
-  "overview": "Fore Street is a restaurant at 288 Fore Street in the Old Port neighborhood of Portland, Maine, United States. Owned by Dana Street and Sam Hayward, the restaurant opened in 1996. It was named one of Gourmet magazine's top 50 restaurants in the United States in 2002, being placed 16th on the list. Its former chef Hayward was named the top chef in the Northeastern US in 2004 by the James Beard Foundation."
+  "overview": "Fore Street is a restaurant at 288 Fore Street in the Old Port neighborhood of Portland, Maine, United States. Owned by Dana Street and Sam Hayward, the restaurant opened in 1996. It was named one of Gourmet magazine's top 50 restaurants in the United States in 2002, being placed 16th on the list. Its former chef Hayward was named the top chef in the Northeastern US in 2004 by the James Beard Foundation.",
+  "reception": null
  },
  {
   "id": "rs_apizza_scholls",
@@ -12929,7 +12988,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Dan_%26_Louis_Oyster_Bar%2C_Portland%2C_OR.jpg/500px-Dan_%26_Louis_Oyster_Bar%2C_Portland%2C_OR.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Dan & Louis Oyster Bar is a seafood restaurant in Portland, Oregon described by Fodor's as a \"Portland landmark\". As its name implies, it specializes in oysters — from Yaquina Bay and beyond — served raw and in an oyster",
+  "blurb": "Dan & Louis Oyster Bar is a seafood restaurant in Portland, Oregon described by Fodor's as a \"Portland landmark\".",
   "overview": "Dan & Louis Oyster Bar is a seafood restaurant in Portland, Oregon described by Fodor's as a \"Portland landmark\". As its name implies, it specializes in oysters — from Yaquina Bay and beyond — served raw and in an oyster stew the restaurant has been known for over 100 years.",
   "popularity": 0.3,
   "factors": {
@@ -12963,7 +13022,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Portland%2C_Oregon%2C_US_-_August_2025_-_511_%28cropped%29.jpg/500px-Portland%2C_Oregon%2C_US_-_August_2025_-_511_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Old Town Pizza is a pizzeria established in 1974 and located in the historic Merchant Hotel building in the Old Town Chinatown neighborhood of central Portland, Oregon in the United States. The company has a satellite lo",
+  "blurb": "Old Town Pizza is a pizzeria established in 1974 and located in the historic Merchant Hotel building in the Old Town Chinatown neighborhood of central Portland, Oregon in the United States.",
   "overview": "Old Town Pizza is a pizzeria established in 1974 and located in the historic Merchant Hotel building in the Old Town Chinatown neighborhood of central Portland, Oregon in the United States. The company has a satellite location at Vanport Square in Northeast Portland that includes a brewery branded as Old Town Brewing Co. Two days before its March 2012 opening, a fire forced the restaurant to undergo reconstruction fo",
   "popularity": 0.29,
   "factors": {
@@ -13032,7 +13091,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/2/24/Farmer_and_the_Beast_logo.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "blurb": "Farmer and the Beast is a restaurant based in the Portland metropolitan area, in the United States. The original food cart operates at the Nob Hill Food Carts in northwest Portland's Northwest District and a second locat",
+  "blurb": "Farmer and the Beast is a restaurant based in the Portland metropolitan area, in the United States.",
   "overview": "Farmer and the Beast is a restaurant based in the Portland metropolitan area, in the United States. The original food cart operates at the Nob Hill Food Carts in northwest Portland's Northwest District and a second location is at the Breakside Beer Garden in Beaverton. Among menu options are a smash burger, a fish sandwich with albacore, and salads. The restaurant has garnered a positive reception, especially for its",
   "popularity": 0.19,
   "factors": {
@@ -13533,7 +13592,8 @@
   },
   "popularity": 0.94,
   "dish": "Clam chowder",
-  "overview": "Pike Place Chowder is a seafood restaurant with two locations in Seattle, in the U.S. state of Washington."
+  "overview": "Pike Place Chowder is a seafood restaurant with two locations in Seattle, in the U.S. state of Washington.",
+  "reception": null
  },
  {
   "id": "rs_wd_maneki_seattle",
@@ -13552,7 +13612,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Seattle_-_NP_Hotel_-_Maneki_02.jpg/500px-Seattle_-_NP_Hotel_-_Maneki_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Maneki is a Japanese restaurant in the Japantown area of the International District in Seattle, Washington that opened in 1904 as the first sushi bar in the city. Some claim it is the oldest Asian restaurant on the West ",
+  "blurb": "Maneki is a Japanese restaurant in the Japantown area of the International District in Seattle, Washington that opened in 1904 as the first sushi bar in the city.",
   "overview": "Maneki is a Japanese restaurant in the Japantown area of the International District in Seattle, Washington that opened in 1904 as the first sushi bar in the city. Some claim it is the oldest Asian restaurant on the West Coast of the United States, and it is recognized as one of the oldest sushi restaurants in the United States.",
   "popularity": 0.75,
   "factors": {
@@ -13809,7 +13869,8 @@
   },
   "popularity": 0.35,
   "dish": "Special-occasion tasting menu",
-  "overview": "Canlis is a fine dining restaurant serving New American and Pacific Northwest cuisine in Seattle, Washington. Situated in the Queen Anne neighborhood, the restaurant has views of Gas Works Park and the Cascade Mountains. It was built by Peter Canlis in 1950, and remains family-owned. The restaurant currently employs over 100 people."
+  "overview": "Canlis is a fine dining restaurant serving New American and Pacific Northwest cuisine in Seattle, Washington. Situated in the Queen Anne neighborhood, the restaurant has views of Gas Works Park and the Cascade Mountains. It was built by Peter Canlis in 1950, and remains family-owned. The restaurant currently employs over 100 people.",
+  "reception": null
  },
  {
   "id": "rs_wd_unicorn_seattle",
@@ -14353,7 +14414,8 @@
   },
   "popularity": 0.83,
   "dish": "Memphis-style ribs",
-  "overview": "Pappy's Smokehouse (often referred to as simply Pappy's) is a barbecue restaurant located in St. Louis, Missouri, United States. It was started in 2008 by Mike Emerson, who previously worked at another barbecue restaurant called Super Smokers. The restaurant was named after Emerson's late brother, Jim. Pappy's sells Memphis-style ribs, and ribs are barbecued without sauce."
+  "overview": "Pappy's Smokehouse (often referred to as simply Pappy's) is a barbecue restaurant located in St. Louis, Missouri, United States. It was started in 2008 by Mike Emerson, who previously worked at another barbecue restaurant called Super Smokers. The restaurant was named after Emerson's late brother, Jim. Pappy's sells Memphis-style ribs, and ribs are barbecued without sauce.",
+  "reception": null
  },
  {
   "id": "rs_imo_s_pizza",
@@ -14454,7 +14516,8 @@
   },
   "popularity": 0.83,
   "dish": "Dry-aged steaks",
-  "overview": "Berns may refer to:"
+  "overview": "Berns may refer to:",
+  "reception": null
  },
  {
   "id": "rs_wd_comet_ping_pong_washington",
@@ -14474,8 +14537,8 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Comet_Ping_Pong_logo.png/500px-Comet_Ping_Pong_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Comet Ping Pong is a pizzeria, restaurant, and concert venue located on Connecticut Avenue in Washington, D.C.'s Chevy Chase neighborhood. Owned by James Alefantis, Comet has received critical acclaim from The Washington",
-  "overview": "Comet Ping Pong is a pizzeria, restaurant, and concert venue located on Connecticut Avenue in Washington, D.C.'s Chevy Chase neighborhood. Owned by James Alefantis, Comet has received critical acclaim from The Washington Post, The Washingtonian, New York magazine, the DCist, and Guy Fieri of Food Network's Diners, Drive-Ins and Dives.",
+  "blurb": "Comet Ping Pong is a pizzeria, restaurant, and concert venue located on Connecticut Avenue in Washington, D.C.'s Chevy Chase neighborhood.",
+  "overview": "Comet Ping Pong (often abbreviated as Comet) is a pizzeria, restaurant, and concert venue located on Connecticut Avenue in Washington, D.C.'s Chevy Chase neighborhood. Owned by James Alefantis, Comet has received critical acclaim from The Washington Post, The Washingtonian, New York magazine, the DCist, and Guy Fieri of Food Network's Diners, Drive-Ins and Dives.",
   "popularity": 1,
   "factors": {
    "food": 0.7,
@@ -14489,7 +14552,8 @@
    "liveliness": 0.61,
    "formality": 0.35,
    "adventure": 0.22
-  }
+  },
+  "reception": null
  },
  {
   "id": "rs_old_ebbitt_grill",
@@ -14786,7 +14850,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Pineapple_%26_Pearls_Logo.jpg/330px-Pineapple_%26_Pearls_Logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Pineapple & Pearls is a restaurant located on Barracks Row in Washington, D.C., serving a fixed-price multi-course dinner. The Washington Post gave the restaurant a four-star review, writing that Aaron Silverman, the che",
+  "blurb": "Pineapple & Pearls is a restaurant located on Barracks Row in Washington, D.C., serving a fixed-price multi-course dinner.",
   "overview": "Pineapple & Pearls is a restaurant located on Barracks Row in Washington, D.C., serving a fixed-price multi-course dinner. The Washington Post gave the restaurant a four-star review, writing that Aaron Silverman, the chef and owner, \"...pushes the fine-dining cause in only exquisite directions.\" Pineapple & Pearls was a semifinalist in the Outstanding Restaurant category of the James Beard Foundation Awards in 2024.",
   "popularity": 0.63,
   "factors": {
@@ -14820,7 +14884,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/El_Cielo_DC_logo.jpeg/500px-El_Cielo_DC_logo.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "El Cielo is a restaurant in Washington, D.C., United States. Sometimes referred to as \"El Cielo DC\", the restaurant is a branch of Colombian chef Juan Manuel \"Juanma\" Barrientos' Medellín-based restaurant, with sibling e",
+  "blurb": "El Cielo is a restaurant in Washington, D.C., United States.",
   "overview": "El Cielo is a restaurant in Washington, D.C., United States. Sometimes referred to as \"El Cielo DC\", the restaurant is a branch of Colombian chef Juan Manuel \"Juanma\" Barrientos' Medellín-based restaurant, with sibling establishments in Bogotá and Miami. The Washington, D.C. restaurant has received a Michelin star.",
   "popularity": 0.58,
   "factors": {
@@ -14888,7 +14952,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Exterior_shot%2C_Bullfeathers.jpg/500px-Exterior_shot%2C_Bullfeathers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Bullfeathers of Capitol Hill is a restaurant and bar on 410 First Street SE in Washington, D.C., in the Capitol Hill neighborhood. Its name comes from President Theodore Roosevelt's favorite euphemism for \"bullshit.\" The",
+  "blurb": "Bullfeathers of Capitol Hill is a restaurant and bar on 410 First Street SE in Washington, D.C., in the Capitol Hill neighborhood.",
   "overview": "Bullfeathers of Capitol Hill is a restaurant and bar on 410 First Street SE in Washington, D.C., in the Capitol Hill neighborhood. Its name comes from President Theodore Roosevelt's favorite euphemism for \"bullshit.\" The logo of the restaurant is a depiction of Roosevelt. It was founded in 1979 by Gordon King. It has achieved some degree of fame for its association with congressional staffers and members who have bee",
   "popularity": 0.54,
   "factors": {
@@ -15118,7 +15182,8 @@
   },
   "popularity": 0.37,
   "dish": "Pork-lychee salad",
-  "overview": "Rose's Luxury is a restaurant on Barracks Row in Washington, D.C., created by chef-owner Aaron Silverman. It is known for not taking reservations which creates long lines, such that a nearby bar's top cocktail is called 'Waiting for Rose's' and line waiters are reported to make up to thirty dollars an hour waiting in line."
+  "overview": "Rose's Luxury is a restaurant on Barracks Row in Washington, D.C., created by chef-owner Aaron Silverman. It is known for not taking reservations which creates long lines, such that a nearby bar's top cocktail is called 'Waiting for Rose's' and line waiters are reported to make up to thirty dollars an hour waiting in line.",
+  "reception": null
  },
  {
   "id": "rs_wd_mikko_washington",
@@ -15137,7 +15202,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Mikko_exterior.jpg/500px-Mikko_exterior.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Mikko, formally Mikko Nordic Fine Foods, is a restaurant and catering service in the Dupont Circle neighborhood of Washington, D.C., United States, specializing in Nordic cuisine. The restaurant was opened in 2018 by Mik",
+  "blurb": "Mikko, formally Mikko Nordic Fine Foods, is a restaurant and catering service in the Dupont Circle neighborhood of Washington, D.C., United States, specializing in Nordic cuisine.",
   "overview": "Mikko, formally Mikko Nordic Fine Foods, is a restaurant and catering service in the Dupont Circle neighborhood of Washington, D.C., United States, specializing in Nordic cuisine. The restaurant was opened in 2018 by Mikko Kosonen, who was previously the executive chef for the Ambassador of Finland for more than 15 years. It is located in a townhouse on R Street NW that Kosonen painted in the bright colors of the Nor",
   "popularity": 0.36,
   "factors": {
@@ -15240,7 +15305,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/en/3/34/Crumbs_and_Whiskers_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "blurb": "Crumbs and Whiskers is a cat café that foster rescue cats and offer cafe amenities in Washington, D.C., and Los Angeles, California. Crumbs & Whiskers partners with rescues who save cats at risk of euthanasia in high kil",
+  "blurb": "Crumbs and Whiskers is a cat café that foster rescue cats and offer cafe amenities in Washington, D.C., and Los Angeles, California.",
   "overview": "Crumbs and Whiskers is a cat café that foster rescue cats and offer cafe amenities in Washington, D.C., and Los Angeles, California. Crumbs & Whiskers partners with rescues who save cats at risk of euthanasia in high kill shelters and cats facing homelessness on the streets.",
   "popularity": 0.25,
   "factors": {
@@ -15376,7 +15441,7 @@
    "source": "Wikipedia"
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Billy_Simpson_DC_3rd_from_left.JPG/500px-Billy_Simpson_DC_3rd_from_left.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "blurb": "Billy Simpson's House of Seafood and Steaks, also known as The Ebony Table, Kushner's Sea Food Grill, Minoux Bakery, Harry C. Johnson & Son, or The Kaieteur, was a restaurant on Georgia Avenue in the Northwest area of Wa",
+  "blurb": "Billy Simpson's House of Seafood and Steaks, also known as The Ebony Table, Kushner's Sea Food Grill, Minoux Bakery, Harry C. Johnson & Son, or The Kaieteur, was a restaurant on Georgia Avenue in the Northwest area of Washington, D.C.",
   "overview": "Billy Simpson's House of Seafood and Steaks, also known as The Ebony Table, Kushner's Sea Food Grill, Minoux Bakery, Harry C. Johnson & Son, or The Kaieteur, was a restaurant on Georgia Avenue in the Northwest area of Washington, D.C. It was listed on the National Register of Historic Places on March 17, 2009. It is notable for the role it played \"in the social and political culture of the District of Columbia's Afri",
   "popularity": 0.15,
   "factors": {

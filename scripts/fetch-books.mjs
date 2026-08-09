@@ -5,6 +5,7 @@
 // quota is shared and frequently exhausted, so Open Library is the default.
 // ============================================================================
 import fs from "node:fs";
+import { splitSentences } from "./lib/reception.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { deriveAxes, assignPercentilePopularity, getJSON, sleep, writePretty, clamp, hash01 } from "./lib/derive.mjs";
@@ -185,7 +186,7 @@ async function fetchDescription(workKey, cache) {
     let d = typeof w.description === "string" ? w.description : w.description?.value;
     if (d) {
       d = d.replace(/\[([^\]]+)\]\([^)]*\)/g, "$1").replace(/https?:\/\/\S+/g, "").replace(/\s+/g, " ").trim();
-      d = d.split(/(?<=[.!?])\s+/).reduce((acc, s) => (acc.length + s.length <= 220 ? (acc ? acc + " " : "") + s : acc), "");
+      d = splitSentences(d).reduce((acc, s) => (acc.length + s.length <= 220 ? (acc ? acc + " " : "") + s : acc), "");
       out = d.length >= 40 ? d : null;
     }
   } catch { /* missing work page — fall through */ }

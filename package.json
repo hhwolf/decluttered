@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node tests/engine.test.mjs && node tests/data.test.mjs && node tests/suggest.test.mjs && node tests/stats.test.mjs && node tests/importer.test.mjs && node tests/reception.test.mjs && node tests/location.test.mjs && node tests/wikidata.test.mjs && node tests/describe.test.mjs",
+    "test": "node tests/engine.test.mjs && node tests/data.test.mjs && node tests/suggest.test.mjs && node tests/stats.test.mjs && node tests/importer.test.mjs && node tests/reception.test.mjs && node tests/location.test.mjs && node tests/wikidata.test.mjs && node tests/describe.test.mjs && node tests/enrich.test.mjs",
     "fetch:books": "node scripts/fetch-books.mjs",
     "fetch:music": "node scripts/fetch-music.mjs",
     "fetch:restaurants": "node scripts/fetch-restaurants.mjs",
@@ -17,7 +17,9 @@
     "fetch:reception": "node scripts/fetch-reception.mjs",
     "fetch:restaurants:wikidata": "node scripts/fetch-restaurants-wikidata.mjs",
     "fetch:restaurants:ratings": "node scripts/fetch-restaurant-ratings.mjs",
-    "patch:tv": "node scripts/patch-tv-detail.mjs"
+    "patch:tv": "node scripts/patch-tv-detail.mjs",
+    "patch:tv:cast": "node scripts/patch-tv-cast.mjs",
+    "patch:restaurants:provenance": "node scripts/patch-restaurant-provenance.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.525.0",

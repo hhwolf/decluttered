@@ -4,7 +4,7 @@ import { scoreItem } from "../engine/engine.mjs";
 import { paletteFor } from "../domains.js";
 import { Sheet, Cover, ExtRating, Stars, MiniRate, displayScore, matchTag } from "./bits.jsx";
 import { fetchTrackPreview } from "./preview.js";
-import { vibeWords, strengths, counterpoint, commitment } from "../engine/describe.mjs";
+import { vibeWords, strengths, counterpoint, commitment, factChips, castLine, distinctQuotes } from "../engine/describe.mjs";
 
 /* Inline 30s preview control, shared shape with the deck's button. */
 function SheetPreview({ item }) {
@@ -64,6 +64,7 @@ function WhatOthersSay({ domain, item }) {
   // "divisive", it just isn't being played much.
   const isInterest = r?.source === "Wikipedia";
   const isPopularity = scale === 100 && !isInterest;
+  const quotes = distinctQuotes(rec);
 
   if (!r?.value && !rec && google.length === 0) return null;
 
@@ -113,9 +114,9 @@ function WhatOthersSay({ domain, item }) {
         <div style={{ borderTop: pct != null ? "1px solid var(--line)" : "none", paddingTop: pct != null ? 12 : 0 }}>
           <div className="eyebrow" style={{ marginBottom: 6 }}>Critical reception</div>
           <p className="serif" style={{ fontSize: 14.5, lineHeight: 1.5, color: "var(--ink2)", margin: 0 }}>{rec.summary}</p>
-          {rec.quotes?.length > 0 && (
+          {quotes.length > 0 && (
             <div style={{ marginTop: 10 }}>
-              {rec.quotes.map((q, i) => (
+              {quotes.map((q, i) => (
                 <blockquote key={i} style={{ margin: "0 0 8px", paddingLeft: 10, borderLeft: "3px solid var(--hl)" }}>
                   <p className="serif" style={{ fontSize: 13.5, lineHeight: 1.45, margin: 0, color: "var(--ink)" }}>{q.text}</p>
                   {q.outlet && <span className="cat-no">— via {q.outlet}</span>}
@@ -157,9 +158,14 @@ function WhatOthersSay({ domain, item }) {
 function FactSheet({ domain, item }) {
   const rows = [
     [{ books: "Author", movies: "Released", tv: "Network", music: "Artist", restaurants: "Where" }[domain.key], item.subtitle],
-    item.year && [{ books: "First published", movies: "Year", tv: "Premiered", music: "Released", restaurants: null }[domain.key], item.year],
+    // A film's subtitle IS its year, so row one already said it. Spending a
+    // second row on "Year 2012" pushes real facts further down the table.
+    item.year && String(item.year) !== item.subtitle &&
+      [{ books: "First published", movies: "Year", tv: "Premiered", music: "Released", restaurants: "Opened" }[domain.key], item.year],
     item.meta && [{ books: "Length", movies: "Runtime", tv: "Episodes", music: "Duration", restaurants: "Price" }[domain.key], item.meta],
     item.dish && ["Known for", item.dish],
+    item.cast?.length && ["Cast", item.cast.join(", ")],
+    item.awards?.length && ["Awards", item.awards.join(", ")],
     [domain.genreLabel, (item.genres || []).join(", ")],
     // Wikipedia and Deezer are 0-100 attention measures, not scores out of five.
     item.rating?.value != null && (
@@ -200,6 +206,8 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
   const titleId = "sheet-title-" + item.id;
   const vibe = vibeWords(item, domain);
   const strong = strengths(item, domain);
+  const facts = factChips(item, domain);
+  const cast = castLine(item, { max: 4 });
   const caveat = s ? counterpoint(item, domain, profile, s.breakdown) : null;
   const anchor = s?.bestAnchorId ? domain.items.find((i) => i.id === s.bestAnchorId) : null;
 
@@ -222,15 +230,17 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
           <h3 id={titleId} className="h2" style={{ fontSize: 20, margin: "0 0 3px", lineHeight: 1.15 }}>{item.title}</h3>
           <div className="cat-no">
             {item.subtitle}
-            {item.year && String(item.year) !== item.subtitle ? ` · ${item.year}` : ""}
+            {item.year && domain.key !== "restaurants" && String(item.year) !== item.subtitle ? ` · ${item.year}` : ""}
             {item.meta ? ` · ${item.meta}` : ""}
           </div>
           <div style={{ marginTop: 6 }}><ExtRating item={item} /></div>
           {commitment(item) && <div className="cat-no" style={{ marginTop: 4 }}>{commitment(item)}</div>}
           {item.dish && <div className="cat-no" style={{ marginTop: 5 }}>Known for · {item.dish}</div>}
-          {vibe.length > 0 && (
+          {cast && <div className="cat-no" style={{ marginTop: 5 }}>With {cast}</div>}
+          {(vibe.length > 0 || facts.length > 0) && (
             <div className="row" style={{ flexWrap: "wrap", gap: 5, marginTop: 7 }}>
               {vibe.map((w) => <span key={w} className="vibe">{w}</span>)}
+              {facts.map((f) => <span key={f} className="vibe fact">{f}</span>)}
             </div>
           )}
         </div>

@@ -62,7 +62,45 @@ export async function getJSON(url, opts = {}) {
 
 export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// Fields a LATER pass adds to a catalogue the fetcher owns: critical reception,
+// TV run detail, signature dishes, artwork backfills. The fetcher knows nothing
+// about them, so a plain rewrite deletes them — which is exactly what happened
+// when the catalogues were expanded: 653 of 677 reception records vanished in
+// one commit and the "what critics said" line silently rendered nothing for
+// months. Re-running a fetcher must be safe.
+export const ENRICHED_KEYS = [
+  "reception", "overview", "googleReviews", "dish",
+  "seasons", "episodes", "status", "endedYear", "watchOn", "cast", "awards",
+];
+// Fields a fetcher does own but must never downgrade to empty: a transient API
+// miss shouldn't wipe a poster that a backfill pass worked to find.
+const KEEP_IF_EMPTY = ["image"];
+
+const isEmpty = (v) => v === undefined || v === null || v === "";
+
+/**
+ * Merge enrichment from whatever is already on disk into `data`, then write.
+ * Matching is by id, so reordering and growing the catalogue are both fine.
+ */
 export function writePretty(fs, path, data) {
+  let carried = 0, kept = 0;
+  if (fs.existsSync(path)) {
+    let prev = [];
+    try { prev = JSON.parse(fs.readFileSync(path, "utf8")); } catch { prev = []; }
+    const byId = new Map(prev.map((x) => [x.id, x]));
+    for (const item of data) {
+      const old = byId.get(item.id);
+      if (!old) continue;
+      for (const k of ENRICHED_KEYS) {
+        if (item[k] === undefined && old[k] !== undefined) { item[k] = old[k]; carried++; }
+      }
+      for (const k of KEEP_IF_EMPTY) {
+        if (isEmpty(item[k]) && !isEmpty(old[k])) { item[k] = old[k]; kept++; }
+      }
+    }
+  }
   fs.writeFileSync(path, JSON.stringify(data, null, 1) + "\n");
-  console.log(`wrote ${path} (${data.length} items)`);
+  const note = [carried && `carried ${carried} enriched fields`, kept && `kept ${kept} existing images`]
+    .filter(Boolean).join(", ");
+  console.log(`wrote ${path} (${data.length} items${note ? ", " + note : ""})`);
 }

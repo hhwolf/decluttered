@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { vibeWords, strengths, counterpoint, commitment, runStatus } from "../src/engine/describe.mjs";
+import { vibeWords, strengths, counterpoint, commitment, runStatus, castLine, factChips, distinctQuotes } from "../src/engine/describe.mjs";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const load = (f) => JSON.parse(fs.readFileSync(path.join(root, "src/data", f), "utf8"));
@@ -103,6 +103,53 @@ check("ongoing series warns of the wait", runStatus({ status: "Running" }) === "
 check("unknown status stays silent", runStatus({ status: "To Be Determined" }) === null);
 check("statusless item stays silent", runStatus({ seasons: 4 }) === null);
 check("undefined item is safe for runStatus", runStatus() === null);
+
+// ---- cast -----------------------------------------------------------------
+check("two names are joined with an ampersand",
+  castLine({ cast: ["Benedict Cumberbatch", "Martin Freeman"] }) === "Benedict Cumberbatch & Martin Freeman");
+check("three names use commas then an ampersand",
+  castLine({ cast: ["A", "B", "C"] }) === "A, B & C");
+check("a single name stands alone", castLine({ cast: ["Phoebe Waller-Bridge"] }) === "Phoebe Waller-Bridge");
+check("the list is capped", castLine({ cast: ["A", "B", "C", "D", "E"] }) === "A, B & C");
+check("an explicit max is honoured", castLine({ cast: ["A", "B", "C", "D"] }, { max: 4 }) === "A, B, C & D");
+check("no cast yields null", castLine({ cast: [] }) === null);
+check("missing cast is safe", castLine({}) === null);
+check("undefined item is safe for castLine", castLine() === null);
+
+// ---- fact chips -----------------------------------------------------------
+check("run status becomes a fact", factChips({ status: "Ended" }, { key: "tv" }).includes("Complete series"));
+check("awards become facts", factChips({ awards: ["Michelin", "James Beard"] }, { key: "restaurants" }).join() === "Michelin,James Beard");
+check("a restaurant year reads as how long it has been open",
+  factChips({ year: 1927 }, { key: "restaurants" }).includes("Serving since 1927"));
+// `year` means "released" in every other domain and must not be reworded.
+check("a film year is not a serving-since claim",
+  factChips({ year: 1994 }, { key: "movies" }).length === 0);
+check("nothing to state yields nothing", factChips({}, { key: "tv" }).length === 0);
+check("undefined item is safe for factChips", factChips(undefined, { key: "tv" }).length === 0);
+
+// ---- pull-quotes ----------------------------------------------------------
+// The summary and the quotes are mined from the same paragraphs, so the best
+// line lands in both and two sources look like one repeating itself.
+check("a quote already in the summary is dropped", distinctQuotes({
+  summary: "Bryan Miller said there is little substance.",
+  quotes: [{ text: "Bryan Miller said there is little substance." }, { text: "The waitstaff were apathetic." }],
+}).length === 1);
+check("the surviving quote is the new one", distinctQuotes({
+  summary: "Bryan Miller said there is little substance.",
+  quotes: [{ text: "Bryan Miller said there is little substance." }, { text: "The waitstaff were apathetic." }],
+})[0].text === "The waitstaff were apathetic.");
+check("whitespace differences still count as duplicates", distinctQuotes({
+  summary: "It  was   widely praised by critics.",
+  quotes: [{ text: "It was widely praised by critics." }],
+}).length === 0);
+check("two outlets quoting one sentence collapse to one", distinctQuotes({
+  summary: "",
+  quotes: [{ text: "A landmark of the genre.", outlet: "A" }, { text: "A landmark of the genre.", outlet: "B" }],
+}).length === 1);
+check("a fragment too short to be a quote is dropped",
+  distinctQuotes({ summary: "", quotes: [{ text: "Good." }] }).length === 0);
+check("no reception yields no quotes", distinctQuotes(null).length === 0);
+check("reception without quotes is safe", distinctQuotes({ summary: "x" }).length === 0);
 
 // ---- against the real catalogues -----------------------------------------
 const restaurants = load("restaurants.json");

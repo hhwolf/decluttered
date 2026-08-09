@@ -227,6 +227,9 @@ export const CSS = `
 .citynag{width:100%;cursor:pointer;margin-bottom:8px;text-align:left;}
 .vibe{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   background:var(--paper2);border:1.5px solid var(--ink);border-radius:999px;padding:2px 8px;}
+/* A vibe is derived from our own vectors; a fact is stated by the source. They
+   should not look identical, or the guess borrows the authority of the fact. */
+.vibe.fact{background:var(--ink);color:var(--paper);border-color:var(--ink);}
 .citynag:hover{background:var(--paper2);}
 /* the wordmark doubles as the "what is this?" affordance */
 .markbtn{border:none;background:none;padding:0;cursor:pointer;color:var(--ink);text-align:left;}

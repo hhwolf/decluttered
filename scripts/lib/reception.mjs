@@ -149,7 +149,20 @@ export function leadParagraphs(text = "", maxChars = 420) {
 
 // Abbreviations that end in a period but do not end a sentence, so the
 // naive split has to be stitched back together.
-const ABBREV = /\b(Mr|Mrs|Ms|Dr|Prof|Sr|Jr|St|vs|etc|No|Vol|Inc|Ltd|Co|approx|U\.S|U\.K|A\.V)\.$/;
+const ABBREV = /\b(Mr|Mrs|Ms|Dr|Prof|Sr|Jr|St|Mt|vs|etc|No|Vol|Inc|Ltd|Co|Corp|Lt|Sgt|Capt|Col|Gen|Rev|Sen|Gov|approx|U\.S|U\.K|A\.V)\.$/;
+
+/**
+ * Split into sentences without breaking after an abbreviation. A naive
+ * `/(?<=[.!?])\s+/` cuts "Dr. Seuss" and "Robert Downey Jr." in half, which is
+ * how a blurb ended up reading, in full, "Fantastic Mr."
+ */
+export function splitSentences(text = "") {
+  return text.split(/(?<=[.!?])\s+/).reduce((acc, p) => {
+    if (acc.length && ABBREV.test(acc[acc.length - 1])) acc[acc.length - 1] += " " + p;
+    else acc.push(p);
+    return acc;
+  }, []);
+}
 
 /** Trim to whole sentences within a character budget. */
 export function firstSentences(text = "", maxChars = 420) {
@@ -160,12 +173,7 @@ export function firstSentences(text = "", maxChars = 420) {
     .trim();
   if (!clean) return "";
 
-  // Re-join fragments that were split at an abbreviation, not a full stop.
-  const parts = clean.split(/(?<=[.!?])\s+/).reduce((acc, p) => {
-    if (acc.length && ABBREV.test(acc[acc.length - 1])) acc[acc.length - 1] += " " + p;
-    else acc.push(p);
-    return acc;
-  }, []);
+  const parts = splitSentences(clean);
 
   let out = "";
   for (const p of parts) {

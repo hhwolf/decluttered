@@ -101,3 +101,55 @@ export function runStatus(item) {
   if (item?.status === "Running") return "Still airing";
   return null;
 }
+
+/**
+ * Who's in it. After "is it any good", this is the strongest appeal signal a
+ * show has — it's why trailers lead with faces. Three names, because a fourth
+ * stops being a reason and starts being a credits roll.
+ */
+export function castLine(item, { max = 3 } = {}) {
+  const names = (item?.cast || []).filter(Boolean).slice(0, max);
+  if (!names.length) return null;
+  if (names.length === 1) return names[0];
+  return names.slice(0, -1).join(", ") + " & " + names[names.length - 1];
+}
+
+/**
+ * Pull-quotes worth showing beneath the reception summary.
+ *
+ * The summary is the opening sentences of the reception section and the quotes
+ * are mined from that same section, so the strongest line usually appears in
+ * both — printing it twice makes two sources look like one repeated itself.
+ * Filtering here rather than at fetch time means the cached prose we already
+ * hold is cleaned up too, with no re-crawl.
+ */
+export function distinctQuotes(reception) {
+  const quotes = reception?.quotes || [];
+  const summary = (reception?.summary || "").replace(/\s+/g, " ").toLowerCase();
+  const seen = new Set();
+  return quotes.filter((q) => {
+    const text = (q?.text || "").replace(/\s+/g, " ").trim();
+    if (text.length < 12) return false;
+    const key = text.toLowerCase();
+    if (summary.includes(key)) return false;   // already said, verbatim
+    if (seen.has(key)) return false;           // two outlets, one sentence
+    seen.add(key);
+    return true;
+  });
+}
+
+/**
+ * Short, checkable facts that argue for an item on their own — a Michelin
+ * star, a finished run, a room that's been serving since 1927. Every one of
+ * these is stated in the source data; none is inferred.
+ */
+export function factChips(item, domain) {
+  const out = [];
+  const status = runStatus(item);
+  if (status) out.push(status);
+  for (const a of item?.awards || []) if (a) out.push(a);
+  // `year` means "released" everywhere else; only for a restaurant does it
+  // mean "has been open since", which is the bit worth boasting about.
+  if (domain?.key === "restaurants" && item?.year) out.push(`Serving since ${item.year}`);
+  return out;
+}

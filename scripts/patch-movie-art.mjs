@@ -10,6 +10,7 @@
 // Idempotent: only touches items with no image, and caches its own results.
 // ============================================================================
 import fs from "node:fs";
+import { splitSentences } from "./lib/reception.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -37,7 +38,7 @@ const looksLikeFilm = (w) =>
 
 const firstSentence = (s = "") => {
   const t = s.replace(/\s+/g, " ").trim();
-  const cut = t.split(/(?<=[.!?])\s+/).reduce((acc, x) => (acc.length + x.length <= 240 ? (acc ? acc + " " : "") + x : acc), "");
+  const cut = splitSentences(t).reduce((acc, x) => (acc.length + x.length <= 240 ? (acc ? acc + " " : "") + x : acc), "");
   return cut || t.slice(0, 240);
 };
 
