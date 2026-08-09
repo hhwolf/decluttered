@@ -1,10 +1,11 @@
-import { Heart, X, Check, ExternalLink, Play, Pause, Users } from "lucide-react";
+import { Heart, X, Check, ExternalLink, Play, Pause, Users, Clock } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { scoreItem } from "../engine/engine.mjs";
 import { paletteFor } from "../domains.js";
 import { Sheet, Cover, ExtRating, Stars, MiniRate, displayScore, matchTag } from "./bits.jsx";
 import { fetchTrackPreview } from "./preview.js";
-import { vibeWords, strengths, counterpoint, commitment, factChips, castLine, distinctQuotes } from "../engine/describe.mjs";
+import { vibeWords, strengths, counterpoint, commitment, factChips, castLine, distinctQuotes,
+         timeCommitment, similarTo, lookupLinks } from "../engine/describe.mjs";
 
 /* Inline 30s preview control, shared shape with the deck's button. */
 function SheetPreview({ item }) {
@@ -196,7 +197,7 @@ function FactSheet({ domain, item }) {
  * truncates it), the score breakdown, craft axes, and the same actions the
  * deck offers — plus rating controls once the item is in the library.
  */
-export default function ItemSheet({ domain, item, profile, shelfEntry, onAction, onRate, onClose }) {
+export default function ItemSheet({ domain, item, profile, shelfEntry, onAction, onRate, onClose, onOpenItem }) {
   const s = profile ? scoreItem(item, profile, domain) : null;
   const tag = s ? matchTag(s.score) : null;
   const pal = paletteFor(item.genres?.[0]);
@@ -210,6 +211,8 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
   const cast = castLine(item, { max: 4 });
   const caveat = s ? counterpoint(item, domain, profile, s.breakdown) : null;
   const anchor = s?.bestAnchorId ? domain.items.find((i) => i.id === s.bestAnchorId) : null;
+  const alike = similarTo(item, domain);
+  const lookups = lookupLinks(item, domain);
 
   const act = (a) => { onAction(item, a); onClose(); };
 
@@ -235,6 +238,12 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
           </div>
           <div style={{ marginTop: 6 }}><ExtRating item={item} /></div>
           {commitment(item) && <div className="cat-no" style={{ marginTop: 4 }}>{commitment(item)}</div>}
+          {/* What it actually costs you. "62 episodes" dodges the real question. */}
+          {timeCommitment(item, domain) && (
+            <div className="cat-no" style={{ marginTop: 4, fontWeight: 600, color: "var(--ink)" }}>
+              <Clock size={11} style={{ verticalAlign: "-1px" }} /> {timeCommitment(item, domain)}
+            </div>
+          )}
           {item.dish && <div className="cat-no" style={{ marginTop: 5 }}>Known for · {item.dish}</div>}
           {cast && <div className="cat-no" style={{ marginTop: 5 }}>With {cast}</div>}
           {(vibe.length > 0 || facts.length > 0) && (
@@ -324,13 +333,44 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
         </div>
       )}
 
-      {links.length > 0 && (
+      {/* Adjectives describe; comparisons calibrate. Three names you may already
+          have an opinion about say more than any adjective can. */}
+      {alike.length > 0 && (
+        <div className="card" style={{ marginTop: 14 }}>
+          <div className="eyebrow" style={{ marginBottom: 8 }}>More like this</div>
+          {alike.map(({ item: other }) => (
+            <button
+              key={other.id}
+              className="likerow"
+              onClick={() => onOpenItem?.(other)}
+              disabled={!onOpenItem}
+            >
+              <span style={{ minWidth: 0 }}>
+                <span style={{ fontSize: 13.5, fontWeight: 600, display: "block",
+                  overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{other.title}</span>
+                <span className="cat-no">{other.subtitle}</span>
+              </span>
+              <span className="cat-no" style={{ flex: "none" }}>{(other.genres || [])[0]}</span>
+            </button>
+          ))}
+        </div>
+      )}
+
+      {(links.length > 0 || lookups.length > 0) && (
         <p className="cat-no" style={{ marginTop: 14 }}>
           {links.map(([k, v], i) => (
             <span key={k}>
               {i > 0 && " · "}
               <a href={v} target="_blank" rel="noreferrer" style={{ color: "var(--slate)" }}>
                 {LINK_LABELS[k]} <ExternalLink size={10} style={{ verticalAlign: "-1px" }} />
+              </a>
+            </span>
+          ))}
+          {lookups.map((l, i) => (
+            <span key={l.url}>
+              {(links.length > 0 || i > 0) && " · "}
+              <a href={l.url} target="_blank" rel="noreferrer" style={{ color: "var(--slate)" }}>
+                {l.label} <ExternalLink size={10} style={{ verticalAlign: "-1px" }} />
               </a>
             </span>
           ))}

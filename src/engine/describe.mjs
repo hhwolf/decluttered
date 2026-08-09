@@ -92,6 +92,48 @@ export function commitment(item) {
 }
 
 /**
+ * How much of your life this is, in hours.
+ *
+ * "5 seasons · 62 episodes" sounds like information but dodges the actual
+ * question. 62 episodes at 60 minutes is 62 hours — a different decision
+ * entirely from a 6-hour miniseries, though both read as "a show" today.
+ *
+ * Rates are conventional and disclosed rather than precise, so everything is
+ * hedged with "about" and rounded: books at ~2 minutes a page, screen time
+ * straight from the runtime we already store.
+ */
+const MINUTES_PER_PAGE = 2;
+
+export function timeCommitment(item, domain) {
+  const mins = totalMinutes(item, domain);
+  if (!mins) return null;
+  // A film already prints its runtime in `meta`; saying it twice is noise.
+  const verb = { books: "to read", tv: "of watching" }[domain?.key];
+  if (!verb) return null;
+  const amount = mins < 90
+    ? `${Math.round(mins / 5) * 5} minutes`
+    : mins / 60 < 10 ? `${Math.round((mins / 60) * 2) / 2} hours`
+    : `${Math.round(mins / 60)} hours`;
+  return `About ${amount} ${verb}`;
+}
+
+/** Total minutes, or null when we can't say honestly. */
+export function totalMinutes(item, domain) {
+  const key = domain?.key;
+  if (key === "books") {
+    const pages = parseInt(String(item?.meta || "").match(/(\d+)\s*pp/)?.[1] || "", 10);
+    return Number.isFinite(pages) && pages > 0 ? pages * MINUTES_PER_PAGE : null;
+  }
+  if (key === "tv") {
+    // The per-episode runtime lives at the end of meta: "8 seasons · 73 eps · 61 min".
+    const per = parseInt(String(item?.meta || "").match(/(\d+)\s*min/)?.[1] || "", 10);
+    if (!item?.episodes || !Number.isFinite(per) || per <= 0) return null;
+    return item.episodes * per;
+  }
+  return null;
+}
+
+/**
  * Whether a series is finished, phrased as the thing the viewer actually wants
  * to know before starting it: is there an ending, or am I signing up to wait?
  * Null when we don't know — silence beats a guess.
@@ -151,5 +193,96 @@ export function factChips(item, domain) {
   // `year` means "released" everywhere else; only for a restaurant does it
   // mean "has been open since", which is the bit worth boasting about.
   if (domain?.key === "restaurants" && item?.year) out.push(`Serving since ${item.year}`);
+  return out;
+}
+
+/**
+ * Three items from the same catalogue worth comparing this one against.
+ *
+ * Deliberately NOT built on the factor/tone vectors, even though they are right
+ * there and would have been a one-liner. Those vectors are *derived* — a blend
+ * of per-genre base profiles plus a ±0.09 hash jitter — so two shows with the
+ * same genres have near-identical vectors by construction. Measured: within a
+ * genre group the axis range is 0.17, which is exactly the jitter, against 0.44
+ * to 0.58 across the whole catalogue. Ranking neighbours by them would be
+ * ranking the hash and presenting the result as a judgement.
+ *
+ * So this uses only things somebody actually measured: shared genres, how
+ * closely the crowd rates them, and how close in time they are. Restaurants
+ * additionally must be in the same city — a great room you can't get to is not
+ * a useful comparison.
+ */
+const ERA_SPAN = 40; // years, beyond which "same era" stops meaning anything
+
+export function similarTo(item, domain, { max = 3, minShared = 1 } = {}) {
+  const pool = domain?.items || [];
+  if (!item || pool.length < 2) return [];
+  const mine = new Set(item.genres || []);
+  if (!mine.size) return [];
+  const scale = (i) => i?.rating?.scale || (i?.rating?.source === "Deezer" ? 100 : 5);
+  const norm = (i) => (i?.rating?.value == null ? null : i.rating.value / scale(i));
+  const myRating = norm(item);
+
+  const scored = [];
+  for (const other of pool) {
+    if (other.id === item.id) continue;
+    if (domain.key === "restaurants" && other.city !== item.city) continue;
+    const theirs = new Set(other.genres || []);
+    let shared = 0;
+    for (const g of mine) if (theirs.has(g)) shared++;
+    // Sharing no genre at all means it simply isn't "like this".
+    if (shared < minShared) continue;
+    const jaccard = shared / (mine.size + theirs.size - shared);
+
+    // Unknown values score neutral rather than being treated as a match.
+    const theirRating = norm(other);
+    const ratingClose = myRating == null || theirRating == null
+      ? 0.5 : 1 - Math.abs(myRating - theirRating);
+    const eraClose = !item.year || !other.year
+      ? 0.5 : 1 - Math.min(Math.abs(item.year - other.year) / ERA_SPAN, 1);
+
+    scored.push({
+      item: other,
+      sim: 0.5 * jaccard + 0.3 * ratingClose + 0.2 * eraClose,
+    });
+  }
+  // Tie-break on id so the row is stable between renders.
+  scored.sort((a, b) => b.sim - a.sim || (a.item.id < b.item.id ? -1 : 1));
+
+  // Two Open Library works are both filed under the bare title "Saga" by the
+  // same author. They are genuinely different records, but a three-row list
+  // showing the same label twice reads as a rendering bug, so only the
+  // best-scoring one of each visible label gets a row.
+  const out = [], labels = new Set();
+  for (const cand of scored) {
+    const label = `${cand.item.title}\u0000${cand.item.subtitle}`.toLowerCase();
+    if (labels.has(label)) continue;
+    labels.add(label);
+    out.push(cand);
+    if (out.length >= max) break;
+  }
+  return out;
+}
+
+/**
+ * Somewhere to go and look for yourself.
+ *
+ * Books had no outbound link at all, which is the one domain where you most
+ * want to read a page before committing — but the Open Library work key was
+ * already sitting inside our own item id ("bk_OL17930368W"). A trailer is how
+ * people actually decide on a film, and a YouTube *search* needs no key and
+ * promises no particular result, so it is labelled as a search.
+ */
+export function lookupLinks(item, domain) {
+  const out = [];
+  const key = domain?.key;
+  if (key === "books") {
+    const work = String(item?.id || "").match(/^bk_(OL\d+W)$/)?.[1];
+    if (work) out.push({ label: "Open Library", url: `https://openlibrary.org/works/${work}` });
+  }
+  if (key === "movies" || key === "tv") {
+    const q = [item?.title, key === "movies" ? item?.year : null, "trailer"].filter(Boolean).join(" ");
+    out.push({ label: "Search for a trailer", url: `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}` });
+  }
   return out;
 }

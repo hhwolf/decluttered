@@ -230,6 +230,13 @@ export const CSS = `
 /* A vibe is derived from our own vectors; a fact is stated by the source. They
    should not look identical, or the guess borrows the authority of the fact. */
 .vibe.fact{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+/* "More like this" rows — tappable, and visibly so, since they navigate. */
+.likerow{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;
+  background:none;border:none;border-bottom:1px solid var(--line);padding:8px 0;text-align:left;
+  cursor:pointer;color:var(--ink);font:inherit;}
+.likerow:last-child{border-bottom:none;}
+.likerow:hover:not(:disabled){background:var(--paper2);}
+.likerow:disabled{cursor:default;}
 .citynag:hover{background:var(--paper2);}
 /* the wordmark doubles as the "what is this?" affordance */
 .markbtn{border:none;background:none;padding:0;cursor:pointer;color:var(--ink);text-align:left;}

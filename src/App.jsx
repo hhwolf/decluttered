@@ -267,7 +267,8 @@ export default function App() {
       </div>
       {sheetItem && ds.onboarded && (
         <ItemSheet domain={domain} item={sheetItem} profile={ds.profile} shelfEntry={ds.shelf[sheetItem.id]}
-          onAction={handleAction} onRate={handleRate} onClose={() => setSheetItem(null)} />
+          onAction={handleAction} onRate={handleRate} onClose={() => setSheetItem(null)}
+          onOpenItem={setSheetItem} />
       )}
     </div>
   );

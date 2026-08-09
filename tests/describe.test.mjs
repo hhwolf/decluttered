@@ -3,7 +3,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { vibeWords, strengths, counterpoint, commitment, runStatus, castLine, factChips, distinctQuotes } from "../src/engine/describe.mjs";
+import { vibeWords, strengths, counterpoint, commitment, runStatus, castLine, factChips, distinctQuotes,
+         timeCommitment, totalMinutes, similarTo, lookupLinks } from "../src/engine/describe.mjs";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const load = (f) => JSON.parse(fs.readFileSync(path.join(root, "src/data", f), "utf8"));
@@ -150,6 +151,93 @@ check("a fragment too short to be a quote is dropped",
   distinctQuotes({ summary: "", quotes: [{ text: "Good." }] }).length === 0);
 check("no reception yields no quotes", distinctQuotes(null).length === 0);
 check("reception without quotes is safe", distinctQuotes({ summary: "x" }).length === 0);
+
+// ---- time commitment ------------------------------------------------------
+// "62 episodes" sounds like information but dodges the real question.
+check("a long series is priced in hours",
+  timeCommitment({ meta: "8 seasons · 73 eps · 61 min", episodes: 73 }, { key: "tv" }) === "About 74 hours of watching");
+check("a miniseries reads very differently",
+  timeCommitment({ meta: "1 season · 6 eps · 58 min", episodes: 6 }, { key: "tv" }) === "About 6 hours of watching");
+check("a book is priced from its page count",
+  timeCommitment({ meta: "322 pp" }, { key: "books" }) === "About 11 hours to read");
+// A film already prints its runtime; repeating it as hours is noise.
+check("a film says nothing extra", timeCommitment({ meta: "142 min" }, { key: "movies" }) === null);
+check("no episode count means no claim",
+  timeCommitment({ meta: "3 seasons · 60 min" }, { key: "tv" }) === null);
+check("no page count means no claim", timeCommitment({ meta: "" }, { key: "books" }) === null);
+check("an unknown domain says nothing", timeCommitment({ meta: "322 pp" }, { key: "music" }) === null);
+check("totalMinutes multiplies episodes by runtime",
+  totalMinutes({ meta: "2 seasons · 20 eps · 30 min", episodes: 20 }, { key: "tv" }) === 600);
+check("undefined item is safe for timeCommitment", timeCommitment(undefined, { key: "tv" }) === null);
+
+// ---- more like this -------------------------------------------------------
+// Built on measured attributes only. The factor/tone vectors are derived from
+// genre plus a hash jitter, so ranking by them would rank the hash.
+{
+  const mk = (id, genres, year, value) => ({ id, title: id, genres, year, rating: { value, scale: 10 } });
+  const target = mk("t", ["Crime", "Drama"], 2008, 9.2);
+  const items = [
+    target,
+    mk("closest", ["Crime", "Drama"], 2010, 9.0),   // same genres, era, acclaim
+    mk("olderLesser", ["Crime", "Drama"], 1968, 5.0),
+    mk("noOverlap", ["Comedy"], 2008, 9.2),          // shares nothing
+  ];
+  const dom = { key: "tv", items };
+  const out = similarTo(target, dom);
+  check("the item never matches itself", out.every((x) => x.item.id !== "t"));
+  check("an item sharing no genre is excluded", out.every((x) => x.item.id !== "noOverlap"),
+    JSON.stringify(out.map((x) => x.item.id)));
+  check("closest on era and acclaim leads", out[0].item.id === "closest", JSON.stringify(out.map((x) => x.item.id)));
+  check("results are ordered by similarity", out.every((x, i) => i === 0 || out[i - 1].sim >= x.sim));
+  check("max is respected", similarTo(target, dom, { max: 1 }).length === 1);
+  check("a one-item catalogue yields nothing", similarTo(target, { key: "tv", items: [target] }).length === 0);
+  check("an item with no genres yields nothing",
+    similarTo({ id: "x", genres: [] }, dom).length === 0);
+  check("a missing item is safe", similarTo(null, dom).length === 0);
+  // A great room you cannot get to is not a useful comparison.
+  const places = [
+    { id: "a", genres: ["Italian"], city: "Boston", rating: { value: 4.5 } },
+    { id: "b", genres: ["Italian"], city: "Boston", rating: { value: 4.4 } },
+    { id: "c", genres: ["Italian"], city: "Chicago", rating: { value: 4.5 } },
+  ];
+  const out2 = similarTo(places[0], { key: "restaurants", items: places });
+  check("restaurant comparisons stay in the same city",
+    out2.length === 1 && out2[0].item.id === "b", JSON.stringify(out2.map((x) => x.item.id)));
+  // Two Open Library works share the bare title "Saga" by the same author.
+  const dupes = [
+    mk("t2", ["Graphic Novels"], 2015, 4.6),
+    { id: "s1", title: "Saga", subtitle: "Brian K. Vaughan", genres: ["Graphic Novels"], year: 2012, rating: { value: 4.5, scale: 10 } },
+    { id: "s2", title: "Saga", subtitle: "Brian K. Vaughan", genres: ["Graphic Novels"], year: 2013, rating: { value: 4.5, scale: 10 } },
+    { id: "o1", title: "Awkward", subtitle: "Svetlana Chmakova", genres: ["Graphic Novels"], year: 2015, rating: { value: 4.2, scale: 10 } },
+  ];
+  const out3 = similarTo(dupes[0], { key: "books", items: dupes });
+  check("the same visible label never appears twice",
+    new Set(out3.map((x) => x.item.title)).size === out3.length,
+    JSON.stringify(out3.map((x) => x.item.title)));
+  check("deduping still fills the row from other candidates",
+    out3.some((x) => x.item.title === "Awkward"), JSON.stringify(out3.map((x) => x.item.title)));
+
+  // An unknown year should not be scored as a perfect era match.
+  const undated = [target, mk("nodate", ["Crime", "Drama"], null, 9.2), mk("closest", ["Crime", "Drama"], 2009, 9.2)];
+  check("a dated near-match beats an undated one",
+    similarTo(target, { key: "tv", items: undated })[0].item.id === "closest");
+}
+
+// ---- lookup links ---------------------------------------------------------
+// The Open Library work key was already inside our own id all along.
+check("a book links to its Open Library work",
+  lookupLinks({ id: "bk_OL17930368W" }, { key: "books" })[0].url === "https://openlibrary.org/works/OL17930368W");
+check("a non-Open-Library book id yields no link",
+  lookupLinks({ id: "bk_custom_1" }, { key: "books" }).length === 0);
+check("a film offers a trailer search",
+  /youtube\.com\/results/.test(lookupLinks({ id: "mv_1", title: "Heat", year: 1995 }, { key: "movies" })[0].url));
+check("the trailer query carries title and year",
+  decodeURIComponent(lookupLinks({ id: "mv_1", title: "Heat", year: 1995 }, { key: "movies" })[0].url).includes("Heat 1995 trailer"));
+// It is a search, not a promise that this exact video exists.
+check("the trailer link is labelled as a search",
+  lookupLinks({ id: "mv_1", title: "Heat" }, { key: "movies" })[0].label === "Search for a trailer");
+check("a restaurant gets no invented link", lookupLinks({ id: "rs_1", title: "X" }, { key: "restaurants" }).length === 0);
+check("music gets no invented link", lookupLinks({ id: "tr_1", title: "X" }, { key: "music" }).length === 0);
 
 // ---- against the real catalogues -----------------------------------------
 const restaurants = load("restaurants.json");
