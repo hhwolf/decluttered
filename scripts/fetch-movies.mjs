@@ -91,14 +91,31 @@ const firstSentence = (s = "") => {
 };
 
 // ---- IMDb bulk mode -------------------------------------------------------
-async function streamLines(url, onLine) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`${res.status} for ${url}`);
-  const rl = readline.createInterface({
-    input: Readable.fromWeb(res.body).pipe(zlib.createGunzip()),
-    crlfDelay: Infinity,
-  });
-  for await (const line of rl) onLine(line);
+// title.basics is ~220 MB, so a mid-stream connection reset is a matter of
+// when, not if. An ECONNRESET surfaces as an unhandled 'error' on the readable
+// and killed the whole run; retry the transfer instead. onLine must tolerate
+// replay, which it does — every caller writes into a Map keyed by tconst.
+async function streamLines(url, onLine, tries = 4) {
+  for (let attempt = 1; attempt <= tries; attempt++) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`${res.status} for ${url}`);
+      const body = Readable.fromWeb(res.body);
+      const gunzip = zlib.createGunzip();
+      // surface stream failures as a rejection rather than an uncaught event
+      const failed = new Promise((_, reject) => {
+        body.on("error", reject);
+        gunzip.on("error", reject);
+      });
+      const rl = readline.createInterface({ input: body.pipe(gunzip), crlfDelay: Infinity });
+      await Promise.race([(async () => { for await (const line of rl) onLine(line); })(), failed]);
+      return;
+    } catch (e) {
+      if (attempt === tries) throw e;
+      console.warn(`  ! transfer failed (${e.message}) — retry ${attempt}/${tries - 1}`);
+      await sleep(3000 * attempt);
+    }
+  }
 }
 
 async function imdbBulkItems() {
@@ -173,6 +190,21 @@ const looksLikeFilm = (w) =>
 async function enrichArt(list) {
   fs.mkdirSync(path.dirname(CACHE), { recursive: true });
   const cache = fs.existsSync(CACHE) ? JSON.parse(fs.readFileSync(CACHE, "utf8")) : {};
+
+  // The cache is gitignored, so a fresh clone would re-ask Wikipedia for art it
+  // already shipped. Seed it from the committed catalogue: those URLs are the
+  // answers to exactly the same lookups, and Wikipedia throttles hard enough
+  // that skipping ~1,200 of them is the difference between minutes and hours.
+  if (fs.existsSync(OUT)) {
+    let seeded = 0;
+    for (const m of JSON.parse(fs.readFileSync(OUT, "utf8"))) {
+      if (m.image && cache[m.id] === undefined) {
+        cache[m.id] = { image: m.image, blurb: m.blurb };
+        seeded++;
+      }
+    }
+    if (seeded) console.log(`  seeded ${seeded} art entries from the existing catalogue`);
+  }
   let hit = 0, miss = 0, deferred = 0, done = 0;
   for (const m of list) {
     done++;
