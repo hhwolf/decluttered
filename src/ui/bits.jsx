@@ -225,6 +225,8 @@ export const CSS = `
 .landing{padding:0 0 40px;}
 .backbar{padding:14px 18px 0;}
 .citynag{width:100%;cursor:pointer;margin-bottom:8px;text-align:left;}
+.vibe{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  background:var(--paper2);border:1.5px solid var(--ink);border-radius:999px;padding:2px 8px;}
 .citynag:hover{background:var(--paper2);}
 /* the wordmark doubles as the "what is this?" affordance */
 .markbtn{border:none;background:none;padding:0;cursor:pointer;color:var(--ink);text-align:left;}
@@ -472,17 +474,21 @@ export function ExtRating({ item, dark = false, compact = false }) {
   // Space is tight on the deck badge and in narrow suggestion cards, so those
   // drop the source name; the full string stays in the tooltip and the sheet.
   const terse = dark || compact;
-  // A Wikipedia score is readership, not approval — it must never render as
-  // stars or read like a rating. Deezer's 0-100 is chart position; also not stars.
+  // Two of these sources measure attention, not approval, and must never render
+  // as stars or read like a rating: Wikipedia's is monthly readership, Deezer's
+  // is a play-driven popularity index. Only the star scales are opinions.
   const isInterest = r.source === "Wikipedia";
+  const isPopularity = scale === 100 && !isInterest;
   let body;
   if (isInterest) body = terse ? <>◆ {r.value}</> : <>◆ {r.value} · Wikipedia interest</>;
-  else if (scale === 100) body = terse ? <>▶ {r.value}</> : <>▶ {r.value} · {r.source} charts</>;
+  else if (isPopularity) body = terse ? <>▶ {r.value}</> : <>▶ {r.value} · {r.source} popularity</>;
   else if (scale === 10) body = terse ? <>★ {r.value}/10</> : <>★ {r.value}/10 · {r.count ? fmtCount(r.count) + " on " : ""}{r.source}</>;
   else body = terse ? <>★ {r.value}{r.count ? ` · ${fmtCount(r.count)}` : ""}</> : <>★ {r.value} · {r.count ? fmtCount(r.count) + " on " : ""}{r.source}</>;
   const full = isInterest
     ? `Wikipedia interest ${r.value}/100 — about ${(r.count || 0).toLocaleString()} readers a month. Not a rating.`
-    : scale === 100 ? `${r.value} on ${r.source} charts`
+    // r.count is Deezer's raw rank here, not a tally of ratings — never show it
+    // as one. How much it is played, not how much it is liked.
+    : isPopularity ? `${r.source} popularity ${r.value}/100 — how much this is being played right now. Not a rating.`
     : `${r.value}${scale === 10 ? "/10" : ""}${r.count ? ` from ${r.count.toLocaleString()} ratings` : ""} on ${r.source}`;
   return <span className={dark ? "ext-pill" : "cat-no"} style={style} title={full}>{body}</span>;
 }

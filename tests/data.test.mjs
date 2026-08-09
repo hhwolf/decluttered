@@ -34,6 +34,24 @@ for (const [file, factors, tones, minCount] of DOMAINS) {
   check(t("factors complete & in 0..1"), items.every((i) => factors.every((k) => in01(i.factors?.[k]))));
   check(t("tones complete & in 0..1"), items.every((i) => tones.every((k) => in01(i.tone?.[k]))));
   check(t("popularity in 0..1"), items.every((i) => in01(i.popularity)));
+  // Popularity drives both the explore dial and the hidden-gems row, so a
+  // compressed distribution silently disables them. Music once ran an already
+  // normalised Deezer index through a log curve and landed with a median of
+  // 0.95 and no novelty left anywhere in the catalogue.
+  {
+    const ps = items.map((i) => i.popularity).sort((a, b) => a - b);
+    const med = ps[Math.floor(ps.length / 2)];
+    check(t("popularity median is not pinned to an extreme"), med > 0.15 && med < 0.85, `median ${med}`);
+    const lowTail = ps.filter((p) => p < 0.4).length / ps.length;
+    check(t(">=15% of items are low-popularity (gems exist)"), lowTail >= 0.15, `${Math.round(lowTail * 100)}%`);
+  }
+  // Same failure mode on the number we actually print on the card.
+  {
+    const vs = items.map((i) => i.rating.value / (i.rating.scale || (i.rating.source === "Deezer" ? 100 : 5)))
+      .sort((a, b) => a - b);
+    const top = vs.filter((v) => v >= 0.95).length / vs.length;
+    check(t("<40% of shown scores sit in the top 5%"), top < 0.4, `${Math.round(top * 100)}%`);
+  }
   check(t("rating object present"), items.every((i) => i.rating && i.rating.source));
   check(t("rating values sane"), items.every((i) => {
     const v = i.rating.value;

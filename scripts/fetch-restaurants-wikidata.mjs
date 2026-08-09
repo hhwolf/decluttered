@@ -24,7 +24,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { deriveAxes, logPopularity, sleep, writePretty } from "./lib/derive.mjs";
+import { deriveAxes, assignPercentilePopularity, sleep, writePretty } from "./lib/derive.mjs";
 
 const DIR = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(DIR, "../src/data/restaurants.json");
@@ -278,10 +278,11 @@ async function main() {
 
   if (added.length === 0) { console.log("nothing new to add"); return; }
 
-  // Popularity + the interest score come from the same readership figure.
-  const maxViews = Math.max(...added.map((r) => r._views), 1);
+  // Popularity + the interest score come from the same readership figure,
+  // ranked within this Wikipedia cohort — pageviews aren't comparable to the
+  // Google review counts the curated places carry.
+  assignPercentilePopularity(added, (r) => r._views);
   for (const r of added) {
-    r.popularity = logPopularity(r._views, maxViews);
     r.rating.value = Math.max(1, Math.round(r.popularity * 100));
     r.factors = deriveAxes(r.id, r.genres, FACTOR_BASE, FACTORS);
     r.tone = deriveAxes(r.id, r.genres, TONE_BASE, TONES);

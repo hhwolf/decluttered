@@ -207,7 +207,8 @@ export const DOMAINS = {
     moodTitle: "The sound you reach for",
     heroTitle: ["Stop shuffling.", "Start hearing", "what's actually yours."],
     heroSub: "Algorithms chase plays, not taste. Queue learns what a song has to do to move you — the hooks, the words, the energy — then deals you tracks worth queueing.",
-    ratingSource: "Deezer listeners",
+    // Deezer's index counts plays, not listeners rating anything.
+    ratingSource: "Deezer popularity",
     goalLabels: {
       classics: { chip: "Know the classics", row: "Goal · the songbook", reason: "You said you want the canon — the tracks everything since is quoting." },
       hidden: { chip: "Find hidden gems", row: "Goal · deep cuts", reason: "You asked for hidden gems — adored by the few who found them." },

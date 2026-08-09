@@ -1,10 +1,11 @@
 import { useState, useRef, useMemo, useEffect } from "react";
-import { Heart, X, Info, Check, Play, Pause, Quote, MapPin } from "lucide-react";
+import { Heart, X, Info, Check, Play, Pause, Quote, MapPin, Sparkles } from "lucide-react";
 import { rankItems } from "../engine/engine.mjs";
 import { paletteFor } from "../domains.js";
 import { Cover, ExtRating, matchTag, displayScore, ringDegrees, clamp } from "./bits.jsx";
 import { fetchTrackPreview, deezerIdOf } from "./preview.js";
 import { resolveSwipe, SWIPE_THRESHOLD } from "../engine/stats.mjs";
+import { vibeWords, counterpoint, runStatus } from "../engine/describe.mjs";
 
 /* 30s preview player for tracks (music domain only). */
 function PreviewButton({ item }) {
@@ -124,6 +125,9 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   const tx = animOut ? outX : drag;
   const tag = matchTag(top.score);
   const pal = paletteFor(top.item.genres[0]);
+  const vibe = vibeWords(top.item, domain);
+  const caveat = counterpoint(top.item, domain, profile, top.breakdown);
+  const anchor = top.bestAnchorId ? domain.items.find((i) => i.id === top.bestAnchorId) : null;
 
   return (
     <div>
@@ -206,17 +210,40 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
               {top.item.genres.map((g) => <span key={g} className="cat-no" style={{ border: "1px solid var(--line)", borderRadius: 999, padding: "2px 8px" }}>{g}</span>)}
             </div>
             <div className="h2" style={{ fontSize: 23 }}>{top.item.title}</div>
-            <div className="cat-no" style={{ margin: "3px 0 12px" }}>
+            <div className="cat-no" style={{ margin: "3px 0 8px" }}>
               {top.item.subtitle}
               {top.item.year && String(top.item.year) !== top.item.subtitle ? ` · ${top.item.year}` : ""}
               {top.item.meta ? ` · ${top.item.meta}` : ""}
             </div>
+
+            {/* What it FEELS like, from the tone vector we already compute.
+                Run status rides alongside: for a series, "is it finished?" is
+                half the decision and `meta` only carries the episode counts. */}
+            {(vibe.length > 0 || runStatus(top.item)) && (
+              <div className="row" style={{ flexWrap: "wrap", gap: 5, marginBottom: 8 }}>
+                {vibe.map((w) => <span key={w} className="vibe">{w}</span>)}
+                {runStatus(top.item) && <span className="vibe">{runStatus(top.item)}</span>}
+              </div>
+            )}
             {/* clamped so the card never cuts a sentence mid-word; full text in the sheet */}
             <p className="serif" style={{ fontSize: 15.5, lineHeight: 1.5, color: "var(--ink2)",
               margin: "0 0 8px",
               display: "-webkit-box", WebkitLineClamp: expanded ? "unset" : 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
               {top.item.blurb}
             </p>
+            {/* Why this, for you — naming the item, not just a percentage. */}
+            {anchor && (
+              <p className="cat-no" style={{ margin: "0 0 6px" }}>
+                <Sparkles size={10} style={{ verticalAlign: "-1px", color: "var(--hl-deep)" }} />{" "}
+                Because you liked <b style={{ color: "var(--ink)" }}>{anchor.title}</b>
+              </p>
+            )}
+            {caveat && (
+              <p className="cat-no" style={{ margin: "0 0 8px", color: "var(--stamp)" }}>
+                Heads up · {caveat}
+              </p>
+            )}
+
             {/* one line of what critics actually said, before you have to ask */}
             {top.item.reception?.summary && !expanded && (
               <p className="cat-no" style={{ margin: "0 0 8px", lineHeight: 1.45,

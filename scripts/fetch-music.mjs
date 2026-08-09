@@ -11,7 +11,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { deriveAxes, logPopularity, getJSON, sleep, writePretty } from "./lib/derive.mjs";
+import { deriveAxes, assignPercentilePopularity, getJSON, sleep, writePretty } from "./lib/derive.mjs";
 
 const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "../src/data/music.json");
 const ENRICH_ITUNES = process.env.SKIP_ITUNES ? false : true;
@@ -156,10 +156,16 @@ async function main() {
   }
 
   const list = [...seen.values()];
-  const maxRank = Math.max(...list.map((t) => t._rank));
+  // Deezer's `rank` is ALREADY a 0..1,000,000 popularity index, so the log
+  // scaling this used to apply compressed everything into the top: half the
+  // catalogue read 95+ and every track looked equally huge, which also
+  // flattened novelty to ~0.05 and quietly broke the hidden-gems row.
+  //   - popularity: percentile within this chart sweep, matching how TV does
+  //     it, so the explore dial and gems have a real spread to work with
+  //   - rating.value: Deezer's own index rescaled 1..100, not a curve of ours
+  assignPercentilePopularity(list, (t) => t._rank);
   for (const t of list) {
-    t.popularity = logPopularity(t._rank, maxRank);
-    t.rating.value = Math.round(t.popularity * 100); // 0..100 listener score
+    t.rating.value = Math.max(1, Math.min(100, Math.round(t._rank / 10000)));
     t.factors = deriveAxes(t.id, t.genres, FACTOR_BASE, FACTORS);
     t.tone = deriveAxes(t.id, t.genres, TONE_BASE, TONES);
     delete t._rank;

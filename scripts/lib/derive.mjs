@@ -33,16 +33,19 @@ export function deriveAxes(id, genres, baseProfiles, axes, spread = 0.09) {
   return out;
 }
 
-// Normalize a count into 0..1 popularity on a log scale.
-export function logPopularity(count, maxCount) {
-  if (!count || count <= 0) return 0.05;
-  const v = Math.log10(1 + count) / Math.log10(1 + maxCount);
-  return Math.round(clamp(v, 0.05, 1) * 100) / 100;
-}
-
 // Rank-percentile popularity: position within THIS catalogue (0.05..1).
-// Right choice when every item is famous in absolute terms (curated canons,
-// chart sweeps) — keeps a real novelty spread for the explore dial.
+//
+// This is the only popularity function, deliberately. A log-of-count-over-max
+// scale used to live here and silently broke three catalogues: it only spreads
+// values when counts span many orders of magnitude, and none of ours do. Books
+// range 20..1400 reads (everything floored at 0.42), Deezer hands us an index
+// that is *already* normalised 0..1M (median landed at 0.95). In both cases
+// novelty collapsed to ~0 and the hidden-gems row quietly had nothing to show.
+//
+// Every catalogue here is a curated canon or a chart sweep, so absolute counts
+// only say "all of these are famous". Rank within the set is the real signal.
+// Pass items from ONE source at a time: review counts, pageviews and play
+// indexes are different units and must not be percentiled against each other.
 export function assignPercentilePopularity(list, countOf) {
   const sorted = [...list].sort((a, b) => countOf(a) - countOf(b));
   const n = Math.max(sorted.length - 1, 1);

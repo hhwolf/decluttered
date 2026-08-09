@@ -127,11 +127,17 @@ export function scoreItem(item, profile, domain) {
 
   // 4) Similarity to things they've loved (best-anchor + average blend).
   let simScore = 0.5;
+  let bestAnchorId = null;   // which loved item this most resembles
   if (p.likedVectors.length) {
     const sims = p.likedVectors.map((a) => anchorSim(item, a, domain));
-    const best = Math.max(...sims);
+    let bi = 0;
+    for (let i = 1; i < sims.length; i++) if (sims[i] > sims[bi]) bi = i;
+    const best = sims[bi];
     const avg = sims.reduce((s, x) => s + x, 0) / sims.length;
     simScore = 0.6 * best + 0.4 * avg;
+    // Only claim a resemblance when it is actually strong; a weak best match
+    // named out loud reads as the engine making things up.
+    if (best >= 0.55) bestAnchorId = p.likedVectors[bi].id;
   }
 
   // 5) Penalty for resembling things they've rejected.
@@ -153,6 +159,7 @@ export function scoreItem(item, profile, domain) {
   const score = clamp(blended) * 100;
   return {
     score: Math.round(score * 10) / 10,
+    bestAnchorId,
     breakdown: {
       genre: +(genreScore * 100).toFixed(0),
       factor: +(factorScore * 100).toFixed(0),

@@ -13,7 +13,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { deriveAxes, logPopularity, getJSON, sleep, writePretty, clamp, hash01 } from "./lib/derive.mjs";
+import { deriveAxes, assignPercentilePopularity, getJSON, sleep, writePretty, clamp, hash01 } from "./lib/derive.mjs";
 
 const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "../src/data/restaurants.json");
 const KEY = process.env.GOOGLE_PLACES_API_KEY;
@@ -607,9 +607,14 @@ function curatedItems() {
       blurb,
       factors,
       tone,
-      popularity: logPopularity(countK * 1000, maxCount * 1000),
+      _count: countK * 1000,
     };
   });
+  // Ranked within this cohort only: review counts and Wikipedia pageviews are
+  // different units and must never be percentiled against each other.
+  assignPercentilePopularity(seeded, (r) => r._count);
+  for (const r of seeded) delete r._count;
+  return seeded;
 }
 
 const PRICE_MAP = { PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 };
@@ -655,8 +660,8 @@ async function liveItems() {
     }
   }
   const list = [...seen.values()];
-  const maxCount = Math.max(...list.map((r) => r._count), 1);
-  for (const r of list) { r.popularity = logPopularity(r._count, maxCount); delete r._count; }
+  assignPercentilePopularity(list, (r) => r._count);
+  for (const r of list) delete r._count;
   return list;
 }
 

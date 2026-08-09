@@ -4,6 +4,7 @@ import { scoreItem } from "../engine/engine.mjs";
 import { paletteFor } from "../domains.js";
 import { Sheet, Cover, ExtRating, Stars, MiniRate, displayScore, matchTag } from "./bits.jsx";
 import { fetchTrackPreview } from "./preview.js";
+import { vibeWords, strengths, counterpoint, commitment } from "../engine/describe.mjs";
 
 /* Inline 30s preview control, shared shape with the deck's button. */
 function SheetPreview({ item }) {
@@ -58,6 +59,11 @@ function WhatOthersSay({ domain, item }) {
   const pct = r?.value != null ? Math.round((r.value / scale) * 100) : null;
   const rec = item.reception;
   const google = item.googleReviews || [];
+  // Wikipedia readership and Deezer's play-driven index both measure attention,
+  // not approval. They get their own copy: a track low on the chart isn't
+  // "divisive", it just isn't being played much.
+  const isInterest = r?.source === "Wikipedia";
+  const isPopularity = scale === 100 && !isInterest;
 
   if (!r?.value && !rec && google.length === 0) return null;
 
@@ -65,9 +71,11 @@ function WhatOthersSay({ domain, item }) {
     <div className="card" style={{ marginTop: 14 }}>
       <div className="row" style={{ justifyContent: "space-between", marginBottom: 10 }}>
         <div className="eyebrow"><Users size={12} style={{ verticalAlign: "-1px" }} /> What others say</div>
-        {r?.count > 0 && (
+        {/* Deezer stores its raw rank in `count`, not a tally of ratings, so it
+            has nothing to report here. */}
+        {r?.count > 0 && !isPopularity && (
           <span className="cat-no">
-            {r.count.toLocaleString()} {r.source === "Wikipedia" ? "readers/mo" : "ratings"}
+            {r.count.toLocaleString()} {isInterest ? "readers/mo" : "ratings"}
           </span>
         )}
       </div>
@@ -76,7 +84,7 @@ function WhatOthersSay({ domain, item }) {
         <div style={{ marginBottom: rec || google.length ? 14 : 0 }}>
           <div className="row" style={{ justifyContent: "space-between", marginBottom: 4 }}>
             <span style={{ fontSize: 13.5, fontWeight: 500 }}>
-              {r.source === "Wikipedia" ? "Reader interest" : scale === 100 ? "Listener score" : "Average rating"} · {r.source}
+              {isInterest ? "Reader interest" : isPopularity ? "Popularity" : "Average rating"} · {r.source}
             </span>
             <span className="cat-no">
               {scale === 100 ? `${r.value}/100` : `${r.value}/${scale}`}
@@ -84,8 +92,16 @@ function WhatOthersSay({ domain, item }) {
           </div>
           <div className="bar"><span style={{ width: pct + "%", background: "var(--slate)" }} /></div>
           <p className="cat-no" style={{ marginTop: 5 }}>
-            {r.source === "Wikipedia"
+            {isInterest
               ? `How often people look this place up — roughly ${(r.count || 0).toLocaleString()} readers a month. It measures fame, not whether the food is good.`
+              : isPopularity
+              // Careful not to say "barely charting" — a niche-genre track can
+              // sit high on its own chart (the blurb says so) and still have
+              // low global reach. Talk about reach, which is what this measures.
+              ? `How widely ${r.source} is playing this right now, scored out of 100 — reach, not quality. ` + (
+                  pct >= 85 ? "One of the biggest records going." : pct >= 60 ? "Widely played."
+                  : pct >= 30 ? "Moderate reach — a deeper cut."
+                  : "Little reach outside its own corner; you'd be early to it.")
               : pct >= 90 ? "Near-universal approval." : pct >= 80 ? "Strongly liked by the crowd."
               : pct >= 70 ? "Well liked, with some dissent." : pct >= 55 ? "Mixed but positive."
               : "Divisive — read the reviews before committing."}
@@ -145,10 +161,13 @@ function FactSheet({ domain, item }) {
     item.meta && [{ books: "Length", movies: "Runtime", tv: "Episodes", music: "Duration", restaurants: "Price" }[domain.key], item.meta],
     item.dish && ["Known for", item.dish],
     [domain.genreLabel, (item.genres || []).join(", ")],
-    item.rating?.value != null && [`${item.rating.source} score`,
+    // Wikipedia and Deezer are 0-100 attention measures, not scores out of five.
+    item.rating?.value != null && (
       item.rating.scale === 100 || item.rating.source === "Deezer"
-        ? `${item.rating.value}/100`
-        : `${item.rating.value}/${item.rating.scale || 5}${item.rating.count ? ` · ${item.rating.count.toLocaleString()} ratings` : ""}`],
+        ? [`${item.rating.source} ${item.rating.source === "Wikipedia" ? "interest" : "popularity"}`,
+           `${item.rating.value}/100`]
+        : [`${item.rating.source} score`,
+           `${item.rating.value}/${item.rating.scale || 5}${item.rating.count ? ` · ${item.rating.count.toLocaleString()} ratings` : ""}`]),
   ].filter((row) => row && row[0] && row[1] !== undefined && row[1] !== null && row[1] !== "");
 
   return (
@@ -179,6 +198,10 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
   const elements = shelfEntry?.elements || {};
   const overall = shelfEntry?.rating || 0;
   const titleId = "sheet-title-" + item.id;
+  const vibe = vibeWords(item, domain);
+  const strong = strengths(item, domain);
+  const caveat = s ? counterpoint(item, domain, profile, s.breakdown) : null;
+  const anchor = s?.bestAnchorId ? domain.items.find((i) => i.id === s.bestAnchorId) : null;
 
   const act = (a) => { onAction(item, a); onClose(); };
 
@@ -203,7 +226,13 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
             {item.meta ? ` · ${item.meta}` : ""}
           </div>
           <div style={{ marginTop: 6 }}><ExtRating item={item} /></div>
+          {commitment(item) && <div className="cat-no" style={{ marginTop: 4 }}>{commitment(item)}</div>}
           {item.dish && <div className="cat-no" style={{ marginTop: 5 }}>Known for · {item.dish}</div>}
+          {vibe.length > 0 && (
+            <div className="row" style={{ flexWrap: "wrap", gap: 5, marginTop: 7 }}>
+              {vibe.map((w) => <span key={w} className="vibe">{w}</span>)}
+            </div>
+          )}
         </div>
       </div>
 
@@ -215,6 +244,11 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
               {displayScore(s.score)}% · {tag.t.replace(/ match$/, "")}
             </span>
           </div>
+          {anchor && (
+            <p className="cat-no" style={{ margin: "0 0 10px" }}>
+              Closest to <b style={{ color: "var(--ink)" }}>{anchor.title}</b>, which you liked.
+            </p>
+          )}
           {[[`${domain.genreLabel.replace(/s$/, "")} fit`, s.breakdown.genre], ["Matches what you weigh", s.breakdown.factor],
             ["Mood match", s.breakdown.tone], [`Like ${domain.nounPlural} you loved`, s.breakdown.similar]].map(([label, v]) => (
             <div key={label} style={{ marginBottom: 8 }}>
@@ -224,6 +258,12 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
               <div className="bar"><span style={{ width: v + "%" }} /></div>
             </div>
           ))}
+          {caveat && (
+            <p className="cat-no" style={{ marginTop: 10, color: "var(--stamp)" }}>Heads up · {caveat}</p>
+          )}
+          {strong.length > 0 && (
+            <p className="cat-no" style={{ marginTop: 6 }}>Strongest on {strong.join(" and ")}.</p>
+          )}
         </div>
       )}
 

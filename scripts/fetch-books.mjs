@@ -7,7 +7,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { deriveAxes, logPopularity, getJSON, sleep, writePretty, clamp, hash01 } from "./lib/derive.mjs";
+import { deriveAxes, assignPercentilePopularity, getJSON, sleep, writePretty, clamp, hash01 } from "./lib/derive.mjs";
 
 const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "../src/data/books.json");
 
@@ -272,9 +272,12 @@ async function main() {
   }
   fs.mkdirSync(path.dirname(CACHE), { recursive: true });
   fs.writeFileSync(CACHE, JSON.stringify(descCache));
-  const maxCount = Math.max(...list.map((b) => b._ratingsCount));
+  // Reader counts here span only ~20..1400, so a log curve against the max
+  // floors every book at 0.42 and none ever reads as a gem. This is a curated
+  // canon where everything is famous in absolute terms, so rank within the
+  // catalogue is the meaningful signal.
+  assignPercentilePopularity(list, (b) => b._ratingsCount);
   for (const b of list) {
-    b.popularity = logPopularity(b._ratingsCount, maxCount);
     b.factors = deriveAxes(b.id, b.genres, FACTOR_BASE, FACTORS);
     b.tone = deriveAxes(b.id, b.genres, TONE_BASE, TONES);
     // nudge tone by rating count: mega-popular books skew a touch less demanding
