@@ -1,6 +1,6 @@
 # Decluttered — native client
 
-React Native (Expo SDK 57). The taste engine is **shared with the web client,
+React Native (**Expo SDK 54**). The taste engine is **shared with the web client,
 not ported**: `metro.config.js` points `watchFolders` at `../src`, so both
 clients import the same `engine.mjs`, `describe.mjs`, `suggest.mjs`,
 `stats.mjs`, `location.mjs`, `session.mjs` and the same catalogue JSON. Zero
@@ -40,6 +40,21 @@ Three pieces of config exist for reasons that are not obvious:
   problem with `resolver.nodeModulesPaths`.
 - `@expo/vector-icons` is mocked. Installing `expo-asset`/`expo-font` to satisfy
   its resolver broke the real app, since Expo Go ships its own natives.
+
+## Why SDK 54 and not the latest
+
+The project was built on SDK 57 (npm's `latest`) and had to come back to 54,
+because **the App Store build of Expo Go is version 54.0.2, released
+2025-09-23** — roughly a year behind npm. A physical iPhone can only run the
+Expo Go that Apple ships, so an SDK 57 project simply reports "requires a newer
+version of Expo Go" on a real device.
+
+This is easy to miss during development: `expo start --ios` downloads an
+SDK-matched Expo Go straight from Expo's CDN, so the simulator runs any SDK
+happily and tells you nothing about whether a phone can.
+
+To go back to the latest SDK, `npx expo install expo@latest --fix` — and then
+plan on a development build rather than Expo Go for on-device testing.
 
 ## Not ported yet
 
