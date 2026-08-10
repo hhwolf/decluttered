@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node tests/engine.test.mjs && node tests/data.test.mjs && node tests/suggest.test.mjs && node tests/stats.test.mjs && node tests/importer.test.mjs && node tests/reception.test.mjs && node tests/location.test.mjs && node tests/wikidata.test.mjs && node tests/describe.test.mjs && node tests/enrich.test.mjs",
+    "test": "node tests/engine.test.mjs && node tests/data.test.mjs && node tests/suggest.test.mjs && node tests/stats.test.mjs && node tests/importer.test.mjs && node tests/reception.test.mjs && node tests/location.test.mjs && node tests/wikidata.test.mjs && node tests/describe.test.mjs && node tests/enrich.test.mjs && node tests/session.test.mjs",
     "fetch:books": "node scripts/fetch-books.mjs",
     "fetch:music": "node scripts/fetch-music.mjs",
     "fetch:restaurants": "node scripts/fetch-restaurants.mjs",
@@ -21,7 +21,10 @@
     "patch:tv:cast": "node scripts/patch-tv-cast.mjs",
     "patch:movies:directors": "node scripts/patch-movie-directors.mjs",
     "patch:blurbs": "node scripts/patch-truncated-blurbs.mjs",
-    "patch:restaurants:provenance": "node scripts/patch-restaurant-provenance.mjs"
+    "patch:restaurants:provenance": "node scripts/patch-restaurant-provenance.mjs",
+    "test:mobile": "cd mobile && npx jest",
+    "test:all": "npm test && npm run test:mobile",
+    "mobile": "cd mobile && npx expo start"
   },
   "dependencies": {
     "lucide-react": "^0.525.0",

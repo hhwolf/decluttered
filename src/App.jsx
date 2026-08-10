@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { Compass, Library as LibraryIcon, Users, User, BookOpen, UtensilsCrossed, Music, Film, Tv, Sparkles } from "lucide-react";
 import { DOMAINS, DOMAIN_KEYS } from "./domains.js";
-import { updateProfileFromAction, applyRating } from "./engine/engine.mjs";
-import { dayKey } from "./engine/stats.mjs";
+import {
+  emptyDomainState as blankDomain, withDefaults as fillDefaults, sortItem, undoSort,
+  rateItem, moveShelfEntry, removeShelfEntry, setProfileField, importHistory,
+} from "./engine/session.mjs";
 import { filterByCities } from "./engine/location.mjs";
 import { CSS, clamp, Toast } from "./ui/bits.jsx";
 import ItemSheet from "./ui/ItemSheet.jsx";
@@ -27,15 +29,10 @@ const store = {
 
 const DOMAIN_ICONS = { books: BookOpen, movies: Film, tv: Tv, restaurants: UtensilsCrossed, music: Music };
 
-const emptyDomainState = (key) => ({
-  onboarded: false, profile: null, onboardingData: null, shelf: {}, feed: seedFeed(DOMAINS[key]),
-  activity: {}, // "YYYY-MM-DD" -> items sorted that day (drives the streak)
-  ranked: [],   // ids, best first, from head-to-head comparisons
-});
-
-// Older saved states predate activity/ranked — fill them in on load so the new
-// surfaces never read undefined.
-const withDefaults = (s, key) => ({ ...emptyDomainState(key), ...s });
+// The transitions live in engine/session.mjs and are shared with the React
+// Native client; these wrappers only supply the seeded feed, which is UI copy.
+const emptyDomainState = (key) => blankDomain(seedFeed(DOMAINS[key]));
+const withDefaults = (s, key) => fillDefaults(s, seedFeed(DOMAINS[key]));
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
@@ -91,95 +88,38 @@ export default function App() {
   };
 
   const handleAction = (item, action, rating = null) => {
-    // snapshot for undo — the profile is derived, so we restore it wholesale
-    const cur = states[active];
-    setUndo({
-      domainKey: active, item, action,
-      prev: { profile: cur.profile, shelf: cur.shelf, feed: cur.feed, activity: cur.activity },
-    });
-    setStates((s) => {
-      const cur = s[active];
-      const profile = updateProfileFromAction(cur.profile, item, action, domain, rating);
-      const status = action === "want" ? "want" : action === "pass" ? "pass" : "consumed";
-      const prev = cur.shelf[item.id] || {};
-      const shelf = { ...cur.shelf, [item.id]: { status, rating: rating != null ? rating : prev.rating, addedAt: prev.addedAt || Date.now() } };
-      let feed = cur.feed;
-      if (action === "want") {
-        feed = [{ id: "p" + Date.now(), userId: "me", type: "shelved", itemId: item.id, text: "", ts: Date.now(), likes: 0, likedByMe: false, comments: [] }, ...feed];
-      }
-      const today = dayKey(Date.now());
-      const activity = { ...cur.activity, [today]: (cur.activity?.[today] || 0) + 1 };
-      return { ...s, [active]: { ...cur, profile, shelf, feed, activity } };
-    });
+    // Computed outside the updater on purpose: setState inside another
+    // setState's updater is a side effect in a reducer, and StrictMode runs
+    // updaters twice. Sorts are user-initiated one at a time, so reading the
+    // current state here is safe — and it is what the pre-refactor code did.
+    const { state, undo: u } = sortItem(states[active], item, action, domain, rating);
+    setStates((s) => ({ ...s, [active]: state }));
+    setUndo({ ...u, domainKey: active });
   };
 
   const undoLast = () => {
     if (!undo) return;
-    setStates((s) => ({ ...s, [undo.domainKey]: { ...s[undo.domainKey], ...undo.prev } }));
+    setStates((s) => ({ ...s, [undo.domainKey]: undoSort(s[undo.domainKey], undo) }));
     setUndo(null);
   };
 
-  const moveShelf = (id, status) => setStates((s) => {
-    const cur = s[active];
-    return { ...s, [active]: { ...cur, shelf: { ...cur.shelf, [id]: { ...cur.shelf[id], status, addedAt: Date.now() } } } };
-  });
-  const removeShelf = (id) => setStates((s) => {
-    const cur = s[active];
-    const shelf = { ...cur.shelf }; delete shelf[id];
-    return { ...s, [active]: { ...cur, shelf } };
-  });
+  const moveShelf = (id, status) => setStates((s) => ({ ...s, [active]: moveShelfEntry(s[active], id, status) }));
+  const removeShelf = (id) => setStates((s) => ({ ...s, [active]: removeShelfEntry(s[active], id) }));
 
-  const handleRate = (item, rating) => {
-    setStates((s) => {
-      const cur = s[active];
-      const profile = applyRating(cur.profile, item, rating, domain);
-      const wasRated = !!(cur.shelf[item.id] && cur.shelf[item.id].rating);
-      const prev = cur.shelf[item.id] || {};
-      const overall = rating.overall || 0;
-      const shelf = { ...cur.shelf, [item.id]: {
-        ...prev, status: "consumed",
-        rating: overall || undefined,
-        elements: rating.elements || prev.elements,
-        addedAt: prev.addedAt || Date.now(),
-      } };
-      let feed = cur.feed;
-      // Post to the feed only the first time an item earns a high rating (no spam on edits).
-      if (!wasRated && rating.overall >= 4) {
-        feed = [{ id: "p" + Date.now(), userId: "me", type: "rated", itemId: item.id, rating: rating.overall, text: "", ts: Date.now(), likes: 0, likedByMe: false, comments: [] }, ...feed];
-      }
-      return { ...s, [active]: { ...cur, profile, shelf, feed } };
-    });
-  };
+  const handleRate = (item, rating) =>
+    setStates((s) => ({ ...s, [active]: rateItem(s[active], item, rating, domain) }));
 
-  const setExplore = (v) => setStates((s) => {
-    const cur = s[active];
-    return { ...s, [active]: { ...cur, profile: { ...cur.profile, explore: clamp(v) } } };
-  });
-  const setCities = (cities) => setStates((s) => {
-    const cur = s[active];
-    return { ...s, [active]: { ...cur, profile: { ...cur.profile, cities } } };
-  });
-  const setGoals = (goals) => setStates((s) => {
-    const cur = s[active];
-    return { ...s, [active]: { ...cur, profile: { ...cur.profile, goals } } };
-  });
+  const setExplore = (v) => setStates((s) => ({ ...s, [active]: setProfileField(s[active], "explore", clamp(v)) }));
+  const setCities = (cities) => setStates((s) => ({ ...s, [active]: setProfileField(s[active], "cities", cities) }));
+  const setGoals = (goals) => setStates((s) => ({ ...s, [active]: setProfileField(s[active], "goals", goals) }));
   const setFeed = (feed) => patch({ feed });
   const setRanked = (ranked) => patch({ ranked });
 
   // Imported CSV rows: merge into the shelf and let every rated row teach the
   // profile, so the deck reflects an imported history immediately.
-  const importEntries = (entries) => setStates((s) => {
-    const cur = s[active];
-    let profile = cur.profile;
-    for (const [id, entry] of Object.entries(entries)) {
-      const item = domain.items.find((i) => i.id === id);
-      if (!item) continue;
-      const action = entry.status === "want" ? "want" : "consumed";
-      profile = updateProfileFromAction(profile, item, action, domain, null);
-      if (entry.rating) profile = applyRating(profile, item, { overall: entry.rating }, domain);
-    }
-    return { ...s, [active]: { ...cur, profile, shelf: { ...cur.shelf, ...entries } } };
-  });
+  const importEntries = (entries) =>
+    setStates((s) => ({ ...s, [active]: importHistory(s[active], entries, domain) }));
+
   const reset = () => { patch(emptyDomainState(active)); setView("discover"); setUndo(null); };
 
   const tabs = [

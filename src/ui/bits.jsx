@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Star } from "lucide-react";
 import { paletteFor } from "../domains.js";
+import { matchLabel } from "../engine/present.mjs";
 
 export const clamp = (x, lo = 0, hi = 1) => Math.max(lo, Math.min(hi, x));
 
@@ -503,18 +504,14 @@ export function ExtRating({ item, dark = false, compact = false }) {
   return <span className={dark ? "ext-pill" : "cat-no"} style={style} title={full}>{body}</span>;
 }
 
+// Wording is shared with the native client; only the colour token is web-specific.
+const TONE_VAR = { strong: "var(--hl-deep)", good: "var(--slate)", ok: "var(--ink2)", weak: "var(--muted)" };
 export function matchTag(score) {
-  if (score >= 60) return { t: "Strong match", c: "var(--hl-deep)" };
-  if (score >= 45) return { t: "Good match", c: "var(--slate)" };
-  if (score >= 32) return { t: "Worth a look", c: "var(--ink2)" };
-  return { t: "A stretch", c: "var(--muted)" };
+  const { text, tone } = matchLabel(score);
+  return { t: text, c: TONE_VAR[tone] };
 }
-// DISPLAY ONLY — engine's true 0..100 remapped to a readable percentage.
-// Deliberately never reads 100: an honest ceiling (~true 80 → 86%) keeps the
-// number believable before the user has swiped anything. Ranking, matching,
-// learning and matchTag all use the TRUE score.
-export const displayScore = (score) => Math.round(clamp(0.72 * score + 28, 8, 97));
-export const ringDegrees = (score) => displayScore(score) * 3.6;
+// Shared with the native client so one item can never show two percentages.
+export { displayScore, ringDegrees } from "../engine/present.mjs";
 
 /* Functional-updater toggle: safe for rapid taps (never reads stale state). */
 export function toggleSel(set, v, max) {

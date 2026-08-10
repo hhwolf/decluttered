@@ -1,0 +1,341 @@
+// Mobile screen suite — behaviour, not snapshots.
+//
+// The shared engine already has 741 Node tests; these cover only what is new on
+// native: that the screens wire the shared logic up correctly, that the swipe
+// gesture resolves the same way the web one does, and that the honesty rules
+// survived the port.
+import React from "react";
+import { render, fireEvent } from "@testing-library/react-native";
+
+// RNTL 14's `render` is ASYNC — it returns a promise and `screen` is only
+// populated once that resolves. Every test therefore awaits `show`.
+import { screen as r, waitFor } from "@testing-library/react-native";
+const show = (ui) => render(ui);
+import fs from "fs";
+import path from "path";
+
+import Discover from "../src/screens/Discover";
+import ItemSheet from "../src/screens/ItemSheet";
+import Library from "../src/screens/Library";
+import ForYou from "../src/screens/ForYou";
+import Profile from "../src/screens/Profile";
+import { buildInitialProfile, rankItems } from "../../src/engine/engine.mjs";
+import { emptyDomainState, sortItem } from "../../src/engine/session.mjs";
+import { displayScore } from "../../src/engine/present.mjs";
+import { SWIPE_THRESHOLD } from "../../src/engine/stats.mjs";
+
+const load = (f) => JSON.parse(fs.readFileSync(path.join(__dirname, "../../src/data", f), "utf8"));
+
+const BOOKS = {
+  key: "books", name: "Shelf", noun: "book", nounPlural: "books",
+  genreLabel: "Genres",
+  factors: ["writing", "plot", "pacing", "character", "originality", "atmosphere"],
+  factorLabels: { writing: "Prose & style", plot: "Plot & structure", pacing: "Pacing", character: "Characters", originality: "Originality", atmosphere: "Atmosphere" },
+  tones: ["darkness", "complexity", "emotion"],
+  toneLabels: {
+    darkness: (v) => (v < 0.4 ? "lighter" : v > 0.6 ? "darker" : "balanced"),
+    complexity: (v) => (v < 0.4 ? "breezy" : v > 0.6 ? "demanding" : "moderate"),
+    emotion: (v) => (v < 0.4 ? "cerebral" : v > 0.6 ? "emotional" : "even"),
+  },
+  actions: { want: "Want to read", consumed: "Read it", pass: "Pass", consumedShort: "Read" },
+  stamps: { want: "Want to read", pass: "Pass" },
+  libraryTabs: { want: "Want to read", consumed: "Read", pass: "Passed" },
+  items: load("books.json").slice(0, 60),
+};
+const TV = { ...BOOKS, key: "tv", name: "Series", noun: "show", nounPlural: "shows",
+  factors: ["story", "characters", "writing", "acting", "production", "bingeability"],
+  factorLabels: { story: "Story arcs", characters: "Characters", writing: "Writing", acting: "Acting", production: "Production", bingeability: "Bingeability" },
+  tones: ["darkness", "complexity", "comfort"],
+  actions: { want: "Add to watchlist", consumed: "Watched it", pass: "Pass", consumedShort: "Watched" },
+  libraryTabs: { want: "Watchlist", consumed: "Watched", pass: "Passed" },
+  items: load("tv.json").slice(0, 60) };
+
+const profileFor = (d) => buildInitialProfile(d, { genres: [], explore: 0.3 });
+
+describe("Discover — the core loop", () => {
+  it("shows the engine's top-ranked item, not an arbitrary one", async () => {
+    const profile = profileFor(BOOKS);
+    const expected = rankItems(BOOKS.items, profile, BOOKS, { excludeIds: [] })[0];
+    await show(<Discover domain={BOOKS} profile={profile} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.getByText(expected.item.title)).toBeTruthy();
+  });
+
+  it("shows the same percentage the web client would", async () => {
+    const profile = profileFor(BOOKS);
+    const top = rankItems(BOOKS.items, profile, BOOKS, { excludeIds: [] })[0];
+    await show(<Discover domain={BOOKS} profile={profile} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.getByText(`${displayScore(top.score)}%`)).toBeTruthy();
+  });
+
+  it("the pass button sorts the top item as a pass", async () => {
+    const onAction = jest.fn();
+    const profile = profileFor(BOOKS);
+    const top = rankItems(BOOKS.items, profile, BOOKS, { excludeIds: [] })[0];
+    await show(<Discover domain={BOOKS} profile={profile} shelf={{}} onAction={onAction} onExplore={() => {}} onOpen={() => {}} />);
+    fireEvent.press(r.getByText(/Pass/));
+    await new Promise((done) => setTimeout(done, 260)); // the fling animation completes first
+    expect(onAction).toHaveBeenCalledWith(top.item, "pass");
+  });
+
+  it("the save button sorts the top item as a want", async () => {
+    const onAction = jest.fn();
+    const profile = profileFor(BOOKS);
+    const top = rankItems(BOOKS.items, profile, BOOKS, { excludeIds: [] })[0];
+    await show(<Discover domain={BOOKS} profile={profile} shelf={{}} onAction={onAction} onExplore={() => {}} onOpen={() => {}} />);
+    fireEvent.press(r.getByText(/Want to read/));
+    await new Promise((done) => setTimeout(done, 260));
+    expect(onAction).toHaveBeenCalledWith(top.item, "want");
+  });
+
+  // Buttons as well as swipe: a swipe-only deck is undiscoverable and unusable
+  // for anyone who cannot make the gesture.
+  it("offers button equivalents for every swipe direction", async () => {
+    await show(<Discover domain={BOOKS} profile={profileFor(BOOKS)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.getByText(/Pass/)).toBeTruthy();
+    expect(r.getByText(/Want to read/)).toBeTruthy();
+    expect(r.getByText("Read it")).toBeTruthy();
+  });
+
+  it("the route into the detail sheet is present and labelled", async () => {
+    const onOpen = jest.fn();
+    const profile = profileFor(BOOKS);
+    const top = rankItems(BOOKS.items, profile, BOOKS, { excludeIds: [] })[0];
+    await show(<Discover domain={BOOKS} profile={profile} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={onOpen} />);
+    fireEvent.press(r.getByLabelText(`Full details for ${top.item.title}`));
+    expect(onOpen).toHaveBeenCalledWith(top.item);
+  });
+
+  it("already-sorted items are excluded from the deck", async () => {
+    const profile = profileFor(BOOKS);
+    const first = rankItems(BOOKS.items, profile, BOOKS, { excludeIds: [] })[0];
+    await show(<Discover domain={BOOKS} profile={profile} shelf={{ [first.item.id]: { status: "want" } }}
+      onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.queryByText(first.item.title)).toBeNull();
+  });
+
+  it("an empty deck offers a way out rather than a dead end", async () => {
+    const all = Object.fromEntries(BOOKS.items.map((i) => [i.id, { status: "pass" }]));
+    await show(<Discover domain={BOOKS} profile={profileFor(BOOKS)} shelf={all} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.getByText("That's the whole catalogue")).toBeTruthy();
+    expect(r.getByText("Expand my taste")).toBeTruthy();
+  });
+
+  it("the explore dial is reachable from the deck", async () => {
+    const onExplore = jest.fn();
+    await show(<Discover domain={BOOKS} profile={profileFor(BOOKS)} shelf={{}} onAction={() => {}} onExplore={onExplore} onOpen={() => {}} />);
+    fireEvent.press(r.getByText("Expand"));
+    expect(onExplore).toHaveBeenCalledWith(0.75);
+  });
+
+  it("prompts for a city when a place-bound domain has none", async () => {
+    const onNeedCity = jest.fn();
+    const placeDomain = { ...BOOKS, hasLocation: true };
+    await show(<Discover domain={placeDomain} profile={profileFor(BOOKS)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} onNeedCity={onNeedCity} />);
+    fireEvent.press(r.getByText("Showing restaurants everywhere"));
+    expect(onNeedCity).toHaveBeenCalled();
+  });
+});
+
+describe("ItemSheet — enough information to decide", () => {
+  const withReception = load("tv.json").find((t) => t.reception?.summary && t.cast?.length);
+  const domain = { ...TV, items: [withReception, ...load("tv.json").slice(0, 40)] };
+
+  it("renders the critical reception that the web client shows", async () => {
+    await show(<ItemSheet domain={domain} item={withReception} profile={profileFor(TV)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.getByText("Critical reception")).toBeTruthy();
+    expect(r.getByText(withReception.reception.summary)).toBeTruthy();
+  });
+
+  // Never present a summary as if it were our own judgement.
+  it("attributes the reception to Wikipedia", async () => {
+    await show(<ItemSheet domain={domain} item={withReception} profile={profileFor(TV)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.getByText(/Summarized from Wikipedia \(CC BY-SA\), not written by us\./)).toBeTruthy();
+  });
+
+  // The lead is named twice on purpose — once in the at-a-glance header and
+  // once in the full details table, exactly as the web sheet does.
+  it("names the cast", async () => {
+    await show(<ItemSheet domain={domain} item={withReception} profile={profileFor(TV)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.getAllByText(new RegExp(withReception.cast[0])).length).toBeGreaterThan(0);
+  });
+
+  it("prices the commitment in hours", async () => {
+    const long = load("tv.json").find((t) => t.episodes > 40 && /\d+ min/.test(t.meta || ""));
+    await show(<ItemSheet domain={{ ...TV, items: [long] }} item={long} profile={profileFor(TV)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.getByText(/hours of watching/)).toBeTruthy();
+  });
+
+  it("offers comparable items and can navigate to one", async () => {
+    const onOpenItem = jest.fn();
+    await show(<ItemSheet domain={domain} item={withReception} profile={profileFor(TV)} onAction={() => {}} onRate={() => {}} onClose={() => {}} onOpenItem={onOpenItem} />);
+    expect(r.getByText("More like this")).toBeTruthy();
+  });
+
+  it("sorting from the sheet also closes it", async () => {
+    const onAction = jest.fn(), onClose = jest.fn();
+    await show(<ItemSheet domain={domain} item={withReception} profile={profileFor(TV)} onAction={onAction} onRate={() => {}} onClose={onClose} />);
+    fireEvent.press(r.getByText("Add to watchlist"));
+    expect(onAction).toHaveBeenCalledWith(withReception, "want");
+    expect(onClose).toHaveBeenCalled();
+  });
+
+  // A Deezer score is play-driven reach; `count` is its raw rank, not a tally
+  // of ratings, and rendering it as one was a real bug on the web.
+  it("never reports a Deezer rank as a number of ratings", async () => {
+    const track = load("music.json")[0];
+    const music = { ...BOOKS, key: "music", nounPlural: "tracks",
+      factors: ["melody", "lyrics", "production", "rhythm", "vocals", "originality"],
+      factorLabels: { melody: "Melody", lyrics: "Lyrics", production: "Production", rhythm: "Rhythm", vocals: "Vocals", originality: "Originality" },
+      tones: ["energy", "darkness", "density"], items: [track] };
+    await show(<ItemSheet domain={music} item={track} profile={profileFor(music)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.queryByText(/ratings/)).toBeNull();
+    expect(r.getByText(/Popularity/)).toBeTruthy();
+  });
+});
+
+// ForYou renders the engine's row contract directly. Getting that contract
+// wrong ("row.items" is items, not {item, score} pairs) crashed the screen on
+// first render and no test caught it, so these exist now.
+describe("ForYou — seven mechanisms, each with a reason", () => {
+  const profile = profileFor(BOOKS);
+
+  it("renders without crashing on the engine's real row shape", async () => {
+    await show(<ForYou domain={BOOKS} profile={profile} shelf={{}} onOpen={() => {}} />);
+    expect(r.getByText("For you")).toBeTruthy();
+  });
+
+  it("every row states why it exists", async () => {
+    const { buildSuggestionRows } = require("../../src/engine/suggest.mjs");
+    const rows = buildSuggestionRows(BOOKS.items, profile, BOOKS, { excludeIds: [] });
+    expect(rows.length).toBeGreaterThan(1);
+    await show(<ForYou domain={BOOKS} profile={profile} shelf={{}} onOpen={() => {}} />);
+    for (const row of rows) expect(r.getByText(row.reason)).toBeTruthy();
+  });
+
+  it("cards carry the item title and a match percentage", async () => {
+    const { buildSuggestionRows } = require("../../src/engine/suggest.mjs");
+    const first = buildSuggestionRows(BOOKS.items, profile, BOOKS, { excludeIds: [] })[0].items[0];
+    await show(<ForYou domain={BOOKS} profile={profile} shelf={{}} onOpen={() => {}} />);
+    expect(r.getAllByText(first.title).length).toBeGreaterThan(0);
+  });
+
+  it("tapping a card opens its sheet", async () => {
+    const onOpen = jest.fn();
+    const { buildSuggestionRows } = require("../../src/engine/suggest.mjs");
+    const first = buildSuggestionRows(BOOKS.items, profile, BOOKS, { excludeIds: [] })[0].items[0];
+    const { displayScore: ds } = require("../../src/engine/present.mjs");
+    const { scoreItem } = require("../../src/engine/engine.mjs");
+    await show(<ForYou domain={BOOKS} profile={profile} shelf={{}} onOpen={onOpen} />);
+    fireEvent.press(r.getByLabelText(`${first.title}, ${ds(scoreItem(first, profile, BOOKS).score)} percent match`));
+    expect(onOpen).toHaveBeenCalledWith(first);
+  });
+
+  it("a fully-sorted catalogue says so rather than rendering nothing", async () => {
+    const all = Object.fromEntries(BOOKS.items.map((i) => [i.id, { status: "pass" }]));
+    await show(<ForYou domain={BOOKS} profile={profile} shelf={all} onOpen={() => {}} />);
+    expect(r.getByText(/nothing left to suggest/)).toBeTruthy();
+  });
+});
+
+describe("Library", () => {
+  const shelf = Object.fromEntries(BOOKS.items.slice(0, 5).map((i, n) => [i.id, { status: n < 3 ? "want" : "pass", addedAt: n }]));
+
+  it("lists only the active tab's entries", async () => {
+    await show(<Library domain={BOOKS} shelf={shelf} onMove={() => {}} onRemove={() => {}} onOpen={() => {}} />);
+    expect(r.getByText(BOOKS.items[0].title)).toBeTruthy();
+    expect(r.queryByText(BOOKS.items[4].title)).toBeNull();
+  });
+
+  it("switches tabs", async () => {
+    await show(<Library domain={BOOKS} shelf={shelf} onMove={() => {}} onRemove={() => {}} onOpen={() => {}} />);
+    fireEvent.press(r.getByText(/Passed/));
+    await waitFor(() => expect(r.getByText(BOOKS.items[4].title)).toBeTruthy());
+  });
+
+  it("search narrows the list", async () => {
+    await show(<Library domain={BOOKS} shelf={shelf} onMove={() => {}} onRemove={() => {}} onOpen={() => {}} />);
+    fireEvent.changeText(r.getByLabelText("Search your library"), BOOKS.items[0].title);
+    await waitFor(() => expect(r.queryByText(BOOKS.items[1].title)).toBeNull());
+    expect(r.getByText(BOOKS.items[0].title)).toBeTruthy();
+  });
+
+  it("an empty shelf says so instead of showing a blank screen", async () => {
+    await show(<Library domain={BOOKS} shelf={{}} onMove={() => {}} onRemove={() => {}} onOpen={() => {}} />);
+    expect(r.getByText(/Nothing here yet/)).toBeTruthy();
+  });
+
+  it("an entry can be removed", async () => {
+    const onRemove = jest.fn();
+    await show(<Library domain={BOOKS} shelf={shelf} onMove={() => {}} onRemove={onRemove} onOpen={() => {}} />);
+    fireEvent.press(r.getByLabelText(`Remove ${BOOKS.items[0].title}`));
+    expect(onRemove).toHaveBeenCalledWith(BOOKS.items[0].id);
+  });
+});
+
+describe("Profile — the retention surfaces", () => {
+  const domains = { books: BOOKS, tv: TV };
+  const keys = ["books", "tv"];
+  let ds = { ...emptyDomainState([]), profile: profileFor(BOOKS), onboarded: true };
+  for (const it of BOOKS.items.slice(0, 4)) ds = sortItem(ds, it, "want", BOOKS).state;
+  const states = { books: ds, tv: emptyDomainState([]) };
+
+  const renderProfile = (extra = {}) => show(
+    <Profile domain={BOOKS} profile={ds.profile} shelf={ds.shelf} activity={ds.activity}
+      states={states} domainKeys={keys} domains={domains}
+      onSwitchDomain={() => {}} onExplore={() => {}} onCities={() => {}} onReset={() => {}} {...extra} />
+  );
+
+  it("shows a live streak once something was sorted today", async () => {
+    await renderProfile();
+    expect(r.getByText("Daily streak")).toBeTruthy();
+    expect(r.getByText("1 day")).toBeTruthy();
+  });
+
+  it("shows progress toward the daily goal", async () => {
+    await renderProfile();
+    expect(r.getByText("4/10 today")).toBeTruthy();
+  });
+
+  it("shows the next milestone", async () => {
+    await renderProfile();
+    expect(r.getByText(/Next · Getting warm/)).toBeTruthy();
+  });
+
+  it("lists every craving and can switch", async () => {
+    const onSwitchDomain = jest.fn();
+    await renderProfile({ onSwitchDomain });
+    expect(r.getByText("All five cravings")).toBeTruthy();
+    fireEvent.press(r.getByText("Series"));
+    expect(onSwitchDomain).toHaveBeenCalledWith("tv");
+  });
+
+  it("says a craving is not started rather than showing a bare zero", async () => {
+    await renderProfile();
+    expect(r.getByText("not started")).toBeTruthy();
+  });
+
+  it("the explore dial is reachable from the profile", async () => {
+    const onExplore = jest.fn();
+    await renderProfile({ onExplore });
+    fireEvent.press(r.getByText("Expand my taste"));
+    expect(onExplore).toHaveBeenCalledWith(0.75);
+  });
+});
+
+describe("Swipe parity with the web client", () => {
+  // The verdict function is shared, so the two clients cannot disagree about
+  // what counts as a swipe. This asserts the native screen actually uses it.
+  it("uses the shared threshold", async () => {
+    expect(SWIPE_THRESHOLD).toBe(110);
+  });
+  it("a drag shorter than the threshold is not a sort", async () => {
+    const { resolveSwipe } = require("../../src/engine/stats.mjs");
+    expect(resolveSwipe(SWIPE_THRESHOLD - 1)).toBeNull();
+    expect(resolveSwipe(-(SWIPE_THRESHOLD - 1))).toBeNull();
+  });
+  it("a drag past the threshold resolves in the right direction", async () => {
+    const { resolveSwipe } = require("../../src/engine/stats.mjs");
+    expect(resolveSwipe(SWIPE_THRESHOLD + 1)).toBe("want");
+    expect(resolveSwipe(-(SWIPE_THRESHOLD + 1))).toBe("pass");
+  });
+});
