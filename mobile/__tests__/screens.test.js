@@ -237,6 +237,87 @@ describe("ForYou — seven mechanisms, each with a reason", () => {
   });
 });
 
+// The trailer embed is the one place a wrong URL parameter produces a player
+// that silently refuses to start, so the params are asserted, not eyeballed.
+describe("Trailer embed", () => {
+  const film = { id: "mv_x", title: "A Film", subtitle: "1999", genres: ["Drama"], trailer: "kmJLuwP3MbY",
+    factors: {}, tone: {}, rating: { value: 8, scale: 10 }, blurb: "b", links: {} };
+  const dom = { ...BOOKS, key: "movies", nounPlural: "movies", items: [film] };
+
+  it("renders a webview pointed at the youtube embed", async () => {
+    await show(<ItemSheet domain={dom} item={film} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    const wv = r.getByLabelText(/^webview:/);
+    expect(wv.props.accessibilityLabel).toContain("https://www.youtube.com/embed/kmJLuwP3MbY");
+  });
+
+  // A WebView pointed straight at the embed URL has no referrer, and YouTube
+  // answers "Error 153". It only reproduces on device, never in a browser.
+  it("hosts the iframe in a document rather than loading the url directly", async () => {
+    await show(<ItemSheet domain={dom} item={film} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    const wv = r.getByLabelText(/^webview:/);
+    expect(wv.props.accessibilityLabel).toContain("<iframe");
+  });
+
+  it("autoplays muted, because unmuted autoplay is blocked outright", async () => {
+    await show(<ItemSheet domain={dom} item={film} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    const uri = r.getByLabelText(/^webview:/).props.accessibilityLabel;
+    expect(uri).toContain("autoplay=1");
+    expect(uri).toContain("mute=1");
+  });
+
+  it("loops, which needs playlist set to the same id", async () => {
+    await show(<ItemSheet domain={dom} item={film} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    const uri = r.getByLabelText(/^webview:/).props.accessibilityLabel;
+    expect(uri).toContain("loop=1");
+    expect(uri).toContain("playlist=kmJLuwP3MbY");
+  });
+
+  it("offers a way out when the uploader blocks embedding", async () => {
+    await show(<ItemSheet domain={dom} item={film} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.getByText(/watch it there/)).toBeTruthy();
+  });
+
+  it("an item with no trailer renders no player at all", async () => {
+    const bare = { ...film, trailer: undefined };
+    await show(<ItemSheet domain={{ ...dom, items: [bare] }} item={bare} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.queryByLabelText(/^webview:/)).toBeNull();
+  });
+});
+
+describe("Dish gallery", () => {
+  const photos = [
+    { url: "https://x/1.jpg", credit: "A Photographer", licence: "CC BY-SA 2.0", source: "https://commons/1" },
+    { url: "https://x/2.jpg", credit: "B Photographer", licence: "CC BY 2.0", source: "https://commons/2" },
+  ];
+  const place = { id: "rs_x", title: "A Place", subtitle: "Boston, MA", city: "Boston", genres: ["Italian"],
+    dish: "Cannoli", dishPhotos: photos, factors: {}, tone: {}, rating: { value: 4.5 }, blurb: "b" };
+  const dom = { ...BOOKS, key: "restaurants", nounPlural: "restaurants", genreLabel: "Cuisines", items: [place] };
+
+  it("shows every photo and a counter", async () => {
+    await show(<ItemSheet domain={dom} item={place} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.getByText("1 / 2")).toBeTruthy();
+    expect(r.getAllByLabelText("Cannoli").length).toBe(2);
+  });
+
+  // A food gallery inside a restaurant page reads as that restaurant's own
+  // photography unless it explicitly says otherwise.
+  it("says the photos are of the dish, not of this kitchen", async () => {
+    await show(<ItemSheet domain={dom} item={place} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.getByText(/not of this kitchen/)).toBeTruthy();
+  });
+
+  it("credits the photographer and the licence, as CC requires", async () => {
+    await show(<ItemSheet domain={dom} item={place} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.getByText(/A Photographer, CC BY-SA 2\.0/)).toBeTruthy();
+  });
+
+  it("a place with no photos renders no gallery", async () => {
+    const bare = { ...place, dishPhotos: [] };
+    await show(<ItemSheet domain={{ ...dom, items: [bare] }} item={bare} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
+    expect(r.queryByText(/not of this kitchen/)).toBeNull();
+  });
+});
+
 describe("Library", () => {
   const shelf = Object.fromEntries(BOOKS.items.slice(0, 5).map((i, n) => [i.id, { status: n < 3 ? "want" : "pass", addedAt: n }]));
 

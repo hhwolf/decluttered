@@ -7,12 +7,14 @@
 // two outlets can't look like one repeating itself.
 // ============================================================================
 import React from "react";
-import { View, Text, Modal, ScrollView, Pressable, Linking, SafeAreaView } from "react-native";
+import { View, Text, Modal, ScrollView, Pressable, Linking, SafeAreaView, Image, Dimensions } from "react-native";
+import { WebView } from "react-native-webview";
 import { Feather } from "@expo/vector-icons";
 import { scoreItem } from "../../../src/engine/engine.mjs";
 import {
   vibeWords, strengths, counterpoint, commitment, factChips, castLine,
   creditLine, distinctQuotes, timeCommitment, similarTo, lookupLinks,
+  trailerEmbedUrl, trailerWatchUrl,
 } from "../../../src/engine/describe.mjs";
 import { C, F, text, accentFor, BORDER } from "../theme";
 import { Cover, ExtRating, VibeChip, Card, Btn, matchTag, displayScore } from "../components/bits";
@@ -82,6 +84,111 @@ function WhatOthersSay({ item }) {
           <Text style={[text.catNo, { marginTop: 8 }]}>Summarized from Wikipedia (CC BY-SA), not written by us.</Text>
         </View>
       )}
+    </Card>
+  );
+}
+
+
+const SHEET_W = Dimensions.get("window").width - 36; // sheet padding both sides
+
+/** A minimal page whose only job is to host the player edge to edge. */
+const trailerHtml = (src) => `<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<style>html,body{margin:0;padding:0;background:#000;height:100%;overflow:hidden}
+iframe{border:0;width:100%;height:100%;display:block}</style></head>
+<body><iframe src="${src}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></body></html>`;
+
+/**
+ * A looping, muted trailer through YouTube's IFrame embed in a WebView.
+ *
+ * iOS needs both `allowsInlineMediaPlayback` and `mediaPlaybackRequiresUserAction={false}`
+ * or the video either refuses to start or hijacks the screen fullscreen.
+ * Muted is mandatory for autoplay; sound is one tap away.
+ *
+ * Every id in the catalogue was verified playable-in-embed before shipping, but
+ * videos get pulled, so the link out is always present rather than an error
+ * state we hope never happens.
+ */
+function Trailer({ item }) {
+  const [muted, setMuted] = React.useState(true);
+  const src = trailerEmbedUrl(item, { muted, origin: "https://www.youtube.com" });
+  const watch = trailerWatchUrl(item);
+  if (!src) return null;
+  return (
+    <Card>
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+        <Text style={text.eyebrow}>Trailer</Text>
+        <Pressable onPress={() => setMuted((m) => !m)} accessibilityRole="button" hitSlop={10}>
+          <Text style={[text.catNo, { textDecorationLine: "underline", color: C.ink, fontWeight: "700" }]}>
+            {muted ? "UNMUTE" : "MUTE"}
+          </Text>
+        </Pressable>
+      </View>
+      <View style={{ height: Math.round(SHEET_W * 0.5625), borderWidth: BORDER, borderColor: C.ink,
+        borderRadius: 10, overflow: "hidden", backgroundColor: "#000" }}>
+        <WebView
+          key={String(muted)}
+          // NOT `source={{ uri }}`. Pointing the WebView straight at the embed
+          // URL gives YouTube no referrer, and it answers with "Error 153 —
+          // video player configuration error". The same video plays fine in a
+          // browser, so this only shows up on device. Wrapping the iframe in a
+          // document with a youtube.com baseUrl gives the player a valid origin.
+          source={{ html: trailerHtml(src), baseUrl: "https://www.youtube.com" }}
+          originWhitelist={["*"]}
+          allowsInlineMediaPlayback
+          mediaPlaybackRequiresUserAction={false}
+          allowsFullscreenVideo
+          javaScriptEnabled
+          domStorageEnabled
+          scrollEnabled={false}
+          style={{ backgroundColor: "#000" }}
+        />
+      </View>
+      <Pressable onPress={() => watch && Linking.openURL(watch)} accessibilityRole="link">
+        <Text style={[text.catNo, { marginTop: 7, lineHeight: 15 }]}>
+          Plays from YouTube. If the uploader has embedding off, watch it there ↗
+        </Text>
+      </Pressable>
+    </Card>
+  );
+}
+
+/**
+ * Swipeable photos of the signature dish.
+ *
+ * These are pictures of the DISH, from Wikimedia Commons — not of this
+ * restaurant's plate. Inside a restaurant page a food gallery reads as the
+ * restaurant's own photography unless it says otherwise, so it says otherwise,
+ * and each photo keeps its author and licence.
+ */
+function DishGallery({ item }) {
+  const photos = item.dishPhotos || [];
+  const [i, setI] = React.useState(0);
+  if (!photos.length) return null;
+  const w = SHEET_W - 4; // inside the card border
+  const cur = photos[Math.min(i, photos.length - 1)];
+  return (
+    <Card>
+      <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 8 }}>
+        <Text style={text.eyebrow}>{item.dish ? `The ${item.dish.toLowerCase()}` : "The food"}</Text>
+        <Text style={text.catNo}>{Math.min(i, photos.length - 1) + 1} / {photos.length}</Text>
+      </View>
+      <View style={{ borderWidth: BORDER, borderColor: C.ink, borderRadius: 10, overflow: "hidden", backgroundColor: C.paper2 }}>
+        <ScrollView
+          horizontal
+          pagingEnabled
+          showsHorizontalScrollIndicator={false}
+          onMomentumScrollEnd={(e) => setI(Math.round(e.nativeEvent.contentOffset.x / Math.max(w, 1)))}
+        >
+          {photos.map((p) => (
+            <Image key={p.url} source={{ uri: p.url }} style={{ width: w, height: 200 }} resizeMode="cover"
+              accessibilityLabel={item.dish || "Dish photo"} />
+          ))}
+        </ScrollView>
+      </View>
+      <Text style={[text.catNo, { marginTop: 7, lineHeight: 15 }]}>
+        Photos of the dish, not of this kitchen — {cur.credit}, {cur.licence}, via Wikimedia Commons.
+      </Text>
     </Card>
   );
 }
@@ -202,6 +309,9 @@ export default function ItemSheet({ domain, item, profile, onAction, onRate, onC
               </View>
             ))}
           </Card>
+
+          <Trailer item={item} />
+          <DishGallery item={item} />
 
           {alike.length > 0 && (
             <Card>

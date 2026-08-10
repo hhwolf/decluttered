@@ -232,6 +232,12 @@ export const CSS = `
    should not look identical, or the guess borrows the authority of the fact. */
 .vibe.fact{background:var(--ink);color:var(--paper);border-color:var(--ink);}
 /* "More like this" rows — tappable, and visibly so, since they navigate. */
+.linkbtn{background:none;border:none;padding:0;cursor:pointer;font-family:var(--mono);font-size:10.5px;
+  font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);text-decoration:underline;}
+/* one photo per swipe, snapped */
+.dishscroll{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:0;border:2px solid var(--ink);
+  border-radius:10px;background:var(--paper2);-webkit-overflow-scrolling:touch;}
+.dishshot{flex:0 0 100%;width:100%;height:210px;object-fit:cover;scroll-snap-align:start;display:block;}
 .likerow{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;
   background:none;border:none;border-bottom:1px solid var(--line);padding:8px 0;text-align:left;
   cursor:pointer;color:var(--ink);font:inherit;}

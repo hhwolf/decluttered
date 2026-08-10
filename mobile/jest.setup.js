@@ -13,3 +13,21 @@ jest.mock("@expo/vector-icons", () => {
   const Icon = ({ name, ...rest }) => React.createElement(Text, rest, `[${name}]`);
   return { Feather: Icon, Ionicons: Icon, MaterialIcons: Icon, AntDesign: Icon };
 });
+
+// react-native-webview is a native module with no Jest binary. Stubbed as a
+// plain View that exposes its `source.uri`, so tests can assert we built the
+// right embed URL without needing a real browser engine.
+jest.mock("react-native-webview", () => {
+  const React = require("react");
+  const { View } = require("react-native");
+  return {
+    // Exposes whichever source form is in use — the trailer passes `html`
+    // (with a youtube.com baseUrl) rather than `uri`, because a bare uri gets
+    // rejected with "Error 153" on device.
+    WebView: ({ source, ...rest }) =>
+      React.createElement(View, {
+        accessibilityLabel: `webview:${source?.uri || source?.html || ""}`,
+        ...rest,
+      }),
+  };
+});

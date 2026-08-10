@@ -5,7 +5,8 @@ import { paletteFor } from "../domains.js";
 import { Sheet, Cover, ExtRating, Stars, MiniRate, displayScore, matchTag } from "./bits.jsx";
 import { fetchTrackPreview } from "./preview.js";
 import { vibeWords, strengths, counterpoint, commitment, factChips, castLine, distinctQuotes,
-         timeCommitment, similarTo, lookupLinks, creditLine } from "../engine/describe.mjs";
+         timeCommitment, similarTo, lookupLinks, creditLine,
+         trailerEmbedUrl, trailerWatchUrl } from "../engine/describe.mjs";
 
 /* Inline 30s preview control, shared shape with the deck's button. */
 function SheetPreview({ item }) {
@@ -198,6 +199,89 @@ function FactSheet({ domain, item }) {
  * truncates it), the score breakdown, craft axes, and the same actions the
  * deck offers — plus rating controls once the item is in the library.
  */
+
+/**
+ * A looping, muted trailer clip via YouTube's official IFrame embed.
+ *
+ * Muted is not a style choice: browsers block unmuted autoplay outright, and a
+ * blocked autoplay looks exactly like a broken player. Sound is one tap away.
+ *
+ * Uploaders can disable embedding, and there is no reliable way to detect that
+ * before playback, so the "Watch on YouTube" link is always present rather than
+ * being an error state we hope never renders.
+ */
+function Trailer({ item }) {
+  const [muted, setMuted] = useState(true);
+  const src = trailerEmbedUrl(item, { muted });
+  const watch = trailerWatchUrl(item);
+  if (!src) return null;
+  return (
+    <div className="card" style={{ marginTop: 14 }}>
+      <div className="row" style={{ justifyContent: "space-between", marginBottom: 8 }}>
+        <div className="eyebrow">Trailer</div>
+        <button className="linkbtn" onClick={() => setMuted((m) => !m)}>
+          {muted ? "Unmute" : "Mute"}
+        </button>
+      </div>
+      <div style={{ position: "relative", paddingTop: "56.25%", border: "2px solid var(--ink)",
+        borderRadius: 10, overflow: "hidden", background: "#000" }}>
+        <iframe
+          key={String(muted)}
+          src={src}
+          title={`${item.title} trailer`}
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowFullScreen
+          loading="lazy"
+          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
+        />
+      </div>
+      <p className="cat-no" style={{ marginTop: 7 }}>
+        Plays from YouTube. If the uploader has embedding off,{" "}
+        <a href={watch} target="_blank" rel="noreferrer" style={{ color: "var(--slate)" }}>
+          watch it there <ExternalLink size={10} style={{ verticalAlign: "-1px" }} />
+        </a>.
+      </p>
+    </div>
+  );
+}
+
+/**
+ * Swipeable photos of the signature dish.
+ *
+ * These are pictures of the DISH, from Wikimedia Commons — not of this
+ * restaurant's plate. A gallery of food shots inside a restaurant's page reads
+ * as the restaurant's own photography unless it says otherwise, so it says
+ * otherwise, and every photo keeps its author and licence.
+ */
+function DishGallery({ item }) {
+  const photos = item.dishPhotos || [];
+  const [i, setI] = useState(0);
+  if (!photos.length) return null;
+  const p = photos[Math.min(i, photos.length - 1)];
+  return (
+    <div className="card" style={{ marginTop: 14 }}>
+      <div className="row" style={{ justifyContent: "space-between", marginBottom: 8 }}>
+        <div className="eyebrow">{item.dish ? `The ${item.dish.toLowerCase()}` : "The food"}</div>
+        <span className="cat-no">{Math.min(i, photos.length - 1) + 1} / {photos.length}</span>
+      </div>
+      <div className="dishscroll" onScroll={(e) => {
+        const w = e.currentTarget.clientWidth || 1;
+        setI(Math.round(e.currentTarget.scrollLeft / w));
+      }}>
+        {photos.map((ph) => (
+          <img key={ph.url} src={ph.url} alt={item.dish || "Dish"} className="dishshot" loading="lazy" />
+        ))}
+      </div>
+      <p className="cat-no" style={{ marginTop: 7, lineHeight: 1.45 }}>
+        Photos of the dish, not of this kitchen — {p.credit}, {p.licence}, via{" "}
+        <a href={p.source || "https://commons.wikimedia.org"} target="_blank" rel="noreferrer" style={{ color: "var(--slate)" }}>
+          Wikimedia Commons
+        </a>.
+      </p>
+    </div>
+  );
+}
+
 export default function ItemSheet({ domain, item, profile, shelfEntry, onAction, onRate, onClose, onOpenItem }) {
   const s = profile ? scoreItem(item, profile, domain) : null;
   const tag = s ? matchTag(s.score) : null;
@@ -334,6 +418,9 @@ export default function ItemSheet({ domain, item, profile, shelfEntry, onAction,
           )) : <span className="cat-no">Give it an overall rating to unlock element ratings.</span>}
         </div>
       )}
+
+      <Trailer item={item} />
+      <DishGallery item={item} />
 
       {/* Adjectives describe; comparisons calibrate. Three names you may already
           have an opinion about say more than any adjective can. */}

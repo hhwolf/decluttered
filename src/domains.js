@@ -222,7 +222,9 @@ export const DOMAINS = {
 };
 
 // media-first ordering: books, movies, tv, music, then restaurants
-export const DOMAIN_KEYS = ["books", "movies", "tv", "music", "restaurants"];
+// Queue leads: music is the primary craving, so it is both the first tab and
+// the one a cold start opens on.
+export const DOMAIN_KEYS = ["music", "books", "movies", "tv", "restaurants"];
 
 // Genre palette shared across domains; genres not listed get a hashed fallback.
 export const GENRE_PALETTE = {

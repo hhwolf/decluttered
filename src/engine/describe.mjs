@@ -296,3 +296,43 @@ export function lookupLinks(item, domain) {
   }
   return out;
 }
+
+/**
+ * A YouTube IFrame embed URL for an item's trailer, or null if we have none.
+ *
+ * Shared so both clients build the exact same URL. Details that are not
+ * optional:
+ *   - `playlist=<id>` is what makes `loop=1` work for a single video; without
+ *     it the video simply stops at the end.
+ *   - `mute=1` is required for autoplay on iOS and in most browsers. An
+ *     unmuted autoplay is silently blocked, which looks like a broken player.
+ *   - `playsinline=1` stops iOS taking the video fullscreen on play.
+ *
+ * We only ever embed. Downloading or re-hosting YouTube video would breach
+ * their terms; the IFrame player is the sanctioned route and keeps the view
+ * count, branding and ads with the uploader.
+ */
+export function trailerEmbedUrl(item, { muted = true, loop = true, autoplay = true, origin } = {}) {
+  // `origin` matters on native: the player validates it, and a WebView with no
+  // referrer gets "Error 153 — video player configuration error".
+  const id = item?.trailer;
+  if (!id || !/^[A-Za-z0-9_-]{11}$/.test(id)) return null;
+  const p = new URLSearchParams({
+    autoplay: autoplay ? "1" : "0",
+    mute: muted ? "1" : "0",
+    controls: "1",
+    playsinline: "1",
+    modestbranding: "1",
+    rel: "0",
+    iv_load_policy: "3",
+  });
+  if (loop) { p.set("loop", "1"); p.set("playlist", id); }
+  if (origin) p.set("origin", origin);
+  return `https://www.youtube.com/embed/${id}?${p.toString()}`;
+}
+
+/** Where to go if the embed is blocked by the uploader. */
+export function trailerWatchUrl(item) {
+  const id = item?.trailer;
+  return id && /^[A-Za-z0-9_-]{11}$/.test(id) ? `https://www.youtube.com/watch?v=${id}` : null;
+}

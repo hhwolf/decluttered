@@ -49,7 +49,7 @@ const TABS = [
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
-  const [active, setActive] = useState("books");
+  const [active, setActive] = useState("music");
   const [view, setView] = useState("discover");
   const [sheetItem, setSheetItem] = useState(null);
   const [undo, setUndo] = useState(null);

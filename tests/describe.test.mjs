@@ -4,7 +4,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { vibeWords, strengths, counterpoint, commitment, runStatus, castLine, factChips, distinctQuotes,
-         timeCommitment, totalMinutes, similarTo, lookupLinks, creditLine } from "../src/engine/describe.mjs";
+         timeCommitment, totalMinutes, similarTo, lookupLinks, creditLine,
+         trailerEmbedUrl, trailerWatchUrl } from "../src/engine/describe.mjs";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const load = (f) => JSON.parse(fs.readFileSync(path.join(root, "src/data", f), "utf8"));
@@ -246,6 +247,34 @@ check("the trailer link is labelled as a search",
   lookupLinks({ id: "mv_1", title: "Heat" }, { key: "movies" })[0].label === "Search for a trailer");
 check("a restaurant gets no invented link", lookupLinks({ id: "rs_1", title: "X" }, { key: "restaurants" }).length === 0);
 check("music gets no invented link", lookupLinks({ id: "tr_1", title: "X" }, { key: "music" }).length === 0);
+
+// ---- trailer embeds -------------------------------------------------------
+// These params are not cosmetic. Getting any of them wrong produces a player
+// that silently refuses to start, which looks identical to a broken feature.
+{
+  const u = new URL(trailerEmbedUrl({ trailer: "kmJLuwP3MbY" }));
+  check("embeds via youtube.com/embed", u.origin + u.pathname === "https://www.youtube.com/embed/kmJLuwP3MbY");
+  // loop=1 alone does nothing for a single video; it needs playlist=<same id>.
+  check("loop is paired with a playlist or it will not loop",
+    u.searchParams.get("loop") === "1" && u.searchParams.get("playlist") === "kmJLuwP3MbY");
+  // Browsers and iOS block unmuted autoplay outright.
+  check("autoplay is muted by default",
+    u.searchParams.get("autoplay") === "1" && u.searchParams.get("mute") === "1");
+  check("plays inline rather than hijacking fullscreen", u.searchParams.get("playsinline") === "1");
+}
+check("unmuting is possible",
+  new URL(trailerEmbedUrl({ trailer: "kmJLuwP3MbY" }, { muted: false })).searchParams.get("mute") === "0");
+check("loop can be turned off",
+  new URL(trailerEmbedUrl({ trailer: "kmJLuwP3MbY" }, { loop: false })).searchParams.get("playlist") === null);
+check("no trailer yields no embed", trailerEmbedUrl({}) === null);
+check("undefined item is safe for the embed", trailerEmbedUrl() === null);
+// Wikidata is crowd-edited and does contain URLs in this field.
+check("a non-id is rejected rather than half-parsed",
+  trailerEmbedUrl({ trailer: "https://youtu.be/kmJLuwP3MbY" }) === null);
+check("a wrong-length id is rejected", trailerEmbedUrl({ trailer: "abc" }) === null);
+check("the watch link is a real youtube url",
+  trailerWatchUrl({ trailer: "kmJLuwP3MbY" }) === "https://www.youtube.com/watch?v=kmJLuwP3MbY");
+check("no trailer yields no watch link", trailerWatchUrl({}) === null);
 
 // ---- against the real catalogues -----------------------------------------
 const restaurants = load("restaurants.json");
