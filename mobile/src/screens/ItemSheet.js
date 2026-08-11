@@ -8,13 +8,13 @@
 // ============================================================================
 import React from "react";
 import { View, Text, Modal, ScrollView, Pressable, Linking, SafeAreaView, Image, Dimensions } from "react-native";
-import { WebView } from "react-native-webview";
+import Trailer from "../components/Trailer";
 import { Feather } from "@expo/vector-icons";
 import { scoreItem } from "../../../src/engine/engine.mjs";
 import {
   vibeWords, strengths, counterpoint, commitment, factChips, castLine,
   creditLine, distinctQuotes, timeCommitment, similarTo, lookupLinks,
-  trailerEmbedUrl, trailerWatchUrl,
+  trailerWatchUrl, photoCaption,
 } from "../../../src/engine/describe.mjs";
 import { C, F, text, accentFor, BORDER } from "../theme";
 import { Cover, ExtRating, VibeChip, Card, Btn, matchTag, displayScore } from "../components/bits";
@@ -91,15 +91,8 @@ function WhatOthersSay({ item }) {
 
 const SHEET_W = Dimensions.get("window").width - 36; // sheet padding both sides
 
-/** A minimal page whose only job is to host the player edge to edge. */
-const trailerHtml = (src) => `<!DOCTYPE html><html><head>
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<style>html,body{margin:0;padding:0;background:#000;height:100%;overflow:hidden}
-iframe{border:0;width:100%;height:100%;display:block}</style></head>
-<body><iframe src="${src}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></body></html>`;
-
 /**
- * A looping, muted trailer through YouTube's IFrame embed in a WebView.
+ * A looping, muted trailer. The player itself lives in components/Trailer.js.
  *
  * iOS needs both `allowsInlineMediaPlayback` and `mediaPlaybackRequiresUserAction={false}`
  * or the video either refuses to start or hijacks the screen fullscreen.
@@ -109,11 +102,10 @@ iframe{border:0;width:100%;height:100%;display:block}</style></head>
  * videos get pulled, so the link out is always present rather than an error
  * state we hope never happens.
  */
-function Trailer({ item }) {
+function TrailerCard({ item }) {
   const [muted, setMuted] = React.useState(true);
-  const src = trailerEmbedUrl(item, { muted, origin: "https://www.youtube.com" });
   const watch = trailerWatchUrl(item);
-  if (!src) return null;
+  if (!item?.trailer) return null;
   return (
     <Card>
       <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
@@ -126,23 +118,7 @@ function Trailer({ item }) {
       </View>
       <View style={{ height: Math.round(SHEET_W * 0.5625), borderWidth: BORDER, borderColor: C.ink,
         borderRadius: 10, overflow: "hidden", backgroundColor: "#000" }}>
-        <WebView
-          key={String(muted)}
-          // NOT `source={{ uri }}`. Pointing the WebView straight at the embed
-          // URL gives YouTube no referrer, and it answers with "Error 153 —
-          // video player configuration error". The same video plays fine in a
-          // browser, so this only shows up on device. Wrapping the iframe in a
-          // document with a youtube.com baseUrl gives the player a valid origin.
-          source={{ html: trailerHtml(src), baseUrl: "https://www.youtube.com" }}
-          originWhitelist={["*"]}
-          allowsInlineMediaPlayback
-          mediaPlaybackRequiresUserAction={false}
-          allowsFullscreenVideo
-          javaScriptEnabled
-          domStorageEnabled
-          scrollEnabled={false}
-          style={{ backgroundColor: "#000" }}
-        />
+        <Trailer key={String(muted)} item={item} width={SHEET_W - 4} height={Math.round(SHEET_W * 0.5625)} muted={muted} />
       </View>
       <Pressable onPress={() => watch && Linking.openURL(watch)} accessibilityRole="link">
         <Text style={[text.catNo, { marginTop: 7, lineHeight: 15 }]}>
@@ -187,7 +163,7 @@ function DishGallery({ item }) {
         </ScrollView>
       </View>
       <Text style={[text.catNo, { marginTop: 7, lineHeight: 15 }]}>
-        Photos of the dish, not of this kitchen — {cur.credit}, {cur.licence}, via Wikimedia Commons.
+        {photoCaption(photos)} {cur.credit}, {cur.licence}, via Wikimedia Commons.
       </Text>
     </Card>
   );
@@ -310,7 +286,7 @@ export default function ItemSheet({ domain, item, profile, onAction, onRate, onC
             ))}
           </Card>
 
-          <Trailer item={item} />
+          <TrailerCard item={item} />
           <DishGallery item={item} />
 
           {alike.length > 0 && (

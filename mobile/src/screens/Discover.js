@@ -18,11 +18,11 @@ import React, { useMemo, useRef, useState } from "react";
 import { View, Text, Animated, PanResponder, Pressable, ScrollView, Dimensions } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { Image } from "react-native";
-import { WebView } from "react-native-webview";
+import Trailer from "../components/Trailer";
 import { rankItems } from "../../../src/engine/engine.mjs";
 import { resolveSwipe, SWIPE_THRESHOLD } from "../../../src/engine/stats.mjs";
 import { vibeWords, counterpoint, factChips, castLine, creditLine,
-         previewAction, trailerEmbedUrl } from "../../../src/engine/describe.mjs";
+         previewAction } from "../../../src/engine/describe.mjs";
 import { C, F, text, accentFor, BORDER } from "../theme";
 import { Btn, Cover, ExtRating, VibeChip, matchTag, displayScore } from "../components/bits";
 import PreviewButton from "../components/PreviewButton";
@@ -36,12 +36,6 @@ const CHROME = 336;
 const DECK_H = Math.max(360, Math.min(520, SCREEN_H - CHROME));
 const ART_H = Math.round(DECK_H * 0.38);
 
-/** A minimal page whose only job is to host the player edge to edge. */
-const trailerHtml = (src) => `<!DOCTYPE html><html><head>
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<style>html,body{margin:0;padding:0;background:#000;height:100%;overflow:hidden}
-iframe{border:0;width:100%;height:100%;display:block}</style></head>
-<body><iframe src="${src}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></body></html>`;
 
 export default function Discover({ domain, profile, shelf, onAction, onExplore, onOpen, onNeedCity }) {
   const seen = useMemo(() => new Set(Object.keys(shelf)), [shelf]);
@@ -195,17 +189,8 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
             <View style={{ flex: 1, backgroundColor: C.card, borderWidth: BORDER, borderColor: C.line, borderRadius: 16, overflow: "hidden" }}>
               <View style={{ height: ART_H, backgroundColor: C.paper2, position: "relative" }}>
                 {previewing && preview?.kind === "trailer" ? (
-                  <WebView
-                    source={{ html: trailerHtml(trailerEmbedUrl(top.item, { origin: "https://www.youtube.com" })), baseUrl: "https://www.youtube.com" }}
-                    originWhitelist={["*"]}
-                    allowsInlineMediaPlayback
-                    mediaPlaybackRequiresUserAction={false}
-                    allowsFullscreenVideo
-                    javaScriptEnabled
-                    domStorageEnabled
-                    scrollEnabled={false}
-                    style={{ width: "100%", height: ART_H, backgroundColor: "#000" }}
-                  />
+                  <Trailer item={top.item} width={SCREEN_W - 36} height={ART_H}
+                    onRequestClose={() => { previewingRef.current = false; setPreviewing(false); }} />
                 ) : previewing && preview?.kind === "photos" ? (
                   <ScrollView horizontal pagingEnabled showsHorizontalScrollIndicator={false}>
                     {top.item.dishPhotos.map((p) => (

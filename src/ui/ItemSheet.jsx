@@ -6,7 +6,7 @@ import { Sheet, Cover, ExtRating, Stars, MiniRate, displayScore, matchTag } from
 import { fetchTrackPreview } from "./preview.js";
 import { vibeWords, strengths, counterpoint, commitment, factChips, castLine, distinctQuotes,
          timeCommitment, similarTo, lookupLinks, creditLine,
-         trailerEmbedUrl, trailerWatchUrl } from "../engine/describe.mjs";
+         trailerEmbedUrl, trailerWatchUrl, photoCaption } from "../engine/describe.mjs";
 
 /* Inline 30s preview control, shared shape with the deck's button. */
 function SheetPreview({ item }) {
@@ -273,7 +273,7 @@ function DishGallery({ item }) {
         ))}
       </div>
       <p className="cat-no" style={{ marginTop: 7, lineHeight: 1.45 }}>
-        Photos of the dish, not of this kitchen — {p.credit}, {p.licence}, via{" "}
+        {photoCaption(photos)} {p.credit}, {p.licence}, via{" "}
         <a href={p.source || "https://commons.wikimedia.org"} target="_blank" rel="noreferrer" style={{ color: "var(--slate)" }}>
           Wikimedia Commons
         </a>.

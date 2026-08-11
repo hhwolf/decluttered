@@ -361,3 +361,19 @@ export function previewAction(item, domain) {
   }
   return null;
 }
+
+/**
+ * What the photo gallery is actually showing, said plainly.
+ *
+ * Galleries now mix two things and the difference matters: a photo found by
+ * searching the restaurant's own name IS that restaurant, while a photo of its
+ * signature dish is only illustrative. Captioning both as "not this kitchen"
+ * undersells the real ones; captioning both as the restaurant would be a lie.
+ */
+export function photoCaption(photos = []) {
+  const place = photos.some((p) => p?.kind === "place");
+  const dish = photos.some((p) => p?.kind !== "place");
+  if (place && dish) return "Photos of the restaurant, plus the dish it's known for (those are of the dish, not this kitchen).";
+  if (place) return "Photos of this restaurant, from Wikimedia Commons.";
+  return "Photos of the dish, not of this kitchen.";
+}

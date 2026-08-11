@@ -1,18 +1,39 @@
 // ============================================================================
 // PreviewButton.js — the 30s track preview, natively.
 //
-// Uses the SHARED resolve policy (prefer a freshly-signed URL, fall back to the
-// one baked into the catalogue). That policy exists because Deezer's preview
-// URLs expire after about a month and every stored one had gone stale — the
-// original bug in this app. Only the fetch mechanism differs from web: native
-// has no CORS, so a plain fetch works where the browser needs JSONP.
+// Two things broke the first version, and both are invisible on a desktop:
+//
+//   1. iOS honours the SILENT SWITCH. Without
+//      `setAudioModeAsync({ playsInSilentMode: true })` a muted phone plays
+//      nothing at all, with no error — which reads exactly like a bug in the
+//      app. Most phones live on silent.
+//   2. The player was created by `useAudioPlayer(uri)` and started from an
+//      effect, so the first tap only armed it. Now the player is created
+//      imperatively when we actually have a URL, which is deterministic.
+//
+// Uses the SHARED resolve policy (prefer a freshly-signed URL, fall back to
+// the catalogue's). That policy exists because Deezer's preview URLs expire
+// after about a month — every baked URL in this repo is currently 403 — and it
+// must not exist in two versions. Only the fetch differs from web: native has
+// no CORS, so a plain fetch works where the browser needs JSONP.
 // ============================================================================
 import React, { useEffect, useRef, useState } from "react";
 import { Pressable, Text, View } from "react-native";
 import { Feather } from "@expo/vector-icons";
-import { useAudioPlayer } from "expo-audio";
+import { createAudioPlayer, setAudioModeAsync } from "expo-audio";
 import { resolvePreview, deezerIdOf } from "../../../src/engine/preview.mjs";
 import { C, F, BORDER } from "../theme";
+
+// Once per app run: allow playback when the ringer is off, and don't fight
+// other apps for the audio session any harder than necessary.
+let audioModeReady = null;
+function ensureAudioMode() {
+  audioModeReady = audioModeReady || setAudioModeAsync({
+    playsInSilentMode: true,
+    interruptionMode: "mixWithOthers",
+  }).catch(() => {});
+  return audioModeReady;
+}
 
 async function fetchFresh(deezerId) {
   const res = await fetch(`https://api.deezer.com/track/${deezerId}`, {
@@ -26,46 +47,52 @@ async function fetchFresh(deezerId) {
 
 export default function PreviewButton({ item, label = "Play 30s preview", accent = C.hl }) {
   const [state, setState] = useState("idle"); // idle | loading | playing | unavailable
-  const [uri, setUri] = useState(null);
-  const player = useAudioPlayer(uri ? { uri } : null);
+  const playerRef = useRef(null);
   const alive = useRef(true);
+
+  const release = () => {
+    try { playerRef.current?.remove(); } catch { /* already gone */ }
+    playerRef.current = null;
+  };
 
   useEffect(() => {
     alive.current = true;
-    return () => { alive.current = false; try { player?.pause(); } catch { /* torn down */ } };
-  }, [player]);
+    return () => { alive.current = false; release(); };
+  }, []);
 
-  // A new card means a new track: stop whatever was playing.
-  useEffect(() => { setState("idle"); setUri(null); }, [item?.id]);
+  // A new card is a new track: drop the old player rather than leaving it
+  // playing over the next one.
+  useEffect(() => { release(); setState("idle"); }, [item?.id]);
 
   const toggle = async () => {
     if (state === "loading") return;
-    if (state === "playing") { try { player.pause(); } catch {} setState("idle"); return; }
+    if (state === "playing") {
+      try { playerRef.current?.pause(); } catch { /* nothing to pause */ }
+      setState("idle");
+      return;
+    }
+    // Resume a player we already built for this track.
+    if (playerRef.current) {
+      try {
+        playerRef.current.play();
+        setState("playing");
+      } catch { setState("unavailable"); }
+      return;
+    }
+    setState("loading");
     try {
-      let url = uri;
-      if (!url) {
-        setState("loading");
-        url = await resolvePreview(item, fetchFresh);
-        if (!alive.current) return;
-        if (!url) { setState("unavailable"); return; }
-        setUri(url);
-        // The player is created from `uri` on the next render, so the first tap
-        // arms it and the effect below starts playback.
-        return;
-      }
-      player.seekTo(0);
+      await ensureAudioMode();
+      const url = await resolvePreview(item, fetchFresh);
+      if (!alive.current) return;
+      if (!url) { setState("unavailable"); return; }
+      const player = createAudioPlayer({ uri: url });
+      playerRef.current = player;
       player.play();
-      setState("playing");
+      if (alive.current) setState("playing");
     } catch {
-      if (alive.current) setState("unavailable");
+      if (alive.current) { release(); setState("unavailable"); }
     }
   };
-
-  // Start as soon as a freshly-resolved url has produced a player.
-  useEffect(() => {
-    if (!uri || state !== "loading" || !player) return;
-    try { player.play(); setState("playing"); } catch { setState("unavailable"); }
-  }, [uri, player, state]);
 
   if (!deezerIdOf(item) && !item?.links?.preview) return null;
   if (state === "unavailable") {

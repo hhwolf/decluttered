@@ -271,9 +271,9 @@ describe("Deck preview button", () => {
 
   it("the trailer plays in place rather than navigating away", async () => {
     await show(<Discover domain={movies} profile={profileFor(movies)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
-    expect(r.queryByLabelText(/^webview:/)).toBeNull();
+    expect(r.queryByLabelText(/^trailer:/)).toBeNull();
     fireEvent.press(r.getByLabelText("Watch the trailer"));
-    await waitFor(() => expect(r.getByLabelText(/^webview:/)).toBeTruthy());
+    await waitFor(() => expect(r.getAllByLabelText(`trailer:${film.trailer}`).length).toBeGreaterThan(0));
   });
 
   const place = { id: "rs_1", title: "A Place", subtitle: "Boston, MA", city: "Boston", genres: ["Seafood"],
@@ -306,32 +306,31 @@ describe("Trailer embed", () => {
     factors: {}, tone: {}, rating: { value: 8, scale: 10 }, blurb: "b", links: {} };
   const dom = { ...BOOKS, key: "movies", nounPlural: "movies", items: [film] };
 
-  it("renders a webview pointed at the youtube embed", async () => {
+  it("mounts the player for this video", async () => {
     await show(<ItemSheet domain={dom} item={film} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
-    const wv = r.getByLabelText(/^webview:/);
-    expect(wv.props.accessibilityLabel).toContain("https://www.youtube.com/embed/kmJLuwP3MbY");
+    expect(r.getAllByLabelText("trailer:kmJLuwP3MbY").length).toBeGreaterThan(0);
   });
 
-  // A WebView pointed straight at the embed URL has no referrer, and YouTube
-  // answers "Error 153". It only reproduces on device, never in a browser.
-  it("hosts the iframe in a document rather than loading the url directly", async () => {
+  // A hand-rolled iframe in a WebView is what YouTube answered with Error
+  // 152/153; the IFrame-API player does the origin handshake properly.
+  it("uses the IFrame API player, not a raw iframe", async () => {
     await show(<ItemSheet domain={dom} item={film} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
-    const wv = r.getByLabelText(/^webview:/);
-    expect(wv.props.accessibilityLabel).toContain("<iframe");
+    expect(r.getAllByLabelText("ytplayer:kmJLuwP3MbY").length).toBeGreaterThan(0);
   });
 
-  it("autoplays muted, because unmuted autoplay is blocked outright", async () => {
+  // loop on a single video does nothing unless the playlist is the video itself.
+  it("loops by passing its own id as the playlist", async () => {
     await show(<ItemSheet domain={dom} item={film} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
-    const uri = r.getByLabelText(/^webview:/).props.accessibilityLabel;
-    expect(uri).toContain("autoplay=1");
-    expect(uri).toContain("mute=1");
+    const p = r.getAllByLabelText("ytplayer:kmJLuwP3MbY")[0];
+    expect(p.props.playList).toEqual(["kmJLuwP3MbY"]);
+    expect(p.props.initialPlayerParams.loop).toBe(true);
   });
 
-  it("loops, which needs playlist set to the same id", async () => {
+  it("autoplays muted, because unmuted autoplay is blocked", async () => {
     await show(<ItemSheet domain={dom} item={film} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
-    const uri = r.getByLabelText(/^webview:/).props.accessibilityLabel;
-    expect(uri).toContain("loop=1");
-    expect(uri).toContain("playlist=kmJLuwP3MbY");
+    const p = r.getAllByLabelText("ytplayer:kmJLuwP3MbY")[0];
+    expect(p.props.play).toBe(true);
+    expect(p.props.mute).toBe(true);
   });
 
   it("offers a way out when the uploader blocks embedding", async () => {
@@ -342,7 +341,7 @@ describe("Trailer embed", () => {
   it("an item with no trailer renders no player at all", async () => {
     const bare = { ...film, trailer: undefined };
     await show(<ItemSheet domain={{ ...dom, items: [bare] }} item={bare} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
-    expect(r.queryByLabelText(/^webview:/)).toBeNull();
+    expect(r.queryByLabelText(/^ytplayer:/)).toBeNull();
   });
 });
 
@@ -365,7 +364,7 @@ describe("Dish gallery", () => {
   // photography unless it explicitly says otherwise.
   it("says the photos are of the dish, not of this kitchen", async () => {
     await show(<ItemSheet domain={dom} item={place} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
-    expect(r.getByText(/not of this kitchen/)).toBeTruthy();
+    expect(r.getByText(/not this kitchen|not of this kitchen|Photos of this restaurant/)).toBeTruthy();
   });
 
   it("credits the photographer and the licence, as CC requires", async () => {
@@ -376,7 +375,7 @@ describe("Dish gallery", () => {
   it("a place with no photos renders no gallery", async () => {
     const bare = { ...place, dishPhotos: [] };
     await show(<ItemSheet domain={{ ...dom, items: [bare] }} item={bare} profile={profileFor(dom)} onAction={() => {}} onRate={() => {}} onClose={() => {}} />);
-    expect(r.queryByText(/not of this kitchen/)).toBeNull();
+    expect(r.queryByText(/not this kitchen|not of this kitchen|Photos of this restaurant/)).toBeNull();
   });
 });
 

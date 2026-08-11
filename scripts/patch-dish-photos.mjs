@@ -1,21 +1,28 @@
 // ============================================================================
-// patch-dish-photos.mjs — a small gallery of dish photos per restaurant.
+// patch-dish-photos.mjs — a small photo gallery per restaurant, from Wikimedia
+// Commons. Keyless. Every photo keeps its author and licence, because these are
+// CC works and attribution is a condition of use.
 //
-// Source is Wikimedia Commons, keyless. Each photo keeps its author and licence
-// because these are CC-licensed works and attribution is a condition of use,
-// not a nicety.
+// Two kinds of photo, and the UI must not confuse them:
+//   kind:"place"  a photo OF THIS RESTAURANT — found by searching its exact
+//                 name. Real, specific, and what people actually want.
+//   kind:"dish"   a photo of the dish it is known for. Illustrative only: a
+//                 cannoli is not Mike's cannoli.
 //
-// WHAT THESE PHOTOS ARE, precisely: pictures of the DISH, not of the plate this
-// restaurant serves. A photo of a cannoli is not a photo of Mike's cannoli. The
-// UI has to say so, or a gallery of stock food shots reads as the restaurant's
-// own photography — which would be the most convincing lie in the app.
+// The first version of this shipped junk, because a free-text Commons search
+// for a vague phrase matches the text of scanned books, not photographs:
+//   "French"                    -> Crowds of French patriots on the Champs Elysees
+//   "Korean"                    -> Book of Mormon - Korean
+//   "Seasonal American cooking" -> The Horsford 1887 Almanac and Cook Book
+//   "Coal-fired pie"            -> Canadian foundryman (1921)
 //
-// Only places with a named signature dish, or a visually specific cuisine, get
-// a gallery. A search for "American" returns noise, and a wrong photo is worse
-// than a missing one.
+// So queries are now anchored ("<dish> food", "<cuisine> food dish") and every
+// result must earn its place: a significant word from the query has to appear
+// in the filename, and a long reject list drops book scans, signs, buildings,
+// portraits and crowds.
 //
 //   node scripts/patch-dish-photos.mjs
-//   LIMIT=20 node scripts/patch-dish-photos.mjs     # short run
+//   FRESH=1 node scripts/patch-dish-photos.mjs    # ignore the cache
 // ============================================================================
 import fs from "node:fs";
 import path from "node:path";
@@ -26,11 +33,10 @@ const DIR = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(DIR, "../src/data/restaurants.json");
 const CACHE = path.join(DIR, ".cache/dish-photos.json");
 const UA = { "User-Agent": "decluttered-seed/0.5 (personal project; contact via github hhwolf)" };
-const LIMIT = process.env.LIMIT ? +process.env.LIMIT : null;
-const WANT = 4; // a swipeable handful, not a gallery to get lost in
+const WANT = 4;
 
-// Cuisines whose name alone returns recognisable food. Deliberately excludes
-// "American", "Contemporary", "Fusion" and similar, which return noise.
+// Cuisines whose name plus "food" returns recognisable dishes. Excludes
+// "American", "Contemporary", "Fusion" and friends, which return noise.
 const SPECIFIC_CUISINES = new Set([
   "Sushi", "Japanese", "Ramen", "Thai", "Vietnamese", "Korean", "Chinese", "Dim Sum",
   "Indian", "Italian", "Pizza", "Mexican", "Tacos", "Barbecue", "Seafood", "Steakhouse",
@@ -39,28 +45,64 @@ const SPECIFIC_CUISINES = new Set([
   "Bakery", "Dessert", "Burgers", "Sandwiches", "Noodles", "Dumplings", "Vegetarian",
 ]);
 
-/** The search phrase for an item, or null when nothing specific enough exists. */
-export function queryFor(item) {
-  if (item?.dish) return item.dish;
-  const cuisine = (item?.genres || []).find((g) => SPECIFIC_CUISINES.has(g));
-  return cuisine || null;
+// Anything whose filename looks like a document, a building, a sign or people.
+const REJECT = new RegExp([
+  "cook.?book", "almanac", "recipe.?book", "\\bbook\\b", "\\bpage\\b", "DPLA",
+  "\\b1[89]\\d\\d\\b", "advert", "poster", "label", "\\bmap\\b", "diagram", "chart",
+  "\\bsign\\b", "signage", "billboard", "logo", "coat.of.arms", "\\bflag\\b",
+  "building", "factory", "manufacturing", "warehouse", "\\bstreet\\b", "\\bplaque\\b",
+  "portrait", "\\bcrowd", "patriots", "parade", "protest", "\\bmenu\\b",
+  // A short restaurant name can collide with a person: "Cosme" matched a
+  // Brazilian election candidate's campaign photo.
+  "candidato", "prefeito", "\\bTSE\\b", "senator", "congress", "election", "campaign",
+  "\\bmap\\b", "postcard", "stamp", "coin", "\\bchef\\b", "\\bstaff\\b",
+].join("|"), "i");
+
+/** Words worth matching on: drops articles and generic filler. */
+const STOP = new Set(["the", "a", "an", "of", "and", "with", "on", "in", "at", "for",
+  "restaurant", "cafe", "bar", "food", "dish", "style", "house", "kitchen", "co", "inc"]);
+export function keyWords(phrase = "") {
+  return String(phrase).toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/)
+    .filter((w) => w.length >= 4 && !STOP.has(w));
 }
 
 /**
- * Commons markup is HTML. Strip tags for a plain credit line, and give up
- * rather than print raw markup if the field is unusable.
+ * Does this filename plausibly depict what we asked for?
+ *
+ * Commons search matches file *text*, not content, so this is the check that
+ * keeps a 1921 foundry photo out of a gallery about coal-fired pizza.
  */
-export function plainCredit(html = "") {
-  const t = String(html).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-  return t && t.length <= 80 ? t : t ? t.slice(0, 77).trimEnd() + "…" : null;
+export function looksRelevant(fileName = "", phrase = "") {
+  // Underscores and hyphens are word characters, so `\bbook\b` never matches
+  // "Book_of_Mormon". Normalise separators to spaces before testing — that one
+  // detail was letting a Book of Mormon scan into a Korean food gallery.
+  const name = String(fileName).toLowerCase().replace(/[_\-.]+/g, " ");
+  if (REJECT.test(name)) return false;
+  const words = keyWords(phrase);
+  if (!words.length) return false;
+  return words.some((w) => name.includes(w));
 }
 
-/** Photos are decoration only if they're of food; skip obvious non-food files. */
-const REJECT = /\b(map|logo|coat of arms|flag|portrait|signature|diagram|poster|chart)\b/i;
+/** The queries to try for one restaurant, best first. */
+export function queriesFor(item) {
+  const out = [];
+  // A photo of THIS restaurant is the best possible result.
+  if (item?.title) out.push({ kind: "place", phrase: item.title, search: `"${item.title}"` });
+  if (item?.dish) out.push({ kind: "dish", phrase: item.dish, search: `${item.dish} food` });
+  const cuisine = (item?.genres || []).find((g) => SPECIFIC_CUISINES.has(g));
+  if (cuisine) out.push({ kind: "dish", phrase: cuisine, search: `${cuisine} food dish` });
+  return out;
+}
 
-async function search(query) {
+/** Commons markup is HTML; a credit line has to be plain text. */
+export function plainCredit(html = "") {
+  const t = String(html).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  return t ? (t.length <= 80 ? t : t.slice(0, 77).trimEnd() + "…") : null;
+}
+
+async function search(term) {
   const url = "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search"
-    + `&gsrsearch=${encodeURIComponent("filetype:bitmap " + query)}&gsrnamespace=6&gsrlimit=10`
+    + `&gsrsearch=${encodeURIComponent("filetype:bitmap " + term)}&gsrnamespace=6&gsrlimit=12`
     + "&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=640";
   for (let i = 0; i < 3; i++) {
     try {
@@ -72,9 +114,8 @@ async function search(query) {
         continue;
       }
       if (!res.ok) throw new Error(String(res.status));
-      const j = await res.json();
-      return Object.values(j.query?.pages || {});
-    } catch (e) {
+      return Object.values((await res.json()).query?.pages || {});
+    } catch {
       if (i === 2) return [];
       await sleep(2000 * (i + 1));
     }
@@ -82,17 +123,17 @@ async function search(query) {
   return [];
 }
 
-export function toPhotos(pages, want = WANT) {
+export function toPhotos(pages, { kind, phrase }, want = WANT) {
   const out = [];
   for (const p of pages) {
     const name = String(p.title || "").replace(/^File:/, "");
-    if (REJECT.test(name)) continue;
+    if (!looksRelevant(name, phrase)) continue;
     const ii = p.imageinfo?.[0];
     const url = ii?.thumburl || ii?.url;
     if (!url) continue;
     const em = ii.extmetadata || {};
     out.push({
-      url,
+      url, kind,
       credit: plainCredit(em.Artist?.value) || "Wikimedia Commons",
       licence: em.LicenseShortName?.value || "see Commons",
       source: ii.descriptionurl || null,
@@ -105,42 +146,50 @@ export function toPhotos(pages, want = WANT) {
 async function main() {
   const list = JSON.parse(fs.readFileSync(OUT, "utf8"));
   fs.mkdirSync(path.dirname(CACHE), { recursive: true });
-  const cache = fs.existsSync(CACHE) ? JSON.parse(fs.readFileSync(CACHE, "utf8")) : {};
+  let cache = fs.existsSync(CACHE) ? JSON.parse(fs.readFileSync(CACHE, "utf8")) : {};
+  // The old cache holds results from the unfiltered queries; they cannot be
+  // salvaged by filtering, because the searches themselves were wrong.
+  if (process.env.FRESH || !cache.__v2) cache = { __v2: true };
 
-  // Replaying the cache is free; queries are shared across restaurants that
-  // serve the same dish, so this saves most of the work on a re-run.
-  let restored = 0;
-  for (const r of list) {
-    const q = queryFor(r);
-    if (q && cache[q]?.length) { r.dishPhotos = cache[q]; restored++; }
-  }
-  if (restored) console.log(`replayed ${restored} cached galleries`);
+  let done = 0, withPlace = 0, withDish = 0;
+  for (const item of list) {
+    const queries = queriesFor(item);
+    if (!queries.length) continue;
 
-  const todo = list.filter((r) => !r.dishPhotos && queryFor(r) && cache[queryFor(r)] === undefined);
-  const queries = [...new Set(todo.map(queryFor))];
-  const targets = LIMIT ? queries.slice(0, LIMIT) : queries;
-  console.log(`${targets.length} distinct dishes to look up (covering ${todo.length} places)`);
-
-  let done = 0, found = 0;
-  for (const q of targets) {
-    const photos = toPhotos(await search(q));
-    cache[q] = photos;
-    if (photos.length) found++;
-    if (++done % 10 === 0) {
-      fs.writeFileSync(CACHE, JSON.stringify(cache));
-      console.log(`  ${done}/${targets.length} · ${found} with photos`);
+    const photos = [];
+    for (const q of queries) {
+      if (photos.length >= WANT) break;
+      const ck = q.kind + "|" + q.search;
+      if (cache[ck] === undefined) {
+        cache[ck] = toPhotos(await search(q.search), q);
+        await sleep(650);
+      }
+      for (const p of cache[ck]) {
+        if (photos.length >= WANT) break;
+        if (!photos.some((x) => x.url === p.url)) photos.push(p);
+      }
     }
-    await sleep(700); // Commons throttles bursts
+
+    if (photos.length) {
+      item.dishPhotos = photos;
+      if (photos.some((p) => p.kind === "place")) withPlace++;
+      if (photos.some((p) => p.kind === "dish")) withDish++;
+    } else {
+      delete item.dishPhotos;
+    }
+
+    if (++done % 20 === 0) {
+      fs.writeFileSync(CACHE, JSON.stringify(cache));
+      fs.writeFileSync(OUT, JSON.stringify(list, null, 1) + "\n");
+      console.log(`  ${done}/${list.length} · ${withPlace} with a photo of the place, ${withDish} with dish photos`);
+    }
   }
   fs.writeFileSync(CACHE, JSON.stringify(cache));
-
-  for (const r of list) {
-    const q = queryFor(r);
-    if (q && cache[q]?.length) r.dishPhotos = cache[q];
-  }
-  writePretty(fs, OUT, list);
-  const withGallery = list.filter((r) => r.dishPhotos?.length).length;
-  console.log(`dish photos: ${withGallery}/${list.length} places have a gallery`);
+  // NOT writePretty: dishPhotos is on its preserve list, so deletions of junk
+  // galleries would be restored from disk.
+  fs.writeFileSync(OUT, JSON.stringify(list, null, 1) + "\n");
+  const g = list.filter((r) => r.dishPhotos?.length);
+  console.log(`galleries: ${g.length}/${list.length} · ${withPlace} include a real photo of the restaurant`);
 }
 
 // Guard: importing this module for a syntax check must not start a crawl.
