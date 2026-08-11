@@ -301,6 +301,39 @@ describe("Deck preview button", () => {
   });
 });
 
+// React Native's AbortSignal comes from the `abort-controller` polyfill, which
+// has no static `timeout()`. Using it throws a TypeError on device while working
+// perfectly in Node — so the audio preview silently fell back to a 403 URL and
+// showed "Loading…" then "Preview unavailable". Nothing native-reachable may
+// depend on it again.
+describe("Native-unavailable web APIs", () => {
+  const fs = require("fs");
+  const path = require("path");
+  const files = [];
+  const walk = (dir) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) walk(full);
+      else if (/\.jsx?$/.test(e.name)) files.push(full);
+    }
+  };
+  walk(path.join(__dirname, "../src"));
+  walk(path.join(__dirname, "../../src/engine"));
+
+  it("no native-reachable file calls AbortSignal.timeout", () => {
+    const offenders = files.filter((f) => {
+      const body = fs.readFileSync(f, "utf8");
+      // Ignore prose in comments explaining why it is banned.
+      return /(?<!\* )AbortSignal\.timeout\s*\(/.test(body.replace(/^\s*\*.*$/gm, ""));
+    });
+    expect(offenders).toEqual([]);
+  });
+
+  it("the shared engine is reachable from native at all", () => {
+    expect(typeof require("../../src/engine/preview.mjs").resolvePreview).toBe("function");
+  });
+});
+
 describe("Trailer embed", () => {
   const film = { id: "mv_x", title: "A Film", subtitle: "1999", genres: ["Drama"], trailer: "kmJLuwP3MbY",
     factors: {}, tone: {}, rating: { value: 8, scale: 10 }, blurb: "b", links: {} };

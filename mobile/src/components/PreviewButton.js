@@ -36,14 +36,28 @@ let audioModeReady = null;
 const ensureAudioMode = () => (audioModeReady =
   audioModeReady || setAudioModeAsync({ playsInSilentMode: true }).catch(() => {}));
 
+/**
+ * React Native polyfills AbortSignal from the `abort-controller` package, which
+ * has NO static `AbortSignal.timeout()`. Calling it throws a TypeError, and
+ * that was the whole bug: fetchFresh died instantly, resolvePreview fell back
+ * to the URL baked into the catalogue, and every one of those is 403 now — so
+ * the player sat on "Loading…" and then reported unavailable. The fresh-resolve
+ * path, which is the entire point of this component, never ran once on device.
+ *
+ * AbortController + setTimeout exists everywhere, so use that.
+ */
 async function fetchFresh(deezerId) {
-  const res = await fetch(`https://api.deezer.com/track/${deezerId}`, {
-    signal: AbortSignal.timeout(8000),
-  });
-  if (!res.ok) throw new Error(String(res.status));
-  const json = await res.json();
-  if (!json?.preview) throw new Error("no preview");
-  return json.preview;
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 8000);
+  try {
+    const res = await fetch(`https://api.deezer.com/track/${deezerId}`, { signal: ctrl.signal });
+    if (!res.ok) throw new Error(String(res.status));
+    const json = await res.json();
+    if (!json?.preview) throw new Error("no preview");
+    return json.preview;
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 export default function PreviewButton({ item, label = "Play 30s preview", accent = C.hl }) {
