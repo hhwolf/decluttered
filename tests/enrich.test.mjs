@@ -10,6 +10,7 @@ import { showIdFromLink, principalCast } from "../scripts/patch-tv-cast.mjs";
 import { notableAward, inceptionYear, idFor } from "../scripts/patch-restaurant-provenance.mjs";
 import { isTruncated, recut } from "../scripts/patch-truncated-blurbs.mjs";
 import { tconstFromLink, parseDirectors } from "../scripts/patch-movie-directors.mjs";
+import { cleanVideoId, pickTrailer, isPlayableEmbed, isThrottled } from "../scripts/patch-trailers.mjs";
 import { splitSentences } from "../scripts/lib/reception.mjs";
 
 let pass = 0, fail = 0;
@@ -165,6 +166,49 @@ check("the Coens both survive", parseDirectors("nm0001053,nm0001054").length ===
 check("credits are capped at two", parseDirectors("nm1,nm2,nm3".replace(/nm(\d)/g, "nm000000$1")).length === 2);
 check("malformed ids are dropped", parseDirectors("notanid,nm0001053").join() === "nm0001053");
 
+// ---- patch-trailers -------------------------------------------------------
+check("a bare 11-char id is accepted", cleanVideoId("kmJLuwP3MbY") === "kmJLuwP3MbY");
+// Wikidata's crowd-edited field really does contain URLs.
+check("a url is rejected rather than half-parsed", cleanVideoId("https://youtu.be/kmJLuwP3MbY") === null);
+check("a short id is rejected", cleanVideoId("abc") === null);
+check("whitespace is trimmed", cleanVideoId("  kmJLuwP3MbY  ") === "kmJLuwP3MbY");
+
+// A full trailer beats a teaser; official beats a fan re-post; English beats a dub.
+check("a full official English trailer wins", pickTrailer([
+  { site: "YouTube", key: "aaaaaaaaaaa", type: "Teaser", official: true, iso_639_1: "en" },
+  { site: "YouTube", key: "bbbbbbbbbbb", type: "Trailer", official: true, iso_639_1: "en" },
+]) === "bbbbbbbbbbb");
+check("official beats unofficial at the same type", pickTrailer([
+  { site: "YouTube", key: "aaaaaaaaaaa", type: "Trailer", official: false, iso_639_1: "en" },
+  { site: "YouTube", key: "bbbbbbbbbbb", type: "Trailer", official: true, iso_639_1: "en" },
+]) === "bbbbbbbbbbb");
+// Clips and featurettes spoil without selling.
+check("clips and featurettes are not trailers", pickTrailer([
+  { site: "YouTube", key: "aaaaaaaaaaa", type: "Clip", official: true },
+  { site: "YouTube", key: "bbbbbbbbbbb", type: "Featurette", official: true },
+]) === null);
+check("non-YouTube videos are ignored",
+  pickTrailer([{ site: "Vimeo", key: "aaaaaaaaaaa", type: "Trailer", official: true }]) === null);
+check("an empty list yields nothing", pickTrailer([]) === null);
+check("a missing list is safe", pickTrailer() === null);
+
+check("a playable embeddable video passes",
+  isPlayableEmbed('x"playabilityStatus":{"status":"OK","x":1} y"playableInEmbed":true z') === true);
+// Playable but embedding disabled by the uploader.
+check("embed-disabled fails even when playable",
+  isPlayableEmbed('"playabilityStatus":{"status":"OK"} "playableInEmbed":false') === false);
+check("an unplayable video fails",
+  isPlayableEmbed('"playabilityStatus":{"status":"UNPLAYABLE"} "playableInEmbed":true') === false);
+
+// YouTube starts serving a consent wall after a couple of thousand requests.
+// It looks exactly like an unplayable video, and treating it as one would
+// quietly mark the rest of the catalogue dead.
+check("a consent wall is throttling, not a dead video",
+  isThrottled('"playabilityStatus":{"status":"LOGIN_REQUIRED"}') === true);
+check("an unusual-traffic page is throttling", isThrottled("We have detected unusual traffic") === true);
+check("a normal page is not throttling",
+  isThrottled('"playabilityStatus":{"status":"OK"} "playableInEmbed":true') === false);
+
 // ---- the real catalogues --------------------------------------------------
 const load = (f) => JSON.parse(fs.readFileSync(new URL(`../src/data/${f}`, import.meta.url), "utf8"));
 {
@@ -188,6 +232,22 @@ const load = (f) => JSON.parse(fs.readFileSync(new URL(`../src/data/${f}`, impor
   check("the directors pass did not drop reception",
     movies.filter((m) => m.reception?.summary).length > 250,
     `${movies.filter((m) => m.reception?.summary).length}`);
+}
+{
+  // Trailers: stored ids were verified playable-in-embed at fetch time.
+  const movies = load("movies.json"), tv = load("tv.json");
+  const ids = [...movies, ...tv].filter((i) => i.trailer).map((i) => i.trailer);
+  check("every stored trailer id is a bare 11-char YouTube id",
+    ids.every((id) => cleanVideoId(id) === id), `${ids.length} ids`);
+  check("most films have a trailer", movies.filter((m) => m.trailer).length / movies.length > 0.8,
+    `${movies.filter((m) => m.trailer).length}/${movies.length}`);
+  // Dish photos are CC works; attribution is a licence condition, not a nicety.
+  const withPhotos = load("restaurants.json").filter((r) => r.dishPhotos?.length);
+  check("every dish photo carries a credit and a licence",
+    withPhotos.every((r) => r.dishPhotos.every((p) => p.url && p.credit && p.licence)),
+    `${withPhotos.length} galleries`);
+  check("galleries are a handful, not a slideshow",
+    withPhotos.every((r) => r.dishPhotos.length <= 4));
 }
 {
   const rest = load("restaurants.json");
