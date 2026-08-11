@@ -31,6 +31,19 @@ import { C, F, BORDER } from "../theme";
 
 const LOAD_TIMEOUT_MS = 12000;
 
+// Every live preview registers itself here so playback can be stopped at the
+// moment a swipe is committed, rather than whenever React happens to unmount
+// the card. The fling animation runs for 180ms before the deck advances, and a
+// clip carrying on over the next card is jarring.
+const liveStops = new Set();
+
+/** Stop any preview that is currently playing. Safe to call at any time. */
+export function stopAllPreviews() {
+  for (const stop of [...liveStops]) {
+    try { stop(); } catch { /* already torn down */ }
+  }
+}
+
 // Once per app run. Without this a phone on silent plays nothing.
 let audioModeReady = null;
 const ensureAudioMode = () => (audioModeReady =
@@ -77,7 +90,13 @@ export default function PreviewButton({ item, label = "Play 30s preview", accent
     clearTimeout(timerRef.current);
     wantPlay.current = false;
     started.current = false;
+    // Drop the listener BEFORE stopping, so the pause cannot be observed and
+    // acted on by a status event that is already in flight.
     try { subRef.current?.remove(); } catch { /* already gone */ }
+    // pause() then remove(). remove() only releases the shared native object;
+    // releasing is not stopping, so on its own the clip kept playing over the
+    // next card until the object was actually torn down.
+    try { playerRef.current?.pause(); } catch { /* nothing to pause */ }
     try { playerRef.current?.remove(); } catch { /* already gone */ }
     subRef.current = null;
     playerRef.current = null;
@@ -85,7 +104,9 @@ export default function PreviewButton({ item, label = "Play 30s preview", accent
 
   useEffect(() => {
     alive.current = true;
-    return () => { alive.current = false; teardown(); };
+    const stop = () => { if (alive.current) { teardown(); setState("idle"); } };
+    liveStops.add(stop);
+    return () => { alive.current = false; liveStops.delete(stop); teardown(); };
   }, []);
 
   // A new card is a new track: drop the old player rather than leaving it

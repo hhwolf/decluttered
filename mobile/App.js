@@ -25,6 +25,7 @@ import ForYou from "./src/screens/ForYou";
 import Library from "./src/screens/Library";
 import Profile from "./src/screens/Profile";
 import Onboarding from "./src/screens/Onboarding";
+import { stopAllPreviews } from "./src/components/PreviewButton";
 
 const KEY = "taste:state:v1";
 
@@ -84,6 +85,10 @@ export default function App() {
   // The undo toast is time-boxed; clear the timer on unmount so a pending
   // callback can't fire against a torn-down tree.
   useEffect(() => () => clearTimeout(undoTimer.current), []);
+
+  // Leaving the deck should silence a playing preview rather than have music
+  // follow you into the Library or another craving.
+  useEffect(() => { stopAllPreviews(); }, [view, active]);
 
   const domain = DOMAINS[active];
   const ds = states[active];

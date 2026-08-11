@@ -25,7 +25,7 @@ import { vibeWords, counterpoint, factChips, castLine, creditLine,
          previewAction } from "../../../src/engine/describe.mjs";
 import { C, F, text, accentFor, BORDER } from "../theme";
 import { Btn, Cover, ExtRating, VibeChip, matchTag, displayScore } from "../components/bits";
-import PreviewButton from "../components/PreviewButton";
+import PreviewButton, { stopAllPreviews } from "../components/PreviewButton";
 
 const { width: SCREEN_W, height: SCREEN_H } = Dimensions.get("window");
 
@@ -57,6 +57,7 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   const needsCity = domain.hasLocation && !(profile.cities?.length);
 
   const commit = (action) => {
+    stopAllPreviews();
     pan.setValue({ x: 0, y: 0 });
     dragRef.current = 0;
     setDragging(0);
@@ -66,6 +67,8 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   };
 
   const fling = (dir) => {
+    // Stop now, not when the card unmounts 180ms later.
+    stopAllPreviews();
     Animated.timing(pan, {
       toValue: { x: dir === "right" ? SCREEN_W : -SCREEN_W, y: 0 },
       duration: 180,

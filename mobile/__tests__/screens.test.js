@@ -366,6 +366,25 @@ describe("Preview play/pause", () => {
     expect(r.getByLabelText("Play 30s preview")).toBeTruthy();
   });
 
+  // Music carrying on over the next card is jarring, and remove() alone does not
+  // stop it — releasing the native object is not the same as pausing it.
+  it("swiping stops the music straight away", async () => {
+    const p = await startPlaying();
+    fireEvent.press(r.getByText(/Pass/));
+    expect(p.pause).toHaveBeenCalled();
+    await new Promise((done) => setTimeout(done, 260)); // fling animation
+    expect(p.remove).toHaveBeenCalled();
+  });
+
+  it("stopAllPreviews pauses before releasing", async () => {
+    const p = await startPlaying();
+    require("../src/components/PreviewButton").stopAllPreviews();
+    expect(p.pause).toHaveBeenCalled();
+    expect(p.remove).toHaveBeenCalled();
+    // pause must come first, or sound continues until the object is torn down.
+    expect(p.pause.mock.invocationCallOrder[0]).toBeLessThan(p.remove.mock.invocationCallOrder[0]);
+  });
+
   it("a finished clip returns to idle and can be replayed", async () => {
     const p = await startPlaying();
     await act(async () => { p._emit({ isLoaded: true, playing: false, didJustFinish: true }); });
