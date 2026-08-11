@@ -239,6 +239,68 @@ describe("ForYou — seven mechanisms, each with a reason", () => {
 
 // The trailer embed is the one place a wrong URL parameter produces a player
 // that silently refuses to start, so the params are asserted, not eyeballed.
+// The deck's preview is the highest-value control on the screen; it used to be
+// below the fold (music) or absent entirely (film, food).
+describe("Deck preview button", () => {
+  const track = { id: "tr_123", title: "A Track", subtitle: "An Artist", genres: ["Soul"],
+    factors: {}, tone: {}, popularity: 0.5, rating: { value: 50, source: "Deezer" }, blurb: "b",
+    links: { deezer: "https://www.deezer.com/track/123", preview: "https://x/p.mp3" } };
+  const music = { ...BOOKS, key: "music", noun: "track", nounPlural: "tracks",
+    factors: ["melody", "lyrics", "production", "rhythm", "vocals", "originality"],
+    factorLabels: { melody: "Melody", lyrics: "Lyrics", production: "Production", rhythm: "Rhythm", vocals: "Vocals", originality: "Originality" },
+    tones: ["energy", "darkness", "density"],
+    actions: { want: "Add to queue", consumed: "Heard it", pass: "Pass", consumedShort: "Heard" },
+    stamps: { want: "Queue it", pass: "Pass" }, items: [track] };
+
+  it("a track offers audio right on the deck", async () => {
+    await show(<Discover domain={music} profile={profileFor(music)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.getByLabelText("Play 30s preview")).toBeTruthy();
+  });
+
+  const film = { id: "mv_1", title: "A Film", subtitle: "1999", year: 1999, genres: ["Drama"],
+    factors: {}, tone: {}, popularity: 0.5, rating: { value: 8, scale: 10 }, blurb: "b",
+    trailer: "kmJLuwP3MbY", links: {} };
+  const movies = { ...BOOKS, key: "movies", noun: "movie", nounPlural: "movies",
+    actions: { want: "Watchlist it", consumed: "Seen it", pass: "Pass", consumedShort: "Seen" },
+    stamps: { want: "Watchlist", pass: "Pass" }, items: [film] };
+
+  it("a film offers the trailer right on the deck", async () => {
+    await show(<Discover domain={movies} profile={profileFor(movies)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.getByLabelText("Watch the trailer")).toBeTruthy();
+  });
+
+  it("the trailer plays in place rather than navigating away", async () => {
+    await show(<Discover domain={movies} profile={profileFor(movies)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.queryByLabelText(/^webview:/)).toBeNull();
+    fireEvent.press(r.getByLabelText("Watch the trailer"));
+    await waitFor(() => expect(r.getByLabelText(/^webview:/)).toBeTruthy());
+  });
+
+  const place = { id: "rs_1", title: "A Place", subtitle: "Boston, MA", city: "Boston", genres: ["Seafood"],
+    factors: {}, tone: {}, popularity: 0.5, rating: { value: 4.5 }, blurb: "b", dish: "Lobster roll",
+    dishPhotos: [{ url: "https://x/1.jpg", credit: "A", licence: "CC BY 2.0" },
+                 { url: "https://x/2.jpg", credit: "B", licence: "CC BY 2.0" }] };
+  const rests = { ...BOOKS, key: "restaurants", noun: "restaurant", nounPlural: "restaurants",
+    genreLabel: "Cuisines", actions: { want: "Want to try", consumed: "Been there", pass: "Pass", consumedShort: "Visited" },
+    stamps: { want: "Want to try", pass: "Pass" }, items: [place] };
+
+  it("a restaurant offers the food photos, counted", async () => {
+    await show(<Discover domain={rests} profile={profileFor(rests)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.getByLabelText("See the food (2)")).toBeTruthy();
+  });
+
+  // Never a button that disappoints.
+  it("no preview button when there is nothing to play", async () => {
+    await show(<Discover domain={BOOKS} profile={profileFor(BOOKS)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.queryByLabelText(/Play 30s|Watch the trailer|See the food/)).toBeNull();
+  });
+
+  it("Full details stays reachable alongside the preview", async () => {
+    await show(<Discover domain={movies} profile={profileFor(movies)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    expect(r.getByLabelText(`Full details for ${film.title}`)).toBeTruthy();
+  });
+});
+
 describe("Trailer embed", () => {
   const film = { id: "mv_x", title: "A Film", subtitle: "1999", genres: ["Drama"], trailer: "kmJLuwP3MbY",
     factors: {}, tone: {}, rating: { value: 8, scale: 10 }, blurb: "b", links: {} };

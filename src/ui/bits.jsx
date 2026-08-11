@@ -85,6 +85,8 @@ export const CSS = `
 .cover.imgcover{padding:0;justify-content:flex-end;background-size:cover;background-position:center;}
 .cover.imgcover .cgrad{background:linear-gradient(transparent 30%,rgba(10,10,12,.88));padding:20px 9px 8px;width:100%;}
 .deck{position:relative;height:454px;margin-top:8px;}
+/* one line, always — a wrapped counter shoves the whole deck down */
+.deckhead .cat-no{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .swipecard{position:absolute;inset:0;background:var(--card);border-radius:16px;border:2px solid var(--ink);
   box-shadow:7px 7px 0 var(--ink);overflow:hidden;display:flex;flex-direction:column;touch-action:pan-y;}
 .match-pill{position:absolute;top:14px;right:12px;background:var(--card);border:2px solid var(--ink);border-radius:12px;
@@ -167,10 +169,20 @@ export const CSS = `
 
 /* ---- scroll affordance on the deck card body ---- */
 .cardbody{position:relative;overflow-y:auto;flex:1;min-height:0;}
-.cardfoot{flex:none;border:none;border-top:2px solid var(--line);background:var(--card);cursor:pointer;
-  padding:11px 18px;display:flex;align-items:center;gap:6px;font-family:var(--ui);font-size:13px;
-  font-weight:600;color:var(--slate);}
-.cardfoot:hover{background:var(--paper2);}
+/* The footer is a bar now, not a single button: the preview is the primary
+   action on the deck and has to sit where a thumb already is. */
+.cardfoot{flex:none;border-top:2px solid var(--line);background:var(--card);
+  padding:9px 12px;display:flex;align-items:center;gap:8px;}
+.tryit{flex:1;min-width:0;border:2px solid var(--ink);border-radius:11px;background:var(--hl);
+  color:var(--ink);cursor:pointer;padding:10px 12px;display:flex;align-items:center;justify-content:center;
+  gap:7px;font-family:var(--ui);font-size:14px;font-weight:700;box-shadow:3px 3px 0 var(--ink);
+  transition:transform .1s ease,box-shadow .1s ease;white-space:nowrap;}
+.tryit:hover{transform:translate(1px,1px);box-shadow:2px 2px 0 var(--ink);}
+.tryit:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--ink);}
+.foot-secondary{flex:none;border:2px solid var(--ink);border-radius:11px;background:var(--card);cursor:pointer;
+  padding:10px 12px;display:flex;align-items:center;gap:5px;font-family:var(--ui);font-size:13px;
+  font-weight:600;color:var(--ink);}
+.foot-secondary:hover{background:var(--paper2);}
 .fademask{position:absolute;left:0;right:0;bottom:0;height:26px;pointer-events:none;
   background:linear-gradient(transparent,var(--card));}
 

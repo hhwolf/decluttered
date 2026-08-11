@@ -22,6 +22,9 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "backgroundColor": "#FFF8E7"
+    "backgroundColor": "#FFF8E7",
+    "plugins": [
+      "expo-audio"
+    ]
   }
 }

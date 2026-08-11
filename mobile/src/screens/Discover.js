@@ -17,13 +17,31 @@
 import React, { useMemo, useRef, useState } from "react";
 import { View, Text, Animated, PanResponder, Pressable, ScrollView, Dimensions } from "react-native";
 import { Feather } from "@expo/vector-icons";
+import { Image } from "react-native";
+import { WebView } from "react-native-webview";
 import { rankItems } from "../../../src/engine/engine.mjs";
 import { resolveSwipe, SWIPE_THRESHOLD } from "../../../src/engine/stats.mjs";
-import { vibeWords, counterpoint, factChips, castLine, creditLine } from "../../../src/engine/describe.mjs";
+import { vibeWords, counterpoint, factChips, castLine, creditLine,
+         previewAction, trailerEmbedUrl } from "../../../src/engine/describe.mjs";
 import { C, F, text, accentFor, BORDER } from "../theme";
 import { Btn, Cover, ExtRating, VibeChip, matchTag, displayScore } from "../components/bits";
+import PreviewButton from "../components/PreviewButton";
 
-const { width: SCREEN_W } = Dimensions.get("window");
+const { width: SCREEN_W, height: SCREEN_H } = Dimensions.get("window");
+
+// The deck used to be a hardcoded 468pt, which overflowed every phone shorter
+// than the one it was designed on. Derive it from the screen and leave room for
+// the header, domain bar, action buttons and tab bar.
+const CHROME = 336;
+const DECK_H = Math.max(360, Math.min(520, SCREEN_H - CHROME));
+const ART_H = Math.round(DECK_H * 0.38);
+
+/** A minimal page whose only job is to host the player edge to edge. */
+const trailerHtml = (src) => `<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<style>html,body{margin:0;padding:0;background:#000;height:100%;overflow:hidden}
+iframe{border:0;width:100%;height:100%;display:block}</style></head>
+<body><iframe src="${src}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></body></html>`;
 
 export default function Discover({ domain, profile, shelf, onAction, onExplore, onOpen, onNeedCity }) {
   const seen = useMemo(() => new Set(Object.keys(shelf)), [shelf]);
@@ -34,6 +52,10 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   const pan = useRef(new Animated.ValueXY({ x: 0, y: 0 })).current;
   const dragRef = useRef(0);
   const [dragging, setDragging] = useState(0);
+  const [previewing, setPreviewing] = useState(false);
+  // The responder is memoised per card, so it reads this ref rather than state:
+  // a WebView or photo gallery inside the card must win the gesture, not the deck.
+  const previewingRef = useRef(false);
   const accent = accentFor(domain.key);
 
   const top = deck[0];
@@ -44,6 +66,8 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
     pan.setValue({ x: 0, y: 0 });
     dragRef.current = 0;
     setDragging(0);
+    setPreviewing(false);
+    previewingRef.current = false;
     onAction(top.item, action);
   };
 
@@ -58,7 +82,8 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   const responder = useMemo(() => PanResponder.create({
     // Claim the gesture only once it is clearly horizontal, so the card body
     // can still be scrolled vertically.
-    onMoveShouldSetPanResponder: (_e, g) => Math.abs(g.dx) > 8 && Math.abs(g.dx) > Math.abs(g.dy),
+    onMoveShouldSetPanResponder: (_e, g) =>
+      !previewingRef.current && Math.abs(g.dx) > 8 && Math.abs(g.dx) > Math.abs(g.dy),
     onPanResponderMove: (_e, g) => {
       dragRef.current = g.dx;
       setDragging(g.dx);
@@ -100,6 +125,12 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   const caveat = counterpoint(top.item, domain, profile, top.breakdown);
   const anchor = top.bestAnchorId ? domain.items.find((i) => i.id === top.bestAnchorId) : null;
   const people = castLine(top.item) || creditLine(top.item);
+  const preview = previewAction(top.item, domain);
+  const togglePreview = () => {
+    const next = !previewingRef.current;
+    previewingRef.current = next;
+    setPreviewing(next);
+  };
 
   const rotate = pan.x.interpolate({ inputRange: [-SCREEN_W, 0, SCREEN_W], outputRange: ["-9deg", "0deg", "9deg"], extrapolate: "clamp" });
   const wantOpacity = Math.min(Math.max(dragging / SWIPE_THRESHOLD, 0), 1);
@@ -144,7 +175,7 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
         </Pressable>
       )}
 
-      <View style={{ height: 468 }}>
+      <View style={{ height: DECK_H }}>
         {/* the card underneath, so the deck reads as a stack */}
         {next && (
           <View style={{ position: "absolute", left: 6, right: 6, top: 8, bottom: 0, opacity: 0.55 }}>
@@ -162,8 +193,29 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
           <View style={{ flex: 1, position: "relative" }}>
             <View style={{ position: "absolute", left: 7, top: 7, right: -7, bottom: -7, backgroundColor: C.ink, borderRadius: 16 }} />
             <View style={{ flex: 1, backgroundColor: C.card, borderWidth: BORDER, borderColor: C.line, borderRadius: 16, overflow: "hidden" }}>
-              <View style={{ height: 186, backgroundColor: C.paper2, position: "relative" }}>
-                <Cover item={top.item} width="100%" height={186} radius={0} />
+              <View style={{ height: ART_H, backgroundColor: C.paper2, position: "relative" }}>
+                {previewing && preview?.kind === "trailer" ? (
+                  <WebView
+                    source={{ html: trailerHtml(trailerEmbedUrl(top.item, { origin: "https://www.youtube.com" })), baseUrl: "https://www.youtube.com" }}
+                    originWhitelist={["*"]}
+                    allowsInlineMediaPlayback
+                    mediaPlaybackRequiresUserAction={false}
+                    allowsFullscreenVideo
+                    javaScriptEnabled
+                    domStorageEnabled
+                    scrollEnabled={false}
+                    style={{ width: "100%", height: ART_H, backgroundColor: "#000" }}
+                  />
+                ) : previewing && preview?.kind === "photos" ? (
+                  <ScrollView horizontal pagingEnabled showsHorizontalScrollIndicator={false}>
+                    {top.item.dishPhotos.map((p) => (
+                      <Image key={p.url} source={{ uri: p.url }} style={{ width: SCREEN_W - 36, height: ART_H }}
+                        resizeMode="cover" accessibilityLabel={top.item.dish || "Dish photo"} />
+                    ))}
+                  </ScrollView>
+                ) : (
+                  <Cover item={top.item} width="100%" height={ART_H} radius={0} />
+                )}
                 <View style={{ position: "absolute", top: 14, left: 12 }}>
                   <ExtRating item={top.item} dark />
                 </View>
@@ -242,14 +294,34 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
 
               </ScrollView>
 
-              {/* Pinned, not in the scroll: the card body overflows on every
-                  device, and the primary route into the sheet must never be
-                  below the fold. */}
-              <Pressable onPress={() => onOpen(top.item)} accessibilityRole="button"
-                accessibilityLabel={`Full details for ${top.item.title}`}
-                style={{ borderTopWidth: BORDER, borderTopColor: C.line, paddingVertical: 11, alignItems: "center", backgroundColor: C.paper2 }}>
-                <Text style={{ fontFamily: F.ui, fontSize: 14, fontWeight: "700", color: C.ink }}>Full details →</Text>
-              </Pressable>
+              {/* Pinned, not in the scroll. The preview leads: hearing the
+                  track or watching the trailer decides more than any
+                  percentage, and it used to be reachable only from the sheet. */}
+              <View style={{ borderTopWidth: BORDER, borderTopColor: C.line, backgroundColor: C.card,
+                flexDirection: "row", alignItems: "center", gap: 8, padding: 9 }}>
+                {preview && (preview.kind === "audio"
+                  ? <PreviewButton key={top.item.id} item={top.item} label={preview.label} accent={accent.hl} />
+                  : (
+                    <Pressable onPress={togglePreview} accessibilityRole="button"
+                      accessibilityLabel={previewing ? "Close preview" : preview.label}
+                      style={{ flex: 1, borderWidth: BORDER, borderColor: C.ink, borderRadius: 11,
+                        backgroundColor: accent.hl, paddingVertical: 10, flexDirection: "row",
+                        alignItems: "center", justifyContent: "center", gap: 7 }}>
+                      <Feather name={previewing ? "x" : "play"} size={15} color={C.ink} />
+                      <Text numberOfLines={1} style={{ fontFamily: F.ui, fontSize: 14, fontWeight: "700" }}>
+                        {previewing ? "Close" : preview.label}
+                      </Text>
+                    </Pressable>
+                  ))}
+                <Pressable onPress={() => onOpen(top.item)} accessibilityRole="button"
+                  accessibilityLabel={`Full details for ${top.item.title}`}
+                  style={{ flex: preview ? 0 : 1, borderWidth: BORDER, borderColor: C.ink, borderRadius: 11,
+                    backgroundColor: C.card, paddingVertical: 10, paddingHorizontal: 12,
+                    flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 5 }}>
+                  <Feather name="info" size={13} color={C.ink} />
+                  <Text numberOfLines={1} style={{ fontFamily: F.ui, fontSize: 13, fontWeight: "600" }}>Full details</Text>
+                </Pressable>
+              </View>
             </View>
           </View>
         </Animated.View>

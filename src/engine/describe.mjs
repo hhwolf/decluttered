@@ -336,3 +336,28 @@ export function trailerWatchUrl(item) {
   const id = item?.trailer;
   return id && /^[A-Za-z0-9_-]{11}$/.test(id) ? `https://www.youtube.com/watch?v=${id}` : null;
 }
+
+/**
+ * The one "try it before you decide" action a card can offer, per domain.
+ *
+ * Each craving has a different way of letting you sample the thing rather than
+ * read about it: hear the track, watch the trailer, look at the food. This is
+ * the highest-value control on the deck, so it gets a single, named, primary
+ * action instead of being buried in the detail sheet.
+ *
+ * Returns null when we have nothing real to play — never a button that
+ * disappoints.
+ */
+export function previewAction(item, domain) {
+  const key = domain?.key;
+  if (key === "music" && (item?.links?.preview || item?.links?.deezer)) {
+    return { kind: "audio", label: "Play 30s preview" };
+  }
+  if ((key === "movies" || key === "tv") && item?.trailer) {
+    return { kind: "trailer", label: "Watch the trailer" };
+  }
+  if (key === "restaurants" && item?.dishPhotos?.length) {
+    return { kind: "photos", label: `See the food (${item.dishPhotos.length})` };
+  }
+  return null;
+}

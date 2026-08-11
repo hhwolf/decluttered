@@ -7,6 +7,8 @@
 // falling back to the stored URL when the network is unavailable.
 // ============================================================================
 
+import { resolvePreview } from "../engine/preview.mjs";
+
 const inflight = new Map();
 
 function fetchFreshPreview(deezerId) {
@@ -29,12 +31,11 @@ function fetchFreshPreview(deezerId) {
   return p;
 }
 
-export const deezerIdOf = (item) =>
-  (String(item.id).match(/^tr_(\d+)$/) || String(item.links?.deezer || "").match(/track\/(\d+)/) || [])[1];
+// The policy (prefer fresh, fall back to the stored URL) is shared with the
+// native client; only the JSONP mechanism above is web-specific.
+export { deezerIdOf } from "../engine/preview.mjs";
 
 /** Resolved playable URL for a track, or null when nothing is available. */
 export async function fetchTrackPreview(item) {
-  const id = deezerIdOf(item);
-  const fresh = id ? await fetchFreshPreview(id).catch(() => null) : null;
-  return fresh || item.links?.preview || null;
+  return resolvePreview(item, fetchFreshPreview);
 }

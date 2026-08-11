@@ -5,10 +5,11 @@ import { paletteFor } from "../domains.js";
 import { Cover, ExtRating, matchTag, displayScore, ringDegrees, clamp } from "./bits.jsx";
 import { fetchTrackPreview, deezerIdOf } from "./preview.js";
 import { resolveSwipe, SWIPE_THRESHOLD } from "../engine/stats.mjs";
-import { vibeWords, counterpoint, factChips, castLine, creditLine } from "../engine/describe.mjs";
+import { vibeWords, counterpoint, factChips, castLine, creditLine,
+         previewAction, trailerEmbedUrl } from "../engine/describe.mjs";
 
 /* 30s preview player for tracks (music domain only). */
-function PreviewButton({ item }) {
+function PreviewButton({ item, label = "Play 30s preview" }) {
   const [state, setState] = useState("idle"); // idle | loading | playing | unavailable
   const audioRef = useRef(null);
   const alive = useRef(true);
@@ -41,10 +42,9 @@ function PreviewButton({ item }) {
   };
   if (state === "unavailable") return <span className="cat-no">Preview unavailable</span>;
   return (
-    <button className="iconbtn" onClick={toggle} onPointerDown={(e) => e.stopPropagation()}
-      style={{ color: "var(--ink)", fontWeight: 600 }}>
+    <button className="tryit" onClick={toggle} onPointerDown={(e) => e.stopPropagation()}>
       {state === "playing" ? <Pause size={15} /> : <Play size={15} />}
-      {state === "playing" ? "Pause preview" : state === "loading" ? "Loading…" : "Play 30s preview"}
+      {state === "playing" ? "Pause" : state === "loading" ? "Loading…" : label}
     </button>
   );
 }
@@ -57,6 +57,7 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   );
   const [drag, setDrag] = useState(0);
   const [expanded, setExpanded] = useState(false);
+  const [previewing, setPreviewing] = useState(false); // cover area shows the trailer/gallery
   const [animOut, setAnimOut] = useState(null);
   const startX = useRef(null);
   const dragRef = useRef(0); // authoritative drag distance, immune to render lag
@@ -78,6 +79,7 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
     if (!top) return;
     onAction(top.item, action, rating);
     setExpanded(false);
+    setPreviewing(false);
     setDrag(0);
   };
   const fling = (dir) => {
@@ -130,6 +132,7 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   const anchor = top.bestAnchorId ? domain.items.find((i) => i.id === top.bestAnchorId) : null;
   const facts = factChips(top.item, domain);
   const cast = castLine(top.item) || creditLine(top.item);
+  const preview = previewAction(top.item, domain);
 
   return (
     <div>
@@ -185,8 +188,27 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
           <div role="button" tabIndex={0} aria-label={`Open details for ${top.item.title}`}
             onClick={() => { if (Math.abs(drag) < 6) onOpen(top.item); }}
             onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onOpen(top.item); } }}
-            style={{ height: 236, background: pal.bg, position: "relative", display: "flex", alignItems: "center", justifyContent: "center", flex: "none", overflow: "hidden", cursor: "pointer" }}>
-            <Cover item={top.item} size="lg" />
+            style={{ height: 164, background: pal.bg, position: "relative", display: "flex", alignItems: "center", justifyContent: "center", flex: "none", overflow: "hidden", cursor: "pointer" }}>
+            {previewing && preview?.kind === "trailer" ? (
+              <iframe
+                src={trailerEmbedUrl(top.item)}
+                title={`${top.item.title} trailer`}
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+                onClick={(e) => e.stopPropagation()}
+                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0, background: "#000" }}
+              />
+            ) : previewing && preview?.kind === "photos" ? (
+              <div className="dishscroll" style={{ position: "absolute", inset: 0, border: 0, borderRadius: 0 }}
+                onClick={(e) => e.stopPropagation()}>
+                {top.item.dishPhotos.map((p) => (
+                  <img key={p.url} src={p.url} alt={top.item.dish || "Dish"} className="dishshot"
+                    style={{ height: 164 }} loading="lazy" />
+                ))}
+              </div>
+            ) : (
+              <Cover item={top.item} size="lg" />
+            )}
             <ExtRating item={top.item} dark />
             {top.item.dish && (
               <div style={{ position: "absolute", left: 10, bottom: 10, zIndex: 3, background: "var(--card)",
@@ -207,8 +229,8 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
             </div>
           </div>
 
-          <div className="cardbody" style={{ padding: "16px 18px" }}>
-            <div className="row" style={{ flexWrap: "wrap", gap: 6, marginBottom: 9 }}>
+          <div className="cardbody" style={{ padding: "13px 18px" }}>
+            <div className="row" style={{ flexWrap: "wrap", gap: 6, marginBottom: 7 }}>
               {top.item.genres.map((g) => <span key={g} className="cat-no" style={{ border: "1px solid var(--line)", borderRadius: 999, padding: "2px 8px" }}>{g}</span>)}
             </div>
             <div className="h2" style={{ fontSize: 23 }}>{top.item.title}</div>
@@ -230,7 +252,7 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
             {/* clamped so the card never cuts a sentence mid-word; full text in the sheet */}
             <p className="serif" style={{ fontSize: 15.5, lineHeight: 1.5, color: "var(--ink2)",
               margin: "0 0 8px",
-              display: "-webkit-box", WebkitLineClamp: expanded ? "unset" : 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+              display: "-webkit-box", WebkitLineClamp: expanded ? "unset" : 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
               {top.item.blurb}
             </p>
             {cast && (
@@ -260,7 +282,6 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
               </p>
             )}
 
-            {domain.key === "music" && <div style={{ marginBottom: 4 }}><PreviewButton key={top.item.id} item={top.item} /></div>}
 
             {expanded && (
               <div ref={whyRef} style={{ marginTop: 16, borderTop: "1px solid var(--line)", paddingTop: 14 }}>
@@ -296,10 +317,23 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
             )}
           </div>
 
-          {/* pinned footer: always reachable, never pushed off by wrapped genres */}
-          <button className="cardfoot" onClick={() => onOpen(top.item)}>
-            <Info size={13} /> Full details
-          </button>
+          {/* Pinned footer: always reachable, never pushed off by wrapped
+              genres. The preview leads — hearing the track or watching the
+              trailer decides more than any percentage, and it used to be
+              buried below the fold or only in the detail sheet. */}
+          <div className="cardfoot">
+            {preview && (
+              preview.kind === "audio"
+                ? <PreviewButton key={top.item.id} item={top.item} label={preview.label} />
+                : <button className="tryit" onClick={(e) => { e.stopPropagation(); setPreviewing((v) => !v); }}>
+                    {previewing ? <Pause size={15} /> : <Play size={15} />}
+                    {previewing ? "Close" : preview.label}
+                  </button>
+            )}
+            <button className="foot-secondary" onClick={() => onOpen(top.item)}>
+              <Info size={13} /> Full details
+            </button>
+          </div>
         </div>
       </div>
 

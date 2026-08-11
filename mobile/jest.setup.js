@@ -31,3 +31,9 @@ jest.mock("react-native-webview", () => {
       }),
   };
 });
+
+// expo-audio is a native module. The preview button's *policy* is covered by
+// the shared engine tests; here it only needs to render and be pressable.
+jest.mock("expo-audio", () => ({
+  useAudioPlayer: () => ({ play: jest.fn(), pause: jest.fn(), seekTo: jest.fn() }),
+}));
