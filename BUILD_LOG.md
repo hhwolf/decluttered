@@ -13,6 +13,59 @@ and then get out of the way.
 
 ---
 
+## Significant outputs
+
+1. **Two clients — iOS and web — on one engine.** The web app (Vite + React) is
+   deployed; the native app (React Native / Expo, runs on iPhone via Expo Go)
+   was added second. The taste engine is *shared, not ported*: Metro points at
+   the same `src/engine` the web build uses, so **0 lines of engine logic are
+   duplicated** across platforms. Two things were extracted mid-port rather than
+   copied — every state transition (`session.mjs`) and the score→percentage
+   mapping (`present.mjs`) — after the native client briefly showed 78% where
+   web showed 73% for the same card.
+
+2. **A preview on every craving, plus the image and swipe defects behind them.**
+   One prominent "try it" control per card, playing in place rather than
+   navigating away: 30-second track previews (1178/1178), inline looping YouTube
+   trailers (1738/1800 films, 260/700 shows), and swipeable restaurant photo
+   galleries (395/449). Debugged along the way:
+   - Deezer's preview URLs expire monthly — every baked URL is 403 today — so
+     previews resolve a freshly-signed URL at play time. On native that path had
+     never once run, because `AbortSignal.timeout` does not exist in React
+     Native and threw instantly.
+   - Pause was being undone in milliseconds by a status listener that read
+     "not playing" as "should be playing".
+   - A swipe left the music playing over the next card: `remove()` releases the
+     native player but does not stop it.
+   - Artwork backfilled to 386/386 books, 1753/1800 films, 700/700 shows,
+     1176/1178 tracks, 411/449 restaurants; food galleries rebuilt after the
+     first version returned scanned 19th-century cookbooks.
+   - A fast flick was silently dropped, because the release handler read
+     rendered state that was still stale; the drag→verdict decision is now a
+     shared, tested function used by both clients.
+
+3. **Catalogues grown from dozens to hundreds and thousands.** 4,513 items
+   total, every one from a real source:
+
+   | Craving | Seed | Now |
+   |---|---|---|
+   | Screen (movies) | ~1,200 | **1,800** |
+   | Queue (music) | 107 | **1,178** |
+   | Series (TV) | 250 | **700** |
+   | Table (restaurants) | 44 | **449** |
+   | Shelf (books) | 80 | **386** |
+
+4. **APIs linked across entertainment and reference data.** TMDB (official
+   trailers), Wikipedia REST + pageviews (critical reception, readership),
+   Wikidata SPARQL (notable restaurants, provenance), Wikimedia Commons
+   (restaurant and dish photography, with author and licence retained),
+   Open Library (books), IMDb bulk datasets (ratings, directors), TVMaze
+   (shows, run detail, principal cast), Deezer (charts, previews), iTunes
+   (Apple Music links). Google Places and Yelp are supported but their content
+   is never committed, because their terms forbid it.
+
+---
+
 ## Key features
 
 ### The core loop
