@@ -66,9 +66,17 @@ export default function PreviewButton({ item, label = "Play 30s preview", accent
   const subRef = useRef(null);
   const timerRef = useRef(null);
   const alive = useRef(true);
+  // What the USER wants, kept separately from what the player reports. The
+  // listener may not infer intent from status: `playing:false` after a pause is
+  // indistinguishable from `playing:false` before the first play, and guessing
+  // made the listener restart playback the instant Pause was tapped.
+  const wantPlay = useRef(false);
+  const started = useRef(false); // the initial play has been issued for this player
 
   const teardown = () => {
     clearTimeout(timerRef.current);
+    wantPlay.current = false;
+    started.current = false;
     try { subRef.current?.remove(); } catch { /* already gone */ }
     try { playerRef.current?.remove(); } catch { /* already gone */ }
     subRef.current = null;
@@ -85,6 +93,8 @@ export default function PreviewButton({ item, label = "Play 30s preview", accent
   useEffect(() => { teardown(); setState("idle"); }, [item?.id]);
 
   const start = async () => {
+    wantPlay.current = true;
+    started.current = false;
     setState("loading");
     try {
       await ensureAudioMode();
@@ -95,17 +105,26 @@ export default function PreviewButton({ item, label = "Play 30s preview", accent
       const player = createAudioPlayer({ uri: url });
       playerRef.current = player;
 
-      // Play only once there is something loaded to play, and let the player's
-      // own status drive the label from then on.
+      // Start once the source is loaded, exactly once, and only while the user
+      // still wants it playing.
       subRef.current = player.addListener("playbackStatusUpdate", (st) => {
         if (!alive.current || playerRef.current !== player) return;
         if (st?.isLoaded) {
           clearTimeout(timerRef.current);
-          if (!st.playing && !st.paused) { try { player.play(); } catch { /* reported below */ } }
-          if (st.playing) setState("playing");
+          if (wantPlay.current && !started.current) {
+            started.current = true;
+            try { player.play(); } catch { /* the watchdog reports it */ }
+          }
         }
+        // Mirror the player while the user wants sound; never override a pause.
+        if (st?.playing && wantPlay.current) setState("playing");
+        else if (!wantPlay.current) setState("idle");
         // A finished 30s clip should offer to play again, not sit on "Pause".
-        if (st?.didJustFinish) setState("idle");
+        if (st?.didJustFinish) {
+          wantPlay.current = false;
+          started.current = false;
+          setState("idle");
+        }
       });
 
       // If it never loads — a 403 preview URL, no network — say so instead of
@@ -115,7 +134,12 @@ export default function PreviewButton({ item, label = "Play 30s preview", accent
         if (!player.currentStatus?.isLoaded) { teardown(); setState("unavailable"); }
       }, LOAD_TIMEOUT_MS);
 
-      try { player.play(); } catch { /* the listener will settle the state */ }
+      // If it is already loaded there will be no further status event to react
+      // to, so kick it off here too; `started` keeps that from double-playing.
+      if (wantPlay.current && !started.current && player.currentStatus?.isLoaded) {
+        started.current = true;
+        try { player.play(); } catch { /* the listener will settle the state */ }
+      }
     } catch {
       if (alive.current) { teardown(); setState("unavailable"); }
     }
@@ -125,12 +149,22 @@ export default function PreviewButton({ item, label = "Play 30s preview", accent
     if (state === "loading") return;
     const player = playerRef.current;
     if (state === "playing" && player) {
+      // Clear intent FIRST: a status event can land between here and the next
+      // render, and it must not read as "still wants sound".
+      wantPlay.current = false;
       try { player.pause(); } catch { /* nothing to pause */ }
       setState("idle");
       return;
     }
     if (player?.currentStatus?.isLoaded) {
-      try { player.play(); setState("playing"); } catch { setState("unavailable"); }
+      wantPlay.current = true;
+      started.current = true;
+      try {
+        // A clip that ran to the end sits at its end; rewind before replaying.
+        if (player.currentStatus?.didJustFinish) player.seekTo(0);
+        player.play();
+        setState("playing");
+      } catch { setState("unavailable"); }
       return;
     }
     start();

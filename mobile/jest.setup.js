@@ -34,14 +34,23 @@ jest.mock("react-native-webview", () => {
 
 // expo-audio is a native module. The preview button's *policy* is covered by
 // the shared engine tests; here it only needs to render and be pressable.
-jest.mock("expo-audio", () => ({
-  createAudioPlayer: () => ({
-    play: jest.fn(), pause: jest.fn(), remove: jest.fn(),
-    addListener: jest.fn(() => ({ remove: jest.fn() })),
-    currentStatus: { isLoaded: false, playing: false },
-  }),
-  setAudioModeAsync: jest.fn(() => Promise.resolve()),
-}));
+jest.mock("expo-audio", () => {
+  const players = [];
+  return {
+    __players: players,
+    createAudioPlayer: () => {
+      const p = {
+        play: jest.fn(), pause: jest.fn(), remove: jest.fn(), seekTo: jest.fn(),
+        currentStatus: { isLoaded: false, playing: false },
+        _emit: null,
+        addListener: jest.fn((_evt, cb) => { p._emit = cb; return { remove: jest.fn() }; }),
+      };
+      players.push(p);
+      return p;
+    },
+    setAudioModeAsync: jest.fn(() => Promise.resolve()),
+  };
+});
 
 // The YouTube IFrame player is a WebView underneath. Stub it as a labelled View
 // so tests can assert the trailer is mounted with the right video id.

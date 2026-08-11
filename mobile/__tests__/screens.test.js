@@ -5,7 +5,7 @@
 // gesture resolves the same way the web one does, and that the honesty rules
 // survived the port.
 import React from "react";
-import { render, fireEvent } from "@testing-library/react-native";
+import { render, fireEvent, act } from "@testing-library/react-native";
 
 // RNTL 14's `render` is ASYNC — it returns a promise and `screen` is only
 // populated once that resolves. Every test therefore awaits `show`.
@@ -306,6 +306,77 @@ describe("Deck preview button", () => {
 // perfectly in Node — so the audio preview silently fell back to a 403 URL and
 // showed "Loading…" then "Preview unavailable". Nothing native-reachable may
 // depend on it again.
+// Pause was undone within milliseconds: the status listener inferred intent
+// from `playing:false` and restarted playback. Intent is now explicit, and this
+// replays the exact event sequence that broke it.
+describe("Preview play/pause", () => {
+  const track = { id: "tr_9", title: "T", subtitle: "A", genres: ["Soul"], factors: {}, tone: {},
+    popularity: 0.5, rating: { value: 50, source: "Deezer" }, blurb: "b",
+    links: { deezer: "https://www.deezer.com/track/9", preview: "https://x/p.mp3" } };
+  const music = { ...BOOKS, key: "music", noun: "track", nounPlural: "tracks",
+    factors: ["melody", "lyrics", "production", "rhythm", "vocals", "originality"],
+    factorLabels: { melody: "M", lyrics: "L", production: "P", rhythm: "R", vocals: "V", originality: "O" },
+    tones: ["energy", "darkness", "density"],
+    actions: { want: "Add to queue", consumed: "Heard it", pass: "Pass", consumedShort: "Heard" },
+    stamps: { want: "Queue it", pass: "Pass" }, items: [track] };
+
+  const audio = () => require("expo-audio");
+  beforeEach(() => { audio().__players.length = 0; });
+
+  const startPlaying = async () => {
+    await show(<Discover domain={music} profile={profileFor(music)} shelf={{}} onAction={() => {}} onExplore={() => {}} onOpen={() => {}} />);
+    fireEvent.press(r.getByLabelText("Play 30s preview"));
+    await waitFor(() => expect(audio().__players.length).toBe(1));
+    const p = audio().__players[0];
+    // The source finishes loading, so the component issues its one play().
+    p.currentStatus = { isLoaded: true, playing: false };
+    await act(async () => { p._emit({ isLoaded: true, playing: false }); });
+    await act(async () => { p._emit({ isLoaded: true, playing: true }); });
+    return p;
+  };
+
+  it("starts playing once loaded", async () => {
+    const p = await startPlaying();
+    expect(p.play).toHaveBeenCalled();
+    await waitFor(() => expect(r.getByLabelText("Pause preview")).toBeTruthy());
+  });
+
+  it("issues only one play for a single load", async () => {
+    const p = await startPlaying();
+    await act(async () => { p._emit({ isLoaded: true, playing: true }); });
+    expect(p.play.mock.calls.length).toBe(1);
+  });
+
+  it("pause actually pauses", async () => {
+    const p = await startPlaying();
+    fireEvent.press(r.getByLabelText("Pause preview"));
+    expect(p.pause).toHaveBeenCalled();
+    await waitFor(() => expect(r.getByLabelText("Play 30s preview")).toBeTruthy());
+  });
+
+  // THE bug: a status event lands right after the pause with playing:false and
+  // no `paused` flag, and the old listener read that as "start it".
+  it("a status event after pause does not restart playback", async () => {
+    const p = await startPlaying();
+    const before = p.play.mock.calls.length;
+    fireEvent.press(r.getByLabelText("Pause preview"));
+    await act(async () => { p._emit({ isLoaded: true, playing: false }); });
+    await act(async () => { p._emit({ isLoaded: true, playing: false, paused: false }); });
+    expect(p.play.mock.calls.length).toBe(before);
+    expect(r.getByLabelText("Play 30s preview")).toBeTruthy();
+  });
+
+  it("a finished clip returns to idle and can be replayed", async () => {
+    const p = await startPlaying();
+    await act(async () => { p._emit({ isLoaded: true, playing: false, didJustFinish: true }); });
+    await waitFor(() => expect(r.getByLabelText("Play 30s preview")).toBeTruthy());
+    p.currentStatus = { isLoaded: true, playing: false, didJustFinish: true };
+    fireEvent.press(r.getByLabelText("Play 30s preview"));
+    expect(p.seekTo).toHaveBeenCalledWith(0);
+    expect(p.play.mock.calls.length).toBeGreaterThan(1);
+  });
+});
+
 describe("Native-unavailable web APIs", () => {
   const fs = require("fs");
   const path = require("path");
