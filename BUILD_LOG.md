@@ -1,143 +1,216 @@
-# Taste — build & troubleshooting log
+# Decluttered — build log
 
-*(Continues the Shelf MVP build log — see `../files_extracted/BUILD_LOG.md` for
-the books-only MVP history: 35/18/11/9/4 suites green, structuredClone
-portability fix, BookPicker hoist, idempotent element ratings, display-score
-remap.)*
+A taste-profile recommender for five kinds of decision, on one engine.
+Web (Vite + React) and native (React Native / Expo) clients share the engine.
 
-## Update — expansion to three domains (2026-07-04)
+- **Live web:** https://decluttered-livid.vercel.app
+- **Native:** Expo SDK 54, runs in Expo Go
+- **Status:** 873 tests green (812 shared/web + 61 native), web build clean
 
-Shelf (books-only, single-file artifact) became **Taste**: a real Vite + React
-project with three domains — **Shelf** (books), **Table** (restaurants),
-**Queue** (music) — running on one generalized engine.
-
-### Final status: ALL GREEN
-
-| Gate | Scope | Result |
-|---|---|---|
-| `tests/engine.test.mjs` | Full ported engine suite, parameterized ×3 domains, run against the REAL fetched catalogues | **105 / 105** |
-| `tests/data.test.mjs` | Item contract for all 3 datasets (ids, vectors in 0..1, ratings sane, spread, previews/covers/links) | **44 / 44** |
-| `vite build` | Production bundle | clean, 103 kB gz |
-| Live click-through (preview browser) | Onboarding ×3 domains → swipe (want/pass/consumed) → breakdown panel → library tabs → star + 2 craft ratings → profile weights shift → feed posts → localStorage reload persistence → domain switching → 30s audio preview | all verified, **zero console errors/warnings** |
-
-### API research (all endpoints hit live before committing)
-
-- **Open Library** search API: keyless, real reader ratings — chosen for books.
-  (Google Books anonymous quota was exhausted at test time → documented as alt.)
-- **Deezer** genre + chart APIs: keyless — 107 tracks, rank→popularity, 30s previews.
-- **iTunes Search**: keyless — Apple Music links/year/artwork enrichment (71/107).
-- **Google Places (New)**: verified it refuses keyless callers (403) → fetcher
-  supports `GOOGLE_PLACES_API_KEY`, bundled curated 44-restaurant snapshot
-  (real Google rating values) is the default DB.
-- Goodreads API: dead since 2020, not used. Spotify: needs OAuth creds, schema
-  kept compatible.
-
-### Engine generalization
-
-`engine.mjs` functions now take a `domain` descriptor `{key, factors[6],
-tones[3]}`; books/restaurants/music differ only in vocabulary (domains.js).
-Action `"read"` became `"consumed"` (read/visited/heard). All math unchanged
-from the verified MVP.
-
-### Bugs found & fixed while building
-
-1. **Preview audio ghost-resume** — `PreviewButton` kept its `Audio` object in
-   a ref; after swiping to the next track the old ref survived, so Play would
-   resume the *previous* song. Fixed: keyed the component per track id and the
-   effect cleanup now pauses AND nulls the ref.
-2. **Card art overlapped the genre chips** — the lg cover (224px × 1.15 scale)
-   overflowed its 196px header band and sat on top of the chip row (visible
-   with real cover images; the MVP's stylized covers masked it). Fixed: 236px
-   band, no scale-up, `overflow:hidden`.
-3. **Non-English blurbs from Open Library** — `first_sentence` can come from
-   any edition, so 1984 arrived with a Spanish opening line. Fixed: fetcher
-   accepts a first sentence only if it passes an English-stopword +
-   no-diacritics + length check, else falls back to a generated blurb.
-4. **Fetcher syntax slip** — music TONE_BASE object closed with `]` instead of
-   `}`; caught on first run.
-5. *(Test-harness only, not app bugs)* driving the UI via injected JS needed
-   longer waits after step transitions — the 27-cover picker takes >300 ms to
-   mount, so early queries found 0 buttons; and tab labels are uppercased by
-   CSS (`text-transform`), so text matching had to use DOM case.
-
-### Notes
-
-- Personalization state is per-domain (profile, shelf, feed each keyed under
-  `states[domain]` in `localStorage["taste:state:v1"]`), so tastes never bleed
-  across domains; the header switcher shows ✓ per onboarded domain.
-- Match-score display remap (`0.8·true + 36`) and matchTag thresholds carried
-  over unchanged; external ratings render as their own badge (★ Google/Open
-  Library, ▶ Deezer charts) so the app's match % and the world's rating never
-  get conflated.
-- Deezer has no K-Pop genre — chip dropped by the fetcher automatically (14
-  music genres shipped).
+The thesis: every app you own is optimised to keep you choosing. This one is
+built to get you to *one good pick* — a book, a film, a show, a song, a table —
+and then get out of the way.
 
 ---
 
-## Update — media expansion: movies + TV, goals, and the For You suggester (2026-08-02)
+## Key features
 
-Taste became **Decluttered** (this repo): five domains on one engine, plus a
-categorized suggestion system that goes beyond pattern recognition.
+### The core loop
+- **A ranked deck, one card at a time.** No infinite grid. Swipe right to save,
+  left to pass, or use buttons — a swipe-only deck is unusable for anyone who
+  can't make the gesture.
+- **Every card explains itself.** A match percentage, a four-part breakdown
+  (genre fit / what you weigh / mood / similarity to things you loved), and the
+  named item that drove it: *"Because you liked Harry Potter."*
+- **An honest counterpoint.** Cards name the one reason a pick might not land —
+  *"Much more buzzy than your usual"*, *"Shares a lot with restaurants you've
+  passed on."* A recommender that only ever argues in favour is a salesman.
+- **Undo.** Sorting is reversible for 8 seconds; the profile is restored from a
+  snapshot, because it's derived from the whole history and can't be un-updated.
 
-### Final status: ALL GREEN
+### Try before you decide
+The highest-value control on the deck, one per craving, pinned in the card footer:
 
-| Gate | Scope | Result |
+| Craving | Preview | Coverage |
 |---|---|---|
-| `tests/engine.test.mjs` | Ported engine suite ×5 domains (books/restaurants/music/movies/tv) on real data | **175 / 175** |
-| `tests/data.test.mjs` | Item contract for all 5 datasets | **70 / 70** |
-| `tests/suggest.test.mjs` | Every suggestion mechanism does what its label claims | **81 / 81** |
-| `vite build` | Production bundle | clean, 132 kB gz |
-| Live click-through | Movies + TV onboarding (goals + confirm steps) → decks → For You rows → quick-actions → goal editing in Profile → reload persistence with 5 domains | verified, no new console errors |
+| Queue | 30-second track preview | 1178 / 1178 |
+| Screen | YouTube trailer, inline and looping | 1738 / 1800 |
+| Series | YouTube trailer, inline and looping | 260 / 700 |
+| Table | Swipeable photos of the restaurant | 395 / 449 |
+| Shelf | — (nothing real to play, so no button) | — |
 
-### API research (verified live 2026-08-02)
+Previews play **in place** — the artwork area becomes the player or gallery —
+rather than navigating away.
 
-- **TVMaze**: keyless, real community ratings + art + popularity weight → 90-show catalogue (16-page index sweep + curated search top-up of modern landmarks).
-- **TMDB**: confirmed key-required → live fetch path behind `TMDB_API_KEY`.
-- **iTunes Search**: no longer returns movies at all (0 results for every query) — documented dead end.
-- **Wikipedia REST summary**: keyless poster thumbnails + first-sentence synopses → default movie art path over a curated 69-film snapshot carrying real IMDb rating values. ("Her" has no lead image on its page — stylized fallback cover, by design.)
+### Enough information to decide
+- **Critical reception** with attributed pull-quotes, summarised from Wikipedia
+  (CC BY-SA) and labelled as such. 701 items.
+- **Who's in it:** principal cast for 696/700 shows, directors for 1800/1800 films.
+- **What it costs you:** *"About 74 hours of watching"* for a 73-episode series,
+  *"About 11 hours to read"* for a 322-page book. "62 episodes" sounds like
+  information but dodges the actual question.
+- **Complete series vs Still airing** — half the decision on a show.
+- **More like this:** three comparable items, each opening that item's sheet.
+- **Vibe words** from the tone vectors — *Buzzy · Smart-casual · Adventurous.*
 
-### What's new
+### Seven ways to surface things
+Not one algorithm chasing similarity. `engine/suggest.mjs` builds rows by
+distinct mechanism, and **each row states why it exists**: taste match, your
+priorities, crowd acclaim, hidden gems, mood, anti-pattern (built to stretch
+you), and your stated goal.
 
-- **Domains**: Screen (movies: story/acting/direction/visuals/pacing/originality; darkness/intensity/emotion) and Series (TV: story/characters/writing/acting/production/bingeability; darkness/complexity/comfort), media-first ordering, per-domain accents.
-- **`src/engine/suggest.mjs`**: seven labeled mechanisms (pattern / priority / consensus / gems / mood / stretch / goal) with cross-row dedupe, exclusion of shelved items, and normalized external ratings (`ratingFrac` handles 5/10/100 scales).
-- **User goals**: six goal types (classics/hidden/short/buzzy/acclaimed/broaden) with per-domain labels; picked in onboarding (step 7, max 3), editable in Profile, each rendered as its own For-You row honored even against the taste pattern.
-- **Taste-profile confirmation**: onboarding step 9 reads the derived profile back (genres, tone reading, essential factors, goals) before opening the deck.
-- **For You view**: horizontal suggestion shelves with reason lines, match badges, external ratings, and heart/pass quick-actions that train the profile like deck swipes.
-- **`run.sh`**: one-command local test run.
+### Retention
+Daily streak with a 7-day dot row, a 10-a-day goal, seven milestones, a
+"taste in review" reflection card, head-to-head ranking by binary insertion, and
+a cross-craving panel showing all five profiles at once.
 
-### Bugs found & fixed while building
+### Local-first
+No account, no tracking, no ad model. Everything lives in `localStorage` (web)
+or AsyncStorage (native) under `taste:state:v1`, and can be wiped in two taps.
+The two clients don't sync — by design.
 
-1. **Blank page on first boot** — `seedFeed` had seed-post copy only for the original three domains, so movies/tv threw `undefined[0]` inside App's `useState` initializer and React unmounted the whole tree. Diagnosed by replaying the init sequence in the browser console (React had swallowed the original error). Fixed with per-domain copy + a generic fallback.
-2. **Explore dial dead for movies/TV** — caught by the ported engine tests: log-scaled popularity compressed the uniformly-famous curated/chart catalogues into 0.77–1.0, leaving no novelty spread (aligned and exploring top-10s were identical). Fixed with rank-percentile popularity (`assignPercentilePopularity`), patched into existing data without re-fetching.
-3. **Stretch row leaked pattern items** — caught by the suggest suite: items mixing an untouched genre with a *loved* genre qualified as "outside your pattern". Now every genre on a stretch item must be unengaged.
-4. **Wikipedia burst throttling** — poster fetches failed intermittently under load (42/69 → art). Added retry-with-backoff in the fetcher plus an idempotent `repair-movie-art.mjs` patch pass → 68/69 (the one miss is a page with no lead image).
-5. **Rating badge assumed 5-star scales** — `ExtRating` and the data contract now key off `rating.scale` (5/10/100), so "★ 9/10 · 2.9M on IMDb" renders instead of nonsense.
+### Location (Table only)
+A perfect match in Memphis is no use in Boston, so a city is **required**, and
+every path to the deck routes through that gate. 449 places across 33 metros.
 
 ---
 
-## Update — neo-brutalist reskin (2026-08-02)
+## Catalogue
 
-Swapped the editorial skin for a neo-brutalist one; tokens & chrome only, in
-`src/ui/bits.jsx` (plus two inline-chrome lines in Discover). Layout,
-components, and behavior untouched.
+4,513 items, all from keyless or free APIs. Nothing invented.
 
-- Cream paper (#FFF8E7), white cards, 2px #111 borders, hard offset shadows
-  (no blur), chunky buttons/chips that translate down and swallow their shadow
-  on press, rotated sticker-style match/IMDb badges, bold uppercase mono labels.
-- Loud per-domain accents: yellow #FFD23F books, red #FF5D73 movies, blue
-  #4D9DE0 tv, green #53DD6C music, orange #FF9F1C restaurants — active domain
-  chip fills with its accent; primary CTA carries an accent shadow.
-- Match ring redrawn as bright accent arc on a soft cream track inside a
-  bordered pill (old track used var(--line), which is now black).
+| Craving | Items | Artwork | Reception | Notes |
+|---|---|---|---|---|
+| Shelf (books) | 386 | 386 | 92 | Open Library |
+| Screen (movies) | 1800 | 1753 | 276 | IMDb bulk + Wikipedia + TMDB |
+| Series (TV) | 700 | 700 | 229 | TVMaze |
+| Queue (music) | 1178 | 1176 | 79 | Deezer charts + iTunes |
+| Table (restaurants) | 449 | 411 | 25 | Curated + Wikidata SPARQL |
 
-Bugs found & fixed during verification:
-1. Hero highlighter vanished — the pseudo-element relied on the old skin's
-   `opacity:.92` to stay visible; with it removed, `z-index:-1` dropped the
-   block behind the shell background. Fixed by giving `.hl` its own stacking
-   context (`z-index:0`).
-2. Movies deck meta read "2003 · 2003 · 120 min" (subtitle for movies IS the
-   year) — year now skipped when it duplicates the subtitle.
+**Sources:** Open Library, IMDb bulk datasets, TVMaze, Deezer, Wikidata SPARQL,
+Wikipedia REST + pageviews, Wikimedia Commons, TMDB (free key, in gitignored
+`.env`). Google Places / Yelp content is **never committed** — their terms forbid
+it, so those files are gitignored and ship empty.
 
-Verified: all 5 domain accents checked via computed styles; deck / For You /
-Profile / onboarding screenshots reviewed; no new console errors; tests
-175 + 70 + 81 all green; production build clean.
+---
+
+## Architecture
+
+The engine is **shared, not ported**. Metro's `watchFolders` points at `../src`,
+so both clients import the same modules and the same catalogue JSON.
+
+| | lines |
+|---|---|
+| shared engine + domain definitions | 1,790 |
+| web-only UI | 3,356 |
+| native-only UI | 1,901 |
+| fetch / enrichment scripts | 3,883 |
+| tests | 2,400 |
+| **engine logic reimplemented per platform** | **0** |
+
+Shared modules: `engine.mjs` (scoring, ranking, profile updates), `describe.mjs`
+(vectors → words), `suggest.mjs` (the seven rows), `stats.mjs` (streaks,
+milestones, swipe resolution), `session.mjs` (every state transition),
+`present.mjs` (score → percentage), `preview.mjs` (preview resolve policy),
+`location.mjs`, `importer.mjs` (Goodreads / Letterboxd / IMDb CSV).
+
+Platform-specific by necessity: storage, gestures, hard offset shadows (RN can't
+do un-blurred `box-shadow`, so the offset block is a real View), fonts.
+
+---
+
+## Key decisions
+
+**Never fabricate.** Restaurant prices were left blank for 249 places rather
+than inferred from cuisine or neighbourhood. Content warnings and rating
+histograms were skipped outright — no keyless source, and a *guessed* content
+warning is harmful, not merely wrong. Dish photos are labelled as photos of the
+dish, not of that kitchen.
+
+**Attention is not approval.** Wikipedia readership and Deezer's play index are
+labelled "interest" and "popularity", never stars. A track low on the chart is
+not "divisive" — it just isn't being played much.
+
+**One definition per concept.** `displayScore` and the match wording live in
+shared code because the native client briefly had a re-derived formula and the
+same card read 73% on web and 78% on native.
+
+**Verify in the runtime that ships.** Repeatedly the expensive lesson — see below.
+
+---
+
+## Bugs worth remembering
+
+- **Popularity was a curve, not a measurement.** A log-of-count-over-max scale
+  put 51% of tracks at 95+ and floored every book at 0.42. Deezer's rank is
+  *already* normalised 0–1M. Three catalogues were wrong and the hidden-gems row
+  had nothing to draw on. Now rank-percentile within each source cohort.
+- **The reception block was built, wired, shipped — and empty.** Expanding the
+  catalogues deleted 653 of 677 records, because enrichment lives in the same
+  JSON a fetcher rewrites. `writePretty` now merges enrichment forward by id.
+- **"More like this" nearly shipped a coin flip.** The factor/tone vectors are
+  *derived* from genre plus a hash jitter, so ranking neighbours by them ranks
+  the hash. Measured: 0.17 axis range within a genre group (exactly the jitter)
+  vs 0.44–0.58 across the catalogue. Rebuilt on measured signals only.
+- **Wikidata's YouTube IDs are 87% dead.** 66% coverage × 13% actually playable.
+  A free TMDB key took that to 1,738/1,800. Playability is now verified before
+  an ID is stored, and the verifier detects YouTube's consent wall so throttling
+  can't be recorded as "video dead".
+- **`AbortSignal.timeout` does not exist in React Native.** It threw instantly,
+  so the fresh-preview resolve never ran on device and fell back to URLs that are
+  all 403 now. Worked in every Node check. A test now walks all
+  native-reachable files and fails if anything uses it again.
+- **Food galleries returned scanned books.** Commons search matches file *text*:
+  "French" → crowds on the Champs Elysees, "Korean" → Book of Mormon. Also
+  `\bbook\b` never matched `Book_of_Mormon`, because underscore is a word
+  character. Queries are anchored and results must earn their place.
+- **Pause was undone in milliseconds.** The status listener read
+  `playing:false` as "should be playing". Intent is now explicit, never inferred.
+
+---
+
+## Test & build status
+
+```
+engine     175    data        85    suggest   82    stats     60
+importer    37    reception   55    location  38    wikidata  25
+describe    99    enrich     104    session   52
+                                        shared + web  =  812
+native (jest-expo, @testing-library/react-native)  =   61
+                                              TOTAL  =  873
+```
+
+`npm test` · `npm run test:mobile` · `npm run test:all` · `npm run build`
+
+Data-level guards, not just unit tests: popularity distributions can't pin to an
+extreme, a fetcher re-run can't drop enrichment, every stored trailer ID is a
+bare 11-char YouTube ID, every dish photo carries its credit and licence, and
+blurbs can't regress into mid-sentence truncation.
+
+---
+
+## Unresolved
+
+- **Android is unbuilt.** No JDK on the build machine. No iOS-only APIs are
+  used and `Platform.select` covers the differences, but "untested" is the
+  honest word.
+- **Expo Go pins the native client to SDK 54.** The App Store build of Expo Go
+  is ~11 months behind npm, so an SDK 57 project reports "requires a newer
+  version" on a real phone. Moving back to latest means a development build.
+- **Reception coverage is thin outside movies/TV.** Wikipedia throttles hard;
+  the lookup cache makes re-runs cheap and resumable.
+- **Not ported to native:** Feed, head-to-head ranking, taste-in-review, CSV
+  import. All are presentation over maths that already lives in the engine.
+- **No push notifications** — the strongest retention tool native unlocks.
+- **Restaurant prices** missing for 249 places, and **awards** unbuilt. Both
+  need a source that doesn't require guessing.
+- **17 blurbs** still truncate mid-sentence where no better source text exists.
+
+### A note on verification
+Four audio bugs in a row were found only on a real device. The simulator can't
+report sound, and Expo Go's first-run overlay covers the deck footer. A
+development build would remove both blind spots and is the next thing worth
+doing before more native work.
+
+An earlier version of this log — and several commit messages — cited "907
+shared/web tests". The correct figure is 812; the suites sum to 812 + 61 = 873.

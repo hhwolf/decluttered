@@ -27,7 +27,8 @@
     "mobile": "cd mobile && npx expo start",
     "patch:trailers": "node scripts/patch-trailers.mjs",
     "patch:dishes": "node scripts/patch-dish-photos.mjs",
-    "verify:trailers": "VERIFY=1 node scripts/patch-trailers.mjs"
+    "verify:trailers": "VERIFY=1 node scripts/patch-trailers.mjs",
+    "log:publish": "node scripts/publish-log.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.525.0",
