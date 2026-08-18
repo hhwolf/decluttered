@@ -244,7 +244,39 @@ blurbs can't regress into mid-sentence truncation.
 
 ## Shipped to TestFlight
 
-Build 3 is uploaded to App Store Connect — `VERIFY SUCCEEDED` then `UPLOAD
+**Build 3 crashed on every launch. Build 4 fixes it and is uploaded** (delivery
+UUID `35f3d1f2-1511-4fdc-8599-98ee8e388b2f`).
+
+    Cannot find native module 'ExpoAsset'
+
+expo-audio declares `"expo-asset": "*"` as a peer dependency and
+@expo/vector-icons declares `"expo-font": ">=14.0.4"`. npm resolves an open-ended
+peer range to the newest published version — the SDK 57 line — in a project on
+SDK 54. Two copies of each module landed in the tree; autolinking compiled the pod
+from one and Metro bundled the JS from the other, so `requireNativeModule()` asked
+for a name nothing had registered. Fixed with npm overrides pinning both to SDK
+54's own `bundledNativeModules` values.
+
+Nothing in the toolchain catches this. The bundle builds, 61 native tests pass, and
+`expo install --check` reports "Dependencies are up to date" because it only
+inspects package.json entries and these are transitive. It surfaces only as an
+instant crash in a release build.
+
+How it was found, which is the reusable part: a `simulator-release` EAS profile
+(Release configuration, no dev client) produces a build that runs in the local
+simulator, where `xcrun simctl launch --console-pty` prints the actual JS
+exception. On device there was nothing to see — expo-updates' ErrorRecovery turns
+an unhandled startup throw into a native crash, so the app just closed. The fixed
+build was then confirmed launching and rendering in that same simulator before
+anything was uploaded.
+
+`tests/native-deps.test.mjs` guards it: 19 checks, the load-bearing one counting
+copies of expo-asset and expo-font, since two copies *is* the failure. Verified by
+removing the overrides — 2 failures, exit 1 — then restoring.
+
+
+
+Build 3 was uploaded to App Store Connect — `VERIFY SUCCEEDED` then `UPLOAD
 SUCCEEDED`, 11.97 MB in 5.6s, delivery UUID `245895b6-2f48-4026-8436-8a86ce13fc7d`.
 App record `6802823441`, bundle `com.decluttered.app`, Apple team `59MGA3685P`.
 The privacy policy is live at
