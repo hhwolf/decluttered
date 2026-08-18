@@ -272,6 +272,20 @@ Verified against the real thing: `eas build:inspect` reproduces the exact upload
 and bundling inside it — the two files genuinely absent — succeeds after the hook
 runs.
 
+**Build 3 succeeded.** A signed `.ipa` exists. Verified by unpacking the binary
+itself rather than trusting config: bundle id `com.decluttered.app`, version
+1.0.0 (3), `ITSAppUsesNonExemptEncryption: false`, icon embedded, code signature
+and provisioning profile present, minimum iOS 15.1, and the TMDB key absent.
+All five catalogues are inside the 6.7 MB Hermes bundle — 195 of 200 sampled
+titles found directly, and the five misses are non-ASCII titles that Hermes
+stores as UTF-16, confirmed present in that encoding.
+
+What Table ships with, since it bears on the "not enough information" complaint:
+rating and blurb for all 449 places, dish photography for 395, but critic
+reception for only 25 and quotes for 7. Google review text is structurally never
+in a shipped build — that file cannot be committed — so restaurants lean on
+rating, blurb and photos. Unchanged by the build fix; the file was already empty.
+
 Verified: the production iOS bundle compiles (7.05 MB Hermes bytecode, all
 imports including the out-of-package shared engine), and the TMDB key is **not**
 in it — the key is only ever used by fetch scripts, never at runtime.
