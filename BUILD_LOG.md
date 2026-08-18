@@ -242,6 +242,24 @@ blurbs can't regress into mid-sentence truncation.
 
 ---
 
+## Shipped to TestFlight
+
+Build 3 is uploaded to App Store Connect — `VERIFY SUCCEEDED` then `UPLOAD
+SUCCEEDED`, 11.97 MB in 5.6s, delivery UUID `245895b6-2f48-4026-8436-8a86ce13fc7d`.
+App record `6802823441`, bundle `com.decluttered.app`, Apple team `59MGA3685P`.
+The privacy policy is live at
+https://decluttered-livid.vercel.app/privacy.html — on the product's own domain
+rather than a gist, in the app's own visual language.
+
+`eas submit` could not do it: EAS Submit was in a partial outage that day ("iOS
+Submissions hanging on App Store Connect build uploads"). It did not matter. The
+artifact EAS builds is an ordinary store-signed `.ipa`, so Apple's own `altool`
+uploaded it directly. Worth remembering that the wrapper being down does not block
+shipping.
+
+Remaining before public release, not before internal testing: Category and
+Content Rights in App Store Connect, and the IMDb licence question below.
+
 ## TestFlight readiness
 
 Everything that does not need Apple credentials is done: `eas.json` with four

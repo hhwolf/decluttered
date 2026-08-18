@@ -73,7 +73,27 @@ the whole Apple account: never commit it, and revoke it from the same page when
 you are done.
 
 `--validate-app` runs every check the upload does without uploading, so it catches
-a bad signature or missing icon in seconds.
+a bad signature or missing icon in seconds. Both succeeded here on the first try:
+`VERIFY SUCCEEDED`, then `UPLOAD SUCCEEDED` — 11.97 MB in 5.6s.
+
+**`altool` cannot read a keychain item from a non-interactive shell.**
+`--password "@keychain:NAME"` fails with
+
+    Failed to read legacy keychain item 'NAME' … User canceled the operation. (-128)
+
+because macOS needs to show an authorisation dialog and there is nobody to answer
+it. That is not a wrong password. `security` itself can read the item without a
+prompt, so hand it over in one hop instead — the secret reaches only altool's
+environment and is never written anywhere:
+
+```bash
+ASC_PW=$(security find-generic-password -s "ALTOOL_ASC" -w) \
+xcrun altool --upload-app --type ios --file Decluttered.ipa \
+  --username "<apple-id-email>" --password "@env:ASC_PW"
+```
+
+Store it once with `security add-generic-password -a "<email>" -s "ALTOOL_ASC" -w`
+(bare `-w` prompts, keeping it out of shell history).
 
 ## If the Bundle JavaScript phase fails
 
