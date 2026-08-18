@@ -49,6 +49,32 @@ lives directly beneath it on branch `fix-preview-song-playback`.
 The build runs on EAS infrastructure, so no local Xcode project or CocoaPods
 install is needed.
 
+## If EAS Submit is down
+
+It was, on 18 Aug 2026 — *"iOS Submissions hanging on App Store Connect build
+uploads"*. `eas submit` is only a convenience wrapper; the `.ipa` EAS produced is
+an ordinary store-signed archive, so Apple's own uploader takes it directly.
+
+Download the artifact from `eas build:view <id>`, then either drag it into
+**Transporter** (free, Mac App Store), or use `altool`, which full Xcode already
+provides:
+
+```bash
+xcrun altool --validate-app --type ios --file Decluttered.ipa \
+  --username "<apple-id-email>" --password "@env:ASC_PW"   # dry run first
+xcrun altool --upload-app   --type ios --file Decluttered.ipa \
+  --username "<apple-id-email>" --password "@env:ASC_PW"
+```
+
+`ASC_PW` is an **app-specific password** from appleid.apple.com → Sign-In and
+Security → App-Specific Passwords, not the Apple ID password. Pass it via
+`@env:` so it never lands in shell history or a file. It is a live credential for
+the whole Apple account: never commit it, and revoke it from the same page when
+you are done.
+
+`--validate-app` runs every check the upload does without uploading, so it catches
+a bad signature or missing icon in seconds.
+
 ## If the Bundle JavaScript phase fails
 
 EAS reports bundling failures as bare *"Unknown error. See logs of the Bundle
