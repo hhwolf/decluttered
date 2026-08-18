@@ -26,15 +26,21 @@ written; a GitHub Pages page or a gist is enough.
 `com.decluttered.app`. Note the numeric App ID and your Team ID, then put them
 into the `submit.production` block of `eas.json` — it has placeholders.
 
-**4. Build and upload:**
+**4. Build and upload.** Use the absolute path — this is a Conductor workspace,
+and two of the four workspaces sit on a branch that predates the mobile app, so a
+bare `cd mobile` fails there with no obvious reason why. `npx` avoids a global
+install; eas-cli 22 is verified working on this machine's Node 26.
 
 ```bash
-cd mobile
-npm i -g eas-cli
-eas login
-eas build --platform ios --profile production
-eas submit --platform ios --latest
+cd /Users/henryhe/conductor/workspaces/decluttered/cebu/mobile
+npx eas-cli@latest login
+npx eas-cli@latest build --platform ios --profile production
+npx eas-cli@latest submit --platform ios --latest
 ```
+
+If `cd` still fails, you are outside the workspace entirely; `git rev-parse
+--show-toplevel` from anywhere inside a checkout prints its root, and `mobile`
+lives directly beneath it on branch `fix-preview-song-playback`.
 
 EAS generates and stores the signing certificate and provisioning profile; say
 yes when it offers. The build runs on their infrastructure, so no local Xcode
