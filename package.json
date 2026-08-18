@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node tests/engine.test.mjs && node tests/data.test.mjs && node tests/suggest.test.mjs && node tests/stats.test.mjs && node tests/importer.test.mjs && node tests/reception.test.mjs && node tests/location.test.mjs && node tests/wikidata.test.mjs && node tests/describe.test.mjs && node tests/enrich.test.mjs && node tests/session.test.mjs && node tests/optional-data.test.mjs",
+    "test": "node tests/engine.test.mjs && node tests/data.test.mjs && node tests/suggest.test.mjs && node tests/stats.test.mjs && node tests/importer.test.mjs && node tests/reception.test.mjs && node tests/location.test.mjs && node tests/wikidata.test.mjs && node tests/describe.test.mjs && node tests/enrich.test.mjs && node tests/session.test.mjs && node tests/optional-data.test.mjs && node tests/privacy.test.mjs",
     "fetch:books": "node scripts/fetch-books.mjs",
     "fetch:music": "node scripts/fetch-music.mjs",
     "fetch:restaurants": "node scripts/fetch-restaurants.mjs",

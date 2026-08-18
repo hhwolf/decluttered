@@ -1,6 +1,6 @@
 # Privacy Policy — Decluttered
 
-*Last updated: 11 August 2026*
+*Last updated: 18 August 2026*
 
 ## The short version
 

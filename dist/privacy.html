@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+  privacy.html — the public privacy policy, for the URL App Store Connect and
+  Google Play both require.
+
+  It lives in public/ so Vite copies it to dist/ verbatim, which means it needs
+  no router entry and cannot break the SPA. Served at /privacy.html on the
+  production domain.
+
+  This is a hand-written mirror of mobile/PRIVACY.md. If you change one, change
+  the other — tests/privacy.test.mjs fails when the two drift on any claim that
+  matters (what is collected, what leaves the device, the date).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Decluttered</title>
+<meta name="description" content="Decluttered collects nothing. No account, no analytics, no advertising. Your taste profile never leaves your device." />
+<style>
+  :root {
+    --paper: #FFF8E7; --paper2: #FCF0D4; --card: #FFFFFF;
+    --ink: #111111; --ink2: #3A3A34; --muted: #6E6A5C;
+    --hl: #FFD23F; --soft: #E7DDBE;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 28px 18px 72px;
+    background: var(--paper); color: var(--ink);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px; line-height: 1.6;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", Menlo, monospace;
+    font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 6px;
+  }
+  h1 {
+    font-family: Fraunces, Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 7vw, 44px); line-height: 1.05;
+    margin: 0 0 6px; letter-spacing: -.01em;
+  }
+  .dateline { font-family: "IBM Plex Mono", Menlo, monospace; font-size: 12px; color: var(--muted); margin: 0 0 26px; }
+  h2 {
+    font-family: Fraunces, Georgia, serif; font-size: 21px;
+    margin: 0 0 10px; letter-spacing: -.01em;
+  }
+  section {
+    background: var(--card); border: 2.5px solid var(--ink); border-radius: 10px;
+    box-shadow: 5px 5px 0 var(--ink); padding: 18px 18px 16px; margin: 0 0 22px;
+  }
+  section.lead { background: var(--hl); }
+  p { margin: 0 0 12px; }
+  p:last-child, ul:last-child, table:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 5px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1.5px solid var(--soft); vertical-align: top; }
+  th {
+    font-family: "IBM Plex Mono", Menlo, monospace; font-size: 10.5px;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--ink2);
+    border-bottom: 2px solid var(--ink);
+  }
+  tr:last-child td { border-bottom: 0; }
+  strong { font-weight: 700; }
+  a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; }
+  footer { text-align: center; font-family: "IBM Plex Mono", Menlo, monospace; font-size: 11.5px; color: var(--muted); }
+  @media (max-width: 480px) {
+    section { box-shadow: 4px 4px 0 var(--ink); padding: 15px; }
+    th, td { padding: 7px 6px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Decluttered</p>
+  <h1>Privacy Policy</h1>
+  <p class="dateline">Last updated 18 August 2026</p>
+
+  <section class="lead">
+    <h2>The short version</h2>
+    <p>Decluttered does not collect, transmit or store any personal information.
+    There is no account, no sign-in, no analytics and no advertising. Your taste
+    profile never leaves your device.</p>
+  </section>
+
+  <section>
+    <h2>What stays on your device</h2>
+    <p>Everything you do in the app is written to your device's local storage and
+    nowhere else:</p>
+    <ul>
+      <li>the cravings you've set up, and the genres and favourites you picked</li>
+      <li>every item you've saved, marked as consumed, passed on, or rated</li>
+      <li>your taste profile, which is derived from those actions</li>
+      <li>your daily streak, goals, and city preferences (Table only)</li>
+    </ul>
+    <p>We cannot see any of it. It is not backed up to a server we control, and
+    it is not synchronised between devices. Deleting the app deletes it. You can
+    also erase a craving's data from inside the app, in Profile → Start over.</p>
+  </section>
+
+  <section>
+    <h2>What leaves your device</h2>
+    <p>The app has no backend of its own. It does request content directly from
+    third-party services in order to show you things:</p>
+    <table>
+      <thead><tr><th>Service</th><th>What is requested</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Deezer</td><td>A track's preview URL</td><td>The 30-second audio preview</td></tr>
+        <tr><td>YouTube</td><td>An embedded trailer player</td><td>Film and show trailers</td></tr>
+        <tr><td>Wikimedia / Wikipedia</td><td>Images and article text</td><td>Photos and critical reception</td></tr>
+        <tr><td>Open Library, IMDb, TVMaze, TMDB</td><td>Cover art and metadata</td><td>Card artwork and details</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px">These requests contain only what is needed to
+    fetch the content — for example a track ID or an image address. They do not
+    include any identifier we created for you, because we do not create one.
+    However, like any request to any website, these services will see your IP
+    address and can apply their own privacy policies. YouTube's embedded player
+    in particular may set its own cookies. If that matters to you, avoid opening
+    trailers.</p>
+    <p>We do not share, sell or transfer anything to anyone, because we do not
+    have anything to share.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>The app is not directed at children. Its catalogues include films and
+    shows rated for mature audiences, which is why it carries a 12+ age rating.</p>
+  </section>
+
+  <section>
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be published here with a
+    new date.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about privacy: open an issue at
+    <a href="https://github.com/hhwolf/asterialogs">github.com/hhwolf/asterialogs</a>
+    or contact the developer through GitHub (<strong>hhwolf</strong>).</p>
+  </section>
+
+  <footer>Decluttered · five cravings, one taste profile</footer>
+</main>
+</body>
+</html>
