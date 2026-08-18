@@ -16,15 +16,19 @@ remaining path, and the two things I could not verify.
 
 ## What you need to do
 
-**1. Apple Developer Program — $99/year.** Required for TestFlight, not just the
-App Store. Individual enrolment is usually approved within 24–48h.
+**1. Apple Developer Program — done.** EAS reports *"All credentials are ready
+to build"*: a distribution certificate and a provisioning profile
+(`W357QT77XZ`, valid to 18 Aug 2027) exist under Apple team `59MGA3685P`
+(Asteria Labs, Inc.). That team ID is now filled into `eas.json`; it is not a
+secret and is useless without the signing key, which stays on EAS.
 
 **2. Publish the privacy policy** at a public URL. `mobile/PRIVACY.md` is
 written; a GitHub Pages page or a gist is enough.
 
 **3. Create the app record** in App Store Connect with bundle id
-`com.decluttered.app`. Note the numeric App ID and your Team ID, then put them
-into the `submit.production` block of `eas.json` — it has placeholders.
+`com.decluttered.app`, then put its numeric App ID into `ascAppId` in
+`eas.json` — the one placeholder still left. `eas submit` cannot upload without
+it.
 
 **4. Build and upload.** Use the absolute path — this is a Conductor workspace,
 and two of the four workspaces sit on a branch that predates the mobile app, so a
@@ -42,9 +46,37 @@ If `cd` still fails, you are outside the workspace entirely; `git rev-parse
 --show-toplevel` from anywhere inside a checkout prints its root, and `mobile`
 lives directly beneath it on branch `fix-preview-song-playback`.
 
-EAS generates and stores the signing certificate and provisioning profile; say
-yes when it offers. The build runs on their infrastructure, so no local Xcode
-project or CocoaPods install is needed.
+The build runs on EAS infrastructure, so no local Xcode project or CocoaPods
+install is needed.
+
+## If the Bundle JavaScript phase fails
+
+EAS reports bundling failures as bare *"Unknown error. See logs of the Bundle
+JavaScript build phase"*, which names neither the module nor the file. Build 2
+died this way. Do not guess from the summary — reproduce the builder locally,
+because the difference is almost always a file the builder does not have:
+
+```bash
+npx eas-cli@latest build:inspect -p ios -s archive -o /tmp/eas-archive --force
+diff <(cd src && find . -type f | sort) <(cd /tmp/eas-archive/src && find . -type f | sort)
+```
+
+`build:inspect` writes the exact archive EAS uploads — git-tracked files only.
+Diffing it against the working tree shows what the builder is missing. To see the
+real error, bundle inside that archive:
+
+```bash
+cd /tmp/eas-archive/mobile
+ln -s /path/to/real/mobile/node_modules node_modules   # skip a fresh install
+npm run eas-build-pre-install                           # what the builder runs
+npx expo export --platform ios --output-dir /tmp/out
+```
+
+That surfaced `Unable to resolve module ./data/google-reviews.json` in seconds,
+where the cloud build took 70 and said nothing useful. Note the shape of the
+mistake: a local `expo export` in the working tree passed, because the working
+tree has two gitignored files the builder never receives. A green local bundle is
+not evidence about the builder.
 
 **5. In App Store Connect → TestFlight,** add yourself as an internal tester.
 Internal testing needs no review and is usually available within ~15 minutes of

@@ -252,13 +252,33 @@ attributions several sources require as a **licence condition** — TMDB's
 disclaimer verbatim beside every trailer, plus a "Where this comes from" credits
 panel listing all nine sources.
 
+**Build 2 failed and is fixed.** EAS died in the Bundle JavaScript phase,
+reported only as "Unknown error", on `Unable to resolve module
+./data/google-reviews.json`. `src/domains.js` statically imports two gitignored
+files — Google's and Yelp's terms license their review text for display, not
+redistribution — and EAS uploads git-tracked files, so the builder had neither.
+A local `expo export` had passed because those files sit on the dev machine. The
+same class of mistake as the earlier audio bugs: verifying in an environment that
+has something the target does not.
+
+`scripts/ensure-optional-data.mjs` now writes them as `{}` when absent, which is
+what `domains.js` always claimed they shipped as, and never touches real fetched
+content. Wired into prebuild, pretest, expo prestart, and `eas-build-pre-install`.
+`tests/optional-data.test.mjs` walks every source file and fails if any statically
+imports a JSON that is neither committed nor declared optional — the next such
+import is caught locally, not 70 seconds into a cloud build.
+
+Verified against the real thing: `eas build:inspect` reproduces the exact upload,
+and bundling inside it — the two files genuinely absent — succeeds after the hook
+runs.
+
 Verified: the production iOS bundle compiles (7.05 MB Hermes bytecode, all
 imports including the out-of-package shared engine), and the TMDB key is **not**
 in it — the key is only ever used by fetch scripts, never at runtime.
 
-Remaining, and needing your account: Apple Developer Program ($99/yr), publish
-the privacy policy at a URL, create the App Store Connect record, then
-`eas build` + `eas submit`.
+Signing credentials are live under Apple team `59MGA3685P` (Asteria Labs, Inc.),
+so the remaining steps are: publish the privacy policy at a URL, create the App
+Store Connect record, put its App ID into `ascAppId`, then `eas submit`.
 
 Two things to settle there:
 - **Native audio and trailer playback in a release build** are unverified. Both
