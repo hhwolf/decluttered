@@ -22,7 +22,13 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "package": "com.decluttered.app"
+      "package": "com.decluttered.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,6 +38,17 @@
       "expo-audio"
     ],
     "privacy": "public",
-    "description": "One good pick instead of endless options \u2014 books, films, shows, music and restaurants, ranked to your taste."
+    "description": "One good pick instead of endless options — books, films, shows, music and restaurants, ranked to your taste.",
+    "extra": {
+      "eas": {
+        "projectId": "fe6aa16f-089e-44ce-bee1-aa231813a49a"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/fe6aa16f-089e-44ce-bee1-aa231813a49a"
+    }
   }
 }
