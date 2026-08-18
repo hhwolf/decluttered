@@ -22,13 +22,15 @@ to build"*: a distribution certificate and a provisioning profile
 (Asteria Labs, Inc.). That team ID is now filled into `eas.json`; it is not a
 secret and is useless without the signing key, which stays on EAS.
 
-**2. Publish the privacy policy** at a public URL. `mobile/PRIVACY.md` is
-written; a GitHub Pages page or a gist is enough.
+**2. Privacy policy — done.** Live at
+https://decluttered-livid.vercel.app/privacy.html, on the product's own domain
+rather than a gist. Source is `public/privacy.html`, mirrored from
+`mobile/PRIVACY.md`; `tests/privacy.test.mjs` fails if the two drift on the date,
+the core promise, or which third parties receive data.
 
-**3. Create the app record** in App Store Connect with bundle id
-`com.decluttered.app`, then put its numeric App ID into `ascAppId` in
-`eas.json` — the one placeholder still left. `eas submit` cannot upload without
-it.
+**3. App record — done.** Apple ID `6802823441`, bundle `com.decluttered.app`,
+SKU `decluttered.rn.001`. Both identifiers are in `eas.json`, so no placeholders
+remain.
 
 **4. Build and upload.** Use the absolute path — this is a Conductor workspace,
 and two of the four workspaces sit on a branch that predates the mobile app, so a
@@ -48,6 +50,11 @@ lives directly beneath it on branch `fix-preview-song-playback`.
 
 The build runs on EAS infrastructure, so no local Xcode project or CocoaPods
 install is needed.
+
+**5. In App Store Connect → TestFlight,** add yourself as an internal tester.
+Internal testing needs no review and is usually available within ~15 minutes of
+the upload finishing. External testers (up to 10,000) need a short Beta App
+Review first, typically a day.
 
 ## If EAS Submit is down
 
@@ -123,11 +130,6 @@ where the cloud build took 70 and said nothing useful. Note the shape of the
 mistake: a local `expo export` in the working tree passed, because the working
 tree has two gitignored files the builder never receives. A green local bundle is
 not evidence about the builder.
-
-**5. In App Store Connect → TestFlight,** add yourself as an internal tester.
-Internal testing needs no review and is usually available within ~15 minutes of
-the upload finishing. External testers (up to 10,000) need a short Beta App
-Review first, typically a day.
 
 ## Suggested "What to Test" notes
 
