@@ -16,6 +16,7 @@ import {
   creditLine, distinctQuotes, timeCommitment, similarTo, lookupLinks,
   trailerWatchUrl, photoCaption,
 } from "../../../src/engine/describe.mjs";
+import { TMDB_DISCLAIMER } from "../../../src/engine/credits.mjs";
 import { C, F, text, accentFor, BORDER } from "../theme";
 import { Cover, ExtRating, VibeChip, Card, Btn, matchTag, displayScore } from "../components/bits";
 
@@ -122,7 +123,8 @@ function TrailerCard({ item }) {
       </View>
       <Pressable onPress={() => watch && Linking.openURL(watch)} accessibilityRole="link">
         <Text style={[text.catNo, { marginTop: 7, lineHeight: 15 }]}>
-          Plays from YouTube. If the uploader has embedding off, watch it there ↗
+          Trailer found via TMDB. {TMDB_DISCLAIMER} Plays from YouTube; if the
+          uploader has embedding off, watch it there ↗
         </Text>
       </Pressable>
     </Card>

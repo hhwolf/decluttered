@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SOURCE_CREDITS, CREDITS_SUMMARY } from "../engine/credits.mjs";
 import { RotateCcw, Sliders, Target, MapPin, Info } from "lucide-react";
 import { paletteFor } from "../domains.js";
 import { GOAL_KEYS } from "../engine/suggest.mjs";
@@ -162,6 +163,22 @@ export default function ProfileView({ domain, profile, shelf, activity, states, 
         <div className="row" style={{ justifyContent: "space-between", marginTop: 7 }}>
           <span className="cat-no">Stay aligned</span><span className="cat-no">Expand my taste</span>
         </div>
+      </div>
+
+      {/* Attribution is a licence CONDITION for several of these sources, not a
+          courtesy — TMDB's disclaimer in particular is required verbatim. */}
+      <div className="card" style={{ marginBottom: 14 }}>
+        <div className="eyebrow" style={{ marginBottom: 8 }}>Where this comes from</div>
+        <p className="cat-no" style={{ marginBottom: 10, lineHeight: 1.5 }}>{CREDITS_SUMMARY}</p>
+        {SOURCE_CREDITS.map((c) => (
+          <div key={c.name} style={{ padding: "6px 0", borderBottom: "1px solid var(--line)" }}>
+            <div className="row" style={{ justifyContent: "space-between", gap: 12 }}>
+              <span style={{ fontSize: 13, fontWeight: 600 }}>{c.name}</span>
+              <span className="cat-no" style={{ textAlign: "right" }}>{c.provides}</span>
+            </div>
+            {c.note && <p className="cat-no" style={{ marginTop: 3, lineHeight: 1.4 }}>{c.note}</p>}
+          </div>
+        ))}
       </div>
 
       {onAbout && (

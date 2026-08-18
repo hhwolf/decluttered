@@ -5,6 +5,7 @@ import React from "react";
 import { View, Text, ScrollView, Pressable, Alert } from "react-native";
 import { computeStreak, recentDays, DAILY_GOAL, milestoneProgress, dayKey } from "../../../src/engine/stats.mjs";
 import { allCities } from "../../../src/engine/location.mjs";
+import { SOURCE_CREDITS, CREDITS_SUMMARY } from "../../../src/engine/credits.mjs";
 import { C, F, text, accentFor, ACCENT, BORDER } from "../theme";
 import { Card, Btn, Chip } from "../components/bits";
 
@@ -122,6 +123,22 @@ export default function Profile({ domain, profile, shelf, activity, states, doma
           </View>
         </Card>
       )}
+
+      {/* Attribution is a licence CONDITION for several of these sources, not a
+          courtesy — TMDB's disclaimer in particular is required verbatim. */}
+      <Card>
+        <Text style={[text.eyebrow, { marginBottom: 8 }]}>Where this comes from</Text>
+        <Text style={[text.catNo, { marginBottom: 10, lineHeight: 15 }]}>{CREDITS_SUMMARY}</Text>
+        {SOURCE_CREDITS.map((c) => (
+          <View key={c.name} style={{ paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: C.line }}>
+            <View style={{ flexDirection: "row", justifyContent: "space-between", gap: 12 }}>
+              <Text style={{ fontFamily: F.ui, fontSize: 13, fontWeight: "600" }}>{c.name}</Text>
+              <Text style={[text.catNo, { flexShrink: 1, textAlign: "right" }]}>{c.provides}</Text>
+            </View>
+            {c.note ? <Text style={[text.catNo, { marginTop: 3, lineHeight: 14 }]}>{c.note}</Text> : null}
+          </View>
+        ))}
+      </Card>
 
       {/* ---- reset ---- */}
       <Card>

@@ -4,7 +4,7 @@ A taste-profile recommender for five kinds of decision, on one engine.
 Web (Vite + React) and native (React Native / Expo) clients share the engine.
 
 - **Live web:** https://decluttered-livid.vercel.app
-- **Native:** Expo SDK 54, runs in Expo Go
+- **Native:** Expo SDK 54 — TestFlight-ready (see `mobile/TESTFLIGHT.md`)
 - **Status:** 873 tests green (812 shared/web + 61 native), web build clean
 
 The thesis: every app you own is optimised to keep you choosing. This one is
@@ -239,6 +239,35 @@ Data-level guards, not just unit tests: popularity distributions can't pin to an
 extreme, a fetcher re-run can't drop enrichment, every stored trailer ID is a
 bare 11-char YouTube ID, every dish photo carries its credit and licence, and
 blurbs can't regress into mid-sentence truncation.
+
+---
+
+## TestFlight readiness
+
+Everything that does not need Apple credentials is done: `eas.json` with four
+build profiles, a completed iOS block (bundle id, build number, export-compliance
+flag so TestFlight stops asking on every upload), a real 1024×1024 app icon and
+matching splash in the app's own visual language, a privacy policy, and the
+attributions several sources require as a **licence condition** — TMDB's
+disclaimer verbatim beside every trailer, plus a "Where this comes from" credits
+panel listing all nine sources.
+
+Verified: the production iOS bundle compiles (7.05 MB Hermes bytecode, all
+imports including the out-of-package shared engine), and the TMDB key is **not**
+in it — the key is only ever used by fetch scripts, never at runtime.
+
+Remaining, and needing your account: Apple Developer Program ($99/yr), publish
+the privacy policy at a URL, create the App Store Connect record, then
+`eas build` + `eas submit`.
+
+Two things to settle there:
+- **Native audio and trailer playback in a release build** are unverified. Both
+  work in Expo Go, but a release build is compiled differently, and Expo Go's
+  first-run overlay hid the deck footer in the simulator throughout.
+- **IMDb's datasets are licensed for personal, non-commercial use**, and the app
+  uses their ratings and directors. Worth settling before a public listing;
+  TMDB covers both fields under terms that permit app use with the attribution
+  now displayed.
 
 ---
 

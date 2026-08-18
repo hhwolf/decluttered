@@ -7,6 +7,7 @@ import { fetchTrackPreview } from "./preview.js";
 import { vibeWords, strengths, counterpoint, commitment, factChips, castLine, distinctQuotes,
          timeCommitment, similarTo, lookupLinks, creditLine,
          trailerEmbedUrl, trailerWatchUrl, photoCaption } from "../engine/describe.mjs";
+import { TMDB_DISCLAIMER } from "../engine/credits.mjs";
 
 /* Inline 30s preview control, shared shape with the deck's button. */
 function SheetPreview({ item }) {
@@ -236,7 +237,9 @@ function Trailer({ item }) {
         />
       </div>
       <p className="cat-no" style={{ marginTop: 7 }}>
-        Plays from YouTube. If the uploader has embedding off,{" "}
+        {/* TMDB's terms require this disclaimer wherever their data appears. */}
+        Trailer found via TMDB. {TMDB_DISCLAIMER} Plays from YouTube; if the
+        uploader has embedding off,{" "}
         <a href={watch} target="_blank" rel="noreferrer" style={{ color: "var(--slate)" }}>
           watch it there <ExternalLink size={10} style={{ verticalAlign: "-1px" }} />
         </a>.

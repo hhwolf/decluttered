@@ -8,7 +8,12 @@
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.decluttered.app"
+      "bundleIdentifier": "com.decluttered.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSMicrophoneUsageDescription": "Decluttered does not record audio. This entry exists only because the audio playback library declares it."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +30,8 @@
     "backgroundColor": "#FFF8E7",
     "plugins": [
       "expo-audio"
-    ]
+    ],
+    "privacy": "public",
+    "description": "One good pick instead of endless options \u2014 books, films, shows, music and restaurants, ranked to your taste."
   }
 }
