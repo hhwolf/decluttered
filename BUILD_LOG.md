@@ -345,9 +345,10 @@ so the remaining steps are: publish the privacy policy at a URL, create the App
 Store Connect record, put its App ID into `ascAppId`, then `eas submit`.
 
 Two things to settle there:
-- **Native audio and trailer playback in a release build** are unverified. Both
-  work in Expo Go, but a release build is compiled differently, and Expo Go's
-  first-run overlay hid the deck footer in the simulator throughout.
+- **Native audio and trailer playback in a release build are confirmed working**
+  on a real iPhone (TestFlight build 4), along with a preview stopping the instant
+  a card is swiped. This was the last thing that a development client could not
+  answer, and it needed the device rather than the simulator.
 - **IMDb's datasets are licensed for personal, non-commercial use**, and the app
   uses their ratings and directors. Worth settling before a public listing;
   TMDB covers both fields under terms that permit app use with the attribution

@@ -1,7 +1,7 @@
 # Shipping Decluttered to TestFlight
 
 Everything that can be prepared without Apple credentials is done. This is the
-remaining path, and the two things I could not verify.
+remaining path, and what has now been confirmed on real hardware.
 
 ## What is already in place
 
@@ -155,13 +155,16 @@ need it.
 > missing for 249 places; Feed, head-to-head ranking and CSV import are
 > web-only so far.
 
-## Two things I could not verify
+## Confirmed on device, TestFlight build 4
 
-**Native audio and trailer playback in a release build.** You have confirmed
-both work in Expo Go, but a production build is compiled differently (release
-JS, no dev server), and Expo Go's first-run overlay covered the deck footer in
-the simulator so I could never see the controls myself. The first TestFlight
-build is the right place to check these.
+**Audio and trailer playback work in a release build**, and **a preview stops the
+moment you swipe**. Both confirmed on a real iPhone. These were the last things
+carried as unknowns: they worked in Expo Go, but a release build is compiled
+differently, and Expo Go's first-run overlay hid the deck footer in the simulator
+so the controls were never observable there. The device settled it.
+
+That closes every item that could only be answered outside a development client.
+What remains is App Store Connect paperwork and the IMDb licence question.
 
 **IMDb's dataset licence.** Their public datasets are offered for *personal and
 non-commercial use*. The app uses IMDb ratings and directors. A free app may be
