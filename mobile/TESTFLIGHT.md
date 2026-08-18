@@ -131,6 +131,15 @@ Review first, typically a day.
 
 ## Suggested "What to Test" notes
 
+Paste into **App Store Connect → TestFlight → Builds → iOS → 1.0.0 → build N**,
+in the **What to Test** box on that build's page, then Save. It belongs to the
+build, not the app, so each upload gets its own. Testers see it in the TestFlight
+app and in the "new build available" notification. Limit 4,000 characters.
+
+Not to be confused with **Test Information** in the same sidebar — that holds the
+beta description, feedback email and privacy policy URL, and only external testers
+need it.
+
 > Five cravings share one taste engine: books, films, shows, music and
 > restaurants. Skip setup to get to the deck in one tap, then swipe.
 >
