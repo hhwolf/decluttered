@@ -222,6 +222,19 @@ same card read 73% on web and 78% on native.
 
 ---
 
+## Debug checklist
+
+`DEBUG_CHECKLIST.md` is the pre-upload runbook, ordered by **runtime** rather than
+by feature, because every bug that reached a user here passed a green check
+somewhere else first. It opens with a table of what each layer proves and does not
+prove — a compiling bundle says nothing about the build server's files, Expo Go
+says nothing about a release build, and a live simulator says nothing about audio.
+
+It also carries the TMDB obligations in detail, the IMDb licence question, the
+known-gap register so nobody rediscovers them, and a symptom-to-cause triage table
+for the failures that have actually happened. Every command in it was executed
+before it was committed.
+
 ## Test & build status
 
 ```
