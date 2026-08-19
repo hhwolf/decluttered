@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import {
   dayKey, shiftDay, computeStreak, recentDays, milestoneProgress, MILESTONES,
   tasteReview, nextComparison, applyComparison, insertAt, resolveSwipe, SWIPE_THRESHOLD,
+  SWIPE_FRACTION, FLICK_VELOCITY,
 } from "../src/engine/stats.mjs";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -150,6 +151,22 @@ check("a tap (no movement) snaps back", resolveSwipe(0) === null);
 check("a short drag snaps back", resolveSwipe(60) === null && resolveSwipe(-60) === null);
 check("a long flick still resolves", resolveSwipe(900) === "want" && resolveSwipe(-900) === "pass");
 check("threshold is overridable", resolveSwipe(50, 40) === "want");
+
+// Reported from a device: a drag well short of halfway committed. 110 fixed
+// points is ~30% of a phone card, so the native threshold is now a fraction of
+// the card width and a flick carries the short gestures.
+check("a slow half-drag under the native threshold snaps back",
+  resolveSwipe(150, Math.round(366 * SWIPE_FRACTION), 0) === null);
+check("a slow drag past the native threshold commits",
+  resolveSwipe(160, Math.round(366 * SWIPE_FRACTION), 0) === "want");
+check("a deliberate flick commits even when short",
+  resolveSwipe(80, Math.round(366 * SWIPE_FRACTION), FLICK_VELOCITY) === "want");
+check("a leftward flick passes", resolveSwipe(-80, 154, -FLICK_VELOCITY) === "pass");
+check("a fast tap with jitter is not a swipe",
+  resolveSwipe(9, 154, 3) === null);
+check("velocity just under the flick bar does not commit",
+  resolveSwipe(80, 154, FLICK_VELOCITY - 0.01) === null);
+check("the native threshold is a real fraction", SWIPE_FRACTION > 0.3 && SWIPE_FRACTION < 0.6);
 
 console.log(`\n=== stats: ${pass} passed, ${fail} failed ===\n`);
 process.exit(fail ? 1 : 0);

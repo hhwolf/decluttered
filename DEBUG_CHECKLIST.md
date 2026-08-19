@@ -29,12 +29,12 @@ Skipping a row is how build 2 and build 3 shipped broken.
 
 ```bash
 cd /Users/henryhe/conductor/workspaces/decluttered/cebu
-npm test                      # 909 checks across 15 suites
+npm test                      # 917 checks across 15 suites
 npm run build                 # Vite, should say "built in <1s"
 cd mobile && npx jest         # 61 native component tests
 ```
 
-Expected: **909 shared/web + 61 native = 970**, zero failures.
+Expected: **917 shared/web + 61 native = 978**, zero failures.
 
 Five suites are regression guards for bugs that already shipped once — if one of
 these fails, read its header comment before "fixing" it:
@@ -160,7 +160,9 @@ then pause not pausing, then audio surviving a swipe.
 
 ### 4c. Swiping
 
-- [ ] Half-swipes spring back instead of committing
+- [ ] A drag short of ~42% of the card springs back. It used to commit at ~30%,
+      which felt like a half-swipe committing
+- [ ] A quick flick still commits without dragging that far
 - [ ] A committed swipe is undoable, and undo restores the same card
 - [ ] The deck never shows the same item twice in one session
 - [ ] Reaching the end of a deck shows an end state, not a blank screen

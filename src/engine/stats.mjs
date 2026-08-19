@@ -155,10 +155,31 @@ export function tasteReview(domain, shelf = {}, profile = null) {
  */
 export const SWIPE_THRESHOLD = 110;
 
-export function resolveSwipe(distance, threshold = SWIPE_THRESHOLD) {
-  if (distance > threshold) return "want";
-  if (distance < -threshold) return "pass";
-  return null; // snap back
+/**
+ * Native passes a threshold derived from the card width instead of this constant.
+ * 110 fixed points is ~30% of a phone card, so a drag well short of halfway
+ * committed — reported from a device as "half swipes wrongly commit". A fraction
+ * keeps the gesture feeling the same on every screen size.
+ */
+export const SWIPE_FRACTION = 0.42;
+
+/**
+ * A deliberate throw commits even when it is short, so raising the distance
+ * threshold does not make the deck feel laborious. Points per millisecond, which
+ * is what PanResponder's vx reports.
+ */
+export const FLICK_VELOCITY = 0.55;
+
+/**
+ * `velocity` is optional and defaults to 0, so existing callers keep the pure
+ * distance rule. A flick still has to travel a little, or a fast tap with jitter
+ * would count as a swipe.
+ */
+export function resolveSwipe(distance, threshold = SWIPE_THRESHOLD, velocity = 0) {
+  const far = Math.abs(distance) > threshold;
+  const flicked = Math.abs(velocity) >= FLICK_VELOCITY && Math.abs(distance) > threshold * 0.4;
+  if (!far && !flicked) return null; // snap back
+  return distance > 0 ? "want" : "pass";
 }
 
 /**

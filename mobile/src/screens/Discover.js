@@ -8,11 +8,15 @@
 // a JS stall would drop a frame mid-drag; worth revisiting if the card ever
 // grows expensive to render.
 //
-// The threshold and the drag->verdict decision come from the SHARED
-// engine/stats.mjs, so web and native agree on what counts as a swipe. That
-// function exists because the web client had a real bug: a fast flick that
-// delivered its last move and release in one frame read stale state and was
-// silently dropped.
+// The drag->verdict RULE comes from the SHARED engine/stats.mjs, so both clients
+// decide a swipe the same way. That function exists because the web client had a
+// real bug: a fast flick that delivered its last move and release in one frame
+// read stale state and was silently dropped.
+//
+// The DISTANCE differs by platform, deliberately. Web keeps the fixed 110pt;
+// native derives it from the card width, because 110 is only ~30% of a phone card
+// and committed on drags well short of halfway. Release velocity is passed too, so
+// a deliberate flick still commits without the longer drag.
 // ============================================================================
 import React, { useMemo, useRef, useState } from "react";
 import { View, Text, Animated, PanResponder, Pressable, ScrollView, Dimensions } from "react-native";
@@ -21,7 +25,7 @@ import { Image } from "react-native";
 import Trailer from "../components/Trailer";
 import { TMDB_DISCLAIMER } from "../../../src/engine/credits.mjs";
 import { rankItems } from "../../../src/engine/engine.mjs";
-import { resolveSwipe, SWIPE_THRESHOLD } from "../../../src/engine/stats.mjs";
+import { resolveSwipe, SWIPE_FRACTION } from "../../../src/engine/stats.mjs";
 import { vibeWords, counterpoint, factChips, castLine, creditLine,
          previewAction } from "../../../src/engine/describe.mjs";
 import { C, F, text, accentFor, BORDER } from "../theme";
@@ -34,6 +38,10 @@ const { width: SCREEN_W, height: SCREEN_H } = Dimensions.get("window");
 // than the one it was designed on. Derive it from the screen and leave room for
 // the header, domain bar, action buttons and tab bar.
 const CHROME = 336;
+// The card, and therefore the swipe distance that should count as a commit. A
+// fixed 110pt was ~30% of this and committed on drags well short of halfway.
+const CARD_W = SCREEN_W - 36;
+const SWIPE_COMMIT = Math.round(CARD_W * SWIPE_FRACTION);
 const DECK_H = Math.max(360, Math.min(520, SCREEN_H - CHROME));
 const ART_H = Math.round(DECK_H * 0.38);
 
@@ -90,9 +98,11 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
       setDragging(g.dx);
       pan.setValue({ x: g.dx, y: 0 });
     },
-    onPanResponderRelease: () => {
+    onPanResponderRelease: (_e, g) => {
       // Read the ref, not the rendered state — same reason as the web client.
-      const verdict = resolveSwipe(dragRef.current);
+      // Velocity is passed so a deliberate flick still commits despite the
+      // larger distance threshold.
+      const verdict = resolveSwipe(dragRef.current, SWIPE_COMMIT, g.vx);
       if (verdict === "want") fling("right");
       else if (verdict === "pass") fling("left");
       else {
@@ -135,8 +145,10 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   };
 
   const rotate = pan.x.interpolate({ inputRange: [-SCREEN_W, 0, SCREEN_W], outputRange: ["-9deg", "0deg", "9deg"], extrapolate: "clamp" });
-  const wantOpacity = Math.min(Math.max(dragging / SWIPE_THRESHOLD, 0), 1);
-  const passOpacity = Math.min(Math.max(-dragging / SWIPE_THRESHOLD, 0), 1);
+  // The stamps reach full strength exactly when the drag would commit, so the
+  // card tells you what release will do.
+  const wantOpacity = Math.min(Math.max(dragging / SWIPE_COMMIT, 0), 1);
+  const passOpacity = Math.min(Math.max(-dragging / SWIPE_COMMIT, 0), 1);
 
   return (
     <View>
