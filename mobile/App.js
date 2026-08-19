@@ -70,7 +70,11 @@ export default function App() {
           for (const k of DOMAIN_KEYS) if (raw.states[k]?.onboarded) merged[k] = withDefaults(raw.states[k], []);
           return merged;
         });
-        if (DOMAIN_KEYS.includes(raw.active)) setActive(raw.active);
+        // Restore the last craving ONLY if it was set up. Restoring an
+        // un-onboarded one launched the app straight into another craving's
+        // setup screen, which is not where "the primary tab is songs" should
+        // land anyone.
+        if (DOMAIN_KEYS.includes(raw.active) && raw.states[raw.active]?.onboarded) setActive(raw.active);
       }
       setLoaded(true);
     })();

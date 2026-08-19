@@ -129,7 +129,9 @@ hardware can answer. Work through it on the TestFlight build, not Expo Go.
 
 ### 4a. First launch, as a stranger would
 
-- [ ] App opens to **Queue** (music is the primary tab, deliberately)
+- [ ] App opens to **Queue** on a fresh install. On a returning launch it opens to
+      the last craving you *set up* — restoring an un-onboarded one used to drop you
+      into another craving's setup screen, which is fixed
 - [ ] No crash, no blank cream screen, no flash of an error before the deck
 - [ ] Icon on the home screen is the yellow card-stack, not an Expo placeholder
 - [ ] "Skip setup" reaches a deck in **one tap**
@@ -150,7 +152,9 @@ then pause not pausing, then audio surviving a swipe.
 - [ ] A trailer with embedding disabled falls back to a "Watch on YouTube" link
       rather than a dead black box
 - [ ] **Table**: the dish gallery swipes through multiple photos
-- [ ] Every dish photo carries its author and licence
+- [ ] Every dish photo carries its author and licence **on the deck as well as the
+      detail sheet** — the deck had neither credit nor the TMDB notice, which is the
+      surface people actually use
 - [ ] Rapidly tapping preview on card after card does not stack overlapping audio
 
 ### 4c. Swiping
@@ -165,7 +169,10 @@ then pause not pausing, then audio surviving a swipe.
 - [ ] **Table** refuses to open a deck until a city is chosen — deliberate, not a bug
 - [ ] Removing the last city is blocked with an explanation
 - [ ] **Screen / Series**: match percentage and its explanation agree with each other
-- [ ] **Shelf**: covers load; a missing cover degrades to a placeholder, not a gap
+- [ ] **Shelf**: covers load whole, not cropped. The deck art box is landscape and
+      covers are portrait, so `resizeMode="cover"` was cutting the title off; the
+      large art now uses `contain` and thumbnails still crop
+- [ ] A missing cover degrades to the typographic placeholder, not a gap
 - [ ] Switching cravings preserves each one's own profile and library
 
 ### 4e. Persistence and reset

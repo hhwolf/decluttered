@@ -19,6 +19,7 @@ import { View, Text, Animated, PanResponder, Pressable, ScrollView, Dimensions }
 import { Feather } from "@expo/vector-icons";
 import { Image } from "react-native";
 import Trailer from "../components/Trailer";
+import { TMDB_DISCLAIMER } from "../../../src/engine/credits.mjs";
 import { rankItems } from "../../../src/engine/engine.mjs";
 import { resolveSwipe, SWIPE_THRESHOLD } from "../../../src/engine/stats.mjs";
 import { vibeWords, counterpoint, factChips, castLine, creditLine,
@@ -47,6 +48,8 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
   const dragRef = useRef(0);
   const [dragging, setDragging] = useState(0);
   const [previewing, setPreviewing] = useState(false);
+  // Which dish photo is showing, so its author and licence can be credited.
+  const [photoIdx, setPhotoIdx] = useState(0);
   // The responder is memoised per card, so it reads this ref rather than state:
   // a WebView or photo gallery inside the card must win the gesture, not the deck.
   const previewingRef = useRef(false);
@@ -63,6 +66,7 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
     setDragging(0);
     setPreviewing(false);
     previewingRef.current = false;
+    setPhotoIdx(0);   // the next card's credit must not describe this card's photo
     onAction(top.item, action);
   };
 
@@ -127,6 +131,7 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
     const next = !previewingRef.current;
     previewingRef.current = next;
     setPreviewing(next);
+    if (next) setPhotoIdx(0);
   };
 
   const rotate = pan.x.interpolate({ inputRange: [-SCREEN_W, 0, SCREEN_W], outputRange: ["-9deg", "0deg", "9deg"], extrapolate: "clamp" });
@@ -195,14 +200,49 @@ export default function Discover({ domain, profile, shelf, onAction, onExplore, 
                   <Trailer item={top.item} width={SCREEN_W - 36} height={ART_H}
                     onRequestClose={() => { previewingRef.current = false; setPreviewing(false); }} />
                 ) : previewing && preview?.kind === "photos" ? (
-                  <ScrollView horizontal pagingEnabled showsHorizontalScrollIndicator={false}>
+                  <ScrollView horizontal pagingEnabled showsHorizontalScrollIndicator={false}
+                    onMomentumScrollEnd={(e) =>
+                      setPhotoIdx(Math.round(e.nativeEvent.contentOffset.x / (SCREEN_W - 36)))}>
                     {top.item.dishPhotos.map((p) => (
                       <Image key={p.url} source={{ uri: p.url }} style={{ width: SCREEN_W - 36, height: ART_H }}
                         resizeMode="cover" accessibilityLabel={top.item.dish || "Dish photo"} />
                     ))}
                   </ScrollView>
                 ) : (
-                  <Cover item={top.item} width="100%" height={ART_H} radius={0} />
+                  // contain, not cover: a book cover or film poster is portrait and
+                  // this box is not, so cropping ate the title. The palette shows
+                  // through the letterbox, which is the look anyway.
+                  <Cover item={top.item} width="100%" height={ART_H} radius={0} fit="contain" />
+                )}
+
+                {/* Attribution on the DECK, not just the detail sheet. Both of
+                    these are licence conditions — TMDB requires their notice
+                    wherever their data appears, and Wikimedia's CC terms require
+                    per-photo credit wherever the photo is shown. The sheet had
+                    both; the deck, which is where people actually look, had
+                    neither. */}
+                {previewing && preview?.kind === "trailer" && (
+                  <View style={{
+                    position: "absolute", left: 0, right: 0, bottom: 0,
+                    backgroundColor: "rgba(255,248,231,0.94)", paddingVertical: 4, paddingHorizontal: 9,
+                    borderTopWidth: 1.5, borderTopColor: C.line,
+                  }}>
+                    <Text numberOfLines={2} style={[text.catNo, { fontSize: 8.5, lineHeight: 11 }]}>
+                      Trailer via TMDB. {TMDB_DISCLAIMER}
+                    </Text>
+                  </View>
+                )}
+                {previewing && preview?.kind === "photos" && top.item.dishPhotos?.[photoIdx] && (
+                  <View style={{
+                    position: "absolute", left: 0, right: 0, bottom: 0,
+                    backgroundColor: "rgba(255,248,231,0.94)", paddingVertical: 4, paddingHorizontal: 9,
+                    borderTopWidth: 1.5, borderTopColor: C.line,
+                  }}>
+                    <Text numberOfLines={2} style={[text.catNo, { fontSize: 8.5, lineHeight: 11 }]}>
+                      {photoIdx + 1}/{top.item.dishPhotos.length} · {top.item.dishPhotos[photoIdx].credit},{" "}
+                      {top.item.dishPhotos[photoIdx].licence}, via Wikimedia Commons
+                    </Text>
+                  </View>
                 )}
                 <View style={{ position: "absolute", top: 14, left: 12 }}>
                   <ExtRating item={top.item} dark />

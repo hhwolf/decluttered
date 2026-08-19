@@ -102,12 +102,15 @@ export function VibeChip({ label, fact = false }) {
 }
 
 /** Cover art, or a generated typographic cover when there is no image. */
-export function Cover({ item, width = 112, height = 158, radius = 7 }) {
+export function Cover({ item, width = 112, height = 158, radius = 7, fit = "cover" }) {
   const pal = paletteFor(item.genres?.[0]);
   if (item.image) {
     return (
       <View style={{ width, height, borderRadius: radius, borderWidth: BORDER, borderColor: C.line, overflow: "hidden", backgroundColor: pal.bg }}>
-        <Image source={{ uri: item.image }} style={{ width: "100%", height: "100%" }} resizeMode="cover"
+        {/* fit="contain" on the large deck art: posters and book covers are
+            portrait, the deck's art box is not, and "cover" cropped the title
+            straight off. Thumbnails keep "cover", where a crop is fine. */}
+        <Image source={{ uri: item.image }} style={{ width: "100%", height: "100%" }} resizeMode={fit}
           accessibilityLabel={`Cover of ${item.title}`} />
       </View>
     );

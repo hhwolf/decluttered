@@ -129,6 +129,28 @@ check("nothing in the credits implies endorsement",
   }
 }
 
+// ---- 5b. no blurb may credit a source that did not supply that item's rating ----
+// The IMDb migration left 49 film blurbs reading "rated 7.9 by 475k IMDb voters"
+// while the rating on the record came from TMDB. Prose that names a source is
+// attribution, and it has to match the data sitting next to it.
+{
+  const KNOWN = ["IMDb", "TMDB", "TVMaze", "Deezer", "Open Library", "Goodreads", "Rotten Tomatoes", "Metacritic"];
+  const offenders = [];
+  for (const f of DOMAIN_FILES) {
+    for (const item of load(f)) {
+      const blurb = item.blurb || "";
+      // Only flag a source named in the same breath as a rating claim.
+      if (!/\brated\b|\bvoters\b|\bratings?\b|\bscore\b/i.test(blurb)) continue;
+      for (const k of KNOWN) {
+        if (!new RegExp(`\\b${k.replace(" ", "\\s")}\\b`, "i").test(blurb)) continue;
+        if (item.rating?.source !== k) offenders.push(`${f}: "${item.title}" blurb cites ${k}, rating.source is ${item.rating?.source}`);
+      }
+    }
+  }
+  check("no blurb credits a source that did not supply its rating",
+    offenders.length === 0, offenders.slice(0, 4).join(" | ") + (offenders.length > 4 ? ` (+${offenders.length - 4})` : ""));
+}
+
 // ---- 6. the disclaimer must be rendered by both clients ----
 // Centralising the wording is pointless if a screen stops importing it.
 for (const f of ["src/ui/ItemSheet.jsx", "mobile/src/screens/ItemSheet.js"]) {
