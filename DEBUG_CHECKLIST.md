@@ -198,9 +198,16 @@ then pause not pausing, then audio surviving a swipe.
 
 ## 5. Secrets and licensed content
 
+Read the key from `.env` rather than pasting it into a command. An earlier version
+of this file hardcoded it, which put the secret in the repo — the exact thing these
+checks exist to prevent. Reading it also means the checks keep working after a
+rotation.
+
 ```bash
 # the TMDB key must never be in a commit or a binary
-git grep -l "$KEY"          # must be empty
+KEY=$(grep -E '^TMDB_API_KEY' .env | cut -d= -f2 | tr -d ' "')
+[ -n "$KEY" ] || echo "no key in .env — the checks below prove nothing"
+git grep -l "$KEY"                                      # must be empty
 git check-ignore -q .env && echo "gitignored" || echo "PROBLEM"
 rm -rf /tmp/chk && unzip -q ~/Downloads/Decluttered-build4.ipa -d /tmp/chk
 grep -rl "$KEY" /tmp/chk && echo LEAKED || echo clean
