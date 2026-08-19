@@ -2,10 +2,10 @@
 // cross-domain panel, the explore dial, and the location preference.
 // All the maths comes from the shared engine/stats.mjs.
 import React from "react";
-import { View, Text, ScrollView, Pressable, Alert } from "react-native";
+import { View, Text, ScrollView, Pressable, Alert, Image } from "react-native";
 import { computeStreak, recentDays, DAILY_GOAL, milestoneProgress, dayKey } from "../../../src/engine/stats.mjs";
 import { allCities } from "../../../src/engine/location.mjs";
-import { SOURCE_CREDITS, CREDITS_SUMMARY } from "../../../src/engine/credits.mjs";
+import { SOURCE_CREDITS, CREDITS_SUMMARY, TMDB_LOGO } from "../../../src/engine/credits.mjs";
 import { C, F, text, accentFor, ACCENT, BORDER } from "../theme";
 import { Card, Btn, Chip } from "../components/bits";
 
@@ -132,7 +132,14 @@ export default function Profile({ domain, profile, shelf, activity, states, doma
         {SOURCE_CREDITS.map((c) => (
           <View key={c.name} style={{ paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: C.line }}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", gap: 12 }}>
-              <Text style={{ fontFamily: F.ui, fontSize: 13, fontWeight: "600" }}>{c.name}</Text>
+              {/* TMDB's guidance asks for the wordmark, unaltered, beside the notice.
+                  A raster, because SVG on native would mean adding react-native-svg
+                  for one image. */}
+              {c.logo
+                ? <Image source={require("../../assets/tmdb-logo.png")}
+                         style={{ height: 13, width: 13 * TMDB_LOGO.aspect }}
+                         resizeMode="contain" accessibilityLabel={TMDB_LOGO.alt} />
+                : <Text style={{ fontFamily: F.ui, fontSize: 13, fontWeight: "600" }}>{c.name}</Text>}
               <Text style={[text.catNo, { flexShrink: 1, textAlign: "right" }]}>{c.provides}</Text>
             </View>
             {c.note ? <Text style={[text.catNo, { marginTop: 3, lineHeight: 14 }]}>{c.note}</Text> : null}

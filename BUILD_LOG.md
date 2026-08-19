@@ -362,14 +362,14 @@ Two things to settle there:
   on a real iPhone (TestFlight build 4), along with a preview stopping the instant
   a card is swiped. This was the last thing that a development client could not
   answer, and it needed the device rather than the simulator.
-- **IMDb's datasets are licensed for personal, non-commercial use**, and the app
-  uses their ratings and directors. Worth settling before a public listing;
-  TMDB covers both fields under terms that permit app use with the attribution
-  now displayed.
-
----
-
-## Unresolved
+- **IMDb is no longer used for data.** All 1,800 film ratings and every director
+  list now come from TMDB, whose terms permit app use under the attribution we
+  display. `scripts/patch-tmdb-credits.mjs` migrated them in place via
+  `/find?external_source=imdb_id`, so ids, blurbs, posters, trailers, Wikipedia
+  overviews and reception quotes were untouched — a patch, not the catalogue rebuild
+  that previously deleted 653 enriched records. 3,584 requests, zero unresolved,
+  123 director lists corrected against IMDb's. IMDb is now credited only for the
+  hyperlink to its title page.
 
 - **Android is unbuilt.** No JDK on the build machine. No iOS-only APIs are
   used and `Platform.select` covers the differences, but "untested" is the

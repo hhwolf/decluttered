@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node tests/engine.test.mjs && node tests/data.test.mjs && node tests/suggest.test.mjs && node tests/stats.test.mjs && node tests/importer.test.mjs && node tests/reception.test.mjs && node tests/location.test.mjs && node tests/wikidata.test.mjs && node tests/describe.test.mjs && node tests/enrich.test.mjs && node tests/session.test.mjs && node tests/optional-data.test.mjs && node tests/privacy.test.mjs && node tests/native-deps.test.mjs",
+    "test": "node tests/engine.test.mjs && node tests/data.test.mjs && node tests/suggest.test.mjs && node tests/stats.test.mjs && node tests/importer.test.mjs && node tests/reception.test.mjs && node tests/location.test.mjs && node tests/wikidata.test.mjs && node tests/describe.test.mjs && node tests/enrich.test.mjs && node tests/session.test.mjs && node tests/optional-data.test.mjs && node tests/privacy.test.mjs && node tests/native-deps.test.mjs && node tests/credits.test.mjs",
     "fetch:books": "node scripts/fetch-books.mjs",
     "fetch:music": "node scripts/fetch-music.mjs",
     "fetch:restaurants": "node scripts/fetch-restaurants.mjs",
@@ -30,7 +30,8 @@
     "verify:trailers": "VERIFY=1 node scripts/patch-trailers.mjs",
     "log:publish": "node scripts/publish-log.mjs",
     "prebuild": "node scripts/ensure-optional-data.mjs",
-    "pretest": "node scripts/ensure-optional-data.mjs"
+    "pretest": "node scripts/ensure-optional-data.mjs",
+    "patch:tmdb": "node scripts/patch-tmdb-credits.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.525.0",

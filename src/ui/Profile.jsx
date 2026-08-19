@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SOURCE_CREDITS, CREDITS_SUMMARY } from "../engine/credits.mjs";
+import { SOURCE_CREDITS, CREDITS_SUMMARY, TMDB_LOGO } from "../engine/credits.mjs";
 import { RotateCcw, Sliders, Target, MapPin, Info } from "lucide-react";
 import { paletteFor } from "../domains.js";
 import { GOAL_KEYS } from "../engine/suggest.mjs";
@@ -173,7 +173,11 @@ export default function ProfileView({ domain, profile, shelf, activity, states, 
         {SOURCE_CREDITS.map((c) => (
           <div key={c.name} style={{ padding: "6px 0", borderBottom: "1px solid var(--line)" }}>
             <div className="row" style={{ justifyContent: "space-between", gap: 12 }}>
-              <span style={{ fontSize: 13, fontWeight: 600 }}>{c.name}</span>
+              {/* TMDB's guidance asks for the wordmark, unaltered, beside the notice. */}
+              {c.logo
+                ? <img src={TMDB_LOGO.src} alt={TMDB_LOGO.alt} height={13}
+                       style={{ height: 13, width: 13 * TMDB_LOGO.aspect, flexShrink: 0 }} />
+                : <span style={{ fontSize: 13, fontWeight: 600 }}>{c.name}</span>}
               <span className="cat-no" style={{ textAlign: "right" }}>{c.provides}</span>
             </div>
             {c.note && <p className="cat-no" style={{ marginTop: 3, lineHeight: 1.4 }}>{c.note}</p>}

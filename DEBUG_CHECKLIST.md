@@ -124,17 +124,75 @@ loaded, and a catalogue count.
 
 ## 4. Device — the only place these are real
 
-The simulator cannot answer these. Confirmed working on build 4; recheck after any
-change to audio, the trailer component, or the swipe handler:
+Everything below has failed at least once in this project, or is a thing only
+hardware can answer. Work through it on the TestFlight build, not Expo Go.
 
-- [ ] A 30-second song preview plays in **Queue**
-- [ ] A trailer plays inline in **Screen**, and loops
-- [ ] Restaurant photo gallery swipes through dishes in **Table**
-- [ ] **Audio stops the instant you swipe** a playing card
-- [ ] Pause actually pauses, and resuming works
-- [ ] Half-swipes spring back rather than committing
-- [ ] Table refuses to open a deck before a city is chosen (deliberate)
-- [ ] Profile → Start over genuinely clears that craving
+### 4a. First launch, as a stranger would
+
+- [ ] App opens to **Queue** (music is the primary tab, deliberately)
+- [ ] No crash, no blank cream screen, no flash of an error before the deck
+- [ ] Icon on the home screen is the yellow card-stack, not an Expo placeholder
+- [ ] "Skip setup" reaches a deck in **one tap**
+- [ ] "Build my taste profile" completes and the deck reflects the picks
+- [ ] Catalogue count in the footer is plausible (1,178 tracks on Queue)
+
+### 4b. Previews — the feature with the worst bug history
+
+Four separate bugs shipped here: previews stuck on Loading, then "unavailable",
+then pause not pausing, then audio surviving a swipe.
+
+- [ ] **Queue**: a 30-second preview plays, and is audible with the ringer switch
+      on silent (`playsInSilentMode`)
+- [ ] The pause button actually pauses — press play again, it resumes
+- [ ] **Audio stops the instant you swipe** a playing card. Not a second later
+- [ ] Leaving the tab or backgrounding the app stops it
+- [ ] **Screen**: a trailer plays inline and **loops**
+- [ ] A trailer with embedding disabled falls back to a "Watch on YouTube" link
+      rather than a dead black box
+- [ ] **Table**: the dish gallery swipes through multiple photos
+- [ ] Every dish photo carries its author and licence
+- [ ] Rapidly tapping preview on card after card does not stack overlapping audio
+
+### 4c. Swiping
+
+- [ ] Half-swipes spring back instead of committing
+- [ ] A committed swipe is undoable, and undo restores the same card
+- [ ] The deck never shows the same item twice in one session
+- [ ] Reaching the end of a deck shows an end state, not a blank screen
+
+### 4d. Per-craving specifics
+
+- [ ] **Table** refuses to open a deck until a city is chosen — deliberate, not a bug
+- [ ] Removing the last city is blocked with an explanation
+- [ ] **Screen / Series**: match percentage and its explanation agree with each other
+- [ ] **Shelf**: covers load; a missing cover degrades to a placeholder, not a gap
+- [ ] Switching cravings preserves each one's own profile and library
+
+### 4e. Persistence and reset
+
+- [ ] Force-quit and reopen: library, streak and profile survive
+- [ ] Streak increments the next day rather than per session
+- [ ] **Profile → Start over** clears that craving only, leaving the other four
+- [ ] Reset asks for confirmation and states what will be lost
+
+### 4f. Attribution, since it is a licence condition
+
+- [ ] TMDB's disclaimer appears beside **every** trailer, verbatim
+- [ ] TMDB's wordmark renders in Profile → "Where this comes from"
+- [ ] The credits list names all sources and what each supplies
+- [ ] No rating is labelled with a source that did not provide it
+
+### 4g. Conditions the simulator never shows you
+
+- [ ] **Airplane mode**: previews and trailers fail gracefully; the deck still works
+      from the bundled catalogue
+- [ ] Slow network: a preview shows Loading and then either plays or says
+      unavailable — it must not hang forever
+- [ ] Rotate the device: layout survives (portrait is locked, so nothing should move)
+- [ ] Largest accessibility text size: the deck footer and buttons stay reachable
+- [ ] Dark mode at OS level: the app is light-only by design and must stay legible
+- [ ] Battery/thermals: leaving a trailer looping for a few minutes does not heat
+      the phone or drain visibly
 
 ---
 
@@ -272,7 +330,23 @@ Don't spend time rediscovering these:
 
 ## Open items
 
-1. TMDB logo, and widen the credits line beyond "Official trailers"
-2. Category and Content Rights in App Store Connect
-3. Migrate ratings and directors off IMDb to TMDB
-4. Restaurant decision-quality: reception for 25 of 449 is the weakest surface
+1. Category and Content Rights in App Store Connect
+2. **200 committed restaurant ratings are labelled `source: "Google"`.** Found by
+   `tests/credits.test.mjs`, which noticed Google was supplying ratings while being
+   credited nowhere. Now credited, but two things are unresolved:
+   - They come from `CURATED`, a hand-transcribed literal list in
+     `fetch-restaurants.mjs`, **not** cached API responses. So this is not the
+     caching problem that `google-reviews.json` is gitignored to avoid — but it is
+     still Google's figure, presented as Google's, with no date.
+   - They are **frozen**. Whatever was true when they were typed is what ships.
+     A star rating that says "Google" and is a year stale is an accuracy problem
+     independent of any licence question.
+
+   The existing design already has the right answer — `fetch-restaurant-ratings.mjs`
+   writes live ratings to the gitignored `live-ratings.json`, which supersedes the
+   catalogue at runtime. Making that the *only* source of Google ratings would fix
+   both points. The cost is real: 200 of 449 restaurants would fall back to a
+   Wikipedia interest score, which measures fame rather than approval, and Table is
+   already the thinnest craving for deciding. **Product call, not a code call.**
+3. Restaurant decision-quality generally: reception for 25 of 449, quotes for 7
+4. Confirm with TMDB whether this use counts as commercial under their terms
