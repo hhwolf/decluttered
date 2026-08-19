@@ -29,19 +29,20 @@ Skipping a row is how build 2 and build 3 shipped broken.
 
 ```bash
 cd /Users/henryhe/conductor/workspaces/decluttered/cebu
-npm test                      # 882 checks across 14 suites
+npm test                      # 909 checks across 15 suites
 npm run build                 # Vite, should say "built in <1s"
 cd mobile && npx jest         # 61 native component tests
 ```
 
-Expected: **882 shared/web + 61 native = 943**, zero failures.
+Expected: **909 shared/web + 61 native = 970**, zero failures.
 
-Four suites are regression guards for bugs that already shipped once — if one of
+Five suites are regression guards for bugs that already shipped once — if one of
 these fails, read its header comment before "fixing" it:
 
 - `optional-data` (18) — a statically imported JSON that isn't committed
 - `native-deps` (19) — two copies of an Expo module (the build-3 launch crash)
 - `privacy` (33) — the two privacy-policy copies disagreeing
+- `credits` (29) — attribution that contradicts the data it describes
 - `enrich` (104) — a re-fetch silently dropping enrichment
 
 There is no linter or typechecker in this project. Don't look for one.
