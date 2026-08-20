@@ -56,6 +56,59 @@ Internal testing needs no review and is usually available within ~15 minutes of
 the upload finishing. External testers (up to 10,000) need a short Beta App
 Review first, typically a day.
 
+## Getting real users onto it (external testing)
+
+Internal testing is up to 100 people on your own team and needs no review.
+**External testing is up to 10,000 strangers via a public link and needs Beta App
+Review** — typically a day, and much lighter than full App Review. It is the right
+step for user testing; you do not need to release on the App Store to get feedback.
+
+Prerequisites, all in App Store Connect:
+
+| Where | Field | Value |
+|---|---|---|
+| App Information | Category | Lifestyle |
+| App Information | Content Rights | **Yes**, contains third-party content |
+| App Information | Privacy Policy URL | https://decluttered-livid.vercel.app/privacy.html |
+| App Privacy | Data collection | **Data Not Collected** — accurate, there is no backend |
+| Age Rating | questionnaire | 12+ (catalogues include mature films and shows) |
+| TestFlight → Test Information | Beta App Description | draft below |
+| TestFlight → Test Information | Feedback Email | an address you read |
+| TestFlight → Test Information | Beta App Review contact | name, phone, email |
+
+Then: **TestFlight → External Testing → ＋** to create a group, add the build,
+and **Submit for Review**. Once approved, enable **Public Link** in that group and
+share the URL. Anyone with it installs TestFlight and gets the app; no invitations
+or email collection needed. Later builds in the same group usually go live without
+another review unless something material changed.
+
+Two things to know before you send the link out. **A TestFlight build expires 90
+days after upload**, so testers lose access unless you ship a newer one. And
+whatever is in "What to Test" is the first thing they read — the known-gaps
+paragraph there matters, because a tester who finds a truncated blurb you already
+know about spends their feedback on it instead of something you don't.
+
+### Beta App Description — draft
+
+> Decluttered gives you one good pick instead of endless options, across five
+> cravings: books, films, shows, music and restaurants.
+>
+> Each craving has its own taste profile. Swipe through a deck, and every card
+> shows a match percentage with the reasoning behind it — what it has in common
+> with things you liked, and one honest reason it might not land. Previews are
+> built in: a 30-second track, a trailer, photos of a restaurant's signature
+> dishes.
+>
+> Nothing is collected. There is no account and no analytics, and your taste
+> profile never leaves your device.
+>
+> Feedback most useful to us: does the match percentage feel earned, and is there
+> enough on a card to decide without opening anything?
+
+That last line is deliberate — "not enough information to decide" was the original
+complaint that drove the reception, quotes and fact-chip work, and restaurants are
+still the thinnest surface for it.
+
 ## If EAS Submit is down
 
 It was, on 18 Aug 2026 — *"iOS Submissions hanging on App Store Connect build
