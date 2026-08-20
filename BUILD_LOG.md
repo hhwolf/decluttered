@@ -257,7 +257,14 @@ blurbs can't regress into mid-sentence truncation.
 
 ## Shipped to TestFlight
 
-**Build 3 crashed on every launch. Build 4 fixes it and is uploaded** (delivery
+**Build 5 is on TestFlight** (delivery UUID `02459ea8-002d-4289-8566-44f0b66b27f8`),
+carrying the device-pass fixes: deck attribution for TMDB and Wikimedia, uncropped
+covers, the swipe threshold by card width plus flick velocity, the onboarded-only
+craving restore, and 49 blurbs no longer crediting IMDb for a TMDB rating. Verified
+from the binary before upload — build 5, ExpoAsset linked, TMDB wordmark bundled,
+zero "IMDb voters" strings.
+
+**Build 3 crashed on every launch. Build 4 fixed it and was uploaded** (delivery
 UUID `35f3d1f2-1511-4fdc-8599-98ee8e388b2f`).
 
     Cannot find native module 'ExpoAsset'
